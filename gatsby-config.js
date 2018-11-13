@@ -15,7 +15,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-512.png`,
+      )}/logos/logo-512.jpg`,
       author: config.userName,
       copyright: config.copyright
     }
@@ -117,12 +117,12 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            src: "/logos/logo-192.png",
+            src: "/logos/logo-192.jpg",
             sizes: "192x192",
             type: "image/png"
           },
           {
-            src: "/logos/logo-512.png",
+            src: "/logos/logo-512.jpg",
             sizes: "512x512",
             type: "image/png"
           }

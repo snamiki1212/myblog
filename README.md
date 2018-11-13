@@ -127,7 +127,7 @@ module.exports = {
   siteTitle: "Gatsby Material Starter", // Site title.
   siteTitleShort: "GM Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "GatsbyJS Material Starter", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  siteLogo: "/logos/logo-1024.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://vagr9k.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-material-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible

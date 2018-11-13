@@ -1,8 +1,8 @@
 module.exports = {
-  siteTitle: "なみきブログ", // Site title.
+  siteTitle: "NAMIKI LOG", // Site title.
   siteTitleShort: "先端技術を追いかけるエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "なみきブログ", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  siteTitleAlt: "NAMIKI LOG", // Alternative site title for SEO.
+  siteLogo: "/logos/logo-1024.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://snamiki1212", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
@@ -17,9 +17,9 @@ module.exports = {
   userName: "Shun Namiki", // Username to display in the author segment.
   userTwitter: "snamiki1212", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Japan", // User location to display in the author segment.
-  userAvatar: "/logos/logo-48.png", // User avatar to display in the author segment.
+  userAvatar: "/logos/logo_48.jpg", // User avatar to display in the author segment.
   userDescription:
-    "先端技術を追いかけるエンジニアのブログ", // User description to display in the author segment.
+    "先端技術を追いかけるエンジニアのブログ | 詳細はLinkedin参照", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
