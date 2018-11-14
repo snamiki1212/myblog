@@ -1,6 +1,6 @@
 ---
 title: "退職エントリ"
-cover: "20181107/cover.jpg"
+cover: "20181107_cover.jpg"
 date: "2018-11-07"
 category: "poem"
 tags:
