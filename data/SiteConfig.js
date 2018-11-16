@@ -19,7 +19,7 @@ module.exports = {
   userLocation: "Shibuya, Japan", // User location to display in the author segment.
   userAvatar: "/logos/logo_48.jpg", // User avatar to display in the author segment.
   userDescription:
-  "今どき技術が好きなエンジニアによる技術と生存戦略を中心にした雑記ブログ。SIer4年/Web1年半でお堅い金融システムから最近のスマホゲーム開発までを担当して、ロール的にはバックエンドを中心にフロント/インフラを触りながらディレクター/ディベロッパー/チームリーダーなどをこなしてきた。言語はPHP/LaravelからElixir/Phoenixなど。仕事依頼やTwitterフォロー、IT系の相談など気軽にどうぞ。経歴の詳細はLinkedinを参照。", // User description to display in the author segment.
+  "いまどき技術が好きなエンジニアによる技術と生存戦略を書く雑記ブログ。SIer4年/Web1年半でお堅い金融システムから最近のスマホゲーム開発までを担当して、バックエンドを中心にフロント/インフラを触りながらディレクター/ディベロッパー/チームリーダーなどをこなしてきた。言語はPHP/LaravelからElixir/Phoenixなど。仕事依頼やTwitterフォロー、IT系の相談など気軽にどうぞ。経歴の詳細はLinkedinを参照。", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
