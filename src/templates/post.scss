@@ -1,4 +1,10 @@
 @import '~react-md/src/scss/react-md';
+@import "../layout/theme.scss";
+
+* {
+    font-family: $md-base-font-family;
+}
+
 $phone-status-bar-height: 24px - 12px;
 
 .post-page {
@@ -54,19 +60,54 @@ $phone-status-bar-height: 24px - 12px;
 
         .post-body {
             max-width: 100%;
+            p {
+                font-size: 18px;
+                line-height: 36px;
+                margin-top: 36px;
+                margin-bottom: 36px;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                color: #444444;
+            }
 
-            > h1,
-            > h2,
-            > h3,
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: bold;
+                color: #444444;
+            }
+            > h1 {
+                font-size: 32px;
+                line-height: 1.5;
+                // font-feature-settings: 'palt' 1;
+                letter-spacing: 0.04em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                margin-top: 72px;
+                margin-bottom: 18px;
+                min-height: 1em;
+            }
+            > h2 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-block-start: 0px;
+                margin-block-end: 14px;
+                margin-bottom: 14px;
+            }
+            > h3 {
+                font-size: 24px;
+                line-height: 1.75;
+                margin-top: 50px;
+                margin-bottom: -18px;
+            }
             > h4,
             > h5,
             > h6 {
                 margin-top: 30px;
                 margin-bottom: 10px !important;
             }
-
-            li {
+            ul, li {
+                font-size: 18px;
                 margin-top: 15px;
+                color: #444444;
             }
 
             /**
