@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: nowrap !important;
   justify-content: space-between;
-  background-color: darken($md-tertiary-color, 5%);
+  background-color: $md-base-background;
 
   .hide-on-mobile {
     @media (max-width: 360px - 1px) {

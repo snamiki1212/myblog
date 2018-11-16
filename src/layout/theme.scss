@@ -1,6 +1,7 @@
 @import '~react-md/src/scss/react-md';
-$md-primary-color: $md-grey-400;
-$md-secondary-color: $md-red-800;
+$md-light-theme: true; // optional for light theme
+$md-primary-color: $md-deep-purple-500;
+$md-secondary-color: $md-primary-color;
 $md-tertiary-color: $md-grey-300;
 
 .main-container,
@@ -12,3 +13,6 @@ a:link {
     color: $md-secondary-color;
     text-decoration: none;
 }
+
+// custom
+$md-base-background: white;
