@@ -5,17 +5,15 @@ import "./UserLinks.scss";
 class UserLinks extends Component {
   getLinkElements() {
     const { userLinks } = this.props.config;
-    const { labeled } = this.props;
+    // const { labeled } = this.props;
     return userLinks.map(link => (
       <Button
-        icon={!labeled}
-        flat={labeled}
-        secondary
+        icon={true}
         key={link.label}
         iconClassName={link.iconClassName}
         href={link.url}
       >
-        {labeled ? link.label : ""}
+        {/* {labeled ? link.label : ""} */}
       </Button>
     ));
   }
