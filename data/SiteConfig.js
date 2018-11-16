@@ -16,7 +16,7 @@ module.exports = {
   dateFormat: "YYYY-MM-DD", // Date format for display.
   userName: "Shun Namiki", // Username to display in the author segment.
   userTwitter: "snamiki1212", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "Japan", // User location to display in the author segment.
+  userLocation: "Shibuya, Japan", // User location to display in the author segment.
   userAvatar: "/logos/logo_48.jpg", // User avatar to display in the author segment.
   userDescription:
     "先端技術を追いかけるエンジニアのブログ | 詳細はLinkedin参照", // User description to display in the author segment.
