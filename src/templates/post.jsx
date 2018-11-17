@@ -74,7 +74,7 @@ export default class PostTemplate extends React.Component {
           >
             <Card className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body">
-                <UserInCard config={config} postNode={postNode} />
+                <UserInCard config={config} postNode={postNode} />    
                 <h1 className="md-display-2 post-header">{post.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
               </CardText>
