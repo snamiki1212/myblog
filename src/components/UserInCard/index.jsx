@@ -8,7 +8,7 @@ class UserInCard extends Component {
     const {
       userAvatar,
       userName,
-      userDescription,
+      userIntroduction,
     } = this.props.config;
     const { postNode, config } = this.props;
 
@@ -21,7 +21,7 @@ class UserInCard extends Component {
         />
         <div className="inner-detail">
           <span className="name">{userName}</span>
-          <p className="desc">{userDescription} <br /></p>
+          <p className="desc">{userIntroduction} <br /></p>
           <p className="desc">
             {`Published on ${moment(postNode.fields.date).format(
               config.dateFormat
