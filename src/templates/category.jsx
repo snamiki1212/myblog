@@ -12,7 +12,8 @@ export default class CategoryTemplate extends React.Component {
     return (
       <Layout
         location={this.props.location}
-        title={category.charAt(0).toUpperCase() + category.slice(1)}
+        title={config.siteTitle}
+        // title={category.charAt(0).toUpperCase() + category.slice(1)}
       >
         <div className="category-container">
           <Helmet>

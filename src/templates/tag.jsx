@@ -13,7 +13,8 @@ export default class TagTemplate extends React.Component {
     return (
       <Layout
         location={this.props.location}
-        title={`Tagged in ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
+        title={config.siteTitle}
+        // title={`Tagged in ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
       >
         <div className="tag-container">
           <Helmet>
