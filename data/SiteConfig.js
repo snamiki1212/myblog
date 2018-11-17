@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "NAMIKI LOG", // Site title.
+  siteTitle: "ナミキログ", // Site title.
   siteTitleShort: "先端技術を追いかけるエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "NAMIKI LOG", // Alternative site title for SEO.
+  siteTitleAlt: "ナミキログ", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://snamiki1212", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
@@ -9,7 +9,7 @@ module.exports = {
   siteDescription: "先端技術を追いかけるエンジニアのブログ", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
-  siteGATrackingID: "", // Tracking code ID for google analytics.
+  siteGATrackingID: "UA-129380495-1", // Tracking code ID for google analytics.
   disqusShortname: "", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
