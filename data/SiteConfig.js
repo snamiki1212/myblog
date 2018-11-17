@@ -41,7 +41,12 @@ module.exports = {
       label: "Linkedin",
       url: "https://www.linkedin.com/in/snamiki1212",
       iconClassName: "fa fa-linkedin"
-    }    
+    },
+    {
+      label: "RSS",
+      url: "https://snamiki1212.com/rss.xml",
+      iconClassName: "fa fa-rss"
+    }
   ],
   copyright: "Copyright © 2018. Shun Namiki" // Copyright string for the footer of the website and RSS feed.
 };
