@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Card from "react-md/lib/Cards";
+import CardTitle from "react-md/lib/Cards/CardTitle";
 import CardText from "react-md/lib/Cards/CardText";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo";
@@ -45,7 +45,6 @@ export default class PostTemplate extends React.Component {
     const { mobile } = this.state;
     const { slug } = this.props.pageContext;
     const expanded = !mobile;
-    const postOverlapClass = mobile ? "post-overlap-mobile" : "post-overlap";
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
     if (!post.id) {
@@ -69,10 +68,8 @@ export default class PostTemplate extends React.Component {
             coverHeight={coverHeight}
             coverClassName="md-grid md-cell--9 post-cover"
           />
-          <div
-            className={`md-grid md-cell--9 post-page-contents mobile-fix ${postOverlapClass}`}
-          >
-            <Card className="md-grid md-cell md-cell--12 post">
+          <div className="md-grid md-cell--9 post-page-contents mobile-fix">
+            <CardTitle title="" subtitle="" className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body">
                 <UserInCard config={config} postNode={postNode} />    
                 <h1 className="md-display-2 post-header">{post.title}</h1>
@@ -86,7 +83,7 @@ export default class PostTemplate extends React.Component {
                   mobile={this.state.mobile}
                 />
               </div>
-            </Card>
+            </CardTitle>
             <UserInfo
               className="md-grid md-cell md-cell--12"
               config={config}
