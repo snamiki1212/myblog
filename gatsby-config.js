@@ -4,18 +4,14 @@ const urljoin = require("url-join");
 const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
 
 module.exports = {
-  pathPrefix: config.pathPrefix,
   siteMetadata: {
-    siteUrl: urljoin(config.siteUrl, config.pathPrefix),
+    siteUrl: config.siteUrl,
     rssMetadata: {
-      site_url: urljoin(config.siteUrl, config.pathPrefix),
-      feed_url: urljoin(config.siteUrl, config.pathPrefix, config.siteRss),
+      site_url: config.siteUrl,
+      feed_url: urljoin(config.siteUrl, config.siteRss),
       title: config.siteTitle,
       description: config.siteDescription,
-      image_url: `${urljoin(
-        config.siteUrl,
-        config.pathPrefix
-      )}/logos/logo-512.jpg`,
+      image_url: `${config.siteUrl}/logos/logo-512.jpg`,
       copyright: config.copyright
     }
   },
@@ -110,7 +106,6 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        start_url: config.pathPrefix,
         background_color: "#e0e0e0",
         theme_color: "#c62828",
         display: "minimal-ui",

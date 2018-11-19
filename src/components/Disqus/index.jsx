@@ -36,7 +36,6 @@ class Disqus extends Component {
     const post = postNode.frontmatter;
     const url = urljoin(
       config.siteUrl,
-      config.pathPrefix,
       postNode.fields.slug
     );
 
