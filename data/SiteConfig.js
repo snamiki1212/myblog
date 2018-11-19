@@ -1,15 +1,23 @@
 module.exports = {
+  // for site
   siteTitle: "ナミキログ", // Site title.
   siteTitleShort: "先端技術を追いかけるエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "ナミキログ", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://snamiki1212.com", // Domain of your website without pathPrefix.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
+
+  // for RSS
   siteDescription: "先端技術を追いかけるエンジニアのブログ", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
+
+  // 3rd party
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "UA-129380495-1", // Tracking code ID for google analytics.
+  siteGSCTrackingID: "ntKWqzrE702Ins4Vins48u_aV2TAavUpSNHBJnWXN80", // Tracking code ID for google search console.
   disqusShortname: "", // Disqus shortname.
+
+  // for post
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "YYYY-MM-DD", // Date format for display.
@@ -19,6 +27,7 @@ module.exports = {
   userAvatar: "/logos/logo_48.jpg", // User avatar to display in the author segment.
   userDescription: "いまどき技術が大好きなエンジニアによる技術と生存戦略などを書く雑記ブログ。SIer4年/Web1年半でお堅い金融システムから最近のスマホゲーム開発までを担当。PHP/LaravelやElixir/Phoenixなどのバックエンドを中心にフロント/インフラを触りながら、エンジニア/ディレクター/チームリーダーなどを経験。更に詳しい経歴はLinkedinを参照。Twitterフォローや仕事依頼や相談など気軽にどうぞ。", // User description to display in the author segment.
   userIntroduction: "Freelance full-stack Endigneer @ Shibuya, Japan", // short user introduction
+
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
