@@ -6,6 +6,7 @@ module.exports = {
   siteTitleAlt: "ナミキログ", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://snamiki1212.com", // Domain of your website without pathPrefix.
+  siteRepository: "https://github.com/snamiki1212/myblog", // Repository of your site
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
 
   // for RSS

@@ -5,6 +5,8 @@ import UserLinks from "../UserLinks";
 import config from "../../../data/SiteConfig";
 import "./About.scss";
 
+const {url} = config.userLinks.find(ele => ele.label === "Twitter")
+
 class About extends Component {
   render() {
     return (
@@ -18,6 +20,10 @@ class About extends Component {
             />
             <CardText>
               <p className="about-text md-body-1">{config.userDescription}</p>
+              <p className="about-text md-body-2">
+                また、このブログのコンテンツは全てgithubで管理されています。
+                内容に問題や訂正すべき内容がある場合は<a href={url}>Twitter</a>か直接<a href={config.siteRepository}>このブログのリポジトリ</a>にPRを出してもらえれば対応します。
+              </p>
             </CardText>
             <UserLinks labeled config={config} />
           </div>
