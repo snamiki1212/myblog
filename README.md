@@ -1,11 +1,16 @@
+
 [ナミキログ](https://snamiki1212.com)'s repository.
+
+## Usage
+
+Create `.env.development` from `.env` and secure-data.
 
 ## TODO
 
-- [ ] re-create Thema like medium
+- [ ] Re-create Thema like as medium
 - optimize css for remark
   - [x] code style
-  - [ ] bottom-link
+  - [ ] more clickable bottom-link
   - [x] block-quote
-  - [ ] twitter card link image
-  - [ ] use .env at Google analytics ID
+  - [ ] optimize twitter card of link image
+  - [x] use .env at Google analytics ID
