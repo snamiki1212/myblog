@@ -1,0 +1,30 @@
+@import './theme';
+
+// for prism code highlight
+$first-color: $md-deep-purple-900;
+$secondary-color: $md-deep-purple-200;
+$tertiary-color: $md-deep-purple-50;
+
+// 
+$border-color: $first-color;
+.gatsby-highlight {
+    margin: 0.5em 0 $border-color;
+    padding: 1em 0.1em $border-color;
+    overflow: auto;
+    pre[class*="language-"] code{
+        border-left-width: 10px;
+        border-left-color: $border-color;
+      }
+  }  
+.gatsby-highlight-code-line {
+    background-color: $tertiary-color;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid $secondary-color;
+  }
+.line-numbers-rows{
+    background-color: $border-color;
+}

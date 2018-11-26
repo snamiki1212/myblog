@@ -1,0 +1,156 @@
+@import '~react-md/src/scss/react-md';
+@import "../layout/theme.scss";
+@import "../layout/prism.scss";
+
+* {
+    font-family: $md-base-font-family;
+}
+
+$phone-status-bar-height: 24px - 12px;
+
+.post-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-page-contents {
+    justify-content: center;
+    width: 100%;
+    max-width: 752px;
+
+    .gatsby-resp-image-wrapper {
+        z-index: 6 !important;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+        padding-top: 0px;
+
+        .post-meta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .post-body {
+            max-width: 100%;
+            p {
+                font-size: 18px;
+                line-height: 36px;
+                margin-top: 36px;
+                margin-bottom: 36px;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                color: #444444;
+            }
+
+            blockquote {
+                font-size: 18px;
+                line-height: 36px;
+                color: #444444;
+                border-left: 0.3em solid lightgray;
+                margin-left: 23px;
+                padding: 0 10px;
+                font-style: italic;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: bold;
+                color: #444444;
+            }
+            > h1 {
+                font-size: 32px;
+                line-height: 1.5;
+                // font-feature-settings: 'palt' 1;
+                letter-spacing: 0.04em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                margin-top: 72px;
+                margin-bottom: 18px;
+                min-height: 1em;
+            }
+            > h2 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-block-start: 0px;
+                margin-block-end: 14px;
+                margin-bottom: 14px;
+            }
+            > h3 {
+                font-size: 24px;
+                line-height: 1.75;
+                margin-top: 50px;
+                margin-bottom: -18px;
+            }
+            > h4,
+            > h5,
+            > h6 {
+                margin-top: 30px;
+                margin-bottom: 10px !important;
+            }
+            ul, li {
+                font-size: 18px;
+                margin-top: 15px;
+                color: #444444;
+            }
+
+            /**
+             * Based on MUICSS's Table Component
+             */
+            table {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            table > thead > tr > th,
+            table > tbody > tr > th,
+            table > tfoot > tr > th {
+                text-align: left;
+            }
+
+            table > thead > tr > th,
+            table > thead > tr > td,
+            table > tbody > tr > th,
+            table > tbody > tr > td,
+            table > tfoot > tr > th,
+            table > tfoot > tr > td {
+                padding: 10px;
+                line-height: 1.429;
+            }
+
+            table > thead > tr > th {
+                border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+                font-weight: 700;
+            }
+
+            table > tbody + tbody {
+                border-top: 2px solid rgba(0, 0, 0, 0.12);
+            }
+
+            table > tbody > tr > td {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            }
+
+            :target::before {
+                content: '';
+                display: block;
+                position: relative;
+                height: $md-toolbar-mobile-portrait-height + $phone-status-bar-height;
+                margin: -($md-toolbar-mobile-portrait-height + $phone-status-bar-height) 0 0;
+            }
+        }
+    }
+}
