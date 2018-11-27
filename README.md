@@ -19,3 +19,4 @@ Create `.env.development` from `.env` and secure-data.
   - [ ] speed test
 - Page
   - [ ] About me at top page
+  - [ ] Link to .md at this repository
