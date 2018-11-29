@@ -56,6 +56,15 @@ $phone-status-bar-height: 24px - 12px;
                 color: #444444;
             }
 
+            a {
+                border-bottom: solid 1px;
+            }
+
+            .anchor{
+                border-bottom: 0px;
+            }
+            
+
             blockquote {
                 font-size: 18px;
                 line-height: 36px;
