@@ -22,8 +22,6 @@ slug: study-with-drucker-method
     src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=snamiki1212-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4396112076&linkId=6cb8b27c8e0e78e136f1c7cbd0d61b29&bc1=ffffff&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
 </iframe>
 
----
-
 ## 構成
 
 下記の通り、全7章の構成立てとなる。

@@ -17,7 +17,7 @@ $phone-status-bar-height: 24px - 12px;
 .post-page-contents {
     justify-content: center;
     width: 100%;
-    max-width: 752px;
+    max-width: 900px;
 
     .gatsby-resp-image-wrapper {
         z-index: 6 !important;
@@ -70,29 +70,28 @@ $phone-status-bar-height: 24px - 12px;
                 font-weight: bold;
                 color: #444444;
             }
-            > h1 {
+            h1 {
+                // border-bottom: 6px solid gray;
+                padding-top: 10px;
+                padding-bottom: 20px;
                 font-size: 32px;
-                line-height: 1.5;
-                // font-feature-settings: 'palt' 1;
-                letter-spacing: 0.04em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-                margin-top: 72px;
-                margin-bottom: 18px;
-                min-height: 1em;
             }
-            > h2 {
-                font-size: 24px;
+            h2 {
+                font-size: 27px;
                 line-height: 32px;
-                margin-block-start: 0px;
-                margin-block-end: 14px;
-                margin-bottom: 14px;
+                padding-bottom: 8px;
+                border-bottom: solid 6px lightgray;
+                margin-top: 64px;
+                margin-bottom:20px;
             }
-            > h3 {
-                font-size: 24px;
-                line-height: 1.75;
-                margin-top: 50px;
-                margin-bottom: -18px;
+            h3 {
+                font-size: 20px;
+                border-bottom: solid 1px lightgray;
+                margin-top: 64px;
+                // font-size: 24px;
+                // line-height: 1.75;
+                // margin-top: 50px;
+                // margin-bottom: -18px;
             }
             > h4,
             > h5,

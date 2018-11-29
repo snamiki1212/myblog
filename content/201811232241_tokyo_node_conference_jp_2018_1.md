@@ -45,8 +45,6 @@ slug: tokyo-node-conference-jp-2018-1
   - [👍 Vue.js/Nuxt.js で 実現できた PWA の リアルタイム動画ラップ・バトル・アプリ by lulzneko](tokyo-node-conference-jp-2018-2#-vuejsnuxtjs-で-実現できた-pwa-の-リアルタイム動画ラップ・バトル・アプリ-by-lulzneko)
   - [🎉 総括](tokyo-node-conference-jp-2018-2#-総括)
 
----
-
 ## 🔑 Keynote
 
 - 各種登壇内容の概要説明
@@ -55,7 +53,6 @@ slug: tokyo-node-conference-jp-2018-1
 
   それに合わせて**東京node学園祭も今年で最後となり来年からjsconf in japan(仮)**としてカンファレンスを行う予定、とのこと。
 
----
 ## 👍 JavaScript で機械学習はじめよう by Shuhei Iitsuka
 - https://nodefest.jp/2018/schedule.html#conference-2-1
 - スライド：https://bit.ly/2FDqHss
@@ -111,7 +108,6 @@ slug: tokyo-node-conference-jp-2018-1
   - 「推論の速度」を高速で行えると「速度が速い」という点を強く強調されているように感じた
   - どちらかというとフロントエンドエンジニアでも手軽にMLが行えるようになるという参入障壁と心理的障壁の破壊こそがTensorFlow.jsの真価なのだと思っていたので意外だった。
 
----
 ## 👍 Node.js: The Road to Workers by Anna Henningsen
 
 - https://nodefest.jp/2018/schedule.html#conference-1-4
@@ -129,7 +125,6 @@ slug: tokyo-node-conference-jp-2018-1
 - 英語だったのでなんとなくしかわからなかった
 - Node.jsと言えば「イベントループ・マルチコアでスケールしない」とイメージが強かったがNode.jsのv10から導入されるWorkerでそこらは解消される。また、すでに導入されているところが多いので（その２のアンケート参照）、その認識は改めた方が良いと思われる。　
 
----
 ## 👍 Diagnose your Node.js app by Daiki Arai
 
 - https://nodefest.jp/2018/schedule.html#conference-2-3
@@ -256,7 +251,6 @@ slug: tokyo-node-conference-jp-2018-1
 
 - 「GatsbyなどのSSGが今後ホットになりそうな予兆を感じる」らしく、最近自分のサイトをGatsbyで構築したところもあり自分の技術の先行投資の確からしさを感じられてちょっと安心。
 
----
 ## 👍 Node.jsアプリの開発をモダン化するために取り組んできたこと by Daiki Yokoi
 
 - https://nodefest.jp/2018/schedule.html#conference-5-5
@@ -306,3 +300,4 @@ slug: tokyo-node-conference-jp-2018-1
 - 東京Node学園2018(Conference@JP)のまとめ（その１）←この記事
 - [東京Node学園2018(Conference@JP)のまとめ（その２）](./tokyo-node-conference-jp-2018-2)
 
+---
