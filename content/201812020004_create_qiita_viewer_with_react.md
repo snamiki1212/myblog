@@ -55,3 +55,8 @@ slug: create-qiita-viewer-with-react
 Promiseの使い方、fetchAPIの使い方、Reactでの値の更新方法、flexの考え方、などを学べた。
 
 UdemyでReactの触りは理解していたしこのサイト自体もReact(Gatsby)で作成した時にデザインをちょろちょろ変えたのでなんとなく出来るかなーと思っていたけど色々ハマった。Reactもだがそれ意外のところでも色々と詰まったので、やはり手を動かして学ぶのは良い。
+
+## Reference
+
+1. [create-react-appでSASSファイルを使う方法 - Qiita](https://qiita.com/chieeeeno/items/1dda5c47d4f1e36408e8)
+2. [Java - react renderからPromiseでhtmlタグ取ってくると戻り値がObjectになりエラーになってしまう｜teratail](https://teratail.com/questions/65202)
