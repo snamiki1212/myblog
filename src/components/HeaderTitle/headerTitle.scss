@@ -1,5 +1,13 @@
+@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+
 .header-title{
-  padding: 20px 20px;
-  font-size: 18px;
+  padding: 8px 20px;
+  font-size: 32px;
   color: white;
+  font-family: "Nico Moji";
+  transition: 0.3s;
+}
+
+.header-title:hover{
+  color: #ce90eb;
 }
