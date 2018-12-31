@@ -11,7 +11,12 @@ slug: tokyo-node-conference-jp-2018-1
 
 # 東京Node学園祭2018の1日目のまとめ（その１）(Conference@JP)
 
-  東京Node学園祭2018の1日目に行ってきたので、そのまとめ。あまりに長くなってきたので記事を分けることにした。
+東京Node学園祭2018の1日目に行ってきたので、そのまとめ。
+
+<!-- TwitterLink -->
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">東京Node学園祭2018(1日目)<br>登壇者・聴講者・スタッフの皆さん<br>お疲れ様でした😇<br><br>聴講した内容をまとめました📝<br>今日の振り返りや<br>見れなかったセッションの<br>参考としてどうぞ💫<a href="https://twitter.com/hashtag/nodefest?src=hash&amp;ref_src=twsrc%5Etfw">#nodefest</a> <a href="https://twitter.com/hashtag/node?src=hash&amp;ref_src=twsrc%5Etfw">#node</a> <a href="https://twitter.com/hashtag/nodejs?src=hash&amp;ref_src=twsrc%5Etfw">#nodejs</a> <a href="https://t.co/SZZDDoWXan">https://t.co/SZZDDoWXan</a></p>&mdash; Namiki🌏Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1065981410383560704?ref_src=twsrc%5Etfw">2018年11月23日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- TwitterLink -->
 
 - 自分のNode.jsのレベル感
 

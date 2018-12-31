@@ -18,6 +18,11 @@ slug: event-of-go-global-1
 > 
 > --- <cite>[Go Global Meetup#1](https://go-global.connpass.com/event/108021/)</cite>
 
+<!-- TwitterLink -->
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">リアルタイムでブログ書いてる🔥<br><br>自分用のメモ・思考の整理<br>の比率が高いが良ければどぞ<a href="https://twitter.com/hashtag/go_global?src=hash&amp;ref_src=twsrc%5Etfw">#go_global</a><a href="https://t.co/PUdrxXczR5">https://t.co/PUdrxXczR5</a></p>&mdash; Namiki🌏Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1067024964430118912?ref_src=twsrc%5Etfw">2018年11月26日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- TwitterLink -->
+
 観点として
 - 海外での就職
 - 英語での就職

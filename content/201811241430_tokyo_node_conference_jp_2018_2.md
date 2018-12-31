@@ -16,6 +16,11 @@ slug: tokyo-node-conference-jp-2018-2
 - [東京Node学園2018(Conference@JP)のまとめ（その１）](./tokyo-node-conference-jp-2018-1)
 - 東京Node学園2018(Conference@JP)のまとめ（その２）←この記事
 
+<!-- TwitterLink -->
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">残りのセッションについても追記しましたー<a href="https://twitter.com/hashtag/nodefest?src=hash&amp;ref_src=twsrc%5Etfw">#nodefest</a> <a href="https://twitter.com/hashtag/node?src=hash&amp;ref_src=twsrc%5Etfw">#node</a> <a href="https://twitter.com/hashtag/nodejs?src=hash&amp;ref_src=twsrc%5Etfw">#nodejs</a> <a href="https://t.co/PqRfgB97Bo">https://t.co/PqRfgB97Bo</a></p>&mdash; Namiki🌏Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1066312408845582336?ref_src=twsrc%5Etfw">2018年11月24日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- TwitterLink -->
+
 ## 👍 WebアプリをNativeアプリにする Capacitor が広げるWebの可能性 by 榊原 昌彦
 
 - https://nodefest.jp/2018/schedule.html#conference-2-6

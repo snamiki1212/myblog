@@ -11,8 +11,6 @@ slug: create-qiita-viewer-with-react
 # ReactでQiitaのアプリケーションを作った話
 
 完全に勉強用のためだけにアプリケーションを作ったのでその学びのまとめ。
-
-
 ## 作ったもの
 
 [Qiita Viewer with React](https://snamiki1212.github.io/qiita-viewer-with-react/)というものを作成した。
@@ -21,6 +19,12 @@ slug: create-qiita-viewer-with-react
 
 
 ![qiita-viewer-with-react](./201812020004_1.gif)
+
+
+<!-- TwitterLink -->
+<blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="ja"><p lang="ja" dir="ltr">1個目<br><br>0→1での初Reactアプリ<br>Qiitaを表示するやつ作った<a href="https://t.co/ctMNFNxodc">https://t.co/ctMNFNxodc</a> <a href="https://t.co/ldNMSNE2Mj">pic.twitter.com/ldNMSNE2Mj</a></p>&mdash; Namiki🌏Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1069107634622541824?ref_src=twsrc%5Etfw">2018年12月2日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- TwitterLink -->
 
 - [Qiita Viewer with React](https://snamiki1212.github.io/qiita-viewer-with-react/)
 
