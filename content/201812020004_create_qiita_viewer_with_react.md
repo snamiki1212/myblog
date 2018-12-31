@@ -20,7 +20,7 @@ slug: create-qiita-viewer-with-react
 これは[Qiitaの記事一覧を返すAPI](https://qiita.com/api/v2/docs#get-apiv2items)を叩いてその結果を表示するだけのアプリケーションでサービスとしての価値は皆無。
 
 
-![qiita-viewer-with-react](./qiita.gif)
+![qiita-viewer-with-react](./201812020004_1.gif)
 
 - [Qiita Viewer with React](https://snamiki1212.github.io/qiita-viewer-with-react/)
 
