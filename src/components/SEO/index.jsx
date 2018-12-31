@@ -5,7 +5,7 @@ import config from "../../../data/SiteConfig";
 
 class SEO extends Component {
   render() {
-    const { postNode, postPath, postSEO } = this.props;
+    const { postNode, postPath, postSEO, postImgNode} = this.props;
     let title;
     let description;
     let image;
@@ -22,6 +22,9 @@ class SEO extends Component {
       title = config.siteTitle;
       description = config.siteDescription;
       image = config.siteLogo;
+    }
+    if(postImgNode){
+      image = postImgNode.childImageSharp.fluid.src;
     }
     image = urljoin(config.siteUrl, image);
     const blogURL = config.siteUrl;

@@ -12,7 +12,7 @@ import PostCover from "../components/PostCover";
 import SocialLinks from "../components/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions";
 import HeaderTitle from "../components/HeaderTitle";
-import SEO from "../components/SEO";
+import SEOWrapper from "../components/SEOWrapper";
 import config from "../../data/SiteConfig";
 import "./post.scss";
 
@@ -62,7 +62,8 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
           </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
+          <SEOWrapper postPath={slug} postNode={postNode} postSEO />
+          {/* <SEO postPath={slug} postNode={postNode} postSEO /> */}
           <PostCover
             postNode={postNode}
             coverHeight={coverHeight}
