@@ -102,11 +102,11 @@ RSSを設定して記事をポストしてもリーダーがRSSを取得しな�
    - 概要：GatsbyJSのbuild対象を指定するpluginを作成・導入
    - どうやらHugoではpublish_dateを指定すると期日を過ぎていない分はbuildされないみたいなので、同様にGatsbyJSでもビルド対象の記事を絞る機能を作る案。記事ファイルのマークダウンファイルのメタ情報にpublish_dateとかを入れてこの日付を元にgatsbyでビルドするかしないかをハンドリングする。その上で、Zapierで定期的にNetlifyのビルドを実行すれば、例えば1hごとにビルドを実行し、公開時間を過ぎていればその記事もビルド対象に含まれてビルドされて公開される。ビルド間隔が定期的かつ事前にコードプッシュしておけば自動的にリリースされる＋システム構築コストが低い、ので、この方法が一番良さそう。
 
-### 【問題③】excertが正常に表示されない
+### 【問題③】excerptが正常に表示されない
 
 結論：non-latin language用の対応しないといけない。
 
-excertとは、「見出し文」で例えばブログ記事の一覧を表示したときそれぞれのプログ記事の見出しとか。このexcertの表示だが正常に表示されなかった。ただ、その対応についてtrouble shootingに書いてあるので「GraphQLのqueryをexcerpt からexcerpt(truncate: true)にするように」とのこと。欲を言えばデフォルトで設定しておいてほしいが・・・。調べればわかるものだったので許容範囲。
+excerptとは、「抜粋」で例えばブログ記事の一覧を表示したときそれぞれのプログ記事の先頭行数分を抜粋して表示するようなもの。このexcerptの表示だが正常に表示されなかった。ただ、その対応についてtrouble shootingに書いてあるので「GraphQLのqueryをexcerpt からexcerpt(truncate: true)にするように」とのこと。欲を言えばデフォルトで設定しておいてほしいが・・・。調べればわかるものだったので許容範囲。
 
 - [gatsby-transformer-remark | GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
 
