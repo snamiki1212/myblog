@@ -8,8 +8,9 @@ import "./Navigation.scss";
 
 class Navigation extends Component {
   render() {
-    const { children, config, LocalTitle } = this.props;
+    const { children, config, LocalTitle, isPost } = this.props;
     const footerLinks = LocalTitle !== "About";
+
     return (
       <NavigationDrawer
         drawerTitle={config.siteTitle}
@@ -21,7 +22,7 @@ class Navigation extends Component {
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         toolbarActions={<ToolbarActions config={config} />}
       >
-        <StyledReadingProgress />
+        {isPost ? <StyledReadingProgress /> : "" }
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>
