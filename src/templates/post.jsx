@@ -71,8 +71,8 @@ export default class PostTemplate extends React.Component {
           />
           <div className="md-grid md-cell--9 post-page-contents mobile-fix">
             <CardTitle title="" subtitle="" className="md-grid md-cell md-cell--12 post">
-              <CardText className="post-body">
-                <UserInCard config={config} postNode={postNode} />    
+              <CardText className="post-body target-el">
+                <UserInCard config={config} postNode={postNode} />
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
               </CardText>
               <div className="post-meta">

@@ -3,6 +3,7 @@ import NavigationDrawer from "react-md/lib/NavigationDrawers";
 import ToolbarActions from "../ToolbarActions";
 import Footer from "../Footer";
 import GetNavList from "./NavList";
+import StyledReadingProgress from '../StyledReadingProgress';
 import "./Navigation.scss";
 
 class Navigation extends Component {
@@ -20,6 +21,7 @@ class Navigation extends Component {
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         toolbarActions={<ToolbarActions config={config} />}
       >
+        <StyledReadingProgress />
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>

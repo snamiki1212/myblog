@@ -1,0 +1,8 @@
+.wrapper-reading-progress{
+  position:fixed;
+}
+
+.reading-progress{
+  position: relative;
+  background: red; // TODO: なぜ動いているかわからない。。。red指定しているが、無効化されてグローバルに定義してるカラーが利用される。この１行を抜くとデフォルト値のカラーになってしまう。
+}
