@@ -21,3 +21,5 @@ Create `.env.development` from `.env` and secure-data.
 - Page
   - [ ] About me at top page
   - [ ] Link to .md at this repository
+- Feature
+  - [ ] Search (MEMO: https://blog.leko.jp/post/implement-site-search-with-algolia/)
