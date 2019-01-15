@@ -73,34 +73,33 @@ RSSを設定して記事をポストしてもリーダーがRSSを取得しな�
 
 ＜対応案＞
 
-1. 非表示で乗り切る
+1. フロントのロジックで非表示にして`watchable_at`の時間を過ぎたら表示する
 
    事前にデプロイしておきフロントのロジックで表示させない方法。セキュアな要件もないしこれで良いかなー、と思ったが、デプロイ時に行われるGatsbyJS buildの時点でRSSが生成されてしまうので没案。そもそも、脳筋なやり方なので微妙ですね。
 
 2. ZapierのスケジューラとWebhookでNetlifyのビルドを行う
 
-   - 原案：[Auto trigger deploys on Netlify](https://flaviocopes.com/netlify-auto-deploy/)
-   - 概要：事前に記事はgithub上にあげておく。Zapierで定期スケジュールを仕込む。Zapierの定期スケジュールでNetlifyのビルドが実行される。
-   - 問題：時間単位でのデプロイとなるため、記事単位でのデプロイが出来ない？と思われる（詳細は調べてないので本当に出来るかも微妙）。
+   - 【原案】[Auto trigger deploys on Netlify](https://flaviocopes.com/netlify-auto-deploy/)
+   - 【概要】事前に記事はgithub上にあげておく。Zapierで定期スケジュールを仕込む。Zapierの定期スケジュールでNetlifyのビルドが実行される。
+   - 【問題】時間単位でのデプロイとなるため、記事単位でのデプロイが出来ない？と思われる（詳細は調べてないので本当に出来るかも微妙）。
 
-3. ServerlessによるスケジューラをキックにPRのマージでデプロイを行う
+3. ServerlessによるスケジューラをキックにPRのマージでデプロイを行う  
 
-   [netlify/www-post-scheduler: This is a serverless function to auto publish blog posts](https://github.com/netlify/www-post-scheduler)
-
-  - 概要：Serverlessを使ってスケジューラシステムを構築→指定した時間にPRがmergeされる。
-  - 特徴：PR単位での投稿が可能。Netlifyのリポジトリになってるの公式の見解としてこの方法を推奨している模様。ただ、個人的に予約投稿のためだけにserverless＋AWSはオーバースペックなので使いたくない。ちなみに、仕組みはdynamoDBにてスケジュール持ち情報を持ち、Lambdaで実行、というシンプルな仕組みみたい。
+    - [netlify/www-post-scheduler: This is a serverless function to auto publish blog posts](https://github.com/netlify/www-post-scheduler)
+    - 【概要】Serverlessを使ってスケジューラシステムを構築→指定した時間にPRがmergeされる。
+    - 【所感】PR単位での投稿が可能なのは良い。また、Netlifyのリポジトリになってるの公式の見解としてこの方法を推奨している模様。ただ、個人的には予約投稿のためだけにserverless＋AWSはオーバースペックな気がする。せっかくEntlify＋Gatsbyで管理するサーバもない状況なのにスケジューラを建てなくはない。ちなみに、仕組みはdynamoDBにてスケジュール持ち情報を持ち、Lambdaで実行、というシンプルな仕組みみたい。
 
 4. Herokuにてスケジューラを構築してNetlifyのビルドを実行する
 
-   - 原案：[NetlifyとHerokuで予約投稿機能を実現する | WEB EGG](https://blog.leko.jp/post/automate-build-netlify-with-heroku/)
-   - 概要：Herokuを使ってcron作成してスケジューラを実現。
-   - せっかくNetlifyを使って管理するサーバを減らしたのに専用のサーバ立てるのは嫌なので没。
+   - 【原案】[NetlifyとHerokuで予約投稿機能を実現する | WEB EGG](https://blog.leko.jp/post/automate-build-netlify-with-heroku/)
+   - 【概要】Herokuを使ってcron作成してスケジューラを実現。
+   - 【問題】せっかくNetlifyを使って管理するサーバを減らしたのに専用のサーバ立てるのは嫌なので没。
 
 5. 記事に公開日を指定してGatsbyのビルド時にチェックかつNetlifyのビルドを定期的に行う
 
-   - 原案：[Scheduling Hugo posts on Netlify • Jerrie Pelser's Blog](https://www.jerriepelser.com/blog/scheduling-hugo-posts-on-netlify/)
-   - 概要：GatsbyJSのbuild対象を指定するpluginを作成・導入
-   - どうやらHugoではpublish_dateを指定すると期日を過ぎていない分はbuildされないみたいなので、同様にGatsbyJSでもビルド対象の記事を絞る機能を作る案。記事ファイルのマークダウンファイルのメタ情報にpublish_dateとかを入れてこの日付を元にgatsbyでビルドするかしないかをハンドリングする。その上で、Zapierで定期的にNetlifyのビルドを実行すれば、例えば1hごとにビルドを実行し、公開時間を過ぎていればその記事もビルド対象に含まれてビルドされて公開される。ビルド間隔が定期的かつ事前にコードプッシュしておけば自動的にリリースされる＋システム構築コストが低い、ので、この方法が一番良さそう。
+   - 【原案】[Scheduling Hugo posts on Netlify • Jerrie Pelser's Blog](https://www.jerriepelser.com/blog/scheduling-hugo-posts-on-netlify/)
+   - 【概要】記事毎にビルド対象時刻をハンドリングできるGatsbyのpluginを作成+Zapierで定期ビルド
+   - 【所感】Hugoでは`publish_date`を過ぎていない記事はbuildされないみたいなので、同様にGatsbyJSでも作る。その上で、Zapierで定期的にNetlifyのビルドを実行する。そうなると、例えば、1hごとにビルドを実行→公開時間を過ぎていればその記事がビルド対象に含まれてビルド→公開、という流れになる。ビルド間隔が定期的＋事前にコードプッシュしておけば自動的にリリースされる仕組み＋実装コストが（たぶん）低い＋管理コストが低い、という観点からこの方法が一番良さそうだった。
 
 ### 【問題③】excerptが正常に表示されない
 
