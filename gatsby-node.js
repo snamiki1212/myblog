@@ -129,7 +129,21 @@ exports.createPages = ({ graphql, actions }) => {
 
         const tagSet = new Set();
         const categorySet = new Set();
-        result.data.allMarkdownRemark.edges.forEach(edge => {
+        const posts = result.data.allMarkdownRemark.edges
+        const postsPerPage = 6
+        const numPages = Math.ceil(posts.length / postsPerPage)
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/` : `/${i + 1}`,
+            component: path.resolve("./src/templates/index.jsx"),
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+            },
+          })
+        })
+
+        posts.forEach(edge => {
           if (edge.node.frontmatter.tags) {
             edge.node.frontmatter.tags.forEach(tag => {
               tagSet.add(tag);

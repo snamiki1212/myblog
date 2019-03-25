@@ -28,10 +28,11 @@ class Index extends React.Component {
 export default Index;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query IndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      limit: 2000
       sort: { fields: [fields___date], order: DESC }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {
