@@ -8,7 +8,7 @@ import "./global.scss";
 require("prismjs/plugins/line-numbers/prism-line-numbers.css")
 
 export default class MainLayout extends React.Component {
-  isIndexPage = pathname => pathname == "/" || /\/\?/i.test(pathname)
+  isIndexPage = pathname => pathname == "/" || /\/[0-9]/.test(pathname)
   isAboutPage = pathname => /\/about/i.test(pathname)
   isTagsPage = pathname => /\/tags/i.test(pathname)
   isPostPage = pathname => ( !(this.isIndexPage(pathname) || this.isAboutPage(pathname) || this.isTagsPage(pathname)) )
