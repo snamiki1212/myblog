@@ -5,11 +5,13 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import HeaderTitle from "../components/HeaderTitle";
 import SEO from "../components/SEO";
+import Paginator from "../components/Paginator";
 import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
+
     return (
       <Layout location={this.props.location} title={<HeaderTitle />}>
         <div className="index-container">
@@ -19,6 +21,7 @@ class Index extends React.Component {
           </Helmet>
           <SEO postEdges={postEdges} />
           <PostListing postEdges={postEdges} />
+          <Paginator pageContext={this.props.pageContext}/>
         </div>
       </Layout>
     );
@@ -28,10 +31,11 @@ class Index extends React.Component {
 export default Index;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query IndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      limit: 2000
       sort: { fields: [fields___date], order: DESC }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {
