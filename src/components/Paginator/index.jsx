@@ -13,16 +13,7 @@ class Paginator extends Component{
 
     return(
       <div>
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
+        <ul className="paginator-list">
           {!isFirst && (
             <Link to={prevPage} rel="prev">
               ← Previous Page
@@ -37,6 +28,7 @@ class Paginator extends Component{
             >
               <Link
                 to={`/${i === 0 ? '' : i + 1}`}
+                className="paginator-link"
                 style={{
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
