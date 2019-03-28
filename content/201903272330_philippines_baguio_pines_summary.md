@@ -2,9 +2,10 @@
 title: "フィリピンのバギオにあるPINESってどんな学校？"
 cover:  201903272330_cover.jpg
 date: "2019-03-27 23:30"
-category: "XXX"
+category: "English"
 tags:
-    - xxx
+    - フィリピン留学
+    - 英語
 slug: philippines-baguio-pines-summary
 ---
 
