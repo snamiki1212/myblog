@@ -1,7 +1,7 @@
 ---
 title: "【泊まってきた】PINES新校舎の寮を紹介【ドミトリー】"
 cover: 201903291731_cover.jpg
-date: "2019-03-29 17:30"
+date: "2019-03-29 17:31"
 category: "English"
 tags:
     - フィリピン留学
