@@ -1,5 +1,5 @@
 ---
-title: "フィリピンのバギオにあるPINESってどんな学校？"
+title: "【実体験】バギオにあるPINESってどんな学校？【フィリピン留学】"
 cover:  201903272330_cover.jpg
 date: "2019-03-27 23:30"
 category: "English"
@@ -9,7 +9,9 @@ tags:
 slug: philippines-baguio-pines-summary
 ---
 
-# フィリピンにあるバギオのPINES（パインス）ってどんな学校？
+# 【実体験】バギオにあるPINESってどんな学校？【フィリピン留学】
+
+こんにちは。PINESに1ヶ月半、通っていたNashです。
 
 『フィリピン留学のエージェントに「PINESって学校がおすすめですよ！」って言われたけど、どんな学校なんだ？本当に良い学校なのか？』
 
@@ -38,7 +40,7 @@ slug: philippines-baguio-pines-summary
 
 正式名称は「Pines International Accademy」です。
 
-略名として「PIA」「PINES」とも呼ばれていますが、以後は「PINES」で統一します。
+略名として「PIA」「PINES」「パインス」とも呼ばれていますが、以後は「PINES」で統一します。
 
 フィリピンの学校は星の数ほどありますが、学校ごとに方針がかなり違います。
 
