@@ -1,5 +1,5 @@
 ---
-title: "【泊まってきた】PINES新校舎の寮を紹介【ドミトリー】"
+title: "【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【ドミトリー】"
 cover: 201903291731_cover.jpg
 date: "2019-03-29 17:31"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-baguio-pines-domitory
 ---
 
-# 【泊まってきた】PINES新校舎のキレイな寮を紹介【ドミトリー】
+# 【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【ドミトリー】
 
 こんにちは。PINESに1ヶ月半、通っていたNashです。
 

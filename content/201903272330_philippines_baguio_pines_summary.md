@@ -122,7 +122,10 @@ No | キャンパス名 | 英語レベル | 施設
 
     この記事でも基本的にこちらの校舎についてのみ言及していきます。
 
-
+    ここの内装についての詳細は下記の記事で紹介しています。
+    - [【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【ドミトリー】](./philippines-baguio-pines-domitory)
+    - [【実体験】PINES新校舎の設備を紹介【キレイな内装】](./philippines-baguio-pines-facility)
+    - [【レビュー】PINES新校舎の教室ってどうなの？【クラスルーム】](./philippines-baguio-pines-classroom)
 
 2. チャピスキャンパス
 
