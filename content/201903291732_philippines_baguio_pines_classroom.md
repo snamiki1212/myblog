@@ -9,7 +9,7 @@ tags:
 slug: philippines-baguio-pines-classroom
 ---
 
-# 【レビュー】PINES新校舎の教室ってどうなの？【クラスルーム】
+# 【レビュー】PINES新校舎の2種類の教室を解説【クラスルーム】
 
 こんにちは。PINESに1ヶ月半、通っていたNashです。
 
