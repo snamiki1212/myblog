@@ -261,7 +261,7 @@ Enumには、**複数のEnum関数を１つにまとめて提供されている�
 
 「サフィックスルール」「複合Enum関数」については下記の記事に記載してある。
 
-- [【Elixir】Enumを完全に理解する | 効率的なEnumの学習方法・暗黙のルール・意識すべきこと | ナミキログ](http://localhost:8000/elixir-enum-master)
+- [【Elixir】Enumを完全に理解する | 効率的なEnumの学習方法・暗黙のルール・意識すべきこと | ナミキログ](./elixir-enum-master)
 
 ## 関数型らしさはHaskellではなくJavaScriptで学ぶべきだった
 
