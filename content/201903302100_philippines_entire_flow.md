@@ -116,7 +116,8 @@ slug: philippines-entire-flow
 
 無事、学校についてから最初の一週間くらいは生活・クラスに慣れる必要があります。
 
-・TODO：最初の一週間はどうなのか？（クラスを受講、予習復習を必ず行う、日常で友人に英語を使う、レストランや店の人に、英語で話しかける）
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">ちなみに、自分のケースですが<br><br>一週間で生活サイクルが理解できます。<br>そこからは<br>・必要なモノの買い出し<br>・生活リズムを整える<br>・英語で会話するのに少しは慣れてくる<br>とかで、生活が安定し始めました。<br><br>というわけで、とにかく最初の一日目と一週間を頑張って過ごしましょうｗ</p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1100049489547616256?ref_src=twsrc%5Etfw">2019年2月25日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 逆に言えば、2週目くらいからは、すでにその生活に慣れ始めています。
 
