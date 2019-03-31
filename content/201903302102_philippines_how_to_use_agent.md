@@ -1,5 +1,5 @@
 ---
-title: "【エージェント最強】フィリピン留学での効率的な学校の探し方【セブとバギオでフィリピン留学】"
+title: "フィリピン留学で、効率的な学校の探し方【エージェント最強】"
 cover: 201903302102_cover.jpg
 date: "2019-03-30 21:02"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-how-to-use-agent
 ---
 
-# 【エージェント最強】フィリピン留学での効率的な学校の探し方【セブとバギオでフィリピン留学】
+# フィリピン留学で、効率的な学校の探し方【エージェント最強】
 
 こんにちは。仕事が終わらず徹夜しながら、学校探しもしていたNashです。
 
@@ -42,7 +42,7 @@ slug: philippines-how-to-use-agent
 
 流れは下記の記事で確認できるので、事前に明確にしておくを強くおすすめします。
 
-» [【失敗回避】学校選びの「条件」をどう決めるか【セブとバギオでフィリピン留学】](./philippines-own-condition-of-searching-school)
+» [【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験者済み】](./philippines-own-condition-of-searching-school)
 
 ---
 

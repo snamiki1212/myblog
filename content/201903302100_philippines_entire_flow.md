@@ -1,5 +1,5 @@
 ---
-title: "【失敗回避】フィリピン留学の全体の流れ【セブとバギオの実体験】"
+title: "【完全版】フィリピン留学の、全体の流れ"
 cover: 201903302100_cover.jpg
 date: "2019-03-30 21:00"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-entire-flow
 ---
 
-# 【失敗回避】フィリピン留学の全体の流れ【セブとバギオの実体験】
+# 【完全版】フィリピン留学の、全体の流れ
 
 こんにちは。フィリピン留学を失敗から巻き返したNashです。
 
@@ -51,7 +51,7 @@ slug: philippines-entire-flow
 
 ただ、大抵の人が、ここの深掘りが甘いので、下記に記事でまとめました。
 
-» [【失敗回避】学校選びの「条件」をどう決めるか【セブとバギオでフィリピン留学】](./philippines-own-condition-of-searching-school)
+» [【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験者済み】](./philippines-own-condition-of-searching-school)
 
 ネタバレですが、作った「自分の条件」は、後でエージェントに渡したり、先生に口頭で説明するので、少なくとも言語化して説明できるレベルにまで落とし込んでおきましょう。
 
@@ -66,7 +66,7 @@ slug: philippines-entire-flow
 
 エージェントを活用して探す流れは、下記を参考にしてください。
 
-» [【エージェント最強】フィリピン留学での効率的な学校の探し方【セブとバギオでフィリピン留学】](./philippines-how-to-use-agent)
+» [フィリピン留学で、効率的な学校の探し方【エージェント最強】](./philippines-how-to-use-agent)
 
 これで、エージェントが自分にあった学校をいくつもピックアップしてくれるはずです。
 
@@ -125,7 +125,7 @@ slug: philippines-entire-flow
 
 ちなみに、生活するときの部屋については下記で解説しています。
 
-» [【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【バギオでフィリピン留学】](./philippines-baguio-pines-domitory)
+» [【レビュー】PINES新校舎の「学生寮」に泊まってきた【バギオ】](./philippines-baguio-pines-domitory)
 
 
 ### 2. 授業をチューニング・コントロールする

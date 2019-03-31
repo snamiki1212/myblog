@@ -1,5 +1,5 @@
 ---
-title: "【実体験】PINESってどんな学校？【バギオでフィリピン留学】"
+title: "【レビュー】PINESって、どんな学校？【バギオでフィリピン留学してきた】"
 cover:  201903272330_cover.jpg
 date: "2019-03-27 23:30"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-baguio-pines-summary
 ---
 
-# 【実体験】PINESってどんな学校？【バギオでフィリピン留学】
+# 【レビュー】PINESって、どんな学校？【バギオでフィリピン留学してきた】
 
 こんにちは。PINESに1ヶ月半、通っていたNashです。
 
@@ -33,7 +33,7 @@ slug: philippines-baguio-pines-summary
 
 先に自分の結論ですが「良い学校なのか？」ではなく、「自分の目的に合っているか？」が学校選びにおいて何よりも重要でした。
 
-» [【留学失敗を回避】フィリピン留学の目的をキチンと考える【体験談】](./philippines-purpose)
+» [【留学失敗を回避】フィリピン留学の目的をキチンと考える【超重要】](./philippines-purpose)
 
 
 ## PINES（パインス）ってどんな学校？
@@ -126,9 +126,9 @@ No | キャンパス名 | 英語レベル | 施設
 
     ここの「生徒寮」「教室」については、下記の記事で紹介しています。
 
-    » [【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【バギオでフィリピン留学】](./philippines-baguio-pines-domitory)
+    » [【レビュー】PINES新校舎の「学生寮」に泊まってきた【バギオ】](./philippines-baguio-pines-domitory)
 
-    » [【勉強してきた】PINES新校舎の「教室」をレビュー【バギオでフィリピン留学】](./philippines-baguio-pines-classroom)
+    » [【レビュー】PINES新校舎の「教室」で勉強してきた【バギオ】](./philippines-baguio-pines-classroom)
 
 2. チャピスキャンパス
 
@@ -178,7 +178,7 @@ PINESの学校の種類として「マンモス校」と分類されます。
 
     新校舎の「設備」については下記の記事でまとめています。
 
-    » [【実際に使ってきた】PINES新校舎の「設備」をレビュー【バギオでフィリピン留学】](./philippines-baguio-pines-facility)
+    » [【レビュー】PINES新校舎の「設備」を使ってきた【バギオ】](./philippines-baguio-pines-facility)
 
 ### その④：「韓国資本」だが「フィリピン料理」が多い
 
