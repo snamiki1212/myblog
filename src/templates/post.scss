@@ -1,6 +1,7 @@
 @import "~react-md/src/scss/react-md";
 @import "../layout/theme.scss";
 @import "../layout/prism.scss";
+@import "../layout/global.scss";
 
 * {
   font-family: $md-base-font-family;
@@ -46,14 +47,22 @@ $phone-status-bar-height: 24px - 12px;
 
     .post-body {
       max-width: 100%;
+      @media screen and (max-width: $mobile-width) {
+        padding: 0;
+      }
+
       p {
-        font-size: 18px;
         line-height: 36px;
         margin-top: 36px;
         margin-bottom: 36px;
         margin-block-start: 1em;
         margin-block-end: 1em;
         color: #444444;
+
+        font-size: 18px;
+        @media screen and (max-width: $mobile-width) {
+          font-size: 16px;
+        }
       }
 
       a {
@@ -89,6 +98,11 @@ $phone-status-bar-height: 24px - 12px;
         padding-top: 10px;
         padding-bottom: 20px;
         font-size: 32px;
+
+        @media screen and (max-width: $mobile-width) {
+          font-size: 18px;  
+          color: #7B7B7B;
+        }
       }
       h2 {
         font-size: 27px;
