@@ -1,5 +1,5 @@
 ---
-title: "AmazonトップレビュワーなVineユーザを目指さ「なかった」話"
+title: "【Vineユーザ】私がなぜ、Amazonトップレビュワーを目指さ「ない」か【条件も整理】"
 cover: "201901210700_cover.jpg"
 date: "2019-01-21 07:00"
 category: "Poem"
@@ -8,7 +8,7 @@ tags:
 slug: not-to-be-amazon-reviewer
 ---
 
-# 【Vineユーザ】私がAmazonトップレビュワーをなぜ目指さ「ない」か【条件も整理】
+# 【Vineユーザ】私がなぜ、Amazonトップレビュワーを目指さ「ない」か【条件も整理】
 
 こんにちは、楽天よりもAmazon派のNashです。
 
@@ -16,7 +16,7 @@ slug: not-to-be-amazon-reviewer
 
 結論だけ先に書いておくと、<b>「Amazonというプラットフォームがイケてない」「旨味がすくなすぎる」というのが理由</b>です。
 
-## 【はじめに】AmazonレビュワーのVineについて調べ始めるまで
+## 【はじめに】キッカケはレビュー内容の質【Amazonレビュワーについて調べるまで】
 
 仕事が一段落ついた。
 
