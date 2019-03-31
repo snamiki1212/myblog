@@ -139,6 +139,9 @@ $list-background-color: #FAFAFA;
         background-color: $list-background-color;
 
         border: #444444 dashed 1px;
+        ul, ol{
+          border: none;
+        }
       }
       ul,
       li {
