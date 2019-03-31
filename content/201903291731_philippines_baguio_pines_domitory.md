@@ -1,5 +1,5 @@
 ---
-title: "【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【ドミトリー】"
+title: "【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【バギオでフィリピン留学】"
 cover: 201903291731_cover.jpg
 date: "2019-03-29 17:31"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-baguio-pines-domitory
 ---
 
-# 【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【ドミトリー】
+# 【泊まってきた】PINES新校舎の寮は最高レベルの自習環境【バギオでフィリピン留学】
 
 こんにちは。PINESに1ヶ月半、通っていたNashです。
 
@@ -19,9 +19,9 @@ slug: philippines-baguio-pines-domitory
 
 ちなみに、新校舎の「設備」ついては下記で紹介しています。
 
-» [【実体験】PINES新校舎の設備を紹介【キレイな内装】](./philippines-baguio-pines-facility)
+» [【実際に使ってきた】PINES新校舎の「設備」をレビュー【バギオでフィリピン留学】](./philippines-baguio-pines-facility)
 
-##  そもそもPINESってどんな学校？
+##  そもそもPINESってどんな学校？【フィリピンのバギオにある学校】
 
 フィリピンのバギオエリアにある10年以上の歴史がある英語学校で韓国資本のスパルタ校です。
 
