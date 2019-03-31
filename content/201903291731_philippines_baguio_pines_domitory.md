@@ -19,7 +19,7 @@ slug: philippines-baguio-pines-domitory
 
 ちなみに、新校舎の「設備」ついては下記で紹介しています。
 
-- [【実体験】PINES新校舎の設備を紹介【キレイな内装】](./philippines-baguio-pines-facility)
+» [【実体験】PINES新校舎の設備を紹介【キレイな内装】](./philippines-baguio-pines-facility)
 
 ##  そもそもPINESってどんな学校？
 
@@ -27,7 +27,7 @@ slug: philippines-baguio-pines-domitory
 
 そもそも、PINESについての全体的な情報は下記にまとめています。
 
-- [フィリピンにあるバギオのPINES（パインス）ってどんな学校？](./philippines-baguio-pines-summary)
+» [フィリピンにあるバギオのPINES（パインス）ってどんな学校？](./philippines-baguio-pines-summary)
 
 ## 4人部屋のシェアルーム
 
@@ -114,8 +114,11 @@ slug: philippines-baguio-pines-domitory
 
 やはり「新しく出来た建物」ということもありますが、このベッドフレームの設計自体が「学生のことをよく理解している」と思わせるだけの良さがあります。
 
-ちなみに、自分のTwitterの内容をDailyでまとめてあるので、興味がある人はこちらもどうぞ
+---
 
-- [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ→セブ)](https://twitter.com/i/moments/1108015112575541249)
+フィリピン留学中に毎日必ずTweetしてたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-「いいね」とかしてもらえると喜びます。
+» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ→セブ)](https://twitter.com/i/moments/1108015112575541249)
+
+「いいね」してもらえると喜びます。
+

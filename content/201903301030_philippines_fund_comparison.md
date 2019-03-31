@@ -59,7 +59,7 @@ slug: philippines-fund-comparison
 
 また、冒頭で書きましたが、自分は『PINES[韓国資本]→CEGA[日本資本]』と２つの資本の学校を経験しています。
 
-- [【実体験】バギオにあるPINESってどんな学校？【フィリピン留学】](./philippines-baguio-pines-summary)
+» [【実体験】バギオにあるPINESってどんな学校？【フィリピン留学】](./philippines-baguio-pines-summary)
 
 
 そのため、自分の体験ベースの比較を交えながら、それぞれの詳細を見ていきます。
@@ -70,7 +70,7 @@ slug: philippines-fund-comparison
 
 実体験ベースの詳細な解説は下記の記事で行っています。
 
-- [【実体験ベース】韓国資本の詳細を解説【フィリピン留学】](./philippines-fund-of-korea)
+» [【実体験ベース】韓国資本の詳細を解説【フィリピン留学】](./philippines-fund-of-korea)
 
 ### 【日本資本】自由な校風で安心なゆとり教育
 
@@ -78,7 +78,7 @@ slug: philippines-fund-comparison
 
 実体験ベースの詳細な解説は下記の記事で行っています。
 
-- [【実体験ベース】日本資本の詳細を解説【フィリピン留学】](./philippines-fund-of-japan)
+» [【実体験ベース】日本資本の詳細を解説【フィリピン留学】](./philippines-fund-of-japan)
 
 ## 【韓国資本？】あなたにおすすめなのは？【日本資本？】
 
@@ -108,7 +108,7 @@ slug: philippines-fund-comparison
 
 下記の記事で、フィリピン留学の「目的」についてまとめました。
 
-- [【失敗しないために】フィリピン留学の目的をキチンと考える【超重要】](./philippines-purpose)
+» [【失敗しないために】フィリピン留学の目的をキチンと考える【超重要】](./philippines-purpose)
 
 ## 終わりに
 
@@ -138,8 +138,10 @@ slug: philippines-fund-comparison
 
 ---
 
-自分のTwitterにて内容をDailyでまとめてあるので、興味がある人はこちらもどうぞ
+フィリピン留学中に毎日必ずTweetしてたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-- [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ→セブ)](https://twitter.com/i/moments/1108015112575541249)
+» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ→セブ)](https://twitter.com/i/moments/1108015112575541249)
 
-「いいね」とかしてもらえると喜びます。
+「いいね」してもらえると喜びます。
+
+
