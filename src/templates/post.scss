@@ -9,6 +9,10 @@
 
 $phone-status-bar-height: 24px - 12px;
 
+$h-left: darkgray;
+$h-background-color: #7B7B7B;
+$list-background-color: #FAFAFA;
+
 .post-page {
   display: flex;
   flex-direction: column;
@@ -103,7 +107,7 @@ $phone-status-bar-height: 24px - 12px;
 
         @media screen and (max-width: $mobile-width) {
           font-size: 18px;  
-          color: #7B7B7B;
+          color: $h-background-color;
         }
       }
       h2 {
@@ -111,11 +115,11 @@ $phone-status-bar-height: 24px - 12px;
         @media screen and (max-width: $mobile-width) {
           font-size: 18px;
         }
-        line-height: 32px;
-        padding-bottom: 8px;
-        border-bottom: solid 6px lightgray;
-        margin-top: 64px;
-        margin-bottom: 20px;
+        
+        padding: 10px;
+        border-left: 10px solid $h-left;
+        
+        background-color: #f7f7f7;
       }
       h3 {
         font-size: 20px;
@@ -123,8 +127,7 @@ $phone-status-bar-height: 24px - 12px;
           font-size: 18px;
         }
         padding-left: 10px;
-        border-left: 5px solid lightgray;
-        margin-left: 10px;
+        border-left: 5px solid $h-left;
 
         margin-top: 45px;
         white-space: normal
@@ -135,14 +138,25 @@ $phone-status-bar-height: 24px - 12px;
         color: red; // Dont use h4~h6, because it's deep nest.
       }
 
+      ul, ol{
+        list-style-position: inside;
+        padding: 10px;
+        background-color: $list-background-color;
+
+        border: #444444 dashed 1px;
+      }
       ul,
       li {
         font-size: 18px;
         @media screen and (max-width: $mobile-width) {
           font-size: 14px;
         }
+
         margin-top: 15px;
         color: #444444;
+        p {
+          display: inline;
+        }
       }
 
       /**
