@@ -51,7 +51,7 @@ slug: philippines-entire-flow
 
 ただ、大抵の人が、ここの深掘りが甘いので、下記に記事でまとめました。
 
-» [【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験者済み】](./philippines-own-condition-of-searching-school)
+» [【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験】](./philippines-own-condition-of-searching-school)
 
 ネタバレですが、作った「自分の条件」は、後でエージェントに渡したり、先生に口頭で説明するので、少なくとも言語化して説明できるレベルにまで落とし込んでおきましょう。
 

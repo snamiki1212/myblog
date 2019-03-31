@@ -42,7 +42,7 @@ slug: philippines-how-to-use-agent
 
 流れは下記の記事で確認できるので、事前に明確にしておくを強くおすすめします。
 
-» [【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験者済み】](./philippines-own-condition-of-searching-school)
+» [【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験】](./philippines-own-condition-of-searching-school)
 
 ---
 
