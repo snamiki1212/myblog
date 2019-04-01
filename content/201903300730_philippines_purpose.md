@@ -169,7 +169,7 @@ slug: philippines-purpose
 
 フィリピン留学のプロが無料で相談で相手になってくれます。
 
-» [留学エージェントを使った、おすすめの探し方【エージェントは複数使う】](./philippines-how-to-use-agent)
+» [留学エージェントを使った、おすすめの学校探し【エージェントは複数使う】](./philippines-how-to-use-agent)
 
 ---
 
