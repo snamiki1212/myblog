@@ -1,5 +1,5 @@
 
-[ナミキログ](https://snamiki1212.com)'s repository.
+Blog [Lunash](https://snamiki1212.com) repository.
 
 ## Usage
 

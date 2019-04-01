@@ -1,9 +1,9 @@
 // set SiteConfig
 module.exports = {
   // for site
-  siteTitle: "ナミキログ", // Site title.
+  siteTitle: "Lunash", // Site title.
   siteTitleShort: "先端技術を追いかけるエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "ナミキログ", // Alternative site title for SEO.
+  siteTitleAlt: "Lunash", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://snamiki1212.com", // Domain of your website without pathPrefix.
   siteRepository: "https://github.com/snamiki1212/myblog", // Repository of your site
