@@ -1,5 +1,5 @@
 ---
-title: "【レビュー】韓国資本と日本資本の違いを比較してきた"
+title: "【フィリピン留学】日本資本・韓国資本の学校を比較してきた【実体験】"
 cover: 201903301200_cover.jpg
 date: "2019-03-30 12:00"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-fund-comparison
 ---
 
-# 【レビュー】韓国資本と日本資本の違いを比較してきた
+# 【フィリピン留学】日本資本・韓国資本の学校を比較してきた【実体験】
 
 こんにちは。フィリピンで、PINES[韓国資本]→CEGA[日本資本]と２つの学校を経験したNashです。
 
@@ -59,7 +59,7 @@ slug: philippines-fund-comparison
 
 また、冒頭で書きましたが、自分は『PINES[韓国資本]→CEGA[日本資本]』と２つの資本の学校を経験しています。
 
-» [【レビュー】PINESって、どんな学校？【バギオでフィリピン留学してきた】](./philippines-baguio-pines-summary)
+» [【PINES｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
 
 
 そのため、自分の体験ベースの比較を交えながら、それぞれの詳細を見ていきます。
@@ -70,7 +70,7 @@ slug: philippines-fund-comparison
 
 実体験ベースの詳細な解説は下記の記事で行っています。
 
-» [【学校】韓国資本の特長を解説【バギオでフィリピン留学してきた】](./philippines-fund-of-korea)
+» [【バギオ留学】韓国資本の学校に通ってきた](./philippines-fund-of-korea)
 
 ### 【日本資本】自由な校風で安心なゆとり教育
 
@@ -78,7 +78,7 @@ slug: philippines-fund-comparison
 
 実体験ベースの詳細な解説は下記の記事で行っています。
 
-» [【学校】日本資本の特長を解説【セブでフィリピン留学してきた】](./philippines-fund-of-japan)
+» [【セブ留学】日本資本の学校に通ってきた](./philippines-fund-of-japan)
 
 ## 【韓国資本？】あなたにおすすめなのは？【日本資本？】
 
@@ -108,7 +108,7 @@ slug: philippines-fund-comparison
 
 下記の記事で、フィリピン留学の「目的」についてまとめました。
 
-» [フィリピン留学の目的を深掘りする【留学失敗を回避】](./philippines-purpose)
+» [留学目的を考える【留学失敗を回避】](./philippines-purpose)
 
 ## 終わりに
 

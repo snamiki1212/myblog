@@ -1,5 +1,5 @@
 ---
-title: "【食事】学校の食べ物がマズいと、ご飯以外の問題も起きた【フィリピン留学】"
+title: "フィリピンの食べ物を侮っていた【留学失敗】"
 cover: 201903311601_cover.jpg
 date: "2019-03-31 16:01"
 category: "English"
@@ -7,13 +7,9 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-baguio-pines-food
-target-keyword:
-    - フィリピン　食べ物
-    - フィリピン　食事
-    - フィリピン　ご飯
 ---
 
-# 【食事】学校の食べ物がマズいと、ご飯以外の問題も起きた【フィリピン留学】
+# フィリピンの食べ物を侮っていた【留学失敗】
 
 こんにちは、Nashです。好きなレストランは、サイゼリアです。
 
@@ -365,7 +361,7 @@ Days 48: #100DaysOfEnglish #フィリピン留学 #セブ留学 #留学 #英会�
 
 そのため、「味が激マズ」とか「自分が何を食べているのか、わからない」みたいな、食事中に謎の不思議体験をすることは無いです。
 
-» [【学校】日本資本の特長を解説【セブでフィリピン留学してきた】](.//philippines-fund-of-japan)
+» [【セブ留学】日本資本の学校に通ってきた](.//philippines-fund-of-japan)
 
 PINESを卒業した後に、CEGAに転校したのですが、ここでは、３食とも美味しいので、順調に太り始めてます。
 
@@ -373,13 +369,13 @@ PINESを卒業した後に、CEGAに転校したのですが、ここでは、�
 
 PINESについては、他の観点でもレビューしているので、よければこちらもどうぞ。
 
-» [【レビュー】PINESって、どんな学校？【バギオでフィリピン留学してきた】](./philippines-baguio-pines-summary)
+» [【PINES｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
 
-» [【レビュー】PINES新校舎の「設備」を使ってきた【バギオ】](./philippines-baguio-pines-facility)
+» [【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
 
-» [【レビュー】PINES新校舎の「学生寮」に泊まってきた【バギオ】](./philippines-baguio-pines-domitory)
+» [【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
 
-» [【レビュー】PINES新校舎の「教室」で勉強してきた【バギオ】](./philippines-baguio-pines-classroom)
+» [【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
 
 ---
 

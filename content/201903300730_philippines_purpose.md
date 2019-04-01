@@ -1,5 +1,5 @@
 ---
-title: "フィリピン留学の目的を深掘りする【留学失敗を回避】"
+title: "留学目的を考える【留学失敗を回避】"
 cover: 201903300730_cover.jpg
 date: "2019-03-30 07:30"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-purpose
 ---
 
-# フィリピン留学の目的を深掘りする【留学失敗を回避】
+# 留学目的を考える【留学失敗を回避】
 
 バギオとセブの2エリアでフィリピン留学を経験したNashです。
 
@@ -169,7 +169,7 @@ slug: philippines-purpose
 
 フィリピン留学のプロが無料で相談で相手になってくれます。
 
-» [フィリピン留学で、効率的な学校の探し方【エージェント最強】](./philippines-how-to-use-agent)
+» [留学エージェントを使った、おすすめの探し方【エージェントは複数使う】](./philippines-how-to-use-agent)
 
 ---
 

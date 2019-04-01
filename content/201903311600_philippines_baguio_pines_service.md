@@ -1,5 +1,5 @@
 ---
-title: "【レビュー】PINES新校舎の「サービス」を体感してきた【WIFI】"
+title: "【PINES｜バギオ】新校舎の「サービス」を体験してきた【フィリピン留学】"
 cover: 201903311600_cover.jpg
 date: "2019-03-31 16:00"
 category: "English"
@@ -11,7 +11,7 @@ target-keyword:
     - PINES WIFI
 ---
 
-# 【レビュー】PINES新校舎の「サービス」を体感してきた【WIFI】
+# 【PINES｜バギオ】新校舎の「サービス」を体験してきた【フィリピン留学】
 
 こんにちは。PINESに1ヶ月半、通っていたNashです。
 
@@ -309,7 +309,7 @@ EOPがなくても、「常に英語を喋ろう」と思っていた自分で�
 
 食事の味があまりにひどく、それがが原因で起きた問題について、体験記の記事を下記にまとめました。
 
-» [【食事】学校の食べ物がマズいと、ご飯以外の問題も起きた【フィリピン留学】](./philippines-baguio-pines-food)
+» [フィリピンの食べ物を侮っていた【留学失敗】](./philippines-baguio-pines-food)
 
 ネタバレすると、2週間近く体調が悪くなって、勉強どころではなくなってしまいました。
 
@@ -447,13 +447,13 @@ PINESを検討している人の助けに慣れば幸いです。
 
 他の観点でもレビューしているので、よければこちらもどうぞ。
 
-» [【レビュー】PINESって、どんな学校？【バギオでフィリピン留学してきた】](./philippines-baguio-pines-summary)
+» [【PINES｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
 
-» [【レビュー】PINES新校舎の「設備」を使ってきた【バギオ】](./philippines-baguio-pines-facility)
+» [【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
 
-» [【レビュー】PINES新校舎の「学生寮」に泊まってきた【バギオ】](./philippines-baguio-pines-domitory)
+» [【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
 
-» [【レビュー】PINES新校舎の「教室」で勉強してきた【バギオ】](./philippines-baguio-pines-classroom)
+» [【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
 
 ---
 

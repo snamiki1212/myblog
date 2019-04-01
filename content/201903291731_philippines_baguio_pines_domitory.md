@@ -1,5 +1,5 @@
 ---
-title: "【レビュー】PINES新校舎の「学生寮」に泊まってきた【バギオ】"
+title: "【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】"
 cover: 201903291731_cover.jpg
 date: "2019-03-29 17:31"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-baguio-pines-domitory
 ---
 
-# 【レビュー】PINES新校舎の「学生寮」に泊まってきた【バギオ】
+# 【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】
 
 こんにちは。PINESに1ヶ月半、通っていたNashです。
 
@@ -19,7 +19,7 @@ slug: philippines-baguio-pines-domitory
 
 ちなみに、新校舎の「設備」ついては下記で紹介しています。
 
-» [【レビュー】PINES新校舎の「設備」を使ってきた【バギオ】](./philippines-baguio-pines-facility)
+» [【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
 
 ##  そもそもPINESってどんな学校？【フィリピンのバギオにある学校】
 

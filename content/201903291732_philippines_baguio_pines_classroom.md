@@ -1,5 +1,5 @@
 ---
-title: "【レビュー】PINES新校舎の「教室」で勉強してきた【バギオ】"
+title: "【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】"
 cover: 201903291732_cover.jpg
 date: "2019-03-29 17:32"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-baguio-pines-classroom
 ---
 
-# 【レビュー】PINES新校舎の「教室」で勉強してきた【バギオ】
+# 【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】
 
 こんにちは。PINESに1ヶ月半、通っていたNashです。
 

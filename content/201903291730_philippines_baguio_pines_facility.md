@@ -1,5 +1,5 @@
 ---
-title: "【レビュー】PINES新校舎の「設備」を使ってきた【バギオ】"
+title: "【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】"
 cover: 201903291730_cover.jpg
 date: "2019-03-29 17:30"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-baguio-pines-facility
 ---
 
-# 【レビュー】PINES新校舎の「設備」を使ってきた【バギオ】
+# 【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】
 
 こんにちは。PINESに1ヶ月半通っていたNashです。
 
@@ -194,7 +194,7 @@ PCを使った試験を受ける際にここで受講します。
 
 下記の記事で、各ポイントごとに詳しく書いています。
 
-» [【レビュー】PINES新校舎の「学生寮」に泊まってきた【バギオ】](./philippines-baguio-pines-domitory)
+» [【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
 
 結論だけ書いておくと、シェアルームはかなりクオリティが高いのでオススメです。
 
@@ -204,7 +204,7 @@ PINESでは大きく分けて「個人教室」「グループ教室」の２つ
 
 詳細は下記でレビューしています。
 
-» [【レビュー】PINES新校舎の「教室」で勉強してきた【バギオ】](./philippines-baguio-pines-classroom)
+» [【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
 
 ## 最後に
 

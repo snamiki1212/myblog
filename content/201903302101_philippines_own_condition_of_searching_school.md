@@ -1,5 +1,5 @@
 ---
-title: "【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験】"
+title: "【留学失敗を回避】学校選びの「条件」をどう決めるか【経験者】"
 cover: 201903302101_cover.jpg
 date: "2019-03-30 21:01"
 category: "English"
@@ -9,7 +9,7 @@ tags:
 slug: philippines-own-condition-of-searching-school
 ---
 
-# 【失敗回避】学校選びの「条件」をどう決めるか【2つの学校を経験】
+# 【留学失敗を回避】学校選びの「条件」をどう決めるか【経験者】
 
 こんにちは。フィリピン留学を失敗から巻き返したNashです。
 
@@ -30,7 +30,7 @@ slug: philippines-own-condition-of-searching-school
 
 下記の記事で、フィリピン留学における流れの全体像を解説しています。
 
-» [【完全版】フィリピン留学の、全体の流れ](./philippines-entire-flow)
+» [フィリピン留学の、全体の流れ【完全版】](./philippines-entire-flow)
 
 ただ、事前に伝えておくと、自分の条件を深掘りして学校を選んでも、失敗確率を０％にすることは出来ないことは認識しておいてください。
 
@@ -57,7 +57,7 @@ slug: philippines-own-condition-of-searching-school
 
 目的の深掘りは自問自答していけばOKですが、詳細は下記での記事でまとめています。
 
-» [フィリピン留学の目的を深掘りする【留学失敗を回避】](./philippines-purpose)
+» [留学目的を考える【留学失敗を回避】](./philippines-purpose)
 
 目安として、人に説明できるレベルにまで落とし込んでおきましょう。
 
