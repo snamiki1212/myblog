@@ -1,5 +1,5 @@
 ---
-title: "フィリピンでも日本の食べ物、吉野家(Yoshinoya)を食べてきた話"
+title: "フィリピンで日本の食べ物を食べたくて、吉野家(Yoshinoya)に行ってきた話"
 cover: 201904021630_cover.jpg
 date: "2019-04-20 16:30"
 category: "English"
