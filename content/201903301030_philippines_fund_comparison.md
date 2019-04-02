@@ -70,7 +70,7 @@ slug: philippines-fund-comparison
 
 実体験ベースの詳細な解説は下記の記事で行っています。
 
-» [【バギオ留学】韓国資本の学校に通ってきた](./philippines-fund-of-korea)
+» [【バギオ留学】韓国資本の学校に通ってきた【フィリピン】](./philippines-fund-of-korea)
 
 ### 【日本資本】自由な校風で安心なゆとり教育
 
@@ -78,7 +78,7 @@ slug: philippines-fund-comparison
 
 実体験ベースの詳細な解説は下記の記事で行っています。
 
-» [【セブ留学】日本資本の学校に通ってきた](./philippines-fund-of-japan)
+» [【セブ留学】日本資本の学校に通ってきた【フィリピン】](./philippines-fund-of-japan)
 
 ## 【韓国資本？】あなたにおすすめなのは？【日本資本？】
 
