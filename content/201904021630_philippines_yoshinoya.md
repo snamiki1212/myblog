@@ -17,6 +17,10 @@ SEO-keyword:
 
 この記事では、「フィリピンの吉野家に行ってきたので、その紹介」という、記事です。
 
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 58: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>✅フィリピンにも、吉野家があってので、行ってみた<br><br>→スタッフの挨拶は流暢な「いらっしゃいませ〜」。英語じゃないのか、感。<br><br>✅「牛丼＋飲み物」で260円(130ペソ)だし、日本よりも美味いしで、ヘビロテ確定 <a href="https://t.co/hTkkFI1xmi">pic.twitter.com/hTkkFI1xmi</a></p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1112867400200810498?ref_src=twsrc%5Etfw">2019年4月2日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 結論は、「日本よりも、速い・安い・美味い」ので、おすすめ。
 
 ## フィリピンの吉野家って？日本と食べ物は変わらない？
