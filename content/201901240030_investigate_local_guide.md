@@ -6,6 +6,8 @@ category: "Poem"
 tags:
     - poem
 slug: investigate-local-guide
+SEO-keyword:
+    - ローカル ガイド サンフランシスコ
 ---
 
 # ローカルガイドになって、サンフランシスコを目指すことにした話
@@ -31,7 +33,7 @@ slug: investigate-local-guide
 
 詳細は下記の記事でまとめています。
 
-» [Amazon vineユーザを、私がなぜ目指さ「ない」か【戦略レベルでの失敗】](not-to-be-amazon-reviewer)
+» [AmazonVineメンバーを、私がなぜ目指さないか←現状がやばい](not-to-be-amazon-reviewer)
 
 そこで、別のプラットフォームとして、ローカルガイドについて確認したところ、自分好みの観点が多かったのが、理由です。
 
