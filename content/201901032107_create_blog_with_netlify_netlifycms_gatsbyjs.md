@@ -16,13 +16,21 @@ slug: create-blog-with-netlify-netlifycms-gatsbyjs
 
 そもそも、前提としてそれぞれの用語についての簡単な説明をしていく。
 
-- [JAMStack](https://jamstack.org/)：アーキテクチャの１つ。JavaScript + APIs + Markupで構成されたシステム。
+### [JAMStack](https://jamstack.org/)
 
-- [Netlify](https://www.netlify.com/)：ホスティングサービスの１つ。もし昔の自分にNetlifyを説明するなら　「静的サイト用heroku + CirclCIみたいなイケてるCIがall-in-oneで提供されているホスティングサービス」というイメージが一番しっくりくる。
+アーキテクチャの１つ。JavaScript + APIs + Markupで構成されたシステム。
 
-- [Netlify CMS](https://www.netlifycms.org/)：CMSの１つ。特徴はOSSでcommunity-drivenなので健全なheadless CMS。contentfulと迷ったけど、まずは　Netlifyと親和性が高いNetlifyCMSにすることにした。こなれてきたら他のHeadlessCMSも使ってみようかな、と気軽にCMSを変えられるのもHeadlessCMSならではの良さ。ただ、結局CMSはほとんど使ってない。
+### [Netlify](https://www.netlify.com/)
 
-- [GatsbyJS](https://www.gatsbyjs.org/)：静的サイトジェネレータの１つ。GraphQL + Reactが使われているのが特徴。WordPressと比較するとReactですべて書かれている分、メンテ性がかなり高い。が、逆にReact知らない人からすると学習コストもかなり高い。
+ホスティングサービスの１つ。もし昔の自分にNetlifyを説明するなら　「静的サイト用heroku + CirclCIみたいなイケてるCIがall-in-oneで提供されているホスティングサービス」というイメージが一番しっくりくる。
+
+### [Netlify CMS](https://www.netlifycms.org/)
+
+CMSの１つ。特徴はOSSでcommunity-drivenなので健全なheadless CMS。contentfulと迷ったけど、まずは　Netlifyと親和性が高いNetlifyCMSにすることにした。こなれてきたら他のHeadlessCMSも使ってみようかな、と気軽にCMSを変えられるのもHeadlessCMSならではの良さ。ただ、結局CMSはほとんど使ってない。
+
+### [GatsbyJS](https://www.gatsbyjs.org/)
+
+静的サイトジェネレータの１つ。GraphQL + Reactが使われているのが特徴。WordPressと比較するとReactですべて書かれている分、メンテ性がかなり高い。が、逆にReact知らない人からすると学習コストもかなり高い。
 
 ## 💻Netlify・Netlify CMS・GatsbyJSでの構築
 
@@ -36,7 +44,7 @@ slug: create-blog-with-netlify-netlifycms-gatsbyjs
 
 ちなみに下記のテーマをベースにブログを作り始めた。
 
-- [Vagr9K/gatsby-material-starter: A high performance blog starter with Material design in mind for GatsbyJS.](https://github.com/Vagr9K/gatsby-material-starter)
+» [Vagr9K/gatsby-material-starter: A high performance blog starter with Material design in mind for GatsbyJS.](https://github.com/Vagr9K/gatsby-material-starter)
 
 ### 【問題①】RSSが機能しない
 
@@ -52,16 +60,17 @@ RSSを設定して記事をポストしてもリーダーがRSSを取得しな�
 
 何はともあれ切り分けのために下記の解析ツールから使うべきだった。
 
-- [W3C Feed Validation Service, for Atom and RSS](https://validator.w3.org/feed/)
+» [W3C Feed Validation Service, for Atom and RSS](https://validator.w3.org/feed/)
 
 この解析サイトでRSSのデータ構造的がinvalid / validかを判断してくれる。
 その結果、「successful!!」とはならず、「invalidなデータがあるよ〜」となっていた。
 原因は、author タグがitemタグの外に定義されているのでinvalidなデータになっていたところ。
 
 このテーマのフォーク元の方に[雑な感じでPR出しておいた](https://github.com/Vagr9K/gatsby-advanced-starter/pull/49)が、少なくとも自分の環境では直っているのでこれで解決。
+→ Fixしてもらえました(2019/04/02)
 
 ちなみに、RSSが準備されているように見えて実は動かない状態、となっているわけだが、PRを出した先はGatsbyJSのトップページに載っているくらい勢いのあるものだった。
-先端の技術スタックを選んだ際はこういうのとも戦わないと行けないんだよなーというケースとぶつかれたのは良かった。ハマった時は辛かったが。
+「先端の技術スタックを選んだ際は、こういうのとも戦わないと行けないんだよなー」というケースとぶつかれたのは良かった。ハマった時は辛かったが。
 
 
 
@@ -75,7 +84,7 @@ RSSを設定して記事をポストしてもリーダーがRSSを取得しな�
 
 1. フロントのロジックで非表示にして`watchable_at`の時間を過ぎたら表示する
 
-   事前にデプロイしておきフロントのロジックで表示させない方法。セキュアな要件もないしこれで良いかなー、と思ったが、デプロイ時に行われるGatsbyJS buildの時点でRSSが生成されてしまうので没案。そもそも、脳筋なやり方なので微妙ですね。
+    - 事前にデプロイしておきフロントのロジックで表示させない方法。セキュアな要件もないしこれで良いかなー、と思ったが、デプロイ時に行われるGatsbyJS buildの時点でRSSが生成されてしまうので没案。そもそも、脳筋なやり方なので微妙ですね。
 
 2. ZapierのスケジューラとWebhookでNetlifyのビルドを行う
 
@@ -107,7 +116,7 @@ RSSを設定して記事をポストしてもリーダーがRSSを取得しな�
 
 excerptとは、「抜粋」で例えばブログ記事の一覧を表示したときそれぞれのプログ記事の先頭行数分を抜粋して表示するようなもの。このexcerptの表示だが正常に表示されなかった。ただ、その対応についてtrouble shootingに書いてあるので「GraphQLのqueryをexcerpt からexcerpt(truncate: true)にするように」とのこと。欲を言えばデフォルトで設定しておいてほしいが・・・。調べればわかるものだったので許容範囲。
 
-- [gatsby-transformer-remark | GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
+» [gatsby-transformer-remark | GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
 
 
 ### 【問題④】Twitter-cardに画像が正常に表示されない
@@ -124,21 +133,21 @@ Twitter-cardとは、TwitterでURLを貼った時にTwitter上で表示される
 
 - 非エンジニアが構築するブログ
 
-  素直にWordPressでの自前実装かMedium/note/はてぶ...etcなどのサービスを使うべき。背伸びをしてもWordPressまでにしておくべき。GatsbyJSのコミュニティ・技術が成熟していないものを非エンジニアが選定するのは「難易度が高い〜」のレベルではなく、もはや構築・メンテができないと思う。
+  - 素直にWordPressでの自前実装かMedium/note/はてぶ...etcなどのサービスを使うべき。背伸びをしてもWordPressまでにしておくべき。GatsbyJSのコミュニティ・技術が成熟していないものを非エンジニアが選定するのは「難易度が高い〜」のレベルではなく、もはや構築・メンテができないと思う。
 
 - 記事を書くことに焦点を絞りたい人
 
-  Netlifyの提供されているSterter-kitをポチポチだけなら、かなり早くできる。ただ、そのあとにこだわり出すとそれなりに時間がかかる。ただし、要領が良い人やメンターが居る人やReactチョットデキる人なら、かなり簡単に導入できると思うので、この技術スタックでも良いと思う。
+  - Netlifyの提供されているSterter-kitをポチポチだけなら、かなり早くできる。ただ、そのあとにこだわり出すとそれなりに時間がかかる。ただし、要領が良い人やメンターが居る人やReactチョットデキる人なら、かなり簡単に導入できると思うので、この技術スタックでも良いと思う。
 
 - WordPressエンジニア
 
-  「ブログ構築」ということでWordPressの延長かと思っていたが、技術スタックがWordPressからの延長ではなく完全にイマドキのフロントエンドの延長だった。そのためWordPressエンジニアがガチで始めると学習コストが高すぎると思う。WordPressエンジニアのキャリア傾向的にも攻めた技術よりも枯れた技術を狙う傾向があると思うので相性は微妙な気もするのでおすすめはしない。
+  - 「ブログ構築」ということでWordPressの延長かと思っていたが、技術スタックがWordPressからの延長ではなく完全にイマドキのフロントエンドの延長だった。そのためWordPressエンジニアがガチで始めると学習コストが高すぎると思う。WordPressエンジニアのキャリア傾向的にも攻めた技術よりも枯れた技術を狙う傾向があると思うので相性は微妙な気もするのでおすすめはしない。
 
 ## 🙆‍♀️Netlify+GatsbyJSをおすすめするケース
 
 - WordPressで消耗しているReact系ができるフロントエンド
 
-  WordPressだとWordPress特有の動きからメンテが辛くなるケースがあると思う。だが、GatsbyJSではReactで構築されている。そのため、Reactがわかる人ならメンテコストはかなり低い。
+  - WordPressだとWordPress特有の動きからメンテが辛くなるケースがあると思う。だが、GatsbyJSではReactで構築されている。そのため、Reactがわかる人ならメンテコストはかなり低い。
 
 ## 🤔所感
 
