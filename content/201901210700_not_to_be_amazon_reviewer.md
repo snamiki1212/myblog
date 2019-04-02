@@ -1,5 +1,5 @@
 ---
-title: "【Vineユーザ】私がなぜ、Amazonトップレビュワーを目指さ「ない」か【条件も整理】"
+title: "Amazon vineユーザを、私がなぜ目指さ「ない」か【戦略レベルでの失敗】"
 cover: "201901210700_cover.jpg"
 date: "2019-01-21 07:00"
 category: "Poem"
@@ -7,7 +7,6 @@ tags:
     - poem
 slug: not-to-be-amazon-reviewer
 ---
-
 
 # Amazon vineユーザを、私がなぜ目指さ「ない」か【戦略レベルでの失敗】
 
