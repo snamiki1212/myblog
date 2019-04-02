@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-baguio-pines-summary
+SEO-keyword:
+    - PINES バギオ
 ---
 
 # 【PINES｜バギオ】パインスを完全レビュー【経験談】

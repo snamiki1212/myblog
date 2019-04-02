@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-purpose
+SEO-keyword:
+    - 留学 目的
 ---
 
 # 留学目的を考える【留学失敗を回避】

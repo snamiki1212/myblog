@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-fund-comparison
+SEO-keyword:
+    - x
 ---
 
 # 【フィリピン留学】日本資本・韓国資本の学校を比較してきた【実体験】

@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-baguio-pines-classroom
+SEO-keyword:
+    - PINES バギオ
 ---
 
 # 【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】

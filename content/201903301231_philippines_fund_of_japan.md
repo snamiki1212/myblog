@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-fund-of-japan
+SEO-keyword:
+    - x
 ---
 
 # 【セブ留学】日本資本の学校に通ってきた【フィリピン】

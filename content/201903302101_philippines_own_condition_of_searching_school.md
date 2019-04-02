@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-own-condition-of-searching-school
+SEO-keyword:
+    - 留学 失敗
 ---
 
 # 【留学失敗を回避】学校選びの「条件」をどう決めるか【経験者】

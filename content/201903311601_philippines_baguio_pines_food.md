@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-baguio-pines-food
+SEO-keyword:
+    - フィリピン　食べ物
 ---
 
 # フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】

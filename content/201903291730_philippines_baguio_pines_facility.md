@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-baguio-pines-facility
+SEO-keyword:
+    - PINES バギオ
 ---
 
 # 【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】

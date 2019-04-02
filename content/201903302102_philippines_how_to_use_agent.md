@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-how-to-use-agent
+SEO-keyword:
+    - xxx
 ---
 
 # 留学エージェントを使った、おすすめの学校探し【エージェントは複数使う】

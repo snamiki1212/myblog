@@ -6,6 +6,8 @@ category: "Poem"
 tags:
     - poem
 slug: not-to-be-amazon-reviewer
+SEO-keyword:
+    - amazon vine
 ---
 
 # Amazon vineユーザを、私がなぜ目指さ「ない」か【戦略レベルでの失敗】
@@ -264,7 +266,7 @@ Vineユーザになると「特定の商品を無料でもらう代わりにレ�
 
 詳細は下記の記事で、まとめています。
 
-» [GoogleLocalGuideになった話](./investigate-local-guide)
+» [ローカルガイドになって、サンフランシスコを目指すことにした話](./investigate-local-guide)
 
 金銭面　でのインセンティブが無いが、「デジタル資産」や「プラットフォームがコントリビュータを大事にしている」と感じたあたりが決め手。
 

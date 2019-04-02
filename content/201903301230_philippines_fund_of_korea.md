@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-fund-of-korea
+SEO-keyword:
+    - x
 ---
 
 # 【バギオ留学】韓国資本の学校に通ってきた【フィリピン】

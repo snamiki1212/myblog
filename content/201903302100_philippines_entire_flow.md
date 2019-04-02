@@ -7,6 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-entire-flow
+SEO-keyword:
+    - x
 ---
 
 # フィリピン留学の、全体の流れ【完全版】

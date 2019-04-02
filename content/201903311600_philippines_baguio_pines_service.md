@@ -7,8 +7,8 @@ tags:
     - フィリピン留学
     - 英語
 slug: philippines-baguio-pines-service
-target-keyword:
-    - PINES WIFI
+SEO-keyword:
+    - PINES バギオ
 ---
 
 # 【PINES｜バギオ】新校舎の「サービス」を体験してきた【フィリピン留学】
