@@ -8,7 +8,7 @@ tags:
     - 英語
 slug: philippines-paolitos
 SEO-keyword:
-    - フィリピン 食べ物 魚
+    - フィリピン 魚　食べ物
 ---
 
 # フィリピンで魚の食べ物が美味しい、PAOLITO'Sに行ってきた
