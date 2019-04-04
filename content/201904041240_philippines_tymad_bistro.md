@@ -1,5 +1,5 @@
 ---
-title: "【フィリピン｜食べ物】甘いケーキならTymad Bistro最強"
+title: "フィリピンの食べ物がマズい？甘いケーキのTymad Bistroオススメ"
 cover: 201904041600_cover.jpg
 date: "2019-04-04 16:00"
 category: "Poem"
@@ -11,7 +11,7 @@ SEO-keyword:
     - フィリピン 食べ物 甘い
 ---
 
-# 【フィリピン｜食べ物】甘いケーキならTymad Bistro最強
+# フィリピンの食べ物がマズい？甘いケーキのTymad Bistroオススメ
 
 こんにちは、フィリピンの甘い料理に飽き飽きしているNashです。
 
@@ -21,7 +21,7 @@ SEO-keyword:
 
 では、見ていきましょう。
 
-## 【フィリピン｜食べ物】甘いケーキならTymad Bistro最強
+## フィリピンの食べ物がマズい？甘いケーキのTymad Bistroオススメ
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.971564592089!2d123.90994178918879!3d10.344158711338101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a998e8766e6377%3A0x4d2b0bc8be9a540f!2sTymad+Bistro!5e0!3m2!1sja!2sph!4v1554363015339!5m2!1sja!2sph" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
