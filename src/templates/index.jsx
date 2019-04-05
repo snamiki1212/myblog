@@ -6,7 +6,9 @@ import PostListing from "../components/PostListing";
 import HeaderTitle from "../components/HeaderTitle";
 import SEO from "../components/SEO";
 import Paginator from "../components/Paginator";
+import Sidebar from "../components/Sidebar";
 import config from "../../data/SiteConfig";
+import './index.scss';
 
 class Index extends React.Component {
   render() {
@@ -20,8 +22,13 @@ class Index extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
           <SEO postEdges={postEdges} />
-          <PostListing postEdges={postEdges} />
-          <Paginator pageContext={this.props.pageContext}/>
+          <div className='index-content'>
+            <div className="index-post-wrapper">
+              <PostListing postEdges={postEdges} />
+              <Paginator pageContext={this.props.pageContext}/>
+            </div>
+            <Sidebar />
+          </div>
         </div>
       </Layout>
     );
