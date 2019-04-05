@@ -12,9 +12,8 @@ class Author extends Component {
           className="avator"
           alt={config.userName}
         />
-        <div className='avator'>{config.userName}</div>
+        <div className='name'>{config.userName}</div>
         <div className='discription'>{config.userDescription}</div>
-        <div className='links'>Links</div>
       </div>
     );
   }

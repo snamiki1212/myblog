@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
 @import '../../layout/theme.scss';
 
 .header-title{
   padding: 8px 20px;
   font-size: 32px;
   color: $header-color;
-  font-family: "Nico Moji";
+  font-family: "Cinzel Decorative", "Yu Gothic M", "Raleway";
   transition: 0.3s;
 }
 

@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
 #author{
   width: 100%;
-  // flex: 1;
+  color: #888888;
 
   .avator {
     width: 100%;
   }
-  .discription{
-    font-size: 15px;
-  }
-  .links{
+  .name{
     font-size: 20px;
+    color: #222222;
+    border-bottom: 1px solid #e0cc00;
+    
+    font-family: "Cinzel Decorative", "Yu Gothic M", "Raleway";
+    text-align: center;
+    padding: 20px 0;
+  }
+  .discription{
+    padding-top: 10px;
+    font-size: 15px;
   }
 }
 

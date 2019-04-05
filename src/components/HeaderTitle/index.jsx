@@ -4,7 +4,7 @@ import "./headerTitle.scss";
 
 class HeaderTitle extends Component {
   render() {
-    return <a className="header-title" href="/">{config.siteTitle}</a>;
+    return <a className="header-title" href="/">{config.siteTitleTop}</a>;
   }
 }
 

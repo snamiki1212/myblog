@@ -8,7 +8,6 @@ class Sidebar extends Component {
     return (
       <div id='sidebar'>
         <Author />
-        this is side bar
       </div>
     );
   }
