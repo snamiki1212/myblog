@@ -14,9 +14,11 @@ SEO-keyword:
 
 こんにちは。Amazonの口コミを信じることを辞めたNashです。
 
-この記事は
-「自分がローカルガイドになることを決めるまでの、過程で調査したことを、まとめた記事」
-になります。
+この記事は「自分がローカルガイドになることを決めるまでの、過程で調査したことを、まとめた記事」になります。
+
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="ja"><p lang="ja" dir="ltr">GoogleMapへ口コミを行う<br>LocalGuidesになった<a href="https://twitter.com/hashtag/LetsGuide?src=hash&amp;ref_src=twsrc%5Etfw">#LetsGuide</a> <a href="https://t.co/t9cMUxXgHP">pic.twitter.com/t9cMUxXgHP</a></p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1088109065408995329?ref_src=twsrc%5Etfw">2019年1月23日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ## ローカルガイドになって、サンフランシスコを目指すことにした話
 
@@ -181,8 +183,11 @@ Amazon・楽天などのように、商品ベースに口コミをしていく�
 
 ただ、個人的にはスモールスタートで小さく始めるよりもおすすめなのは、初期投資として過去の画像などを頑張って一気に埋めると成長過程をすっ飛ばせます。
 
-![](201901240030_1.png)
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">GoogleMapへ口コミを行う<br>LocalGuidesになった<a href="https://twitter.com/hashtag/LetsGuide?src=hash&amp;ref_src=twsrc%5Etfw">#LetsGuide</a> <a href="https://t.co/t9cMUxXgHP">pic.twitter.com/t9cMUxXgHP</a></p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1088109065408995329?ref_src=twsrc%5Etfw">2019年1月23日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 それこそ、自分のように初めて1日でバッジ持ちのLevel 6になるくらいに。
 
+» [ローカルガイド・レベル6に一日でなった話←コツは口コミを後回し](./local-guide-level-6)
 
+詳細は、上記の記事にてまとめています。
