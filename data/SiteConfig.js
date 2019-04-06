@@ -27,7 +27,7 @@ module.exports = {
   userTwitter: "snamiki1212", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Shibuya, Japan", // User location to display in the author segment.
   userAvatar: "/logos/logo_48.jpg", // User avatar to display in the author segment.
-  userDescription: "プログラミングが好きです。社畜SE→Webベンチャー→フリーランス→フィリピン語学留学（今ここ）。日本から出て、海外で働いて、最終ゴールは月で生活すること。", // User description to display in the author segment.
+  userDescription: "プログラミングが好きです。SE→Webベンチャー→フリーランス→フィリピン語学留学（今ここ）。日本から出て、海外で働いて、最終ゴールは月で生活すること。", // User description to display in the author segment.
   userIntroduction: "Freelance full-stack Endigneer @ Shibuya, Japan", // short user introduction
 
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
