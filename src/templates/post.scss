@@ -5,7 +5,9 @@
 @import '../templates/base.scss';
 
 // font-color
-$fc-main: #444444;
+$fc-main: $fc-gray-2;
+$fc-vivid: $fc-vivid-2;
+$fc-h: $fc-black-1;
 
 $phone-status-bar-height: 24px - 12px;
 
@@ -69,6 +71,12 @@ $phone-status-bar-height: 24px - 12px;
 
       a {
         border-bottom: solid 1px;
+        color: $fc-vivid;
+        transition: 0.3s;
+        &:hover{
+          color: $fc-h;
+          transition: 0.3s;
+        }
       }
 
       .anchor,
@@ -91,9 +99,10 @@ $phone-status-bar-height: 24px - 12px;
       h3,
       h4,
       h5,
-      h6 {
+      h6,
+      b {
         font-weight: bold;
-        color: $fc-main;
+        color: $fc-h;
       }
       h1 {
         // border-bottom: 6px solid gray;
