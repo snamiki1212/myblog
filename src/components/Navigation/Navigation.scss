@@ -1,18 +1,18 @@
 @import "../../layout/theme.scss";
 
 .main-content {
+  display: flex;
+  flex-direction: column;
+
+  .main-container {
     display: flex;
+    min-height: 100%;
     flex-direction: column;
+    flex: 1;
+    background: $md-base-background;
 
-    .main-container {
-        display: flex;
-        min-height: 100%;
-        flex-direction: column;
-        flex: 1;
-        background: $md-base-background;
-
-        .main-content {
-            flex: 1;
-        }
+    .main-content {
+      flex: 1;
     }
+  }
 }
