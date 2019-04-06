@@ -5,7 +5,7 @@
 @import '../templates/base.scss';
 
 // font-color
-$fc-main: $fc-gray-2;
+$fc-main: $fc-gray-1;
 $fc-vivid: $fc-vivid-2;
 $fc-h: $fc-black-1;
 
@@ -48,25 +48,29 @@ $phone-status-bar-height: 24px - 12px;
     }
 
     .post-body {
-      max-width: 100%;
       word-wrap: break-word;
+      width: 100%;
 
       @media screen and (max-width: $mobile-width) {
         padding: 0;
       }
 
       p {
-        line-height: 36px;
-        margin-top: 36px;
-        margin-bottom: 36px;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
+        line-height: 2;
+        margin-top: 0;
+        
+        // margin-block-start: 1em;
+        // margin-block-end: 1em;
         color: $fc-main;
 
-        font-size: 18px;
+        font-size: 17px;
         @media screen and (max-width: $mobile-width) {
           font-size: 16px;
         }
+      }
+
+      p, hr{
+        margin-bottom: 50px;
       }
 
       a {
@@ -85,7 +89,7 @@ $phone-status-bar-height: 24px - 12px;
       }
 
       blockquote {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 36px;
         color: $fc-main;
         border-left: 0.3em solid lightgray;
@@ -144,17 +148,21 @@ $phone-status-bar-height: 24px - 12px;
 
       ul, ol{
         list-style-position: inside;
-        padding: 10px;
+        padding: 0;
         background-color: $list-background-color;
 
         border: $fc-main dashed 1px;
-        ul, ol{
+        ul, ol{ // for nest
           border: none;
+        }
+
+        > li{
+          margin: 15px;
         }
       }
       ul,
       li {
-        font-size: 18px;
+        font-size: 16px;
         @media screen and (max-width: $mobile-width) {
           font-size: 14px;
         }
