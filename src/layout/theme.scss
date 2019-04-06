@@ -1,8 +1,9 @@
 @import '~react-md/src/scss/react-md';
 // @import './prism';
+@import '../templates/base.scss';
 
 $md-light-theme: true; // optional for light theme
-$md-primary-color: #222222;
+$md-primary-color: $bg-black-1;
 $md-secondary-color: $md-primary-color;
 
 a:link {
@@ -15,5 +16,5 @@ $md-base-background: white;
 $md-base-font-family: 'FontAwesome', 'Font Awesome 5 Brands', 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','YuGothic','Yu Gothic','メイリオ', 'Meiryo','ＭＳ Ｐゴシック','MS PGothic';
 
 // other
-$header-color: #F0DB00;
+$header-color: $fc-vivid-1;
 $header-color-hover: white; 

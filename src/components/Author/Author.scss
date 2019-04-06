@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+@import '../../templates/base.scss';
 
 #author{
   width: 100%;
-  color: #888888;
+  color: $fc-gray-1;
 
   .avator {
     width: 100%;
   }
   .name{
     font-size: 20px;
-    color: #222222;
-    border-bottom: 1px solid #e0cc00;
+    color: $fc-black-1;
+    border-bottom: 1px solid $fc-vivid-1;
     
     font-family: "Cinzel Decorative", "Yu Gothic M", "Raleway";
     text-align: center;

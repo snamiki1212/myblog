@@ -1,9 +1,11 @@
 @import "../../layout/theme.scss";
+@import '../../templates/base.scss';
+
 .user-info {
     p {
         margin: 15px 0;
         font-size: 12px;
-        color: #444444;
+        color: $fc-gray-1;
         font-family: $md-base-font-family;
     }
 }

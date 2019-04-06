@@ -1,7 +1,9 @@
+@import '../../templates/base.scss';
+
 #sidebar{
   flex: 1;
   width: 100%;
   padding: 24px;
 
-  background-color: #f3f3f3;
+  background-color: $bg-white-2;
 }

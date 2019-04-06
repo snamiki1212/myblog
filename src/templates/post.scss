@@ -2,16 +2,13 @@
 @import "../layout/theme.scss";
 @import "../layout/prism.scss";
 @import "../layout/global.scss";
+@import '../templates/base.scss';
 
 * {
   font-family: $md-base-font-family;
 }
 
 $phone-status-bar-height: 24px - 12px;
-
-$h-left: darkgray;
-$h-background-color: #7B7B7B;
-$list-background-color: #FAFAFA;
 
 .post-page {
   display: flex;
