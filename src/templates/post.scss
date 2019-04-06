@@ -5,9 +5,9 @@
 @import '../templates/base.scss';
 
 // font-color
-$fc-text: $fc-gray-1;
+$fc-text: $fc-black-1;
 $fc-vivid: $fc-vivid-2;
-$fc-h: $fc-black-1;
+$fc-h: $fc-black-2;
 
 $phone-status-bar-height: 24px - 12px;
 
@@ -109,7 +109,6 @@ $phone-status-bar-height: 24px - 12px;
         color: $fc-h;
       }
       h1 {
-        // border-bottom: 6px solid gray;
         padding-top: 10px;
         padding-bottom: 20px;
         font-size: 25px;
@@ -148,8 +147,8 @@ $phone-status-bar-height: 24px - 12px;
       }
 
       ul, ol{
-        list-style-position: inside;
-        padding: 0;
+        list-style-position: outside;
+        padding-left: 20px;
         margin-bottom: 40px;
         background-color: $list-background-color;
 
@@ -158,6 +157,7 @@ $phone-status-bar-height: 24px - 12px;
           border: none;
         }
 
+        line-height: 1.7;
         > li{
           margin: 15px;
         }
