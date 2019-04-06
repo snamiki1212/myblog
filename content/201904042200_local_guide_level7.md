@@ -5,7 +5,7 @@ date: "2019-04-04 22:00"
 category: "Poem"
 tags:
     - ローカルガイド
-slug: local-guide-level7
+slug: local-guide-level-7
 SEO-keyword:
     - ローカル ガイド レベル 7
 ---
