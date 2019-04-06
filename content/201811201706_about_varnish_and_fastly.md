@@ -9,7 +9,7 @@ tags:
 slug: about-varnish-and-fastly
 ---
 
-# Varnish / Fastlyとは
+# Varnish / Fastlyとは
 
 最近、CDN周りで
 
