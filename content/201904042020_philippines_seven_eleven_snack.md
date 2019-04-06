@@ -20,6 +20,9 @@ SEO-keyword:
 「フィリピンのコンビニの食べ物、特にお菓子でおすすめのものを紹介していく」
 という記事になります。
 
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 61: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>✅フィリピンのコンビニは、セブンイレブンが一強<br><br>→コンビニのお菓子が、日本の相場よりも安いので、気軽に試す遊びが楽しい <a href="https://t.co/FsUiEpZY7o">pic.twitter.com/FsUiEpZY7o</a></p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1113843115696115712?ref_src=twsrc%5Etfw">2019年4月4日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ちなみに、留学中の学食がマズすぎて、体調崩して、勉強どころではなくなった話は下記の記事になります。
 
 » [フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】](./philippines-baguio-pines-food)
@@ -164,8 +167,6 @@ ChochMuchoは、「お菓子」のチョコバーという位置づけなので�
 ここで紹介しているお菓子は、自分のお気に入りの定番のお菓子のみなので、この記事では紹介していないお菓子は、まだまだあります。
 
 皆さんも、「自分だけのお気に入りのお菓子は、自分で探す」というチャレンジをしてみてはいかがでしょうか。
-
-
 
 ### おわりに
 
