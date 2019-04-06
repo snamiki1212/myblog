@@ -4,7 +4,11 @@ import "./headerTitle.scss";
 
 class HeaderTitle extends Component {
   render() {
-    return <a className="header-title" href="/" style={{'letterSpacing':'3px'}}>{config.siteTitleTop}</a>;
+    return (
+      <a className="header-title" href="/">
+        {config.siteTitleTop}
+      </a>
+    );
   }
 }
 

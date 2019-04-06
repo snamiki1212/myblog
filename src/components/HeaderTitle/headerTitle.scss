@@ -3,10 +3,12 @@
 
 .header-title{
   padding: 8px 20px;
-  font-size: 32px;
+  font-size: 26px;
+  letter-spacing : 3px;
   color: $header-color;
   font-family: "Cinzel Decorative", "Yu Gothic M", "Raleway";
   transition: 0.3s;
+  margin: auto 0;
 }
 
 .header-title:hover{
