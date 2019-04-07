@@ -29,11 +29,40 @@ function GetNavList(config) {
   NavList.push({ divider: true });
 
   NavList.push({
-    primaryText: "About",
-    leftIcon: <FontIcon>person</FontIcon>,
+    primaryText: "AboutMe",
+    leftIcon: <FontIcon>face</FontIcon>,
     component: Link,
     to: "/about/"
   });
+
+  NavList.push({
+    primaryText: "Tech",
+    leftIcon: <FontIcon>desktop_mac</FontIcon>,
+    component: Link,
+    to: "/categories/tech/"
+  });
+
+  NavList.push({
+    primaryText: "World",
+    leftIcon: <FontIcon>language</FontIcon>,
+    component: Link,
+    to: "/categories/world/"
+  });
+
+  NavList.push({
+    primaryText: "localguide",
+    leftIcon: <FontIcon>streetview</FontIcon>,
+    component: Link,
+    to: "/categories/localguide/"
+  });
+
+  // NavList.push({
+  //   primaryText: "Product",
+  //   leftIcon: <FontIcon>thumb_up_alt</FontIcon>,
+  //   component: Link,
+  //   to: "/categories/product/"
+  // });
+
   return NavList;
 }
 export default GetNavList;
