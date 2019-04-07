@@ -2,7 +2,7 @@
 title: "留学目的を考える【留学失敗を回避】"
 cover: 201903300730_cover.jpg
 date: "2019-03-30 07:30"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

@@ -50,10 +50,10 @@ function GetNavList(config) {
   });
 
   NavList.push({
-    primaryText: "localguide",
+    primaryText: "Local Guide",
     leftIcon: <FontIcon>streetview</FontIcon>,
     component: Link,
-    to: "/categories/localguide/"
+    to: "/categories/local-guide/"
   });
 
   // NavList.push({

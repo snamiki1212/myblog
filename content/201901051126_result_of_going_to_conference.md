@@ -2,9 +2,10 @@
 title: "技術カンファレンスに通って、わかった11個の気付き"
 cover: "201901051126_cover.jpg"
 date: "2019-01-05 11:26"
-category: "Event"
+category: "Tech"
 tags:
     - tech
+    - conference
 slug: result-of-going-to-conference
 ---
 

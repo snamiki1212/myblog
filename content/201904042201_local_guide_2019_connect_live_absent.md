@@ -2,7 +2,7 @@
 title: "ローカルガイド特典のコネクトライブ2019に応募しなかった話"
 cover: 201904042201_cover.jpg
 date: "2019-04-04 22:01"
-category: "Poem"
+category: "local-guide"
 tags:
     - ローカルガイド
 slug: local-guide-2019_connect_live_absent

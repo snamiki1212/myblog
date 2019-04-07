@@ -2,7 +2,7 @@
 title: "フィリピンのコンビニ食べ物←お菓子おすすめ6選【コスパ】"
 cover: 201904042020_cover.jpg
 date: "2019-04-04 20:20"
-category: "Poem"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

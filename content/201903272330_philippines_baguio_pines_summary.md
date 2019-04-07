@@ -2,10 +2,11 @@
 title: "【PINES｜バギオ】パインスを完全レビュー【経験談】"
 cover:  201903272330_cover.jpg
 date: "2019-03-27 23:30"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語
+    - PINES
 slug: philippines-baguio-pines-summary
 SEO-keyword:
     - PINES バギオ

@@ -2,7 +2,7 @@
 title: "フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】"
 cover: 201903311601_cover.jpg
 date: "2019-03-31 16:01"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

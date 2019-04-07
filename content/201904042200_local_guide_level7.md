@@ -2,7 +2,7 @@
 title: "ローカルガイドのレベル7になったので、ここまでに得た知見のまとめ"
 cover: 201904042200_cover.jpg
 date: "2019-04-04 22:00"
-category: "Poem"
+category: "local-guide"
 tags:
     - ローカルガイド
 slug: local-guide-level-7

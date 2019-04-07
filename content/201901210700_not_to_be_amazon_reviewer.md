@@ -2,9 +2,11 @@
 title: "AmazonVineメンバーを、私がなぜ目指さないか←現状がやばい"
 cover: "201901210700_cover.jpg"
 date: "2019-01-21 07:00"
-category: "Poem"
+category: "Thought"
 tags:
-    - poem
+    - thought
+    - AmazonVine
+    - LocalGuide
 slug: not-to-be-amazon-reviewer
 SEO-keyword:
     - amazon vine メンバー

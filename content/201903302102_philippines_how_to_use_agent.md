@@ -2,7 +2,7 @@
 title: "留学エージェントを使った、おすすめの学校探し【エージェントは複数使う】"
 cover: 201903302102_cover.jpg
 date: "2019-03-30 21:02"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

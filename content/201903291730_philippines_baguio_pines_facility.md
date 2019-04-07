@@ -2,10 +2,11 @@
 title: "【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】"
 cover: 201903291730_cover.jpg
 date: "2019-03-29 17:30"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語
+    - PINES
 slug: philippines-baguio-pines-facility
 SEO-keyword:
     - PINES バギオ

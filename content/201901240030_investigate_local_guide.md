@@ -2,9 +2,10 @@
 title: "ローカルガイドになって、サンフランシスコを目指すことにした話"
 cover: "201901240030_cover.jpg"
 date: "2019-01-24 00:30"
-category: "Poem"
+category: "local-guide"
 tags:
     - poem
+    - LocalGuide
 slug: investigate-local-guide
 SEO-keyword:
     - ローカル ガイド サンフランシスコ

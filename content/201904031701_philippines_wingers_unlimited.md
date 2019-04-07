@@ -2,7 +2,7 @@
 title: "フィリピンの食べ物で人気の、WingersUnlimitedに行ってきた話"
 cover: 201904031701_cover.jpg
 date: "2019-04-03 17:01"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

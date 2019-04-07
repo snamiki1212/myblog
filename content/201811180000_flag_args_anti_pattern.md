@@ -1,5 +1,4 @@
 ---
-
 title: "フラグ引数アンチパターン"
 cover: "201811180000_cover.jpg"
 date: "2018-11-18 00:00"
@@ -8,7 +7,6 @@ tags:
     - Tech
     - PHP
 slug: flag-args-anti-pattern
-
 ---
 
 # フラグ引数アンチパターン

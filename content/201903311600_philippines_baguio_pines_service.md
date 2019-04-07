@@ -2,7 +2,7 @@
 title: "【PINES｜バギオ】新校舎の「サービス」を体験してきた【フィリピン留学】"
 cover: 201903311600_cover.jpg
 date: "2019-03-31 16:00"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

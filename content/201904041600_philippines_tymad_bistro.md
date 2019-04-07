@@ -2,7 +2,7 @@
 title: "フィリピンの食べ物がマズい？甘いケーキのTymad Bistroをオススメ"
 cover: 201904041600_cover.jpg
 date: "2019-04-04 16:00"
-category: "Poem"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

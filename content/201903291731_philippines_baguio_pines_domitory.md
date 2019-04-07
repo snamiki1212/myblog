@@ -2,10 +2,11 @@
 title: "【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】"
 cover: 201903291731_cover.jpg
 date: "2019-03-29 17:31"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語
+    - PINES
 slug: philippines-baguio-pines-domitory
 SEO-keyword:
     - PINES バギオ

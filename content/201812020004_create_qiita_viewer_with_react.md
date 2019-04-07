@@ -2,9 +2,10 @@
 title: "ReactでQiitaのアプリケーションを作った話"
 cover: "201812020004_cover.png"
 date: "2018-12-02 00:04"
-category: "service"
+category: "Tech"
 tags:
-    - service
+    - tech
+    - React
 slug: create-qiita-viewer-with-react
 ---
 

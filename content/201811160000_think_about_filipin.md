@@ -2,11 +2,11 @@
 title: "いちWebエンジニアがフィリピン留学に行く前に考えていること"
 cover: "201811160000_cover.jpg"
 date: "2018-11-16 00:00"
-category: "poem"
+category: "World"
 tags:
     - poem
     - overseas
-    - "フィリピン留学"
+    - フィリピン留学
 slug: think-about-filipin
 ---
 

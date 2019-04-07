@@ -2,7 +2,7 @@
 title: "フィリピン留学の、全体の流れ【完全版】"
 cover: 201903302100_cover.jpg
 date: "2019-03-30 21:00"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

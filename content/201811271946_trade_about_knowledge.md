@@ -2,7 +2,7 @@
 title: "知識の貿易を始める〜自分にとっての常識は他人のとっての学び〜"
 cover: "201811271946_cover.jpg"
 date: "2018-11-27 19:46"
-category: "poem"
+category: "Thought"
 tags:
     - poem
 slug: trade-about-knowledge

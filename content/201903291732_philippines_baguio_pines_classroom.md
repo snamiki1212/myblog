@@ -2,10 +2,11 @@
 title: "【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】"
 cover: 201903291732_cover.jpg
 date: "2019-03-29 17:32"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語
+    - PINES
 slug: philippines-baguio-pines-classroom
 SEO-keyword:
     - PINES バギオ

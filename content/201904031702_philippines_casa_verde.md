@@ -2,7 +2,7 @@
 title: "【フィリピンでの食べ物】肉が美味いCasaVerdeに行ってきた話"
 cover: 201904031702_cover.jpg
 date: "2019-04-03 17:02"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

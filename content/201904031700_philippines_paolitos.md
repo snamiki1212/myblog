@@ -2,7 +2,7 @@
 title: "フィリピンで魚の食べ物が美味しい、PAOLITO'Sに行ってきた"
 cover: 201904031700_cover.jpg
 date: "2019-04-03 17:00"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語

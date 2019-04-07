@@ -2,7 +2,7 @@
 title: "【フィリピン留学】日本資本・韓国資本の学校を比較してきた【実体験】"
 cover: 201903301200_cover.jpg
 date: "2019-03-30 12:00"
-category: "English"
+category: "World"
 tags:
     - フィリピン留学
     - 英語
