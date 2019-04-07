@@ -4,7 +4,7 @@ module.exports = {
   siteTitle: "Lunash", // Site title.
   siteTitleShort: "先端技術を追いかけるエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Lunash", // Alternative site title for SEO.
-  siteTitleTop: "luNash", // for top drawing
+  siteTitleTop: "lunash", // for top drawing
   siteLogo: "/logos/logo.png", // Logo used for SEO and manifest.
   siteUrl: "https://snamiki1212.com", // Domain of your website without pathPrefix.
   siteRepository: "https://github.com/snamiki1212/myblog", // Repository of your site
@@ -23,7 +23,7 @@ module.exports = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD hh:mm", // Date format used in the frontmatter.
   dateFormat: "MMM-Do, YYYY", // Date format for display.
-  userName: "Nash", // Username to display in the author segment.
+  userName: "nash", // Username to display in the author segment.
   userTwitter: "snamiki1212", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Shibuya, Japan", // User location to display in the author segment.
   userAvatar: "/logos/logo_48.jpg", // User avatar to display in the author segment.
