@@ -10,9 +10,9 @@ class Author extends Component {
         <img
           src={config.userAvatar}
           className="avator"
-          alt={config.userName}
+          alt={config.sidebarUserName}
         />
-        <div className='name'>{config.userName}</div>
+        <div className='name'>{config.sidebarUserName}</div>
         <div className='discription'>{config.userDescription}</div>
       </div>
     );
