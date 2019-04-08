@@ -49,7 +49,7 @@ $phone-status-bar-height: 24px - 12px;
 
     .post-body {
       * {
-        font-family: 'Times New Roman', Times, serif; //TODO: 他にもここのfotn-familyを入れ込む
+        font-family: '游明朝体', 'Times New Roman', Times, serif; //TODO: 他にもここのfotn-familyを入れ込む
       }
       word-wrap: break-word;
       width: 100%;
@@ -63,7 +63,7 @@ $phone-status-bar-height: 24px - 12px;
         margin-top: 0;
         color: $fc-text;
 
-        font-size: 18px;
+        font-size: 17px;
         @media screen and (max-width: $mobile-width) {
           font-size: 16px;
         }
