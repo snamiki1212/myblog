@@ -22,7 +22,7 @@ module.exports = {
   // for post
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD hh:mm", // Date format used in the frontmatter.
-  dateFormat: "MMM-Do, YYYY", // Date format for display.
+  dateFormat: "YYYY/MM/DD", // Date format for display.
   userName: "Nash", // Username to display in the author segment.
   userTwitter: "snamiki1212", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Shibuya, Japan", // User location to display in the author segment.

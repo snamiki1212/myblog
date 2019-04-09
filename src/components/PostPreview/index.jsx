@@ -1,14 +1,10 @@
 import React, { Component } from "react";
 import Card from "react-md/lib/Cards/Card";
 import CardTitle from "react-md/lib/Cards/CardTitle";
-import Button from "react-md/lib/Buttons";
-import Avatar from "react-md/lib/Avatars";
 import CardText from "react-md/lib/Cards/CardText";
-import FontIcon from "react-md/lib/FontIcons";
 import { Link } from "gatsby";
 import moment from "moment";
 import Media, { MediaOverlay } from "react-md/lib/Media";
-import PostTags from "../PostTags";
 import PostCover from "../PostCover";
 import config from "../../../data/SiteConfig";
 import "./PostPreview.scss";
@@ -40,36 +36,27 @@ class PostPreview extends Component {
   render() {
     const { postInfo } = this.props;
     const { mobile } = this.state;
-    const expand = mobile;
     /* eslint no-undef: "off" */
     const coverHeight = mobile ? 162 : 225;
     return (
-      <Card key={postInfo.path} raise className="md-grid md-cell md-cell--12">
+      <Card key={postInfo.path} raise className="md-grid md-cell md-cell--6">
         <Link style={{ textDecoration: "none" }} to={postInfo.path}>
           <Media style={{ height: coverHeight, paddingBottom: "0px" }}>
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
-            <MediaOverlay>
-              <CardTitle title={postInfo.title}>
-                <Button raised secondary className="md-cell--right">
-                  Read
-                </Button>
-              </CardTitle>
+            <MediaOverlay className='post-preview-overlay' >
+              <span className='post-preview-title'>{postInfo.title}</span>
+              {/* <CardTitle title={postInfo.title} style={{"color": "black"}} /> */}
             </MediaOverlay>
           </Media>
+          <CardTitle
+            title=''
+            subtitle={`最終更新日: ${moment(postInfo.date).format(
+              config.dateFormat
+            )}`}
+          />
+          {/* <CardTitle subtitle={<PostTags tags={postInfo.tags} />} /> */}
+          <CardText children={postInfo.excerpt}/>
         </Link>
-        <CardTitle
-          expander={expand}
-          avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
-          title={`Published on ${moment(postInfo.date).format(
-            config.dateFormat
-          )}`}
-          subtitle={`${postInfo.timeToRead} min read`}
-        />
-
-        <CardText expandable={expand}>
-          {postInfo.excerpt}
-          <PostTags tags={postInfo.tags} />
-        </CardText>
       </Card>
     );
   }
