@@ -1,7 +1,7 @@
 // set SiteConfig
 module.exports = {
   // for site
-  siteTitle: "Lunash", // Site title.
+  siteTitle: "🌙Lunash", // Site title.
   siteTitleShort: "先端技術を追いかけるエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Lunash", // Alternative site title for SEO.
   siteTitleTop: "lunash", // for top drawing
