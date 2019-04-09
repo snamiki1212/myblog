@@ -40,7 +40,7 @@ class PostPreview extends Component {
     const coverHeight = mobile ? 162 : 225;
     return (
       <Card key={postInfo.path} raise className="md-grid md-cell md-cell--6">
-        <Link style={{ textDecoration: "none" }} to={postInfo.path}>
+        <Link className='post-preview-link' to={postInfo.path}>
           <Media style={{ height: coverHeight, paddingBottom: "0px" }}>
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
             <MediaOverlay className='post-preview-overlay' >
@@ -55,7 +55,7 @@ class PostPreview extends Component {
             )}`}
           />
           {/* <CardTitle subtitle={<PostTags tags={postInfo.tags} />} /> */}
-          <CardText children={postInfo.excerpt}/>
+          <CardText children={postInfo.excerpt} className='post-preview-excerpt'/>
         </Link>
       </Card>
     );

@@ -20,3 +20,27 @@
     display :flex;
     align-items: center;
 }
+
+.post-preview-link{
+    text-decoration: "none";
+}
+
+.post-preview-excerpt{
+    position: relative;
+    &::after{
+        content: '';
+        display: block;
+        
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.9) 70%,
+            rgba(255, 255, 255, 1),
+        );
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
