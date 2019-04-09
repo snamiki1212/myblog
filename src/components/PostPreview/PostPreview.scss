@@ -1,13 +1,6 @@
 @import "../../templates/base.scss";
 
 .post-preview {
-  &-cover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding: 0 !important;
-  }
-  
   &-title {
     color: $fc-black-1;
     font-size: 24px;
