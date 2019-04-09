@@ -1,48 +1,50 @@
-@import '../../templates/base.scss';
+@import "../../templates/base.scss";
 
 .post-preview-cover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding: 0 !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 0 !important;
 }
 
-.post-preview-title{
+.post-preview-title {
   color: $fc-black-1;
   font-size: 24px;
-  font-family: 'TsukuBRdGothic-Regular','Wawati SC','HanziPen TC','HanziPen SC','Hannotate TC','MS UI Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  font-family: "TsukuBRdGothic-Regular", "Wawati SC", "HanziPen TC",
+    "HanziPen SC", "Hannotate TC", "MS UI Gothic", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", sans-serif;
   font-weight: 900;
 }
 
-.post-preview-overlay{
-    height : 100%;
-    background-color : rgba(255, 255, 255, 0.8);
-    color: black;
-    display :flex;
-    align-items: center;
-    padding: 0 20px;
+.post-preview-overlay {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.post-preview-link{
-    text-decoration: "none";
+.post-preview-link {
+  text-decoration: "none";
 }
 
-.post-preview-excerpt{
-    position: relative;
-    &::after{
-        content: '';
-        display: block;
-        
-        background: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 0.9) 50%,
-            rgba(255, 255, 255, 1),
-        );
-        height: 100px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-    }
+.post-preview-excerpt {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 1)
+    );
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
