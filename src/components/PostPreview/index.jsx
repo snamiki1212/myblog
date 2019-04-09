@@ -43,8 +43,8 @@ class PostPreview extends Component {
         <Link to={postInfo.path}>
           <Media style={{ height: coverHeight, paddingBottom: "0px" }}>
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
-            <MediaOverlay className='post-preview-overlay' >
-              <span className='post-preview-title'>{postInfo.title}</span>
+            <MediaOverlay className='post-preview__overlay' >
+              <span className='post-preview__title'>{postInfo.title}</span>
               {/* <CardTitle title={postInfo.title} style={{"color": "black"}} /> */}
             </MediaOverlay>
           </Media>
@@ -55,7 +55,7 @@ class PostPreview extends Component {
             )}`}
           />
           {/* <CardTitle subtitle={<PostTags tags={postInfo.tags} />} /> */}
-          <CardText children={postInfo.excerpt} className='post-preview-excerpt'/>
+          <CardText children={postInfo.excerpt} className='post-preview__excerpt'/>
         </Link>
       </Card>
     );

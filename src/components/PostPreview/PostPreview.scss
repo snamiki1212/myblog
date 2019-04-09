@@ -1,7 +1,7 @@
 @import "../../templates/base.scss";
 
 .post-preview {
-  &-title {
+  &__title {
     color: $fc-black-1;
     font-size: 24px;
     font-family: "TsukuBRdGothic-Regular", "Wawati SC", "HanziPen TC",
@@ -11,7 +11,7 @@
     text-align: center;
   }
 
-  &-overlay {
+  &__overlay {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
     padding: 0 20px;
   }
   
-  &-excerpt {
+  &__excerpt {
     position: relative;
     &::after {
       content: "";
