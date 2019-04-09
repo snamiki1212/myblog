@@ -1,48 +1,50 @@
 @import "../../templates/base.scss";
 
-.post-preview-cover {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  padding: 0 !important;
-}
+.post-preview {
+  &-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0 !important;
+  }
+  
+  &-title {
+    color: $fc-black-1;
+    font-size: 24px;
+    font-family: "TsukuBRdGothic-Regular", "Wawati SC", "HanziPen TC",
+      "HanziPen SC", "Hannotate TC", "MS UI Gothic", "Hiragino Kaku Gothic ProN",
+      "ヒラギノ角ゴ ProN W3", sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
 
-.post-preview-title {
-  color: $fc-black-1;
-  font-size: 24px;
-  font-family: "TsukuBRdGothic-Regular", "Wawati SC", "HanziPen TC",
-    "HanziPen SC", "Hannotate TC", "MS UI Gothic", "Hiragino Kaku Gothic ProN",
-    "ヒラギノ角ゴ ProN W3", sans-serif;
-  font-weight: 900;
-  text-align: center;
-}
-
-.post-preview-overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  // MEMO: background-color -> $md-media-overlay-color
-  height: 100%;
-  padding: 0 20px;
-}
-
-.post-preview-excerpt {
-  position: relative;
-  &::after {
-    content: "";
-    display: block;
-
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.9) 50%,
-      rgba(255, 255, 255, 1)
-    );
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  &-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    // MEMO: background-color -> $md-media-overlay-color
+    height: 100%;
+    padding: 0 20px;
+  }
+  
+  &-excerpt {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+  
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.9) 50%,
+        rgba(255, 255, 255, 1)
+      );
+      height: 100px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
   }
 }
