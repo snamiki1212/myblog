@@ -6,10 +6,18 @@ $md-light-theme: true; // optional for light theme
 $md-primary-color: $bg-black-1;
 $md-secondary-color: $md-primary-color;
 
-a:link {
-  color: $md-secondary-color;
+a {
   text-decoration: none;
+  transition: 0.5s;
+  &:link, &:visited{
+    color: $fc-vivid-2;
+  }
+  &:hover{
+    color: $fc-black-1;
+    transition: 0.5s;
+  }
 }
+
 
 // custom
 $md-base-background: white;
