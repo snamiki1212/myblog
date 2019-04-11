@@ -27,8 +27,8 @@ function GetNavList(config) {
 
   NavList.push({
     primaryText: "Tech",
-    secondaryText: "先端技術が好き。\n",
-    threeLines: true,
+    secondaryText: "先端技術が好き。",
+    // threeLines: true,
     leftIcon: <FontIcon>desktop_mac</FontIcon>,
     component: Link,
     to: "/categories/tech/"
@@ -46,7 +46,7 @@ function GetNavList(config) {
   NavList.push({
     primaryText: "Local Guide",
     threeLines: true,
-    secondaryText: "＝GoogleMapへの\n　コントリビュータ",
+    secondaryText: "GoogleMapへの\nコントリビュータ。",
     leftIcon: <FontIcon>streetview</FontIcon>,
     component: Link,
     to: "/categories/local-guide/"
