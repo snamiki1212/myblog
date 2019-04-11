@@ -3,40 +3,32 @@ import FontIcon from "react-md/lib/FontIcons";
 import { Link } from "gatsby";
 
 function GetNavList(config) {
-  const NavList = [
-    {
-      primaryText: "Home",
-      leftIcon: <FontIcon>home</FontIcon>,
-      component: Link,
-      to: "/"
-    },
-    {
-      divider: true
-    }
-  ];
+  const NavList = [];
 
-  if (config.userLinks) {
-    config.userLinks.forEach(link => {
-      NavList.push({
-        primaryText: link.label,
-        leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
-        component: "a",
-        href: link.url
-      });
-    });
-  }
-
-  NavList.push({ divider: true });
+  NavList.push({
+    primaryText: "Home",
+    leftIcon: <FontIcon>home</FontIcon>,
+    component: Link,
+    to: "/"
+  });
 
   NavList.push({
     primaryText: "AboutMe",
+    secondaryText: "",
+    threeLines: true,
     leftIcon: <FontIcon>face</FontIcon>,
     component: Link,
     to: "/about/"
   });
 
   NavList.push({
+    divider: true
+  });
+
+  NavList.push({
     primaryText: "Tech",
+    secondaryText: "先端技術が好き。\n",
+    threeLines: true,
     leftIcon: <FontIcon>desktop_mac</FontIcon>,
     component: Link,
     to: "/categories/tech/"
@@ -44,6 +36,8 @@ function GetNavList(config) {
 
   NavList.push({
     primaryText: "World",
+    // threeLines: true,
+    secondaryText: "海外でのキャリアとか。",
     leftIcon: <FontIcon>language</FontIcon>,
     component: Link,
     to: "/categories/world/"
@@ -51,6 +45,8 @@ function GetNavList(config) {
 
   NavList.push({
     primaryText: "Local Guide",
+    threeLines: true,
+    secondaryText: "＝GoogleMapへの\n　コントリビュータ",
     leftIcon: <FontIcon>streetview</FontIcon>,
     component: Link,
     to: "/categories/local-guide/"
