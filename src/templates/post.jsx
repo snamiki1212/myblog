@@ -5,7 +5,7 @@ import CardTitle from "react-md/lib/Cards/CardTitle";
 import CardText from "react-md/lib/Cards/CardText";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo";
-import UserInCard from "../components/UserInCard";
+// import UserInCard from "../components/UserInCard";
 import Disqus from "../components/Disqus";
 import PostTags from "../components/PostTags";
 import PostCover from "../components/PostCover";
@@ -70,7 +70,7 @@ export default class PostTemplate extends React.Component {
             coverClassName="md-grid md-cell--9 post-cover"
           />
           <div className="md-grid md-cell--7 post-page-contents mobile-fix">
-            <CardTitle title="" subtitle="" className="md-grid md-cell md-cell--12 post">
+            <div className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body target-el">
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
               </CardText>
@@ -82,13 +82,12 @@ export default class PostTemplate extends React.Component {
                   mobile={this.state.mobile}
                 />
               </div>
-            </CardTitle>
+            </div>
             <UserInfo
               className="md-grid md-cell md-cell--12"
               config={config}
               expanded={expanded}
             />
-            <Disqus postNode={postNode} expanded={expanded} />
           </div>
           <PostSuggestions postNode={postNode} />
         </div>
