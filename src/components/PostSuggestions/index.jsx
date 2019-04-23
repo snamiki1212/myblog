@@ -18,18 +18,18 @@ export default class PostSuggestions extends Component {
             arrow_back
           </FontIcon>
           <div className="headline-container hide-on-mobile">
-            <h2 className="md-body-2 secondary-color">Previous</h2>
-            <h6 className="md-headline secondary-color">
+            <p className="md-body-2 secondary-color">Previous</p>
+            <p className="md-headline secondary-color">
               {postFields.prevTitle}
-            </h6>
+            </p>
           </div>
         </Link>
         <Link to={postFields.nextSlug} className="post-suggestion">
           <div className="headline-container">
-            <h2 className="md-body-2 secondary-color">Next</h2>
-            <h6 className="md-headline secondary-color">
+            <p className="md-body-2 secondary-color">Next</p>
+            <p className="md-headline secondary-color">
               {postFields.nextTitle}
-            </h6>
+            </p>
           </div>
           <FontIcon
             forceFontSize
