@@ -9,7 +9,8 @@ export default class PostSuggestions extends Component {
     const postFields = postNode.fields;
     return (
       <div className="post-suggestions md-grid md-cell--12">
-        <Link to={postFields.prevSlug} className="post-suggestion">
+
+        <Link to={postFields.prevSlug} className="post-suggestion md-grid md-cell md-cell--6">
           <FontIcon
             forceFontSize
             forceSize={64}
@@ -17,20 +18,21 @@ export default class PostSuggestions extends Component {
           >
             arrow_back
           </FontIcon>
-          <div className="headline-container hide-on-mobile">
-            <p className="md-body-2 secondary-color">Previous</p>
-            <p className="md-headline secondary-color">
+          <span className="headline-container hide-on-mobile">
+            <span className="md-body-2 secondary-color">Previous</span>
+            <span className="md-headline secondary-color">
               {postFields.prevTitle}
-            </p>
-          </div>
+            </span>
+          </span>
         </Link>
-        <Link to={postFields.nextSlug} className="post-suggestion">
-          <div className="headline-container">
-            <p className="md-body-2 secondary-color">Next</p>
-            <p className="md-headline secondary-color">
+
+        <Link to={postFields.nextSlug} className="post-suggestion md-grid md-cell md-cell--6">
+          <span className="headline-container">
+            <span className="md-body-2 secondary-color">Next</span>
+            <span className="md-headline secondary-color">
               {postFields.nextTitle}
-            </p>
-          </div>
+            </span>
+          </span>
           <FontIcon
             forceFontSize
             forceSize={64}
