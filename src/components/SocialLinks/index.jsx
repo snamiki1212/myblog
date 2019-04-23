@@ -17,6 +17,7 @@ import {
   LinkedinIcon,
   RedditIcon
 } from "react-share";
+import { HatenabookmarkButton } from 'react-social-sharebuttons';
 import urljoin from "url-join";
 import config from "../../../data/SiteConfig";
 import "./SocialLinks.scss";
@@ -34,27 +35,32 @@ class SocialLinks extends Component {
 
     return (
       <div className="social-links">
+        <HatenabookmarkButton url={url} title={post.title} layout='standard-balloon' />
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
             {count => renderShareCount(count)}
           </RedditShareCount>
         </RedditShareButton>
+
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
+
         <GooglePlusShareButton url={url}>
           <GooglePlusIcon round size={iconSize} />
           <GooglePlusShareCount url={url}>
             {count => renderShareCount(count)}
           </GooglePlusShareCount>
         </GooglePlusShareButton>
+
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
             {count => renderShareCount(count)}
           </FacebookShareCount>
         </FacebookShareButton>
+
         <LinkedinShareButton
           url={url}
           title={post.title}
@@ -65,6 +71,7 @@ class SocialLinks extends Component {
             {count => renderShareCount(count)}
           </LinkedinShareCount>
         </LinkedinShareButton>
+
         <TelegramShareButton url={url}>
           <TelegramIcon round size={iconSize} />
         </TelegramShareButton>

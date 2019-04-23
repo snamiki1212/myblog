@@ -43,6 +43,7 @@
     "react-md": "^1.8.0",
     "react-reading-progress": "^0.3.0",
     "react-share": "^2.1.0",
+    "react-social-sharebuttons": "^3.0.0-alpha1",
     "react-twitter-widgets": "^1.7.1",
     "url-join": "^4.0.0"
   },

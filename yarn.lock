@@ -11560,6 +11560,11 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
+react-social-sharebuttons@^3.0.0-alpha1:
+  version "3.0.0-alpha1"
+  resolved "https://registry.yarnpkg.com/react-social-sharebuttons/-/react-social-sharebuttons-3.0.0-alpha1.tgz#d7fd3e2c1540b3e94e7c58b23f76feaad9b43978"
+  integrity sha512-39Z7QYK7k55/jxsUrb4LT7NMgCyVmKU9OBt2It90+sGxyGXjrB5PL/m3XghnejHRg7HajCMEu4ztjBmLma8Mpw==
+
 react-sortable-hoc@^1.0.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-1.9.0.tgz#ca09607d6ea717ebda899abad72cb2df9e0c20db"
