@@ -37,7 +37,6 @@ class UserInfo extends Component {
           {userTwitter ? (
             <Follow
               username={userTwitter}
-              options="none"
             />
           ) : (
             "Author"
