@@ -6,7 +6,6 @@ import CardText from "react-md/lib/Cards/CardText";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo";
 // import UserInCard from "../components/UserInCard";
-import Disqus from "../components/Disqus";
 import PostTags from "../components/PostTags";
 import PostCover from "../components/PostCover";
 import SocialLinks from "../components/SocialLinks";

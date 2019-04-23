@@ -17,7 +17,6 @@ module.exports = {
   // 3rd party
   siteGSCTrackingID: process.env.siteGSCTrackingID, // Tracking code ID for google search console.
   siteFBAppID: process.env.siteFBAppID, // FB Application ID for using app insights
-  disqusShortname: process.env.disqusShortname, // Disqus shortname.
 
   // for post
   postDefaultCategoryID: "Tech", // Default category for posts.
