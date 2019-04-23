@@ -13,42 +13,51 @@ slug: create-qiita-viewer-with-vue
 
 👉[Qiita Viewer with Vue](https://snamiki1212.github.io/qiita-viewer-with-vue/)
 
-暇な時間を使って Vue 公式ドキュメントを読んでいて「基本」のパートを読み終えて[Tilに一通り学習内容を整理した](https://github.com/snamiki1212/til/blob/master/vue/official_basic/index.md)ので、簡単な総復習という位置づけで、約一日ほどでこのアプリを作成した。
+![demo](./201904202355_1.gif)
+
+最近、時間を作って Vue 公式ドキュメントを読んでいて「基本」のパートを読み終えたので、[Tilに一通り学習内容を整理した](https://github.com/snamiki1212/til/blob/master/vue/official_basic/index.md)。合わせて簡単な復習という位置づけでアプリを作成した。
 
 - vue-cli(3.6.3)
 
-また、Nuxt.jsなどは使ってない。理由は、まだ学習初期の時点なので、そこまで大袈裟にアプリを大きくさせて、学習範囲を広げると収集が付かなくなると思われるので。
+Nuxt.jsなどは使ってない。理由はまだ学習初期なので、学習範囲を広げると収集がつかなくなると思われるので。
 
-## アプリケーション
+## VueでQiitaのアプリケーションを作った話
 
 QiitaAPI を叩いて表示するだけのViewerアプリ。
 
-以前作った[QiitaViewer with React](./create-qiita-viewer-with-react)と、全く同機能。
-これをReactではなく、Vueで0から作る。
+[以前作った QiitaViewer with React](./create-qiita-viewer-with-react)と、まったく同じ機能。
+以前はReactで作ったが、今回はVueで0から作る。
+
+ハマりどころは何もなかった。
 
 ## ホスティング
 
-規模が小さい超簡単なポートフォリオなので`gh-pages`のmaster ブランチ `/docs` を使用。
+規模が小さいアプリなので`gh-pages`のmaster ブランチ `/docs` を使用。
 
-Vue側の設定から。 [公式ドキュメント](https://cli.vuejs.org/config/#publicpath) を見ながら、`vue.config.js` を作成。
+ [公式ドキュメント](https://cli.vuejs.org/config/#publicpath) を見ながら、`vue.config.js` を作成。
 
 ```
+// vue.config.js
 module.exports = {
   publicPath: 'qiita-viewer-with-vue',
   outputDir: 'docs'
 }
 ```
 
-これで、Vue側のビルド環境は整ったのでビルド実行
+Vue のビルド環境は整ったのでビルド実行
 
 `yarn build`
 
-ビルドして生成された`/docs` を master ブランチにPush。
-ホスティングされたアドレス(<https://snamiki1212.github.io/qiita-viewer-with-vue/>)にアクセスすれば、無事公開完了。
+ビルドして生成された`/docs` を master ブランチにプッシュすれば公開完了。
+ホスティングされたアドレス(今回だと、<https://snamiki1212.github.io/qiita-viewer-with-vue/>)にアクセスすれば表示される。
 
 ### 所感
 
-勉強し始めて合計2~3日くらいではあるが、Reactですでにコンポーネントの概念などを理解していたので、あとは Vue で表現すれば良いだけなので、概念理解に苦しむことはまったくなかった。
+勉強し始めて合計2~3日くらいではあるが、概念理解に苦しむことはまったくなかった。
 
-また、以前作った[QiitaViewer with React](./create-qiita-viewer-with-react)と、あえて全く同じ機能にすることで QiitaAPI を調べたり、Viewを考える工程をスキップできたのは良かった。
+特に、Reactですでにコンポーネントの概念などを理解していたので、あとは Vue で表現すれば良いだけだったので。
+
+また、以前作った[QiitaViewer with React](./create-qiita-viewer-with-react)と、あえて全く同じ機能にすることで QiitaAPI を調べたり、見た目を考える工程をスキップできたのは良かった。
+
+よく言われる、「ReactはSimple、VueはEasy」な点は v-model を学んだときに感じてたが、このレベルのアプリではやはり React よりも Vue のほうが気軽に作成できるように感じる。
 
