@@ -2,7 +2,7 @@ import React from "react";
 import FontIcon from "react-md/lib/FontIcons";
 import { Link } from "gatsby";
 
-function GetNavList(config) {
+function GetNavList() {
   const NavList = [];
 
   NavList.push({

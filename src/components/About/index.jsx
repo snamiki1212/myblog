@@ -22,7 +22,11 @@ class About extends Component {
               <p className="about-text md-body-1">{config.userDescription}</p>
               <p className="about-text md-body-2">
                 また、このブログのコンテンツは全てgithubで管理されています。
-                内容に問題や訂正すべき内容がある場合は<a href={url}>Twitter</a>か直接<a href={config.siteRepository}>このブログのリポジトリ</a>にPRを出してもらえれば対応します。
+                内容に問題や訂正すべき内容がある場合は
+                <a href={url}>Twitter</a>
+                か直接
+                <a href={config.siteRepository}>このブログのリポジトリ</a>
+                にPRを出してもらえれば対応します。
               </p>
             </CardText>
             <UserLinks labeled config={config} />

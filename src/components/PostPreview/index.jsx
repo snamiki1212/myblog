@@ -33,6 +33,7 @@ class PostPreview extends Component {
       this.setState({ mobile: true });
     }
   }
+
   render() {
     const { postInfo } = this.props;
     const { mobile } = this.state;
@@ -43,7 +44,7 @@ class PostPreview extends Component {
         <Link to={postInfo.path}>
           <Media style={{ height: coverHeight, paddingBottom: "0px" }}>
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
-            <MediaOverlay className='post-preview__overlay' >
+            <MediaOverlay className='post-preview__overlay'>
               <span className='post-preview__title'>{postInfo.title}</span>
               {/* <CardTitle title={postInfo.title} style={{"color": "black"}} /> */}
             </MediaOverlay>
@@ -55,7 +56,7 @@ class PostPreview extends Component {
             )}`}
           />
           {/* <CardTitle subtitle={<PostTags tags={postInfo.tags} />} /> */}
-          <CardText children={postInfo.excerpt} className='post-preview__excerpt'/>
+          <CardText children={postInfo.excerpt} className='post-preview__excerpt' />
         </Link>
       </Card>
     );

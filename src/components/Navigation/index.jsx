@@ -16,7 +16,7 @@ class Navigation extends Component {
         toolbarTitle={LocalTitle} // header title
 
         drawerTitle={config.siteTitle}
-        navItems={GetNavList(config)}
+        navItems={GetNavList()}
         mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         tabletDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}

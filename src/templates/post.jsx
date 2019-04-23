@@ -1,11 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import CardTitle from "react-md/lib/Cards/CardTitle";
 import CardText from "react-md/lib/Cards/CardText";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo";
-// import UserInCard from "../components/UserInCard";
 import PostTags from "../components/PostTags";
 import PostCover from "../components/PostCover";
 import SocialLinks from "../components/SocialLinks";

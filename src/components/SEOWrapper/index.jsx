@@ -1,15 +1,14 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image';
 import SEO from '../SEO';
 
 class SEOWrapper extends React.Component{
   render() {
-    const {postPath, postNode, postSEO} = this.props;
+    const {postPath, postNode} = this.props;
     return (
       <StaticQuery
         query={query}
-        render={ data =>{
+        render={data => {
           const postImgNode =
             data.allFile.edges
               .filter(edge=> edge.node.childImageSharp )

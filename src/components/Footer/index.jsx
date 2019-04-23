@@ -4,7 +4,6 @@ import "./Footer.scss";
 
 class Footer extends Component {
   render() {
-    const url = config.siteRss;
     const { copyright, fixedFooter } = config;
     if (!copyright) {
       return null;
@@ -18,10 +17,12 @@ class Footer extends Component {
 
           <div className="based-on">
             <h4>
-              Based on{" "}
+              Based on
+              {" "}
               <a href="https://github.com/Vagr9K/gatsby-material-starter">
                 Gatsby Material Starter
-              </a>.
+              </a>
+              .
             </h4>
           </div>
         </div>

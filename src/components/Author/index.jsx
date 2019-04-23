@@ -4,7 +4,6 @@ import "./Author.scss";
 
 class Author extends Component {
   render() {
-    const { tags } = this.props;
     return (
       <div id='author'>
         <img
