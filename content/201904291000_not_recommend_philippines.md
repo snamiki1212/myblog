@@ -2,9 +2,10 @@
 title: "エンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論"
 cover: "201904291000_cover.jpg"
 date: "2019-04-29 10:00"
-category: "Tech"
+category: "World"
 tags:
-    - tech
+    - フィリピン留学
+    - 英語
 slug: not-recommend-philippines
 ---
 
