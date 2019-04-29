@@ -26,7 +26,7 @@ module.exports = {
   userTwitter: "snamiki1212", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Shibuya, Japan", // User location to display in the author segment.
   userAvatar: "/logos/logo_48.jpg", // User avatar to display in the author segment.
-  userDescription: "プログラミングが好きな人。SE→Webベンチャー→フリーランス→フィリピン語学留学（今ここ）。日本から出て、海外で働いて、最終ゴールは月で生活すること。", // User description to display in the author segment.
+  userDescription: "プログラミングが好きな人。SE→ITベンチャー→フリーランス→フィリピン語学留学→タイ滞在中（今ここ）。日本から出て、海外で働いて、最終ゴールは月で生活すること。", // User description to display in the author segment.
   userIntroduction: "Freelance Endigneer", // short user introduction
 
   // for side-bar
@@ -60,5 +60,5 @@ module.exports = {
       iconClassName: "fa fa-rss"
     }
   ],
-  copyright: "Copyright © 2018. Shun Namiki" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2019. Shun Namiki" // Copyright string for the footer of the website and RSS feed.
 };
