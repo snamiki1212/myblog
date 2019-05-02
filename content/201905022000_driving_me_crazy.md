@@ -7,7 +7,7 @@ tags:
     - life
 slug: driving-me-crazy
 SEO-keyword:
-  - 気が狂う
+  - 気が狂いそう
 ---
 
 # 【解決】気が狂いそうになったらすること【まとめ】
