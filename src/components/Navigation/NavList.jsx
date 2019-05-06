@@ -1,24 +1,24 @@
-import React from "react";
-import FontIcon from "react-md/lib/FontIcons";
-import { Link } from "gatsby";
+import React from 'react';
+import FontIcon from 'react-md/lib/FontIcons';
+import {Link} from 'gatsby';
 
 function GetNavList() {
   const NavList = [];
 
   NavList.push({
-    primaryText: "Home",
+    primaryText: 'Home',
     leftIcon: <FontIcon>home</FontIcon>,
     component: Link,
-    to: "/"
+    to: '/'
   });
 
   NavList.push({
-    primaryText: "AboutMe",
-    secondaryText: "",
+    primaryText: 'AboutMe',
+    secondaryText: '',
     threeLines: true,
     leftIcon: <FontIcon>face</FontIcon>,
     component: Link,
-    to: "/about/"
+    to: '/about/'
   });
 
   NavList.push({
@@ -26,30 +26,30 @@ function GetNavList() {
   });
 
   NavList.push({
-    primaryText: "Tech",
-    secondaryText: "先端技術が好き。",
+    primaryText: 'Tech',
+    secondaryText: '先端技術が好き。',
     // threeLines: true,
     leftIcon: <FontIcon>desktop_mac</FontIcon>,
     component: Link,
-    to: "/categories/tech/"
+    to: '/categories/tech/'
   });
 
   NavList.push({
-    primaryText: "World",
+    primaryText: 'World',
     // threeLines: true,
-    secondaryText: "海外でのキャリアとか。",
+    secondaryText: '海外でのキャリアとか。',
     leftIcon: <FontIcon>language</FontIcon>,
     component: Link,
-    to: "/categories/world/"
+    to: '/categories/world/'
   });
 
   NavList.push({
-    primaryText: "Local Guide",
+    primaryText: 'Local Guide',
     threeLines: true,
-    secondaryText: "GoogleMapへの\nコントリビュータ。",
+    secondaryText: 'GoogleMapへの\nコントリビュータ。',
     leftIcon: <FontIcon>streetview</FontIcon>,
     component: Link,
-    to: "/categories/local-guide/"
+    to: '/categories/local-guide/'
   });
 
   // NavList.push({

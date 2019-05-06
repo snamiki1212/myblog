@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import Card from "react-md/lib/Cards/Card";
-import CardText from "react-md/lib/Cards/CardText";
-import Avatar from "react-md/lib/Avatars";
-import { Follow } from "react-twitter-widgets";
-import UserLinks from "../UserLinks";
-import "./UserInfo.scss";
+import React, {Component} from 'react';
+import Card from 'react-md/lib/Cards/Card';
+import CardText from 'react-md/lib/Cards/CardText';
+import Avatar from 'react-md/lib/Avatars';
+import {Follow} from 'react-twitter-widgets';
+import UserLinks from '../UserLinks';
+import './UserInfo.scss';
 
 class UserInfo extends Component {
   render() {
@@ -16,9 +16,7 @@ class UserInfo extends Component {
       userLinks,
       userTwitter
     } = this.props.config;
-    const userLinksElement = (
-      <UserLinks config={this.props.config} />
-    );
+    const userLinksElement = <UserLinks config={this.props.config} />;
     if (!userAvatar && !userName && !userLocation && !userDescription) {
       if (userLinks) {
         return (
@@ -34,14 +32,7 @@ class UserInfo extends Component {
         <CardText>
           <Avatar src={userAvatar} role="presentation" />
           <div>{userName && userName}</div>
-          {userTwitter ? (
-            <Follow
-              username={userTwitter}
-            />
-          ) : (
-            "Author"
-          )
-          }
+          {userTwitter ? <Follow username={userTwitter} /> : 'Author'}
           <p>{userDescription && userDescription}</p>
           {userLinksElement}
         </CardText>

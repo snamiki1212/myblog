@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import ReadingProgress from 'react-reading-progress'
-import "./StyledReadingProgress.scss";
+import React, {Component} from 'react';
+import ReadingProgress from 'react-reading-progress';
+import './StyledReadingProgress.scss';
 
 class StyledReadingProgress extends Component {
   render() {

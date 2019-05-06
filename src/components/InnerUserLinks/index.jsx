@@ -1,14 +1,15 @@
-import React, { Component } from "react";
-import Button from "react-md/lib/Buttons";
-import "./InnerUserLinks.scss";
+import React, {Component} from 'react';
+import Button from 'react-md/lib/Buttons';
+import './InnerUserLinks.scss';
 
 class InnerUserLinks extends Component {
   getLinkElements() {
-    const { userLinks } = this.props.config;
+    const {config} = this.props;
+    const {userLinks} = config;
     // const { labeled } = this.props;
     return userLinks.map(link => (
       <Button
-        icon={true}
+        icon
         key={link.label}
         iconClassName={link.iconClassName}
         href={link.url}
@@ -20,7 +21,9 @@ class InnerUserLinks extends Component {
   }
 
   render() {
-    const { userLinks } = this.props.config;
+    const {config} = this.props;
+    const {userLinks} = config;
+
     if (!userLinks) {
       return null;
     }

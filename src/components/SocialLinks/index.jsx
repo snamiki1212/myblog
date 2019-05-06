@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -16,26 +16,30 @@ import {
   GooglePlusIcon,
   LinkedinIcon,
   RedditIcon
-} from "react-share";
-import { HatenabookmarkButton } from 'react-social-sharebuttons';
-import urljoin from "url-join";
-import config from "../../../data/SiteConfig";
-import "./SocialLinks.scss";
+} from 'react-share';
+import {HatenabookmarkButton} from 'react-social-sharebuttons';
+import urljoin from 'url-join';
+import config from '../../../data/SiteConfig';
+import './SocialLinks.scss';
 
 class SocialLinks extends Component {
   render() {
-    const { postNode, postPath, mobile } = this.props;
+    const {postNode, postPath, mobile} = this.props;
     const post = postNode.frontmatter;
     const url = urljoin(config.siteUrl, postPath);
     const iconSize = mobile ? 36 : 48;
-    const filter = count => (count > 0 ? count : "");
+    const filter = count => (count > 0 ? count : '');
     const renderShareCount = count => (
       <div className="share-count">{filter(count)}</div>
     );
 
     return (
       <div className="social-links">
-        <HatenabookmarkButton url={url} title={post.title} layout='standard-balloon' />
+        <HatenabookmarkButton
+          url={url}
+          title={post.title}
+          layout="standard-balloon"
+        />
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>

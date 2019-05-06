@@ -1,20 +1,19 @@
-import React, { Component } from "react";
-import NavigationDrawer from "react-md/lib/NavigationDrawers";
-import ToolbarActions from "../ToolbarActions";
-import Footer from "../Footer";
-import GetNavList from "./NavList";
+import React, {Component} from 'react';
+import NavigationDrawer from 'react-md/lib/NavigationDrawers';
+import ToolbarActions from '../ToolbarActions';
+import Footer from '../Footer';
+import GetNavList from './NavList';
 import StyledReadingProgress from '../StyledReadingProgress';
-import "./Navigation.scss";
+import './Navigation.scss';
 
 class Navigation extends Component {
   render() {
-    const { children, config, LocalTitle, isPost } = this.props;
-    const footerLinks = LocalTitle !== "About";
+    const {children, config, LocalTitle, isPost} = this.props;
+    const footerLinks = LocalTitle !== 'About';
 
     return (
       <NavigationDrawer
         toolbarTitle={LocalTitle} // header title
-
         drawerTitle={config.siteTitle}
         navItems={GetNavList()}
         mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
@@ -22,7 +21,7 @@ class Navigation extends Component {
         desktopDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         toolbarActions={<ToolbarActions config={config} />}
       >
-        {isPost ? <StyledReadingProgress /> : "" }
+        {isPost ? <StyledReadingProgress /> : ''}
         <div className="main-container">{children}</div>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>

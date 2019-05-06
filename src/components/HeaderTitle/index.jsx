@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import config from "../../../data/SiteConfig";
-import "./headerTitle.scss";
+import React, {Component} from 'react';
+import config from '../../../data/SiteConfig';
+import './headerTitle.scss';
 
 class HeaderTitle extends Component {
   render() {

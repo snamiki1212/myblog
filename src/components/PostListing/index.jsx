@@ -1,5 +1,5 @@
-import React from "react";
-import PostPreview from "../PostPreview";
+import React from 'react';
+import PostPreview from '../PostPreview';
 
 class PostListing extends React.Component {
   getPostList() {
@@ -17,6 +17,7 @@ class PostListing extends React.Component {
     });
     return postList;
   }
+
   render() {
     const postList = this.getPostList();
     return (
