@@ -1,5 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fce06c01-d793-4026-8a48-ef4946156434/deploy-status)](https://app.netlify.com/sites/snamiki1212/deploys)
 
-Blog [Lunash](https://snamiki1212.com) repository.
+# Blog [Lunash](https://snamiki1212.com) repository.
 
 ## Usage
 
