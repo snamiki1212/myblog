@@ -15,6 +15,8 @@ slug: create-pomotimer-with-hooks
 
 React の Hook を使ってサンプルタイマーを作ったので、そのまとめ
 
+![video-pomotimer-gif](./201905071200_1.gif)
+
 →[アプリ](https://github.com/snamiki1212/pomotimer-with-hooks)/ [Github](https://github.com/snamiki1212/pomotimer-with-hooks)
 
 ## 使った技術
