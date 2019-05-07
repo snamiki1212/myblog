@@ -24,6 +24,7 @@ React の Hook を使ってサンプルタイマーを作ったので、その�
 今まで作ってきた分と同じように、基本的なところは流用。
 
 - React：本体
+- TypeScript：AltJS
 - Prettier：フォーマッター
 - ESlint：Linter
 - gh-pages：デプロイとホスティング
