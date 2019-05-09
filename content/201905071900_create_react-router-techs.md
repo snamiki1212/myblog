@@ -1,5 +1,5 @@
 ---
-title: 'react-routerを使ってサンプルアプリを作った'
+title: 'react-router/react-router-transitionを使ってサンプルアプリを作った'
 cover: '201905071900_cover.jpg'
 date: '2019-05-07 19:00'
 category: 'Tech'
@@ -11,11 +11,12 @@ tags:
 slug: create-react-router-techs
 ---
 
-# react-router を使ってサンプルアプリを作った
+# react-router/react-router-transition を使ってサンプルアプリを作った
 
-react-router を使ってサンプルアプリを作ったので、その過程をまとめ。
+react-router/react-router-transition を使ってサンプルアプリを作ったので、その過程をまとめ。
 
-[Github](https://github.com/snamiki1212/react-router-techs) / [アプリ](https://snamiki1212.github.io/react-router-techs/)
+- [Github](https://github.com/snamiki1212/react-router-techs)
+- [アプリ](https://snamiki1212.github.io/react-router-techs/)
 
 ![react-router-sample-app](201905071900_1.gif)
 
@@ -41,7 +42,9 @@ react-router を使ってサンプルアプリを作ったので、その過程�
 
 - SPA における Routing は url に応じて紐づく component を表示することで実現する。
 
-react-route は割とすんなり使えた。これだけだと物足りなかったので、アニメーションを探してみたら良さげなのが合ったので、試してみた。
+react-router だけで１アプリだとさすがに、物足りなかったので、アニメーション系のライブラリを探してみたら良さげなのが合ったので、試してみた。
+
+## 学んだこと：react-router-transition
 
 ### アニメーション package の選定
 
