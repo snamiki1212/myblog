@@ -1,27 +1,27 @@
 ---
-title: "ITエンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論"
-cover: "201904291000_cover.jpg"
-date: "2019-04-29 10:00"
-category: "World"
+title: 'ITエンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論'
+cover: '201904291000_cover.jpg'
+date: '2019-04-29 10:00'
+category: 'World'
 tags:
-    - フィリピン留学
-    - 英語
+  - フィリピン留学
+  - 英語
 slug: not-recommend-philippines
 ---
 
-# ITエンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論
+# IT エンジニア目線でフィリピンをおすすめしない理由 ←3 ヶ月滞在の結論
 
-こんにちは。フィリピン留学で2つの学校を卒業したNashです。
+こんにちは。フィリピン留学で 2 つの学校を卒業した Nash です。
 
-この記事は、自分がフィリピンでの2つの学校での語学留学に通いながら、フリーランスとして開発をした上でわかった知見をまとめたものです。
+この記事は、自分がフィリピンでの 2 つの学校での語学留学に通いながら、フリーランスとして開発をした上でわかった知見をまとめたものです。
 
 結論は
 
-「<b>ノマドワーカーはフィリピン(セブorバギオ)にて、滞在しながら働くのはおすすめしない</b>」
+「<b>ノマドワーカーはフィリピン(セブ or バギオ)にて、滞在しながら働くのはおすすめしない</b>」
 
 「<b>フィリピンに長期で生活すること自体をあまり、おすすめしない</b>」
 
-です。※2019年時点かつ主観的な意見です
+です。※2019 年時点かつ主観的な意見です
 
 その理由は、
 
@@ -31,9 +31,7 @@ slug: not-recommend-philippines
 
 では、見ていきましょう。
 
-
-
-## ITエンジニア目線で、フィリピンをおすすめしない理由
+## IT エンジニア目線で、フィリピンをおすすめしない理由
 
 大きく分けて、下記の２点の切り口で見ていきます。
 
@@ -42,11 +40,9 @@ slug: not-recommend-philippines
 
 実際、「生活の質の低下」は「生産性の低下」に繋がっていたので、そこも言及していきます。
 
-
-
 ### ネットワークが遅い・不安定
 
-この観点は仕事に直結する観点なので、詳しく見ていきますね。とはいえ残念ながら、<b>ネットワークについての結論は、Wifi・SIMのネットワークが「遅い」かつ「不安定＝繋がらなくなるときがある」</b>です。
+この観点は仕事に直結する観点なので、詳しく見ていきますね。とはいえ残念ながら、<b>ネットワークについての結論は、Wifi・SIM のネットワークが「遅い」かつ「不安定＝繋がらなくなるときがある」</b>です。
 
 では見ていきます。
 
@@ -54,7 +50,7 @@ slug: not-recommend-philippines
 
 結論、安定しないです。
 
-自分が滞在していたペンションにWifiがあり、初日に確認したところ35Mbpsありました。
+自分が滞在していたペンションに Wifi があり、初日に確認したところ 35Mbps ありました。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 44: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>・２つ目の学校に到着<br><br>・生活雑貨品の購入してたら一日が終わった<br><br>・寮のWifi速度が早くて歓喜。これでやっと仕事を再開できる・・・。 <a href="https://t.co/s0rEigaa8X">pic.twitter.com/s0rEigaa8X</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1107437001056223232?ref_src=twsrc%5Etfw">2019年3月18日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -64,32 +60,26 @@ slug: not-recommend-philippines
 
 →<b>ペンションは、ネットワークが弱いので作業できる場所を探しに外出しないといけない</b>
 
-
-
 ### ネットワーク【SIM】
 
-遅いです。3Gレベルの速度です。自分は、SIM＝Globe社／スマホ＝iPhoneXRを使っていました。スマホの性能が高くてもネットワークの遅さに引きづられて、結果として速度は遅いです。
+遅いです。3G レベルの速度です。自分は、SIM ＝ Globe 社／スマホ＝ iPhoneXR を使っていました。スマホの性能が高くてもネットワークの遅さに引きづられて、結果として速度は遅いです。
 
 →<b>ネットワークがボトルネックになるので、高性能なスマホでもネットサーフィンは遅い</b>
 
-
-
-
-
 ### ネットワーク【カフェ】
 
-いろいろなカフェを巡ってWifiを探し回りましたが、そちらの結果も同じです。速度はたいてい約5Mbps。ただ、カフェの利用者の人数に比例して速度がどんどん遅くなります。<b>一番最悪なケースは約30Kbpsでした。</b>ADSLかな。
+いろいろなカフェを巡って Wifi を探し回りましたが、そちらの結果も同じです。速度はたいてい約 5Mbps。ただ、カフェの利用者の人数に比例して速度がどんどん遅くなります。<b>一番最悪なケースは約 30Kbps でした。</b>ADSL かな。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 62: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a><br><br>✅Wifiが爆速と有名なカフェですら、人が多いと速度が遅くなるし、そもそも他の場所の選択肢が少なすぎて、すぐWifi難民になる<br><br>→結論：今のフィリピンは、ノマドで仕事をする人にとっては、まだインフラが整ってなくて辛い</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1114921337816899585?ref_src=twsrc%5Etfw">2019年4月7日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-また、カフェのネットワークも不安定なので、5分くらい繋がらない状態によくなります。開発をしていると、これが原因でゾーンから抜けてしまうことが多いです。
+また、カフェのネットワークも不安定なので、5 分くらい繋がらない状態によくなります。開発をしていると、これが原因でゾーンから抜けてしまうことが多いです。
 
 →<b>カフェは、そこそこの速度だが人が多いとかなり遅く不安定</b>
 
 ### ネットワーク【オフィス】
 
-土日に自由参加で使えるようだったので、某有名IT会社のオフィスにお邪魔して作業をしてみました。ですが、むしろ<b>カフェよりもWifiが安定していないレベル</b>です。
+土日に自由参加で使えるようだったので、某有名 IT 会社のオフィスにお邪魔して作業をしてみました。ですが、むしろ<b>カフェよりも Wifi が安定していないレベル</b>です。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 66: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a><br><br>✅某IT会社のワークスペースに遊びに行ったけど、滞在時間の1/3くらい接続出来ないくらいネットワークが不安定だった<br><br>→会社のWifiですらこのレベルとなると、フィリピンという国単位でネットワークインフラがまだまだ弱すぎる</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1117212811027836928?ref_src=twsrc%5Etfw">2019年4月13日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -100,20 +90,16 @@ slug: not-recommend-philippines
 
 ### ネットワーク【コワーキング・スペース】
 
-Wifiのネットワークが安定・早いで、かなり快適でした。
+Wifi のネットワークが安定・早いで、かなり快適でした。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 67: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a><br><br>「WorkPlaceCafe」というワーキングスペースで仕事してた😇<br><br>5時間くらい作業してたけど、ネットが途切れない環境はフィリピンで初めて😭<br><br>日本と同じくらいネットが安定してる場所で久しぶりに作業したけど、作業効率がやっぱ全然違う <a href="https://t.co/jrGgnCHBxs">pic.twitter.com/jrGgnCHBxs</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1117441447064510466?ref_src=twsrc%5Etfw">2019年4月14日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 滞在時間に対してお金がかかりますが、カフェに比べてもあまり変わらないです。ただ、店舗が限られてくるので拠点の近くにないと、わざわざタクシーなどで向かわないといけないのは、かなり負担が高いかと思います。
 
-
-
 →<b>コワーキング・スペースは、ネットワークの速度は速いかつ安定だが、店舗が少ない</b>
 
-
-
-### 安くない→コスパが悪い
+### 安くない → コスパが悪い
 
 「生活環境の質に対して」という意味合いで、フィリピンの物価は安くないです。
 
@@ -122,8 +108,6 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 また、この記事でいろいろ記述していますが「生活環境の質」はかなり低いです。そのため、<b>質に対するコストという意味合いのコスパを考えると、かなり悪いです</b>。日本の地方で暮らしているほうがコスパ良いと思います。
 
 →<b>日本よりも物価は安いが、コスパが悪い</b>
-
-
 
 ### 飯がマズい
 
@@ -134,6 +118,7 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 もはや、<b>最終的な自分の結論は「フィリピンでは、ファースト・フード店に通うのが一番良い」</b>となりました。
 理由として、
+
 - 味が美味しい
 - 味付けが安定している
 - 値段が安い
@@ -143,10 +128,6 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 →<b>常にメシマズなので、ストレスがかなり溜まる</b>
 
-
-
-
-
 ### 盗難リスクが高め
 
 盗難リスクがそれなりにあるため、普段の生活でも常に神経を尖らせていないといけないです。
@@ -155,11 +136,9 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 →<b>常に警戒するので、外出するだけで精神・体力を消耗する</b>
 
-
-
 ### ストリートチルドレンとホームレスが多い
 
-道を歩いているとストリートチルドレンやホームレスが結構います。昔に比べて減ったらしいですが、それでも、10分くらい歩くと確実に2組くらいは目にします。
+道を歩いているとストリートチルドレンやホームレスが結構います。昔に比べて減ったらしいですが、それでも、10 分くらい歩くと確実に 2 組くらいは目にします。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 54: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a><br><br>初めてストリートチルドレンに物乞いされた<br><br>手で払いながら無視したけど、2分くらいずーっと、まとわりついてくる<br><br>日本でぬくぬくと育ってきた人に比べると、やっぱ、こうやって苦境に立たされている子のほうが、ハングリー精神はメキメキ育ってるわ</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1111294663346941953?ref_src=twsrc%5Etfw">2019年3月28日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -167,8 +146,6 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 ストリート・チルドレンはしつこく物乞いをしてきたり、囲んでモノを盗んできたりするので、正直外出するのが嫌になります。
 
 →<b>外に出るのが億劫になる</b>
-
-
 
 ### 道でアンモニア臭がする
 
@@ -178,8 +155,6 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 →<b>道を歩いているだけで、ダメージを受けてストレスが溜まる</b>
 
-
-
 ### 生活水準の質が低い
 
 カフェ、学校、ペンションで停電がたまに起きます。別に、雷が落ちたとかではなく昼間に突然落ちたりします。また、コンビニの質もかなり低いので、「軽くコンビニでなにかを食べる」という選択肢がないので「どこで食べるか？」などを、毎食考えないといけないです。
@@ -187,17 +162,15 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 48: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>✅夜飯用にコンビニで簡単な弁当を買ってきた😊<br><br>→一口食べて無理だった🤮セブンの商品だったので大丈夫だろうと買ったが、たぶん腐ってる・・・ <a href="https://t.co/jaICfRqZ9a">pic.twitter.com/jaICfRqZ9a</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1108723559658975233?ref_src=twsrc%5Etfw">2019年3月21日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-また、トイレに行くとわかりますが「水が流れない」「手を洗う水が出ない」とかは、当たり前です。Google Mapの口コミ数が600を超えるような有名レストランですら、このレベルです。
+また、トイレに行くとわかりますが「水が流れない」「手を洗う水が出ない」とかは、当たり前です。Google Map の口コミ数が 600 を超えるような有名レストランですら、このレベルです。
 
 →<b>普通に生活をしているだけで、ストレスが溜まる</b>
-
-
 
 ### 虫が多い
 
 ゴキブリ・アリ・羽虫などの発生率が高いです。
 
-<b>レストランにゴキブリがいるのも当たり前だし、外出すれば一日に30匹以上は遭遇します。</b>このレベルで存在するので、たまにゴキブリを踏みます。自分は虫どころか死んだ猫を踏んでいたらしいです。気付かなかったが、友達に後で言われました。
+<b>レストランにゴキブリがいるのも当たり前だし、外出すれば一日に 30 匹以上は遭遇します。</b>このレベルで存在するので、たまにゴキブリを踏みます。自分は虫どころか死んだ猫を踏んでいたらしいです。気付かなかったが、友達に後で言われました。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 49: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>✅セブはアリがめちゃくちゃ多い🐜<br>→ポカリを容器に入れて飲んでいたが気付いたらめちゃくちゃアリがたかってた。これは気付かないうちに飲み込んでいた可能性が・・・</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1109468093330280448?ref_src=twsrc%5Etfw">2019年3月23日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -206,20 +179,18 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 →<b>生活にかなり虫が関与してくるので、気が滅入る</b>
 
-
-
 ### 気候が快適ではない
 
 自分はセブ・バギオの２箇所に滞在しましたが、気候は快適ではなかったです。
 
- <b>バギオは、めちゃくちゃ寒い</b>です。
+<b>バギオは、めちゃくちゃ寒い</b>です。
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">・夜は寒くてウルトラ・ライトダウン着て寝てたが<br>　同室のモンゴル人は半裸で寝てて<br>　ハードウェアのスペック差を感じる。</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1092439769047392256?ref_src=twsrc%5Etfw">2019年2月4日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 「暑い寄りの涼しい」ではなく、むしろ「寒い寄りの涼しい」が正しく、寝巻きにウルトラライトダウンを着ているレベルでした。
 
- <b>セブは、めちゃくちゃ暑い</b>です。
+<b>セブは、めちゃくちゃ暑い</b>です。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 47: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>✅全授業が終わっただけで、すでに疲労MAXになって、そこからの活動が全然出来ない😔<br><br>→気付いてなかったが、おそらく寝る時にセブの暑さで体力がゴリゴリ削られてる？ぽいので、クーラー使ったりして対策してみる💨</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1108531945246347264?ref_src=twsrc%5Etfw">2019年3月21日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -230,19 +201,13 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 →<b>生活・外出するだけで、体力をかなり消費</b>
 
-
-
-
-
 ### 良くない点のまとめ
 
 ここまでが良くない点でした、まとめると「<b>ネットワークインフラが整っていないのと、フィリピンの生活水準が低すぎて普通に暮らすことですら負担が大きい</b>」となります。
 
 次は良かった点について、見ていきます
 
-
-
-## ITエンジニア目線で、フィリピンの良い点
+## IT エンジニア目線で、フィリピンの良い点
 
 ### 英語ファースト
 
@@ -253,8 +218,6 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 表記についてですが、フィリピンの母国語はタガログ語ですが、英語ファーストなことが多いです。そのため、<b>例えば、レストランのメニューを見ても、英語がほぼメインで書かれているケースが多いので、かなり読みやすいです</b>。ちなみに、タイだとタイ語ファーストで、英語がサブに表記されているので、すこし読みにくいケースが多いです。
 
 →<b>英語ファーストなので、言語観点では暮らしやすく英語慣れしやすい好環境</b>
-
-
 
 ### フレンドリーな人が多い傾向
 
@@ -268,8 +231,6 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 全員が「陽気」というわけではないですが、「フレンドリー」な人は多いように感じました。
 
 →<b>フレンドリーな人が多い</b>
-
-
 
 ### リゾートや島のクオリティが高い
 
@@ -287,8 +248,6 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 →<b>リゾートはコスパが良い</b>
 
-
-
 ### 良い点のまとめ
 
 良い点のまとめは、「英語ファーストかつリゾート地のコスパが良い」となります。
@@ -302,15 +261,11 @@ Wifiのネットワークが安定・早いで、かなり快適でした。
 
 - メシマズ
 - ネットワークが貧弱
-- 生活レベルが低すぎる　→　その割にコストがそこまで安くない
+- 生活レベルが低すぎる　 → 　その割にコストがそこまで安くない
 
 現地で会った人や経験者の話を聞いても特に日本人はフィリピンの生活水準に合わない人が、かなり多い印象です。
 
 フィリピンは残念ながら環境として、あまり良くなかったので、次はタイにでも行ってみて、生活をしてみようかと思います。
 
-
-
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">フィリピンにさよならをしたが<br><br>次は、こんにちはタイ <a href="https://t.co/r1zElYIKhr">pic.twitter.com/r1zElYIKhr</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1122503512951156736?ref_src=twsrc%5Etfw">2019年4月28日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-

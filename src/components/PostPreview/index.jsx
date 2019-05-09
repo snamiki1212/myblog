@@ -13,7 +13,7 @@ class PostPreview extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobile: true
+      mobile: true,
     };
     this.handleResize = this.handleResize.bind(this);
   }

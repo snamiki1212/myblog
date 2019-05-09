@@ -1,46 +1,46 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import CardText from "react-md/lib/Cards/CardText";
-import Layout from "../layout";
-import UserInfo from "../components/UserInfo";
-import PostTags from "../components/PostTags";
-import PostCover from "../components/PostCover";
-import SocialLinks from "../components/SocialLinks";
-import PostSuggestions from "../components/PostSuggestions";
-import HeaderTitle from "../components/HeaderTitle";
-import SEOWrapper from "../components/SEOWrapper";
-import config from "../../data/SiteConfig";
-import "./post.scss";
+import React from 'react';
+import Helmet from 'react-helmet';
+import {graphql} from 'gatsby';
+import CardText from 'react-md/lib/Cards/CardText';
+import Layout from '../layout';
+import UserInfo from '../components/UserInfo';
+import PostTags from '../components/PostTags';
+import PostCover from '../components/PostCover';
+import SocialLinks from '../components/SocialLinks';
+import PostSuggestions from '../components/PostSuggestions';
+import HeaderTitle from '../components/HeaderTitle';
+import SEOWrapper from '../components/SEOWrapper';
+import config from '../../data/SiteConfig';
+import './post.scss';
 
 export default class PostTemplate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobile: true
+      mobile: true,
     };
     this.handleResize = this.handleResize.bind(this);
   }
   componentDidMount() {
     this.handleResize();
-    window.addEventListener("resize", this.handleResize);
+    window.addEventListener('resize', this.handleResize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
+    window.removeEventListener('resize', this.handleResize);
   }
 
   handleResize() {
     if (window.innerWidth >= 640) {
-      this.setState({ mobile: false });
+      this.setState({mobile: false});
     } else {
-      this.setState({ mobile: true });
+      this.setState({mobile: true});
     }
   }
 
   render() {
-    const { mobile } = this.state;
-    const { slug } = this.props.pageContext;
+    const {mobile} = this.state;
+    const {slug} = this.props.pageContext;
     const expanded = !mobile;
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
@@ -69,7 +69,7 @@ export default class PostTemplate extends React.Component {
           <div className="md-grid md-cell--7 post-page-contents mobile-fix">
             <div className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body target-el">
-                <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+                <div dangerouslySetInnerHTML={{__html: postNode.html}} />
               </CardText>
               <div className="post-meta">
                 <PostTags tags={post.tags} />
@@ -95,7 +95,7 @@ export default class PostTemplate extends React.Component {
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: {slug: {eq: $slug}}) {
       html
       timeToRead
       excerpt(truncate: true)

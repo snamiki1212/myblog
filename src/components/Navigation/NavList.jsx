@@ -9,7 +9,7 @@ function GetNavList() {
     primaryText: 'Home',
     leftIcon: <FontIcon>home</FontIcon>,
     component: Link,
-    to: '/'
+    to: '/',
   });
 
   NavList.push({
@@ -18,11 +18,11 @@ function GetNavList() {
     threeLines: true,
     leftIcon: <FontIcon>face</FontIcon>,
     component: Link,
-    to: '/about/'
+    to: '/about/',
   });
 
   NavList.push({
-    divider: true
+    divider: true,
   });
 
   NavList.push({
@@ -31,7 +31,7 @@ function GetNavList() {
     // threeLines: true,
     leftIcon: <FontIcon>desktop_mac</FontIcon>,
     component: Link,
-    to: '/categories/tech/'
+    to: '/categories/tech/',
   });
 
   NavList.push({
@@ -40,7 +40,7 @@ function GetNavList() {
     secondaryText: '海外でのキャリアとか。',
     leftIcon: <FontIcon>language</FontIcon>,
     component: Link,
-    to: '/categories/world/'
+    to: '/categories/world/',
   });
 
   NavList.push({
@@ -49,7 +49,7 @@ function GetNavList() {
     secondaryText: 'GoogleMapへの\nコントリビュータ。',
     leftIcon: <FontIcon>streetview</FontIcon>,
     component: Link,
-    to: '/categories/local-guide/'
+    to: '/categories/local-guide/',
   });
 
   // NavList.push({

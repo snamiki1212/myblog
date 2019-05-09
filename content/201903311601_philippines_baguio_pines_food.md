@@ -1,19 +1,19 @@
 ---
-title: "フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】"
+title: 'フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】'
 cover: 201903311601_cover.jpg
-date: "2019-03-31 16:01"
-category: "World"
+date: '2019-03-31 16:01'
+category: 'World'
 tags:
-    - フィリピン留学
-    - 英語
+  - フィリピン留学
+  - 英語
 slug: philippines-baguio-pines-food
 SEO-keyword:
-    - フィリピン　食べ物
+  - フィリピン　食べ物
 ---
 
 # フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】
 
-こんにちは、Nashです。好きなレストランは、サイゼリアです。
+こんにちは、Nash です。好きなレストランは、サイゼリアです。
 
 この記事は
 
@@ -31,9 +31,9 @@ SEO-keyword:
 
 と、疑問になるかと思います。
 
-10人の友達に聞いた結果、10人の友達がマズいと言っていたレベルです。
+10 人の友達に聞いた結果、10 人の友達がマズいと言っていたレベルです。
 
-フィリピン留学中に、自分はバギオエリアのPINESという学校に通っていました。
+フィリピン留学中に、自分はバギオエリアの PINES という学校に通っていました。
 
 そこで出た最高に美味しい食事がこれです！
 
@@ -47,8 +47,6 @@ SEO-keyword:
 ```
 
 これなら、日本の刑務所の方が、美味しいご飯がでますね。
-
-
 
 ## 料理のバリエーション【もはや不思議な食べ物】
 
@@ -66,15 +64,9 @@ SEO-keyword:
 
 摩訶不思議体験ですね。
 
-
-
 ## 食べ物がマズいと、こんな事が起きます
 
-
-
 さて、このような、食事環境で一ヶ月半ほど生活したら、どうなったのかを列挙しますね。
-
-
 
 1. 食事がストレス【ご飯を食べたくない】
 
@@ -94,10 +86,6 @@ SEO-keyword:
 
 １つ１つ、詳細をを見ていきましょう。
 
-
-
-
-
 ### 1. 食事がストレス【食べ物を食べたくない】
 
 フィリピン留学中は、生活している大半の時間は「勉強の時間」です。
@@ -113,8 +101,6 @@ SEO-keyword:
 もともと少食だったのもあり、最終的に自分は朝のご飯を抜いていました。
 
 マズい食事を、朝から食べる元気は無いですから。
-
-
 
 ### 2. 体重が減る【食べ物を食べない】
 
@@ -132,14 +118,10 @@ SEO-keyword:
 
 ストレスで、お腹がいっぱいです。
 
-
-
-38日目の、自分も嘆いていますね。
+38 日目の、自分も嘆いていますね。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 38: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E?src=hash&amp;ref_src=twsrc%5Etfw">#英語</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>・ほぼ1ヶ月くらい、「毎日マズメシ」「自室〜クラス間の移動のみの生活」を送った結果、スタミナと筋肉と体重が絶望的に減った😭😭😭<br><br>→体調管理をおろそかにしたツケを悔やみながら今日から筋トレを始める</p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1105115489448017920?ref_src=twsrc%5Etfw">2019年3月11日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 
 ```
 Days 38: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
@@ -149,19 +131,13 @@ Days 38: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 →体調管理をおろそかにしたツケを悔やみながら今日から筋トレを始める
 ```
 
-
-
-ちなみに、NHKの筋肉体操が、おすすめです。
-
-
+ちなみに、NHK の筋肉体操が、おすすめです。
 
 ### 3. お菓子を食べ始める【食べ物を自分で調達】
 
 ここらへんから、現実逃避を始めます。
 
 つまり、お菓子で食事を取り始めます
-
-
 
 栄養補給の観点で見ると、どう考えても「ご飯の代わり」には、ならないですね。
 
@@ -171,21 +147,15 @@ Days 38: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 
 それくらい、食事が辛かったので。
 
-
-
 ### 4. 体調が悪くなる【食べ物が原因】
 
 というわけで、ここまでで、順調に食事制限を重ねてきたわけですが、ついに体調を崩しました。
 
-具体的には、「38度の熱」「のどが、痛い」「咳が出る」「全身の倦怠感」「寒気」などなどです。どう考えても、風邪ですね。はい。
+具体的には、「38 度の熱」「のどが、痛い」「咳が出る」「全身の倦怠感」「寒気」などなどです。どう考えても、風邪ですね。はい。
 
 普通に生活をしていて突然の風邪なので、単純に食事量が減って、免疫力が落ちて、風邪を引いた、ってことだと思います。
 
-
-
-
-
-34日目の授業は全欠席してますね。
+34 日目の授業は全欠席してますね。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 34: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E?src=hash&amp;ref_src=twsrc%5Etfw">#英語</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>・38.4℃の熱で授業を全欠席😷明日の朝も熱があったら病院に連行されるらしい<br><br>・しばらく寝て回復した気がしてきたので、ひたすらDUOしてた（楽しい）</p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1103623127978848256?ref_src=twsrc%5Etfw">2019年3月7日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -198,19 +168,13 @@ Days 34: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 ・しばらく寝て回復した気がしてきたので、ひたすらDUOしてた（楽しい）
 ```
 
-
-
-DUOを楽しそうに勉強してますね。このあとも、地獄が続くとは知らずに。
-
-
-
-
+DUO を楽しそうに勉強してますね。このあとも、地獄が続くとは知らずに。
 
 ### 5. 体調が回復しない【食べ物から栄養が取れない】
 
 さて、めでたく、体調を崩しました。
 
-が、そこから、約2週間近く、「体調が悪くて、風邪が治らない」「9時間くらい寝ても、日中に疲れて眠くなる」という状態でした。
+が、そこから、約 2 週間近く、「体調が悪くて、風邪が治らない」「9 時間くらい寝ても、日中に疲れて眠くなる」という状態でした。
 
 授業中も「寝たいから、早く授業、終わって欲しい・・・」しか考えれなかった時もあります。
 
@@ -220,9 +184,7 @@ DUOを楽しそうに勉強してますね。このあとも、地獄が続く�
 
 理由は勿論、「ご飯がマズいから」です。風が吹けば桶屋が儲かりますね。
 
-
-
-40日目らへんの、自分の主食はのど飴です。仙人かな。
+40 日目らへんの、自分の主食はのど飴です。仙人かな。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 40: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E?src=hash&amp;ref_src=twsrc%5Etfw">#英語</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>・1週間近く風邪っぽくて体調崩してて辛い<br><br>・体調崩す→メシマズで栄養補給が出来ない→回復できない<br><br>のど飴ばっか舐めてる。 <a href="https://t.co/mKD9sI64jC">pic.twitter.com/mKD9sI64jC</a></p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1105986649664544769?ref_src=twsrc%5Etfw">2019年3月14日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -236,12 +198,6 @@ Days 40: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 
 のど飴ばっか舐めてる
 ```
-
-
-
-
-
-
 
 ### 6. 外食にて、食べ物を探す【時間・金額のコスト増】
 
@@ -262,8 +218,6 @@ Days 40: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 25: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E8%AA%9E?src=hash&amp;ref_src=twsrc%5Etfw">#英語</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>・「この店、めちゃっくちゃ美味しいよ！」<br>と先生に勧められた店に行くも、確かに美味しいが、日本のレベルと比較すると普通〜ちょい美味しい、くらいなケースが多い・・・<br><br>日本のレストランが美味しすぎる罪は大きかった。</p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1100383169524555781?ref_src=twsrc%5Etfw">2019年2月26日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-
 ```
 Days 25: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 
@@ -273,15 +227,11 @@ Days 25: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 日本のレストランが美味しすぎる罪は大きかった。
 ```
 
-
-
 この頃の自分は、完全にサイゼが恋しくなっていました。
-
-
 
 ### 7. 便利な食べ物を買えない場所【食事はお菓子】
 
-自分はバギオのPINESに通っていました
+自分はバギオの PINES に通っていました
 
 が、ここの問題の１つは、近場に手頃に食事を取れる店が少ないことです。
 
@@ -289,15 +239,13 @@ Days 25: #100DaysOfEnglish #フィリピン留学 #英語 #留学 #英会話
 
 セブの学校を選択していれば、歩いて数分もすれば、ファストフードくらいはあるような学校がほとんどです。
 
-PINESだと、歩いて数分のところに、高給ホテル・ペンションがあり、そこにくっついている形で、食事を取れるレストランが6個くらいあります。
+PINES だと、歩いて数分のところに、高給ホテル・ペンションがあり、そこにくっついている形で、食事を取れるレストランが 6 個くらいあります。
 
 おいしい食事が取れるピザの店がありましたが、一回の食事自体の金額が、そこそこします。
 
 金額・時間のコストをかけたくなかったので、最終的に、外に出て食事をすることを、やめました。
 
 卒業の日まで短かったので、食事はお菓子とカップヌードルを中心にして、どうにか食い繋いで生きました。
-
-
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">カップ焼きそばフィリピン版<br><br>こっちのカップ麺ってモノによってかなり小さいんだよな。 <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://t.co/sbRZdecYt9">pic.twitter.com/sbRZdecYt9</a></p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1101105167414452225?ref_src=twsrc%5Etfw">2019年2月28日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -307,8 +255,6 @@ PINESだと、歩いて数分のところに、高給ホテル・ペンション
 
 こっちのカップ麺ってモノによってかなり小さいんだよな。 #フィリピン留学
 ```
-
-
 
 ### 【気付き】日本の食べ物の美味しさは異常
 
@@ -341,12 +287,11 @@ Days 48: #100DaysOfEnglish #フィリピン留学 #セブ留学 #留学 #英会�
 
 辛かったです。
 
-
 ## 終わり：学校選びにおける食べ物
 
 さて、ここまでの自分の経験から得た教訓についてです。
 
-自分の結論は、『1ヶ月以上の滞在なら、学校の「食事」面についても、慎重に考慮したほうが良かった』です。
+自分の結論は、『1 ヶ月以上の滞在なら、学校の「食事」面についても、慎重に考慮したほうが良かった』です。
 
 自分のケースを見てもらうとわかりますが
 
@@ -362,26 +307,24 @@ Days 48: #100DaysOfEnglish #フィリピン留学 #セブ留学 #留学 #英会�
 
 » [【セブ留学】日本資本の学校に通ってきた【フィリピン】](.//philippines-fund-of-japan)
 
-PINESを卒業した後に、CEGAに転校したのですが、ここでは、３食とも美味しいので、順調に太り始めてます。
+PINES を卒業した後に、CEGA に転校したのですが、ここでは、３食とも美味しいので、順調に太り始めてます。
 
 ---
 
-PINESについては、他の観点でもレビューしているので、よければこちらもどうぞ。
+PINES については、他の観点でもレビューしているので、よければこちらもどうぞ。
 
-» [【PINES｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
+» [【PINES ｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
 
-» [【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
+» [【PINES ｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
 
-» [【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
+» [【PINES ｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
 
-» [【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
+» [【PINES ｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
 
 ---
 
-フィリピン留学中に毎日必ずTweetしてたので、その内容をまとめました。興味がある人はこちらもどうぞ
+フィリピン留学中に毎日必ず Tweet してたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ→セブ)](https://twitter.com/i/moments/1108015112575541249)
+» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
 
 「いいね」してもらえると喜びます。
-
-

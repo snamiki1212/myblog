@@ -22,7 +22,7 @@ class Paginator extends Component {
             <li
               key={`pagination-number${i + 1}`}
               style={{
-                margin: 0
+                margin: 0,
               }}
             >
               <Link
@@ -31,7 +31,7 @@ class Paginator extends Component {
                 style={{
                   textDecoration: 'none',
                   color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#007acc' : ''
+                  background: i + 1 === currentPage ? '#007acc' : '',
                 }}
               >
                 {i + 1}

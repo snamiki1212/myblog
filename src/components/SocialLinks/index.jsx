@@ -15,7 +15,7 @@ import {
   TelegramIcon,
   GooglePlusIcon,
   LinkedinIcon,
-  RedditIcon
+  RedditIcon,
 } from 'react-share';
 import {HatenabookmarkButton} from 'react-social-sharebuttons';
 import urljoin from 'url-join';

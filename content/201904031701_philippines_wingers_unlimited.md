@@ -1,23 +1,23 @@
 ---
-title: "フィリピンの食べ物で人気の、WingersUnlimitedに行ってきた話"
+title: 'フィリピンの食べ物で人気の、WingersUnlimitedに行ってきた話'
 cover: 201904031701_cover.jpg
-date: "2019-04-03 17:01"
-category: "World"
+date: '2019-04-03 17:01'
+category: 'World'
 tags:
-    - フィリピン留学
-    - 英語
+  - フィリピン留学
+  - 英語
 slug: philippines-wingers-unlimited
 SEO-keyword:
-    - フィリピン 食べ物 人気
+  - フィリピン 食べ物 人気
 ---
 
-# フィリピンの食べ物で人気の、WingersUnlimitedに行ってきた話
+# フィリピンの食べ物で人気の、WingersUnlimited に行ってきた話
 
-こんにちは。食べ放題には、あまり行かないNashです。
+こんにちは。食べ放題には、あまり行かない Nash です。
 
 この記事では、
 
-「WingersUnlimitedという、地元民にメチャクチャ人気の、チキン食べ放題の店に行ってきた」
+「WingersUnlimited という、地元民にメチャクチャ人気の、チキン食べ放題の店に行ってきた」
 
 という、内容の記事になります。
 
@@ -35,22 +35,21 @@ SEO-keyword:
 
 味がめちゃくちゃ美味しい店なら、下記とかをオススメします。
 
-» [フィリピンで魚の食べ物が美味しい、PAOLITO'Sに行ってきた](./philippines-paolitos)
+» [フィリピンで魚の食べ物が美味しい、PAOLITO'S に行ってきた](./philippines-paolitos)
 
 では、書いていきます。
 
-## フィリピンの食べ物で人気の、WingersUnlimitedに行ってきた話
+## フィリピンの食べ物で人気の、WingersUnlimited に行ってきた話
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2024.8802094386067!2d123.89534053537007!3d10.310507741494968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49e6efa4ee720763!2sWingers+Unlimited!5e0!3m2!1sja!2sph!4v1554283010538!5m2!1sja!2sph" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-まずは、場所ですが、MangoSquareMallの近くになります。
+まずは、場所ですが、MangoSquareMall の近くになります。
 
 メインストレートに面しているので、治安レベルは普通です。
 
 夜になると、ストリートチルドレンがたまにいたり、いなかったり。
 
 まぁ、フィリピンでは、普通ですね。
-
 
 ### 人気なので行列ですね
 
@@ -76,8 +75,6 @@ SEO-keyword:
 
 完全なローカルな店で地元民しか居ない環境に、少しドキドキしながら注文した料理が来るのを待ちます。
 
-
-
 ### いざ実食
 
 ![philippines-wingers-unlimited-cover](./201904031701_cover.jpg)
@@ -95,8 +92,6 @@ SEO-keyword:
 - バーベキュー
 - ガーリック
 
-
-
 そして、料理を食べるのに箸やフォークはありません。
 
 ![philippines-wingers-unlimited-3](./201904031701_3.jpg)
@@ -109,8 +104,6 @@ SEO-keyword:
 
 ![philippines-wingers-unlimited-4](./201904031701_4.jpg)
 
-
-
 ## フィリピンの食べ物で人気な理由は、コスパが良い
 
 ![philippines-wingers-unlimited-5](./201904031701_5.jpg)
@@ -119,7 +112,7 @@ SEO-keyword:
 
 そして、チキンを味わうというよりも、色々なソースの味で楽しむ感じですね。
 
-とはいえ、299ペソでチキン＋ドリンク＋ポテトが食べ放題なので、値段は圧倒的に安いです。
+とはいえ、299 ペソでチキン＋ドリンク＋ポテトが食べ放題なので、値段は圧倒的に安いです。
 
 このコスト感に対して、味が「普通〜まぁまぁ、おいしい」というクオリティなので、やはり、地元民に愛されるだけはあります。
 
@@ -135,9 +128,8 @@ SEO-keyword:
 
 ---
 
-フィリピン留学中に毎日必ずTweetしてたので、その内容をまとめました。興味がある人はこちらもどうぞ
+フィリピン留学中に毎日必ず Tweet してたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ→セブ)](https://twitter.com/i/moments/1108015112575541249)
+» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
 
 「いいね」してもらえると喜びます。
-

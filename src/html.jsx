@@ -1,19 +1,19 @@
 /* eslint import/no-unresolved:"off" */
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
-import React from "react";
-import favicon from "./favicon.png";
+import React from 'react';
+import favicon from './favicon.png';
 
-let inlinedStyles = "";
+let inlinedStyles = '';
 
 export default class HTML extends React.Component {
   render() {
     let css;
-    if (process.env.NODE_ENV === "production") {
+    if (process.env.NODE_ENV === 'production') {
       css = (
         <style
           id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: inlinedStyles }}
+          dangerouslySetInnerHTML={{__html: inlinedStyles}}
         />
       );
     }
@@ -32,7 +32,7 @@ export default class HTML extends React.Component {
         <body>
           <div
             id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
+            dangerouslySetInnerHTML={{__html: this.props.body}}
           />
           {this.props.postBodyComponents}
         </body>

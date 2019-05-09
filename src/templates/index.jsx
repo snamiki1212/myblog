@@ -1,13 +1,13 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../layout";
-import PostListing from "../components/PostListing";
-import HeaderTitle from "../components/HeaderTitle";
-import SEO from "../components/SEO";
-import Paginator from "../components/Paginator";
-import Sidebar from "../components/Sidebar";
-import config from "../../data/SiteConfig";
+import React from 'react';
+import Helmet from 'react-helmet';
+import {graphql} from 'gatsby';
+import Layout from '../layout';
+import PostListing from '../components/PostListing';
+import HeaderTitle from '../components/HeaderTitle';
+import SEO from '../components/SEO';
+import Paginator from '../components/Paginator';
+import Sidebar from '../components/Sidebar';
+import config from '../../data/SiteConfig';
 import './index.scss';
 
 class Index extends React.Component {
@@ -22,10 +22,10 @@ class Index extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
           <SEO postEdges={postEdges} />
-          <div className='index-content'>
+          <div className="index-content">
             <div className="index-post-wrapper">
               <PostListing postEdges={postEdges} />
-              <Paginator pageContext={this.props.pageContext}/>
+              <Paginator pageContext={this.props.pageContext} />
             </div>
             <Sidebar />
           </div>
@@ -40,7 +40,7 @@ export default Index;
 export const pageQuery = graphql`
   query IndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
+      sort: {fields: [fields___date], order: DESC}
       limit: $limit
       skip: $skip
     ) {
