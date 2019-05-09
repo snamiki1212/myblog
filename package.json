@@ -86,8 +86,9 @@
     "clean": "rm -rf public && rm -rf .cache",
     "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark content/posts/",
-    "write-good": "write-good $(glob 'content/posts/**/*.md')",
+    "write-good": "write-good $(glob 'content/*.md')",
     "format:js": "prettier '**/*.{js,jsx}' --write",
+    "format:md": "prettier '**/*.{md}' --write",
     "precommit": "lint-staged",
     "lint": "eslint --ext ./ 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'src/**/*.css'"
   },
