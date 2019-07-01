@@ -28,7 +28,7 @@ slug: create-todo-with-typescript
 
 ![todo-video](./201905042330_1.gif)
 
-→[milkmemo](https://snamiki1212.github.io/milkmemo/) / [github](https://github.com/snamiki1212/milkmemo)
+→[アプリ](https://snamiki1212.github.io/example-typescript-todo/) / [github](https://github.com/snamiki1212/example-typescript-todo)
 
 今回は、TypeScript を学習することをメインに ToDo アプリを作りました。以前作った Redux の Example とほぼ同じなので、完全に復習ですね。
 
