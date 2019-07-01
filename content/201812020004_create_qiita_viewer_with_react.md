@@ -15,7 +15,7 @@ slug: create-qiita-viewer-with-react
 
 ## 作ったもの
 
-[Qiita Viewer with React](https://snamiki1212.github.io/qiita-viewer-with-react/)というものを作成した。
+[Qiita Viewer with React](https://snamiki1212.github.io/example-react-qiita-viewer/)というものを作成した。
 
 これは[Qiita の記事一覧を返す API](https://qiita.com/api/v2/docs#get-apiv2items)を叩いてその結果を表示するだけのアプリケーションでサービスとしての価値は皆無。
 
@@ -26,9 +26,9 @@ slug: create-qiita-viewer-with-react
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- TwitterLink -->
 
-- [Qiita Viewer with React](https://snamiki1212.github.io/qiita-viewer-with-react/)
+- [Qiita Viewer with React](https://snamiki1212.github.io/example-react-qiita-viewer/)
 
-- [Github](https://github.com/snamiki1212/qiita-viewer-with-react)
+- [Github](https://github.com/snamiki1212/example-react-qiita-viewer)
 
 ## 使ったもの
 
