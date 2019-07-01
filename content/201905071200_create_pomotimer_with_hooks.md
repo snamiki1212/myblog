@@ -17,7 +17,7 @@ React の Hook を使ってサンプルタイマーを作ったので、その�
 
 ![video-pomotimer-gif](./201905071200_1.gif)
 
-→[アプリ](https://github.com/snamiki1212/pomotimer-with-hooks)/ [Github](https://github.com/snamiki1212/pomotimer-with-hooks)
+→[アプリ](https://snamiki1212.github.io/example-react-basic-hooks/)/ [Github](https://github.com/snamiki1212/example-react-basic-hooks)
 
 ## 使った技術
 
