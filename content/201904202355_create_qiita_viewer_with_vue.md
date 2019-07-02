@@ -11,7 +11,7 @@ slug: create-qiita-viewer-with-vue
 
 # Vue で Qiita のアプリケーションを作った話
 
-👉[Qiita Viewer with Vue](https://snamiki1212.github.io/qiita-viewer-with-vue/)
+👉[Qiita Viewer with Vue](https://snamiki1212.github.io/exmaple-vue-qiita-viewer/)
 
 ![demo](./201904202355_1.gif)
 
