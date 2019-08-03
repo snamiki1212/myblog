@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Button from 'react-md/lib/Buttons';
-import './UserLinks.scss';
+import styled from 'styled-components';
 
 class UserLinks extends Component {
   getLinkElements() {
@@ -23,8 +23,16 @@ class UserLinks extends Component {
     if (!userLinks) {
       return null;
     }
-    return <div className="user-links">{this.getLinkElements()}</div>;
+    return <Links>{this.getLinkElements()}</Links>;
   }
 }
+
+const Links = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+`;
 
 export default UserLinks;
