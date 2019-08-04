@@ -4,12 +4,12 @@ import './Footer.scss';
 
 class Footer extends Component {
   render() {
-    const {copyright, fixedFooter} = config;
+    const {copyright} = config;
     if (!copyright) {
       return null;
     }
     return (
-      <footer className={fixedFooter ? 'footer footer-fixed' : 'footer'}>
+      <footer className="footer">
         <div className="notice-container">
           <div className="copyright">
             <h4>{copyright}</h4>
@@ -17,7 +17,8 @@ class Footer extends Component {
 
           <div className="based-on">
             <h4>
-              Based on{' '}
+              Based on
+              {' '}
               <a href="https://github.com/Vagr9K/gatsby-material-starter">
                 Gatsby Material Starter
               </a>

@@ -8,7 +8,6 @@ module.exports = {
   siteLogo: '/logos/logo.png', // Logo used for SEO and manifest.
   siteUrl: 'https://snamiki1212.com', // Domain of your website without pathPrefix.
   siteRepository: 'https://github.com/snamiki1212/myblog', // Repository of your site
-  fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
 
   // for RSS
   siteDescription: '先端技術を追いかけるエンジニアのブログ', // Website description used for RSS feeds/meta description tag.
