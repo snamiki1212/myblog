@@ -1,8 +1,0 @@
-$mobile-width: 680px;
-
-div .mobile-fix {
-    @media (max-width: $mobile-width) {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}

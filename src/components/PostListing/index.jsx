@@ -22,7 +22,7 @@ class PostListing extends React.Component {
     const postList = this.getPostList();
     return (
       <div className="md-grid md-grid--no-spacing md-cell--middle">
-        <div className="md-grid md-cell--10 mobile-fix">
+        <div className="md-grid md-cell--10">
           {postList.map(post => (
             <PostPreview key={post.title} postInfo={post} />
           ))}

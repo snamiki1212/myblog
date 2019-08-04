@@ -68,7 +68,7 @@ export default class PostTemplate extends React.Component {
             coverHeight={coverHeight}
             coverClassName="md-grid md-cell--9"
           />
-          <div className="md-grid md-cell--7 post-page-contents mobile-fix">
+          <div className="md-grid md-cell--7 post-page-contents">
             <div className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body target-el">
                 <div dangerouslySetInnerHTML={{__html: postNode.html}} />

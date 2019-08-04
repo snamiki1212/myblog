@@ -4,7 +4,6 @@ import 'font-awesome/scss/font-awesome.scss';
 import Navigation from '../components/Navigation';
 import config from '../../data/SiteConfig';
 import './index.scss';
-import './global.scss';
 require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 
 export default class Layout extends React.Component {

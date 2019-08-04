@@ -10,7 +10,7 @@ const myLinkedinUrl = config.userLinks.find(ele => ele.label === 'Linkedin')
   .url;
 
 const About = () => (
-  <div className="about-container md-grid mobile-fix">
+  <div className="about-container md-grid">
     <Card className="md-grid md-cell--8">
       <div className="about-wrapper">
         <CardText>
