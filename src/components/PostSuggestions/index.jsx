@@ -1,52 +1,52 @@
 import React, {Component} from 'react';
 import FontIcon from 'react-md/lib/FontIcons';
 import {Link} from 'gatsby';
-import './PostSuggestions.scss';
+import styled from 'styled-components';
+import {colors} from '../../../data/color';
 
 export default class PostSuggestions extends Component {
   render() {
     const {postNode} = this.props;
     const postFields = postNode.fields;
+
     return (
-      <div className="post-suggestions md-grid md-cell--12">
-        <Link
+      <Container className="md-grid md-cell--12">
+        <StyledLink
           to={postFields.prevSlug}
-          className="post-suggestion md-grid md-cell md-cell--6"
+          className="md-grid md-cell md-cell--6"
         >
-          <FontIcon
-            forceFontSize
-            forceSize={64}
-            className="secondary-color arrow-nav"
-          >
+          <FontIcon forceFontSize forceSize={64} style={{flex: 1}}>
             arrow_back
           </FontIcon>
-          <span className="headline-container hide-on-mobile">
-            <span className="md-body-2 secondary-color">Previous</span>
-            <span className="md-headline secondary-color">
-              {postFields.prevTitle}
-            </span>
+          <span style={{flex: 3}} className="md-headline ">
+            {postFields.prevTitle}
           </span>
-        </Link>
+        </StyledLink>
 
-        <Link
+        <StyledLink
           to={postFields.nextSlug}
-          className="post-suggestion md-grid md-cell md-cell--6"
+          className="md-grid md-cell md-cell--6"
         >
-          <span className="headline-container">
-            <span className="md-body-2 secondary-color">Next</span>
-            <span className="md-headline secondary-color">
-              {postFields.nextTitle}
-            </span>
+          <span style={{flex: 3}} className="md-headline ">
+            {postFields.nextTitle}
           </span>
-          <FontIcon
-            forceFontSize
-            forceSize={64}
-            className="secondary-color arrow-nav"
-          >
+          <FontIcon style={{flex: 1}} forceFontSize forceSize={64}>
             arrow_forward
           </FontIcon>
-        </Link>
-      </div>
+        </StyledLink>
+      </Container>
     );
   }
 }
+const Container = styled.div`
+  display: flex;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+`;
+
+const StyledLink = styled(Link)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: ${colors['bg-white-2']};
+`;
