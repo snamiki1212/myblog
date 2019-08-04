@@ -1,10 +1,12 @@
 export const colors = {
-  //
+  // background-color
   'bg-black-1': '#222222',
   'bg-vivid-1': '#f0db00',
   'bg-white-1': '#ffffff',
   'bg-white-2': '#f3f3f3',
   'bg-white-3': '#e5e3df',
+
+  // font-color
   'fc-black-1': '#222222',
   'fc-black-2': '#111111',
   'fc-vivid-1': '#f0db00',
