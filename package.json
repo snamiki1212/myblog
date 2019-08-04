@@ -46,7 +46,8 @@
     "react-social-sharebuttons": "^3.0.0-alpha1",
     "react-twitter-widgets": "^1.7.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
-    "url-join": "^4.0.0"
+    "url-join": "^4.0.0",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",

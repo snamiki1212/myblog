@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
+import styled from 'styled-components';
 import Layout from '../layout';
 import PostListing from '../components/PostListing';
 import HeaderTitle from '../components/HeaderTitle';
@@ -8,7 +9,6 @@ import SEO from '../components/SEO';
 import Paginator from '../components/Paginator';
 import Sidebar from '../components/Sidebar';
 import config from '../../data/SiteConfig';
-import './index.scss';
 
 class Index extends React.Component {
   render() {
@@ -22,18 +22,28 @@ class Index extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
           <SEO postEdges={postEdges} />
-          <div className="index-content">
-            <div className="index-post-wrapper">
+          <IndexContent>
+            <IndexPostWrapper>
               <PostListing postEdges={postEdges} />
               <Paginator pageContext={this.props.pageContext} />
-            </div>
+            </IndexPostWrapper>
             <Sidebar />
-          </div>
+          </IndexContent>
         </div>
       </Layout>
     );
   }
 }
+
+const IndexContent = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+`;
+
+const IndexPostWrapper = styled.div`
+  flex: 4;
+`;
 
 export default Index;
 

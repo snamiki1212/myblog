@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import CardText from 'react-md/lib/Cards/CardText';
+import styled from 'styled-components';
 import Layout from '../layout';
 import UserInfo from '../components/UserInfo';
 import PostTags from '../components/PostTags';
@@ -21,6 +22,7 @@ export default class PostTemplate extends React.Component {
     };
     this.handleResize = this.handleResize.bind(this);
   }
+
   componentDidMount() {
     this.handleResize();
     window.addEventListener('resize', this.handleResize);
@@ -61,12 +63,12 @@ export default class PostTemplate extends React.Component {
           </Helmet>
           <SEOWrapper postPath={slug} postNode={postNode} postSEO />
           {/* <SEO postPath={slug} postNode={postNode} postSEO /> */}
-          <PostCover
+          <PC
             postNode={postNode}
             coverHeight={coverHeight}
-            coverClassName="md-grid md-cell--9 post-cover"
+            coverClassName="md-grid md-cell--9"
           />
-          <div className="md-grid md-cell--7 post-page-contents mobile-fix">
+          <div className="md-grid md-cell--7 post-page-contents">
             <div className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body target-el">
                 <div dangerouslySetInnerHTML={{__html: postNode.html}} />
@@ -92,6 +94,13 @@ export default class PostTemplate extends React.Component {
     );
   }
 }
+
+const PC = styled(PostCover)`
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 0 !important;
+`;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

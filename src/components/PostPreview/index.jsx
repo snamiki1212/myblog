@@ -5,9 +5,10 @@ import CardText from 'react-md/lib/Cards/CardText';
 import {Link} from 'gatsby';
 import moment from 'moment';
 import Media, {MediaOverlay} from 'react-md/lib/Media';
+import styled from 'styled-components';
 import PostCover from '../PostCover';
 import config from '../../../data/SiteConfig';
-import './PostPreview.scss';
+import {colors} from '../../../data/color';
 
 class PostPreview extends Component {
   constructor(props) {
@@ -40,15 +41,56 @@ class PostPreview extends Component {
     const {mobile} = this.state;
     /* eslint no-undef: "off" */
     const coverHeight = mobile ? 162 : 225;
+
+    const Excerpt = styled(CardText)`
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0.9) 50%,
+          rgba(255, 255, 255, 1)
+        );
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    `;
+
+    const Overlay = styled(MediaOverlay)`
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      // MEMO: background-color -> $md-media-overlay-color
+      height: 100%;
+      padding: 0 20px;
+    `;
+
+    const Title = styled.span`
+      color: ${colors['fc-white-1']};
+      font-size: 24px;
+      font-family: 'TsukuBRdGothic-Regular', 'Wawati SC', 'HanziPen TC',
+        'HanziPen SC', 'Hannotate TC', 'MS UI Gothic',
+        'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+      font-weight: 900;
+      text-align: center;
+    `;
+
     return (
       <Card key={postInfo.path} raise className="md-grid md-cell md-cell--6">
         <Link to={postInfo.path}>
           <Media style={{height: coverHeight, paddingBottom: '0px'}}>
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
-            <MediaOverlay className="post-preview__overlay">
-              <span className="post-preview__title">{postInfo.title}</span>
+            <Overlay>
+              <Title>{postInfo.title}</Title>
               {/* <CardTitle title={postInfo.title} style={{"color": "black"}} /> */}
-            </MediaOverlay>
+            </Overlay>
           </Media>
           <CardTitle
             title=""
@@ -57,10 +99,7 @@ class PostPreview extends Component {
             )}`}
           />
           {/* <CardTitle subtitle={<PostTags tags={postInfo.tags} />} /> */}
-          <CardText
-            children={postInfo.excerpt}
-            className="post-preview__excerpt"
-          />
+          <Excerpt>{postInfo.excerpt}</Excerpt>
         </Link>
       </Card>
     );

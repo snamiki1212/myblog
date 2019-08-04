@@ -1,9 +1,9 @@
 @import "~react-md/src/scss/react-md";
 @import "../layout/theme.scss";
 @import "../layout/prism.scss";
-@import "../layout/global.scss";
 @import './base.scss';
 
+$mobile-width: 680px;
 // font-color
 $fc-text: $fc-black-1;
 $fc-vivid: $fc-vivid-3;
@@ -114,12 +114,12 @@ $phone-status-bar-height: 24px - 12px;
         font-size: 25px;
 
         @media screen and (max-width: $mobile-width) {
-          font-size: 18px;  
+          font-size: 18px;
         }
       }
       h2 {
         font-size: 25px;
-        
+
         margin-top: 60px;
         border-left: 10px solid $h-left;
 
@@ -127,7 +127,7 @@ $phone-status-bar-height: 24px - 12px;
         @media screen and (max-width: $mobile-width) {
           padding: 10px 20px;
         }
-        
+
         background-color: #f7f7f7;
       }
       h3 {

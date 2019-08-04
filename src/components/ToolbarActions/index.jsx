@@ -1,18 +1,32 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 import UserLinks from '../UserLinks';
-import './ToolbarActions.scss';
 
 class Toolbar extends Component {
   render() {
     const {config} = this.props;
     return (
-      <div className="toolbar-actions">
-        <div className="userlinks-container">
+      <ToolbarActions>
+        <UserLinksContainer>
           <UserLinks config={config} />
-        </div>
-      </div>
+        </UserLinksContainer>
+      </ToolbarActions>
     );
   }
 }
+
+const UserLinksContainer = styled.div`
+  @media (max-width: 640px - 1) {
+    display: none;
+  }
+`;
+
+const ToolbarActions = styled.div`
+  height: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  align-items: center;
+`;
 
 export default Toolbar;

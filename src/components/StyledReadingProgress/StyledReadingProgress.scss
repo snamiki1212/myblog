@@ -1,9 +1,0 @@
-.wrapper-reading-progress{
-  position:fixed;
-  z-index: 999;
-}
-
-.reading-progress{
-  position: relative !important; // MEMO: ライブラリ元に対して上書き
-  background: red !important; // TODO: なぜ動いているかわからない。。。red指定しているが、無効化されてグローバルに定義してるカラーが利用される。この１行を抜くとデフォルト値のカラーになってしまう。
-}

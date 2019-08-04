@@ -19,22 +19,34 @@ import {
 } from 'react-share';
 import {HatenabookmarkButton} from 'react-social-sharebuttons';
 import urljoin from 'url-join';
+import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
-import './SocialLinks.scss';
 
 class SocialLinks extends Component {
   render() {
+    const ShareCount = styled.div`
+      text-align: center;
+    `;
+
+    const Wrapper = styled.div`
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin: 15px 0;
+    `;
+
     const {postNode, postPath, mobile} = this.props;
     const post = postNode.frontmatter;
     const url = urljoin(config.siteUrl, postPath);
     const iconSize = mobile ? 36 : 48;
     const filter = count => (count > 0 ? count : '');
-    const renderShareCount = count => (
-      <div className="share-count">{filter(count)}</div>
-    );
+    const renderShareCount = count => <ShareCount>{filter(count)}</ShareCount>;
 
     return (
-      <div className="social-links">
+      <Wrapper>
         <HatenabookmarkButton
           url={url}
           title={post.title}
@@ -79,7 +91,7 @@ class SocialLinks extends Component {
         <TelegramShareButton url={url}>
           <TelegramIcon round size={iconSize} />
         </TelegramShareButton>
-      </div>
+      </Wrapper>
     );
   }
 }

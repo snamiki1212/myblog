@@ -2,13 +2,24 @@ import React, {Component} from 'react';
 import _ from 'lodash';
 import {Link} from 'gatsby';
 import Chip from 'react-md/lib/Chips';
-import './PostTags.scss';
+import styled from 'styled-components';
 
 class PostTags extends Component {
   render() {
     const {tags} = this.props;
+    const Container = styled.div`
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    `;
+
+    const Tag = styled(Chip)`
+      margin: 5px 2px 0;
+    `;
     return (
-      <div className="post-tag-container">
+      <Container>
         {tags &&
           tags.map(tag => (
             <Link
@@ -16,10 +27,10 @@ class PostTags extends Component {
               style={{textDecoration: 'none'}}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <Chip label={tag} className="post-preview-tags" />
+              <Tag label={tag} />
             </Link>
           ))}
-      </div>
+      </Container>
     );
   }
 }

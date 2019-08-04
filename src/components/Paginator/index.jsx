@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'gatsby';
-import './Paginator.scss';
+import styled from 'styled-components';
 
 class Paginator extends Component {
   render() {
@@ -12,7 +12,7 @@ class Paginator extends Component {
 
     return (
       <div>
-        <ul className="paginator-list">
+        <PaginatorList>
           {!isFirst && (
             <Link to={prevPage} rel="prev">
               ← Previous Page
@@ -43,10 +43,20 @@ class Paginator extends Component {
               Next Page →
             </Link>
           )}
-        </ul>
+        </PaginatorList>
       </div>
     );
   }
 }
+
+const PaginatorList = styled.ul`
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+`;
 
 export default Paginator;
