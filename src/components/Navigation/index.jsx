@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import NavigationDrawer from 'react-md/lib/NavigationDrawers';
+import styled from 'styled-components';
 import ToolbarActions from '../ToolbarActions';
 import Footer from '../Footer';
 import GetNavList from './NavList';
 import StyledReadingProgress from '../StyledReadingProgress';
-import './Navigation.scss';
 
 class Navigation extends Component {
   render() {
@@ -22,11 +22,18 @@ class Navigation extends Component {
         toolbarActions={<ToolbarActions config={config} />}
       >
         {isPost ? <StyledReadingProgress /> : ''}
-        <div className="main-container">{children}</div>
+        <Container>{children}</Container>
         <Footer userLinks={footerLinks} />
       </NavigationDrawer>
     );
   }
 }
+
+const Container = styled.div`
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  flex: 1;
+`;
 
 export default Navigation;
