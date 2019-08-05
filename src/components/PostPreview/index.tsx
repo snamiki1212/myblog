@@ -10,6 +10,7 @@ import PostCover from '../PostCover';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
+// TODO: class >>> functional
 class PostPreview extends Component {
   constructor(props) {
     super(props);

@@ -2,7 +2,7 @@ import React from 'react';
 import FontIcon from 'react-md/lib/FontIcons';
 import {Link} from 'gatsby';
 
-function GetNavList() {
+const GetNavList = (): any[] => {
   const NavList = [];
 
   NavList.push({
@@ -60,5 +60,6 @@ function GetNavList() {
   // });
 
   return NavList;
-}
+};
+
 export default GetNavList;

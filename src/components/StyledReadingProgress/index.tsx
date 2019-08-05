@@ -1,17 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReadingProgress from 'react-reading-progress';
 import styled from 'styled-components';
 
-class StyledReadingProgress extends Component {
-  render() {
-    // MEMO: Target context class is 'target-el'
-    return (
-      <Wrapper>
-        <RP />
-      </Wrapper>
-    );
-  }
-}
+const StyledReadingProgress = (): JSX.Element => {
+  // MEMO: Target context class is 'target-el'
+  return (
+    <Wrapper>
+      <RP />
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.div`
   position: fixed;

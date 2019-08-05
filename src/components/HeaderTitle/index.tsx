@@ -1,13 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
-class HeaderTitle extends Component {
-  render() {
-    return <Wrapper href="/">{config.siteTitleTop}</Wrapper>;
-  }
-}
+const HeaderTitle = (): JSX.Element => {
+  return <Wrapper href="/">{config.siteTitleTop}</Wrapper>;
+};
 
 const Wrapper = styled.a`
   padding: 8px 20px;
