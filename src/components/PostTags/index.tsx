@@ -1,27 +1,27 @@
-import React, {Component} from 'react';
+import React from 'react';
 import _ from 'lodash';
 import {Link} from 'gatsby';
 import Chip from 'react-md/lib/Chips';
 import styled from 'styled-components';
 
-class PostTags extends Component {
-  render() {
-    const {tags} = this.props;
-    const Container = styled.div`
-      display: flex;
-      flex-flow: row wrap;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-    `;
+const PostTags = (props): JSX.Element => {
+  const {tags} = props;
+  const Container = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  `;
 
-    const Tag = styled(Chip)`
-      margin: 5px 2px 0;
-    `;
-    return (
-      <Container>
-        {tags &&
-          tags.map(tag => (
+  const Tag = styled(Chip)`
+    margin: 5px 2px 0;
+  `;
+  return (
+    <Container>
+      {tags &&
+        tags.map(
+          (tag): JSX.Element => (
             <Link
               key={tag}
               style={{textDecoration: 'none'}}
@@ -29,10 +29,10 @@ class PostTags extends Component {
             >
               <Tag label={tag} />
             </Link>
-          ))}
-      </Container>
-    );
-  }
-}
+          )
+        )}
+    </Container>
+  );
+};
 
 export default PostTags;

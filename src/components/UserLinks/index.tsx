@@ -1,31 +1,37 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Button from 'react-md/lib/Buttons';
 import styled from 'styled-components';
 
-class UserLinks extends Component {
-  getLinkElements() {
-    const {userLinks} = this.props.config;
-    // const { labeled } = this.props;
-    return userLinks.map(link => (
-      <Button
-        icon
-        key={link.label}
-        iconClassName={link.iconClassName}
-        href={link.url}
-      >
-        {/* {labeled ? link.label : ""} */}
-      </Button>
-    ));
+const UserLinks = (props): JSX.Element => {
+  const {config} = props;
+  if (!config) {
+    return null;
   }
 
-  render() {
-    const {userLinks} = this.props.config;
-    if (!userLinks) {
-      return null;
-    }
-    return <Links>{this.getLinkElements()}</Links>;
+  const {userLinks} = config;
+
+  if (!userLinks) {
+    return null;
   }
-}
+
+  return (
+    <Links>
+      {Array.isArray(userLinks) &&
+        userLinks.map(
+          (link): JSX.Element => (
+            <Button
+              icon
+              key={link.label}
+              iconClassName={link.iconClassName}
+              href={link.url}
+            >
+              {/* {labeled ? link.label : ""} */}
+            </Button>
+          )
+        )}
+    </Links>
+  );
+};
 
 const Links = styled.div`
   display: flex;

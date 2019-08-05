@@ -1,19 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import UserLinks from '../UserLinks';
 
-class Toolbar extends Component {
-  render() {
-    const {config} = this.props;
-    return (
-      <ToolbarActions>
-        <UserLinksContainer>
-          <UserLinks config={config} />
-        </UserLinksContainer>
-      </ToolbarActions>
-    );
-  }
-}
+const Toolbar = (props): JSX.Element => {
+  const {config} = props;
+
+  return (
+    <ToolbarActions>
+      <UserLinksContainer>
+        <UserLinks config={config} />
+      </UserLinksContainer>
+    </ToolbarActions>
+  );
+};
 
 const UserLinksContainer = styled.div`
   @media (max-width: 640px - 1) {

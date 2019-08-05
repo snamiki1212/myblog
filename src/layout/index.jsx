@@ -6,38 +6,38 @@ import config from '../../data/SiteConfig';
 import './index.scss';
 require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 
-export default class Layout extends React.Component {
-  isIndexPage = pathname => pathname == ('/' || /\/[0-9]/.test(pathname));
-  isAboutPage = pathname => /\/about/i.test(pathname);
-  isTagsPage = pathname => /\/tags/i.test(pathname);
-  isCategoriesPage = pathname => /\/categories/i.test(pathname);
-  isPostPage = pathname =>
+const Layout = props => {
+  const isIndexPage = pathname => pathname == ('/' || /\/[0-9]/.test(pathname));
+  const isAboutPage = pathname => /\/about/i.test(pathname);
+  const isTagsPage = pathname => /\/tags/i.test(pathname);
+  const isCategoriesPage = pathname => /\/categories/i.test(pathname);
+  const isPostPage = pathname =>
     !(
-      this.isIndexPage(pathname) ||
-      this.isAboutPage(pathname) ||
-      this.isTagsPage(pathname) ||
-      this.isCategoriesPage(pathname)
+      isIndexPage(pathname) ||
+      isAboutPage(pathname) ||
+      isTagsPage(pathname) ||
+      isCategoriesPage(pathname)
     );
 
-  render() {
-    const {children} = this.props;
-    return (
-      <Navigation
-        config={config}
-        LocalTitle={this.props.title}
-        isPost={this.isPostPage(this.props.location.pathname)}
-      >
-        <div>
-          <Helmet>
-            <meta name="description" content={config.siteDescription} />
-            <meta
-              name="google-site-verification"
-              content={config.siteGSCTrackingID}
-            />
-          </Helmet>
-          {children}
-        </div>
-      </Navigation>
-    );
-  }
-}
+  const {children} = props;
+  return (
+    <Navigation
+      config={config}
+      LocalTitle={props.title}
+      isPost={isPostPage(props.location.pathname)}
+    >
+      <div>
+        <Helmet>
+          <meta name="description" content={config.siteDescription} />
+          <meta
+            name="google-site-verification"
+            content={config.siteGSCTrackingID}
+          />
+        </Helmet>
+        {children}
+      </div>
+    </Navigation>
+  );
+};
+
+export default Layout;

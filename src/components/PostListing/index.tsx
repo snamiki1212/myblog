@@ -1,10 +1,11 @@
 import React from 'react';
 import PostPreview from '../PostPreview';
 
-class PostListing extends React.Component {
-  getPostList() {
+const PostListing = (props): JSX.Element => {
+  const getPostList = (): any => {
     const postList = [];
-    this.props.postEdges.forEach(postEdge => {
+
+    props.postEdges.forEach((postEdge: any) => {
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
@@ -16,20 +17,19 @@ class PostListing extends React.Component {
       });
     });
     return postList;
-  }
+  };
 
-  render() {
-    const postList = this.getPostList();
-    return (
-      <div className="md-grid md-grid--no-spacing md-cell--middle">
-        <div className="md-grid md-cell--10">
-          {postList.map(post => (
-            <PostPreview key={post.title} postInfo={post} />
-          ))}
-        </div>
+  const postList = getPostList();
+
+  return (
+    <div className="md-grid md-grid--no-spacing md-cell--middle">
+      <div className="md-grid md-cell--10">
+        {postList.map((post: JSX.Element) => (
+          <PostPreview key={post.title} postInfo={post} />
+        ))}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default PostListing;
