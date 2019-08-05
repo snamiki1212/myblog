@@ -49,3 +49,5 @@ const StyledLink = styled(Link)`
   align-items: center;
   background-color: ${colors['bg-white-2']};
 `;
+
+export default PostSuggestions;
