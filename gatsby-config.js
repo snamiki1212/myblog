@@ -1,6 +1,7 @@
+const urljoin = require('url-join');
 const config = require('./data/SiteConfig');
 const envConfig = require('./data/EnvConfig');
-const urljoin = require('url-join');
+
 const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
 
 module.exports = {
@@ -19,6 +20,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-lodash',
     'gatsby-plugin-sass',
+    'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
