@@ -1,19 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
-class Author extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <Avator src={config.userAvatar} alt={config.sidebarUserName} />
-        <Name>{config.sidebarUserName}</Name>
-        <Discription>{config.userDescription}</Discription>
-      </Wrapper>
-    );
-  }
-}
+export const Author = (): JSX.Element => (
+  <Wrapper>
+    <Avator src={config.userAvatar} alt={config.sidebarUserName} />
+    <Name>{config.sidebarUserName}</Name>
+    <Discription>{config.userDescription}</Discription>
+  </Wrapper>
+);
+
 const Wrapper = styled.div`
   width: 100%;
   color: ${colors['fc-gray-1']};

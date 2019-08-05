@@ -51,6 +51,10 @@
     "url-join": "^4.0.0"
   },
   "devDependencies": {
+    "@types/node": "^12.6.9",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-helmet": "^5.0.8",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "cli-glob": "^0.1.0",
@@ -97,7 +101,8 @@
     "format:js": "prettier '**/*.{js,jsx}' --write",
     "format:md": "prettier '**/*.{md}' --write",
     "precommit": "lint-staged",
-    "lint": "eslint --ext ./ 'src/**/*.{js,jsx,ts,tsx}'; stylelint 'src/**/*.css'"
+    "lint": "eslint --ext ./ 'src/**/*.{js,jsx,ts,tsx}'",
+    "type-check": "tsc --noEmit"
   },
   "remarkConfig": {
     "plugins": [
