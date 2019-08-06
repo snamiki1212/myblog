@@ -59,7 +59,6 @@ module.exports = {
           {
             resolve: 'gatsby-remark-responsive-iframe',
           },
-          '@weknow/gatsby-remark-twitter',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-autolink-headers',
