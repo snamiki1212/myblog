@@ -10,30 +10,28 @@ import Paginator from '../components/Paginator';
 import Sidebar from '../components/Sidebar';
 import config from '../../data/SiteConfig';
 
-class Index extends React.Component {
-  render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+export const Index = props => {
+  const postEdges = props.data.allMarkdownRemark.edges;
 
-    return (
-      <Layout location={this.props.location} title={<HeaderTitle />}>
-        <div className="index-container">
-          <Helmet>
-            <title>{config.siteTitle}</title>
-            <link rel="canonical" href={`${config.siteUrl}`} />
-          </Helmet>
-          <SEO postEdges={postEdges} />
-          <IndexContent>
-            <IndexPostWrapper>
-              <PostListing postEdges={postEdges} />
-              <Paginator pageContext={this.props.pageContext} />
-            </IndexPostWrapper>
-            <Sidebar />
-          </IndexContent>
-        </div>
-      </Layout>
-    );
-  }
-}
+  return (
+    <Layout location={props.location} title={<HeaderTitle />}>
+      <div className="index-container">
+        <Helmet>
+          <title>{config.siteTitle}</title>
+          <link rel="canonical" href={`${config.siteUrl}`} />
+        </Helmet>
+        <SEO postEdges={postEdges} />
+        <IndexContent>
+          <IndexPostWrapper>
+            <PostListing postEdges={postEdges} />
+            <Paginator pageContext={props.pageContext} />
+          </IndexPostWrapper>
+          <Sidebar />
+        </IndexContent>
+      </div>
+    </Layout>
+  );
+};
 
 const IndexContent = styled.div`
   display: flex;

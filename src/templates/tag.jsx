@@ -6,28 +6,26 @@ import PostListing from '../components/PostListing';
 import HeaderTitle from '../components/HeaderTitle';
 import config from '../../data/SiteConfig';
 
-export default class TagTemplate extends React.Component {
-  render() {
-    const {tag} = this.props.pageContext;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+export const TagTemplate = props => {
+  const {tag} = props.pageContext;
+  const postEdges = props.data.allMarkdownRemark.edges;
 
-    return (
-      <Layout
-        location={this.props.location}
-        title={<HeaderTitle />}
-        // title={`Tagged in ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
-      >
-        <div className="tag-container">
-          <Helmet>
-            <title>{`Posts tagged as "${tag}" | ${config.siteTitle}`}</title>
-            <link rel="canonical" href={`${config.siteUrl}/tags/${tag}`} />
-          </Helmet>
-          <PostListing postEdges={postEdges} />
-        </div>
-      </Layout>
-    );
-  }
-}
+  return (
+    <Layout
+      location={props.location}
+      title={<HeaderTitle />}
+      // title={`Tagged in ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
+    >
+      <div className="tag-container">
+        <Helmet>
+          <title>{`Posts tagged as "${tag}" | ${config.siteTitle}`}</title>
+          <link rel="canonical" href={`${config.siteUrl}/tags/${tag}`} />
+        </Helmet>
+        <PostListing postEdges={postEdges} />
+      </div>
+    </Layout>
+  );
+};
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
@@ -56,3 +54,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default TagTemplate;

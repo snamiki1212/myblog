@@ -8,7 +8,6 @@ import StyledReadingProgress from '../StyledReadingProgress';
 
 const Navigation = (props): JSX.Element => {
   const {children, config, LocalTitle, isPost} = props;
-  console.log('props', props);
   const footerLinks = LocalTitle && LocalTitle !== 'About';
 
   return (
