@@ -1,3 +1,8 @@
 {
-  "compilerOptions": {"jsx": "react"},
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "jsx": "react"
+  },
 }
