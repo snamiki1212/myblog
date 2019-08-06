@@ -5,9 +5,9 @@ import About from '../components/About';
 import HeaderTitle from '../components/HeaderTitle';
 import config from '../../data/SiteConfig';
 
-const AboutPage = (): JSX.Element => {
+const AboutPage = (props): JSX.Element => {
   return (
-    <Layout location={this.props.location} title={<HeaderTitle />}>
+    <Layout location={props.location} title={<HeaderTitle />}>
       <Helmet>
         <title>{`About | ${config.siteTitle}`}</title>
         <link rel="canonical" href={`${config.siteUrl}/about/`} />
