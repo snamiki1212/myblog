@@ -52,8 +52,8 @@ export default class PostTemplate extends React.Component {
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
-
     const coverHeight = mobile ? 180 : 350;
+
     return (
       <Layout location={this.props.location} title={<HeaderTitle />}>
         <div className="post-page md-grid md-grid--no-spacing">
@@ -61,6 +61,7 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title}`}</title>
             <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
           </Helmet>
+
           <SEOWrapper postPath={slug} postNode={postNode} postSEO />
           {/* <SEO postPath={slug} postNode={postNode} postSEO /> */}
           <PC
