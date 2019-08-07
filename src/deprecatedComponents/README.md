@@ -1,0 +1,1 @@
+このDirectoryのコンポーネントをAtomicDesignに移し替える

@@ -3,11 +3,11 @@ import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../layout';
-import PostListing from '../components/PostListing';
-import HeaderTitle from '../components/HeaderTitle';
-import SEO from '../components/SEO';
-import Paginator from '../components/Paginator';
-import Sidebar from '../components/Sidebar';
+import PostListing from '../deprecatedComponents/PostListing';
+import HeaderTitle from '../deprecatedComponents/HeaderTitle';
+import SEO from '../deprecatedComponents/SEO';
+import Paginator from '../deprecatedComponents/Paginator';
+import Sidebar from '../deprecatedComponents/Sidebar';
 import config from '../../data/SiteConfig';
 
 export const Index = (props): JSX.Element => {

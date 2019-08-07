@@ -1,6 +1,17 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fce06c01-d793-4026-8a48-ef4946156434/deploy-status)](https://app.netlify.com/sites/snamiki1212/deploys)
 
-# Blog [Lunash](https://snamiki1212.com) repository.
+![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)
+
+my blog → https://snamiki1212.com 
+
+## 
+- Architecture
+  - Gatsbyjs / React / TypeScript
+  - [ ] No Class Components, Only Functional Components
+  - [ ] Atomic Design
+
+- Use
+  - styled-components
 
 ## Usage
 

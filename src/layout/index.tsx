@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import 'font-awesome/scss/font-awesome.scss';
-import Navigation from '../components/Navigation';
+import Navigation from '../deprecatedComponents/Navigation';
 import config from '../../data/SiteConfig';
 import './index.scss';
 require('prismjs/plugins/line-numbers/prism-line-numbers.css');

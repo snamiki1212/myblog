@@ -1,9 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import PostListing from '../components/PostListing';
+import PostListing from '../deprecatedComponents/PostListing';
 import Layout from '../layout';
-import HeaderTitle from '../components/HeaderTitle';
+import HeaderTitle from '../deprecatedComponents/HeaderTitle';
 import config from '../../data/SiteConfig';
 
 export const CategoryTemplate = props => {

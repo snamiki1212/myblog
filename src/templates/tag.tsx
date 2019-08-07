@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import Layout from '../layout';
-import PostListing from '../components/PostListing';
-import HeaderTitle from '../components/HeaderTitle';
+import PostListing from '../deprecatedComponents/PostListing';
+import HeaderTitle from '../deprecatedComponents/HeaderTitle';
 import config from '../../data/SiteConfig';
 
 export const TagTemplate = props => {
