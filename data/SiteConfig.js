@@ -1,3 +1,5 @@
+'use strict';
+
 // set SiteConfig
 module.exports = {
   // for site
@@ -26,11 +28,11 @@ module.exports = {
   userLocation: 'Shibuya, Japan', // User location to display in the author segment.
   userAvatar: '/logos/logo_48.jpg', // User avatar to display in the author segment.
   userDescription:
-    'プログラミングが好きな人。SE→ITベンチャー→フリーランス→フィリピン語学留学→タイ滞在中（今ここ）。日本から出て、海外で働いて、最終ゴールは月で生活すること。', // User description to display in the author segment.
-  userIntroduction: 'Freelance Endigneer', // short user introduction
+    'プログラミングが好きな人。SE→ITベンチャー→フリーランス。日本を出て、海外で働いて、最終ゴールは月で生活すること。', // User description to display in the author segment.
+  userIntroduction: 'Freelance Engineer', // short user introduction
 
   // for side-bar
-  sidebarUserName: 'nash',
+  sidebarUserName: 'Nash',
 
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
@@ -45,20 +47,16 @@ module.exports = {
       iconClassName: 'fa fa-twitter',
     },
     {
-      label: 'Email',
-      url: 'mailto:snamiki1212@gmail.com',
-      iconClassName: 'fa fa-envelope',
-    },
-    {
       label: 'Linkedin',
       url: 'https://www.linkedin.com/in/snamiki1212',
       iconClassName: 'fa fa-linkedin',
     },
-    {
-      label: 'RSS',
-      url: 'https://snamiki1212.com/rss.xml',
-      iconClassName: 'fa fa-rss',
-    },
+    // MEMO: RSS 使う人いないだろうから、コメントアウト
+    // {
+    //   label: 'RSS',
+    //   url: 'https://snamiki1212.com/rss.xml',
+    //   iconClassName: 'fa fa-rss',
+    // },
   ],
   copyright: 'Copyright © 2019. Shun Namiki', // Copyright string for the footer of the website and RSS feed.
 };

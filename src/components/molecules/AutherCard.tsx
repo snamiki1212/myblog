@@ -2,12 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
+import {MyLinks} from '../atoms';
 
 export const AuthorCard = (): JSX.Element => (
   <Wrapper>
     <Avator src={config.userAvatar} alt={config.sidebarUserName} />
     <Name>{config.sidebarUserName}</Name>
     <Discription>{config.userDescription}</Discription>
+    <MyLinks />
   </Wrapper>
 );
 
@@ -33,5 +35,6 @@ const Name = styled.div`
 
 const Discription = styled.div`
   padding-top: 10px;
+  padding-bottom: 30px;
   font-size: 15px;
 `;

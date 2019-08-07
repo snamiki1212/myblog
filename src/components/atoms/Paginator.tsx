@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
+import {colors} from '../../../data/color';
 
 export const Paginator = (props): JSX.Element => {
   const {currentPage, numPages} = props.pageContext;
@@ -10,52 +11,54 @@ export const Paginator = (props): JSX.Element => {
   const nextPage = (currentPage + 1).toString();
 
   return (
-    <div>
-      <PaginatorList>
-        {!isFirst && (
-          <Link to={prevPage} rel="prev">
-            ← Previous Page
-          </Link>
-        )}
-        {Array.from(
-          {length: numPages},
-          (_, i): JSX.Element => (
-            <li
-              key={`pagination-number${i + 1}`}
-              style={{
-                margin: 0,
-              }}
-            >
-              <Link
-                to={`/${i === 0 ? '' : i + 1}`}
-                className="paginator-link"
-                style={{
-                  textDecoration: 'none',
-                  color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#007acc' : '',
-                }}
-              >
-                {i + 1}
-              </Link>
-            </li>
-          )
-        )}
-        {!isLast && (
-          <Link to={nextPage} rel="next">
-            Next Page →
-          </Link>
-        )}
-      </PaginatorList>
-    </div>
+    <PaginatorList>
+      {!isFirst && (
+        <StyledLink to={prevPage} rel="prev">
+          ← Previous Page
+        </StyledLink>
+      )}
+      {Array.from(
+        {length: numPages},
+        (_, i): JSX.Element => (
+          <StyledLink
+            key={`pagination-number${i + 1}`}
+            to={`/${i === 0 ? '' : i + 1}`}
+            style={{
+              textDecoration: 'none',
+              color: i + 1 === currentPage ? '#ffffff' : '',
+              background: i + 1 === currentPage ? '#007acc' : '',
+            }}
+          >
+            {i + 1}
+          </StyledLink>
+        )
+      )}
+      {!isLast && (
+        <StyledLink to={nextPage} rel="next">
+          Next Page →
+        </StyledLink>
+      )}
+    </PaginatorList>
   );
 };
 
-const PaginatorList = styled.ul`
-  width: 80%;
+const StyledLink = styled(Link)`
+  background: ${colors['bg-white-2']};
+  padding: 15px;
+  transition: 0.3s;
+  &:hover {
+    background: ${colors['bg-vivid-1']};
+  }
+`;
+
+const PaginatorList = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
   list-style: none;
-  padding: 0;
-  margin: 0 auto;
+  padding-bottom: 100px;
+  margin: 30px auto;
 `;
