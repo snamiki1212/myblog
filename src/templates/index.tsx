@@ -3,12 +3,10 @@ import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../layout';
-import PostListing from '../deprecatedComponents/PostListing';
-import HeaderTitle from '../deprecatedComponents/HeaderTitle';
-import SEO from '../deprecatedComponents/SEO';
-import Paginator from '../deprecatedComponents/Paginator';
-import Sidebar from '../deprecatedComponents/Sidebar';
+import {Paginator, HeaderTitle, SEORaw} from '../components/atoms/';
+import {AuthorCard, PostPreviewCardList} from '../components/molecules';
 import config from '../../data/SiteConfig';
+import {colors} from '../../data/color';
 
 export const Index = (props): JSX.Element => {
   const postEdges = props.data.allMarkdownRemark.edges;
@@ -20,18 +18,29 @@ export const Index = (props): JSX.Element => {
           <title>{config.siteTitle}</title>
           <link rel="canonical" href={`${config.siteUrl}`} />
         </Helmet>
-        <SEO postEdges={postEdges} />
+        <SEORaw postEdges={postEdges} />
         <IndexContent>
           <IndexPostWrapper>
-            <PostListing postEdges={postEdges} />
+            <PostPreviewCardList postEdges={postEdges} />
             <Paginator pageContext={props.pageContext} />
           </IndexPostWrapper>
-          <Sidebar />
+          <Sidebar>
+            <AuthorCard />
+          </Sidebar>
         </IndexContent>
       </div>
     </Layout>
   );
 };
+
+const Sidebar = styled.div`
+  flex: 1;
+  width: 100%;
+  min-width: 250px;
+  padding: 24px;
+
+  background-color: ${colors['bg-white-2']};
+`;
 
 const IndexContent = styled.div`
   display: flex;

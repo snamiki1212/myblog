@@ -1,12 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import 'font-awesome/scss/font-awesome.scss';
-import Navigation from '../deprecatedComponents/Navigation';
+import {Navigation} from '../components/molecules/';
 import config from '../../data/SiteConfig';
 import './index.scss';
 require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 
-const Layout = props => {
+const Layout = (props): JSX.Element => {
   const isIndexPage = pathname => pathname == ('/' || /\/[0-9]/.test(pathname));
   const isAboutPage = pathname => /\/about/i.test(pathname);
   const isTagsPage = pathname => /\/tags/i.test(pathname);

@@ -1,14 +1,15 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import PostListing from '../deprecatedComponents/PostListing';
+import {PostPreviewCardList} from '../components/molecules';
 import Layout from '../layout';
-import HeaderTitle from '../deprecatedComponents/HeaderTitle';
+import {HeaderTitle} from '../components/atoms/';
 import config from '../../data/SiteConfig';
 
-export const CategoryTemplate = props => {
+export const CategoryTemplate = (props): JSX.Element => {
   const {category} = props.pageContext;
   const postEdges = props.data.allMarkdownRemark.edges;
+
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
       <div className="category-container">
@@ -21,7 +22,7 @@ export const CategoryTemplate = props => {
             href={`${config.siteUrl}/categories/${category}`}
           />
         </Helmet>
-        <PostListing postEdges={postEdges} />
+        <PostPreviewCardList postEdges={postEdges} />
       </div>
     </Layout>
   );

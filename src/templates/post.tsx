@@ -4,13 +4,14 @@ import {graphql} from 'gatsby';
 import CardText from 'react-md/lib/Cards/CardText';
 import styled from 'styled-components';
 import Layout from '../layout';
-import UserInfo from '../deprecatedComponents/UserInfo';
-import PostTags from '../deprecatedComponents/PostTags';
-import PostCover from '../deprecatedComponents/PostCover';
-import SocialLinks from '../deprecatedComponents/SocialLinks';
-import PostSuggestions from '../deprecatedComponents/PostSuggestions';
-import HeaderTitle from '../deprecatedComponents/HeaderTitle';
-import SEOWrapper from '../deprecatedComponents/SEOWrapper';
+import {UserInfo, PostSuggestions} from '../components/molecules/';
+import {
+  TagList,
+  SocialLinks,
+  HeaderTitle,
+  SEOWrapper,
+  PostCoverWrapper,
+} from '../components/atoms/';
 import config from '../../data/SiteConfig';
 import './post.scss';
 
@@ -57,7 +58,7 @@ export const PostTemplate = (props): JSX.Element => {
               <div dangerouslySetInnerHTML={{__html: postNode.html}} />
             </CardText>
             <div className="post-meta">
-              <PostTags tags={post.tags} />
+              <TagList tags={post.tags} />
               <SocialLinks
                 postPath={slug}
                 postNode={postNode}
@@ -77,7 +78,7 @@ export const PostTemplate = (props): JSX.Element => {
   );
 };
 
-const StyledPostCover = styled(PostCover)`
+const StyledPostCover = styled(PostCoverWrapper)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;

@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import Layout from '../layout';
-import PostListing from '../deprecatedComponents/PostListing';
-import HeaderTitle from '../deprecatedComponents/HeaderTitle';
+import {PostPreviewCardList} from '../components/molecules/';
+import {HeaderTitle} from '../components/atoms';
 import config from '../../data/SiteConfig';
 
-export const TagTemplate = props => {
+export const TagTemplate = (props): JSX.Element => {
   const {tag} = props.pageContext;
   const postEdges = props.data.allMarkdownRemark.edges;
 
@@ -21,7 +21,7 @@ export const TagTemplate = props => {
           <title>{`Posts tagged as "${tag}" | ${config.siteTitle}`}</title>
           <link rel="canonical" href={`${config.siteUrl}/tags/${tag}`} />
         </Helmet>
-        <PostListing postEdges={postEdges} />
+        <PostPreviewCardList postEdges={postEdges} />
       </div>
     </Layout>
   );
