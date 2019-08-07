@@ -10,7 +10,7 @@ import Paginator from '../components/Paginator';
 import Sidebar from '../components/Sidebar';
 import config from '../../data/SiteConfig';
 
-export const Index = props => {
+export const Index = (props): JSX.Element => {
   const postEdges = props.data.allMarkdownRemark.edges;
 
   return (

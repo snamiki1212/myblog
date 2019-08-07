@@ -6,6 +6,11 @@ import _ from 'lodash';
 const generateSlug = ({node, parsedFilePath}): string => {
   if (
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+    Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
+  ) {
+    return `/${_.kebabCase(node.frontmatter.slug)}`;
+  } else if (
+    Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
     Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
   ) {
     return `/${_.kebabCase(node.frontmatter.title)}`;
@@ -13,11 +18,6 @@ const generateSlug = ({node, parsedFilePath}): string => {
     return `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
   } else if (parsedFilePath.dir === '') {
     return `/${parsedFilePath.name}/`;
-  } else if (
-    Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-    Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
-  ) {
-    return `/${_.kebabCase(node.frontmatter.slug)}`;
   } else {
     return `/${parsedFilePath.dir}/`;
   }

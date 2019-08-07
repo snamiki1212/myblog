@@ -14,11 +14,11 @@ import SEOWrapper from '../components/SEOWrapper';
 import config from '../../data/SiteConfig';
 import './post.scss';
 
-export const PostTemplate = props => {
+export const PostTemplate = (props): JSX.Element => {
   const [isMobile, setIsMobile] = useState(false);
   const resize = () => setIsMobile(window.innerWidth >= 640 ? false : true);
 
-  useEffect(() => {
+  useEffect((): any => {
     window.addEventListener('resize', resize);
 
     return () => window.removeEventListener('resize', resize);
@@ -46,7 +46,7 @@ export const PostTemplate = props => {
 
         <SEOWrapper postPath={slug} postNode={postNode} postSEO />
         {/* <SEO postPath={slug} postNode={postNode} postSEO /> */}
-        <PC
+        <StyledPostCover
           postNode={postNode}
           coverHeight={coverHeight}
           coverClassName="md-grid md-cell--9"
@@ -77,7 +77,7 @@ export const PostTemplate = props => {
   );
 };
 
-const PC = styled(PostCover)`
+const StyledPostCover = styled(PostCover)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
