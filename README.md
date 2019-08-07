@@ -2,16 +2,26 @@
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)
 
-my blog → https://snamiki1212.com 
+📝 My blog → https://snamiki1212.com 
 
-## 
+## Tech
+
 - Architecture
   - Gatsbyjs / React / TypeScript
-  - [ ] No Class Components, Only Functional Components
-  - [ ] Atomic Design
+  - No Class Components, Only Functional Components
+  - Atomic Design
 
 - Use
   - styled-components
+
+### `gatsby-node.js`
+
+- TypeScript をネイティブにサポートしていないので、TSファイルをrequire している。
+- `/gatsbyjs` にて TSファイルで定義している。
+
+### `/src/components`
+
+- AtomicDesign でディレクトリとコンポーネントを配置
 
 ## Usage
 
@@ -19,10 +29,20 @@ Create `.env.development` from `.env` and secure-data.
 
 ## TODO
 
+- General
+  - [ ] AMP を入れる
+  - [ ] SASS を除去する
+  - [ ] prism を整理する
+  - [ ] gatsbyjs の設定周りを整理する
+  - [ ] TypeScript フレンドリーにする（特にGatsbyJSとPropsの値）
+  - [ ] /src 配下のディレクトリ構造を整理する
+    - [ ] /layout を消したい
+    - [ ] /pages を消したい
+    - [ ] /templates を消したい
 - CSS
   - [ ] Re-create Thema like as medium
   - [x] code style
-  - [ ] more clickable bottom-link
+  - [x] more clickable bottom-link
   - [x] block-quote
   - [ ] optimize twitter card of link image
   - [x] use .env at Google analytics ID
