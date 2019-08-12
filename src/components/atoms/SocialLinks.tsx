@@ -1,20 +1,19 @@
 import React from 'react';
 import {
   FacebookShareButton,
-  GooglePlusShareButton,
   LinkedinShareButton,
   TwitterShareButton,
   TelegramShareButton,
   RedditShareButton,
   FacebookShareCount,
-  GooglePlusShareCount,
-  LinkedinShareCount,
+  LineShareButton,
   RedditShareCount,
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
   LinkedinIcon,
   RedditIcon,
+  LineIcon,
 } from 'react-share';
 import {HatenabookmarkButton} from 'react-social-sharebuttons';
 import urljoin from 'url-join';
@@ -62,6 +61,10 @@ export const SocialLinks = (props): JSX.Element => {
       <TelegramShareButton url={url}>
         <TelegramIcon round size={iconSize} />
       </TelegramShareButton>
+
+      <LineShareButton title={post.title}>
+        <LineIcon round size={iconSize} />
+      </LineShareButton>
     </Wrapper>
   );
 };
