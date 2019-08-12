@@ -13,7 +13,6 @@ import {
   FacebookIcon,
   TwitterIcon,
   TelegramIcon,
-  GooglePlusIcon,
   LinkedinIcon,
   RedditIcon,
 } from 'react-share';
@@ -49,13 +48,6 @@ export const SocialLinks = (props): JSX.Element => {
         <TwitterIcon round size={iconSize} />
       </TwitterShareButton>
 
-      <GooglePlusShareButton url={url}>
-        <GooglePlusIcon round size={iconSize} />
-        <GooglePlusShareCount url={url}>
-          {count => renderShareCount(count)}
-        </GooglePlusShareCount>
-      </GooglePlusShareButton>
-
       <FacebookShareButton url={url} quote={postNode.excerpt}>
         <FacebookIcon round size={iconSize} />
         <FacebookShareCount url={url}>
@@ -63,15 +55,8 @@ export const SocialLinks = (props): JSX.Element => {
         </FacebookShareCount>
       </FacebookShareButton>
 
-      <LinkedinShareButton
-        url={url}
-        title={post.title}
-        description={postNode.excerpt}
-      >
+      <LinkedinShareButton url={url}>
         <LinkedinIcon round size={iconSize} />
-        <LinkedinShareCount url={url}>
-          {count => renderShareCount(count)}
-        </LinkedinShareCount>
       </LinkedinShareButton>
 
       <TelegramShareButton url={url}>
