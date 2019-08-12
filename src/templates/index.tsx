@@ -7,9 +7,11 @@ import {Paginator, HeaderTitle, SEORaw} from '../components/atoms/';
 import {AuthorCard, PostPreviewCardList} from '../components/molecules';
 import config from '../../data/SiteConfig';
 import {colors} from '../../data/color';
+import {IndexPageContext} from '../../gatsbyjs/createPages';
 
-export const Index = (props): JSX.Element => {
+export const Index = (props: any): JSX.Element => {
   const postEdges = props.data.allMarkdownRemark.edges;
+  const pageContext = props.pageContext as IndexPageContext;
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
@@ -22,7 +24,7 @@ export const Index = (props): JSX.Element => {
         <IndexContent>
           <IndexPostWrapper>
             <PostPreviewCardList postEdges={postEdges} />
-            <Paginator pageContext={props.pageContext} />
+            <Paginator pageContext={pageContext} />
           </IndexPostWrapper>
           <Sidebar>
             <AuthorCard />

@@ -9,6 +9,30 @@ const tagPage = path.resolve('src/templates/tag.tsx');
 const categoryPage = path.resolve('src/templates/category.tsx');
 const indexPage = path.resolve('src/templates/index.tsx');
 
+// TYPE
+export interface IndexPageContext {
+  limit: number;
+  skip: number;
+  numPages: number;
+  currentPage: number;
+}
+
+interface AllMarkdownRemark {
+  edges: MarkdownRemarkEdge[];
+}
+
+interface MarkdownRemarkEdge {
+  node: {
+    frontmatter: {
+      tags: string[];
+      category: string;
+    };
+    fields: {
+      slug: string;
+    };
+  };
+}
+
 // readme: https://www.gatsbyjs.org/docs/node-apis/#createPages
 export const createPages: any = async ({graphql, actions}): Promise<any> => {
   const {createPage} = actions;
@@ -42,19 +66,24 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
 
         const tagSet = new Set<string>();
         const categorySet = new Set<string>();
-        const posts = result.data.allMarkdownRemark.edges;
+        const allMarkdownRemark = result.data
+          .allMarkdownRemark as AllMarkdownRemark;
+        const posts = allMarkdownRemark.edges;
+
         const numPages = Math.ceil(posts.length / postsPerPage);
 
         Array.from({length: numPages}).forEach((_, i): void => {
+          const indexPageContext: IndexPageContext = {
+            limit: postsPerPage,
+            skip: i * postsPerPage,
+            numPages,
+            currentPage: i + 1,
+          };
+
           createPage({
-            path: i === 0 ? `/` : `/${i + 1}`,
+            path: i === 0 ? '/' : `/${i + 1}`,
             component: indexPage,
-            context: {
-              limit: postsPerPage,
-              skip: i * postsPerPage,
-              numPages,
-              currentPage: i + 1,
-            },
+            context: indexPageContext,
           });
         });
 

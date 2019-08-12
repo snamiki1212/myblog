@@ -2,9 +2,10 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
+import {IndexPageContext} from '../../../gatsbyjs/createPages';
 
-export const Paginator = (props): JSX.Element => {
-  const {currentPage, numPages} = props.pageContext;
+export const Paginator = (props: any): JSX.Element => {
+  const {currentPage, numPages} = props.pageContext as IndexPageContext;
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();

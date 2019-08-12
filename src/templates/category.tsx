@@ -6,7 +6,7 @@ import Layout from '../layout';
 import {HeaderTitle} from '../components/atoms/';
 import config from '../../data/SiteConfig';
 
-export const CategoryTemplate = (props): JSX.Element => {
+export const CategoryTemplate = (props: any): JSX.Element => {
   const {category} = props.pageContext;
   const postEdges = props.data.allMarkdownRemark.edges;
 
