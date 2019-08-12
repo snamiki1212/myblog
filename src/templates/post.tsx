@@ -25,28 +25,21 @@ export const PostTemplate = (props: any): JSX.Element => {
     return () => window.removeEventListener('resize', resize);
   }, []);
 
-  const {slug} = props.pageContext;
+  const {slug} = props.pageContext as {slug: string};
   const expanded = !isMobile;
-  const postNode = props.data.markdownRemark;
+  const postNode = props.data.markdownRemark as MarkdownRemark;
   const post = postNode.frontmatter;
-  if (!post.id) {
-    post.id = slug;
-  }
-  if (!post.category_id) {
-    post.category_id = config.postDefaultCategoryID;
-  }
-  const coverHeight = isMobile ? 180 : 350;
+  const coverHeight = isMobile ? 162 : 225;
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
       <div className="post-page md-grid md-grid--no-spacing">
         <Helmet>
           <title>{`${post.title}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
+          <link rel="canonical" href={`${config.siteUrl}${slug}`} />
         </Helmet>
 
         <SEOWrapper postPath={slug} postNode={postNode} postSEO />
-        {/* <SEO postPath={slug} postNode={postNode} postSEO /> */}
         <StyledPostCover
           postNode={postNode}
           coverHeight={coverHeight}
@@ -84,6 +77,29 @@ const StyledPostCover = styled(PostCoverWrapper)`
   background-position: 50% 50%;
   padding: 0 !important;
 `;
+
+interface MarkdownRemark {
+  html: string;
+  timeToRead: number;
+  excerpt: string;
+  frontmatter: {
+    title: string;
+    cover: string;
+    date: Date;
+    category: string;
+    tags: string;
+  };
+  fields: MarkdownRemarkFrontmatter[];
+}
+
+interface MarkdownRemarkFrontmatter {
+  nextTitle: string;
+  nextSlug: string;
+  prevTitle: string;
+  prevSlug: string;
+  slug: string;
+  date: Date;
+}
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

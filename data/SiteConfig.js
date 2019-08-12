@@ -20,7 +20,6 @@ module.exports = {
   siteFBAppID: process.env.siteFBAppID, // FB Application ID for using app insights
 
   // for post
-  postDefaultCategoryID: 'Tech', // Default category for posts.
   dateFromFormat: 'YYYY-MM-DD hh:mm', // Date format used in the frontmatter.
   dateFormat: 'YYYY/MM/DD', // Date format for display.
   userName: 'Nash', // Username to display in the author segment.

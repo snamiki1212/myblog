@@ -3,11 +3,11 @@ import path from 'path';
 import _ from 'lodash';
 
 // CONSTANTS
-const postsPerPage = 10;
-const postPage = path.resolve('src/templates/post.tsx');
-const tagPage = path.resolve('src/templates/tag.tsx');
-const categoryPage = path.resolve('src/templates/category.tsx');
-const indexPage = path.resolve('src/templates/index.tsx');
+const POSTS_PERT_PAGE = 10;
+const PostPage = path.resolve('src/templates/post.tsx');
+const TagPage = path.resolve('src/templates/tag.tsx');
+const CategoryPage = path.resolve('src/templates/category.tsx');
+const IndexPage = path.resolve('src/templates/index.tsx');
 
 // TYPE
 export interface IndexPageContext {
@@ -70,19 +70,19 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
           .allMarkdownRemark as AllMarkdownRemark;
         const posts = allMarkdownRemark.edges;
 
-        const numPages = Math.ceil(posts.length / postsPerPage);
+        const numPages = Math.ceil(posts.length / POSTS_PERT_PAGE);
 
         Array.from({length: numPages}).forEach((_, i): void => {
           const indexPageContext: IndexPageContext = {
-            limit: postsPerPage,
-            skip: i * postsPerPage,
+            limit: POSTS_PERT_PAGE,
+            skip: i * POSTS_PERT_PAGE,
             numPages,
             currentPage: i + 1,
           };
 
           createPage({
             path: i === 0 ? '/' : `/${i + 1}`,
-            component: indexPage,
+            component: IndexPage,
             context: indexPageContext,
           });
         });
@@ -100,7 +100,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
 
           createPage({
             path: edge.node.fields.slug,
-            component: postPage,
+            component: PostPage,
             context: {
               slug: edge.node.fields.slug,
             },
@@ -110,7 +110,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
         Array.from(tagSet).forEach((tag: string): void => {
           createPage({
             path: `/tags/${_.kebabCase(tag)}/`,
-            component: tagPage,
+            component: TagPage,
             context: {
               tag,
             },
@@ -120,7 +120,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
         Array.from(categorySet).forEach((category: string): void => {
           createPage({
             path: `/categories/${_.kebabCase(category)}/`,
-            component: categoryPage,
+            component: CategoryPage,
             context: {
               category,
             },
