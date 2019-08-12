@@ -15,7 +15,7 @@ import {
   RedditIcon,
   LineIcon,
 } from 'react-share';
-import {HatenabookmarkButton} from 'react-social-sharebuttons';
+import {HatenaShareButton} from './';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
@@ -31,11 +31,7 @@ export const SocialLinks = (props): JSX.Element => {
 
   return (
     <Wrapper>
-      <HatenabookmarkButton
-        url={url}
-        title={post.title}
-        layout="standard-balloon"
-      />
+      <HatenaShareButton url={url} size={iconSize} />
       <RedditShareButton url={url} title={post.title}>
         <RedditIcon round size={iconSize} />
         <RedditShareCount url={url}>

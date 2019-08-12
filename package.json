@@ -41,7 +41,6 @@
     "react-md": "^1.12.2",
     "react-reading-progress": "^0.3.0",
     "react-share": "^3.0.0",
-    "react-social-sharebuttons": "^3.0.0-alpha2",
     "react-twitter-widgets": "^1.7.1",
     "styled-components": "^4.3.2",
     "uglifyjs-webpack-plugin": "^2.2.0",

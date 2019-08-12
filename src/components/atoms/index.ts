@@ -9,3 +9,4 @@ export * from './SEORaw';
 export * from './SEOWrapper';
 export * from './PostCoverRaw';
 export * from './PostCoverWrapper';
+export * from './HatenaShareButton';

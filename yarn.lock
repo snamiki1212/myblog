@@ -10384,10 +10384,6 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-social-sharebuttons@^3.0.0-alpha2:
-  version "3.0.0-alpha2"
-  resolved "https://registry.yarnpkg.com/react-social-sharebuttons/-/react-social-sharebuttons-3.0.0-alpha2.tgz#82b4606d2be1922418df0aa7398ad31943ac3b2f"
-
 react-swipeable-views-core@^0.12.17:
   version "0.12.17"
   resolved "https://registry.yarnpkg.com/react-swipeable-views-core/-/react-swipeable-views-core-0.12.17.tgz#0998f55fd2f8595bcd01bead1c19516dc561c1cf"
