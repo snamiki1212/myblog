@@ -28,14 +28,15 @@ export const SocialLinks = (props): JSX.Element => {
   const renderShareCount = (count: number): JSX.Element => (
     <ShareCount>{count > 0 ? count : ''}</ShareCount>
   );
+  console.log('url', url);
 
   return (
     <Wrapper>
-      {/* <HatenaShareButton url={url} size={iconSize} /> */}
+      <HatenaShareButton url={url} size={iconSize} />
       <RedditShareButton url={url} title={post.title}>
         <RedditIcon round size={iconSize} />
         <RedditShareCount url={url}>
-          {(count: number): JSX.Element => renderShareCount(count)}
+          {count => renderShareCount(count)}
         </RedditShareCount>
       </RedditShareButton>
 
@@ -46,7 +47,7 @@ export const SocialLinks = (props): JSX.Element => {
       <FacebookShareButton url={url} quote={postNode.excerpt}>
         <FacebookIcon round size={iconSize} />
         <FacebookShareCount url={url}>
-          {(count: number): JSX.Element => renderShareCount(count)}
+          {count => renderShareCount(count)}
         </FacebookShareCount>
       </FacebookShareButton>
 
