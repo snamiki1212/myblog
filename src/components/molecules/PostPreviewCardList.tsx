@@ -1,8 +1,13 @@
 import React from 'react';
 import {PostPreviewCard} from '.';
+import {MarkdownRemarkEdge} from '../../templates/index';
 
-export const PostPreviewCardList = (props): JSX.Element => {
-  const postList = props.postEdges.map((postEdge: any): any => {
+export const PostPreviewCardList = ({
+  postEdges,
+}: {
+  postEdges: MarkdownRemarkEdge[];
+}): JSX.Element => {
+  const postList = postEdges.map((postEdge: any): any => {
     return {
       path: postEdge.node.fields.slug,
       tags: postEdge.node.frontmatter.tags,

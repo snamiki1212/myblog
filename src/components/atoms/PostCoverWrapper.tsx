@@ -2,8 +2,14 @@ import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
 import {PostCoverRaw} from './index';
 
+interface Props {
+  postNode: any;
+  coverHeight: number;
+  coverClassName?: string;
+}
+
 // TODO: StaticQuery を破棄したい
-export const PostCoverWrapper = (props): JSX.Element => {
+export const PostCoverWrapper = (props: Props): JSX.Element => {
   const {postNode, coverHeight, coverClassName} = props;
 
   return (

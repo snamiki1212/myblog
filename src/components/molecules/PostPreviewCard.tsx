@@ -10,7 +10,21 @@ import {PostCoverWrapper} from '../atoms';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
-export const PostPreviewCard = (props): JSX.Element => {
+interface PostInfo {
+  path: string;
+  tags: string[];
+  cover: string;
+  title: string;
+  date: Date;
+  excerpt: string;
+  timeToRead: number;
+}
+
+export const PostPreviewCard = ({
+  postInfo,
+}: {
+  postInfo: PostInfo;
+}): JSX.Element => {
   const [isMobile, setIsMobile] = useState(false);
   const resize = () => setIsMobile(window.innerWidth >= 640 ? false : true);
 
@@ -20,7 +34,6 @@ export const PostPreviewCard = (props): JSX.Element => {
     return () => window.removeEventListener('resize', resize);
   }, []);
 
-  const {postInfo} = props;
   const coverHeight = isMobile ? 162 : 225;
 
   return (

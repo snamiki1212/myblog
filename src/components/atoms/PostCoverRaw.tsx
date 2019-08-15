@@ -2,9 +2,20 @@ import React from 'react';
 import Img from 'gatsby-image';
 import path from 'path';
 
+interface Props {
+  fileEdges: any;
+  postNode: any;
+  coverHeight: number;
+  coverClassName?: string;
+}
+
 // TODO: ロジックをリファクタリングしたい
-export const PostCoverRaw = (props): JSX.Element => {
-  const {fileEdges, postNode, coverHeight, coverClassName} = props;
+export const PostCoverRaw = ({
+  fileEdges,
+  postNode,
+  coverHeight,
+  coverClassName,
+}: Props): JSX.Element => {
   const post = postNode.frontmatter ? postNode.frontmatter : postNode;
 
   const coverNodeList = fileEdges.filter((fileNode): any => {

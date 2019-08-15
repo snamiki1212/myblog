@@ -1,16 +1,17 @@
+import {graphql} from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import {graphql} from 'gatsby';
 import styled from 'styled-components';
-import Layout from '../layout';
-import {Paginator, HeaderTitle, SEORaw} from '../components/atoms/';
-import {AuthorCard, PostPreviewCardList} from '../components/molecules';
-import config from '../../data/SiteConfig';
 import {colors} from '../../data/color';
+import config from '../../data/SiteConfig';
 import {IndexPageContext} from '../../gatsbyjs/createPages';
+import {HeaderTitle, Paginator, SEORaw} from '../components/atoms/';
+import {AuthorCard, PostPreviewCardList} from '../components/molecules';
+import Layout from '../layout';
 
 export const Index = (props: any): JSX.Element => {
-  const postEdges = props.data.allMarkdownRemark.edges;
+  const queryFetched = props.data.allMarkdownRemark as IndexPageQuery;
+  const postEdges = queryFetched.edges;
   const pageContext = props.pageContext as IndexPageContext;
 
   return (
@@ -82,3 +83,24 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export interface IndexPageQuery {
+  edges: MarkdownRemarkEdge[];
+}
+
+export interface MarkdownRemarkEdge {
+  node: {
+    fields: {
+      slug: string;
+      date: Date;
+    };
+    excerpt: string;
+    timeToRead: number;
+    frontmatter: {
+      title: string;
+      tags: string;
+      cover: string;
+      date: Date;
+    };
+  };
+}
