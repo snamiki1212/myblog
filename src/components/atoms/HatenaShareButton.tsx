@@ -30,8 +30,8 @@ export const HatenaShareButton = ({url, size}: Props): JSX.Element => {
       <script
         type="text/javascript"
         src="https://b.st-hatena.com/js/bookmark_button.js"
-        charset="utf-8"
-        async="async"
+        charSet="utf-8"
+        async={true}
       ></script>
     </>
   );

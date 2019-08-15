@@ -28,6 +28,7 @@ export const SocialLinks = (props): JSX.Element => {
   const renderShareCount = (count: number): JSX.Element => (
     <ShareCount>{count > 0 ? count : ''}</ShareCount>
   );
+  console.log('url', url);
 
   return (
     <Wrapper>
@@ -58,7 +59,7 @@ export const SocialLinks = (props): JSX.Element => {
         <TelegramIcon round size={iconSize} />
       </TelegramShareButton>
 
-      <LineShareButton title={post.title}>
+      <LineShareButton url={url} title={post.title}>
         <LineIcon round size={iconSize} />
       </LineShareButton>
     </Wrapper>
