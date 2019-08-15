@@ -4,7 +4,7 @@ import {graphql} from 'gatsby';
 import CardText from 'react-md/lib/Cards/CardText';
 import styled from 'styled-components';
 import Layout from '../layout';
-import {UserInfo, PostSuggestions} from '../components/molecules/';
+import {UserInfo} from '../components/molecules/';
 import {
   TagList,
   SocialLinks,
@@ -65,7 +65,6 @@ export const PostTemplate = (props: any): JSX.Element => {
             expanded={expanded}
           />
         </div>
-        <PostSuggestions postNode={postNode} />
       </div>
     </Layout>
   );
@@ -89,16 +88,6 @@ export interface MarkdownRemark {
     category: string;
     tags: string;
   };
-  fields: MarkdownRemarkFrontmatter;
-}
-
-interface MarkdownRemarkFrontmatter {
-  nextTitle: string;
-  nextSlug: string;
-  prevTitle: string;
-  prevSlug: string;
-  slug: string;
-  date: Date;
 }
 
 export const pageQuery = graphql`
@@ -113,14 +102,6 @@ export const pageQuery = graphql`
         date
         category
         tags
-      }
-      fields {
-        nextTitle
-        nextSlug
-        prevTitle
-        prevSlug
-        slug
-        date
       }
     }
   }

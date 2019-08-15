@@ -20,10 +20,10 @@ const {onCreateNode} = require('./gatsbyjs/onCreateNode');
 exports.onCreateNode = onCreateNode(postNodes);
 
 // setFieldsOnGraphQLNodeType
-const {addSiblingNodes} = require('./gatsbyjs/helper');
-const {
-  setFieldsOnGraphQLNodeType,
-} = require('./gatsbyjs/setFieldsOnGraphQLNodeType');
-exports.setFieldsOnGraphQLNodeType = setFieldsOnGraphQLNodeType(
-  addSiblingNodes(postNodes)
-);
+// const {addSiblingNodes} = require('./gatsbyjs/helper');
+// const {
+//   setFieldsOnGraphQLNodeType,
+// } = require('./gatsbyjs/setFieldsOnGraphQLNodeType');
+// exports.setFieldsOnGraphQLNodeType = setFieldsOnGraphQLNodeType(
+//   addSiblingNodes(postNodes)
+// );
