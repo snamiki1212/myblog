@@ -1,5 +1,3 @@
-('use strict');
-
 // readme: https://github.com/gatsbyjs/gatsby/issues/1457
 require('source-map-support').install();
 require('ts-node').register({

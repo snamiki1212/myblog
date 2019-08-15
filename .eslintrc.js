@@ -31,6 +31,7 @@ module.exports={
     "import/core-modules": []
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "node":true
   }
 }
