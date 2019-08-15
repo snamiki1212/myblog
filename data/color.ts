@@ -1,26 +1,26 @@
 export const colors = {
   // background-color
-  'bg-black-1': '#222222',
-  'bg-vivid-1': '#f0db00',
-  'bg-white-1': '#ffffff',
-  'bg-white-2': '#f3f3f3',
-  'bg-white-3': '#e5e3df',
+  backgroundBlack1: '#222222',
+  backgroundVivid1: '#f0db00',
+  backgroundWhite1: '#ffffff',
+  backgroundWhite2: '#f3f3f3',
+  backgroundWhite3: '#e5e3df',
 
   // font-color
-  'fc-black-1': '#222222',
-  'fc-black-2': '#111111',
-  'fc-vivid-1': '#f0db00',
-  'fc-vivid-2': '#e0cc00',
-  'fc-vivid-3': '#d0bb00',
-  'fc-white-1': '#ffffff',
-  'fc-white-2': '#dddddd',
-  'fc-gray-1': '#666666',
-  'fc-gray-2': '#888888',
+  fontBlack1: '#222222',
+  fontBlack2: '#111111',
+  fontVivid1: '#f0db00',
+  fontVivid2: '#e0cc00',
+  fontVivid3: '#d0bb00',
+  fontWhite1: '#ffffff',
+  fontWhite2: '#dddddd',
+  fontGray1: '#666666',
+  fontGray2: '#888888',
 
   //
-  'h-left': '#666666',
-  'h-background-color': '#f3f3f3',
-  'list-background-color': '#f3f3f3',
+  hLeft: '#666666',
+  hBackgroundColor: '#f3f3f3',
+  listBackgroundColor: '#f3f3f3',
 };
 
 export default {

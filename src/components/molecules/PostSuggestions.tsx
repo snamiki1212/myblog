@@ -51,5 +51,5 @@ const StyledLink = styled(Link)`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: ${colors['bg-white-2']};
+  background-color: ${colors.backgroundWhite2};
 `;

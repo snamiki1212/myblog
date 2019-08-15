@@ -42,7 +42,7 @@ const Sidebar = styled.div`
   min-width: 250px;
   padding: 24px;
 
-  background-color: ${colors['bg-white-2']};
+  background-color: ${colors['backgroundWhite2']};
 `;
 
 const IndexContent = styled.div`

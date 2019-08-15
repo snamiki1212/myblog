@@ -15,7 +15,7 @@ export const AuthorCard = (): JSX.Element => (
 
 const Wrapper = styled.div`
   width: 100%;
-  color: ${colors['fc-gray-1']};
+  color: ${colors.fontGray1};
 `;
 
 const Avator = styled.img`
@@ -25,8 +25,8 @@ const Avator = styled.img`
 
 const Name = styled.div`
   font-size: 32px;
-  color: ${colors['fc-black-1']};
-  border-bottom: 1px solid ${colors['fc-vivid-1']};
+  color: ${colors.fontBlack1};
+  border-bottom: 1px solid ${colors.fontVivid1};
 
   font-family: 'Megrim', 'Yu Gothic M', 'Raleway'; // TODO: megrim import
   text-align: center;

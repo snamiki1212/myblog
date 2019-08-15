@@ -90,7 +90,7 @@ const Overlay = styled(MediaOverlay)`
 `;
 
 const Title = styled.span`
-  color: ${colors['fc-white-1']};
+  color: ${colors.fontWhite1};
   font-size: 24px;
   font-family: 'TsukuBRdGothic-Regular', 'Wawati SC', 'HanziPen TC',
     'HanziPen SC', 'Hannotate TC', 'MS UI Gothic', 'Hiragino Kaku Gothic ProN',

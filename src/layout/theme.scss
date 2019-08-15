@@ -10,10 +10,10 @@ a {
   text-decoration: none;
   transition: 0.5s;
   &:link, &:visited{
-    color: $fc-vivid-2;
+    color: $fontVivid2;
   }
   &:hover{
-    color: $fc-black-1;
+    color: $fontBlack1;
     transition: 0.5s;
   }
 }
@@ -26,6 +26,6 @@ $md-base-font-family: 'FontAwesome', 'Font Awesome 5 Brands', 'Avenir','Helvetic
 $md-media-overlay-color: rgba(0, 0, 0, .5);
 
 // other
-$header-color: $fc-vivid-1;
+$header-color: $fontVivid1;
 $header-color-hover: white; 
 

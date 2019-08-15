@@ -44,11 +44,11 @@ export const Paginator = (props: any): JSX.Element => {
 };
 
 const StyledLink = styled(Link)`
-  background: ${colors['bg-white-2']};
+  background: ${colors.backgroundWhite2};
   padding: 15px;
   transition: 0.3s;
   &:hover {
-    background: ${colors['bg-vivid-1']};
+    background: ${colors.backgroundVivid1};
   }
 `;
 
