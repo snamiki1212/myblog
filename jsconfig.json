@@ -17,6 +17,9 @@
     "compileOnSave": true,
     "allowJS": true,
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "data/*",
+        "gatsbyjs/*",
+        "data/*"
     ]
 }
