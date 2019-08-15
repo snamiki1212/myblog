@@ -78,7 +78,7 @@ const StyledPostCover = styled(PostCoverWrapper)`
   padding: 0 !important;
 `;
 
-interface MarkdownRemark {
+export interface MarkdownRemark {
   html: string;
   timeToRead: number;
   excerpt: string;
@@ -89,7 +89,7 @@ interface MarkdownRemark {
     category: string;
     tags: string;
   };
-  fields: MarkdownRemarkFrontmatter[];
+  fields: MarkdownRemarkFrontmatter;
 }
 
 interface MarkdownRemarkFrontmatter {

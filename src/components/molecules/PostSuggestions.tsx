@@ -3,9 +3,13 @@ import FontIcon from 'react-md/lib/FontIcons';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
+import {MarkdownRemark} from '../../templates/post';
 
-export const PostSuggestions = (props): JSX.Element => {
-  const {postNode} = props;
+export const PostSuggestions = ({
+  postNode,
+}: {
+  postNode: MarkdownRemark;
+}): JSX.Element => {
   const postFields = postNode.fields;
 
   return (
