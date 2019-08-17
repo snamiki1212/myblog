@@ -5,6 +5,7 @@
   "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.3.2",
+    "@material-ui/icons": "^4.2.1",
     "dotenv": "^8.0.0",
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security",
