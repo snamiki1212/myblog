@@ -1,22 +1,25 @@
 import React from 'react';
-import Button from 'react-md/lib/Buttons';
+import Button from '@material-ui/core/Button';
+import {XIcon} from './';
+
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 
 export const MyLinks = (): JSX.Element => {
-  const {userLinks} = config;
+  const {mySocials} = config;
 
   return (
     <Links>
-      {Array.isArray(userLinks) &&
-        userLinks.map(
-          (link): JSX.Element => (
+      {Array.isArray(mySocials) &&
+        mySocials.map(
+          (social): JSX.Element => (
             <Button
-              icon
-              key={link.label}
-              iconClassName={link.iconClassName}
-              href={link.url}
-            />
+              key={social.icon}
+              href={social.url}
+              style={{height: '100px'}}
+            >
+              <XIcon icon={social.icon} />
+            </Button>
           )
         )}
     </Links>

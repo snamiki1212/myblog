@@ -1,38 +1,32 @@
 import React from 'react';
+// material-ui/core
 import AppBar from '@material-ui/core/AppBar';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
-import MenuIcon from '@material-ui/icons/Menu';
-import PlaceIcon from '@material-ui/icons/Place';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import Slide from '@material-ui/core/Slide';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {
   makeStyles,
   useTheme,
   Theme,
   createStyles,
 } from '@material-ui/core/styles';
-import Slide from '@material-ui/core/Slide';
 
-import HomeIcon from '@material-ui/icons/Home';
-import FaceIcon from '@material-ui/icons/Face';
-import DesktopMacIcon from '@material-ui/icons/DesktopMac';
-import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
-// icon: 'home' | 'place' | 'face' | 'desktop_mac' | 'airplanemode_active'; // chooseme: https://material.io/resources/icons/
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+// material-ui/icon
+import MenuIcon from '@material-ui/icons/Menu';
+
+// Misc
 import {Link} from 'gatsby';
-import NavigationDrawer from 'react-md/lib/NavigationDrawers';
 import styled from 'styled-components';
-import {Footer, ProgressBar} from '../atoms';
+import {Footer, ProgressBar, XIcon} from '../atoms';
 import DrawerItemList from '../../DrawerItemList';
 
 const drawerWidth = 240;
@@ -105,7 +99,6 @@ const HideOnScroll = (props: Props): JSX.Element => {
 
 export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
   const {children, config, LocalTitle, isPost, container} = props;
-  const footerLinks = LocalTitle && LocalTitle !== 'About';
 
   const classes = useStyles();
   const theme = useTheme();
@@ -113,23 +106,6 @@ export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
   const [mobileOpen, setMobileOpen] = React.useState<boolean>(false);
 
   const handleDrawerToggle = () => setMobileOpen(prev => !prev);
-
-  const xIcon = (icon: string): JSX.Element => {
-    switch (icon) {
-      case 'face':
-        return <FaceIcon />;
-      case 'place':
-        return <PlaceIcon />;
-      case 'home':
-        return <HomeIcon />;
-      case 'desktop_mac':
-        return <DesktopMacIcon />;
-      case 'airplanemode_active':
-        return <AirplanemodeActiveIcon />;
-      default:
-        return <></>;
-    }
-  };
 
   // ドロワーの中身
   const drawer = (
@@ -142,7 +118,9 @@ export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
           ) : (
             <Link to={drowerItem.row.to} key={key}>
               <ListItem button>
-                <ListItemIcon>{xIcon(drowerItem.row.icon)}</ListItemIcon>
+                <ListItemIcon>
+                  <XIcon icon={drowerItem.row.icon} />
+                </ListItemIcon>
                 <ListItemText
                   primary={drowerItem.row.primaryText}
                   secondary={drowerItem.row.secondaryText}
@@ -216,7 +194,7 @@ export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
           <div className={classes.toolbar}>
             {isPost ? <ProgressBar /> : ''}
             <Container>{children}</Container>
-            <Footer userLinks={footerLinks} />
+            <footer>{config.copyright}</footer>
           </div>
         </main>
       </div>

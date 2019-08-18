@@ -12,12 +12,12 @@ export const UserInfo = (props): JSX.Element => {
     userName,
     userLocation,
     userDescription,
-    userLinks,
+    mySocials,
     userTwitter,
   } = props.config;
 
   if (!userAvatar && !userName && !userLocation && !userDescription) {
-    if (userLinks) {
+    if (mySocials) {
       return (
         <Wrapper className="md-grid md-cell md-cell--12 ">
           <MyLinks />

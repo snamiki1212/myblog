@@ -1,4 +1,3 @@
-export * from './Footer';
 export * from './MyLinks';
 export * from './SocialLinks';
 export * from './ProgressBar';
@@ -10,3 +9,4 @@ export * from './SEOWrapper';
 export * from './PostCoverRaw';
 export * from './PostCoverWrapper';
 export * from './HatenaShareButton';
+export * from './XIcon';

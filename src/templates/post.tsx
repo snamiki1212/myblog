@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import CardText from 'react-md/lib/Cards/CardText';
 import styled from 'styled-components';
 import Layout from '../layout';
 import {UserInfo} from '../components/molecules/';
@@ -47,9 +46,9 @@ export const PostTemplate = (props: any): JSX.Element => {
         />
         <div className="md-grid md-cell--7 post-page-contents">
           <div className="md-grid md-cell md-cell--12 post">
-            <CardText className="post-body target-el">
+            <div className="post-body target-el">
               <div dangerouslySetInnerHTML={{__html: postNode.html}} />
-            </CardText>
+            </div>
             <div className="post-meta">
               <TagList tags={post.tags} />
               <SocialLinks

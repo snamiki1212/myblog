@@ -1,9 +1,9 @@
 import React from 'react';
-import FontIcon from 'react-md/lib/FontIcons';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {MarkdownRemark} from '../../templates/post';
+import {XIcon} from '../atoms';
 
 export const PostSuggestions = ({
   postNode,
@@ -18,9 +18,7 @@ export const PostSuggestions = ({
         to={postFields.prevSlug}
         className="md-grid md-cell md-cell--6"
       >
-        <FontIcon forceFontSize forceSize={64} style={{flex: 1}}>
-          arrow_back
-        </FontIcon>
+        <XIcon icon="awrrow-left" />
         <span style={{flex: 3}} className="md-headline ">
           {postFields.prevTitle}
         </span>
@@ -33,9 +31,7 @@ export const PostSuggestions = ({
         <span style={{flex: 3}} className="md-headline ">
           {postFields.nextTitle}
         </span>
-        <FontIcon style={{flex: 1}} forceFontSize forceSize={64}>
-          arrow_forward
-        </FontIcon>
+        <XIcon icon="awrrow-right" />
       </StyledLink>
     </Container>
   );

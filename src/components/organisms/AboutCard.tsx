@@ -7,9 +7,8 @@ import styled from 'styled-components';
 import {MyLinks} from '../atoms/';
 import config from '../../../data/SiteConfig';
 
-const myTwitterUrl = config.userLinks.find(ele => ele.label === 'Twitter').url;
-const myLinkedinUrl = config.userLinks.find(ele => ele.label === 'Linkedin')
-  .url;
+const myTwitterUrl = config.mySocials.find(ele => ele.icon === 'twitter').url;
+const myLinkedinUrl = config.mySocials.find(ele => ele.icon === 'linkedin').url;
 
 export const AboutCard = (): JSX.Element => (
   <div style={{padding: '10px'}}>
