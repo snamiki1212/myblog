@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import Card from 'react-md/lib/Cards/Card';
-import CardTitle from 'react-md/lib/Cards/CardTitle';
-import CardText from 'react-md/lib/Cards/CardText';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 import {Link} from 'gatsby';
 import moment from 'moment';
-import Media, {MediaOverlay} from 'react-md/lib/Media';
+import Media, {MediaOverlay} from 'react-md/lib/Media'; // TODO:
 import styled from 'styled-components';
 import {PostCoverWrapper} from '../atoms';
 import config from '../../../data/SiteConfig';
@@ -34,10 +33,10 @@ export const PostPreviewCard = ({
     return () => window.removeEventListener('resize', resize);
   }, []);
 
-  const coverHeight = isMobile ? 162 : 225;
+  const coverHeight = isMobile ? 162 : 162;
 
   return (
-    <Card key={postInfo.path} raise className="md-grid md-cell md-cell--6">
+    <Card key={postInfo.path}>
       <Link to={postInfo.path}>
         <Media style={{height: coverHeight, paddingBottom: '0px'}}>
           <PostCoverWrapper postNode={postInfo} coverHeight={coverHeight} />
@@ -46,20 +45,17 @@ export const PostPreviewCard = ({
             {/* <CardTitle title={postInfo.title} style={{"color": "black"}} /> */}
           </Overlay>
         </Media>
-        <CardTitle
-          title=""
-          subtitle={`最終更新日: ${moment(postInfo.date).format(
-            config.dateFormat
-          )}`}
-        />
-        {/* <CardTitle subtitle={<PostTags tags={postInfo.tags} />} /> */}
+
+        <CardContent>
+          {`最終更新日: ${moment(postInfo.date).format(config.dateFormat)}`}
+        </CardContent>
         <Excerpt>{postInfo.excerpt}</Excerpt>
       </Link>
     </Card>
   );
 };
 
-const Excerpt = styled(CardText)`
+const Excerpt = styled(CardContent)`
   position: relative;
   &::after {
     content: '';
