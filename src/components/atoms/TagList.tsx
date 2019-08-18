@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import {Link} from 'gatsby';
-import Chip from 'react-md/lib/Chips';
+import Chip from '@material-ui/core/Chip';
 import styled from 'styled-components';
 
 export const TagList = (props): JSX.Element => {
@@ -16,7 +16,7 @@ export const TagList = (props): JSX.Element => {
               style={{textDecoration: 'none'}}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <Tag label={tag} />
+              <SChip label={tag} clickable />
             </Link>
           )
         )}
@@ -32,6 +32,6 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Tag = styled(Chip)`
+const SChip = styled(Chip)`
   margin: 5px 2px 0;
 `;
