@@ -25,43 +25,78 @@ export const PostTemplate = (props: any): JSX.Element => {
   }, []);
 
   const {slug} = props.pageContext as {slug: string};
-  const expanded = !isMobile;
   const postNode = props.data.markdownRemark as MarkdownRemark;
   const post = postNode.frontmatter;
   const coverHeight = isMobile ? 162 : 225;
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
-      <div className="post-page">
+      <SPostPage>
         <Helmet>
           <title>{`${post.title}`}</title>
           <link rel="canonical" href={`${config.siteUrl}${slug}`} />
         </Helmet>
 
         <SEOWrapper postPath={slug} postNode={postNode} postSEO />
-        <StyledPostCover postNode={postNode} coverHeight={coverHeight} />
-        <div className="post-page-contents">
-          <div className="post">
+        <SPostCover postNode={postNode} coverHeight={coverHeight} />
+
+        <SPostPagePaper>
+          <SPostPageContent>
             <div className="post-body target-el">
               <div dangerouslySetInnerHTML={{__html: postNode.html}} />
             </div>
-            <div className="post-meta">
+
+            <SPostPageFooter>
               <TagList tags={post.tags} />
               <SocialLinks
                 postPath={slug}
                 postNode={postNode}
                 mobile={isMobile}
               />
-            </div>
-          </div>
-          <UserInfo config={config} expanded={expanded} />
-        </div>
-      </div>
+            </SPostPageFooter>
+          </SPostPageContent>
+          <UserInfo config={config} />
+        </SPostPagePaper>
+      </SPostPage>
     </Layout>
   );
 };
 
-const StyledPostCover = styled(PostCoverWrapper)`
+const SPostPageContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 0px;
+`;
+
+const SPostPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const SPostPagePaper = styled.div`
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+
+  img {
+    max-width: 100%;
+  }
+
+  video {
+    max-width: 100%;
+  }
+`;
+
+const SPostPageFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const SPostCover = styled(PostCoverWrapper)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
