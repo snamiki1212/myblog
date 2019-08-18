@@ -4,7 +4,6 @@ import 'font-awesome/scss/font-awesome.scss';
 import {Navigation} from '../components/molecules/';
 import config from '../../data/SiteConfig';
 import './index.scss';
-require('prismjs/plugins/line-numbers/prism-line-numbers.css');
 
 const Layout = (props): JSX.Element => {
   const isIndexPage = pathname => pathname == ('/' || /\/[0-9]/.test(pathname));

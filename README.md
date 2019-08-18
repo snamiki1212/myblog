@@ -34,7 +34,7 @@ Create `.env.development` from `.env` and secure-data.
 - General
   - [ ] AMP を入れる
   - [ ] SASS を除去する
-  - [ ] prism を整理する
+  - [x] prism を整理する
   - [ ] gatsbyjs の設定周りを整理する
   - [ ] TypeScript フレンドリーにする（特にGatsbyJSとPropsの値）
   - [ ] /src 配下のディレクトリ構造を整理する
