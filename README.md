@@ -11,8 +11,10 @@
   - No Class Components, Only Functional Components
   - Atomic Design
 
-- Use
-  - styled-components
+- stack
+  - CSS: styled-components
+  - CSS: material-UI
+  - ICON: fontawesome
 
 ### `gatsby-node.js`
 
