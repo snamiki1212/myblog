@@ -1,16 +1,17 @@
 import React from 'react';
 import RehypeReact from 'rehype-react';
 import styled from 'styled-components';
+import {colors} from '../../data/color';
 
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';
-const fontColorNormal = 'black';
-const fontColorVivid = 'red';
-const fontColorHeadline = 'darkgray';
-const hLeft = '#666666';
-const listBackgroundColor = '#f3f3f3';
 
-// TODO: rename
+const fontColorNormal = colors.fontBlack1;
+const fontColorHeadline = colors.fontBlack1;
+const fontColorVivid = 'red';
+const hLeft = colors.hLeft;
+const listBackgroundColor = colors.backgroundWhite2;
+
 const mixinHeadline = `
   font-weight: bold;
   color: ${fontColorHeadline};
@@ -41,11 +42,9 @@ const H2 = styled.h2`
   border-left: 10px solid ${hLeft};
 
   padding: 20px 40px;
-  @media screen and (max-width: $mobileWidth) {
+  @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }
-
-  background-color: #f7f7f7;
 `;
 
 const H3 = styled.h3`
@@ -67,10 +66,9 @@ const HR = styled.hr`
 
 const A = styled.a`
   border-bottom: solid 1px;
-  color: $fc-vivid;
   transition: 0.3s;
   &:hover {
-    color: ${fontColorHeadline};
+    color: ${fontColorVivid};
     transition: 0.3s;
   }
 `;
@@ -141,6 +139,7 @@ export const renderReact = new RehypeReact({
     hr: HR,
     a: A,
     b: B,
+    strong: B, // same as B-tag
     p: P,
     blockquote: Blockquote,
     table: Table,

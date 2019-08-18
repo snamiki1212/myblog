@@ -3,6 +3,9 @@ import Helmet from 'react-helmet';
 import 'font-awesome/scss/font-awesome.scss';
 import {Navigation} from '../components/molecules/';
 import config from '../../data/SiteConfig';
+import {ThemeProvider} from '@material-ui/styles';
+import {theme} from '../theme';
+
 import './index.scss';
 
 const Layout = (props): JSX.Element => {
@@ -20,22 +23,24 @@ const Layout = (props): JSX.Element => {
 
   const {children} = props;
   return (
-    <Navigation
-      config={config}
-      LocalTitle={props.title}
-      isPost={isPostPage(props.location.pathname)}
-    >
-      <div>
-        <Helmet>
-          <meta name="description" content={config.siteDescription} />
-          <meta
-            name="google-site-verification"
-            content={config.siteGSCTrackingID}
-          />
-        </Helmet>
-        {children}
-      </div>
-    </Navigation>
+    <ThemeProvider theme={theme}>
+      <Navigation
+        config={config}
+        LocalTitle={props.title}
+        isPost={isPostPage(props.location.pathname)}
+      >
+        <div>
+          <Helmet>
+            <meta name="description" content={config.siteDescription} />
+            <meta
+              name="google-site-verification"
+              content={config.siteGSCTrackingID}
+            />
+          </Helmet>
+          {children}
+        </div>
+      </Navigation>
+    </ThemeProvider>
   );
 };
 
