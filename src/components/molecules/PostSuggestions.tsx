@@ -13,24 +13,14 @@ export const PostSuggestions = ({
   const postFields = postNode.fields;
 
   return (
-    <Container className="md-grid md-cell--12">
-      <StyledLink
-        to={postFields.prevSlug}
-        className="md-grid md-cell md-cell--6"
-      >
+    <Container>
+      <StyledLink to={postFields.prevSlug}>
         <XIcon icon="awrrow-left" />
-        <span style={{flex: 3}} className="md-headline ">
-          {postFields.prevTitle}
-        </span>
+        <span style={{flex: 3}}>{postFields.prevTitle}</span>
       </StyledLink>
 
-      <StyledLink
-        to={postFields.nextSlug}
-        className="md-grid md-cell md-cell--6"
-      >
-        <span style={{flex: 3}} className="md-headline ">
-          {postFields.nextTitle}
-        </span>
+      <StyledLink to={postFields.nextSlug}>
+        <span style={{flex: 3}}>{postFields.nextTitle}</span>
         <XIcon icon="awrrow-right" />
       </StyledLink>
     </Container>

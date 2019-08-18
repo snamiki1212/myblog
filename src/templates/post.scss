@@ -1,4 +1,3 @@
-@import "~react-md/src/scss/react-md";
 @import "../layout/theme.scss";
 @import "../layout/prism.scss";
 @import './base.scss';
@@ -218,9 +217,6 @@ $phone-status-bar-height: 24px - 12px;
         content: "";
         display: block;
         position: relative;
-        height: $md-toolbar-mobile-portrait-height + $phone-status-bar-height;
-        margin: -($md-toolbar-mobile-portrait-height + $phone-status-bar-height)
-          0 0;
       }
     }
   }

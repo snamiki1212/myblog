@@ -1,10 +1,5 @@
-@import '~react-md/src/scss/react-md';
 // @import './prism';
 @import '../templates/base.scss';
-
-$md-light-theme: true; // optional for light theme
-$md-primary-color: $md-grey-900;
-$md-secondary-color: $md-primary-color;
 
 a {
   text-decoration: none;
@@ -17,13 +12,6 @@ a {
     transition: 0.5s;
   }
 }
-
-// custom
-$md-base-background: white;
-$md-base-font-family: 'FontAwesome', 'Font Awesome 5 Brands', 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','YuGothic','Yu Gothic','メイリオ', 'Meiryo','ＭＳ Ｐゴシック','MS PGothic';
-
-// md-media
-$md-media-overlay-color: rgba(0, 0, 0, .5);
 
 // other
 $header-color: $fontVivid1;

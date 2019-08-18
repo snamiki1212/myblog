@@ -32,20 +32,16 @@ export const PostTemplate = (props: any): JSX.Element => {
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
-      <div className="post-page md-grid md-grid--no-spacing">
+      <div className="post-page">
         <Helmet>
           <title>{`${post.title}`}</title>
           <link rel="canonical" href={`${config.siteUrl}${slug}`} />
         </Helmet>
 
         <SEOWrapper postPath={slug} postNode={postNode} postSEO />
-        <StyledPostCover
-          postNode={postNode}
-          coverHeight={coverHeight}
-          coverClassName="md-grid md-cell--9"
-        />
-        <div className="md-grid md-cell--7 post-page-contents">
-          <div className="md-grid md-cell md-cell--12 post">
+        <StyledPostCover postNode={postNode} coverHeight={coverHeight} />
+        <div className="post-page-contents">
+          <div className="post">
             <div className="post-body target-el">
               <div dangerouslySetInnerHTML={{__html: postNode.html}} />
             </div>
@@ -58,11 +54,7 @@ export const PostTemplate = (props: any): JSX.Element => {
               />
             </div>
           </div>
-          <UserInfo
-            className="md-grid md-cell md-cell--12"
-            config={config}
-            expanded={expanded}
-          />
+          <UserInfo config={config} expanded={expanded} />
         </div>
       </div>
     </Layout>

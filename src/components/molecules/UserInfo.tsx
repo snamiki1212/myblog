@@ -21,7 +21,7 @@ export const UserInfo = (props): JSX.Element => {
   if (!userAvatar && !userName && !userLocation && !userDescription) {
     if (mySocials) {
       return (
-        <Wrapper className="md-grid md-cell md-cell--12 ">
+        <Wrapper>
           <MyLinks />
         </Wrapper>
       );
@@ -55,5 +55,4 @@ const Wrapper = styled(Card)`
     'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans',
     'ヒラギノ角ゴシック', 'YuGothic', 'Yu Gothic', 'メイリオ', 'Meiryo',
     'ＭＳ Ｐゴシック', 'MS PGothic';
-  // font-family: $md-base-font-family; TODO:
 `;

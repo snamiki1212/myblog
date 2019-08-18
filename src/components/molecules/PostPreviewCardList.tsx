@@ -20,14 +20,12 @@ export const PostPreviewCardList = ({
   });
 
   return (
-    <div className="md-grid md-grid--no-spacing md-cell--middle">
-      <div className="md-grid md-cell--10">
-        {postList.map(
-          (post: any): JSX.Element => (
-            <PostPreviewCard key={post.title} postInfo={post} />
-          )
-        )}
-      </div>
+    <div>
+      {postList.map(
+        (post: any): JSX.Element => (
+          <PostPreviewCard key={post.title} postInfo={post} />
+        )
+      )}
     </div>
   );
 };
