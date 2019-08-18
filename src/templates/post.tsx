@@ -10,9 +10,9 @@ import {
   HeaderTitle,
   SEOWrapper,
   PostCoverWrapper,
+  Markdown,
 } from '../components/atoms/';
 import config from '../../data/SiteConfig';
-import './post.scss';
 
 export const PostTemplate = (props: any): JSX.Element => {
   const [isMobile, setIsMobile] = useState(false);
@@ -41,10 +41,8 @@ export const PostTemplate = (props: any): JSX.Element => {
         <SPostCover postNode={postNode} coverHeight={coverHeight} />
 
         <SPostPagePaper>
-          <SPostPageContent>
-            <div className="post-body target-el">
-              <div dangerouslySetInnerHTML={{__html: postNode.html}} />
-            </div>
+          <SPostPageContent className="target-el">
+            <Markdown html={postNode.html} />
 
             <SPostPageFooter>
               <TagList tags={post.tags} />

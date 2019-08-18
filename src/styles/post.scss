@@ -1,6 +1,6 @@
 @import '../layout/theme.scss';
 @import '../layout/prism.scss';
-@import './base.scss';
+@import '../templates/base.scss';
 
 $mobile-width: 680px;
 
@@ -9,7 +9,7 @@ $fc-text: $fontBlack1;
 $fc-vivid: $fontVivid3;
 $fc-h: $fontBlack2;
 
-.post-body {
+.markdown-designer {
   * {
     font-family: '游明朝体', 'Times New Roman', Times, serif; //TODO: 他にもここのfotn-familyを入れ込む
   }
