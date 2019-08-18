@@ -1,6 +1,5 @@
 export * from './MyLinks';
 export * from './SocialLinks';
-export * from './ProgressBar';
 export * from './TagList';
 export * from './Paginator';
 export * from './HeaderTitle';

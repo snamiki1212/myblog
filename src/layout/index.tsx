@@ -9,26 +9,10 @@ import {theme} from '../theme';
 import './index.scss';
 
 const Layout = (props): JSX.Element => {
-  const isIndexPage = pathname => pathname == ('/' || /\/[0-9]/.test(pathname));
-  const isAboutPage = pathname => /\/about/i.test(pathname);
-  const isTagsPage = pathname => /\/tags/i.test(pathname);
-  const isCategoriesPage = pathname => /\/categories/i.test(pathname);
-  const isPostPage = pathname =>
-    !(
-      isIndexPage(pathname) ||
-      isAboutPage(pathname) ||
-      isTagsPage(pathname) ||
-      isCategoriesPage(pathname)
-    );
-
   const {children} = props;
   return (
     <ThemeProvider theme={theme}>
-      <Navigation
-        config={config}
-        LocalTitle={props.title}
-        isPost={isPostPage(props.location.pathname)}
-      >
+      <Navigation config={config} LocalTitle={props.title}>
         <div>
           <Helmet>
             <meta name="description" content={config.siteDescription} />

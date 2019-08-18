@@ -26,7 +26,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 // Misc
 import {Link} from 'gatsby';
 import styled from 'styled-components';
-import {Footer, ProgressBar, XIcon} from '../atoms';
+import {Footer, XIcon} from '../atoms';
 import DrawerItemList from '../../DrawerItemList';
 
 const drawerWidth = 240;
@@ -99,7 +99,7 @@ const HideOnScroll = (props: Props): JSX.Element => {
 };
 
 export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
-  const {children, config, LocalTitle, isPost, container} = props;
+  const {children, config, LocalTitle, container} = props;
 
   const classes = useStyles();
   const theme = useTheme();
@@ -193,7 +193,6 @@ export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
         {/* コンテンツ */}
         <main className={classes.content}>
           <div className={classes.toolbar}>
-            {isPost ? <ProgressBar /> : ''}
             <Container>{children}</Container>
             <footer>{config.copyright}</footer>
           </div>
