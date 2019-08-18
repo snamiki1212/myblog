@@ -10,6 +10,18 @@ body {
   margin: 0;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Material+Icons");
-@import "theme.scss";
+@import '../templates/base.scss';
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  &:link, &:visited{
+    color: $fontVivid2;
+  }
+  &:hover{
+    color: $fontBlack1;
+    transition: 0.5s;
+  }
+}
+
 

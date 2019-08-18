@@ -42,7 +42,7 @@ export const PostTemplate = (props: any): JSX.Element => {
 
         <SPostPagePaper>
           <SPostPageContent className="target-el">
-            <Markdown html={postNode.htmlAst} />
+            <Markdown htmlAst={postNode.htmlAst} />
 
             <SPostPageFooter>
               <TagList tags={post.tags} />
