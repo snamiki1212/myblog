@@ -42,7 +42,7 @@ export const PostTemplate = (props: any): JSX.Element => {
 
         <SPostPagePaper>
           <SPostPageContent className="target-el">
-            <Markdown html={postNode.html} />
+            <Markdown html={postNode.htmlAst} />
 
             <SPostPageFooter>
               <TagList tags={post.tags} />
@@ -103,6 +103,7 @@ const SPostCover = styled(PostCoverWrapper)`
 
 export interface MarkdownRemark {
   html: string;
+  htmlAst: any;
   timeToRead: number;
   excerpt: string;
   frontmatter: {
@@ -118,6 +119,7 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
       html
+      htmlAst
       timeToRead
       excerpt(truncate: true)
       frontmatter {

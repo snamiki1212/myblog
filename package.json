@@ -47,6 +47,7 @@
     "react-reading-progress": "^0.3.0",
     "react-share": "^3.0.0",
     "react-twitter-widgets": "^1.7.1",
+    "rehype-react": "^4.0.1",
     "styled-components": "^4.3.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-join": "^4.0.1"
