@@ -22,6 +22,8 @@ export const Index = (props: any): JSX.Element => {
           <link rel="canonical" href={`${config.siteUrl}`} />
         </Helmet>
         <SEORaw postEdges={postEdges} />
+
+        <div style={{height: `55px`}} />
         <IndexContent>
           <IndexPostWrapper>
             <PostPreviewCardList postEdges={postEdges} />
