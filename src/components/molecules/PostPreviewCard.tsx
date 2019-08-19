@@ -25,7 +25,7 @@ export const PostPreviewCard = ({
 }): JSX.Element => {
   // TODO: CardMedia に画像のパスを置く
   return (
-    <Card key={postInfo.path}>
+    <Card key={postInfo.path} style={{margin: '15px'}}>
       <Link to={postInfo.path}>
         <CardMedia src="" title="Contemplative Reptile" />
         <CardContent>

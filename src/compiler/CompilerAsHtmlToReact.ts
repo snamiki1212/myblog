@@ -65,8 +65,9 @@ const HR = styled.hr`
 `;
 
 const A = styled.a`
+  text-decoration: none;
   border-bottom: solid 1px;
-  transition: 0.3s;
+  transition: 0.5s;
   &:hover {
     color: ${fontColorVivid};
     transition: 0.3s;

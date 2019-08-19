@@ -20,7 +20,7 @@ export const PostPreviewCardList = ({
   });
 
   return (
-    <div>
+    <div style={{marginBottom: '30px'}}>
       {postList.map(
         (post: any): JSX.Element => (
           <PostPreviewCard key={post.title} postInfo={post} />
