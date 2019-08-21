@@ -33,14 +33,16 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
-        path: `${__dirname}/static/assets/`,
+        path: `${__dirname}/contents/`,
+        ignore: [`**/*.md`],
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/content`,
+        path: `${__dirname}/contents/`,
+        ignore: [`**/*.jpg`], // TODO: gif など他のファイルを入れる。ignore ではなくて、only がほしいけど、ないぽい。
       },
     },
     {
@@ -74,13 +76,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: '#c62828',
+        color: '#c62828', // TODO: いらないのでは？
       },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-twitter',
+    'gatsby-plugin-twitter', // TODO: いるか、あやしい
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
@@ -186,7 +188,6 @@ module.exports = {
                     fields { slug }
                     frontmatter {
                       title
-                      cover
                       date
                       category
                       tags

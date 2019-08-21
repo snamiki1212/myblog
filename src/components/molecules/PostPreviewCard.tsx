@@ -11,7 +11,14 @@ import config from '../../../data/SiteConfig';
 interface PostInfo {
   path: string;
   tags: string[];
-  cover: string;
+  cover: {
+    publicURL: string;
+    childImageSharp: {
+      fluid: {
+        base64: string;
+      };
+    };
+  };
   title: string;
   date: Date;
   excerpt: string;
@@ -24,16 +31,20 @@ export const PostPreviewCard = ({
   postInfo: PostInfo;
 }): JSX.Element => {
   // TODO: CardMedia に画像のパスを置く
+  console.log('postInfo.cover.publicURL', postInfo.cover.publicURL);
   return (
     <Card key={postInfo.path} style={{margin: '15px'}}>
       <Link to={postInfo.path}>
-        <CardMedia src="" title="Contemplative Reptile" />
+        <CardMedia
+          // TODO: 画像が div の background に変換される。amp-img 使えないので、オレオレで作らないと行けない。https://stackoverflow.com/questions/45760791/can-we-use-images-in-css-background-in-google-amp
+          image={postInfo.cover.publicURL}
+          style={{height: '100px', width: '100%'}}
+        />
         <CardContent>
           <div style={{padding: '20px'}}>{postInfo.title}</div>
           <div style={{paddingLeft: '20px'}}>
             {`最終更新日: ${moment(postInfo.date).format(config.dateFormat)}`}
           </div>
-
           <Excerpt>{postInfo.excerpt}</Excerpt>
         </CardContent>
       </Link>

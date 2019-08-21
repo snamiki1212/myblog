@@ -23,13 +23,14 @@ export const PostCoverRaw = ({
       return false;
     }
 
-    const existImage =
-      fileNode.node.absolutePath.indexOf(
-        path.join('/static/assets/', post.cover)
-      ) !== -1;
-    if (existImage) {
-      return true;
-    }
+    // TODO:
+    // const existImage =
+    //   fileNode.node.absolutePath.indexOf(
+    //     path.join('/static/assets/', post.cover.childImageSharp.fluid.originalName)
+    //   ) !== -1;
+    // if (existImage) {
+    //   return true;
+    // }
 
     return false;
   });
@@ -37,7 +38,7 @@ export const PostCoverRaw = ({
   if (coverNodeList.length === 1) {
     return (
       <Img
-        fluid={coverNodeList[0].node.childImageSharp.fluid}
+        fluid={post.cover.childImageSharp.fluid}
         outerWrapperClassName={coverClassName}
         style={{height: coverHeight, width: '100%'}}
       />
@@ -45,15 +46,15 @@ export const PostCoverRaw = ({
   }
 
   /* eslint no-undef: "off" */
-  const coverURL =
-    post.cover.substring(0, 1) === '/'
-      ? __PATH_PREFIX__ + post.cover
-      : post.cover;
+  // const coverURL =
+  //   post.cover.substring(0, 1) === '/'
+  //     ? __PATH_PREFIX__ + post.cover
+  //     : post.cover;
 
   return (
     <div
       style={{
-        backgroundImage: `url(${coverURL})`,
+        // backgroundImage: `url(${coverURL})`,
         height: `${coverHeight}px`,
       }}
       className={coverClassName}

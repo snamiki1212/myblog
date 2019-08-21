@@ -77,7 +77,14 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
-            cover
+            cover {
+              publicURL
+              childImageSharp {
+                fluid {
+                  base64
+                }
+              }
+            }
             date
           }
         }
@@ -101,7 +108,14 @@ export interface MarkdownRemarkEdge {
     frontmatter: {
       title: string;
       tags: string;
-      cover: string;
+      cover: {
+        publicURL: string;
+        childImageSharp: {
+          fluid: {
+            base64: string;
+          };
+        };
+      };
       date: Date;
     };
   };

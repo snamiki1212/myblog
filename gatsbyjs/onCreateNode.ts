@@ -29,6 +29,7 @@ export const onCreateNode = (postNodes: any): any => ({
   getNode,
 }): void => {
   if (node.internal.type !== 'MarkdownRemark') return;
+  console.log('---');
 
   const {createNodeField} = actions;
 

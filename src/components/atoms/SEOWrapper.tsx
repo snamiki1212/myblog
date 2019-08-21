@@ -30,8 +30,9 @@ export const SEOWrapper = (props): JSX.Element => {
       .filter(edge => edge.node.childImageSharp)
       .find(
         (edge): any =>
-          edge.node.childImageSharp.fixed.originalName ===
-          postNode.frontmatter.cover
+          // edge.node.childImageSharp.fixed.originalName ===
+          // postNode.frontmatter.cover.childIm age
+          true // TODO:
       ).node;
 
     return (
