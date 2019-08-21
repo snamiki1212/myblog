@@ -47,6 +47,8 @@ module.exports = {
       icon: 'linkedin',
       url: 'https://www.linkedin.com/in/snamiki1212',
     },
+    // TODO: Qiita
+    // TODO: Quora
     // MEMO: RSS 使う人いないだろうから、コメントアウト
     // {
     //   icon: 'RSS',
