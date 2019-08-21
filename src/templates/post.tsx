@@ -15,9 +15,6 @@ import {
 import config from '../../data/SiteConfig';
 
 export const PostTemplate = (props: any): JSX.Element => {
-  console.log('props', props);
-  window.x = props;
-
   const [isMobile, setIsMobile] = useState(false);
   const resize = () => setIsMobile(window.innerWidth >= 640 ? false : true);
 
