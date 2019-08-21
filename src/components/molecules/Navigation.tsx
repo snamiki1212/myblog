@@ -26,7 +26,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 // Misc
 import {Link} from 'gatsby';
 import styled from 'styled-components';
-import {Footer, XIcon} from '../atoms';
+import {XIcon} from '../atoms';
 import DrawerItemList from '../../DrawerItemList';
 
 const drawerWidth = 240;
@@ -101,7 +101,7 @@ const HideOnScroll = (props: Props): JSX.Element => {
 export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
   const {children, config, LocalTitle, container} = props;
 
-  const classes = useStyles();
+  const classes = useStyles(props); // TODO: props で本当によい？
   const theme = useTheme();
 
   const [mobileOpen, setMobileOpen] = React.useState<boolean>(false);

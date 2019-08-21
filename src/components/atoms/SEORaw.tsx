@@ -2,30 +2,46 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import urljoin from 'url-join';
 import config from '../../../data/SiteConfig';
+import {MarkdownRemark} from '../../templates/post';
+import {MarkdownRemarkEdge} from '../../templates/index';
 
 // TODO: ロジックを整理したい
-export const SEORaw = (props): JSX.Element => {
-  const {postNode, postPath, postSEO, postImgNode} = props;
+interface Props {
+  postNode?: MarkdownRemark;
+  postPath?: string; // = slug
+  postSEO?: boolean;
+  postImgNode?: MarkdownRemarkEdge[];
+  postEdges?: MarkdownRemarkEdge[];
+}
+export const SEORaw = ({
+  postNode,
+  postPath,
+  postSEO,
+  postImgNode,
+}: Props): JSX.Element => {
   let title;
   let description;
-  let image;
+  let image = '';
   let postURL;
+
   if (postSEO) {
+    // Post の詳細画面のとき
     const postMeta = postNode.frontmatter;
     ({title} = postMeta);
-    description = postMeta.description
-      ? postMeta.description
-      : postNode.excerpt;
-    image = postMeta.cover;
+    description = postNode.excerpt;
+
     postURL = urljoin(config.siteUrl, postPath);
   } else {
     title = config.siteTitle;
     description = config.siteDescription;
     image = config.siteLogo;
   }
-  if (postImgNode) {
-    image = postImgNode.childImageSharp.fluid.src;
-  }
+
+  // if (postImgNode) {
+  //   // TODO:
+  //   image = postImgNode.childImageSharp.fluid.src;
+  // }
+
   image = urljoin(config.siteUrl, image);
   const blogURL = config.siteUrl;
   const schemaOrgJSONLD = [
@@ -38,36 +54,38 @@ export const SEORaw = (props): JSX.Element => {
     },
   ];
   if (postSEO) {
-    schemaOrgJSONLD.push([
-      {
-        '@context': 'http://schema.org',
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            item: {
-              '@id': postURL,
-              name: title,
-              image,
-            },
-          },
-        ],
-      },
-      {
-        '@context': 'http://schema.org',
-        '@type': 'BlogPosting',
-        url: blogURL,
-        name: title,
-        alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
-        headline: title,
-        image: {
-          '@type': 'ImageObject',
-          url: image,
-        },
-        description,
-      },
-    ]);
+    // TODO: tsでerror になるので、いったんコメントアウト
+    // schemaOrgJSONLD.push([
+    //   {
+    //     '@context': 'http://schema.org',
+    //     '@type': 'BreadcrumbList',
+    //     // TODO:
+    //     // itemListElement: [
+    //     //   {
+    //     //     '@type': 'ListItem',
+    //     //     position: 1,
+    //     //     item: {
+    //     //       '@id': postURL!,
+    //     //       name: title!,
+    //     //       image,
+    //     //     },
+    //     //   },
+    //     // ],
+    //   },
+    //   {
+    //     '@context': 'http://schema.org',
+    //     '@type': 'BlogPosting',
+    //     url: blogURL,
+    //     name: title,
+    //     alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+    //     headline: title,
+    //     image: {
+    //       '@type': 'ImageObject',
+    //       url: image,
+    //     },
+    //     description,
+    //   }])
+    // };
   }
 
   return (

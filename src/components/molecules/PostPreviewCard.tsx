@@ -30,8 +30,6 @@ export const PostPreviewCard = ({
 }: {
   postInfo: PostInfo;
 }): JSX.Element => {
-  // TODO: CardMedia に画像のパスを置く
-  console.log('postInfo.cover.publicURL', postInfo.cover.publicURL);
   return (
     <Card key={postInfo.path} style={{maxWidth: '300px', margin: '15px'}}>
       <Link to={postInfo.path}>

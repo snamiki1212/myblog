@@ -4,15 +4,20 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import {colors} from '../../data/color';
 import config from '../../data/SiteConfig';
-import {IndexPageContext} from '../../gatsbyjs/createPages';
+import {IndexPageContext} from '../../gatsby-node_';
 import {HeaderTitle, Paginator, SEORaw} from '../components/atoms/';
 import {AuthorCard, PostPreviewCardList} from '../components/molecules';
 import Layout from '../layout';
 
-export const Index = (props: any): JSX.Element => {
+export const Index = (
+  props: {
+    pageContext: IndexPageContext;
+    location: Location;
+  } & any
+): JSX.Element => {
   const queryFetched = props.data.allMarkdownRemark as IndexPageQuery;
   const postEdges = queryFetched.edges;
-  const pageContext = props.pageContext as IndexPageContext;
+  const pageContext = props.pageContext;
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>

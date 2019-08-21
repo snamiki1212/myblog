@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
-import {IndexPageContext} from '../../../gatsbyjs/createPages';
+import {IndexPageContext} from '../../../gatsby-node_';
 
 export const Paginator = (props: any): JSX.Element => {
   const {currentPage, numPages} = props.pageContext as IndexPageContext;

@@ -15,13 +15,13 @@ export const PostSuggestions = ({
   return (
     <Container>
       <StyledLink to={postFields.prevSlug}>
-        <XIcon icon="awrrow-left" />
+        <XIcon icon="arrow-left" />
         <span style={{flex: 3}}>{postFields.prevTitle}</span>
       </StyledLink>
 
       <StyledLink to={postFields.nextSlug}>
         <span style={{flex: 3}}>{postFields.nextTitle}</span>
-        <XIcon icon="awrrow-right" />
+        <XIcon icon="arrow-right" />
       </StyledLink>
     </Container>
   );

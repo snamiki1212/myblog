@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
     "esModuleInterop": true,
     "noImplicitAny": false,
-    "module": "commonjs",
-    "jsx": "react"
+    "module": "ESNext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "types":["react"],
+    "lib":["es2015", "dom"]
   },
 }

@@ -8,8 +8,8 @@ import {
   TagList,
   SocialLinks,
   HeaderTitle,
-  SEOWrapper,
-  PostCoverWrapper,
+  SEORaw,
+  PostCoverRaw,
   Markdown,
 } from '../components/atoms/';
 import config from '../../data/SiteConfig';
@@ -30,7 +30,7 @@ export const PostTemplate = (props: any): JSX.Element => {
           <link rel="canonical" href={`${config.siteUrl}${slug}`} />
         </Helmet>
 
-        <SEOWrapper postPath={slug} postNode={postNode} postSEO />
+        <SEORaw postPath={slug} postNode={postNode} postSEO />
         <SPostCover postNode={postNode} coverHeight={coverHeight} />
 
         <SPostPagePaper>
@@ -87,7 +87,7 @@ const SPostPageFooter = styled.div`
   justify-content: center;
 `;
 
-const SPostCover = styled(PostCoverWrapper)`
+const SPostCover = styled(PostCoverRaw)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -112,6 +112,7 @@ export interface MarkdownRemark {
     category: string;
     tags: string;
   };
+  fields: any;
 }
 
 export const pageQuery = graphql`

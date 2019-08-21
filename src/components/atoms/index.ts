@@ -6,7 +6,6 @@ export * from './HeaderTitle';
 export * from './SEORaw';
 export * from './SEOWrapper';
 export * from './PostCoverRaw';
-export * from './PostCoverWrapper';
 export * from './HatenaShareButton';
 export * from './XIcon';
 export * from './Markdown';
