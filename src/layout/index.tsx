@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import 'font-awesome/scss/font-awesome.scss';
 import {Navigation} from '../components/molecules/';
 import config from '../../data/SiteConfig';
 import {ThemeProvider} from '@material-ui/styles';
@@ -10,6 +9,7 @@ import './index.scss';
 
 const Layout = (props): JSX.Element => {
   const {children} = props;
+
   return (
     <ThemeProvider theme={theme}>
       <Navigation config={config} LocalTitle={props.title}>

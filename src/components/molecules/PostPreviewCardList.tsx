@@ -20,7 +20,7 @@ export const PostPreviewCardList = ({
   });
 
   return (
-    <div>
+    <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
       {postList.map(
         (post: any): JSX.Element => (
           <PostPreviewCard key={post.title} postInfo={post} />

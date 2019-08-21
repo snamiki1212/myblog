@@ -33,7 +33,7 @@ export const PostPreviewCard = ({
   // TODO: CardMedia に画像のパスを置く
   console.log('postInfo.cover.publicURL', postInfo.cover.publicURL);
   return (
-    <Card key={postInfo.path} style={{margin: '15px'}}>
+    <Card key={postInfo.path} style={{maxWidth: '300px', margin: '15px'}}>
       <Link to={postInfo.path}>
         <CardMedia
           // TODO: 画像が div の background に変換される。amp-img 使えないので、オレオレで作らないと行けない。https://stackoverflow.com/questions/45760791/can-we-use-images-in-css-background-in-google-amp

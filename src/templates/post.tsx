@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
@@ -15,14 +15,7 @@ import {
 import config from '../../data/SiteConfig';
 
 export const PostTemplate = (props: any): JSX.Element => {
-  const [isMobile, setIsMobile] = useState(false);
-  const resize = () => setIsMobile(window.innerWidth >= 640 ? false : true);
-
-  useEffect((): any => {
-    window.addEventListener('resize', resize);
-
-    return () => window.removeEventListener('resize', resize);
-  }, []);
+  const isMobile = window.innerWidth >= 640 ? false : true;
 
   const {slug} = props.pageContext as {slug: string};
   const postNode = props.data.markdownRemark as MarkdownRemark;
@@ -111,7 +104,7 @@ export interface MarkdownRemark {
     cover: {
       childImageSharp: {
         fluid: {
-          base64: string;
+          [key: string]: any; // GatsbyImageSharpFluid
         };
       };
     };
@@ -133,7 +126,7 @@ export const pageQuery = graphql`
         cover {
           childImageSharp {
             fluid {
-              base64
+              ...GatsbyImageSharpFluid
             }
           }
         }
