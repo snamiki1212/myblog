@@ -15,12 +15,10 @@ import {
 import config from '../../data/SiteConfig';
 
 export const PostTemplate = (props: any): JSX.Element => {
-  const isMobile = window.innerWidth >= 640 ? false : true;
-
   const {slug} = props.pageContext as {slug: string};
   const postNode = props.data.markdownRemark as MarkdownRemark;
   const post = postNode.frontmatter;
-  const coverHeight = isMobile ? 162 : 225;
+  const coverHeight = 162;
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
@@ -39,11 +37,7 @@ export const PostTemplate = (props: any): JSX.Element => {
 
             <SPostPageFooter>
               <TagList tags={post.tags} />
-              <SocialLinks
-                postPath={slug}
-                postNode={postNode}
-                mobile={isMobile}
-              />
+              <SocialLinks postPath={slug} postNode={postNode} />
             </SPostPageFooter>
           </SPostPageContent>
           <UserInfo config={config} />
