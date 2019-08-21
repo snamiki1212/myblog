@@ -169,8 +169,8 @@ module.exports = {
                 date: edge.node.frontmatter.date,
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
+                url: rssMetadata.site_url + edge.node.fields._slug,
+                guid: rssMetadata.site_url + edge.node.fields._slug,
                 custom_elements: [{'content:encoded': edge.node.html}],
               }));
             },
@@ -178,14 +178,14 @@ module.exports = {
             {
               allMarkdownRemark(
                 limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
+                sort: { order: DESC, fields: [frontmatter____date] },
               ) {
                 edges {
                   node {
                     excerpt
                     html
                     timeToRead
-                    fields { slug }
+                    fields { _slug }
                     frontmatter {
                       title
                       date

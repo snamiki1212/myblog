@@ -20,20 +20,12 @@ export interface IndexPageContext {
   currentPage: number;
 }
 
-interface AllMarkdownRemark {
-  edges: MarkdownRemarkEdge[];
+export interface CategoryPageContext {
+  category: string;
 }
 
-interface MarkdownRemarkEdge {
-  node: {
-    frontmatter: {
-      tags: string[];
-      category: string;
-    };
-    fields: {
-      slug: string;
-    };
-  };
+export interface TagPageContext {
+  tag: string;
 }
 
 /********************************************************************
@@ -51,7 +43,7 @@ type AllMarkdownRemarkResult = {
           category: string;
         };
         fields: {
-          slug: string; // TODO: 消して、他のslug を使いたい
+          _slug: string; // TODO: 消して、他のslug を使いたい
         };
       };
     }[];
@@ -68,7 +60,7 @@ const allMarkdownRemarkGraphQL = `
           category
         }
         fields {
-          slug
+          _slug
         }
       }
     }
@@ -130,7 +122,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
         });
       });
 
-      // tag/category の一覧の格納用の変数
+      // tag/category の一覧の格納用の変数 (Set なら重複値を丸め込んでくれる)
       const tagSet = new Set<string>();
       const categorySet = new Set<string>();
 
@@ -148,33 +140,31 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
 
         // Postページの作成
         createPage({
-          path: edge.node.fields.slug,
+          path: edge.node.fields._slug,
           component: PostPage,
           context: {
-            slug: edge.node.fields.slug,
+            slug: edge.node.fields._slug,
           },
         });
       });
 
       // TagPage の作成
       Array.from(tagSet).forEach((tag: string): void => {
+        const tagCtx: TagPageContext = {tag};
         createPage({
           path: `/tags/${_.kebabCase(tag)}/`,
           component: TagPage,
-          context: {
-            tag,
-          },
+          context: tagCtx,
         });
       });
 
       // CategoriesPage の作成
       Array.from(categorySet).forEach((category: string): void => {
+        const categoryCtx: CategoryPageContext = {category};
         createPage({
           path: `/categories/${_.kebabCase(category)}/`,
           component: CategoryPage,
-          context: {
-            category,
-          },
+          context: categoryCtx,
         });
       });
     } catch (errors) {
@@ -185,14 +175,10 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
   })();
 };
 
-// TODO: 必要なさそうなので、できる限りなくしたい。
-export const onCreateNode = (postNodes: any): any => ({
-  node,
-  actions,
-  getNode,
-}): void => {
+// GraphQL で取得できるリソース上に、オレオレの値を定義する ( edges > node > fields の中にこの値が入る)
+// オレオレで作成したフィールド名は特に検索で当たりやすいように、プレフィックス(underbar) をつける。
+export const onCreateNode = ({node, actions, getNode}): void => {
   if (node.internal.type !== 'MarkdownRemark') return;
-
   const {createNodeField} = actions;
 
   const fileNode = getNode(node.parent);
@@ -210,11 +196,10 @@ export const onCreateNode = (postNodes: any): any => ({
 
     createNodeField({
       node,
-      name: 'date',
+      name: '_date',
       value: date.toISOString(),
     });
   }
 
-  createNodeField({node, name: 'slug', value: slug});
-  postNodes.push(node);
+  createNodeField({node, name: '_slug', value: slug});
 };

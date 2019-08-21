@@ -31,15 +31,15 @@ export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
       limit: 1000
-      sort: {fields: [fields___date], order: DESC}
+      sort: {fields: [fields____date], order: DESC}
       filter: {frontmatter: {tags: {in: [$tag]}}}
     ) {
       totalCount
       edges {
         node {
           fields {
-            slug
-            date
+            _slug
+            _date
           }
           excerpt(truncate: true)
           timeToRead

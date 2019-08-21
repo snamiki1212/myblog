@@ -116,7 +116,7 @@ export interface MarkdownRemark {
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: {slug: {eq: $slug}}) {
+    markdownRemark(fields: {_slug: {eq: $slug}}) {
       html
       htmlAst
       timeToRead

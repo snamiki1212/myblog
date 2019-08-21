@@ -62,15 +62,15 @@ export default Index;
 export const pageQuery = graphql`
   query IndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: {fields: [fields___date], order: DESC}
+      sort: {fields: [fields____date], order: DESC}
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
           fields {
-            slug
-            date
+            _slug
+            _date
           }
           excerpt(truncate: true)
           timeToRead
@@ -100,8 +100,8 @@ export interface IndexPageQuery {
 export interface MarkdownRemarkEdge {
   node: {
     fields: {
-      slug: string;
-      date: Date;
+      _slug: string;
+      _date: Date;
     };
     excerpt: string;
     timeToRead: number;

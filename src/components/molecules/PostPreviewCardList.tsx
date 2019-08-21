@@ -9,11 +9,11 @@ export const PostPreviewCardList = ({
 }): JSX.Element => {
   const postList = postEdges.map((postEdge: any): any => {
     return {
-      path: postEdge.node.fields.slug,
+      path: postEdge.node.fields._slug,
       tags: postEdge.node.frontmatter.tags,
       cover: postEdge.node.frontmatter.cover,
       title: postEdge.node.frontmatter.title,
-      date: postEdge.node.fields.date,
+      date: postEdge.node.fields._date,
       excerpt: postEdge.node.excerpt,
       timeToRead: postEdge.node.timeToRead,
     };
