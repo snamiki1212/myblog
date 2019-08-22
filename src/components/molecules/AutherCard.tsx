@@ -28,7 +28,7 @@ const Container = styled.div`
 `;
 
 const Avator = styled.img`
-  width: 100%;
+  width: 150px;
   border-radius: 100%;
 `;
 
