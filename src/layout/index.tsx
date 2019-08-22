@@ -11,23 +11,26 @@ const Layout = (props): JSX.Element => {
   const {children} = props;
 
   return (
-    <ThemeProvider theme={theme}>
-      <Navigation LocalTitle={props.title}>
-        <div>
-          <Helmet>
-            <meta name="description" content={config.siteDescription} />
-            <meta
-              name="google-site-verification"
-              content={config.siteGSCTrackingID}
-            />
-          </Helmet>
-          <div style={{height: `55px`}} /> {/* Navigation の高さの分の空間 */}
-          {children}
-        </div>
+    <>
+      <Helmet>
+        <meta name="description" content={config.siteDescription} />
+        <meta
+          name="google-site-verification"
+          content={config.siteGSCTrackingID}
+        />
+      </Helmet>
 
-        <footer>{config.copyright}</footer>
-      </Navigation>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <Navigation LocalTitle={props.title}>
+          <div>
+            <div style={{height: `55px`}} /> {/* Navigation の高さの分の空間 */}
+            {children}
+          </div>
+
+          <footer>{config.copyright}</footer>
+        </Navigation>
+      </ThemeProvider>
+    </>
   );
 };
 

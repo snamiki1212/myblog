@@ -22,66 +22,64 @@ const AboutPage = (props: {location: Location}): JSX.Element => {
         <link rel="canonical" href={`${config.siteUrl}/about/`} />
       </Helmet>
 
-      <div>
-        <Paper>
-          <Card>
-            <CardContent>
-              <h2>Nash プロフィール</h2>
-              <Img src={config.userAvatar} alt={config.userName} />
-              <Text>{config.userDescription}</Text>
+      <Paper>
+        <Card>
+          <CardContent>
+            <h2>Nash プロフィール</h2>
+            <Img src={config.userAvatar} alt={config.userName} />
+            <Text>{config.userDescription}</Text>
 
-              {/* ------------------------------------ */}
-              <h2>最近つくったモノ</h2>
-              <h3># Lunash (このブログ)</h3>
-              <p>GatsbyJS / TypeScript を中心に作成してあります。</p>
+            {/* ------------------------------------ */}
+            <h2>最近つくったモノ</h2>
+            <h3># Lunash (このブログ)</h3>
+            <p>GatsbyJS / TypeScript を中心に作成してあります。</p>
 
-              {/* ------------------------------------ */}
-              <h2>日々の活動</h2>
-              <p>
-                日々の情報発信は Twitter を中心に行っています。
-                なにか連絡がある場合は Twitter DM にして頂けると幸いです。
-                <br />
-              </p>
-              <CardActions>
-                <Button>
-                  <a href={myTwitterUrl}>» Nash@Webエンジニア(@snamiki1212)</a>
-                </Button>
-              </CardActions>
+            {/* ------------------------------------ */}
+            <h2>日々の活動</h2>
+            <p>
+              日々の情報発信は Twitter を中心に行っています。
+              なにか連絡がある場合は Twitter DM にして頂けると幸いです。
+              <br />
+            </p>
+            <CardActions>
+              <Button>
+                <a href={myTwitterUrl}>» Nash@Webエンジニア(@snamiki1212)</a>
+              </Button>
+            </CardActions>
 
-              {/* ------------------------------------ */}
-              <h2>いままでの経歴</h2>
-              {/* TODO: ここにSEとWebとフリーランスを書く */}
-              <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
-              <CardActions>
-                <Button>
-                  <a href={myLinkedinUrl}>» LinkedIn(snamiki1212)</a>
-                </Button>
-              </CardActions>
+            {/* ------------------------------------ */}
+            <h2>いままでの経歴</h2>
+            {/* TODO: ここにSEとWebとフリーランスを書く */}
+            <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
+            <CardActions>
+              <Button>
+                <a href={myLinkedinUrl}>» LinkedIn(snamiki1212)</a>
+              </Button>
+            </CardActions>
 
-              {/* ------------------------------------ */}
-              <h2>その他</h2>
-              <Text>
-                このブログのコンテンツは全てgithubで管理されています。
-                内容に問題や訂正すべき内容がある場合は
+            {/* ------------------------------------ */}
+            <h2>その他</h2>
+            <Text>
+              このブログのコンテンツは全てgithubで管理されています。
+              内容に問題や訂正すべき内容がある場合は
+              <a href={myTwitterUrl}>Twitter</a>
+              か直接
+              <a href={config.siteRepository}>ブログのリポジトリ</a>
+              にPRを出してもらえれば対応します。
+            </Text>
+            <CardActions>
+              <Button>
                 <a href={myTwitterUrl}>Twitter</a>
-                か直接
+              </Button>
+              <Button>
                 <a href={config.siteRepository}>ブログのリポジトリ</a>
-                にPRを出してもらえれば対応します。
-              </Text>
-              <CardActions>
-                <Button>
-                  <a href={myTwitterUrl}>Twitter</a>
-                </Button>
-                <Button>
-                  <a href={config.siteRepository}>ブログのリポジトリ</a>
-                </Button>
-              </CardActions>
+              </Button>
+            </CardActions>
 
-              <MyLinks />
-            </CardContent>
-          </Card>
-        </Paper>
-      </div>
+            <MyLinks />
+          </CardContent>
+        </Card>
+      </Paper>
     </Layout>
   );
 };
