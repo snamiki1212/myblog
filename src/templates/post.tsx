@@ -13,10 +13,15 @@ import {
   Markdown,
 } from '../components/atoms/';
 import config from '../../data/SiteConfig';
+import {PostPageContext} from '../../gatsby-node_';
 
-export const PostTemplate = (props: any): JSX.Element => {
-  const {slug} = props.pageContext as {slug: string};
-  const postNode = props.data.markdownRemark as MarkdownRemark;
+export const PostTemplate = (
+  props: {location: Location; data: PostPageQuery} & {
+    pageContext: PostPageContext;
+  }
+): JSX.Element => {
+  const {slug} = props.pageContext;
+  const postNode = props.data.markdownRemark;
   const post = postNode.frontmatter;
   const coverHeight = 162;
 
@@ -88,6 +93,9 @@ const SPostCover = styled(PostCoverRaw)`
   padding: 0 !important;
 `;
 
+type PostPageQuery = {
+  markdownRemark: MarkdownRemark;
+};
 export interface MarkdownRemark {
   html: string;
   htmlAst: any;
@@ -110,7 +118,7 @@ export interface MarkdownRemark {
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query PostPageQuery($slug: String!) {
     markdownRemark(fields: {_slug: {eq: $slug}}) {
       html
       htmlAst

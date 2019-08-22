@@ -28,6 +28,10 @@ export interface TagPageContext {
   tag: string;
 }
 
+export interface PostPageContext {
+  slug: string;
+}
+
 /********************************************************************
  * graphql
  * TODO: https://github.com/gatsbyjs/gatsby/issues/14185#issuecomment-512492800 が使えるかためす。
@@ -139,12 +143,13 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
         }
 
         // Postページの作成
+        const postPageCtx: PostPageContext = {
+          slug: edge.node.fields._slug,
+        };
         createPage({
           path: edge.node.fields._slug,
           component: PostPage,
-          context: {
-            slug: edge.node.fields._slug,
-          },
+          context: postPageCtx,
         });
       });
 

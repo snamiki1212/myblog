@@ -9,14 +9,13 @@ import {HeaderTitle, Paginator, SEORaw} from '../components/atoms/';
 import {AuthorCard, PostPreviewCard} from '../components/molecules';
 import Layout from '../layout';
 
-export const Index = (
-  props: {
-    pageContext: IndexPageContext;
-    location: Location;
-  } & any
-): JSX.Element => {
-  const queryFetched = props.data.allMarkdownRemark as IndexPageQuery;
-  const postEdges = queryFetched.edges;
+export const Index = (props: {
+  pageContext: IndexPageContext;
+  location: Location;
+  data: {allMarkdownRemark: IndexPageQuery};
+}): JSX.Element => {
+  const {allMarkdownRemark} = props.data;
+  const postEdges = allMarkdownRemark.edges;
   const pageContext = props.pageContext;
 
   return (
@@ -29,15 +28,7 @@ export const Index = (
 
       <PageContainer>
         <ArticleArea>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-              alignItems: 'center',
-              justifyContent: 'space-around',
-            }}
-          >
+          <PostPreviewCardContaienr>
             {postEdges.map(
               (edge): JSX.Element => (
                 <PostPreviewCard
@@ -46,7 +37,7 @@ export const Index = (
                 />
               )
             )}
-          </div>
+          </PostPreviewCardContaienr>
           <Paginator pageContext={pageContext} />
         </ArticleArea>
         <AsideArea>
@@ -56,6 +47,14 @@ export const Index = (
     </Layout>
   );
 };
+
+const PostPreviewCardContaienr = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+`;
 
 const AsideArea = styled.aside`
   flex: 1;
@@ -74,11 +73,8 @@ const PageContainer = styled.div`
 
 const ArticleArea = styled.div`
   flex: 4;
-
   min-width: 500px;
 `;
-
-export default Index;
 
 export const pageQuery = graphql`
   query IndexQuery($skip: Int!, $limit: Int!) {
@@ -141,3 +137,5 @@ export interface MarkdownRemarkEdge {
     };
   };
 }
+
+export default Index;
