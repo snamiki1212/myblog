@@ -14,6 +14,7 @@ import {
   faTwitter,
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
+import {faSync} from '@fortawesome/free-solid-svg-icons';
 
 type Props = {
   icon:
@@ -26,7 +27,8 @@ type Props = {
     | 'twitter'
     | 'linkedin'
     | 'arrow-left'
-    | 'arrow-right';
+    | 'arrow-right'
+    | 'sync';
 };
 
 export const XIcon = ({icon}: Props): JSX.Element => {
@@ -49,6 +51,8 @@ export const XIcon = ({icon}: Props): JSX.Element => {
       return <FontAwesomeIcon icon={faLinkedinIn} size="3x" />;
     case 'arrow-left':
       return <FontAwesomeIcon icon="arrow-left" />;
+    case 'sync':
+      return <FontAwesomeIcon icon={faSync} />;
     // TODO: arrow-right
     default:
       return <></>;
