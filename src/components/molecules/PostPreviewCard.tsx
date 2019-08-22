@@ -8,46 +8,33 @@ import moment from 'moment';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {XIcon} from '../atoms';
-
-interface PostInfo {
-  path: string;
-  tags: string[];
-  cover: {
-    publicURL: string;
-    childImageSharp: {
-      fluid: {
-        base64: string;
-      };
-    };
-  };
-  title: string;
-  date: Date;
-  excerpt: string;
-  timeToRead: number;
-}
+import {MarkdownRemarkEdge} from '../../templates';
 
 export const PostPreviewCard = ({
   postInfo,
 }: {
-  postInfo: PostInfo;
+  postInfo: MarkdownRemarkEdge;
 }): JSX.Element => {
   return (
-    <Card key={postInfo.path} style={{maxWidth: '250px', margin: '15px'}}>
-      <Link to={postInfo.path}>
+    <Card
+      key={postInfo.node.fields._slug}
+      style={{maxWidth: '300px', margin: '15px'}}
+    >
+      <Link to={postInfo.node.fields._slug}>
         <CardMedia
           // TODO: 画像が div の background に変換される。amp-img 使えないので、オレオレで作らないと行けない。https://stackoverflow.com/questions/45760791/can-we-use-images-in-css-background-in-google-amp
-          image={postInfo.cover.publicURL}
+          image={postInfo.node.frontmatter.cover.publicURL}
           style={{height: '100px', width: '100%'}}
         />
 
         <CardContent>
           <ContentDate>
             <XIcon icon="sync" />
-            {moment(postInfo.date).format(config.dateFormat)}
+            {moment(postInfo.node.frontmatter.date).format(config.dateFormat)}
           </ContentDate>
-          <ContenTitle>{postInfo.title}</ContenTitle>
+          <ContenTitle>{postInfo.node.frontmatter.title}</ContenTitle>
 
-          <ContentExcerpt>{postInfo.excerpt}</ContentExcerpt>
+          <ContentExcerpt>{postInfo.node.frontmatter.title}</ContentExcerpt>
         </CardContent>
       </Link>
     </Card>

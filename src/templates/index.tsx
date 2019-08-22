@@ -6,7 +6,7 @@ import {colors} from '../../data/color';
 import config from '../../data/SiteConfig';
 import {IndexPageContext} from '../../gatsby-node_';
 import {HeaderTitle, Paginator, SEORaw} from '../components/atoms/';
-import {AuthorCard, PostPreviewCardList} from '../components/molecules';
+import {AuthorCard, PostPreviewCard} from '../components/molecules';
 import Layout from '../layout';
 
 export const Index = (
@@ -29,7 +29,24 @@ export const Index = (
 
       <PageContainer>
         <ArticleArea>
-          <PostPreviewCardList postEdges={postEdges} />
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              justifyContent: 'space-around',
+            }}
+          >
+            {postEdges.map(
+              (edge): JSX.Element => (
+                <PostPreviewCard
+                  key={edge.node.frontmatter.title}
+                  postInfo={edge}
+                />
+              )
+            )}
+          </div>
           <Paginator pageContext={pageContext} />
         </ArticleArea>
         <AsideArea>
