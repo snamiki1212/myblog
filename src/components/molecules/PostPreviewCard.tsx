@@ -17,7 +17,7 @@ export const PostPreviewCard = ({
 }): JSX.Element => {
   return (
     <Card
-      key={postInfo.node.fields._slug}
+      key={postInfo.node.frontmatter.title}
       style={{maxWidth: '300px', margin: '15px'}}
     >
       <Link to={postInfo.node.fields._slug}>
