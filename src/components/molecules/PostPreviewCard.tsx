@@ -23,6 +23,7 @@ export const PostPreviewCard = ({
       <Link to={postInfo.node.fields._slug}>
         <CardMedia
           // TODO: 画像が div の background に変換される。amp-img 使えないので、オレオレで作らないと行けない。https://stackoverflow.com/questions/45760791/can-we-use-images-in-css-background-in-google-amp
+          // TODO: めちゃくちゃ重い。他の方法で画像は取得しないとダメそう。
           image={postInfo.node.frontmatter.cover.publicURL}
           style={{height: '100px', width: '100%'}}
         />
