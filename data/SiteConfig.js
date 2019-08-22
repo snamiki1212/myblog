@@ -31,7 +31,7 @@ module.exports = {
   userIntroduction: 'Freelance Engineer', // short user introduction
 
   // for side-bar
-  sidebarUserName: 'Nash',
+  autherName: 'Nash',
 
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   mySocials: [

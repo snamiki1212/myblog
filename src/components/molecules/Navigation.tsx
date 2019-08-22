@@ -99,7 +99,7 @@ const HideOnScroll = (props: Props): JSX.Element => {
 };
 
 export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
-  const {children, config, LocalTitle, container} = props;
+  const {children, LocalTitle, container} = props;
 
   const classes = useStyles(props); // TODO: props で本当によい？
   const theme = useTheme();
@@ -194,7 +194,6 @@ export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
         <main className={classes.content}>
           <div className={classes.toolbar}>
             <Container>{children}</Container>
-            <footer>{config.copyright}</footer>
           </div>
         </main>
       </div>

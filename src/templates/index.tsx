@@ -21,29 +21,26 @@ export const Index = (
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
-      <div className="index-container">
-        <Helmet>
-          <title>{config.siteTitle}</title>
-          <link rel="canonical" href={`${config.siteUrl}`} />
-        </Helmet>
-        <SEORaw postEdges={postEdges} />
+      <Helmet>
+        <title>{config.siteTitle}</title>
+        <link rel="canonical" href={`${config.siteUrl}`} />
+      </Helmet>
+      <SEORaw postEdges={postEdges} />
 
-        <div style={{height: `55px`}} />
-        <IndexContent>
-          <IndexPostWrapper>
-            <PostPreviewCardList postEdges={postEdges} />
-            <Paginator pageContext={pageContext} />
-          </IndexPostWrapper>
-          <Sidebar>
-            <AuthorCard />
-          </Sidebar>
-        </IndexContent>
-      </div>
+      <PageContainer>
+        <ArticleArea>
+          <PostPreviewCardList postEdges={postEdges} />
+          <Paginator pageContext={pageContext} />
+        </ArticleArea>
+        <AsideArea>
+          <AuthorCard />
+        </AsideArea>
+      </PageContainer>
     </Layout>
   );
 };
 
-const Sidebar = styled.div`
+const AsideArea = styled.aside`
   flex: 1;
   width: 100%;
   min-width: 250px;
@@ -52,13 +49,13 @@ const Sidebar = styled.div`
   background-color: ${colors['backgroundWhite2']};
 `;
 
-const IndexContent = styled.div`
+const PageContainer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 `;
 
-const IndexPostWrapper = styled.div`
+const ArticleArea = styled.div`
   flex: 4;
 `;
 

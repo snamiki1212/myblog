@@ -12,7 +12,7 @@ const Layout = (props): JSX.Element => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Navigation config={config} LocalTitle={props.title}>
+      <Navigation LocalTitle={props.title}>
         <div>
           <Helmet>
             <meta name="description" content={config.siteDescription} />
@@ -21,8 +21,11 @@ const Layout = (props): JSX.Element => {
               content={config.siteGSCTrackingID}
             />
           </Helmet>
+          <div style={{height: `55px`}} /> {/* Navigation の高さの分の空間 */}
           {children}
         </div>
+
+        <footer>{config.copyright}</footer>
       </Navigation>
     </ThemeProvider>
   );
