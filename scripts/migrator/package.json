@@ -1,0 +1,23 @@
+{
+  "name": "replacer",
+  "version": "1.0.0",
+  "description": "replace file name and markdown-body",
+  "main": "index.ts",
+  "author": "Shun Namiki",
+  "license": "MIT",
+  "dependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/node": "^12.7.2",
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.4",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
