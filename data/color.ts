@@ -27,7 +27,7 @@ export const colors = {
   fontGray2: '#888888',
 
   // Misc
-  hLeft: baseColor.primary,
+  hLeft: baseColor.secondary,
   listBackgroundColor: '#f3f3f3',
 };
 

@@ -16,10 +16,7 @@ export const PostPreviewCard = ({
   postInfo: MarkdownRemarkEdge;
 }): JSX.Element => {
   return (
-    <Card
-      key={postInfo.node.frontmatter.title}
-      style={{maxWidth: '300px', margin: '15px'}}
-    >
+    <StyledCard key={postInfo.node.frontmatter.title}>
       <Link to={postInfo.node.fields._slug}>
         <CardMedia
           // TODO: 画像が div の background に変換される。amp-img 使えないので、オレオレで作らないと行けない。https://stackoverflow.com/questions/45760791/can-we-use-images-in-css-background-in-google-amp
@@ -35,12 +32,20 @@ export const PostPreviewCard = ({
           </ContentDate>
           <ContenTitle>{postInfo.node.frontmatter.title}</ContenTitle>
 
-          <ContentExcerpt>{postInfo.node.frontmatter.title}</ContentExcerpt>
+          <ContentExcerpt>{postInfo.node.excerpt}</ContentExcerpt>
         </CardContent>
       </Link>
-    </Card>
+    </StyledCard>
   );
 };
+
+const StyledCard = styled(Card)`
+  margin: 10px;
+  flex: 1 0 auto;
+  min-width: 300px;
+  max-width: 45%;
+  height: 300px;
+`;
 
 const ContenTitle = styled.div`
   font-weight: bold;
@@ -63,7 +68,7 @@ const ContentExcerpt = styled(CardContent)`
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.8) 50%,
       rgba(255, 255, 255, 1)
     );
     height: 100px;

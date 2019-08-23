@@ -37,11 +37,13 @@ const H2 = styled.h2`
   ${mixinHeadline}
 
   font-size: 25px;
+  background-color: ${colors.backgroundBlack1}
+  color: ${colors.fontWhite1}
 
   margin-top: 60px;
   border-left: 10px solid ${hLeft};
 
-  padding: 20px 40px;
+  padding: 10px 40px;
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }

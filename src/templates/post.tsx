@@ -69,7 +69,7 @@ const SPostPage = styled.div`
 const SPostPagePaper = styled.div`
   justify-content: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
 
   img {
     max-width: 100%;
