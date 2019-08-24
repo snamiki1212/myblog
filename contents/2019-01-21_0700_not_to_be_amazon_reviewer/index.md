@@ -2,7 +2,7 @@
 title: 'AmazonVineメンバーを、私がなぜ目指さないか←現状がやばい'
 cover: 'cover.jpg'
 date: '2019-01-21 07:00'
-category: 'Thought'
+category: 'ETC'
 tags:
   - thought
   - AmazonVine

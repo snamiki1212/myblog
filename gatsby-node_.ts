@@ -6,6 +6,7 @@ import siteConfig from './data/SiteConfig';
 // -----------------------------------------------------------------------
 // CONSTANTS
 const POSTS_PERT_PAGE = 10;
+const POSTS_AS_SUGGESTION = 4;
 const PostPage = path.resolve('src/templates/post.tsx');
 const TagPage = path.resolve('src/templates/tag.tsx');
 const CategoryPage = path.resolve('src/templates/category.tsx');
@@ -27,9 +28,9 @@ export interface CategoryPageContext {
 export interface TagPageContext {
   tag: string;
 }
-
 export interface PostPageContext {
   slug: string;
+  suggestionNodeIDs: string[];
 }
 
 /********************************************************************
@@ -42,6 +43,7 @@ type AllMarkdownRemarkResult = {
   allMarkdownRemark: {
     edges: {
       node: {
+        id: string;
         frontmatter: {
           tags: string[];
           category: string;
@@ -59,6 +61,7 @@ const allMarkdownRemarkGraphQL = `
   allMarkdownRemark {
     edges {
       node {
+        id
         frontmatter {
           tags
           category
@@ -92,6 +95,22 @@ const generateSlug = ({node, parsedFilePath}): string => {
   } else {
     return `/${parsedFilePath.dir}/`;
   }
+};
+
+const fetchRandoms = (arr: any[], n = 1): any => {
+  // readme: https://stackoverflow.com/questions/19269545/how-to-get-n-no-elements-randomly-from-an-array
+  const result = new Array(n);
+  let len = arr.length;
+  const taken = new Array(len);
+
+  if (n > len)
+    throw new RangeError('getRandom: more elements taken than available');
+  while (n--) {
+    const x = Math.floor(Math.random() * len); // random index
+    result[n] = arr[x in taken ? taken[x] : x];
+    taken[x] = --len in taken ? taken[len] : len;
+  }
+  return result;
 };
 
 // -----------------------------------------------------------------------
@@ -141,11 +160,24 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
         if (edge.node.frontmatter.category) {
           categorySet.add(edge.node.frontmatter.category);
         }
+      });
 
-        // Postページの作成
+      // Postページの作成
+      posts.forEach(edge => {
+        const category = edge.node.frontmatter.category;
+        const suggestions: typeof posts = fetchRandoms(
+          posts.filter(post => post.node.frontmatter.category === category),
+          POSTS_AS_SUGGESTION
+        );
+        const suggestionNodeIDs = suggestions.map(
+          suggestion => suggestion.node.id
+        );
+
         const postPageCtx: PostPageContext = {
           slug: edge.node.fields._slug,
+          suggestionNodeIDs,
         };
+
         createPage({
           path: edge.node.fields._slug,
           component: PostPage,

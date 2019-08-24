@@ -49,7 +49,8 @@ export const Index = (props: {
   );
 };
 
-const PostPreviewCardContaienr = styled.div`
+// TODO: しかるべきに置きたい
+export const PostPreviewCardContaienr = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
