@@ -1,6 +1,6 @@
 ---
 title: '東京Node学園2018(Conference@JP)のまとめ（その２）'
-cover: '201811241430_cover.jpg'
+cover: 'cover.jpg'
 date: '2018-11-24 14:30'
 category: 'Tech'
 tags:
@@ -326,7 +326,7 @@ slug: tokyo-node-conference-jp-2018-2
 
 ## 📊 アンケート
 
-![survey](./201811241430_1.jpg)
+![survey](./1.jpg)
 
 参加者のアンケート結果。技術動向をそれなりに終えている人からすれば特に意外に思うところはないような結果だと思う。
 

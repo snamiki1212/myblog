@@ -1,6 +1,6 @@
 ---
 title: '【安全】ローカルガイドでの身バレが怖い？←解決方法を説明'
-cover: 201904082130_cover.jpg
+cover: cover.jpg
 date: '2019-04-08 21:30'
 category: 'local-guide'
 tags:
@@ -21,7 +21,7 @@ SEO-keyword:
 
 ## ローカルガイドでの身バレが怖い？← 解決方法を説明
 
-![local-guide-identify-1](./201904082130_1.jpg)
+![local-guide-identify-1](./1.jpg)
 
 身バレ防止の解決方法はいくつかありますが、大きく分けると２種類になります。
 
@@ -87,7 +87,7 @@ SEO-keyword:
 
 ## ローカルガイドでの身バレのリスクとの付き合い方
 
-![local-guide-identify-2](./201904082130_2.jpg)
+![local-guide-identify-2](./2.jpg)
 
 ここまでで、お伝えしたことは設定・テクニックと表面的な観点でしたが、
 

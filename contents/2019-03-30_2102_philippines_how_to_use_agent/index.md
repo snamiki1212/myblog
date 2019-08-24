@@ -1,6 +1,6 @@
 ---
 title: '留学エージェントを使った、おすすめの学校探し【エージェントは複数使う】'
-cover: 201903302102_cover.jpg
+cover: cover.jpg
 date: '2019-03-30 21:02'
 category: 'World'
 tags:
@@ -21,7 +21,7 @@ SEO-keyword:
 
 ## そもそも、なぜフィリピン留学の学校探しが難しいのか？
 
-![philippines-how-to-use-agent-1](./201903302102_1.jpg)
+![philippines-how-to-use-agent-1](./1.jpg)
 
 色々な要素がありますが、「学校側」「生徒側」それぞれに原因があります。
 
@@ -55,7 +55,7 @@ SEO-keyword:
 
 ## なぜエージェントが最強なのか？
 
-![philippines-how-to-use-agent-2](./201903302102_2.jpg)
+![philippines-how-to-use-agent-2](./2.jpg)
 
 エージェントを使うメリットは下記の通りです。
 
@@ -70,7 +70,7 @@ SEO-keyword:
 
 ## 【おすすめ】どうやってエージェントを活用するのか？
 
-![philippines-how-to-use-agent-3](./201903302102_3.jpg)
+![philippines-how-to-use-agent-3](./3.jpg)
 
 では、具体的にどうやってエージェントを活用するのかは、下記の順序です。
 

@@ -1,6 +1,6 @@
 ---
 title: '【Elixir】ifやcaseの中で代入・束縛を行うべきでない'
-cover: '201812031444_cover.png'
+cover: 'cover.png'
 date: '2018-12-03 14:44'
 category: 'Tech'
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 'ローカルガイドになって、サンフランシスコを目指すことにした話'
-cover: '201901240030_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-01-24 00:30'
 category: 'local-guide'
 tags:

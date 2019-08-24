@@ -1,6 +1,6 @@
 ---
 title: '周りを巻き込む施策をベンチャーで4つほどやった結果の知見'
-cover: '201901160355_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-01-16 03:55'
 category: 'Thought'
 tags:

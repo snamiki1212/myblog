@@ -1,6 +1,6 @@
 ---
 title: 'Application Delivery Network ( ADN ) とは'
-cover: '201811191953_cover.png'
+cover: 'cover.png'
 date: '2018-11-19 19:53'
 category: 'Tech'
 tags:
@@ -81,7 +81,7 @@ akamai の記事でわかりそうなのだが一般用語と akamai のプロ�
 
 Netlify の ADN の説明ページがあったので見たがどうやら CDN との比較表がある。
 
-![Netlify vs Standard CDN](201811191953_1.png)
+![Netlify vs Standard CDN](./1.png)
 
 上の解説サイトを見て ADN は LB からの派生と考えていたが、Netlify 的には CDN からの派生として捉えている、またはユーザには比較がしやすいだろう、と考えているようである。
 

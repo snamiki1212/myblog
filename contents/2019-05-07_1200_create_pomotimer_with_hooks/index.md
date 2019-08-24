@@ -1,6 +1,6 @@
 ---
 title: 'React(Hooks)を使ってポモドーロタイマー作った'
-cover: '201905071200_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-05-07 12:00'
 category: 'Tech'
 tags:
@@ -15,7 +15,7 @@ slug: create-pomotimer-with-hooks
 
 React の Hook を使ってサンプルタイマーを作ったので、そのまとめ
 
-![video-pomotimer-gif](./201905071200_1.gif)
+![video-pomotimer-gif](./1.gif)
 
 →[アプリ](https://snamiki1212.github.io/example-react-basic-hooks/)/ [Github](https://github.com/snamiki1212/example-react-basic-hooks)
 

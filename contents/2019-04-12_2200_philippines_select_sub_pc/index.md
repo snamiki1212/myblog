@@ -1,6 +1,6 @@
 ---
 title: 'フィリピン留学用にサブPCを選定した話【IT留学じゃないです】'
-cover: 201904122200_cover.jpg
+cover: cover.jpg
 date: '2019-04-12 22:00'
 category: 'Tech'
 tags:
@@ -36,7 +36,7 @@ PC のハードについて詳しくなりたければ下記のサイトで学�
 
 ## フィリピン留学用にサブ PC を選定した理由
 
-![philippines-select-sub-pc-1](./201904122200_1.jpg)
+![philippines-select-sub-pc-1](./1.jpg)
 
 前提として自分が持っていたメイン PC は Mac Book Pro(2017 / 15inchi)になります。
 
@@ -58,7 +58,7 @@ PC のハードについて詳しくなりたければ下記のサイトで学�
 
 ## 重視した点
 
-![philippines-select-sub-pc-2](./201904122200_2.jpg)
+![philippines-select-sub-pc-2](./2.jpg)
 
 ### モビリティ：軽いは正義
 
@@ -96,7 +96,7 @@ Type-A の PC のほうが価格が安い傾向がありますが、長期的に
 
 ## 重視しなかった点
 
-![philippines-select-sub-pc-3](./201904122200_3.jpg)
+![philippines-select-sub-pc-3](./3.jpg)
 
 ### コスパ：性能に対する値段
 
@@ -132,7 +132,7 @@ CPU については、Y 系（Pentium）は弱すぎると思っていました�
 
 ## 【結論】中古 Mac Book(2015)にした【理由】
 
-![philippines-select-sub-pc-4](./201904122200_4.jpg)
+![philippines-select-sub-pc-4](./4.jpg)
 
 というわけで、選定基準を決めて色々と PC を選定しました。
 
@@ -168,7 +168,7 @@ RAM ＝ 8GB が MB のレパートリーにあるので、少なくとも自分�
 
 ## 他の PC にしなかった理由
 
-![philippines-select-sub-pc-5](./201904122200_5.jpg)
+![philippines-select-sub-pc-5](./5.jpg)
 
 ### なぜ、MBA(~2017)にしなかった？
 
@@ -210,7 +210,7 @@ MacBook より少し重いのでやめました。このとき自分の中で、
 
 ## 学んだこと
 
-![philippines-select-sub-pc-6](./201904122200_6.jpg)
+![philippines-select-sub-pc-6](./6.jpg)
 
 というわけで、選定を割とガッツリ行ったのですが、その時に学んだ内容もまとめておきます。
 

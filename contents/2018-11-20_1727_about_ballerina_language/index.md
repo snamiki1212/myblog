@@ -1,6 +1,6 @@
 ---
 title: 'Ballerina Language'
-cover: '201811201727_cover.jpg'
+cover: 'cover.jpg'
 date: '2018-11-20 17:27'
 category: 'Tech'
 tags:

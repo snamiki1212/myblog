@@ -1,6 +1,6 @@
 ---
 title: 'ローカルガイドのコツは１つ←画像投稿しろ【ポイント獲得編】'
-cover: 201904041240_cover.jpg
+cover: cover.jpg
 date: '2019-04-04 12:40'
 category: 'local-guide'
 tags:
@@ -25,7 +25,7 @@ SEO-keyword:
 
 ## ローカルガイドのコツは１つ ← 画像投稿しろ【ポイント獲得編】
 
-![local-guide-point-tips-1](201904041240_1.jpg)
+![local-guide-point-tips-1](1.jpg)
 
 冒頭に書いたとおりですが、ローカルガイドのコツは１つで「画像投稿しろ」です。
 
@@ -82,7 +82,7 @@ SEO-keyword:
 
 ## ローカルガイドのコツの側面は、楽しむことで継続すること
 
-![local-guide-point-tips-2](201904041240_2.jpg)
+![local-guide-point-tips-2](2.jpg)
 
 割と無機質な方法によるローカルガイドのコツを紹介しました。
 

@@ -1,6 +1,6 @@
 ---
 title: 'AmazonVineメンバーを、私がなぜ目指さないか←現状がやばい'
-cover: '201901210700_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-01-21 07:00'
 category: 'Thought'
 tags:

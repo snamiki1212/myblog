@@ -1,6 +1,6 @@
 ---
 title: '退職エントリ'
-cover: '201811070000_cover.jpg'
+cover: 'cover.jpg'
 date: '2018-11-07 00:00'
 category: 'Thought'
 tags:

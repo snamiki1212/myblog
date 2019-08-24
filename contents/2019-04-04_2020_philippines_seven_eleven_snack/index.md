@@ -1,6 +1,6 @@
 ---
 title: 'フィリピンのコンビニ食べ物←お菓子おすすめ6選【コスパ】'
-cover: 201904042020_cover.jpg
+cover: cover.jpg
 date: '2019-04-04 20:20'
 category: 'World'
 tags:
@@ -31,7 +31,7 @@ SEO-keyword:
 
 ## フィリピンのコンビニ食べ物 ← お菓子おすすめ 6 選【コスパ】
 
-![philippines-seven-eleven-snack-1](./201904042020_1.jpg)
+![philippines-seven-eleven-snack-1](./1.jpg)
 
 まずは、フィリピンのコンビニ事情についてですが、セブンイレブン一強です。
 
@@ -57,7 +57,7 @@ SEO-keyword:
 
 ### ① クッキー：BINGO
 
-![philippines-seven-eleven-snack-2](./201904042020_2.jpg)
+![philippines-seven-eleven-snack-2](./2.jpg)
 
 簡単にいうと、安いオレオです。
 
@@ -73,7 +73,7 @@ SEO-keyword:
 
 ### ② チョコバー：ChocoMucho
 
-![philippines-seven-eleven-snack-3](./201904042020_3.jpg)
+![philippines-seven-eleven-snack-3](./3.jpg)
 
 味付けは下記の種類があります。自分の押しはダークチョコです。
 
@@ -91,7 +91,7 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ③ チョコ：NIPS
 
-![philippines-seven-eleven-snack-4](./201904042020_4.jpg)
+![philippines-seven-eleven-snack-4](./4.jpg)
 
 味付けは下記の種類があります。自分の押しはピーナッツです。
 
@@ -107,7 +107,7 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ④ グミ：VitaCubes
 
-![philippines-seven-eleven-snack-5](./201904042020_5.jpg)
+![philippines-seven-eleven-snack-5](./5.jpg)
 
 グミをたまに食べたくなった時に重宝します。
 
@@ -119,7 +119,7 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ⑤ ポテチ：oishi potato chips
 
-![philippines-seven-eleven-snack-6](./201904042020_6.jpg)
+![philippines-seven-eleven-snack-6](./6.jpg)
 
 「薄くて・味がしつこくない・コスパが良い」という観点でおすすめするのが「oishi potato chips」です。
 
@@ -127,7 +127,7 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ⑥ 蒸しパンケーキ：FUNDGEE BARR
 
-![philippines-seven-eleven-snack-7](./201904042020_7.jpg)
+![philippines-seven-eleven-snack-7](./7.jpg)
 
 日本だとメジャーではないですが、フィリピンのコンビニお菓子ではケーキが一般的です。
 
@@ -137,7 +137,7 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ## フィリピンのコンビニ食べ物のお菓子は、他にもまだまだある。
 
-![philippines-seven-eleven-snack-cover](./201904042020_cover.jpg)
+![philippines-seven-eleven-snack-cover](./cover.jpg)
 
 セブンのお菓子コーナーを歩くとわかりますが、かなり品揃えが豊富ですね。
 

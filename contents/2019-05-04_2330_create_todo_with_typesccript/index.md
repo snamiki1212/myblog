@@ -1,6 +1,6 @@
 ---
 title: 'React+Redux+TypeScriptでToDoアプリを作った話'
-cover: '201905042330_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-05-04 23:30'
 category: 'Tech'
 tags:
@@ -26,7 +26,7 @@ slug: create-todo-with-typescript
 
 ## React+Redux+TypeScript で ToDo アプリを作った話
 
-![todo-video](./201905042330_1.gif)
+![todo-video](./1.gif)
 
 →[アプリ](https://snamiki1212.github.io/example-typescript-todo/) / [github](https://github.com/snamiki1212/example-typescript-todo)
 

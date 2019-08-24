@@ -1,6 +1,6 @@
 ---
 title: 'ローカルガイド特典のコネクトライブ2019に応募しなかった話'
-cover: 201904042201_cover.jpg
+cover: cover.jpg
 date: '2019-04-04 22:01'
 category: 'local-guide'
 tags:
@@ -20,7 +20,7 @@ SEO-keyword:
 
 ## ローカルガイド特典のコネクトライブ 2019 に応募しなかった話
 
-![local-guide-2019_connect_live_absent-1](201904042201_1.jpg)
+![local-guide-2019_connect_live_absent-1](1.jpg)
 
 コネクトライブ 2019（ConnectLive2019）についての説明から始めますね。
 
@@ -76,7 +76,7 @@ SEO-keyword:
 
 ## ローカルガイドの特典(2019)は、他には何も無い
 
-![local-guide-2019_connect_live_absent-2](201904042201_2.jpg)
+![local-guide-2019_connect_live_absent-2](2.jpg)
 
 自分のケースでは、残念ながら、他には何も無いです。
 

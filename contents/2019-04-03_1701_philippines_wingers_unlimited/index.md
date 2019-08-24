@@ -1,6 +1,6 @@
 ---
 title: 'フィリピンの食べ物で人気の、WingersUnlimitedに行ってきた話'
-cover: 201904031701_cover.jpg
+cover: cover.jpg
 date: '2019-04-03 17:01'
 category: 'World'
 tags:
@@ -53,7 +53,7 @@ SEO-keyword:
 
 ### 人気なので行列ですね
 
-![philippines-wingers-unlimited-1](./201904031701_1.jpg)
+![philippines-wingers-unlimited-1](./1.jpg)
 
 （写真だと、ちょっとわかりにくいでしが、行列になってます）
 
@@ -67,7 +67,7 @@ SEO-keyword:
 
 ### 店内も混雑しています
 
-![philippines-wingers-unlimited-2](./201904031701_2.jpg)
+![philippines-wingers-unlimited-2](./2.jpg)
 
 店内の画像です。混雑していますね。
 
@@ -77,7 +77,7 @@ SEO-keyword:
 
 ### いざ実食
 
-![philippines-wingers-unlimited-cover](./201904031701_cover.jpg)
+![philippines-wingers-unlimited-cover](./cover.jpg)
 
 というわけで、頼んだ料理がこちらです。
 
@@ -94,7 +94,7 @@ SEO-keyword:
 
 そして、料理を食べるのに箸やフォークはありません。
 
-![philippines-wingers-unlimited-3](./201904031701_3.jpg)
+![philippines-wingers-unlimited-3](./3.jpg)
 
 手袋で食べます。
 
@@ -102,11 +102,11 @@ SEO-keyword:
 
 この店では、そもそもフォークなどの食器は出てこないので、選択の余地はないですね。
 
-![philippines-wingers-unlimited-4](./201904031701_4.jpg)
+![philippines-wingers-unlimited-4](./4.jpg)
 
 ## フィリピンの食べ物で人気な理由は、コスパが良い
 
-![philippines-wingers-unlimited-5](./201904031701_5.jpg)
+![philippines-wingers-unlimited-5](./5.jpg)
 
 味の感想は、「普通〜まぁまぁ、おいしい」です。
 

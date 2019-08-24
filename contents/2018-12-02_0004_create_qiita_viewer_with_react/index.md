@@ -1,6 +1,6 @@
 ---
 title: 'ReactでQiitaのアプリケーションを作った話'
-cover: '201812020004_cover.png'
+cover: 'cover.png'
 date: '2018-12-02 00:04'
 category: 'Tech'
 tags:
@@ -19,7 +19,7 @@ slug: create-qiita-viewer-with-react
 
 これは[Qiita の記事一覧を返す API](https://qiita.com/api/v2/docs#get-apiv2items)を叩いてその結果を表示するだけのアプリケーションでサービスとしての価値は皆無。
 
-![qiita-viewer-with-react](./201812020004_1.gif)
+![qiita-viewer-with-react](./1.gif)
 
 <!-- TwitterLink -->
 <blockquote class="twitter-tweet" data-conversation="none" data-cards="hidden" data-lang="ja"><p lang="ja" dir="ltr">1個目<br><br>0→1での初Reactアプリ<br>Qiitaを表示するやつ作った<a href="https://t.co/ctMNFNxodc">https://t.co/ctMNFNxodc</a> <a href="https://t.co/ldNMSNE2Mj">pic.twitter.com/ldNMSNE2Mj</a></p>&mdash; Namiki🌏Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1069107634622541824?ref_src=twsrc%5Etfw">2018年12月2日</a></blockquote>

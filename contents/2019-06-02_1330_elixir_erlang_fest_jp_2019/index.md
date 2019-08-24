@@ -1,6 +1,6 @@
 ---
 title: 'Erlang&ElixirFestJP2019のイベントレポート'
-cover: '201906021330_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-06-02 21:30'
 category: 'Tech'
 tags:

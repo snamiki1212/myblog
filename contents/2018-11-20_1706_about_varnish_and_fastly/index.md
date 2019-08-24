@@ -1,6 +1,6 @@
 ---
 title: 'Varnish / Fastlyとは'
-cover: '201811201706_cover.jpg'
+cover: 'cover.jpg'
 date: '2018-11-20 17:06'
 category: 'Tech'
 tags:

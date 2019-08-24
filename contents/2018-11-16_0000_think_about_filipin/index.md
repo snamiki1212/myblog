@@ -1,6 +1,6 @@
 ---
 title: 'いちWebエンジニアがフィリピン留学に行く前に考えていること'
-cover: '201811160000_cover.jpg'
+cover: 'cover.jpg'
 date: '2018-11-16 00:00'
 category: 'World'
 tags:

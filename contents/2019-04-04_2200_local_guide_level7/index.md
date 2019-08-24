@@ -1,6 +1,6 @@
 ---
 title: 'ローカルガイドのレベル7になったので、ここまでに得た知見のまとめ'
-cover: 201904042200_cover.jpg
+cover: cover.jpg
 date: '2019-04-04 22:00'
 category: 'local-guide'
 tags:

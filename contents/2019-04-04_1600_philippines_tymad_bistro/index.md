@@ -1,6 +1,6 @@
 ---
 title: 'フィリピンの食べ物がマズい？甘いケーキのTymad Bistroをオススメ'
-cover: 201904041600_cover.jpg
+cover: cover.jpg
 date: '2019-04-04 16:00'
 category: 'World'
 tags:
@@ -32,7 +32,7 @@ SEO-keyword:
 
 ### 外観はオシャレなフランス料理店
 
-![philippines-tymad-bistro-1](./201904041600_1.jpg)
+![philippines-tymad-bistro-1](./1.jpg)
 
 外観は、オシャレなフランス料理店です。
 
@@ -42,7 +42,7 @@ SEO-keyword:
 
 ### 内装もキレイな店内です
 
-![philippines-tymad-bistro-2](./201904041600_2.jpg)
+![philippines-tymad-bistro-2](./2.jpg)
 
 白を基調とした店内で、清潔感がとてもあります。
 
@@ -50,7 +50,7 @@ SEO-keyword:
 
 ### ショーケースはこんな感じ
 
-![philippines-tymad-bistro-3](./201904041600_3.jpg)
+![philippines-tymad-bistro-3](./3.jpg)
 
 金額は、海外の旅行客などをターゲットにしているので、現地価格ではないです。
 
@@ -60,7 +60,7 @@ SEO-keyword:
 
 ### デザートは予感していた通り美味い
 
-![philippines-tymad-bistro-4](./201904041600_4.jpg)
+![philippines-tymad-bistro-4](./4.jpg)
 
 自分が頼んだのは、チョコ系のケーキです。
 
@@ -70,7 +70,7 @@ SEO-keyword:
 
 ### カフレが絶品すぎた
 
-![philippines-tymad-bistro-cover](./201904041600_cover.jpg)
+![philippines-tymad-bistro-cover](./cover.jpg)
 
 日本だと、カフレを食べる機会ってあまり無いので、ついでに頼んでいたカフレ。
 

@@ -1,6 +1,6 @@
 ---
 title: '【実レビュー】MacBook無印でプログラミングは、サブPCとしておすすめ'
-cover: '201905121800_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-05-12 18:00'
 category: 'Tech'
 tags:
@@ -26,7 +26,7 @@ slug: recommend-macbook-for-programming
 
 ## MacBook 無印でプログラミングは、サブ PC としておすすめ
 
-![mac-book-sub-pc-programming](./201905121800_1.jpg)
+![mac-book-sub-pc-programming](./1.jpg)
 
 MacBook 無印はサブ PC としてならおすすめできますが、メイン PC としては性能が低いです。
 
@@ -66,7 +66,7 @@ MacBook 無印はサブ PC としてならおすすめできますが、メイ�
 
 ## プログラミング用に MacBook 無印を使ってみた
 
-![mac-book-programming](./201905121800_2.jpg)
+![mac-book-programming](./2.jpg)
 
 実際に MacBook 無印を海外で使ってみました。具体的には下記の通りです。
 

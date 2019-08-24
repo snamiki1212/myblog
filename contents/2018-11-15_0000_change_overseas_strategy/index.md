@@ -1,6 +1,6 @@
 ---
 title: 'エンジニアの海外キャリア戦略の目標と戦略を見直した話'
-cover: '201811150000_cover.jpg'
+cover: 'cover.jpg'
 date: '2018-11-15 00:00'
 category: 'World'
 tags:

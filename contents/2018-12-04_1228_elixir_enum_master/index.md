@@ -1,6 +1,6 @@
 ---
 title: '【Elixir】Enumを完全に理解する | 効率的なEnumの学習方法・暗黙のルール・意識すべきこと'
-cover: '201812041228_cover.png'
+cover: 'cover.png'
 date: '2018-12-04 12:28'
 category: 'Tech'
 tags:
@@ -29,7 +29,7 @@ slug: elixir-enum-master
 
 ## 0. そもそも Enum とは？
 
-![img](./201812041228_1.png)
+![img](./1.png)
 
 Elixir の言語自体にビルトインされている Module で配列に対して抽出・並び替え・結合など様々なアルゴリズムを抽象化した関数として用意されている。
 

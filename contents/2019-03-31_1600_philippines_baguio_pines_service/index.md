@@ -1,6 +1,6 @@
 ---
 title: '【PINES｜バギオ】新校舎の「サービス」を体験してきた【フィリピン留学】'
-cover: 201903311600_cover.jpg
+cover: cover.jpg
 date: '2019-03-31 16:00'
 category: 'World'
 tags:
@@ -29,7 +29,7 @@ SEO-keyword:
 
 ## 新校舎メインキャンパスのサービスをレビュー
 
-![philippines-baguio-pines-service-1](./201903311600_1.jpg)
+![philippines-baguio-pines-service-1](./1.jpg)
 
 満足度と観点は下記の通り。
 
@@ -49,7 +49,7 @@ SEO-keyword:
 
 ## （満足度：★★★★☆）【LINE での QA 対応】速いレスポンス
 
-![philippines-baguio-pines-service-2](./201903311600_2.jpg)
+![philippines-baguio-pines-service-2](./2.jpg)
 
 割と速い回答をしてもらえますし、日本語でのやり取りなので、疑問点がある人におすすめです。
 
@@ -61,7 +61,7 @@ SEO-keyword:
 
 ## （満足度：★☆☆☆☆）【Wifi】繋がらないネットワーク
 
-![philippines-baguio-pines-service-3](./201903311600_3.jpg)
+![philippines-baguio-pines-service-3](./3.jpg)
 
 勉強に集中したいとはいえ、ネットワークの環境は気になりますよね。
 
@@ -186,7 +186,7 @@ PINES では、先生はすべて英語で解説をします。
 
 ## （満足度：★★★☆☆）【ガードマン】大雑把なフィリピン人らしさ
 
-![philippines-baguio-pines-service-4](./201903311600_4.jpg)
+![philippines-baguio-pines-service-4](./4.jpg)
 
 やや無愛想ながら、ガードマンとしての仕事を果たしてくれています。
 
@@ -208,7 +208,7 @@ PINES では、先生はすべて英語で解説をします。
 
 ## （満足度：★☆☆☆☆）【EOP】機能していない
 
-![philippines-baguio-pines-service-5](./201903311600_5.jpg)
+![philippines-baguio-pines-service-5](./5.jpg)
 
 ※PINES は、ほぼすべてのエリアで EOP を導入しています。EOP とは、EnglishOnlyPolicy の略で「英語だけで、話す」というルールです。
 
@@ -222,7 +222,7 @@ EOP がなくても、「常に英語を喋ろう」と思っていた自分で�
 
 ## （満足度：★★★★★）【スタッフの対応】特に困ることもなかった
 
-![philippines-baguio-pines-service-6](./201903311600_6.jpg)
+![philippines-baguio-pines-service-6](./6.jpg)
 
 そこまで、仲良くったわけではないので、なんとなく、の印象で評価します。
 
@@ -238,7 +238,7 @@ EOP がなくても、「常に英語を喋ろう」と思っていた自分で�
 
 ## （満足度：★☆☆☆☆）【食事の質】ひどすぎて、別に記事を作るレベル
 
-![philippines-baguio-pines-service-7](./201903311600_7.jpg)
+![philippines-baguio-pines-service-7](./7.jpg)
 
 味・料理の種類、で、最低のレベルでした。
 
@@ -282,7 +282,7 @@ EOP がなくても、「常に英語を喋ろう」と思っていた自分で�
 
 ## （満足度：★★☆☆☆）【運営効率】気になる点がいくつかあります
 
-![philippines-baguio-pines-service-8](./201903311600_8.jpg)
+![philippines-baguio-pines-service-8](./8.jpg)
 
 悪いところがあるのが、気になりました。
 
@@ -330,7 +330,7 @@ EOP がなくても、「常に英語を喋ろう」と思っていた自分で�
 
 ## （満足度：★★★★★）【ハウスキーピング】快適です
 
-![philippines-baguio-pines-service-9](./201903311600_9.jpg)
+![philippines-baguio-pines-service-9](./9.jpg)
 
 ハウスキーピングと書きましたが、具体的には、「部屋の掃除」「ベッドメイキング」をしてくれます。
 
@@ -342,7 +342,7 @@ EOP がなくても、「常に英語を喋ろう」と思っていた自分で�
 
 ## （満足度：★★★★☆）【クリーニング】良い匂いに仕上がります
 
-![philippines-baguio-pines-service-10](./201903311600_10.jpg)
+![philippines-baguio-pines-service-10](./10.jpg)
 
 1 回 100 ペソ(約 200 円)なので、値段は少し高いようにも感じますが、品質は高いので満足です。
 

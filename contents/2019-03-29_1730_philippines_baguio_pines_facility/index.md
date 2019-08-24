@@ -1,6 +1,6 @@
 ---
 title: '【PINES｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】'
-cover: 201903291730_cover.jpg
+cover: cover.jpg
 date: '2019-03-29 17:30'
 category: 'World'
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 'フラグ引数アンチパターン'
-cover: '201811180000_cover.jpg'
+cover: 'cover.jpg'
 date: '2018-11-18 00:00'
 category: 'Tech'
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 'フィリピン留学の、全体の流れ【完全版】'
-cover: 201903302100_cover.jpg
+cover: cover.jpg
 date: '2019-03-30 21:00'
 category: 'World'
 tags:
@@ -25,7 +25,7 @@ SEO-keyword:
 
 ## フィリピン留学を、３つの流れに分解
 
-![bphilippines-entire-flow-1](./201903302100_1.jpg)
+![bphilippines-entire-flow-1](./1.jpg)
 
 大きく分けて 3 つの流れに分解して解説します。
 
@@ -37,7 +37,7 @@ SEO-keyword:
 
 ## その ①【事前】深掘りして、決める（＠日本）
 
-![philippines-entire-flow-2](./201903302100_2.jpg)
+![philippines-entire-flow-2](./2.jpg)
 
 まずは、「学校選びの条件」を深掘りして、「学校・コース・時期」を決めます。
 
@@ -96,7 +96,7 @@ SEO-keyword:
 
 ## その ②【途中】滞在中に、改善する（＠フィリピン）
 
-![philippines-entire-flow-3](./201903302100_3.jpg)
+![philippines-entire-flow-3](./3.jpg)
 
 念願のフィリピンに到着です。ここで数週間〜数ヶ月、滞在していくことになります。
 
@@ -137,7 +137,7 @@ SEO-keyword:
 
 ## その ③【事後】帰国後も、学習を継続（＠日本）
 
-![philippines-entire-flow-4](./201903302100_4.jpg)
+![philippines-entire-flow-4](./4.jpg)
 
 帰国後も学習を継続できるように下記のことを始めるのがおすすめです。
 

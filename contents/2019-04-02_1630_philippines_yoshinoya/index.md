@@ -1,6 +1,6 @@
 ---
 title: 'フィリピンで日本の食べ物を求めて、吉野家(Yoshinoya)に行ってきた話'
-cover: 201904021630_cover.jpg
+cover: cover.jpg
 date: '2019-04-02 16:30'
 category: 'World'
 tags:
@@ -34,7 +34,7 @@ SEO-keyword:
 
 ##フィリピンでも食べ物は、牛丼【日本と同じ】
 
-![philippines-yoshinoya-1](./201904021630_1.jpg)
+![philippines-yoshinoya-1](./1.jpg)
 
 自分が頼んだ、牛丼のセットです。
 （写真の色調がちょっと悪いですね）
@@ -47,7 +47,7 @@ SEO-keyword:
 
 ズームで取ったら下記。
 
-![philippines-yoshinoya-cover](./201904021630_cover.jpg)
+![philippines-yoshinoya-cover](./cover.jpg)
 
 そして、味は変わらないです。
 
@@ -61,7 +61,7 @@ SEO-keyword:
 
 このアレンジは、もしかすると、フィリピン専用に、調理方法がローカライズされているのかもしれないですね。
 
-![philippines-yoshinoya-2](./201904021630_2.jpg)
+![philippines-yoshinoya-2](./2.jpg)
 
 飲み物もセットだとついてきます。
 
@@ -69,7 +69,7 @@ SEO-keyword:
 
 ## 日本にはない、フィリピンの食べ物【メニュー】
 
-![philippines-yoshinoya-3](./201904021630_3.jpg)
+![philippines-yoshinoya-3](./3.jpg)
 
 メニューはこんな感じです。
 
@@ -77,7 +77,7 @@ SEO-keyword:
 
 BENTO（弁当）売られているのは、なんだか面白いですね。
 
-![philippines-yoshinoya-4](./201904021630_4.jpg)
+![philippines-yoshinoya-4](./4.jpg)
 
 ちなみに、カリフォルニアロールも売っています。
 
@@ -87,13 +87,13 @@ BENTO（弁当）売られているのは、なんだか面白いですね。
 
 ## フィリピンの吉野家の見た目【日本と違って、レストラン感】
 
-![philippines-yoshinoya-5](./201904021630_5.jpg)
+![philippines-yoshinoya-5](./5.jpg)
 
 フィリピンなので、店名はローマ字。
 
 色はおなじみの色ですね。
 
-![philippines-yoshinoya-6](./201904021630_6.jpg)
+![philippines-yoshinoya-6](./6.jpg)
 
 外から見たらこんな感じです。
 
@@ -101,7 +101,7 @@ BENTO（弁当）売られているのは、なんだか面白いですね。
 
 キレイな印象ですね。
 
-![philippines-yoshinoya-7](./201904021630_7.jpg)
+![philippines-yoshinoya-7](./7.jpg)
 
 先にオーダーを取るスタイル。
 

@@ -1,6 +1,6 @@
 ---
 title: 'ローカルガイドのレベル6に一日でなった話←コツは口コミを後回し'
-cover: 201904061100_cover.jpg
+cover: cover.jpg
 date: '2019-04-06 11:00'
 category: 'local-guide'
 tags:
@@ -34,7 +34,7 @@ SEO-keyword:
 
 ## ローカルガイド・レベル 6 に一日でなった話
 
-![local-guide-level6-1](./201904061100_1.jpg)
+![local-guide-level6-1](./1.jpg)
 
 ### 投稿内容は３つの種類
 
@@ -74,7 +74,7 @@ SEO-keyword:
 
 ## ローカルガイドへ一気に投稿するときのコツは、投稿する順序
 
-![local-guide-level6-2](./201904061100_2.jpg)
+![local-guide-level6-2](./2.jpg)
 
 結論は、下記の順序で進めていくべきでした。
 
@@ -127,7 +127,7 @@ SEO-keyword:
 
 ## ローカルガイド初日のコツとして「星の評価 → 写真投稿 → 口コミ」の順序をオススメ
 
-![local-guide-level6-3](./201904061100_3.jpg)
+![local-guide-level6-3](./3.jpg)
 
 ### いかに負担を少なく始めるか
 

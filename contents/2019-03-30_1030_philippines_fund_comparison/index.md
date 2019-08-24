@@ -1,6 +1,6 @@
 ---
 title: '【フィリピン留学】日本資本・韓国資本の学校を比較してきた【実体験】'
-cover: 201903301200_cover.jpg
+cover: cover.jpg
 date: '2019-03-30 12:00'
 category: 'World'
 tags:
@@ -23,7 +23,7 @@ SEO-keyword:
 
 ## 学校の資本は、傾向がわかるだけ
 
-![philippines-fund-comparison-1](./201903301200_1.jpg)
+![philippines-fund-comparison-1](./1.jpg)
 
 前提として、「資本」＝「経営がどこか？」についてなります。
 
@@ -37,7 +37,7 @@ SEO-keyword:
 
 ## 学校の資本が違うと、何が影響する？
 
-![philippines-fund-comparison-2](./201903301200_2.jpg)
+![philippines-fund-comparison-2](./2.jpg)
 
 下記に、資本が違うと影響が受けやすい観点を項目別に一覧に列挙しました。
 
@@ -78,7 +78,7 @@ SEO-keyword:
 
 ## 【韓国資本？】あなたにおすすめなのは？【日本資本？】
 
-![philippines-fund-comparison-3](./201903301200_3.jpg)
+![philippines-fund-comparison-3](./3.jpg)
 
 「韓国資本・日本資本のうち ○○ が、おすすめ」ということではなく「自分の目的などに合っているのはどっちか？」が大事になります。
 
@@ -116,7 +116,7 @@ SEO-keyword:
 
 ## 余談：嫌日や歴史などの問題
 
-![philippines-fund-comparison-4](./201903301200_4.jpg)
+![philippines-fund-comparison-4](./4.jpg)
 
 日本人や日本の歴史などに対してネガティブな意見を持っている人と遭遇する可能性について自分の意見をまとめておきます。
 

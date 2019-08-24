@@ -1,6 +1,6 @@
 ---
 title: '【留学失敗を回避】学校選びの「条件」をどう決めるか【経験者】'
-cover: 201903302101_cover.jpg
+cover: cover.jpg
 date: '2019-03-30 21:01'
 category: 'World'
 tags:
@@ -23,7 +23,7 @@ SEO-keyword:
 
 ## 学校を選ぶところから始めてるのが、間違い
 
-![philippines-own-condition-of-searching-school-1](./201903302101_1.jpg)
+![philippines-own-condition-of-searching-school-1](./1.jpg)
 
 「学校を絞れない」などのケースでは、そもそも学校選びの流れを間違えている可能性があります。
 
@@ -37,7 +37,7 @@ SEO-keyword:
 
 ## 【４つの軸】学校選びの条件
 
-![philippines-own-condition-of-searching-school-2](./201903302101_2.jpg)
+![philippines-own-condition-of-searching-school-2](./2.jpg)
 
 学校選びの条件は以下の４つの軸で考えましょう
 
@@ -115,7 +115,7 @@ SEO-keyword:
 
 ## 【納得感を上げる】学校選びの条件を深掘りする理由【失敗確率を下げる】
 
-![philippines-own-condition-of-searching-school-3](./201903302101_3.jpg)
+![philippines-own-condition-of-searching-school-3](./3.jpg)
 
 ここまでで「学校選びの自分の条件」をまとめました。
 

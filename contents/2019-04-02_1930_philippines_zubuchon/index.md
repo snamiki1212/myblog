@@ -1,6 +1,6 @@
 ---
 title: 'フィリピンで豚の食べ物にトライして、後悔した話【レチョン＝豚の丸焼き】'
-cover: 201904021930_cover.jpg
+cover: cover.jpg
 date: '2019-04-02 19:30'
 category: 'World'
 tags:
@@ -23,7 +23,7 @@ SEO-keyword:
 
 ### フィリピンの食べ物のオススメを先生に聞いたら、豚だった
 
-![philippines-zubuchon-1](./201904021930_1.jpg)
+![philippines-zubuchon-1](./1.jpg)
 
 フィリピン留学では先生との会話でよくオススメの店とか聞いたりします。
 
@@ -35,7 +35,7 @@ SEO-keyword:
 
 ### レチョン＝フィリピンの豚の丸焼き【食べ物】
 
-![philippines-zubuchon-2](./201904021930_2.jpg)
+![philippines-zubuchon-2](./2.jpg)
 
 ちなみに、このレチョンという料理はの特長は下記のようです。
 
@@ -48,7 +48,7 @@ SEO-keyword:
 
 ### ZUBU CHON ＝レチョンの店の１つ【フィリピンの豚】
 
-![philippines-zubuchon-3](./201904021930_3.jpg)
+![philippines-zubuchon-3](./3.jpg)
 
 というわけで、ZUBUCHON に来ました。外観は上の画像です。
 
@@ -62,7 +62,7 @@ SEO-keyword:
 
 ### フィリピンの食べ物らしく、味・油がキツすぎる
 
-![philippines-zubuchon-cover](./201904021930_cover.jpg)
+![philippines-zubuchon-cover](./cover.jpg)
 
 というわけで、いざ実食！したのですが、
 
@@ -78,7 +78,7 @@ SEO-keyword:
 
 この柔らかい部分が特に脂を意識させます。
 
-![philippines-zubuchon-4](./201904021930_4.jpg)
+![philippines-zubuchon-4](./4.jpg)
 
 サイドメニューとして、春巻き的なのを頼んでました。
 
@@ -88,7 +88,7 @@ SEO-keyword:
 
 ### 終わりに：フィリピンの食べ物は、繊細な人にはツラい
 
-![philippines-zubuchon-5](./201904021930_5.jpg)
+![philippines-zubuchon-5](./5.jpg)
 
 というわけで、どうにかフードファイトを終わらせて、帰路についた話でした。
 

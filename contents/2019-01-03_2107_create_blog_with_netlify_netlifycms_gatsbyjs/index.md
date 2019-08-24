@@ -1,6 +1,6 @@
 ---
 title: 'Netlify + Netlify CMS + GatsbyJS ( React + GraphQL )でブログ作ったときにハマった点'
-cover: '201901032107_cover.png'
+cover: 'cover.png'
 date: '2019-01-03 21:07'
 category: 'Tech'
 tags:

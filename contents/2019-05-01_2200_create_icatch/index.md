@@ -1,6 +1,6 @@
 ---
 title: 'Reduxを使ってアイキャッチジェネレータを作った話'
-cover: '201905012200_cover.png'
+cover: 'cover.png'
 date: '2019-05-01 22:00'
 category: 'Tech'
 tags:
@@ -19,7 +19,7 @@ slug: create-icatch
 
 ## Redux を使ってアイキャッチジェネレータを作った話
 
-![redux-icatch-video](201905012200_1.gif)
+![redux-icatch-video](1.gif)
 
 作ったアプリは、『[アイキャッチジェネレータ - icatch](https://github.com/snamiki1212/example-react-redux-icatch)』です。([Github](https://snamiki1212.github.io/example-react-redux-icatch/))
 

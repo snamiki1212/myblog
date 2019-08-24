@@ -1,6 +1,6 @@
 ---
 title: 'ITエンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論'
-cover: '201904291000_cover.jpg'
+cover: 'cover.jpg'
 date: '2019-04-29 10:00'
 category: 'World'
 tags:

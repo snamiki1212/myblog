@@ -1,6 +1,6 @@
 ---
 title: "フィリピンで魚の食べ物が美味しい、PAOLITO'Sに行ってきた"
-cover: 201904031700_cover.jpg
+cover: cover.jpg
 date: '2019-04-03 17:00'
 category: 'World'
 tags:
@@ -35,19 +35,19 @@ SEO-keyword:
 
 ### 店舗の感じはこんな感じ
 
-![philippines-paolitos-1](./201904031700_1.jpg)
+![philippines-paolitos-1](./1.jpg)
 
 実際に店舗に行ってきました。
 
 やはり、人気店の支店ということだけあって、このときも満員でしたね。
 
-![philippines-paolitos-2](./201904031700_2.jpg)
+![philippines-paolitos-2](./2.jpg)
 
 店舗は、木材を中心にしたクラシックな感じです。
 
 店員さんも、すごい忙しそうでした。
 
-![philippines-paolitos-3](./201904031700_3.jpg)
+![philippines-paolitos-3](./3.jpg)
 
 奥に調理場がありますが、店の中心にも調理場があります。
 
@@ -55,7 +55,7 @@ SEO-keyword:
 
 ### いざ、魚の食べ物を注文
 
-![philippines-paolitos-cover](./201904031700_cover.jpg)
+![philippines-paolitos-cover](./cover.jpg)
 
 魚のカマの部分が有名とのことで、注文したのがこちらです。
 
@@ -65,7 +65,7 @@ SEO-keyword:
 
 魚の臭みもなく、量もあり、味も美味しく、大満足のレベルです。
 
-![philippines-paolitos-4](./201904031700_4.jpg)
+![philippines-paolitos-4](./4.jpg)
 
 合わせて海鮮のスープも注文したのが、こちらです。
 

@@ -1,6 +1,6 @@
 ---
 title: 'Go Global Meetup#1のまとめ'
-cover: '201811262043_cover.png'
+cover: 'cover.png'
 date: '2018-11-26 20:43'
 category: 'World'
 tags:
