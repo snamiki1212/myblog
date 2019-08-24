@@ -2,7 +2,7 @@
 title: 'ローカルガイドのレベル6に一日でなった話←コツは口コミを後回し'
 cover: cover.jpg
 date: '2019-04-06 11:00'
-category: 'local-guide'
+category: 'LocalGuide'
 tags:
   - ローカルガイド
 slug: local-guide-level-6
