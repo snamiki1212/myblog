@@ -29,33 +29,33 @@ export const DrawerItem: DrawerItem[] = [
   {
     type: 'divider',
   },
-  {
-    type: 'row',
-    row: {
-      primaryText: 'Tech',
-      secondaryText: '技術系の記事',
-      icon: 'desktop_mac',
-      to: '/categories/tech/',
-    },
-  },
-  {
-    type: 'row',
-    row: {
-      primaryText: 'World',
-      secondaryText: '海外でのキャリア',
-      icon: 'airplanemode_active',
-      to: '/categories/world/',
-    },
-  },
-  {
-    type: 'row',
-    row: {
-      primaryText: 'Local Guide',
-      secondaryText: 'Google Map の SNS',
-      icon: 'place',
-      to: '/categories/local-guide/',
-    },
-  },
+  // {
+  //   type: 'row',
+  //   row: {
+  //     primaryText: 'Tech',
+  //     secondaryText: '技術系の記事',
+  //     icon: 'desktop_mac',
+  //     to: '/categories/tech/',
+  //   },
+  // },
+  // {
+  //   type: 'row',
+  //   row: {
+  //     primaryText: 'World',
+  //     secondaryText: '海外でのキャリア',
+  //     icon: 'airplanemode_active',
+  //     to: '/categories/world/',
+  //   },
+  // },
+  // {
+  //   type: 'row',
+  //   row: {
+  //     primaryText: 'Local Guide',
+  //     secondaryText: 'Google Map の SNS',
+  //     icon: 'place',
+  //     to: '/categories/LocalGuide/',
+  //   },
+  // }
 ];
 
 export default DrawerItem;
