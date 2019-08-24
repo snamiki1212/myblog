@@ -2,7 +2,7 @@
 title: 'ローカルガイドになって、サンフランシスコを目指すことにした話'
 cover: 'cover.jpg'
 date: '2019-01-24 00:30'
-category: 'ETC'
+category: 'LocalGuide'
 tags:
   - poem
   - LocalGuide

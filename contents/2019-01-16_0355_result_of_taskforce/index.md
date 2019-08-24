@@ -2,7 +2,7 @@
 title: '周りを巻き込む施策をベンチャーで4つほどやった結果の知見'
 cover: 'cover.jpg'
 date: '2019-01-16 03:55'
-category: 'ETC'
+category: 'Career'
 tags:
   - poem
 slug: result-of-taskforce
