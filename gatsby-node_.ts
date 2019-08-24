@@ -45,6 +45,7 @@ type AllMarkdownRemarkResult = {
       node: {
         id: string;
         frontmatter: {
+          id: string;
           tags: string[];
           category: string;
         };
@@ -124,7 +125,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
       // GraphQLのデータ
       const data = result.data as AllMarkdownRemarkResult;
       const {allMarkdownRemark} = data;
-      const {edges: posts} = allMarkdownRemark;
+      const {edges: allPosts} = allMarkdownRemark;
 
       const numPages = Math.ceil(posts.length / POSTS_PERT_PAGE);
 
@@ -149,7 +150,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
       const categorySet = new Set<string>();
 
       // Post ページの作成 & tag/category の一覧の作成
-      posts.forEach((edge): void => {
+      allPosts.forEach((edge): void => {
         if (edge.node.frontmatter.tags) {
           edge.node.frontmatter.tags.forEach((tag: string): void => {
             tagSet.add(tag);
@@ -162,11 +163,15 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
       });
 
       // Postページの作成
-      posts.forEach(edge => {
+      allPosts.forEach(edge => {
         const category = edge.node.frontmatter.category;
 
-        const suggestions: typeof posts = fetchRandoms(
-          posts.filter(post => post.node.frontmatter.category === category),
+        const suggestions: typeof allPosts = fetchRandoms(
+          allPosts.filter(
+            post =>
+              post.node.frontmatter.category === category &&
+              post.node.id !== edge.node.id
+          ),
           POSTS_AS_SUGGESTION
         );
         const suggestionNodeIDs = suggestions.map(
