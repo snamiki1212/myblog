@@ -21,10 +21,10 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 
 export const SocialLinks = (props): JSX.Element => {
-  const {postNode, postPath, mobile} = props;
+  const {postNode, postPath} = props;
   const post = postNode.frontmatter;
   const url = urljoin(config.siteUrl, postPath);
-  const iconSize = mobile ? 36 : 48;
+  const iconSize = 36;
   const renderShareCount = (count: number): JSX.Element => (
     <ShareCount>{count > 0 ? count : ''}</ShareCount>
   );

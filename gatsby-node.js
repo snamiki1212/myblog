@@ -1,4 +1,4 @@
-// readme: https://github.com/gatsbyjs/gatsby/issues/1457
+// このファイル自体をts で実装できないので、ts を require して、gatsby-nodeのts 化を実現。(readme: https://github.com/gatsbyjs/gatsby/issues/1457)
 require('source-map-support').install();
 require('ts-node').register({
   compilerOptions: {
@@ -7,21 +7,9 @@ require('ts-node').register({
   },
 });
 
-let postNodes = []; // mutable
+// import
+const {createPages, onCreateNode} = require('./gatsby-node_');
 
-// createPages
-const {createPages} = require('./gatsbyjs/createPages');
+// execute
+exports.onCreateNode = onCreateNode;
 exports.createPages = createPages;
-
-// onCreateNode
-const {onCreateNode} = require('./gatsbyjs/onCreateNode');
-exports.onCreateNode = onCreateNode(postNodes);
-
-// setFieldsOnGraphQLNodeType
-// const {addSiblingNodes} = require('./gatsbyjs/helper');
-// const {
-//   setFieldsOnGraphQLNodeType,
-// } = require('./gatsbyjs/setFieldsOnGraphQLNodeType');
-// exports.setFieldsOnGraphQLNodeType = setFieldsOnGraphQLNodeType(
-//   addSiblingNodes(postNodes)
-// );

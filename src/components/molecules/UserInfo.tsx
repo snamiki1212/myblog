@@ -1,7 +1,9 @@
 import React from 'react';
-import Card from 'react-md/lib/Cards/Card';
-import CardText from 'react-md/lib/Cards/CardText';
-import Avatar from 'react-md/lib/Avatars';
+import {Link} from 'gatsby';
+import Avatar from '@material-ui/core/Avatar';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
 import {Follow} from 'react-twitter-widgets';
 import styled from 'styled-components';
 import {MyLinks} from '../atoms';
@@ -12,14 +14,14 @@ export const UserInfo = (props): JSX.Element => {
     userName,
     userLocation,
     userDescription,
-    userLinks,
+    mySocials,
     userTwitter,
   } = props.config;
 
   if (!userAvatar && !userName && !userLocation && !userDescription) {
-    if (userLinks) {
+    if (mySocials) {
       return (
-        <Wrapper className="md-grid md-cell md-cell--12 ">
+        <Wrapper>
           <MyLinks />
         </Wrapper>
       );
@@ -28,14 +30,20 @@ export const UserInfo = (props): JSX.Element => {
   }
 
   return (
-    <Wrapper className="md-grid md-cell md-cell--12 ">
-      <CardText>
-        <Avatar src={userAvatar} role="presentation" />
-        <div>{userName && userName}</div>
+    <Wrapper>
+      <CardHeader
+        avatar={
+          <Link to="/about">
+            <Avatar src={userAvatar} alt={userName || 'me'} />
+          </Link>
+        }
+        title={userName}
+      />
+      <CardContent>
         {userTwitter ? <Follow username={userTwitter} /> : 'Author'}
         <p>{userDescription && userDescription}</p>
         <MyLinks />
-      </CardText>
+      </CardContent>
     </Wrapper>
   );
 };
@@ -47,5 +55,4 @@ const Wrapper = styled(Card)`
     'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans',
     'ヒラギノ角ゴシック', 'YuGothic', 'Yu Gothic', 'メイリオ', 'Meiryo',
     'ＭＳ Ｐゴシック', 'MS PGothic';
-  // font-family: $md-base-font-family; TODO:
 `;

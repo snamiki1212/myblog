@@ -10,8 +10,40 @@ body {
   margin: 0;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Material+Icons");
-@import "~react-md/src/scss/react-md";
-@import "theme.scss";
+// baclground color
+$backgroundBlack1: #222222;
+$backgroundVivid1: #f0db00;
+$backgroundWhite1: #ffffff;
+$backgroundWhite2: #f3f3f3;
+$backgroundWhite3: #e5e3df;
 
-@include react-md-everything;
+// font color
+$fontBlack1: #222222;
+$fontBlack2: #111111;
+$fontVivid1: #f0db00;
+$fontVivid2: #e0cc00;
+$fontVivid3: #d0bb00;
+$fontWhite1: #ffffff;
+$fontWhite2: #dddddd;
+$fontGray1: #666666;
+$fontGray2: #888888;
+
+// design
+$hLeft: $fontGray1;//darkgray;
+$hBackgroundColor: $backgroundWhite2;// #7B7B7B;
+$listBackgroundColor: $backgroundWhite2;// #FAFAFA;
+
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  &:link, &:visited{
+    color: $fontVivid2;
+  }
+  &:hover{
+    color: $fontGray1;
+    transition: 0.5s;
+  }
+}
+
+

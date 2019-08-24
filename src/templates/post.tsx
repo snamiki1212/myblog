@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import CardText from 'react-md/lib/Cards/CardText';
 import styled from 'styled-components';
 import Layout from '../layout';
 import {UserInfo} from '../components/molecules/';
@@ -9,96 +8,131 @@ import {
   TagList,
   SocialLinks,
   HeaderTitle,
-  SEOWrapper,
-  PostCoverWrapper,
+  SEORaw,
+  PostCoverRaw,
+  Markdown,
 } from '../components/atoms/';
 import config from '../../data/SiteConfig';
-import './post.scss';
+import {PostPageContext} from '../../gatsby-node_';
 
-export const PostTemplate = (props: any): JSX.Element => {
-  const [isMobile, setIsMobile] = useState(false);
-  const resize = () => setIsMobile(window.innerWidth >= 640 ? false : true);
-
-  useEffect((): any => {
-    window.addEventListener('resize', resize);
-
-    return () => window.removeEventListener('resize', resize);
-  }, []);
-
-  const {slug} = props.pageContext as {slug: string};
-  const expanded = !isMobile;
-  const postNode = props.data.markdownRemark as MarkdownRemark;
+export const PostTemplate = (
+  props: {location: Location; data: PostPageQuery} & {
+    pageContext: PostPageContext;
+  }
+): JSX.Element => {
+  const {slug} = props.pageContext;
+  const postNode = props.data.markdownRemark;
   const post = postNode.frontmatter;
-  const coverHeight = isMobile ? 162 : 225;
+  const coverHeight = 162;
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
-      <div className="post-page md-grid md-grid--no-spacing">
+      <SPostPage>
         <Helmet>
           <title>{`${post.title}`}</title>
           <link rel="canonical" href={`${config.siteUrl}${slug}`} />
         </Helmet>
 
-        <SEOWrapper postPath={slug} postNode={postNode} postSEO />
-        <StyledPostCover
-          postNode={postNode}
-          coverHeight={coverHeight}
-          coverClassName="md-grid md-cell--9"
-        />
-        <div className="md-grid md-cell--7 post-page-contents">
-          <div className="md-grid md-cell md-cell--12 post">
-            <CardText className="post-body target-el">
-              <div dangerouslySetInnerHTML={{__html: postNode.html}} />
-            </CardText>
-            <div className="post-meta">
+        <SEORaw postPath={slug} postNode={postNode} postSEO />
+        <SPostCover postNode={postNode} coverHeight={coverHeight} />
+
+        <SPostPagePaper>
+          <SPostPageContent className="target-el">
+            <Markdown htmlAst={postNode.htmlAst} />
+
+            <SPostPageFooter>
               <TagList tags={post.tags} />
-              <SocialLinks
-                postPath={slug}
-                postNode={postNode}
-                mobile={isMobile}
-              />
-            </div>
-          </div>
-          <UserInfo
-            className="md-grid md-cell md-cell--12"
-            config={config}
-            expanded={expanded}
-          />
-        </div>
-      </div>
+              <SocialLinks postPath={slug} postNode={postNode} />
+            </SPostPageFooter>
+          </SPostPageContent>
+          <UserInfo config={config} />
+        </SPostPagePaper>
+      </SPostPage>
     </Layout>
   );
 };
 
-const StyledPostCover = styled(PostCoverWrapper)`
+const SPostPageContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 0px;
+`;
+
+const SPostPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const SPostPagePaper = styled.div`
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+
+  img {
+    max-width: 100%;
+  }
+
+  video {
+    max-width: 100%;
+  }
+`;
+
+const SPostPageFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+const SPostCover = styled(PostCoverRaw)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 0 !important;
 `;
 
+type PostPageQuery = {
+  markdownRemark: MarkdownRemark;
+};
 export interface MarkdownRemark {
   html: string;
+  htmlAst: any;
   timeToRead: number;
   excerpt: string;
   frontmatter: {
     title: string;
-    cover: string;
+    cover: {
+      childImageSharp: {
+        fluid: {
+          [key: string]: any; // GatsbyImageSharpFluid
+        };
+      };
+    };
     date: Date;
     category: string;
     tags: string;
   };
+  fields: any;
 }
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: {slug: {eq: $slug}}) {
+  query PostPageQuery($slug: String!) {
+    markdownRemark(fields: {_slug: {eq: $slug}}) {
       html
+      htmlAst
       timeToRead
       excerpt(truncate: true)
       frontmatter {
         title
-        cover
+        cover {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         date
         category
         tags

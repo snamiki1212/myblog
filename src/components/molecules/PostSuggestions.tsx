@@ -1,9 +1,9 @@
 import React from 'react';
-import FontIcon from 'react-md/lib/FontIcons';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {MarkdownRemark} from '../../templates/post';
+import {XIcon} from '../atoms';
 
 export const PostSuggestions = ({
   postNode,
@@ -13,29 +13,15 @@ export const PostSuggestions = ({
   const postFields = postNode.fields;
 
   return (
-    <Container className="md-grid md-cell--12">
-      <StyledLink
-        to={postFields.prevSlug}
-        className="md-grid md-cell md-cell--6"
-      >
-        <FontIcon forceFontSize forceSize={64} style={{flex: 1}}>
-          arrow_back
-        </FontIcon>
-        <span style={{flex: 3}} className="md-headline ">
-          {postFields.prevTitle}
-        </span>
+    <Container>
+      <StyledLink to={postFields.prevSlug}>
+        <XIcon icon="arrow-left" />
+        <span style={{flex: 3}}>{postFields.prevTitle}</span>
       </StyledLink>
 
-      <StyledLink
-        to={postFields.nextSlug}
-        className="md-grid md-cell md-cell--6"
-      >
-        <span style={{flex: 3}} className="md-headline ">
-          {postFields.nextTitle}
-        </span>
-        <FontIcon style={{flex: 1}} forceFontSize forceSize={64}>
-          arrow_forward
-        </FontIcon>
+      <StyledLink to={postFields.nextSlug}>
+        <span style={{flex: 3}}>{postFields.nextTitle}</span>
+        <XIcon icon="arrow-right" />
       </StyledLink>
     </Container>
   );

@@ -60,3 +60,6 @@ bundle-stats.json
 
 # env
 .env.*
+
+# type files from gatsby-plugin-ts plugin to build
+/types

@@ -2,22 +2,15 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
-import {IndexPageContext} from '../../../gatsbyjs/createPages';
+import {IndexPageContext} from '../../../gatsby-node_';
 
-export const Paginator = (props: any): JSX.Element => {
-  const {currentPage, numPages} = props.pageContext as IndexPageContext;
-  const isFirst = currentPage === 1;
-  const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
-  const nextPage = (currentPage + 1).toString();
+export const Paginator = (props: {
+  pageContext: IndexPageContext;
+}): JSX.Element => {
+  const {currentPage, numPages} = props.pageContext;
 
   return (
-    <PaginatorList>
-      {!isFirst && (
-        <StyledLink to={prevPage} rel="prev">
-          ← Previous Page
-        </StyledLink>
-      )}
+    <Container>
       {Array.from(
         {length: numPages},
         (_, i): JSX.Element => (
@@ -25,25 +18,20 @@ export const Paginator = (props: any): JSX.Element => {
             key={`pagination-number${i + 1}`}
             to={`/${i === 0 ? '' : i + 1}`}
             style={{
-              textDecoration: 'none',
-              color: i + 1 === currentPage ? '#ffffff' : '',
-              background: i + 1 === currentPage ? '#007acc' : '',
+              color: i + 1 === currentPage ? colors.fontWhite1 : '',
+              background: i + 1 === currentPage ? colors.backgroundBlack1 : '',
             }}
           >
             {i + 1}
           </StyledLink>
         )
       )}
-      {!isLast && (
-        <StyledLink to={nextPage} rel="next">
-          Next Page →
-        </StyledLink>
-      )}
-    </PaginatorList>
+    </Container>
   );
 };
 
 const StyledLink = styled(Link)`
+  text-decoration: none;
   background: ${colors.backgroundWhite2};
   padding: 15px;
   transition: 0.3s;
@@ -52,7 +40,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const PaginatorList = styled.div`
+const Container = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;

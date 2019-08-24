@@ -2,21 +2,29 @@
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
 import React from 'react';
-import favicon from './favicon.png';
+// import favicon from './favicon.png'; // TODO:favicon を設定して読み込ませる
 
-let inlinedStyles = '';
+const inlinedStyles = '';
 
-export default class HTML extends React.Component {
-  render() {
+export default class HTML extends React.Component<{
+  // MEMO: gatsby の props ?
+  headComponents: any;
+  body: any;
+  postBodyComponents: any;
+}> {
+  render = (): any => {
     let css;
-    if (process.env.NODE_ENV === 'production') {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{__html: inlinedStyles}}
-        />
-      );
-    }
+
+    // TODO:
+    // if (process.env.NODE_ENV === 'production') {
+    // css = (
+    //   <style
+    //     id="gatsby-inlined-css"
+    //     dangerouslySetInnerHTML={{__html: inlinedStyles}}
+    //   />
+    // );
+    // }
+
     return (
       <html lang="en">
         <head>
@@ -26,7 +34,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1.0"
           />
           {this.props.headComponents}
-          <link rel="shortcut icon" href={favicon} />
+          <link rel="shortcut icon" /*href={favicon}*/ />
           {css}
         </head>
         <body>
@@ -38,5 +46,5 @@ export default class HTML extends React.Component {
         </body>
       </html>
     );
-  }
+  };
 }

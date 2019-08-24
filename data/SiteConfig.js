@@ -31,30 +31,28 @@ module.exports = {
   userIntroduction: 'Freelance Engineer', // short user introduction
 
   // for side-bar
-  sidebarUserName: 'Nash',
+  autherName: 'Nash',
 
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
+  mySocials: [
     {
-      label: 'GitHub',
+      icon: 'github',
       url: 'https://github.com/snamiki1212',
-      iconClassName: 'fa fa-github',
     },
     {
-      label: 'Twitter',
+      icon: 'twitter',
       url: 'https://twitter.com/snamiki1212',
-      iconClassName: 'fa fa-twitter',
     },
     {
-      label: 'Linkedin',
+      icon: 'linkedin',
       url: 'https://www.linkedin.com/in/snamiki1212',
-      iconClassName: 'fa fa-linkedin',
     },
+    // TODO: Qiita
+    // TODO: Quora
     // MEMO: RSS 使う人いないだろうから、コメントアウト
     // {
-    //   label: 'RSS',
+    //   icon: 'RSS',
     //   url: 'https://snamiki1212.com/rss.xml',
-    //   iconClassName: 'fa fa-rss',
     // },
   ],
   copyright: 'Copyright © 2019. Shun Namiki', // Copyright string for the footer of the website and RSS feed.

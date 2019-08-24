@@ -1,26 +1,35 @@
 import React from 'react';
+import {Link} from 'gatsby';
 import styled from 'styled-components';
+import Button from '@material-ui/core/Button';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 import {MyLinks} from '../atoms';
 
 export const AuthorCard = (): JSX.Element => (
-  <Wrapper>
-    <Avator src={config.userAvatar} alt={config.sidebarUserName} />
-    <Name>{config.sidebarUserName}</Name>
-    <Discription>{config.userDescription}</Discription>
+  <Container>
+    <Link to="/about">
+      <Button>
+        <div>
+          <Avator src={config.userAvatar} alt={config.autherName} />
+          <Name>{config.autherName}</Name>
+          <Discription>{config.userDescription}</Discription>
+        </div>
+      </Button>
+    </Link>
+
     <MyLinks />
-  </Wrapper>
+  </Container>
 );
 
-const Wrapper = styled.div`
+const Container = styled.div`
   width: 100%;
   color: ${colors.fontGray1};
 `;
 
 const Avator = styled.img`
-  width: 100%;
-  border-radius: 50%;
+  width: 150px;
+  border-radius: 100%;
 `;
 
 const Name = styled.div`

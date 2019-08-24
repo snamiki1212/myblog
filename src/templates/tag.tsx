@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import Layout from '../layout';
-import {PostPreviewCardList} from '../components/molecules/';
 import {HeaderTitle} from '../components/atoms';
 import config from '../../data/SiteConfig';
 
@@ -16,13 +15,12 @@ export const TagTemplate = (props): JSX.Element => {
       title={<HeaderTitle />}
       // title={`Tagged in ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
     >
-      <div className="tag-container">
+      {/* <div className="tag-container">
         <Helmet>
           <title>{`Posts tagged as "${tag}" | ${config.siteTitle}`}</title>
           <link rel="canonical" href={`${config.siteUrl}/tags/${tag}`} />
         </Helmet>
-        <PostPreviewCardList postEdges={postEdges} />
-      </div>
+      </div> */}
     </Layout>
   );
 };
@@ -31,22 +29,29 @@ export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
       limit: 1000
-      sort: {fields: [fields___date], order: DESC}
+      sort: {fields: [fields____date], order: DESC}
       filter: {frontmatter: {tags: {in: [$tag]}}}
     ) {
       totalCount
       edges {
         node {
           fields {
-            slug
-            date
+            _slug
+            _date
           }
           excerpt(truncate: true)
           timeToRead
           frontmatter {
             title
             tags
-            cover
+            cover {
+              childImageSharp {
+                fluid {
+                  base64
+                  originalName
+                }
+              }
+            }
             date
           }
         }
