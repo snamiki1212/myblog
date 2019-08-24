@@ -72,6 +72,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gatsby-remark-graphviz": "^1.1.7",
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
     "prettier-stylelint": "^0.4.2",

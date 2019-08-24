@@ -8,6 +8,7 @@ import {IndexPageContext} from '../../gatsby-node_';
 import {HeaderTitle, Paginator, SEORaw} from '../components/atoms/';
 import {AuthorCard, PostPreviewCard} from '../components/molecules';
 import Layout from '../layout';
+import {FluidObject} from 'gatsby-image';
 
 export const Index = (props: {
   pageContext: IndexPageContext;
@@ -99,7 +100,7 @@ export const pageQuery = graphql`
               publicURL
               childImageSharp {
                 fluid {
-                  base64
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -129,9 +130,7 @@ export interface MarkdownRemarkEdge {
       cover: {
         publicURL: string;
         childImageSharp: {
-          fluid: {
-            base64: string;
-          };
+          fluid: FluidObject;
         };
       };
       date: Date;

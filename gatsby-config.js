@@ -19,6 +19,8 @@ module.exports = {
     // },
   },
   plugins: [
+    // TODO: dot ファイルのプラグインを入れる
+    // REF: https://takumon.com/2018/10/21/
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-lodash',
     'gatsby-plugin-sass',
@@ -52,7 +54,7 @@ module.exports = {
       options: {
         name: 'posts',
         path: `${__dirname}/contents/`,
-        ignore: [`**/*.jpg`], // TODO: gif など他のファイルを入れる。ignore ではなくて、only がほしいけど、ないぽい。
+        ignore: [`**/*.jpg`, `**/*.jpeg`, `**/**.png`, `**/*.gif`], // TODO: gif など他のファイルを入れる。ignore ではなくて、only がほしいけど、ないぽい。
       },
     },
     {
@@ -61,9 +63,10 @@ module.exports = {
       options: {
         // TODO: HTML >> Markdown >> Reactを これでできるかもしれないので、確認。https://www.gatsbyjs.org/packages/gatsby-remark-component/
         plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-          },
+          // {
+          // TODO: 外部ファイルを参照したり、NetlifcyCMS を使っていないので、不要だと思うので、落ち着いたら消す。
+          //   resolve: 'gatsby-remark-relative-images',
+          // },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -73,16 +76,17 @@ module.exports = {
           {
             resolve: 'gatsby-remark-responsive-iframe',
           },
+          'gatsby-remark-graphviz', // Graphizを利用可能にする。ATTENTION: prism-jsのプラグインの前に宣言しないといけない
           {
+            resolve: 'gatsby-remark-autolink-headers',
             // H1~6 の先頭に リンクが生成されるプラグイン
             // ATTENTION: prism-jsのプラグインの前に宣言しないといけない
-            resolve: 'gatsby-remark-autolink-headers',
             options: {
               icon: `<svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>`,
             },
           },
+          'gatsby-remark-copy-linked-files', // markdown で呼び出しているファイルを /public などにコピーする機能。 gif/svg などはremark--images の取り扱い対象外なので、これが必要(readme: https://www.gatsbyjs.org/packages/gatsby-remark-images/)
           'gatsby-remark-prismjs', // code-hilight 用
-          // 'gatsby-remark-copy-linked-files', // markdown で呼び出しているファイルを /public などにコピーする機能。 //TODO: 使わなくても良さげなので、コメントアウトして、影響度がなさそうなら、しばらくしたら、消す
         ],
       },
     },
@@ -95,12 +99,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: '#c62828', // TODO: いらないのでは？
+        color: '#c62828',
       },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-catch-links',
+    'gatsby-plugin-catch-links', // サイト内をaタグで移動しても、catchしてgatsbyのLinkでの移動として処理してくれる
     'gatsby-plugin-twitter', // TODO: いるか、あやしい
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -113,7 +117,6 @@ module.exports = {
                 siteUrl
               }
             }
-
             allSitePage(
               filter: {
                 path: {
