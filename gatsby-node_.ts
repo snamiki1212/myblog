@@ -103,8 +103,7 @@ const fetchRandoms = (arr: any[], n = 1): any => {
   let len = arr.length;
   const taken = new Array(len);
 
-  if (n > len)
-    throw new RangeError('getRandom: more elements taken than available');
+  if (n > len) return arr;
   while (n--) {
     const x = Math.floor(Math.random() * len); // random index
     result[n] = arr[x in taken ? taken[x] : x];
@@ -165,6 +164,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
       // Postページの作成
       posts.forEach(edge => {
         const category = edge.node.frontmatter.category;
+
         const suggestions: typeof posts = fetchRandoms(
           posts.filter(post => post.node.frontmatter.category === category),
           POSTS_AS_SUGGESTION
