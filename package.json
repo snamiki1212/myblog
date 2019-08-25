@@ -61,6 +61,7 @@
     "@types/styled-components": "^4.1.18",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
+    "amphtml-validator": "^1.0.23",
     "cli-glob": "^0.1.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -72,6 +73,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gatsby-plugin-html2amp": "^1.0.1",
     "gatsby-remark-graphviz": "^1.1.7",
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
@@ -106,7 +108,8 @@
     "format:md": "prettier '**/*.{md}' --write",
     "precommit": "lint-staged",
     "lint": "eslint --ext ./ 'src/**/*.{js,jsx,ts,tsx}'",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "amp": "find public/amp -type f | xargs amphtml-validator"
   },
   "remarkConfig": {
     "plugins": [

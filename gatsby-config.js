@@ -25,7 +25,16 @@ module.exports = {
     'gatsby-plugin-lodash',
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
-
+    {
+      // html を amp に変換
+      resolve: 'gatsby-plugin-html2amp',
+      options: {
+        files: ['**/index.html', 'index.html'], // TODO:
+        publicPath: 'public',
+        // gaConfigPath: 'gaConfig.json', // TODO:
+        dist: 'public/amp', // ここに生成。これがないと、上書き
+      },
+    },
     // {
     // TODO: 導入してもエラー出て、潰しきれないので、いったんコメントアウト。
     //   // NOTE: ページごとのQuery(graph-ql)の定義を元に、TypeScirptのTypeDefiniedを生成してくれる
