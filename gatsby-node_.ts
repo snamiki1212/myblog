@@ -127,7 +127,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
       const {allMarkdownRemark} = data;
       const {edges: allPosts} = allMarkdownRemark;
 
-      const numPages = Math.ceil(posts.length / POSTS_PERT_PAGE);
+      const numPages = Math.ceil(allPosts.length / POSTS_PERT_PAGE);
 
       // post の index/pagination のページ
       Array.from({length: numPages}).forEach((_, i): void => {
