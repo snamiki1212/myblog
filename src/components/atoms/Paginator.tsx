@@ -43,10 +43,9 @@ const StyledLink = styled(Link)`
 const Container = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
-  width: 80%;
   list-style: none;
   padding-bottom: 100px;
   margin: 30px auto;

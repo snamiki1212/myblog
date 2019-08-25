@@ -1,6 +1,6 @@
 const baseColor = {
-  primary: '#1a237e',
-  secondary: '#fbc02d',
+  primary: '#009688',
+  secondary: '#00e676',
 };
 
 export const colors = {
@@ -10,7 +10,7 @@ export const colors = {
   // background-color
   backgroundBlack1: '#222222',
   backgroundGray1: '#f7f7f7',
-  backgroundVivid1: '#f0db00',
+  backgroundVivid1: '#009688',
   backgroundWhite1: '#ffffff',
   backgroundWhite2: '#f3f3f3',
   backgroundWhite3: '#e5e3df',
@@ -18,9 +18,9 @@ export const colors = {
   // font-color
   fontBlack1: '#222222',
   fontBlack2: '#111111',
-  fontVivid1: '#f0db00',
-  fontVivid2: '#e0cc00',
-  fontVivid3: '#d0bb00',
+  fontVivid1: '#005f56',
+  fontVivid2: '#00897b',
+  fontVivid3: '#33a095',
   fontWhite1: '#ffffff',
   fontWhite2: '#dddddd',
   fontGray1: '#666666',

@@ -5,7 +5,7 @@ import siteConfig from './data/SiteConfig';
 
 // -----------------------------------------------------------------------
 // CONSTANTS
-const POSTS_PERT_PAGE = 10;
+const POSTS_PERT_PAGE = 30;
 const POSTS_AS_SUGGESTION = 4;
 const PostPage = path.resolve('src/templates/post.tsx');
 const TagPage = path.resolve('src/templates/tag.tsx');

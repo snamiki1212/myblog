@@ -33,20 +33,19 @@ Create `.env.development` from `.env` and secure-data.
 
 - General
   - [ ] AMP を入れる
-  - [ ] SASS を除去する
+  - [x] SASS を除去する
   - [x] prism を整理する
-  - [ ] gatsbyjs の設定周りを整理する
+  - [x] gatsbyjs の設定周りを整理する
   - [ ] TypeScript フレンドリーにする（特にGatsbyJSとPropsの値）
   - [ ] /src 配下のディレクトリ構造を整理する
     - [ ] /layout を消したい
     - [ ] /pages を消したい
     - [ ] /templates を消したい
 - CSS
-  - [ ] Re-create Thema like as medium
   - [x] code style
   - [x] more clickable bottom-link
   - [x] block-quote
-  - [ ] optimize twitter card of link image
+  - [x] optimize twitter card of link image
   - [x] use .env at Google analytics ID
   - [ ] optimize post css
 - CI

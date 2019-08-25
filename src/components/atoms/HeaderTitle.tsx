@@ -7,16 +7,23 @@ export const HeaderTitle = (): JSX.Element => {
   return <Title href="/">{config.siteTitleTop}</Title>;
 };
 
+const _color = colors.fontWhite1;
 const Title = styled.a`
   padding: 8px 20px;
   font-size: 32px;
   letter-spacing: 3px;
-  color: ${colors.fontVivid1};
   font-family: 'Megrim', 'Yu Gothic M', 'Raleway';
   transition: 0.3s;
   margin: auto 0;
+  color: ${_color};
+  &:link {
+    color: ${_color};
+  }
+  &:visited {
+    color: ${_color};
+  }
   &:hover {
-    color: ${colors.fontWhite1};
-    font-size: 38px;
+    color: ${_color};
+    font-size: 36px;
   }
 `;
