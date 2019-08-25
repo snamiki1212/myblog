@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import CardActionArea from '@material-ui/core/CardActionArea';
 
 import {Link} from 'gatsby';
 import moment from 'moment';
@@ -18,38 +19,43 @@ export const PostPreviewCard = ({
 }): JSX.Element => {
   return (
     <StyledCard key={postInfo.node.frontmatter.title}>
-      <Link to={postInfo.node.fields._slug}>
-        <CardMedia>
-          <Img
-            fluid={postInfo.node.frontmatter.cover.childImageSharp.fluid}
-            style={{maxHeight: '100px'}}
-          />
-        </CardMedia>
+      <StyledCardActionArea>
+        <Link to={postInfo.node.fields._slug}>
+          <CardMedia>
+            <Img
+              fluid={postInfo.node.frontmatter.cover.childImageSharp.fluid}
+              style={{maxHeight: '100px'}}
+            />
+          </CardMedia>
 
-        <CardContent>
-          <ContentDate>
-            <XIcon icon="sync" />
-            {moment(postInfo.node.frontmatter.date).format(config.dateFormat)}
-          </ContentDate>
-          <ContenTitle>{postInfo.node.frontmatter.title}</ContenTitle>
+          <CardContent>
+            <ContentDate>
+              <XIcon icon="sync" />
+              {moment(postInfo.node.frontmatter.date).format(config.dateFormat)}
+            </ContentDate>
+            <ContenTitle>{postInfo.node.frontmatter.title}</ContenTitle>
 
-          <ContentExcerpt>{postInfo.node.excerpt}</ContentExcerpt>
-        </CardContent>
-      </Link>
+            <ContentExcerpt>{postInfo.node.excerpt}</ContentExcerpt>
+          </CardContent>
+        </Link>
+      </StyledCardActionArea>
     </StyledCard>
   );
 };
 
 const StyledCard = styled(Card)`
   margin: 10px;
-  flex: 1 0 auto;
   min-width: 300px;
   max-width: 45%;
+`;
+
+const StyledCardActionArea = styled(CardActionArea)`
   height: 300px;
 `;
 
 const ContenTitle = styled.div`
   font-weight: bold;
+  font-size: 20px;
 `;
 
 const ContentDate = styled.div`
