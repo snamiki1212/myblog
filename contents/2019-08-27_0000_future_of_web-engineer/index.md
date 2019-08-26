@@ -6,7 +6,7 @@ category: 'Tech'
 tags:
   - SEtoWeb
 slug: future-of-web-engineer
-memo: Webエンジニア 将来性 ない
+# memo: Webエンジニア 将来性 ない
 ---
 
 # Webエンジニアの「将来性がない」は本当か？→むしろ超有望
