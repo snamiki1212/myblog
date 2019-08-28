@@ -19,7 +19,7 @@ SEO-keyword:
 
 ## フィリピン留学における、「資本」って何？
 
-![philippines-fund-of-japan-1](./201903301230_1.jpg)
+![philippines-fund-of-japan-1](./1.jpg)
 
 学校の資本について、例えば、「資本が日本」＝「経営が日本」ということになります。
 
@@ -108,7 +108,7 @@ CEGA でも、個人の要望がかなり通りやすかったです。また、
 
 ## 韓国資本の学校の詳細は？
 
-![philippines-fund-of-korea-3](./201903301230_3.jpg)
+![philippines-fund-of-korea-3](./2.jpg)
 
 下記の記事で「韓国資本」「日本資本」の比較を行っています。
 
