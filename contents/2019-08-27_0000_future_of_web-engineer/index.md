@@ -96,7 +96,11 @@ Webエンジニアの職場だと、多様性のある働き方をしている�
 
 ### 転職は日常茶飯事
 
-日本では、やはりまだまだ「転職」は一般的なイベントではないかと思います。
+日本の就業形態として「終身雇用」が崩壊して、これからは「転職」が一般的になる可能性が極めて高いです。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【トヨタ社長 終身雇用難しい】<a href="https://t.co/TxZtRAzb6y">https://t.co/TxZtRAzb6y</a><br><br>トヨタの豊田社長が、終身雇用の継続は難しいとの認識を示した。「なかなか終身雇用を守っていくというのは難しい局面に入ってきたのではないかと」「雇用を続けている企業にインセンティブがあまりない」。</p>&mdash; Yahoo!ニュース (@YahooNewsTopics) <a href="https://twitter.com/YahooNewsTopics/status/1127890543889960961?ref_src=twsrc%5Etfw">May 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+ですが、やはりまだまだ「転職」は一般的なイベントではないかと思います。
 
 **「Web業界では、転職が日常茶飯事で行われます。」**
 
