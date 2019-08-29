@@ -36,10 +36,9 @@ const fetchData =
       '@type': 'Person',
 
       // TODO: configへ移動
-      name: 'Nash',
-      jobTitle: 'SoftwareEngineer',
-      gender: 'male',
-      email: 'snamiki1212@gmail.com',
+      name: config.userName,
+      jobTitle: config.jobTitle,
+      email: config.email,
     };
 
     const webSite = {
@@ -63,7 +62,7 @@ const fetchData =
             {
               '@type': 'ListItem',
               position: 1,
-              name: category, // TODO: categoryの名前
+              name: category,
               item: urljoin(config.siteUrl, category),
             },
           ],
@@ -75,7 +74,7 @@ const fetchData =
       '@context': 'http://schema.org',
       '@type': 'Organization',
       //
-      name: 'Lunash', // TODO: config に移動
+      name: config.userName, // TODO: config に移動
       logo: {
         '@type': 'ImageObject',
         url: image,
@@ -88,8 +87,8 @@ const fetchData =
           '@context': 'http://schema.org',
           '@type': 'NewsArticle',
           //
-          dateModified: '2019-01-01 00:00:00', // TODO: markdown にこれを入れたい。
-          datePublished: '2019-01-01 00:00:00', // TODO:
+          dateModified: postNode.frontmatter.date, // TODO: markdown にこれを入れたい。
+          datePublished: postNode.frontmatter.date, // TODO:
           headline: description.substring(0, 110), // Note: 先頭110文字までのみ。それ以上だとエラーになる。
           image: {
             '@type': 'ImageObject',
@@ -97,7 +96,7 @@ const fetchData =
           },
           author: person,
           publisher: organization,
-          mainEntityOfPage: blogURL, //TODO: このページのURL
+          mainEntityOfPage: postURL,
           description,
         }
       : {};
