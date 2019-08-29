@@ -1,4 +1,5 @@
 import React from 'react';
+import URL from 'url';
 
 interface Props {
   url: string;
@@ -6,8 +7,8 @@ interface Props {
 }
 
 export const HatenaShareButton = ({url, size}: Props): JSX.Element => {
-  const host = new URL(url).host;
-  const pathName = new URL(url).pathname;
+  const host = URL.parse(url).host;
+  const pathName = URL.parse(url).pathname;
 
   // 下記のページにて、code をジェネレート
   // https://b.hatena.ne.jp/guide/bbutton
