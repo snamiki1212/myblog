@@ -64,7 +64,8 @@ module.exports = {
         // TODO: HTML >> Markdown >> Reactを これでできるかもしれないので、確認。https://www.gatsbyjs.org/packages/gatsby-remark-component/
         plugins: [
           // {
-          // TODO: 外部ファイルを参照したり、NetlifcyCMS を使っていないので、不要だと思うので、落ち着いたら消す。
+          //   // 外部ファイルの参照などを行う。画像周りで、gifなどがgatsyby-imagesなどでの対象外なので、こいつをいれておく必要がある？
+          //   // こいつをいれると、画像パスが不整合になって、違う投稿の画像が表示されちゃうみたいなので入れてはいけないぽい。
           //   resolve: 'gatsby-remark-relative-images',
           // },
           {

@@ -14,7 +14,7 @@ export const HatenaShareButton = ({url, size}: Props): JSX.Element => {
   return (
     <>
       <a
-        href={`https://b.hatena.ne.jp/entry/s/${host}${pathName}}`}
+        href={`https://b.hatena.ne.jp/entry/s/${host}${pathName}`}
         className="hatena-bookmark-button"
         data-hatena-bookmark-layout="touch-counter"
         title="このエントリーをはてなブックマークに追加"

@@ -1,19 +1,12 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import {FluidObject} from 'gatsby-image';
 
 interface Props {
-  postNode: any;
+  fluid: FluidObject;
   coverHeight: number;
 }
 
-// TODO: ロジックをリファクタリングしたい
-export const PostCoverRaw = ({postNode, coverHeight}: Props): JSX.Element => {
-  return (
-    <Img
-      fluid={{
-        ...postNode.frontmatter.cover.childImageSharp.fluid,
-      }}
-      style={{height: coverHeight, width: '100%'}}
-    />
-  );
+export const PostCoverRaw = ({fluid, coverHeight}: Props): JSX.Element => {
+  return <Img fluid={fluid} style={{height: coverHeight, width: '100%'}} />;
 };

@@ -3,13 +3,13 @@ import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../layout';
+import Img from 'gatsby-image';
 import {UserInfo} from '../components/molecules/';
 import {
   TagList,
   SocialLinks,
   HeaderTitle,
-  SEORaw,
-  PostCoverRaw,
+  SEOMeta,
   Markdown,
 } from '../components/atoms/';
 import {PostPreviewCard} from '../components/molecules';
@@ -23,11 +23,10 @@ export const PostTemplate = (
     pageContext: PostPageContext;
   }
 ): JSX.Element => {
-  const {slug} = props.pageContext;
   const postNode = props.data.markdownRemark;
+  const slug = postNode.frontmatter.slug;
   const suggestions = props.data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
-  const coverHeight = 162;
 
   return (
     <Layout location={props.location} title={<HeaderTitle />}>
@@ -36,15 +35,16 @@ export const PostTemplate = (
           <title>{`${post.title}`}</title>
           <link rel="canonical" href={`${config.siteUrl}${slug}`} />
         </Helmet>
-        <SEORaw postPath={slug} postNode={postNode} postSEO />
-        <SPostCover postNode={postNode} coverHeight={coverHeight} />
+        <SEOMeta postNode={postNode} isPost={true} />
+
+        <HeaderImg fluid={postNode.frontmatter.cover.childImageSharp.fluid} />
         <SPostPagePaper>
           <SPostPageContent className="target-el">
             <Markdown htmlAst={postNode.htmlAst} />
 
             <SPostPageFooter>
               <TagList tags={post.tags} />
-              <SocialLinks postPath={slug} postNode={postNode} />
+              <SocialLinks postNode={postNode} />
             </SPostPageFooter>
           </SPostPageContent>
           <UserInfo config={config} />
@@ -97,11 +97,13 @@ const SPostPageFooter = styled.div`
   justify-content: center;
 `;
 
-const SPostCover = styled(PostCoverRaw)`
+const HeaderImg = styled(Img)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 0 !important;
+  height: 162px;
+  width: 100%;
 `;
 
 type PostPageQuery = {
@@ -117,14 +119,13 @@ export interface MarkdownRemark {
     title: string;
     cover: {
       childImageSharp: {
-        fluid: {
-          [key: string]: any; // GatsbyImageSharpFluid
-        };
+        fluid: FluidObject;
       };
     };
     date: Date;
     category: string;
     tags: string;
+    slug: string;
   };
   fields: any;
 }
@@ -194,6 +195,7 @@ export const pageQuery = graphql`
         date
         category
         tags
+        slug
       }
     }
   }

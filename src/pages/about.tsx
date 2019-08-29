@@ -49,7 +49,12 @@ const AboutPage = (props: {location: Location}): JSX.Element => {
 
             {/* ------------------------------------ */}
             <h2>いままでの経歴</h2>
-            {/* TODO: ここにSEとWebとフリーランスを書く */}
+            <p>
+              ・ソフトスキル：チームリーダー・プレイングリーダー・対顧客折衝・プロジェクト改善・ディレクターなどのロール・活動の経験があります。
+              <br />
+              ・ハードスキル：エンジニアとしてはバックエンド、フロントエンドを中心に活動しています。React.js、Firebase、Laravel/PHP、Elixir/Phoenix、Ruby
+              on Rails などを使っています。
+            </p>
             <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
             <CardActions>
               <Button>

@@ -19,11 +19,13 @@ import {HatenaShareButton} from './';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
+import {MarkdownRemark} from '../../templates/post';
 
-export const SocialLinks = (props): JSX.Element => {
-  const {postNode, postPath} = props;
+export const SocialLinks = (props: {postNode: MarkdownRemark}): JSX.Element => {
+  const {postNode} = props;
+
   const post = postNode.frontmatter;
-  const url = urljoin(config.siteUrl, postPath);
+  const url = urljoin(config.siteUrl, postNode.frontmatter.slug);
   const iconSize = 36;
   const renderShareCount = (count: number): JSX.Element => (
     <ShareCount>{count > 0 ? count : ''}</ShareCount>
@@ -31,7 +33,7 @@ export const SocialLinks = (props): JSX.Element => {
 
   return (
     <Wrapper>
-      {/* <HatenaShareButton url={url} size={iconSize} /> */}
+      <HatenaShareButton url={url} size={iconSize} />
       <RedditShareButton url={url} title={post.title}>
         <RedditIcon round size={iconSize} />
         <RedditShareCount url={url}>

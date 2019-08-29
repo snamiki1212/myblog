@@ -26,8 +26,6 @@ type Props = {
     | 'github'
     | 'twitter'
     | 'linkedin'
-    | 'arrow-left'
-    | 'arrow-right'
     | 'sync';
 };
 
@@ -49,11 +47,8 @@ export const XIcon = ({icon}: Props): JSX.Element => {
       return <FontAwesomeIcon icon={faTwitter} size="3x" />;
     case 'linkedin':
       return <FontAwesomeIcon icon={faLinkedinIn} size="3x" />;
-    case 'arrow-left':
-      return <FontAwesomeIcon icon="arrow-left" />;
     case 'sync':
       return <FontAwesomeIcon icon={faSync} />;
-    // TODO: arrow-right
     default:
       return <></>;
   }

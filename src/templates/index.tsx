@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {colors} from '../../data/color';
 import config from '../../data/SiteConfig';
 import {IndexPageContext} from '../../gatsby-node_';
-import {HeaderTitle, Paginator, SEORaw} from '../components/atoms/';
+import {HeaderTitle, Paginator, SEOMeta} from '../components/atoms/';
 import {AuthorCard, PostPreviewCard} from '../components/molecules';
 import Layout from '../layout';
 import {FluidObject} from 'gatsby-image';
@@ -25,7 +25,7 @@ export const Index = (props: {
         <title>{config.siteTitle}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
-      <SEORaw postEdges={postEdges} />
+      <SEOMeta postEdges={postEdges} />
 
       <PageContainer>
         <ArticleArea>
@@ -49,7 +49,6 @@ export const Index = (props: {
   );
 };
 
-// TODO: しかるべきに置きたい
 export const PostPreviewCardContaienr = styled.div`
   display: flex;
   flex-direction: row;
