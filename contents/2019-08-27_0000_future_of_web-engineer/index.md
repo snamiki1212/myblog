@@ -19,6 +19,8 @@ slug: future-of-web-engineer
 
 ## Webエンジニアの将来性がないか？を、客観的にみる
 
+![graph-image-web-developer-future](1.jpg)
+
 まずは、データを元にしてできる限り客観的に見ていきましょう。
 
 ### 経済産業省の解答は？　←需要があるのに、人がたりなさすぎる
@@ -69,6 +71,8 @@ slug: future-of-web-engineer
 
 
 ## Webエンジニアの働き方を、主観的に語る
+
+![pc-image-web-developer-future](2.jpg)
 
 ここまでは、データを元にしたものです。
 
