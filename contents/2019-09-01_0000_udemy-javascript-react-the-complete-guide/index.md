@@ -2,9 +2,10 @@
 title: '【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは？→『The Complete Guide』'
 cover: 'cover.jpg'
 date: '2019-09-01 00:00'
-category: 'Career'
+category: 'Tech'
 tags:
-  - SEtoWeb
+  - React
+  - Udemy
 slug: udemy-javascript-react-the-complete-guide
 ---
 
