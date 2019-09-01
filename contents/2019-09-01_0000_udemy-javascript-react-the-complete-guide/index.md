@@ -24,11 +24,28 @@ slug: udemy-javascript-react-the-complete-guide
 
 では見ていきましょう。
 
+## 『React - The Complete Guide』とは？
+
+> Dive in and learn React 16.8 from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more! -- [Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/react-the-complete-guide-incl-redux/)
+
+Udemy にあるReactの学習系の動画で、1、2を争うものの１つです。
+
+- 全レッスン数 546個 (2019/9時点)
+- 全レッスン時間 45時間 (2019/9時点)
+- React 最新バージョン対応済み(2019/9時点)
+- 【内容】ES6(JavaScript)、Reactjs、Hooks、Redux、React Routing、Animations、Next.js (2019/9時点)
+- > ★4.7 (46,935 評価数) 151,652 受講人数 (2019/9時点)
+
+<!-- AFFI A8.net -->
+≫ <a href="https://www.udemy.com/react-the-complete-guide-incl-redux?deal_code=JPA8DEAL2PERCENTAGE&aEightID=s00000016735001">「『React - The Complete Guide』Udemyでの購入・登録はこちらから」</a>
+
+では、これがおすすめな理由を見ていきます。
+
 ## おすすめな理由①：動画の構成が最強
 
 ![video-1](1.jpg)
 
-ざっくりこんな感じの構成です。
+動画の構成が、ざっくりこんな感じです。
 
 - 【その①】JavaScritpt ES6(ES2015)
 - 【その②】Reactの基礎
@@ -54,7 +71,9 @@ Reactの公式ドキュメントを読み始めても、
 
 初心者に対して平気でハードルをあげていくのは、Reactというライブラリの学習曲線・コストがそれなりに高く、ハードルが高いためです。
 
-そのため、Vueのように「誰でも書けるよ！」みたいに甘い言葉は使わずに、きちんと学習していかないといけません。
+そのため、Vue.jsのように「誰でも書けるよ！」みたいな甘い言葉は使いません。
+
+実際、前提として、きちんとES6を学習していないとReactの学習を始めるのは辛いはずです。
 
 ### 次世代JavaScriptについて
 
@@ -69,6 +88,14 @@ Reactの公式ドキュメントを読み始めても、
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ES6の仕様見てるけどもはや別言語だろこれ…だがしかし大歓迎だ！</p>&mdash; わかめ@毎日猫がいる (@vvakame) <a href="https://twitter.com/vvakame/status/394646066982703104?ref_src=twsrc%5Etfw">October 28, 2013</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 また、これによってJavaScriptの書き方が大幅に効率的になったため、もしJavaScriptを学習する際には、「ES6(2015)以降であるか？」は大事な観点です。
+
+### React.jsを開始する前にES6から始められる
+
+ということで、この動画なら、React.jsの学習する前にきちんと**その土台のES6(ES2015)のJavaScriptの学習もできちゃうお得なコース**なわけですね。
+
+他のReactの学習動画だと、このES6の学習がスキップされているケースもあったりするので、別途ES6を購入しないといけません。
+
+ES6の学習も抑えておくべき人にとってはかなり有意義な動画です。
 
 ## おすすめな理由②：最新情報に日々アップデートされてる
 
@@ -128,8 +155,8 @@ JavaScript界隈の情報の陳腐化は「異常」な速度で行われます�
 というわけで、『The Complete Guide』のレビューでした。
 
 <!-- AFFI A8.net -->
-≫ <a href="https://www.udemy.com/react-the-complete-guide-incl-redux?deal_code=JPA8DEAL2PERCENTAGE&aEightID=s00000016735001">「Udemyでの購入・登録はこちらから」</a>
+≫ <a href="https://www.udemy.com/react-the-complete-guide-incl-redux?deal_code=JPA8DEAL2PERCENTAGE&aEightID=s00000016735001">「『React - The Complete Guide』Udemyでの購入・登録はこちらから」</a>
 
-実際、自分はこのUdemyで学習をはじめてからReactエンジニアになれていますので、かなりおすすめです。
+実際、自分はこのUdemyで学習をはじめてからReactエンジニアとして仕事ができていますので、かなりおすすめです。
 
 ---
