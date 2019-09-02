@@ -7,12 +7,12 @@ import {IndexPageContext} from '../../../gatsby-node_';
 export const Paginator = (props: {
   pageContext: IndexPageContext;
 }): JSX.Element => {
-  const {currentPage, numPages} = props.pageContext;
+  const {currentPage, lastPage} = props.pageContext;
 
   return (
     <Container>
       {Array.from(
-        {length: numPages},
+        {length: lastPage},
         (_, i): JSX.Element => (
           <StyledLink
             key={`pagination-number${i + 1}`}
