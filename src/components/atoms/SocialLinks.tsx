@@ -19,7 +19,7 @@ import {HatenaShareButton} from './';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
-import {MarkdownRemark} from '../../templates/post';
+import {MarkdownRemark} from '../templates/PostTemplate';
 
 export const SocialLinks = (props: {postNode: MarkdownRemark}): JSX.Element => {
   const {postNode} = props;

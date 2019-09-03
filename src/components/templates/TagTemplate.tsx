@@ -1,44 +1,43 @@
-import {graphql} from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import config from '../../data/SiteConfig';
-import {IndexPageContext} from '../../gatsby-node_';
-import {HeaderTitle, SEOMeta} from '../components/atoms/';
-import {Body} from './body';
-import Layout from '../layout';
+import {graphql} from 'gatsby';
+import Layout from '../../layout';
+import {HeaderTitle} from '../atoms';
+import config from '../../../data/SiteConfig';
 import {FluidObject} from 'gatsby-image';
+import {TagPageContext} from '../../../gatsby-node_';
+import {Body} from './Body';
 
-export const Index = ({
+export const TagTemplate = ({
   pageContext,
   location,
   data,
 }: {
-  pageContext: IndexPageContext;
+  pageContext: TagPageContext;
   location: Location;
-  data: {allMarkdownRemark: IndexPageQuery};
+  data: {allMarkdownRemark: TagPageQuery};
 }): JSX.Element => {
-  const {allMarkdownRemark} = data;
-  const postEdges = allMarkdownRemark.edges;
+  const {tag} = pageContext;
+  const postEdges = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={<HeaderTitle />}>
       <Helmet>
-        <title>{config.siteTitle}</title>
+        <title>{`${config.siteTitle} | ${tag}`}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
-      <SEOMeta postEdges={postEdges} />
-
       <Body postEdges={postEdges} context={pageContext} />
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query IndexPageQuery($skip: Int!, $limit: Int!) {
+  query TagPageQuery($tag: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: {fields: [fields____date], order: DESC}
       limit: $limit
       skip: $skip
+      filter: {frontmatter: {tags: {in: [$tag]}}}
     ) {
       edges {
         node {
@@ -67,7 +66,7 @@ export const pageQuery = graphql`
   }
 `;
 
-export interface IndexPageQuery {
+export interface TagPageQuery {
   edges: MarkdownRemarkEdge[];
 }
 
@@ -93,4 +92,4 @@ export interface MarkdownRemarkEdge {
   };
 }
 
-export default Index;
+export default TagTemplate;

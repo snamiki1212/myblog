@@ -1,43 +1,44 @@
+import {graphql} from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import {graphql} from 'gatsby';
-import Layout from '../layout';
-import {HeaderTitle} from '../components/atoms/';
-import config from '../../data/SiteConfig';
+import config from '../../../data/SiteConfig';
+import {IndexPageContext} from '../../../gatsby-node_';
+import {HeaderTitle, SEOMeta} from '../atoms';
+import {Body} from './Body';
+import Layout from '../../layout';
 import {FluidObject} from 'gatsby-image';
-import {CategoryPageContext} from '../../gatsby-node_';
-import {Body} from './body';
 
-export const CategoryTemplate = ({
+export const HomeTemplate = ({
   pageContext,
   location,
   data,
 }: {
-  pageContext: CategoryPageContext;
+  pageContext: IndexPageContext;
   location: Location;
-  data: {allMarkdownRemark: CategoryPageQuery};
+  data: {allMarkdownRemark: IndexPageQuery};
 }): JSX.Element => {
-  const {category} = pageContext;
-  const postEdges = data.allMarkdownRemark.edges;
+  const {allMarkdownRemark} = data;
+  const postEdges = allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={<HeaderTitle />}>
       <Helmet>
-        <title>{`${config.siteTitle} | ${category}`}</title>
+        <title>{config.siteTitle}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
+      <SEOMeta postEdges={postEdges} />
+
       <Body postEdges={postEdges} context={pageContext} />
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query CategoryPageQuery($category: String, $skip: Int!, $limit: Int!) {
+  query IndexPageQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: {fields: [fields____date], order: DESC}
       limit: $limit
       skip: $skip
-      filter: {frontmatter: {category: {eq: $category}}}
     ) {
       edges {
         node {
@@ -66,7 +67,7 @@ export const pageQuery = graphql`
   }
 `;
 
-export interface CategoryPageQuery {
+export interface IndexPageQuery {
   edges: MarkdownRemarkEdge[];
 }
 
@@ -92,4 +93,4 @@ export interface MarkdownRemarkEdge {
   };
 }
 
-export default CategoryTemplate;
+export default HomeTemplate;

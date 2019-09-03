@@ -2,21 +2,15 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
-import Layout from '../layout';
+import Layout from '../../layout';
 import Img from 'gatsby-image';
-import {UserInfo} from '../components/molecules/';
-import {
-  TagList,
-  SocialLinks,
-  HeaderTitle,
-  SEOMeta,
-  Markdown,
-} from '../components/atoms/';
-import {PostPreviewCard} from '../components/molecules';
-import config from '../../data/SiteConfig';
-import {PostPageContext} from '../../gatsby-node_';
+import {UserInfo} from '../molecules';
+import {TagList, SocialLinks, HeaderTitle, SEOMeta, Markdown} from '../atoms';
+import {PostPreviewCard} from '../molecules';
+import config from '../../../data/SiteConfig';
+import {PostPageContext} from '../../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
-import {PostPreviewCardContaienr} from '../templates/body';
+import {PostPreviewCardContaienr} from './Body';
 
 export const PostTemplate = (
   props: {location: Location; data: PostPageQuery} & {

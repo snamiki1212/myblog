@@ -1,29 +1,29 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import Layout from '../layout';
-import {HeaderTitle} from '../components/atoms/';
-import config from '../../data/SiteConfig';
+import Layout from '../../layout';
+import {HeaderTitle} from '../atoms';
+import config from '../../../data/SiteConfig';
 import {FluidObject} from 'gatsby-image';
-import {TagPageContext} from '../../gatsby-node_';
-import {Body} from './body';
+import {CategoryPageContext} from '../../../gatsby-node_';
+import {Body} from './Body';
 
-export const TagTemplate = ({
+export const CategoryTemplate = ({
   pageContext,
   location,
   data,
 }: {
-  pageContext: TagPageContext;
+  pageContext: CategoryPageContext;
   location: Location;
-  data: {allMarkdownRemark: TagPageQuery};
+  data: {allMarkdownRemark: CategoryPageQuery};
 }): JSX.Element => {
-  const {tag} = pageContext;
+  const {category} = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={<HeaderTitle />}>
       <Helmet>
-        <title>{`${config.siteTitle} | ${tag}`}</title>
+        <title>{`${config.siteTitle} | ${category}`}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
       <Body postEdges={postEdges} context={pageContext} />
@@ -32,12 +32,12 @@ export const TagTemplate = ({
 };
 
 export const pageQuery = graphql`
-  query TagPageQuery($tag: String, $skip: Int!, $limit: Int!) {
+  query CategoryPageQuery($category: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: {fields: [fields____date], order: DESC}
       limit: $limit
       skip: $skip
-      filter: {frontmatter: {tags: {in: [$tag]}}}
+      filter: {frontmatter: {category: {eq: $category}}}
     ) {
       edges {
         node {
@@ -66,7 +66,7 @@ export const pageQuery = graphql`
   }
 `;
 
-export interface TagPageQuery {
+export interface CategoryPageQuery {
   edges: MarkdownRemarkEdge[];
 }
 
@@ -92,4 +92,4 @@ export interface MarkdownRemarkEdge {
   };
 }
 
-export default TagTemplate;
+export default CategoryTemplate;

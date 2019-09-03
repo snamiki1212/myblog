@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import {colors} from '../../data/color';
-import {PaginationContext, SubPageContext} from '../../gatsby-node_';
-import {Paginator, SubPageLinks} from '../components/atoms/';
-import {AuthorCard, PostPreviewCard} from '../components/molecules';
+import {colors} from '../../../data/color';
+import {PaginationContext, SubPageContext} from '../../../gatsby-node_';
+import {Paginator, SubPageLinks} from '../atoms';
+import {AuthorCard, PostPreviewCard} from '../molecules';
 
 export const Body = ({
   postEdges,

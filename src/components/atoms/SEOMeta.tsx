@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import urljoin from 'url-join';
 import config from '../../../data/SiteConfig';
-import {MarkdownRemark} from '../../templates/post';
-import {MarkdownRemarkEdge} from '../../templates/index';
+import {MarkdownRemark} from '../templates/PostTemplate';
+import {MarkdownRemarkEdge} from '../templates/HomeTemplate';
 
 const fetchData =
   // helper

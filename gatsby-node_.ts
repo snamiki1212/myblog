@@ -7,10 +7,11 @@ import siteConfig from './data/SiteConfig';
 // CONSTANTS
 const POSTS_PER_PAGE = 30;
 const POSTS_AS_SUGGESTION = 4;
-const PostPage = path.resolve('src/templates/post.tsx');
-const TagPage = path.resolve('src/templates/tag.tsx');
-const CategoryPage = path.resolve('src/templates/category.tsx');
-const IndexPage = path.resolve('src/templates/index.tsx');
+const templatesDir = 'src/components/templates';
+const PostPage = path.resolve(`${templatesDir}/PostTemplate.tsx`);
+const TagPage = path.resolve(`${templatesDir}/TagTemplate.tsx`);
+const CategoryPage = path.resolve(`${templatesDir}/CategoryTemplate.tsx`);
+const IndexPage = path.resolve(`${templatesDir}/HomeTemplate.tsx`);
 
 // -----------------------------------------------------------------------
 ///// INTERFACE
