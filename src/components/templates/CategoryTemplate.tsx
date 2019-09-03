@@ -1,11 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import Layout from '../../layout';
 import config from '../../../data/SiteConfig';
-import {FluidObject} from 'gatsby-image';
 import {CategoryPageContext} from '../../../gatsby-node_';
-import {Body} from './Body';
+import {Body, Layout} from '../../components/templates';
+import {MarkdownRemarkEdge} from '../../types';
 
 export const CategoryTemplate = ({
   pageContext,
@@ -28,7 +27,7 @@ export const CategoryTemplate = ({
   );
 };
 
-export const pageQuery = graphql`
+export const categoryPageQuery = graphql`
   query CategoryPageQuery($category: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: {fields: [fields____date], order: DESC}
@@ -65,28 +64,6 @@ export const pageQuery = graphql`
 
 export interface CategoryPageQuery {
   edges: MarkdownRemarkEdge[];
-}
-
-export interface MarkdownRemarkEdge {
-  node: {
-    fields: {
-      _slug: string;
-      _date: Date;
-    };
-    excerpt: string;
-    timeToRead: number;
-    frontmatter: {
-      title: string;
-      tags: string;
-      cover: {
-        publicURL: string;
-        childImageSharp: {
-          fluid: FluidObject;
-        };
-      };
-      date: Date;
-    };
-  };
 }
 
 export default CategoryTemplate;

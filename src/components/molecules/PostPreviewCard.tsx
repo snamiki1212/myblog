@@ -9,7 +9,7 @@ import moment from 'moment';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {XIcon} from '../atoms';
-import {MarkdownRemarkEdge} from '../templates/HomeTemplate';
+import {MarkdownRemarkEdge} from '../../types';
 import Img from 'gatsby-image';
 
 export const PostPreviewCard = ({

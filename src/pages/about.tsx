@@ -5,7 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
-import Layout from '../layout';
+import Layout from '../components/templates/Layout';
 import {MyLinks} from '../components/atoms';
 import config from '../../data/SiteConfig';
 import styled from 'styled-components';

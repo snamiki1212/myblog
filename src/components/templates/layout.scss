@@ -1,0 +1,92 @@
+// TODO: css ファイルで持たないで、css in js にして、管理したい
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+// baclground color
+$backgroundBlack1: #222222;
+
+$backgroundVivid1: #005f56;
+
+$backgroundWhite1: #ffffff;
+$backgroundWhite2: #f3f3f3;
+$backgroundWhite3: #e5e3df;
+
+// font color
+$fontBlack1: #222222;
+$fontBlack2: #111111;
+$fontVivid1: #005f56;
+$fontVivid2: #00897b;
+$fontVivid3: #33a095;
+$fontWhite1: #ffffff;
+$fontWhite2: #dddddd;
+$fontGray1: #666666;
+$fontGray2: #888888;
+
+// design
+$hLeft: $fontGray1;//darkgray;
+$hBackgroundColor: $backgroundWhite2;// #7B7B7B;
+$listBackgroundColor: $backgroundWhite2;// #FAFAFA;
+
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  &:link, &:visited{
+    color: $fontVivid2;
+  }
+  &:hover{
+    color: $fontGray1;
+    transition: 0.5s;
+  }
+}
+
+
+.affi-custom-button {
+	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+.affi-custom-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
+	background-color:#72b352;
+}
+.affi-custom-button:active {
+	position:relative;
+	top:1px;
+}

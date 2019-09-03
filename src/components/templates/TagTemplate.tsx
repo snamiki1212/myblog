@@ -1,11 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import Layout from '../../layout';
 import config from '../../../data/SiteConfig';
-import {FluidObject} from 'gatsby-image';
 import {TagPageContext} from '../../../gatsby-node_';
-import {Body} from './Body';
+import {Body, Layout} from '../../components/templates';
+import {MarkdownRemarkEdge} from '../../types';
 
 export const TagTemplate = ({
   pageContext,
@@ -28,7 +27,7 @@ export const TagTemplate = ({
   );
 };
 
-export const pageQuery = graphql`
+export const tagPageQuery = graphql`
   query TagPageQuery($tag: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: {fields: [fields____date], order: DESC}
@@ -65,28 +64,6 @@ export const pageQuery = graphql`
 
 export interface TagPageQuery {
   edges: MarkdownRemarkEdge[];
-}
-
-export interface MarkdownRemarkEdge {
-  node: {
-    fields: {
-      _slug: string;
-      _date: Date;
-    };
-    excerpt: string;
-    timeToRead: number;
-    frontmatter: {
-      title: string;
-      tags: string;
-      cover: {
-        publicURL: string;
-        childImageSharp: {
-          fluid: FluidObject;
-        };
-      };
-      date: Date;
-    };
-  };
 }
 
 export default TagTemplate;

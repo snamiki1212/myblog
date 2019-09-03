@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
-import Layout from '../../layout';
+import {Layout} from '../../components/templates';
 import Img from 'gatsby-image';
 import {UserInfo} from '../molecules';
 import {TagList, SocialLinks, SEOMeta, Markdown} from '../atoms';
@@ -147,7 +147,7 @@ interface AllMarkdownRemark {
   }[];
 }
 
-export const pageQuery = graphql`
+export const postPageQuery = graphql`
   query PostPageQuery($slug: String!, $suggestionNodeIDs: [String]) {
     allMarkdownRemark(filter: {id: {in: $suggestionNodeIDs}}) {
       edges {

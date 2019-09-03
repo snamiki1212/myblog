@@ -1,13 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {Navigation} from '../components/molecules/';
-import config from '../../data/SiteConfig';
+import {Navigation} from '../molecules';
+import config from '../../../data/SiteConfig';
 import {ThemeProvider} from '@material-ui/styles';
-import {theme} from '../theme';
+import {theme} from '../../theme';
 
-import './index.scss';
+import './layout.scss';
 
-const Layout = ({children}: {children: any}): JSX.Element => {
+export const Layout = ({children}: {children: any}): JSX.Element => {
   return (
     <>
       <Helmet>

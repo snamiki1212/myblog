@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import urljoin from 'url-join';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemark} from '../templates/PostTemplate';
-import {MarkdownRemarkEdge} from '../templates/HomeTemplate';
+import {MarkdownRemarkEdge} from '../../types';
 
 const fetchData =
   // helper

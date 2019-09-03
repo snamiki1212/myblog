@@ -4,9 +4,8 @@ import Helmet from 'react-helmet';
 import config from '../../../data/SiteConfig';
 import {IndexPageContext} from '../../../gatsby-node_';
 import {SEOMeta} from '../atoms';
-import {Body} from './Body';
-import Layout from '../../layout';
-import {FluidObject} from 'gatsby-image';
+import {Body, Layout} from '../../components/templates';
+import {MarkdownRemarkEdge} from '../../types';
 
 export const HomeTemplate = ({
   pageContext,
@@ -31,8 +30,8 @@ export const HomeTemplate = ({
   );
 };
 
-export const pageQuery = graphql`
-  query IndexPageQuery($skip: Int!, $limit: Int!) {
+export const homePageQuery = graphql`
+  query HomePageQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: {fields: [fields____date], order: DESC}
       limit: $limit
@@ -67,28 +66,6 @@ export const pageQuery = graphql`
 
 export interface IndexPageQuery {
   edges: MarkdownRemarkEdge[];
-}
-
-export interface MarkdownRemarkEdge {
-  node: {
-    fields: {
-      _slug: string;
-      _date: Date;
-    };
-    excerpt: string;
-    timeToRead: number;
-    frontmatter: {
-      title: string;
-      tags: string;
-      cover: {
-        publicURL: string;
-        childImageSharp: {
-          fluid: FluidObject;
-        };
-      };
-      date: Date;
-    };
-  };
 }
 
 export default HomeTemplate;
