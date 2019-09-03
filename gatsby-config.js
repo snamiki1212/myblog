@@ -25,20 +25,19 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
 
-    // {
-    // TODO: 導入してもエラー出て、潰しきれないので、いったんコメントアウト。
-    //   // NOTE: ページごとのQuery(graph-ql)の定義を元に、TypeScirptのTypeDefiniedを生成してくれる
-    //   resolve: `gatsby-plugin-ts`,
-    //   options: {
-    //     tsLoader: {
-    //       logLevel: 'warn',
-    //     },
-    //     fileName: `types/graphql-types.ts`,
-    //     codegen: true,
-    //     codegenDelay: 250,
-    //     alwaysCheck: false,
-    //   },
-    // },
+    {
+      // ページごとのQuery(graph-ql)の定義を元に、TypeScirptのTypeDefinie を生成してくれる
+      resolve: `gatsby-plugin-ts`,
+      options: {
+        tsLoader: {
+          logLevel: 'warn',
+        },
+        fileName: `types/graphql-types.ts`,
+        codegen: true,
+        codegenDelay: 250,
+        typeCheck: process.env.NODE_ENV !== 'production', // Disable type checking in production
+      },
+    },
 
     {
       resolve: 'gatsby-source-filesystem',

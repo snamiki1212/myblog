@@ -11,6 +11,7 @@ import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
 import {PostPreviewCardContaienr} from './Body';
+import {MarkdownRemarkEdge} from '../../types';
 
 export const PostTemplate = (
   props: {data: PostPageQuery} & {
@@ -125,26 +126,7 @@ export interface MarkdownRemark {
 }
 
 interface AllMarkdownRemark {
-  // TODO: ここのデータは「おすすめ・関連記事」など用なので、Indexの値と共通化（Fragment）して、整理しておきたい。
-  edges: {
-    node: {
-      fields: {
-        _slug: string;
-        _date: string;
-      };
-      excerpt: string;
-      frontmatter: {
-        title: string;
-        tags: string;
-        cover: {
-          childImageSharp: {
-            fluid: FluidObject;
-          };
-        };
-        date: string;
-      };
-    };
-  }[];
+  edges: MarkdownRemarkEdge[];
 }
 
 export const postPageQuery = graphql`
