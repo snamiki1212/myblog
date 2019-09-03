@@ -19,7 +19,6 @@ module.exports = {
     // },
   },
   plugins: [
-    // TODO: dot ファイルのプラグインを入れる
     // REF: https://takumon.com/2018/10/21/
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-lodash',

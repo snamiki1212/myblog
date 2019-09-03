@@ -34,8 +34,7 @@ const fetchData =
       // README: https://schema.org/Person
       '@context': 'http://schema.org',
       '@type': 'Person',
-
-      // TODO: configへ移動
+      //
       name: config.userName,
       jobTitle: config.jobTitle,
       email: config.email,
@@ -54,7 +53,6 @@ const fetchData =
 
     const breadCrumbList = isPost
       ? // README: https://developers.google.com/search/docs/data-types/breadcrumb
-
         {
           '@context': 'http://schema.org',
           '@type': 'BreadcrumbList',
@@ -74,7 +72,7 @@ const fetchData =
       '@context': 'http://schema.org',
       '@type': 'Organization',
       //
-      name: config.userName, // TODO: config に移動
+      name: config.userName,
       logo: {
         '@type': 'ImageObject',
         url: image,
@@ -88,8 +86,8 @@ const fetchData =
           '@type': 'NewsArticle',
           //
           dateModified: postNode.frontmatter.date, // TODO: markdown にこれを入れたい。
-          datePublished: postNode.frontmatter.date, // TODO:
-          headline: description.substring(0, 110), // Note: 先頭110文字までのみ。それ以上だとエラーになる。
+          datePublished: postNode.frontmatter.date, // TODO: markdown にこれを入れたい。
+          headline: description.substring(0, 110), // 先頭110文字までのみ。それ以上だとエラーになる。
           image: {
             '@type': 'ImageObject',
             url: image,

@@ -1,23 +1,9 @@
-import {graphql} from 'gatsby';
 import React from 'react';
-import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import {colors} from '../../data/color';
-import config from '../../data/SiteConfig';
-import {
-  IndexPageContext,
-  PaginationContext,
-  SubPageContext,
-} from '../../gatsby-node_';
-import {
-  HeaderTitle,
-  Paginator,
-  SEOMeta,
-  SubPageLinks,
-} from '../components/atoms/';
+import {PaginationContext, SubPageContext} from '../../gatsby-node_';
+import {Paginator, SubPageLinks} from '../components/atoms/';
 import {AuthorCard, PostPreviewCard} from '../components/molecules';
-import Layout from '../layout';
-import {FluidObject} from 'gatsby-image';
 
 export const Body = ({
   postEdges,

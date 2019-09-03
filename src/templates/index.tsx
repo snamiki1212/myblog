@@ -1,18 +1,10 @@
 import {graphql} from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
-import {colors} from '../../data/color';
 import config from '../../data/SiteConfig';
 import {IndexPageContext} from '../../gatsby-node_';
-import {
-  HeaderTitle,
-  Paginator,
-  SEOMeta,
-  SubPageLinks,
-} from '../components/atoms/';
-import {AuthorCard, PostPreviewCard} from '../components/molecules';
-import {Body} from './body'; // TODO:
+import {HeaderTitle, SEOMeta} from '../components/atoms/';
+import {Body} from './body';
 import Layout from '../layout';
 import {FluidObject} from 'gatsby-image';
 

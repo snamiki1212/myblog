@@ -6,7 +6,7 @@ import {HeaderTitle} from '../components/atoms/';
 import config from '../../data/SiteConfig';
 import {FluidObject} from 'gatsby-image';
 import {CategoryPageContext} from '../../gatsby-node_';
-import {Body} from './body'; // TODO:
+import {Body} from './body';
 
 export const CategoryTemplate = ({
   pageContext,

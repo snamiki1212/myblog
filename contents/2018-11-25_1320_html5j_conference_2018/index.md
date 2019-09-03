@@ -52,7 +52,7 @@ by えーじ @ google as developer advocate
 - Web 標準を取り決める仕組みなど Web を作っていくための仕組みについての話。
 - 最近の進化技術：「Video + Picture in Picture」「WebRTC」「WebXR」「WebAuthentication」「WebAssembly + WebAudio」
 
-- _Origin Trial_：昔は「ブラウザ名 prefix ＋機能名」で命名していたが、実装者もそれで実装してしまうため負債が大量に生まれた。それを解決するための新しい手段でドメインベースで行う。// TODO あとで詳しく調べる
+- _Origin Trial_：昔は「ブラウザ名 prefix ＋機能名」で命名していたが、実装者もそれで実装してしまうため負債が大量に生まれた。それを解決するための新しい手段でドメインベースで行う。
 
 - _Extensible Web Manifest_ ( e.g. WebComponents / CSS Houdini / Service Worker)：低レイヤーで API を作成しておき高レイヤーの仕様を柔らかくしておくことで、技術のグロースと共によりよい方法が生まれた時にその部分は可変できるようになった。
 
