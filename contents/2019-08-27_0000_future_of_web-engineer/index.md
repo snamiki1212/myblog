@@ -2,7 +2,7 @@
 title: 'Webエンジニアの「将来性がない」は本当か？→むしろ将来性の塊'
 cover: 'cover.png'
 date: '2019-08-27 00:00'
-category: 'Tech'
+category: 'Career'
 tags:
   - SEtoWeb
 slug: future-of-web-engineer
