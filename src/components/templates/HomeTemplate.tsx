@@ -3,25 +3,23 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import config from '../../../data/SiteConfig';
 import {IndexPageContext} from '../../../gatsby-node_';
-import {HeaderTitle, SEOMeta} from '../atoms';
+import {SEOMeta} from '../atoms';
 import {Body} from './Body';
 import Layout from '../../layout';
 import {FluidObject} from 'gatsby-image';
 
 export const HomeTemplate = ({
   pageContext,
-  location,
   data,
 }: {
   pageContext: IndexPageContext;
-  location: Location;
   data: {allMarkdownRemark: IndexPageQuery};
 }): JSX.Element => {
   const {allMarkdownRemark} = data;
   const postEdges = allMarkdownRemark.edges;
 
   return (
-    <Layout location={location} title={<HeaderTitle />}>
+    <Layout>
       <Helmet>
         <title>{config.siteTitle}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />

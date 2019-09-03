@@ -1,4 +1,5 @@
 import React from 'react';
+import {HeaderTitle} from '../../components/atoms';
 // material-ui/core
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -6,7 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import Slide from '@material-ui/core/Slide';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {makeStyles, Theme, createStyles} from '@material-ui/core/styles';
-
 // Misc
 import styled from 'styled-components';
 
@@ -60,7 +60,7 @@ const HideOnScroll = (props: Props): JSX.Element => {
 };
 
 export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
-  const {children, LocalTitle} = props;
+  const {children} = props;
 
   const classes = useStyles(props); // TODO: props で本当によい？
 
@@ -72,7 +72,7 @@ export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
           <AppBar position="fixed" className={classes.appBar}>
             <Toolbar>
               <Typography variant="h6" noWrap>
-                {LocalTitle}
+                <HeaderTitle />
               </Typography>
             </Toolbar>
           </AppBar>

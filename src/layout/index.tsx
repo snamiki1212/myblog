@@ -7,9 +7,7 @@ import {theme} from '../theme';
 
 import './index.scss';
 
-const Layout = (props): JSX.Element => {
-  const {children} = props;
-
+const Layout = ({children}: {children: any}): JSX.Element => {
   return (
     <>
       <Helmet>
@@ -21,7 +19,7 @@ const Layout = (props): JSX.Element => {
       </Helmet>
 
       <ThemeProvider theme={theme}>
-        <Navigation LocalTitle={props.title}>
+        <Navigation>
           <div>
             <div style={{height: `55px`}} /> {/* Navigation の高さの分の空間 */}
             {children}

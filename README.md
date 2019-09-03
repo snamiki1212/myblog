@@ -21,9 +21,13 @@
 - TypeScript をネイティブにサポートしていないので、TSファイルをrequire している。
 - `/gatsbyjs` にて TSファイルで定義している。
 
-### `/src/components`
+### `src/components`
 
 - AtomicDesign でディレクトリとコンポーネントを配置
+
+### `src/pages`
+
+gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
 
 ## Usage
 

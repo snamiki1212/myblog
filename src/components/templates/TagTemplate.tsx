@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import Layout from '../../layout';
-import {HeaderTitle} from '../atoms';
 import config from '../../../data/SiteConfig';
 import {FluidObject} from 'gatsby-image';
 import {TagPageContext} from '../../../gatsby-node_';
@@ -10,18 +9,16 @@ import {Body} from './Body';
 
 export const TagTemplate = ({
   pageContext,
-  location,
   data,
 }: {
   pageContext: TagPageContext;
-  location: Location;
   data: {allMarkdownRemark: TagPageQuery};
 }): JSX.Element => {
   const {tag} = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={location} title={<HeaderTitle />}>
+    <Layout>
       <Helmet>
         <title>{`${config.siteTitle} | ${tag}`}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />

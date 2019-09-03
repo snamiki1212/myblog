@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import Layout from '../layout';
-import {HeaderTitle, MyLinks} from '../components/atoms';
+import {MyLinks} from '../components/atoms';
 import config from '../../data/SiteConfig';
 import styled from 'styled-components';
 
@@ -14,9 +14,9 @@ import styled from 'styled-components';
 const myTwitterUrl = config.mySocials.find(ele => ele.icon === 'twitter').url;
 const myLinkedinUrl = config.mySocials.find(ele => ele.icon === 'linkedin').url;
 
-const AboutPage = (props: {location: Location}): JSX.Element => {
+const AboutPage = (): JSX.Element => {
   return (
-    <Layout location={props.location} title={<HeaderTitle />}>
+    <Layout>
       <Helmet>
         <title>{`About | ${config.siteTitle}`}</title>
         <link rel="canonical" href={`${config.siteUrl}/about/`} />

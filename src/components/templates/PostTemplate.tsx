@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Layout from '../../layout';
 import Img from 'gatsby-image';
 import {UserInfo} from '../molecules';
-import {TagList, SocialLinks, HeaderTitle, SEOMeta, Markdown} from '../atoms';
+import {TagList, SocialLinks, SEOMeta, Markdown} from '../atoms';
 import {PostPreviewCard} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
@@ -13,7 +13,7 @@ import {FluidObject} from 'gatsby-image';
 import {PostPreviewCardContaienr} from './Body';
 
 export const PostTemplate = (
-  props: {location: Location; data: PostPageQuery} & {
+  props: {data: PostPageQuery} & {
     pageContext: PostPageContext;
   }
 ): JSX.Element => {
@@ -23,7 +23,7 @@ export const PostTemplate = (
   const post = postNode.frontmatter;
 
   return (
-    <Layout location={props.location} title={<HeaderTitle />}>
+    <Layout>
       <SPostPage>
         <Helmet>
           <title>{`${post.title}`}</title>
