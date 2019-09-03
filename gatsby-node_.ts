@@ -5,7 +5,7 @@ import siteConfig from './data/SiteConfig';
 
 // -----------------------------------------------------------------------
 // CONSTANTS
-const POSTS_PERT_PAGE = 30;
+const POSTS_PER_PAGE = 30;
 const POSTS_AS_SUGGESTION = 4;
 const PostPage = path.resolve('src/templates/post.tsx');
 const TagPage = path.resolve('src/templates/tag.tsx');
@@ -13,24 +13,83 @@ const CategoryPage = path.resolve('src/templates/category.tsx');
 const IndexPage = path.resolve('src/templates/index.tsx');
 
 // -----------------------------------------------------------------------
-// TYPE
-export interface IndexPageContext {
+///// INTERFACE
+// Context
+export type PaginationContext = {
   limit: number;
   skip: number;
-  numPages: number;
+  lastPage: number;
   currentPage: number;
-}
+};
 
-export interface CategoryPageContext {
-  category: string;
-}
+export type SubPageContext = {
+  categories: SubPageProps[];
+  tags: SubPageProps[];
+};
 
-export interface TagPageContext {
-  tag: string;
-}
-export interface PostPageContext {
+export type IndexPageContext = SubPageContext & PaginationContext;
+
+export type CategoryPageContext = SubPageContext &
+  PaginationContext & {
+    category: string;
+  };
+
+export type TagPageContext = SubPageContext &
+  PaginationContext & {
+    tag: string;
+  };
+
+export type PostPageContext = {
   slug: string;
   suggestionNodeIDs: string[];
+} & SubPageContext;
+
+// entity
+type SubPageProps = {
+  // category / tags
+  name: string;
+  count: number;
+  path: string;
+};
+
+class SubPageList {
+  constructor(type: 'category' | 'tag') {
+    this.type = type;
+  }
+  type: 'category' | 'tag';
+  subPageList: SubPageProps[] = [];
+
+  generatePath = (name: string): string => {
+    switch (this.type) {
+      case 'category':
+        return `/categories/${_.kebabCase(name)}`;
+      case 'tag':
+        return `/tags/${_.kebabCase(name)}`;
+      default:
+        throw new Error('unexpected type error');
+    }
+  };
+
+  incrementOrAdd = (name: string): void => {
+    if (!name) return;
+    const path = this.generatePath(name);
+    const maybeIndex = this.subPageList.findIndex(
+      subPage => subPage.name === name
+    );
+    const exist = maybeIndex >= 0;
+
+    if (exist) {
+      // INCREMENT: 既存の項目
+      this.subPageList[maybeIndex] = {
+        ...this.subPageList[maybeIndex],
+        count: ++this.subPageList[maybeIndex].count,
+        path,
+      };
+    } else {
+      // ADD: 新しく項目を追加
+      this.subPageList = [...this.subPageList, {name, count: 1, path}];
+    }
+  };
 }
 
 /********************************************************************
@@ -113,6 +172,10 @@ const fetchRandoms = (arr: any[], n = 1): any => {
   return result;
 };
 
+// Pagination によるページ数の、最終ページ数を取得
+const calcPaginationNum = (pageLength: number): number =>
+  Math.ceil(pageLength / POSTS_PER_PAGE);
+
 // -----------------------------------------------------------------------
 // gatsby-node (readme: https://www.gatsbyjs.org/docs/node-apis/#createPages)
 export const createPages: any = async ({graphql, actions}): Promise<any> => {
@@ -127,15 +190,107 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
       const {allMarkdownRemark} = data;
       const {edges: allPosts} = allMarkdownRemark;
 
-      const numPages = Math.ceil(allPosts.length / POSTS_PERT_PAGE);
+      const lastPostPage = calcPaginationNum(allPosts.length);
 
-      // post の index/pagination のページ
-      Array.from({length: numPages}).forEach((_, i): void => {
+      // tag/category の一覧データを作成
+      const {
+        _categories: categories,
+        _tags: tags,
+      }: {_categories: SubPageList; _tags: SubPageList} = allPosts.reduce(
+        ({_categories, _tags}, edge) => {
+          const {
+            tags: edgeTags,
+            category: edgeCategory,
+          } = edge.node.frontmatter;
+
+          // tags
+          edgeTags.forEach((tag: string): void => {
+            _tags.incrementOrAdd(tag);
+          });
+
+          // category
+          _categories.incrementOrAdd(edgeCategory);
+
+          return {_categories, _tags};
+        },
+        {
+          _categories: new SubPageList('category'),
+          _tags: new SubPageList('tag'),
+        }
+      );
+
+      const subPageContext: SubPageContext = {
+        categories: categories.subPageList,
+        tags: tags.subPageList,
+      };
+
+      // Category のページ生成
+      categories.subPageList.forEach(
+        // Categoryごとにループ
+        (subPage): void => {
+          const lastCategoryPage = calcPaginationNum(subPage.count);
+          Array.from({length: lastCategoryPage}).forEach((_x, i) => {
+            // Paginationごとにループ
+            const categoryPageContext: CategoryPageContext = {
+              // Pagination
+              limit: POSTS_PER_PAGE,
+              skip: i * POSTS_PER_PAGE,
+              lastPage: lastCategoryPage,
+              currentPage: i + 1,
+              // SubPageContext
+              ...subPageContext,
+              //
+              category: subPage.name,
+            };
+
+            createPage({
+              path: `${subPage.path}/${i === 0 ? '' : i + 1}`,
+              component: CategoryPage,
+              context: categoryPageContext,
+            });
+          });
+        }
+      );
+
+      // Tag のページ生成
+      tags.subPageList.forEach(
+        // Categoryごとにループ
+        (subPage): void => {
+          const lastCategoryPage = calcPaginationNum(subPage.count);
+          Array.from({length: lastCategoryPage}).forEach((_x, i) => {
+            // Paginationごとにループ
+            const tagPageContext: TagPageContext = {
+              // Pagination Context
+              limit: POSTS_PER_PAGE,
+              skip: i * POSTS_PER_PAGE,
+              lastPage: lastCategoryPage,
+              currentPage: i + 1,
+              // SubPageContext
+              ...subPageContext,
+              //
+              tag: subPage.name,
+            };
+
+            createPage({
+              path: `${subPage.path}/${i === 0 ? '' : i + 1}`,
+              component: TagPage,
+              context: tagPageContext,
+            });
+          });
+        }
+      );
+
+      // Post の index/pagination のページ生成
+      Array.from({length: lastPostPage}).forEach((_, i): void => {
         const indexPageContext: IndexPageContext = {
-          limit: POSTS_PERT_PAGE,
-          skip: i * POSTS_PERT_PAGE,
-          numPages,
+          // Pagination Context
+          limit: POSTS_PER_PAGE,
+          skip: i * POSTS_PER_PAGE,
+          lastPage: lastPostPage,
           currentPage: i + 1,
+          // SubPage Context
+          ...subPageContext,
+          // etc
         };
 
         createPage({
@@ -143,23 +298,6 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
           component: IndexPage,
           context: indexPageContext,
         });
-      });
-
-      // tag/category の一覧の格納用の変数 (Set なら重複値を丸め込んでくれる)
-      const tagSet = new Set<string>();
-      const categorySet = new Set<string>();
-
-      // Post ページの作成 & tag/category の一覧の作成
-      allPosts.forEach((edge): void => {
-        if (edge.node.frontmatter.tags) {
-          edge.node.frontmatter.tags.forEach((tag: string): void => {
-            tagSet.add(tag);
-          });
-        }
-
-        if (edge.node.frontmatter.category) {
-          categorySet.add(edge.node.frontmatter.category);
-        }
       });
 
       // Postページの作成
@@ -179,6 +317,9 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
         );
 
         const postPageCtx: PostPageContext = {
+          // SubPageContext
+          ...subPageContext,
+          // etc
           slug: edge.node.fields._slug,
           suggestionNodeIDs,
         };
@@ -187,26 +328,6 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
           path: edge.node.fields._slug,
           component: PostPage,
           context: postPageCtx,
-        });
-      });
-
-      // TagPage の作成
-      Array.from(tagSet).forEach((tag: string): void => {
-        const tagCtx: TagPageContext = {tag};
-        createPage({
-          path: `/tags/${_.kebabCase(tag)}/`,
-          component: TagPage,
-          context: tagCtx,
-        });
-      });
-
-      // CategoriesPage の作成
-      Array.from(categorySet).forEach((category: string): void => {
-        const categoryCtx: CategoryPageContext = {category};
-        createPage({
-          path: `/categories/${_.kebabCase(category)}/`,
-          component: CategoryPage,
-          context: categoryCtx,
         });
       });
     } catch (errors) {

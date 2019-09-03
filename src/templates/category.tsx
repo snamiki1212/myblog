@@ -4,36 +4,41 @@ import {graphql} from 'gatsby';
 import Layout from '../layout';
 import {HeaderTitle} from '../components/atoms/';
 import config from '../../data/SiteConfig';
+import {FluidObject} from 'gatsby-image';
+import {CategoryPageContext} from '../../gatsby-node_';
+import {Body} from './body'; // TODO:
 
-export const CategoryTemplate = (props: any): JSX.Element => {
-  const {category} = props.pageContext;
-  const postEdges = props.data.allMarkdownRemark.edges;
+export const CategoryTemplate = ({
+  pageContext,
+  location,
+  data,
+}: {
+  pageContext: CategoryPageContext;
+  location: Location;
+  data: {allMarkdownRemark: CategoryPageQuery};
+}): JSX.Element => {
+  const {category} = pageContext;
+  const postEdges = data.allMarkdownRemark.edges;
 
   return (
-    <Layout location={props.location} title={<HeaderTitle />}>
-      {/* <div className="category-container">
-        <Helmet>
-          <title>
-            {`Posts in category "${category}" | ${config.siteTitle}`}
-          </title>
-          <link
-            rel="canonical"
-            href={`${config.siteUrl}/categories/${category}`}
-          />
-        </Helmet>
-      </div> */}
+    <Layout location={location} title={<HeaderTitle />}>
+      <Helmet>
+        <title>{`${config.siteTitle} | ${category}`}</title>
+        <link rel="canonical" href={`${config.siteUrl}`} />
+      </Helmet>
+      <Body postEdges={postEdges} context={pageContext} />
     </Layout>
   );
 };
 
 export const pageQuery = graphql`
-  query CategoryPage($category: String) {
+  query CategoryPageQuery($category: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      limit: 1000
       sort: {fields: [fields____date], order: DESC}
+      limit: $limit
+      skip: $skip
       filter: {frontmatter: {category: {eq: $category}}}
     ) {
-      totalCount
       edges {
         node {
           fields {
@@ -46,10 +51,10 @@ export const pageQuery = graphql`
             title
             tags
             cover {
+              publicURL
               childImageSharp {
                 fluid {
-                  base64
-                  originalName
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -60,5 +65,31 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export interface CategoryPageQuery {
+  edges: MarkdownRemarkEdge[];
+}
+
+export interface MarkdownRemarkEdge {
+  node: {
+    fields: {
+      _slug: string;
+      _date: Date;
+    };
+    excerpt: string;
+    timeToRead: number;
+    frontmatter: {
+      title: string;
+      tags: string;
+      cover: {
+        publicURL: string;
+        childImageSharp: {
+          fluid: FluidObject;
+        };
+      };
+      date: Date;
+    };
+  };
+}
 
 export default CategoryTemplate;

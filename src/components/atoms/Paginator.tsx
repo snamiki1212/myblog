@@ -2,12 +2,10 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
-import {IndexPageContext} from '../../../gatsby-node_';
+import {PaginationContext} from '../../../gatsby-node_';
 
-export const Paginator = (props: {
-  pageContext: IndexPageContext;
-}): JSX.Element => {
-  const {currentPage, lastPage} = props.pageContext;
+export const Paginator = (props: {context: PaginationContext}): JSX.Element => {
+  const {currentPage, lastPage} = props.context;
 
   return (
     <Container>

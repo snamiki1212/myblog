@@ -8,3 +8,4 @@ export * from './PostCoverRaw';
 export * from './HatenaShareButton';
 export * from './XIcon';
 export * from './Markdown';
+export * from './SubPageLinks';

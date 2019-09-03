@@ -16,7 +16,7 @@ import {PostPreviewCard} from '../components/molecules';
 import config from '../../data/SiteConfig';
 import {PostPageContext} from '../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
-import {PostPreviewCardContaienr} from '../templates/index';
+import {PostPreviewCardContaienr} from '../templates/body';
 
 export const PostTemplate = (
   props: {location: Location; data: PostPageQuery} & {
