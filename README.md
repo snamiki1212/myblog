@@ -41,10 +41,10 @@ Create `.env.development` from `.env` and secure-data.
   - [x] prism を整理する
   - [x] gatsbyjs の設定周りを整理する
   - [ ] TypeScript フレンドリーにする（特にGatsbyJSとPropsの値）
-  - [ ] /src 配下のディレクトリ構造を整理する
-    - [ ] /layout を消したい
-    - [ ] /pages を消したい
-    - [ ] /templates を消したい
+  - [x] /src 配下のディレクトリ構造を整理する
+    - [x] /layout を消したい
+    - [ ] ~/pages を消したい~
+    - [ ] ~/templates を消したい~
 - CSS
   - [x] code style
   - [x] more clickable bottom-link
