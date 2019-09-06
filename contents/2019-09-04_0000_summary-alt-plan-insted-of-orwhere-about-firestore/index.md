@@ -76,7 +76,7 @@ const me = '<Userモデルの自分のデータ>'
 const lastQ1Visible = '<q1の前回取得分の最後>'
 const lastQ2Visible = '<q2の前回取得分の最後>'
 
-const q1 = await db
+const snap1 = await db
   .collection('messages')
   .where('senderID', '==', me.id)
   .orderBy('updatedAt')
@@ -84,13 +84,15 @@ const q1 = await db
   .startAt(lastP1Visible)
   .get()
 
-const q2 = await db
+const snap2 = await db
   .collection('messages')
   .where('receiverID', '==', me.id)
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastP2Visible)
   .get()
+
+const [q1, q2]: Message[] = [snap1, snap2].map(snap => ({ id: snap.id, ...snap.data() })) // 結果をentity に格納
 
 const result = sortDesc([...q1, ...q2]) // `sortDesc` はupdatedAt で ソートをしてくれるようなヘルパーの想定
 ```
@@ -121,7 +123,7 @@ const result = sortDesc([...q1, ...q2]) // `sortDesc` はupdatedAt で ソート
 
 ```ts
 // firestore:viewableMessages/{viewableMessage}
-type viewableMessage = {
+type ViewableMessage = {
   messageID: string
   userID: string // <= senderID or receiverID
   createdAt: Date
@@ -173,21 +175,23 @@ const me = '<Userモデルの自分のデータ>'
 const lastVisible = '<前回取得分の最後>'
 
 // ①viewableMessageから取得。これで、ほしいMessageIDの一覧がわかる。
-const viewableMessages = db
+const snaps1 = db
   .collection('viewableMessages')
   .where('userID', '==', me.id)
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastVisible)
   .get()
+const viewableMessages: ViewableMessage[] = snaps1.map(snap => ({ id: snap.id, ...snap.data() }))
 
 // ②viewableMessage が持つMessageIDの、Messagesをすべて取得。
-const result = viewableMessages.map(viewableMessage =>
+const snaps2 = viewableMessages.map(viewableMessage =>
   db
     .collection('messages')
     .doc(viewableMessage.messageID)
     .get()
 )
+const result = snaps2.map(snap => ({ id: snap.id, ...snap.data() }))
 ```
 
 案１に比べて、案２はロジックも少なく、Pagination・無限スクロールなども入れやすい形ですね。
