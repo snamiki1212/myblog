@@ -300,7 +300,7 @@ digraph G {
       label=Message
       senderID -> V
       receiver -> V
-      V= [label=viewableUserIDs]
+      V [label=viewableUserIDs]
     }
 }
 ```
