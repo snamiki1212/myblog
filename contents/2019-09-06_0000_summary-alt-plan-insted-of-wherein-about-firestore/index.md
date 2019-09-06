@@ -11,9 +11,9 @@ slug: summary-alt-plan-insted-of-wherein-about-firestore
 
 ## 【Firestore】「WhereIN」が使えない時の代案のまとめ
 
-こんにちは。平気でN+1を許容できるようになってきたNashです。
+こんにちは。平気で N+1 を許容できるようになってきた Nash です。
 
-この記事は、「FirestoreのようなNoSQLで WhereIN が使えないときの、代案をまとめた記事」です。
+この記事は、「Firestore のような NoSQL で WhereIN が使えないときの、代案をまとめた記事」です。
 
 ### 背景
 
@@ -21,29 +21,30 @@ slug: summary-alt-plan-insted-of-wherein-about-firestore
 
 ≫ [【Firestore】「orWhere」が使えない時の代案のまとめ](./summary-alt-plan-insted-of-orwhere-about-firestore)
 
-その中で、しれっと、「Firestoreでは、whereINがないので〜」というふうに書いたのですが、ここらへんをまとめていなかったことに気付いたので、記事にしようと思った次第です。
+その中で、しれっと、「Firestore では、whereIN がないので〜」というふうに書いたのですが、ここらへんをまとめていなかったことに気付いたので、記事にしようと思った次第です。
 
-## Firestoreで whereIN が使えるか？
+## Firestore で whereIN が使えるか？
 
-使えないです。(2019/9時点)
+使えないです。(2019/9 時点)
+
 - [github - firebase/firebase-js-sdk - FR: Firestore getAll() to retrieve multiple documents at once. #1176](https://github.com/firebase/firebase-js-sdk/issues/1176)
 
-ただし、Node.js 側に提供されているSDKには getAll が提供されています。
+ただし、Node.js 側に提供されている SDK には getAll が提供されています。
 
 - [@google-cloud/firestore 0.15.4 » Class: Transaction  |  Node.js  |  Google Cloud](https://github.com/firebase/firebase-js-sdk/issues/1176)
 
-ただ、これ、クエリレイヤーではなくて、SDKのレイヤーでforEachを回りしてるような気がしてます(TODO: きちんとコード確認していないので、あとで見る)
+ただ、これ、クエリレイヤーではなくて、SDK のレイヤーで forEach を回りしてるような気がしてます(TODO: きちんとコード確認していないので、あとで見る)
 
 ## whereIN の 代案
 
-というわけで、クエリレイヤー・SDKレイヤーでwhereINを実現できないので、アプリケーションレイヤーで解決しないといけないです。
+というわけで、クエリレイヤー・SDK レイヤーで whereIN を実現できないので、アプリケーションレイヤーで解決しないといけないです。
 
 案として下記２つ。
 
-- 【案 ①】すべてを一括で取得して、filterでデータをクレンジング
-- 【案 ②】N+1クエリを投げて、結果を結合
+- 【案 ①】すべてを一括で取得して、filter でデータをクレンジング
+- 【案 ②】N+1 クエリを投げて、結果を結合
 
-実際に使うときは基本的には、案②になるかと思いますが、場合によっては案①のほうが良いケースもあります。
+実際に使うときは基本的には、案 ② になるかと思いますが、場合によっては案 ① のほうが良いケースもあります。
 
 見ていきましょう。
 
@@ -64,72 +65,80 @@ type user = {
 type tweet = {
   id: string;
   likedUserIDs: string[]; // いいね　したUserIDのリスト
-  createdAt: Date;
-  updatedAt: Date;
+  // ...
 };
 ```
 
-- Twitterみたいに、ツイートしたものに対して、任意の人が「いいね」出来る
-- あるTweetの詳細画面で、「いいね」したUserの一覧を取りたい。
+- Twitter みたいに、ツイートしたものに対して、任意の人が「いいね」出来る
+- ある Tweet の詳細画面で、「いいね」した User の一覧を取りたい。
 
-## 【案 ①】すべてを一括で取得して、filterでデータをクレンジング
+## 【案 ①】すべてを一括で取得して、filter でデータをクレンジング
 
 だいたいこんな感じになります。
 
 ```ts
 // react-router から tweetIDを取る想定
-const tweetID = match.params.tweetID
+const tweetID = match.params.tweetID;
 
-const tweet = await db.collection('tweets').doc(tweetID).get()
+// tweet を 取得
+const snap = await db
+  .collection('tweets')
+  .doc(tweetID)
+  .get();
+const tweet = {id: snap.id, ...snap.data()};
 
 // (A) まず、一括ですべて取得
-const allFriends = await db.collection('users').get()
+const allFriends = await db.collection('users').get();
 
 // (B) その後に、データクレンジング
 const myFriends = allFriends.filter(maybeMyFriend =>
   tweet.likedFriendIDs.includes(maybeMyFriend.id)
-)
+);
 
-return myFriends
+return myFriends;
 ```
 
-- メリット：fetch回数が少ない。
-- デメリット：filterの計算コストの処理時間がかかる
-- デメリット：無駄なデータまでfetchするので、帯域を余計に食う。
-- 特徴：大雑把にfetchするので、これらがセキュアな情報だとしたらセキュリティポリシー的にNG
+- メリット：fetch 回数が少ない。
+- デメリット：filter の計算コストの処理時間がかかる
+- デメリット：無駄なデータまで fetch するので、帯域を余計に食う。
+- 特徴：大雑把に fetch するので、これらがセキュアな情報だとしたらセキュリティポリシー的に NG
 - 特徴：データ量が多いと変数格納のメモリ領域をかなり消費する。
 
 結論、データ量が少なく、セキュアな情報でないときは、こちらがベターな選択、だと思っています。
 
-そうでないなら、案②を採用する形になります。
+そうでないなら、案 ② を採用する形になります。
 
-## 【案 ②】N+1クエリを投げて、結果を結合
+## 【案 ②】N+1 クエリを投げて、結果を結合
 
 だいたいこんな感じになります。
 
 ```ts
 // react-router から tweetIDを取る想定
-const tweetID = match.params.tweetID
+const tweetID = match.params.tweetID;
 
 // (A) N+1の「1」のクエリ
-const tweet = await db.collection('tweets').doc(tweetID).get()
+const snap1 = await db
+  .collection('tweets')
+  .doc(tweetID)
+  .get();
+const tweet = {id: snap.id, ...snap.data()};
 
 // (B) N+1の「N」のクエリ
-const myFriends = tweet.friendIDs.map(friendID =>
-  await db
-    .collection('users')
-    .doc(friendID)
-    .get()
-)
+const snap2List = tweet.friendIDs.map(friendID =>
+  db.collection('users').doc(friendID).get()
+);
+const myFriends = snap2List.docs.map(doc => (
+  { id: doc.id, ...doc.data() }
+))
 
-return myFriends
+return myFriends;
 ```
 
-- メリット：必要なデータのみをfetchしているので、帯域を食わず、また、データのセキュリティポリシー的にNGにならない。
-- デメリット：fetch回数がN+1回必要。
+- メリット：必要なデータのみを fetch しているので、帯域を食わず、また、データのセキュリティポリシー的に NG にならない。
+- デメリット：fetch 回数が N+1 回必要。
 
 ### 所感
 
-現状だと、たいていのケースでは案②のN+1のfetchです。
+現状だと、たいていのケースでは案 ② の N+1 で実現してます。
 
-Firestoreを使っていると、非正規化だけでなくて、N+1まで許容しないといけないので、RDS脳が完全に崩壊します。（しました）
+Firestore を使っていると、非正規化だけでなくて、N+1 まで許容しないといけないので、RDS 脳が完全に崩壊します。（しました）
