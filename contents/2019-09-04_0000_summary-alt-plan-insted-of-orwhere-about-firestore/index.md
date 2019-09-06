@@ -11,13 +11,12 @@ slug: summary-alt-plan-insted-of-orwhere-about-firestore
 
 ## 【Firestore】「orWhere」が使えない時の代案のまとめ
 
-この記事は、「FirestoreのようなNoSQLで orWhere が使えないときの、代案をまとめた記事」です。
-
+この記事は、「Firestore のような NoSQL で orWhere が使えないときの、代案をまとめた記事」です。
 
 ### 背景
 
-Firestoreを使っている現場でorWhere が必要なケースが出てきました。
-ですが、Firestore はorWhere がサポートされていません。(2019/9時点)
+Firestore を使っている現場で orWhere が必要なケースが出てきました。
+ですが、Firestore は orWhere がサポートされていません。(2019/9 時点)
 
 - [firebase/firebase-js-sdk - FR: Firestore OR operator in WHERE query #321](https://github.com/firebase/firebase-js-sdk/issues/321)
 
@@ -32,12 +31,12 @@ NoSQL なので、ここらへんは仕方ないですが、どうにか代案�
 - メリット：データを持つ必要がない ⇐ データ整合性を気にしないで良い
 - デメリット：結合やデータ取得のロジックが複雑になる
 
-###  【案 ②】非正規化した検索用コレクションを作る
+### 【案 ②】非正規化した検索用コレクションを作る
 
 - メリット：データ取得のロジックが案 ① よりも簡素になる。
 - デメリット：データを保持するので、データ整合性を担保しておかないといけない
   - ⇐Firebase を使っているケースなら、CloudFunctions のトリガーも使えると思うので、データ整合性の担保を取りやすい
-- デメリット：検索用コレクションで絞ったリストを元にクエリを投げるが、Firestore には whereIN もない（2019/9 時点）。なので、N+1 回のクエリが必要なので fetch 回数が多い 
+- デメリット：検索用コレクションで絞ったリストを元にクエリを投げるが、Firestore には whereIN もない（2019/9 時点）。なので、N+1 回のクエリが必要なので fetch 回数が多い
   - ⇐Firestore なので、むしろそういうもの、だど割りきる。
 
 結論ですが、案 ② の方針にしました。案 ① だと無限スクロールとの併用が特につらそうだったので。
@@ -49,32 +48,33 @@ NoSQL なので、ここらへんは仕方ないですが、どうにか代案�
 
 // firestore:users/{user}
 type user = {
-  id: string;
+  id: string
   // ...
-};
+}
 
 // firestore:messages/{message}
 type message = {
-  id: string;
-  senderID: string; // = userID
-  receiverID: string; // = userID
-  createdAt: Date;
-  updatedAt: Date;
-};
+  id: string
+  senderID: string // = userID
+  receiverID: string // = userID
+  createdAt: Date
+  updatedAt: Date
+}
 ```
 
 ＜ユースケース＞
+
 - 「自分が投げた Message」＋「自分が受け取った Message」のリストを表示
-- updatedAt のDESC順
+- updatedAt の DESC 順
 
 ## 【案 ①】2 つクエリを投げて、1 つに結合
 
 だいたいこんな感じになります。
 
 ```ts
-const me = '<Userモデルの自分のデータ>';
-const lastQ1Visible = '<q1の前回取得分の最後>';
-const lastQ2Visible = '<q2の前回取得分の最後>';
+const me = '<Userモデルの自分のデータ>'
+const lastQ1Visible = '<q1の前回取得分の最後>'
+const lastQ2Visible = '<q2の前回取得分の最後>'
 
 const q1 = await db
   .collection('messages')
@@ -82,7 +82,7 @@ const q1 = await db
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastP1Visible)
-  .get();
+  .get()
 
 const q2 = await db
   .collection('messages')
@@ -90,9 +90,9 @@ const q2 = await db
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastP2Visible)
-  .get();
+  .get()
 
-const result = sortDesc([...q1, ...q2]); // `sortDesc` はupdatedAt で ソートをしてくれるようなヘルパーの想定
+const result = sortDesc([...q1, ...q2]) // `sortDesc` はupdatedAt で ソートをしてくれるようなヘルパーの想定
 ```
 
 実際は結合する前にきちんと「ソート条件とデータ順番」についての確認してあげないといけないです。
@@ -105,7 +105,7 @@ const result = sortDesc([...q1, ...q2]); // `sortDesc` はupdatedAt で ソー�
 
 となると、1 回目の fetch 結果が、
 
-**「最近のp1の10件」＋「5年前のp2の10件」 をupdatedAtでソートした結果**
+**「最近の p1 の 10 件」＋「5 年前の p2 の 10 件」 を updatedAt でソートした結果**
 
 になってしまいます。
 
@@ -122,11 +122,11 @@ const result = sortDesc([...q1, ...q2]); // `sortDesc` はupdatedAt で ソー�
 ```ts
 // firestore:viewableMessages/{viewableMessage}
 type viewableMessage = {
-  messageID: string;
-  userID: string; // <= senderID or receiverID
-  createdAt: Date;
-  updatedAt: Date;
-};
+  messageID: string
+  userID: string // <= senderID or receiverID
+  createdAt: Date
+  updatedAt: Date
+}
 ```
 
 **viewableMessage は message を 非正規化したものです。**
@@ -135,12 +135,12 @@ type viewableMessage = {
 
 ```dot
 digraph G{
-    compound=true    
-    
+    compound=true
+
     node [shape=folder]
     comment [label="ここの範囲で検索する", shape=none, fontsize=8]
     text [shape=point, fontsize=8]
-    
+
     subgraph cluster_M {
         label="Message"
         M1 [label="・senderID\n・receiverID"]
@@ -152,14 +152,14 @@ digraph G{
         labelfloat="false"
         bgcolor="gray";
         margin=30
-        
+
         VM1 [label="userID=senderID"]
         VM2 [label="userID=receiverID"]
     }
     M1->text [headlabel="非正規化"]
     text->VM1
     text->VM2
-    
+
     comment -> VM1 [lhead=cluster_VM]
 }
 ```
@@ -169,8 +169,8 @@ digraph G{
 実装は、下記のようになるかと思います。
 
 ```ts
-const me = '<Userモデルの自分のデータ>';
-const lastVisible = '<前回取得分の最後>';
+const me = '<Userモデルの自分のデータ>'
+const lastVisible = '<前回取得分の最後>'
 
 // ①viewableMessageから取得。これで、ほしいMessageIDの一覧がわかる。
 const viewableMessages = db
@@ -179,7 +179,7 @@ const viewableMessages = db
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastVisible)
-  .get();
+  .get()
 
 // ②viewableMessage が持つMessageIDの、Messagesをすべて取得。
 const result = viewableMessages.map(viewableMessage =>
@@ -187,12 +187,12 @@ const result = viewableMessages.map(viewableMessage =>
     .collection('messages')
     .doc(viewableMessage.messageID)
     .get()
-);
+)
 ```
 
 案１に比べて、案２はロジックも少なく、Pagination・無限スクロールなども入れやすい形ですね。
 
-ただ、①＋②で N+1 の回数分だけクエリが発行されてしまいます。ただ、Firestore なので、「そういうもの」だとと思っているので、ここは個人的には許容範囲です。
+ただ、① ＋ ② で N+1 の回数分だけクエリが発行されてしまいます。ただ、Firestore なので、「そういうもの」だとと思っているので、ここは個人的には許容範囲です。
 
 ### 案 2 のデータ保持
 
