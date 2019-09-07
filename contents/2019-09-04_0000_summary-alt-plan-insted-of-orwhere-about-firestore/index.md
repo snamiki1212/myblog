@@ -233,7 +233,7 @@ digraph G{
 
 今回のケースでは、一方方向のデータ依存性なので、トリガーが連鎖してループする可能性も少ないかと思います。
 
-### 【案 ③】検索用のビューをフィールドにArrayで作る
+## 【案 ③】検索用のビューをフィールドにArrayで作る (追加)
 
 Message に viewableUserIDs などのuserIDのリストを保持するフィールドを用意します。
 
@@ -299,7 +299,7 @@ digraph G {
     subgraph cluster_Message{
       label=Message
       senderID -> V
-      receiver -> V
+      receiver -> V [ label="トリガーでviewableUserIDsを更新"]
       V [label=viewableUserIDs]
     }
 }
