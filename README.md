@@ -6,15 +6,7 @@
 
 ## Tech
 
-- Architecture
-  - Gatsbyjs / React / TypeScript
-  - No Class Components, Only Functional Components
-  - Atomic Design
-
-- stack
-  - CSS: styled-components
-  - CSS: material-UI
-  - ICON: fontawesome
+🚀 Tech Stack → [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)
 
 ### `gatsby-node.js`
 
