@@ -1,29 +1,23 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fce06c01-d793-4026-8a48-ef4946156434/deploy-status)](https://app.netlify.com/sites/snamiki1212/deploys)
+![logo](https://user-images.githubusercontent.com/26793088/68081525-8b56b680-fe52-11e9-8170-f88e345359da.png)
 
-![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)
 
-📝 My blog → https://snamiki1212.com 
+This repository is My blog's. | https://snamiki1212.com 
+--|--
+Deploy Status | [![Netlify Status](https://api.netlify.com/api/v1/badges/fce06c01-d793-4026-8a48-ef4946156434/deploy-status)](https://app.netlify.com/sites/snamiki1212/deploys)
+Twitter | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)
+Tech Stack | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)
 
-## Tech
+## Memo
 
-🚀 Tech Stack → [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)
+- `gatsby-node.js`
+  - TypeScript をネイティブにサポートしていないので、TSファイルをrequire している。
+  - `/gatsbyjs` にて TSファイルで定義している。
 
-### `gatsby-node.js`
+- `src/components`
+  - AtomicDesign でディレクトリとコンポーネントを配置
 
-- TypeScript をネイティブにサポートしていないので、TSファイルをrequire している。
-- `/gatsbyjs` にて TSファイルで定義している。
-
-### `src/components`
-
-- AtomicDesign でディレクトリとコンポーネントを配置
-
-### `src/pages`
-
-gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
-
-## Usage
-
-Create `.env.development` from `.env` and secure-data.
+-  `src/pages`
+  - gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
 
 ## TODO
 
