@@ -1,7 +1,8 @@
 ---
 title: '【Firestore】「WhereIN」が使えない時の代案のまとめ'
 cover: 'cover.png'
-date: '2019-09-06 00:00'
+date: '2019-09-06 00:00' # created_at
+# date: '2019-11-09 00:00' # updated_at
 category: 'Tech'
 tags:
   - Firestore
@@ -14,6 +15,38 @@ slug: summary-alt-plan-insted-of-wherein-about-firestore
 こんにちは。平気で N+1 を許容できるようになってきた Nash です。
 
 この記事は、「Firestore のような NoSQL で WhereIN が使えないときの、代案をまとめた記事」です。
+
+### 追記: 公式でwhereInが対応されました(2019/11/09)
+<!-- Twitter -->
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Firebase が where in をサポート。<br>今まで無かったから N+1 でクエリ書いてたので助かる <a href="https://t.co/8AGeqVnoGN">https://t.co/8AGeqVnoGN</a></p>&mdash; Nash⚡️Next.jsとRN書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1192589159501721600?ref_src=twsrc%5Etfw">November 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+公式でサポートされるようになりました。
+
+```typescript
+// where in
+type project = {
+  status: string
+}
+db.collection("projects")
+  .where("status", "in", ["public", "private"]);
+```
+
+これで、簡単にwhere-inを実現できるようになりましたね。
+
+ちなみに、`array-contains-any`というのもあります。こちらは、`string[]`を対象にwhereInを行えます。
+
+```typescript
+// array-contains-any
+type article = {
+  tag: string[]
+}
+db.collection('articles')
+  .where('tag', 'array-contains-any', ['Firebase', 'Frontend', 'TypeScript'])
+```
+
+基本的にはfirestoreのバージョンを上げて、これらのAPIを使いましょう。バージョンを挙げられないなら、この記事の以降のやり方を参考にしてください。
+
+追記終わり(2019/11/09)
 
 ### 背景
 
