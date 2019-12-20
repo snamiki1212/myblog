@@ -95,11 +95,11 @@ SIer 業界自体がすでに古い体質のため、チャレンジしにくい
 
 ### 【案 ①】今の現場で頑張る
 
-今の現場で頑張る方向です。
+SIerでSEとして、今の現場で頑張る方向です。
 
 具体的には「職場の中で、何かしらのジャンルで一番になること」を目指す方向です。
 
-与えられている仕事とは別に、自発的に自分で目的・ゴールを決めて努力してみる形ですね。
+与えられている仕事とは別に、自分で目的・ゴールを決めて努力してみる形ですね。
 
 <!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">仕事がつまらないとしても、まずは今していることで一番になることを目指そう。そうすれば、誰もあなたにつまらない仕事をさせようとは思わなくなる。ひたむきに打ち込み、能力を高めることこそが、あなたの求める自由な道につながる。自分の可能性を信じて、目の前のことに打ち込もう。</p>&mdash; メンタリストDaiGo (@Mentalist_DaiGo) <a href="https://twitter.com/Mentalist_DaiGo/status/763480457908461568?ref_src=twsrc%5Etfw">August 10, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -114,7 +114,7 @@ SIer 業界自体がすでに古い体質のため、チャレンジしにくい
 
 「何を頑張るか？」は、自分で考えてみるのが良いかと思います。
 
-個人的には、上流工程ならExcelなどを使いこなすようになっておいて、下流工程ならエンジニアリングを詳しくなる戦略などを考えたりするかもしれないです。
+個人的には、上流工程ならExcelなどを使いこなすようになるし、下流工程ならエンジニアリングに詳しくなるよう頑張るかと思います。
 
 <!-- アフリィエイト -->
 <div style="display: flex; flex-direction:row;">
@@ -147,21 +147,17 @@ SIer 業界自体がすでに古い体質のため、チャレンジしにくい
 具体的には、技術書を読んでみたり、プログラミングスクールなどの無料の面談にとりあえず行ってみて自分のレベルを測ってみるのも手です。
 
 <!-- アフリィエイト -->
-<div style="display: flex; flex-direction:row;">
-<div style="flex:1">
 <!-- Python本 -->
 <table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; width:60px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822292274%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51bSKnQ20lL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822292274%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">独学プログラマー Python言語の基本から仕事のやり方まで</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥2,420<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:29時点)</span></p></td></tr></table>
 <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
 <!-- /Python本 -->
-</div>
-<div style="flex:1">
 <!-- プログラミングスクール -->
+<div style="width:100%; display:flex; justify-content:center">
 <a href="https://px.a8.net/svt/ejp?a8mat=35M24J+39VUK2+4B5K+5ZMCH" rel="nofollow">
 <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=190825795198&wid=001&eno=01&mid=s00000020108001006000&mc=1"></a>
 <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=35M24J+39VUK2+4B5K+5ZMCH" alt="">
+<div>
 <!-- /プログラミングスクール -->
-</div>
-</div>
 <!-- /アフリィエイト -->
 
 もし、上流工程を中心に仕事をしているなら、今後のことを考えると資格の取得がキャリアに繋がりやすいかと思います。
@@ -225,9 +221,11 @@ SE から Web にキャリアチェンジをするにあたり
 相談自体は無料ですので、まずは登録して話を聞きに行くところからオススメします。
 
 <!-- アフィ -->
+<div style="width:100%; display:flex; justify-content:center">
 <a href="https://px.a8.net/svt/ejp?a8mat=35M24J+383JQQ+4AU6+61Z81" rel="nofollow">
 <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190825795195&wid=001&eno=01&mid=s00000020067001017000&mc=1"></a>
 <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=35M24J+383JQQ+4AU6+61Z81" alt="">
+<div>
 <!--  -->
 
 ### おわりに
@@ -280,21 +278,10 @@ SIer の「つまらない」仕事から、脱出する手段。
 <!-- アフリィエイト -->
 
 <!-- アフリィエイト -->
-<div style="display: flex; flex-direction:row;">
-<div style="flex:1">
-<!-- 転職 -->
+<div style="width:100%; display:flex; justify-content:center">
 <a href="https://px.a8.net/svt/ejp?a8mat=35M24J+383JQQ+4AU6+61Z81" rel="nofollow">
 <img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190825795195&wid=001&eno=01&mid=s00000020067001017000&mc=1"></a>
 <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=35M24J+383JQQ+4AU6+61Z81" alt="">
-<!-- /転職 -->
-</div>
-<div style="flex:1">
-<!-- プログラミングスクール -->
-<a href="https://px.a8.net/svt/ejp?a8mat=35M24J+39VUK2+4B5K+5ZMCH" rel="nofollow">
-<img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=190825795198&wid=001&eno=01&mid=s00000020108001006000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=35M24J+39VUK2+4B5K+5ZMCH" alt="">
-<!-- /プログラミングスクール -->
-</div>
 </div>
 <!-- /アフリィエイト -->
 
@@ -316,5 +303,12 @@ SIer の「つまらない」仕事から、脱出する手段。
 </div>
 <!-- /アフリィエイト -->
 
+<!-- プログラミングスクール -->
+<div style="width:100%; display:flex; justify-content:center">
+<a href="https://px.a8.net/svt/ejp?a8mat=35M24J+39VUK2+4B5K+5ZMCH" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=190825795198&wid=001&eno=01&mid=s00000020108001006000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=35M24J+39VUK2+4B5K+5ZMCH" alt="">
+</div>
+<!-- /プログラミングスクール -->
 
 <!--  -->
