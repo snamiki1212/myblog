@@ -4,8 +4,11 @@ import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {PaginationContext} from '../../../gatsby-node_';
 
-export const Paginator = (props: {context: PaginationContext}): JSX.Element => {
-  const {currentPage, lastPage} = props.context;
+type Props = {
+  context: PaginationContext;
+};
+export const Paginator: React.FC<Props> = ({context}) => {
+  const {currentPage, lastPage} = context;
 
   return (
     <Container>

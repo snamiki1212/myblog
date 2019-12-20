@@ -29,7 +29,7 @@ type Props = {
     | 'sync';
 };
 
-export const XIcon = ({icon}: Props): JSX.Element => {
+export const XIcon: React.FC<Props> = ({icon}) => {
   switch (icon) {
     case 'face':
       return <FaceIcon />;

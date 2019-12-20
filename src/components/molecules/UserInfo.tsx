@@ -8,7 +8,12 @@ import {Follow} from 'react-twitter-widgets';
 import styled from 'styled-components';
 import {MyLinks} from '../atoms';
 
-export const UserInfo = (props): JSX.Element => {
+type Props = {
+  config: any;
+};
+// TODO: configをバケツリレーしないで、そのまま、importして使いたい
+
+export const UserInfo: React.FC<Props> = ({config}): JSX.Element => {
   const {
     userAvatar,
     userName,
@@ -16,7 +21,7 @@ export const UserInfo = (props): JSX.Element => {
     userDescription,
     mySocials,
     userTwitter,
-  } = props.config;
+  } = config;
 
   if (!userAvatar && !userName && !userLocation && !userDescription) {
     if (mySocials) {

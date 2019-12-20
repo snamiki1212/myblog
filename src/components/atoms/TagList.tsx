@@ -4,8 +4,9 @@ import {Link} from 'gatsby';
 import Chip from '@material-ui/core/Chip';
 import styled from 'styled-components';
 
-export const TagList = (props): JSX.Element => {
-  const {tags} = props;
+type Props = {tags: any};
+
+export const TagList: React.FC<Props> = ({tags}) => {
   return (
     <Container>
       {tags &&

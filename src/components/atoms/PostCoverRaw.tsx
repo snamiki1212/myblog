@@ -7,6 +7,6 @@ interface Props {
   coverHeight: number;
 }
 
-export const PostCoverRaw = ({fluid, coverHeight}: Props): JSX.Element => {
+export const PostCoverRaw: React.FC<Props> = ({fluid, coverHeight}) => {
   return <Img fluid={fluid} style={{height: coverHeight, width: '100%'}} />;
 };

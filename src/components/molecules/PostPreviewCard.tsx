@@ -12,11 +12,11 @@ import {XIcon} from '../atoms';
 import {MarkdownRemarkEdge} from '../../types';
 import Img from 'gatsby-image';
 
-export const PostPreviewCard = ({
-  postInfo,
-}: {
+type Props = {
   postInfo: MarkdownRemarkEdge;
-}): JSX.Element => {
+};
+
+export const PostPreviewCard: React.FC<Props> = ({postInfo}) => {
   return (
     <StyledCard key={postInfo.node.frontmatter.title}>
       <StyledCardActionArea>

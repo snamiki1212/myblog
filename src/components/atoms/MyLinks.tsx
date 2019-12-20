@@ -5,7 +5,7 @@ import {XIcon} from './';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 
-export const MyLinks = (): JSX.Element => {
+export const MyLinks: React.FC = () => {
   const {mySocials} = config;
 
   return (

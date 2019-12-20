@@ -6,7 +6,7 @@ interface Props {
   size?: number;
 }
 
-export const HatenaShareButton = ({url, size}: Props): JSX.Element => {
+export const HatenaShareButton: React.FC<Props> = ({url, size}) => {
   const host = URL.parse(url).host;
   const pathName = URL.parse(url).pathname;
 
