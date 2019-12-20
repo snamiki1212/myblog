@@ -7,13 +7,12 @@ import {SEOMeta} from '../atoms';
 import {Body, Layout} from '../../components/templates';
 import {MarkdownRemarkEdge} from '../../types';
 
-export const HomeTemplate = ({
-  pageContext,
-  data,
-}: {
+type Props = {
   pageContext: IndexPageContext;
   data: {allMarkdownRemark: IndexPageQuery};
-}): JSX.Element => {
+};
+
+export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
   const {allMarkdownRemark} = data;
   const postEdges = allMarkdownRemark.edges;
 

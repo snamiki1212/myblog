@@ -21,7 +21,9 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemark} from '../templates/PostTemplate';
 
-export const SocialLinks = (props: {postNode: MarkdownRemark}): JSX.Element => {
+type Props = {postNode: MarkdownRemark};
+
+export const SocialLinks: React.FC<Props> = props => {
   const {postNode} = props;
 
   const post = postNode.frontmatter;

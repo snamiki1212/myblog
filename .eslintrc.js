@@ -10,7 +10,6 @@ module.exports={
     "plugin:@typescript-eslint/recommended", // TS で必要
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
-
     "plugin:react/recommended",
   ],
   "parserOptions":  {
@@ -19,7 +18,7 @@ module.exports={
   },
   "rules": {
     // "react/prefer-stateless-function": "off",
-    // "react/prop-types": "off",
+    "react/prop-types": "off",
     // "react/no-danger": "off",
     // "jsx-a11y/anchor-is-valid": [ "error", {
     //   "components": [ "Link" ],

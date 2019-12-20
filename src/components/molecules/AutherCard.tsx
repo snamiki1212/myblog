@@ -6,7 +6,7 @@ import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 import {MyLinks} from '../atoms';
 
-export const AuthorCard = (): JSX.Element => (
+export const AuthorCard: React.FC = () => (
   <Container>
     <Link to="/about">
       <Button>
@@ -17,7 +17,6 @@ export const AuthorCard = (): JSX.Element => (
         </div>
       </Button>
     </Link>
-
     <MyLinks />
   </Container>
 );

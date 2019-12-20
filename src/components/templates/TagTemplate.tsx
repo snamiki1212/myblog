@@ -6,13 +6,11 @@ import {TagPageContext} from '../../../gatsby-node_';
 import {Body, Layout} from '../../components/templates';
 import {MarkdownRemarkEdge} from '../../types';
 
-export const TagTemplate = ({
-  pageContext,
-  data,
-}: {
+type Props = {
   pageContext: TagPageContext;
   data: {allMarkdownRemark: TagPageQuery};
-}): JSX.Element => {
+};
+export const TagTemplate: React.FC<Props> = ({pageContext, data}) => {
   const {tag} = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
 

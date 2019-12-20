@@ -3,11 +3,8 @@ import Button from '@material-ui/core/Button';
 import {SubPageContext} from '../../../gatsby-node_';
 import {Link} from 'gatsby';
 
-export const SubPageLinks = ({
-  context,
-}: {
-  context: SubPageContext;
-}): JSX.Element => {
+type Props = {context: SubPageContext};
+export const SubPageLinks: React.FC<Props> = ({context}) => {
   return (
     <div>
       <div>

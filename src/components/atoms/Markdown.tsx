@@ -1,7 +1,9 @@
 import React from 'react';
 import renderReact from '../../compiler/CompilerAsHtmlToReact';
 
-export const Markdown = ({htmlAst}: {htmlAst: any}): JSX.Element => {
+type Props = {htmlAst: any};
+
+export const Markdown: React.FC<Props> = ({htmlAst}) => {
   return (
     <div
       style={{

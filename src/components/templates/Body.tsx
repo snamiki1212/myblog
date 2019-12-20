@@ -5,13 +5,12 @@ import {PaginationContext, SubPageContext} from '../../../gatsby-node_';
 import {Paginator, SubPageLinks} from '../atoms';
 import {AuthorCard, PostPreviewCard} from '../molecules';
 
-export const Body = ({
-  postEdges,
-  context,
-}: {
+type Props = {
   postEdges: any;
   context: PaginationContext & SubPageContext;
-}): JSX.Element => {
+};
+
+export const Body: React.FC<Props> = ({postEdges, context}) => {
   return (
     <PageContainer>
       <ArticleArea>

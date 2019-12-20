@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
-export const HeaderTitle = (): JSX.Element => {
+export const HeaderTitle: React.FC = () => {
   return <Title href="/">{config.siteTitleTop}</Title>;
 };
 
