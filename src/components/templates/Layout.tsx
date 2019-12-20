@@ -4,10 +4,9 @@ import {Navigation} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {ThemeProvider} from '@material-ui/styles';
 import {theme} from '../../theme';
-
 import './layout.scss';
 
-export const Layout = ({children}: {children: any}): JSX.Element => {
+export const Layout: React.FC = ({children}) => {
   return (
     <>
       <Helmet>

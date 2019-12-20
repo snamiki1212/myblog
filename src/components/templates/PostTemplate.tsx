@@ -13,14 +13,15 @@ import {FluidObject} from 'gatsby-image';
 import {PostPreviewCardContaienr} from './Body';
 import {MarkdownRemarkEdge} from '../../types';
 
-export const PostTemplate = (
-  props: {data: PostPageQuery} & {
-    pageContext: PostPageContext;
-  }
-): JSX.Element => {
-  const postNode = props.data.markdownRemark;
+type Props = {
+  data: PostPageQuery;
+  pageContext: PostPageContext;
+};
+
+export const PostTemplate: React.FC<Props> = ({data}) => {
+  const postNode = data.markdownRemark;
   const slug = postNode.frontmatter.slug;
-  const suggestions = props.data.allMarkdownRemark.edges;
+  const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
 
   return (

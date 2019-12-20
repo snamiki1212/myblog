@@ -6,13 +6,12 @@ import {CategoryPageContext} from '../../../gatsby-node_';
 import {Body, Layout} from '../../components/templates';
 import {MarkdownRemarkEdge} from '../../types';
 
-export const CategoryTemplate = ({
-  pageContext,
-  data,
-}: {
+type Props = {
   pageContext: CategoryPageContext;
   data: {allMarkdownRemark: CategoryPageQuery};
-}): JSX.Element => {
+};
+
+export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
   const {category} = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
 
