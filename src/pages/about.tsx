@@ -14,7 +14,7 @@ import styled from 'styled-components';
 const myTwitterUrl = config.mySocials.find(ele => ele.icon === 'twitter').url;
 const myLinkedinUrl = config.mySocials.find(ele => ele.icon === 'linkedin').url;
 
-const AboutPage = (): JSX.Element => {
+const AboutPage: React.FC = () => {
   return (
     <Layout>
       <Helmet>
