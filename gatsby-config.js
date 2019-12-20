@@ -25,6 +25,14 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
 
+    // faviconのresolver
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './static/favicon.png',
+      },
+    },
+
     {
       // ページごとのQuery(graph-ql)の定義を元に、TypeScirptのTypeDefinie を生成してくれる
       resolve: `gatsby-plugin-ts`,
