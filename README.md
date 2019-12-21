@@ -7,6 +7,26 @@ Deploy Status | [![Netlify Status](https://api.netlify.com/api/v1/badges/fce06c0
 Twitter | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)
 Tech Stack | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)
 
+## Director
+
+```sh
+/myblog
+  /contents # ブログ記事
+  /types    # TSの型
+  /static   # 静的ファイル
+  /scripts  # シェル系
+  /data     # constantな値
+  /src      # アプリケーション
+
+  # build結果
+  /public
+  /node_modules
+  /.cache
+
+  # config
+  /.github
+  /.vscode
+```
 ## Memo
 
 - `gatsby-node.js`

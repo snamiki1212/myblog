@@ -2,9 +2,8 @@
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
 import React from 'react';
-// import favicon from './favicon.png'; // TODO:favicon を設定して読み込ませる
 
-const inlinedStyles = '';
+// const inlinedStyles = '';
 
 export default class HTML extends React.Component<{
   // MEMO: gatsby の props ?
