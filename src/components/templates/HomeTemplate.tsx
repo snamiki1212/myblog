@@ -4,7 +4,8 @@ import Helmet from 'react-helmet';
 import config from '../../../data/SiteConfig';
 import {IndexPageContext} from '../../../gatsby-node_';
 import {SEOMeta} from '../atoms';
-import {Body, Layout} from '../../components/templates';
+import Layout from '../organisms/Layout';
+import Body from '../organisms/Body';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {

@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
-import {Layout} from '../../components/templates';
+import Layout from '../organisms/Layout';
 import Img from 'gatsby-image';
 import {UserInfo} from '../molecules';
 import {TagList, SocialLinks, SEOMeta, Markdown} from '../atoms';
@@ -10,7 +10,7 @@ import {PostPreviewCard} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
-import {PostPreviewCardContaienr} from './Body';
+import {PostPreviewCardContaienr} from '../organisms/Body';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {

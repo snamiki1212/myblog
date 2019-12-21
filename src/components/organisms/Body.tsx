@@ -63,3 +63,5 @@ export const PostPreviewCardContaienr = styled.div`
   justify-content: space-around;
   padding: 10px;
 `;
+
+export default Body;
