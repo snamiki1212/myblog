@@ -5,7 +5,7 @@ import siteConfig from './data/SiteConfig';
 
 // -----------------------------------------------------------------------
 // CONSTANTS
-const POSTS_PER_PAGE = 30;
+const POSTS_PER_PAGE = 15;
 const POSTS_AS_SUGGESTION = 4;
 const templatesDir = 'src/components/templates';
 const PostPage = path.resolve(`${templatesDir}/PostTemplate.tsx`);
