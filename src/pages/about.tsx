@@ -25,35 +25,38 @@ const AboutPage: React.FC = () => {
       <Paper>
         <Card>
           <CardContent>
+            {/* ------------------------------------ */}
             <h2>Nash プロフィール</h2>
-            <Img src={config.userAvatar} alt={config.userName} />
-            <Text>{config.userDescription}</Text>
-
+            <div style={{display: 'flex', flexDirection: 'row'}}>
+              <Avator src={config.userAvatar} alt={config.userName} />
+              <Text>{config.userDescription}</Text>
+            </div>
             {/* ------------------------------------ */}
-            <h2>最近つくったモノ</h2>
-            <h3># Lunash (このブログ)</h3>
-            <p>GatsbyJS / TypeScript を中心に作成してあります。</p>
-
+            {/* <h2>経歴</h2> */}
             {/* ------------------------------------ */}
-            <h2>日々の活動</h2>
+            <h2>出来ること</h2>
             <p>
-              日々の情報発信は Twitter を中心に行っています。
-              なにか連絡がある場合は Twitter DM にして頂けると幸いです。
-              <br />
+              基本的にエンジニアとして、フロントとバックエンドの開発を中心に活動しています。
             </p>
-            <CardActions>
-              <Button>
-                <a href={myTwitterUrl}>» Nash@Webエンジニア(@snamiki1212)</a>
-              </Button>
-            </CardActions>
-
-            {/* ------------------------------------ */}
-            <h2>いままでの経歴</h2>
             <p>
-              ・ソフトスキル：チームリーダー・プレイングリーダー・対顧客折衝・プロジェクト改善・ディレクターなどのロール・活動の経験があります。
-              <br />
-              ・ハードスキル：エンジニアとしてはバックエンド、フロントエンドを中心に活動しています。React.js、Firebase、Laravel/PHP、Elixir/Phoenix、Ruby
-              on Rails などを使っています。
+              ソフトスキル
+              <ul>
+                <li>チームリーダー</li>
+                <li>プレイングリーダー</li>
+                <li>対顧客折衝</li>
+                <li>プロジェクト改善</li>
+                <li>ディレクター</li>
+              </ul>
+            </p>
+            <p>
+              ハード
+              <ul>
+                <li>React.js(Next.js/Gatsby.JS)</li>
+                <li>ReactNative</li>
+                <li>Ruby on Rails</li>
+                <li>Elixir/Phoenix</li>
+                <li>Laravel/PHP</li>
+              </ul>
             </p>
             <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
             <CardActions>
@@ -61,9 +64,50 @@ const AboutPage: React.FC = () => {
                 <a href={myLinkedinUrl}>» LinkedIn(snamiki1212)</a>
               </Button>
             </CardActions>
-
             {/* ------------------------------------ */}
-            <h2>その他</h2>
+            <h2>最近つくったモノ</h2>
+            <h3># Lunash (このブログ)</h3>
+            <p>GatsbyJS / TypeScript を中心に作成してあります。</p>
+            <div>
+              {/* Twitter */}
+              <blockquote className="twitter-tweet">
+                <p lang="ja" dir="ltr">
+                  月で生活したいWebエンジニアが
+                  <br />
+                  <br />
+                  　「🌙Lunash 」<br />
+                  <br />
+                  という、ブログを書いてます。
+                  <br />
+                  <br />
+                  最終ゴールは、月でコード書く。
+                  <a href="https://t.co/ymrYdnr1eT">https://t.co/ymrYdnr1eT</a>
+                </p>
+                &mdash; Lunash🌙月でコード書く (@Lunash1212){' '}
+                <a href="https://twitter.com/Lunash1212/status/1114811667156594688?ref_src=twsrc%5Etfw">
+                  April 7, 2019
+                </a>
+              </blockquote>{' '}
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
+            {/* ------------------------------------ */}
+            <h2>お仕事の依頼</h2>
+            <p>
+              日々の情報発信は Twitter を中心に行っています。
+              <br />
+              お仕事に関する依頼も、TwitterのDMにて受け付けています。
+            </p>
+            <CardActions>
+              <Button>
+                <a href={myTwitterUrl}>» Nash@Webエンジニア(@snamiki1212)</a>
+              </Button>
+            </CardActions>
+            {/* ------------------------------------ */}
+            <h2>このブログ</h2>
             <Text>
               このブログのコンテンツは全てgithubで管理されています。
               内容に問題や訂正すべき内容がある場合は
@@ -80,7 +124,6 @@ const AboutPage: React.FC = () => {
                 <a href={config.siteRepository}>ブログのリポジトリ</a>
               </Button>
             </CardActions>
-
             <MyLinks />
           </CardContent>
         </Card>
@@ -89,8 +132,8 @@ const AboutPage: React.FC = () => {
   );
 };
 
-const Img = styled.img`
-  border-radius: 50%;
+const Avator = styled.img`
+  border-radius: 10%;
   width: 150px;
   height: 150px;
   margin: 10px 0;
