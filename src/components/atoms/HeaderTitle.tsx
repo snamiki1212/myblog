@@ -4,7 +4,7 @@ import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
 export const HeaderTitle: React.FC = () => {
-  return <Title href="/">{config.siteTitleTop}</Title>;
+  return <Title href="/">{config.siteTitle}</Title>;
 };
 
 const _color = colors.fontWhite1;

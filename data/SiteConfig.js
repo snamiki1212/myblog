@@ -7,7 +7,6 @@ module.exports = {
   siteTitleShort:
     '先端技術を追いかけるエンジニアのブログ🌙 | ITテクノロジー💻、キャリア💼、買って良かったもの🏆、英語📝、など幅広く発信。', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Lunash', // Alternative site title for SEO.
-  siteTitleTop: 'lunash', // for top drawing
   siteLogo: '/logos/logo.png', // Logo used for SEO and manifest.
   siteUrl: 'https://snamiki1212.com', // Domain of your website without pathPrefix.
   siteRepository: 'https://github.com/snamiki1212/myblog', // Repository of your site

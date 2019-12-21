@@ -51,7 +51,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
               key={edge.node.frontmatter.title}
               postInfo={edge}
             />
-            // TODO: PostPreviewCard の　postInfo の型をIndex / post で使えるように共通化したい。
+            // TODO: PostPreviewCardのpostInfo の型をIndex / post で使えるように共通化したい。
           ))}
         </PostPreviewCardContaienr>
       </SPostPage>
@@ -106,6 +106,7 @@ type PostPageQuery = {
   allMarkdownRemark: AllMarkdownRemark;
   markdownRemark: MarkdownRemark;
 };
+
 export interface MarkdownRemark {
   html: string;
   htmlAst: any;
