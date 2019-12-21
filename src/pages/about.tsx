@@ -68,32 +68,8 @@ const AboutPage: React.FC = () => {
             <h2>最近つくったモノ</h2>
             <h3># Lunash (このブログ)</h3>
             <p>GatsbyJS / TypeScript を中心に作成してあります。</p>
-            <div>
-              {/* Twitter */}
-              <blockquote className="twitter-tweet">
-                <p lang="ja" dir="ltr">
-                  月で生活したいWebエンジニアが
-                  <br />
-                  <br />
-                  　「🌙Lunash 」<br />
-                  <br />
-                  という、ブログを書いてます。
-                  <br />
-                  <br />
-                  最終ゴールは、月でコード書く。
-                  <a href="https://t.co/ymrYdnr1eT">https://t.co/ymrYdnr1eT</a>
-                </p>
-                &mdash; Lunash🌙月でコード書く (@Lunash1212){' '}
-                <a href="https://twitter.com/Lunash1212/status/1114811667156594688?ref_src=twsrc%5Etfw">
-                  April 7, 2019
-                </a>
-              </blockquote>{' '}
-              <script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"
-              ></script>
-            </div>
+            <TweetForMyblog />
+
             {/* ------------------------------------ */}
             <h2>お仕事の依頼</h2>
             <p>
@@ -131,6 +107,35 @@ const AboutPage: React.FC = () => {
     </Layout>
   );
 };
+
+const TweetForMyblog: React.FC = () => (
+  <div>
+    <blockquote className="twitter-tweet">
+      <p lang="ja" dir="ltr">
+        月で生活したいWebエンジニアが
+        <br />
+        <br />
+        {'　「🌙Lunash 」'}
+        <br />
+        <br />
+        という、ブログを書いてます。
+        <br />
+        <br />
+        最終ゴールは、月でコード書く。
+        <a href="https://t.co/ymrYdnr1eT">https://t.co/ymrYdnr1eT</a>
+      </p>
+      &mdash; Lunash🌙月でコード書く (@Lunash1212){' '}
+      <a href="https://twitter.com/Lunash1212/status/1114811667156594688?ref_src=twsrc%5Etfw">
+        April 7, 2019
+      </a>
+    </blockquote>{' '}
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      // charset="utf-8"
+    ></script>
+  </div>
+);
 
 const Avator = styled.img`
   border-radius: 10%;
