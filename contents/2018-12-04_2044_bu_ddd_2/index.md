@@ -2,6 +2,7 @@
 title: '「第二回ボトムアップドメイン駆動設計」に行ってきて軽量DDDを完全に理解した話'
 cover: 'cover.jpg'
 createdAt: '2018-12-04 20:44'
+updatedAt: '2018-12-04 20:44'
 category: 'Tech'
 tags:
   - ddd

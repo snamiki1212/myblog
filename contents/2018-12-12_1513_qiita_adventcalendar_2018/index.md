@@ -2,6 +2,7 @@
 title: '【Elixir】約1年ほどElixirを業務で使った自分が最初に知りたかったこと'
 cover: 'cover.jpg'
 createdAt: '2018-12-12 15:14'
+updatedAt: '2018-12-12 15:14'
 category: 'Tech'
 tags:
   - elixir

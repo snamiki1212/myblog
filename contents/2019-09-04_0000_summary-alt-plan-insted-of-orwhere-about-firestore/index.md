@@ -2,6 +2,7 @@
 title: '【Firestore】「orWhere」が使えない時の代案のまとめ'
 cover: 'cover.jpg'
 createdAt: '2019-09-04 00:00'
+updatedAt: '2019-09-04 00:00'
 category: 'Tech'
 tags:
   - Firestore

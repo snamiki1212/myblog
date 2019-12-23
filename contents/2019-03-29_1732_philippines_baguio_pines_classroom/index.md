@@ -2,6 +2,7 @@
 title: '【PINES｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】'
 cover: cover.jpg
 createdAt: '2019-03-29 17:32'
+updatedAt: '2019-03-29 17:32'
 category: 'World'
 tags:
   - フィリピン留学

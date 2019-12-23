@@ -2,6 +2,7 @@
 title: 'フラグ引数アンチパターン'
 cover: 'cover.jpg'
 createdAt: '2018-11-18 00:00'
+updatedAt: '2018-11-18 00:00'
 category: 'Tech'
 tags:
   - Tech

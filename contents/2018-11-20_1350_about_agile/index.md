@@ -2,6 +2,7 @@
 title: '「アジャイル開発宣言」を自分用に整理'
 cover: 'cover.jpg'
 createdAt: '2018-11-20 13:50'
+updatedAt: '2018-11-20 13:50'
 category: 'Tech'
 tags:
   - Tech

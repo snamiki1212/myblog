@@ -2,6 +2,7 @@
 title: '【書評】【要約】ドラッカー流の最強勉強法'
 cover: 'cover.jpg'
 createdAt: '2018-11-17 00:00'
+updatedAt: '2018-11-17 00:00'
 category: 'Career'
 tags:
   - book

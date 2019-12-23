@@ -2,6 +2,7 @@
 title: '【PINES｜バギオ】パインスを完全レビュー【経験談】'
 cover: cover.jpg
 createdAt: '2019-03-27 23:30'
+updatedAt: '2019-03-27 23:30'
 category: 'World'
 tags:
   - フィリピン留学

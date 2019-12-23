@@ -2,6 +2,7 @@
 title: '炎上プロジェクトに既存メンバーと同数の新人をぶっこまれたときの話'
 cover: 'cover.jpg'
 createdAt: '2019-05-03 18:00'
+updatedAt: '2019-05-03 18:00'
 category: 'Tech'
 tags:
   - tech

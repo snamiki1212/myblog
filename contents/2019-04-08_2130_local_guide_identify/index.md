@@ -2,6 +2,7 @@
 title: '【安全】ローカルガイドでの身バレが怖い？←解決方法を説明'
 cover: cover.jpg
 createdAt: '2019-04-08 21:30'
+updatedAt: '2019-04-08 21:30'
 category: 'LocalGuide'
 tags:
   - ローカルガイド

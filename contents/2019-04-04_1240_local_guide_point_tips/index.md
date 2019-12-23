@@ -2,6 +2,7 @@
 title: 'ローカルガイドのコツは１つ←画像投稿しろ【ポイント獲得編】'
 cover: cover.jpg
 createdAt: '2019-04-04 12:40'
+updatedAt: '2019-04-04 12:40'
 category: 'LocalGuide'
 tags:
   - Poem

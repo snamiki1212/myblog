@@ -2,6 +2,7 @@
 title: 'Go Global Meetup#1のまとめ'
 cover: 'cover.png'
 createdAt: '2018-11-26 20:43'
+updatedAt: '2018-11-26 20:43'
 category: 'Career'
 tags:
   - Tech

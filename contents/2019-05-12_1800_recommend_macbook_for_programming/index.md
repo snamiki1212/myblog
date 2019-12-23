@@ -2,6 +2,7 @@
 title: '【実レビュー】MacBook無印でプログラミングは、サブPCとしておすすめ'
 cover: 'cover.jpg'
 createdAt: '2019-05-12 18:00'
+updatedAt: '2019-05-12 18:00'
 category: 'Tech'
 tags:
   - tech

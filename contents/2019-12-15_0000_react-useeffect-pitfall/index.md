@@ -2,6 +2,7 @@
 title: 'React.useEffect でハマったポイントのまとめ'
 cover: 'cover.jpg'
 createdAt: '2019-12-15 00:00'
+updatedAt: '2019-12-15 00:00'
 category: 'Tech'
 tags:
   - React

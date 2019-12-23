@@ -2,6 +2,7 @@
 title: 'ローカルガイド特典のコネクトライブ2019に応募しなかった話'
 cover: cover.jpg
 createdAt: '2019-04-04 22:01'
+updatedAt: '2019-04-04 22:01'
 category: 'LocalGuide'
 tags:
   - ローカルガイド

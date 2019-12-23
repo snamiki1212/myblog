@@ -2,6 +2,7 @@
 title: 'ITエンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論'
 cover: 'cover.jpg'
 createdAt: '2019-04-29 10:00'
+updatedAt: '2019-04-29 10:00'
 category: 'World'
 tags:
   - フィリピン留学

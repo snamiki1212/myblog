@@ -2,6 +2,7 @@
 title: 'エンジニアの海外キャリア戦略の目標と戦略を見直した話'
 cover: 'cover.jpg'
 createdAt: '2018-11-15 00:00'
+updatedAt: '2018-11-15 00:00'
 category: 'Career'
 tags:
   - poem
