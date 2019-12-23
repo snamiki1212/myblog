@@ -13,7 +13,7 @@ type Props = {
   postInfo: MarkdownRemarkEdge;
 };
 
-export const PostPreviewCard: React.FC<Props> = ({postInfo}) => {
+export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   return (
     <StyledCard key={postInfo.node.frontmatter.title}>
       <StyledCardActionArea>

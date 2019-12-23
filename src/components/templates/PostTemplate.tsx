@@ -12,7 +12,7 @@ import {
   Markdown,
   ArticlePreviewsContaienr,
 } from '../atoms';
-import {PostPreviewCard} from '../molecules';
+import {ArticlePreviewCard} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
@@ -57,11 +57,11 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         </SPostPagePaper>
         <ArticlePreviewsContaienr>
           {suggestions.map(edge => (
-            <PostPreviewCard
+            <ArticlePreviewCard
               key={edge.node.frontmatter.title}
               postInfo={edge}
             />
-            // TODO: PostPreviewCardのpostInfo の型をIndex / post で使えるように共通化したい。
+            // TODO: ArticlePreviewCardのpostInfo の型をIndex / post で使えるように共通化したい。
           ))}
         </ArticlePreviewsContaienr>
       </SPostPage>

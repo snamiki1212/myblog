@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {PaginationContext, SubPageContext} from '../../../gatsby-node_';
 import {Paginator, SubPageLinks, ArticlePreviewsContaienr} from '../atoms';
-import {AuthorCard, PostPreviewCard} from '../molecules';
+import {AuthorCard, ArticlePreviewCard} from '../molecules';
 
 type Props = {
   postEdges: any;
@@ -17,7 +17,7 @@ export const ArticleListContainer: React.FC<Props> = ({postEdges, context}) => {
         <ArticlePreviewsContaienr>
           {postEdges.map(
             (edge): JSX.Element => (
-              <PostPreviewCard
+              <ArticlePreviewCard
                 key={edge.node.frontmatter.title}
                 postInfo={edge}
               />
