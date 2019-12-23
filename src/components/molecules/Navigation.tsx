@@ -27,6 +27,20 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+const HideOnScroll: React.FC<{window?: () => Window}> = ({
+  children,
+  window,
+}) => {
+  // readme: https://material-ui.com/components/app-bar/#hide-app-bar
+
+  const trigger = useScrollTrigger({target: window ? window() : undefined});
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+};
+
 interface ResponsiveDrawerProps {
   /**
    * Injected by the documentation to work in an iframe.
@@ -35,31 +49,7 @@ interface ResponsiveDrawerProps {
   container?: Element;
 }
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-  children: React.ReactElement;
-}
-
-const HideOnScroll = (props: Props): JSX.Element => {
-  // readme: https://material-ui.com/components/app-bar/#hide-app-bar
-  const {children, window} = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({target: window ? window() : undefined});
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-};
-
-export const Navigation = (props: any & ResponsiveDrawerProps): JSX.Element => {
+export const Navigation: React.FC<ResponsiveDrawerProps & any> = props => {
   const {children} = props;
 
   const classes = useStyles(props); // TODO: props で本当によい？
