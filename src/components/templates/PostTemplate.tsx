@@ -10,7 +10,7 @@ import {PostPreviewCard} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
-import {PostPreviewCardContaienr} from '../organisms/Body';
+import {PostPreviewCardContaienr} from '../organisms/ArticleListContainer';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {

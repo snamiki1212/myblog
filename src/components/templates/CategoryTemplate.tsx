@@ -4,7 +4,7 @@ import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
 import {CategoryPageContext} from '../../../gatsby-node_';
 import Layout from '../organisms/Layout';
-import Body from '../organisms/Body';
+import ArticleListContainer from '../organisms/ArticleListContainer';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -22,7 +22,7 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         <title>{`${config.siteTitle} | ${category}`}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
-      <Body postEdges={postEdges} context={pageContext} />
+      <ArticleListContainer postEdges={postEdges} context={pageContext} />
     </Layout>
   );
 };

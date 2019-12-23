@@ -5,7 +5,7 @@ import config from '../../../data/SiteConfig';
 import {IndexPageContext} from '../../../gatsby-node_';
 import {SEOMeta} from '../atoms';
 import Layout from '../organisms/Layout';
-import Body from '../organisms/Body';
+import ArticleListContainer from '../organisms/ArticleListContainer';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -25,7 +25,7 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
       <SEOMeta postEdges={postEdges} />
 
-      <Body postEdges={postEdges} context={pageContext} />
+      <ArticleListContainer postEdges={postEdges} context={pageContext} />
     </Layout>
   );
 };

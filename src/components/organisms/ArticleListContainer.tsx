@@ -10,7 +10,7 @@ type Props = {
   context: PaginationContext & SubPageContext;
 };
 
-export const Body: React.FC<Props> = ({postEdges, context}) => {
+export const ArticleListContainer: React.FC<Props> = ({postEdges, context}) => {
   return (
     <PageContainer>
       <ArticleArea>
@@ -63,4 +63,4 @@ export const PostPreviewCardContaienr = styled.div`
   padding: 10px;
 `;
 
-export default Body;
+export default ArticleListContainer;
