@@ -119,7 +119,7 @@ export interface MarkdownRemark {
         fluid: FluidObject;
       };
     };
-    date: Date;
+    createdAt: Date;
     category: string;
     tags: string;
     slug: string;
@@ -138,7 +138,7 @@ export const postPageQuery = graphql`
         node {
           fields {
             _slug
-            _date
+            _createdAt
           }
           excerpt(truncate: true)
           frontmatter {
@@ -151,7 +151,7 @@ export const postPageQuery = graphql`
                 }
               }
             }
-            date
+            createdAt
           }
         }
       }
@@ -170,7 +170,7 @@ export const postPageQuery = graphql`
             }
           }
         }
-        date
+        createdAt
         category
         tags
         slug

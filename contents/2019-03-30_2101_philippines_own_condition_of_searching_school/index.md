@@ -1,7 +1,7 @@
 ---
 title: '【留学失敗を回避】学校選びの「条件」をどう決めるか【経験者】'
 cover: cover.jpg
-date: '2019-03-30 21:01'
+createdAt: '2019-03-30 21:01'
 category: 'World'
 tags:
   - フィリピン留学

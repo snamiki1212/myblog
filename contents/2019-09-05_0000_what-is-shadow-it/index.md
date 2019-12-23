@@ -1,7 +1,7 @@
 ---
 title: '【解説】シャドーITとは？背景と、対策と、向き合い方'
 cover: 'cover.jpg'
-date: '2019-09-05 00:01'
+createdAt: '2019-09-05 00:01'
 category: 'Tech'
 tags:
   - tech

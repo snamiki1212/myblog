@@ -1,7 +1,7 @@
 ---
 title: 'react-router/react-router-transitionを使ってサンプルアプリを作った'
 cover: 'cover.jpg'
-date: '2019-05-07 19:00'
+createdAt: '2019-05-07 19:00'
 category: 'Tech'
 tags:
   - tech

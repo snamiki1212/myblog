@@ -1,7 +1,7 @@
 ---
 title: '静的サイトジェネレータで構造化データマークアップを入れた知見【GatsbyJS】'
 cover: 'cover.jpg'
-date: '2019-08-29 00:00'
+createdAt: '2019-08-29 00:00'
 category: 'Tech'
 tags:
   - Gatsby

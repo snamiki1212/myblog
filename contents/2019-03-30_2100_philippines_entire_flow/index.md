@@ -1,7 +1,7 @@
 ---
 title: 'フィリピン留学の、全体の流れ【完全版】'
 cover: cover.jpg
-date: '2019-03-30 21:00'
+createdAt: '2019-03-30 21:00'
 category: 'World'
 tags:
   - フィリピン留学

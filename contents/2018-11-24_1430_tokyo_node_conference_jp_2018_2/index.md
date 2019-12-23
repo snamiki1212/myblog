@@ -1,7 +1,7 @@
 ---
 title: '東京Node学園2018(Conference@JP)のまとめ（その２）'
 cover: 'cover.jpg'
-date: '2018-11-24 14:30'
+createdAt: '2018-11-24 14:30'
 category: 'Tech'
 tags:
   - Tech

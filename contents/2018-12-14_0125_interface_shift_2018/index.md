@@ -1,7 +1,7 @@
 ---
 title: '【まとめ】日本をぶち上げるiNTERFACE SHIFT2018 | エンジニア目線のキャリア戦略の学び'
 cover: 'cover.jpg'
-date: '2018-12-14 01:25'
+createdAt: '2018-12-14 01:25'
 category: 'Tech'
 tags:
   - event

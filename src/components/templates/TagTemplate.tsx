@@ -29,7 +29,7 @@ export const TagTemplate: React.FC<Props> = ({pageContext, data}) => {
 export const tagPageQuery = graphql`
   query TagPageQuery($tag: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: {fields: [fields____date], order: DESC}
+      sort: {fields: [fields____createdAt], order: DESC}
       limit: $limit
       skip: $skip
       filter: {frontmatter: {tags: {in: [$tag]}}}
@@ -38,7 +38,7 @@ export const tagPageQuery = graphql`
         node {
           fields {
             _slug
-            _date
+            _createdAt
           }
           excerpt(truncate: true)
           timeToRead
@@ -53,7 +53,7 @@ export const tagPageQuery = graphql`
                 }
               }
             }
-            date
+            createdAt
           }
         }
       }

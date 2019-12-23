@@ -1,7 +1,7 @@
 ---
 title: '東京Node学園祭2018(Conference@JP)の1日目のまとめ（その１）'
 cover: 'cover.jpg'
-date: '2018-11-23 22:42'
+createdAt: '2018-11-23 22:42'
 category: 'Tech'
 tags:
   - Tech

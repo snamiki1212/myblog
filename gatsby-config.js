@@ -199,7 +199,7 @@ module.exports = {
     //           const {rssMetadata} = ctx.query.site.siteMetadata;
     //           return ctx.query.allMarkdownRemark.edges.map(edge => ({
     //             categories: edge.node.frontmatter.tags,
-    //             date: edge.node.frontmatter.date,
+    //             createdAt: edge.node.frontmatter.createdAt,
     //             title: edge.node.frontmatter.title,
     //             description: edge.node.excerpt,
     //             url: rssMetadata.site_url + edge.node.fields._slug,
@@ -211,7 +211,7 @@ module.exports = {
     //         {
     //           allMarkdownRemark(
     //             limit: 1000,
-    //             sort: { order: DESC, fields: [frontmatter____date] },
+    //             sort: { order: DESC, fields: [frontmatter____createdAt] },
     //           ) {
     //             edges {
     //               node {
@@ -221,7 +221,7 @@ module.exports = {
     //                 fields { _slug }
     //                 frontmatter {
     //                   title
-    //                   date
+    //                   createdAt
     //                   category
     //                   tags
     //                 }

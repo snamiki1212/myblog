@@ -1,8 +1,8 @@
 ---
 title: '【Firestore】「WhereIN」が使えない時の代案のまとめ'
 cover: 'cover.png'
-date: '2019-09-06 00:00' # created_at
-# date: '2019-11-09 00:00' # updated_at
+createdAt: '2019-09-06 00:00' # created_at
+# createdAt: '2019-11-09 00:00' # updated_at
 category: 'Tech'
 tags:
   - Firestore

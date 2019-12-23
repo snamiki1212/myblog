@@ -351,17 +351,20 @@ export const onCreateNode = ({node, actions, getNode}): void => {
 
   if (
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-    Object.prototype.hasOwnProperty.call(node.frontmatter, 'date')
+    Object.prototype.hasOwnProperty.call(node.frontmatter, 'createdAt')
   ) {
-    const date = moment(node.frontmatter.date, siteConfig.dateFromFormat);
-    if (!date.isValid) {
-      console.warn(`WARNING: Invalid date.`, node.frontmatter); // eslint-disable-line
+    const createdAt = moment(
+      node.frontmatter.createdAt,
+      siteConfig.dateFromFormat
+    );
+    if (!createdAt.isValid) {
+      console.warn(`WARNING: Invalid createdAt.`, node.frontmatter); // eslint-disable-line
     }
 
     createNodeField({
       node,
-      name: '_date',
-      value: date.toISOString(),
+      name: '_createdAt',
+      value: createdAt.toISOString(),
     });
   }
 

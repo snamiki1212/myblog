@@ -1,7 +1,7 @@
 ---
 title: '【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは？→『The Complete Guide』'
 cover: 'cover.jpg'
-date: '2019-09-01 00:00'
+createdAt: '2019-09-01 00:00'
 category: 'Tech'
 tags:
   - React

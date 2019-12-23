@@ -1,7 +1,7 @@
 ---
 title: 'React(Hooks)を使ってポモドーロタイマー作った'
 cover: 'cover.jpg'
-date: '2019-05-07 12:00'
+createdAt: '2019-05-07 12:00'
 category: 'Tech'
 tags:
   - tech

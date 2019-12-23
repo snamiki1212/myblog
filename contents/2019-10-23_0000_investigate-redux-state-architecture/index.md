@@ -1,7 +1,7 @@
 ---
 title: 'Redux の State 設計の正規化の記事まとめ'
 cover: 'cover.png'
-date: '2019-10-23 00:00'
+createdAt: '2019-10-23 00:00'
 updated_at: '2019-12-14 00:00'
 category: 'Tech'
 tags:

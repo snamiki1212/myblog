@@ -30,7 +30,7 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
 export const categoryPageQuery = graphql`
   query CategoryPageQuery($category: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: {fields: [fields____date], order: DESC}
+      sort: {fields: [fields____createdAt], order: DESC}
       limit: $limit
       skip: $skip
       filter: {frontmatter: {category: {eq: $category}}}
@@ -39,7 +39,7 @@ export const categoryPageQuery = graphql`
         node {
           fields {
             _slug
-            _date
+            _createdAt
           }
           excerpt(truncate: true)
           timeToRead
@@ -54,7 +54,7 @@ export const categoryPageQuery = graphql`
                 }
               }
             }
-            date
+            createdAt
           }
         }
       }

@@ -1,7 +1,7 @@
 ---
 title: '【Elixir】Enumを完全に理解する | 効率的なEnumの学習方法・暗黙のルール・意識すべきこと'
 cover: 'cover.png'
-date: '2018-12-04 12:28'
+createdAt: '2018-12-04 12:28'
 category: 'Tech'
 tags:
   - elixir

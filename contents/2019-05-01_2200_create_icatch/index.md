@@ -1,7 +1,7 @@
 ---
 title: 'Reduxを使ってアイキャッチジェネレータを作った話'
 cover: 'cover.png'
-date: '2019-05-01 22:00'
+createdAt: '2019-05-01 22:00'
 category: 'Tech'
 tags:
   - tech

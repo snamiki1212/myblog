@@ -1,7 +1,7 @@
 ---
 title: 'フィリピンで豚の食べ物にトライして、後悔した話【レチョン＝豚の丸焼き】'
 cover: cover.jpg
-date: '2019-04-02 19:30'
+createdAt: '2019-04-02 19:30'
 category: 'World'
 tags:
   - フィリピン留学

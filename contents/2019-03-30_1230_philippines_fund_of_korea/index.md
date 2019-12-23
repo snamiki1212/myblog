@@ -1,7 +1,7 @@
 ---
 title: '【バギオ留学】韓国資本の学校に通ってきた【フィリピン】'
 cover: cover.jpg
-date: '2019-03-30 12:30'
+createdAt: '2019-03-30 12:30'
 category: 'World'
 tags:
   - フィリピン留学

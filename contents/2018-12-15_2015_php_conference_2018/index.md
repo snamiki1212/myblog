@@ -1,7 +1,7 @@
 ---
 title: '【まとめ】PHP Conference 2018 | カンファレンステーマ『Growth』とPHP離れの現実'
 cover: 'cover.jpg'
-date: '2018-12-15 20:15'
+createdAt: '2018-12-15 20:15'
 category: 'Tech'
 tags:
   - event

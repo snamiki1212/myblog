@@ -1,7 +1,7 @@
 ---
 title: '退職エントリ'
 cover: 'cover.jpg'
-date: '2018-11-07 00:00'
+createdAt: '2018-11-07 00:00'
 category: 'Career'
 tags:
   - poem

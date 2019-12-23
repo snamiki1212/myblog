@@ -33,7 +33,7 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
 export const homePageQuery = graphql`
   query HomePageQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: {fields: [fields____date], order: DESC}
+      sort: {fields: [fields____createdAt], order: DESC}
       limit: $limit
       skip: $skip
     ) {
@@ -41,7 +41,7 @@ export const homePageQuery = graphql`
         node {
           fields {
             _slug
-            _date
+            _createdAt
           }
           excerpt(truncate: true)
           timeToRead
@@ -56,7 +56,7 @@ export const homePageQuery = graphql`
                 }
               }
             }
-            date
+            createdAt
           }
         }
       }

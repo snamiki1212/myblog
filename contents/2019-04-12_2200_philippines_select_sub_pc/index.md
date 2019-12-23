@@ -1,7 +1,7 @@
 ---
 title: 'フィリピン留学用にサブPCを選定した話【IT留学じゃないです】'
 cover: cover.jpg
-date: '2019-04-12 22:00'
+createdAt: '2019-04-12 22:00'
 category: 'Tech'
 tags:
   - サブPC

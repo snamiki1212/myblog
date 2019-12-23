@@ -4,7 +4,7 @@ export interface MarkdownRemarkEdge {
   node: {
     fields: {
       _slug: string;
-      _date: Date;
+      _createdAt: Date;
     };
     excerpt: string;
     timeToRead: number;
@@ -17,7 +17,7 @@ export interface MarkdownRemarkEdge {
           fluid: FluidObject;
         };
       };
-      date: Date;
+      createdAt: Date;
     };
   };
 }

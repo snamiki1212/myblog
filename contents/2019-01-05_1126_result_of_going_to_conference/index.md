@@ -1,7 +1,7 @@
 ---
 title: '技術カンファレンスに通って、わかった11個の気付き'
 cover: 'cover.jpg'
-date: '2019-01-05 11:26'
+createdAt: '2019-01-05 11:26'
 category: 'Tech'
 tags:
   - tech

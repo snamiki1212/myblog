@@ -1,7 +1,7 @@
 ---
 title: '【Elixir】ifやcaseの中で代入・束縛を行うべきでない'
 cover: 'cover.png'
-date: '2018-12-03 14:44'
+createdAt: '2018-12-03 14:44'
 category: 'Tech'
 tags:
   - elixir

@@ -1,7 +1,7 @@
 ---
 title: 'Application Delivery Network ( ADN ) とは'
 cover: 'cover.png'
-date: '2018-11-19 19:53'
+createdAt: '2018-11-19 19:53'
 category: 'Tech'
 tags:
   - Tech

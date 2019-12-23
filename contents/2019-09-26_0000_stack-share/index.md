@@ -1,7 +1,7 @@
 ---
 title: 'stackshareとは？使ってみた結果まとめ'
 cover: 'cover.jpg'
-date: '2019-09-26 00:00'
+createdAt: '2019-09-26 00:00'
 category: 'Tech'
 tags:
   - Tech

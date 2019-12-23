@@ -1,7 +1,7 @@
 ---
 title: '【経験談】SEからWebエンジニアへ転職したときの気付き'
 cover: 'cover.jpg'
-date: '2019-08-24 00:00'
+createdAt: '2019-08-24 00:00'
 category: 'Career'
 tags:
   - SEtoWeb

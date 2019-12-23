@@ -1,7 +1,7 @@
 ---
 title: 'ReactでQiitaのアプリケーションを作った話'
 cover: 'cover.png'
-date: '2018-12-02 00:04'
+createdAt: '2018-12-02 00:04'
 category: 'Tech'
 tags:
   - tech

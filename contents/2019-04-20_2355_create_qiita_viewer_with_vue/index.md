@@ -1,7 +1,7 @@
 ---
 title: 'VueでQiitaのアプリケーションを作った話'
 cover: 'cover.png'
-date: '2019-04-20 23:55'
+createdAt: '2019-04-20 23:55'
 category: 'Tech'
 tags:
   - tech

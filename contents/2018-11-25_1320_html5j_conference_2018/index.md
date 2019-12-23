@@ -1,7 +1,7 @@
 ---
 title: 'HTML5Conference2018Japanのまとめ'
 cover: 'cover.jpg'
-date: '2018-11-25 13:20'
+createdAt: '2018-11-25 13:20'
 category: 'Tech'
 tags:
   - Tech

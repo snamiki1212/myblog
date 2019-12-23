@@ -1,7 +1,7 @@
 ---
 title: '留学エージェントを使った、おすすめの学校探し【エージェントは複数使う】'
 cover: cover.jpg
-date: '2019-03-30 21:02'
+createdAt: '2019-03-30 21:02'
 category: 'World'
 tags:
   - フィリピン留学
