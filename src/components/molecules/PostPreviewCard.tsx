@@ -3,14 +3,11 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
-
 import {Link} from 'gatsby';
-import moment from 'moment';
 import styled from 'styled-components';
-import config from '../../../data/SiteConfig';
-import {XIcon} from '../atoms';
 import {MarkdownRemarkEdge} from '../../types';
 import Img from 'gatsby-image';
+import {UpdatedAt} from '.';
 
 type Props = {
   postInfo: MarkdownRemarkEdge;
@@ -30,10 +27,7 @@ export const PostPreviewCard: React.FC<Props> = ({postInfo}) => {
 
           <CardContent>
             <ContentDate>
-              <XIcon icon="sync" />
-              {moment(postInfo.node.frontmatter.updatedAt).format(
-                config.dateFormat
-              )}
+              <UpdatedAt date={postInfo.node.fields._updatedAt} />
             </ContentDate>
             <ContenTitle>{postInfo.node.frontmatter.title}</ContenTitle>
 

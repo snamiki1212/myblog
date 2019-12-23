@@ -4,7 +4,7 @@ import {graphql} from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Img from 'gatsby-image';
-import {UserInfo} from '../molecules';
+import {UserInfo, UpdatedAt} from '../molecules';
 import {TagList, SocialLinks, SEOMeta, Markdown} from '../atoms';
 import {PostPreviewCard} from '../molecules';
 import config from '../../../data/SiteConfig';
@@ -20,7 +20,7 @@ type Props = {
 
 export const PostTemplate: React.FC<Props> = ({data}) => {
   const postNode = data.markdownRemark;
-  const slug = postNode.frontmatter.slug;
+  const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
 
@@ -29,15 +29,17 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
       <SPostPage>
         <Helmet>
           <title>{`${post.title}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}${slug}`} />
+          <link rel="canonical" href={`${config.siteUrl}${_slug}`} />
         </Helmet>
         <SEOMeta postNode={postNode} isPost={true} />
 
         <HeaderImg fluid={postNode.frontmatter.cover.childImageSharp.fluid} />
         <SPostPagePaper>
           <SPostPageContent className="target-el">
+            <span style={{textAlign: 'right', paddingTop: '30px'}}>
+              <UpdatedAt date={postNode.frontmatter.updatedAt} />
+            </span>
             <Markdown htmlAst={postNode.htmlAst} />
-
             <SPostPageFooter>
               <TagList tags={post.tags} />
               <SocialLinks postNode={postNode} />
