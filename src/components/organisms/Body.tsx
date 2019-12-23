@@ -52,7 +52,6 @@ const PageContainer = styled.div`
 
 const ArticleArea = styled.div`
   flex: 4;
-  min-width: 500px;
 `;
 
 export const PostPreviewCardContaienr = styled.div`
