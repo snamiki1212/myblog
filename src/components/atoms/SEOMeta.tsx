@@ -86,7 +86,7 @@ const fetchData =
           '@type': 'NewsArticle',
           //
           dateModified: postNode.frontmatter.createdAt, // TODO: markdown にこれを入れたい。
-          datePublished: postNode.frontmatter.createdAt, // TODO: markdown にこれを入れたい。
+          datePublished: postNode.frontmatter.updatedAt, // TODO: markdown にこれを入れたい。
           headline: description.substring(0, 110), // 先頭110文字までのみ。それ以上だとエラーになる。
           image: {
             '@type': 'ImageObject',

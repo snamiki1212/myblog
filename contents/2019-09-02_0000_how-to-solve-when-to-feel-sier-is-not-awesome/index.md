@@ -2,7 +2,7 @@
 title: '【完全解決】SIerで、つまらないと感じたら？【経験談有り】'
 cover: 'cover.jpg'
 createdAt: '2019-09-02 00:00'
-update_at: '2019-12-20 00:00'
+updatedAt: '2019-12-20 00:00'
 category: 'Career'
 tags:
   - SEtoWeb

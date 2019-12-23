@@ -349,6 +349,7 @@ export const onCreateNode = ({node, actions, getNode}): void => {
   const parsedFilePath = path.parse(fileNode.relativePath);
   const slug = generateSlug({node, parsedFilePath});
 
+  // add createdAt
   if (
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
     Object.prototype.hasOwnProperty.call(node.frontmatter, 'createdAt')
@@ -365,6 +366,26 @@ export const onCreateNode = ({node, actions, getNode}): void => {
       node,
       name: '_createdAt',
       value: createdAt.toISOString(),
+    });
+  }
+
+  // add updatedAt
+  if (
+    Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+    Object.prototype.hasOwnProperty.call(node.frontmatter, 'updatedAt')
+  ) {
+    const updatedAt = moment(
+      node.frontmatter.updatedAt,
+      siteConfig.dateFromFormat
+    );
+    if (!updatedAt.isValid) {
+      console.warn(`WARNING: Invalid updatedAt.`, node.frontmatter); // eslint-disable-line
+    }
+
+    createNodeField({
+      node,
+      name: '_updatedAt',
+      value: updatedAt.toISOString(),
     });
   }
 

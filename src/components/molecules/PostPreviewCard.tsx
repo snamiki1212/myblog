@@ -31,7 +31,7 @@ export const PostPreviewCard: React.FC<Props> = ({postInfo}) => {
           <CardContent>
             <ContentDate>
               <XIcon icon="sync" />
-              {moment(postInfo.node.frontmatter.createdAt).format(
+              {moment(postInfo.node.frontmatter.updatedAt).format(
                 config.dateFormat
               )}
             </ContentDate>

@@ -120,6 +120,7 @@ export interface MarkdownRemark {
       };
     };
     createdAt: Date;
+    updatedAt: Date;
     category: string;
     tags: string;
     slug: string;
@@ -139,6 +140,7 @@ export const postPageQuery = graphql`
           fields {
             _slug
             _createdAt
+            _updatedAt
           }
           excerpt(truncate: true)
           frontmatter {
@@ -152,6 +154,7 @@ export const postPageQuery = graphql`
               }
             }
             createdAt
+            updatedAt
           }
         }
       }
@@ -171,6 +174,7 @@ export const postPageQuery = graphql`
           }
         }
         createdAt
+        updatedAt
         category
         tags
         slug

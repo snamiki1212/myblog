@@ -40,6 +40,7 @@ export const categoryPageQuery = graphql`
           fields {
             _slug
             _createdAt
+            _updatedAt
           }
           excerpt(truncate: true)
           timeToRead
@@ -55,6 +56,7 @@ export const categoryPageQuery = graphql`
               }
             }
             createdAt
+            updatedAt
           }
         }
       }

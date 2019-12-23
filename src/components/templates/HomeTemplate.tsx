@@ -42,6 +42,7 @@ export const homePageQuery = graphql`
           fields {
             _slug
             _createdAt
+            _updatedAt
           }
           excerpt(truncate: true)
           timeToRead
@@ -57,6 +58,7 @@ export const homePageQuery = graphql`
               }
             }
             createdAt
+            updatedAt
           }
         }
       }

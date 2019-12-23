@@ -5,6 +5,7 @@ export interface MarkdownRemarkEdge {
     fields: {
       _slug: string;
       _createdAt: Date;
+      _updatedAt: Date;
     };
     excerpt: string;
     timeToRead: number;
@@ -18,6 +19,7 @@ export interface MarkdownRemarkEdge {
         };
       };
       createdAt: Date;
+      updatedAt: Date;
     };
   };
 }
