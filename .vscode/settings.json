@@ -18,6 +18,9 @@
       "autoFix": true
     }
   ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   // "files.insertFinalNewline": true,
   // "files.trimTrailingWhitespace": true,
   // "prettier.eslintIntegration": true,
