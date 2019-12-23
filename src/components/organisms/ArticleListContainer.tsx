@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {PaginationContext, SubPageContext} from '../../../gatsby-node_';
-import {Paginator, SubPageLinks} from '../atoms';
+import {Paginator, SubPageLinks, ArticlePreviewsContaienr} from '../atoms';
 import {AuthorCard, PostPreviewCard} from '../molecules';
 
 type Props = {
@@ -14,7 +14,7 @@ export const ArticleListContainer: React.FC<Props> = ({postEdges, context}) => {
   return (
     <PageContainer>
       <ArticleArea>
-        <PostPreviewCardContaienr>
+        <ArticlePreviewsContaienr>
           {postEdges.map(
             (edge): JSX.Element => (
               <PostPreviewCard
@@ -23,7 +23,7 @@ export const ArticleListContainer: React.FC<Props> = ({postEdges, context}) => {
               />
             )
           )}
-        </PostPreviewCardContaienr>
+        </ArticlePreviewsContaienr>
         <Paginator context={context} />
       </ArticleArea>
 
@@ -52,15 +52,6 @@ const PageContainer = styled.div`
 
 const ArticleArea = styled.div`
   flex: 4;
-`;
-
-export const PostPreviewCardContaienr = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
 `;
 
 export default ArticleListContainer;

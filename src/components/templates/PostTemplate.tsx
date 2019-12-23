@@ -5,12 +5,17 @@ import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Img from 'gatsby-image';
 import {UserInfo, UpdatedAt} from '../molecules';
-import {TagList, SocialLinks, SEOMeta, Markdown} from '../atoms';
+import {
+  TagList,
+  SocialLinks,
+  SEOMeta,
+  Markdown,
+  ArticlePreviewsContaienr,
+} from '../atoms';
 import {PostPreviewCard} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
-import {PostPreviewCardContaienr} from '../organisms/ArticleListContainer';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -50,7 +55,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
           </SPostPageContent>
           <UserInfo config={config} />
         </SPostPagePaper>
-        <PostPreviewCardContaienr>
+        <ArticlePreviewsContaienr>
           {suggestions.map(edge => (
             <PostPreviewCard
               key={edge.node.frontmatter.title}
@@ -58,7 +63,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
             />
             // TODO: PostPreviewCardのpostInfo の型をIndex / post で使えるように共通化したい。
           ))}
-        </PostPreviewCardContaienr>
+        </ArticlePreviewsContaienr>
       </SPostPage>
     </Layout>
   );
