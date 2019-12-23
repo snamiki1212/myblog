@@ -27,7 +27,10 @@ export const PostPreviewCard: React.FC<Props> = ({postInfo}) => {
 
           <CardContent>
             <ContentDate>
-              <UpdatedAt date={postInfo.node.fields._updatedAt} />
+              <UpdatedAt
+                date={postInfo.node.fields._updatedAt}
+                containerStyle={{justifyContent: 'flex-end'}}
+              />
             </ContentDate>
             <ContenTitle>{postInfo.node.frontmatter.title}</ContenTitle>
 

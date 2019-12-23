@@ -1,10 +1,12 @@
 import React from 'react';
 
 // material-ui/icons
+// search => https://material-ui.com/components/material-icons/
 import PlaceIcon from '@material-ui/icons/Place';
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import DesktopMacIcon from '@material-ui/icons/DesktopMac';
+import Event from '@material-ui/icons/Event';
 import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
 
 // fontawesome
@@ -14,7 +16,6 @@ import {
   faTwitter,
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
-import {faSync} from '@fortawesome/free-solid-svg-icons';
 
 type Props = {
   icon:
@@ -26,7 +27,7 @@ type Props = {
     | 'github'
     | 'twitter'
     | 'linkedin'
-    | 'sync';
+    | 'calendar';
 };
 
 export const XIcon: React.FC<Props> = ({icon}) => {
@@ -47,8 +48,8 @@ export const XIcon: React.FC<Props> = ({icon}) => {
       return <FontAwesomeIcon icon={faTwitter} size="3x" />;
     case 'linkedin':
       return <FontAwesomeIcon icon={faLinkedinIn} size="3x" />;
-    case 'sync':
-      return <FontAwesomeIcon icon={faSync} />;
+    case 'calendar':
+      return <Event fontSize="small" />;
     default:
       return <></>;
   }

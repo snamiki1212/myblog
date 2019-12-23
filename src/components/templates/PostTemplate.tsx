@@ -37,7 +37,10 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         <SPostPagePaper>
           <SPostPageContent className="target-el">
             <span style={{textAlign: 'right', paddingTop: '30px'}}>
-              <UpdatedAt date={postNode.frontmatter.updatedAt} />
+              <UpdatedAt
+                date={postNode.frontmatter.updatedAt}
+                containerStyle={{justifyContent: 'flex-end'}}
+              />
             </span>
             <Markdown htmlAst={postNode.htmlAst} />
             <SPostPageFooter>
