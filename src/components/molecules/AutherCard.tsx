@@ -8,13 +8,21 @@ import {MyLinks} from '../atoms';
 
 export const AuthorCard: React.FC = () => (
   <Container>
-    <Link to="/about">
-      <Button>
-        <div>
-          <Avator src={config.userAvatar} alt={config.autherName} />
-          <Name>{config.autherName}</Name>
-          <Discription>{config.userDescription}</Discription>
-        </div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <Avator src={config.userAvatar} alt={config.autherName} />
+      <Name>{config.autherName}</Name>
+      <Discription>{config.userDescription}</Discription>
+    </div>
+    <Link to="/about" style={{display: 'flex'}}>
+      <Button variant="outlined" style={{flex: 1}}>
+        <span>▷プロフィールを読む</span>
       </Button>
     </Link>
     <MyLinks />
@@ -22,7 +30,10 @@ export const AuthorCard: React.FC = () => (
 );
 
 const Container = styled.div`
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  alin-items: center;
+  justify-content: center;
   color: ${colors.fontGray1};
 `;
 
