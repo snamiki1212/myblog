@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import {XIcon} from './';
+import {Icon} from './';
 
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
@@ -18,7 +18,7 @@ export const MyLinks: React.FC = () => {
               href={social.url}
               style={{height: '100px'}}
             >
-              <XIcon icon={social.icon} />
+              <Icon icon={social.icon} />
             </Button>
           )
         )}

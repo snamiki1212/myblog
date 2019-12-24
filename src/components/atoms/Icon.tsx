@@ -30,7 +30,7 @@ type Props = {
     | 'calendar';
 };
 
-export const XIcon: React.FC<Props> = ({icon}) => {
+export const Icon: React.FC<Props> = ({icon}) => {
   switch (icon) {
     case 'face':
       return <FaceIcon />;
