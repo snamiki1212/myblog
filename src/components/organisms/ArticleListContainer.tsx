@@ -18,31 +18,15 @@ export const ArticleListContainer: React.FC<Props> = ({postEdges, context}) => {
   const theme = useTheme();
   const isSP = useMediaQuery(theme.breakpoints.down('sm'));
 
+  const Article = isSP ? ArticlePreviewLine : ArticlePreviewCard;
   return (
     <PageContainer>
       <ArticleArea>
-        {isSP ? (
-          postEdges.map(
-            (edge): JSX.Element => (
-              <ArticlePreviewLine
-                key={edge.node.frontmatter.title}
-                postInfo={edge}
-              />
-            )
+        {postEdges.map(
+          (edge): JSX.Element => (
+            <Article key={edge.node.frontmatter.title} postInfo={edge} />
           )
-        ) : (
-          <ArticlePreviewsContaienr>
-            {postEdges.map(
-              (edge): JSX.Element => (
-                <ArticlePreviewCard
-                  key={edge.node.frontmatter.title}
-                  postInfo={edge}
-                />
-              )
-            )}
-          </ArticlePreviewsContaienr>
         )}
-
         <Paginator context={context} />
       </ArticleArea>
 
