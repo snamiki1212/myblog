@@ -11,7 +11,6 @@ import {MyLinks} from '../atoms';
 type Props = {
   config: any;
 };
-// TODO: configをバケツリレーしないで、そのまま、importして使いたい
 
 export const UserInfo: React.FC<Props> = ({config}): JSX.Element => {
   const {
