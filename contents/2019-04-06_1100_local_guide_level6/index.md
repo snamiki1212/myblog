@@ -3,7 +3,7 @@ title: 'ローカルガイドのレベル6に一日でなった話←コツは�
 cover: cover.jpg
 createdAt: '2019-04-06 11:00'
 updatedAt: '2019-04-06 11:00'
-category: 'LocalGuide'
+category: 'LOCAL_GUIDE'
 tags:
   - ローカルガイド
 slug: local-guide-level-6

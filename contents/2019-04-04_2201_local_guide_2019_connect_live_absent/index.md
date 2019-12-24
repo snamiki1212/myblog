@@ -3,7 +3,7 @@ title: 'ローカルガイド特典のコネクトライブ2019に応募しな�
 cover: cover.jpg
 createdAt: '2019-04-04 22:01'
 updatedAt: '2019-04-04 22:01'
-category: 'LocalGuide'
+category: 'LOCAL_GUIDE'
 tags:
   - ローカルガイド
 slug: local-guide-2019_connect_live_absent

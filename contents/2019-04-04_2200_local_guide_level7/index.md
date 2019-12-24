@@ -3,7 +3,7 @@ title: 'ローカルガイドのレベル7になったので、ここまでに�
 cover: cover.jpg
 createdAt: '2019-04-04 22:00'
 updatedAt: '2019-04-04 22:00'
-category: 'LocalGuide'
+category: 'LOCAL_GUIDE'
 tags:
   - ローカルガイド
 slug: local-guide-level-7

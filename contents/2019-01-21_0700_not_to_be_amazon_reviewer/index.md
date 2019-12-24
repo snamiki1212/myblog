@@ -3,7 +3,7 @@ title: 'AmazonVineメンバーを、私がなぜ目指さないか←現状が�
 cover: 'cover.jpg'
 createdAt: '2019-01-21 07:00'
 updatedAt: '2019-01-21 07:00'
-category: 'LocalGuide'
+category: 'LOCAL_GUIDE'
 tags:
   - thought
   - AmazonVine
