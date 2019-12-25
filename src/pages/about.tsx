@@ -14,6 +14,18 @@ import styled from 'styled-components';
 const myTwitterUrl = config.mySocials.find(ele => ele.icon === 'twitter').url;
 const myLinkedinUrl = config.mySocials.find(ele => ele.icon === 'linkedin').url;
 
+const Box: React.FC = ({children}) => (
+  <div
+    style={{
+      border: '1px solid lightgray',
+      padding: '20px',
+      margin: '10px',
+    }}
+  >
+    {children}
+  </div>
+);
+
 const AboutPage: React.FC = () => {
   return (
     <Layout>
@@ -27,12 +39,33 @@ const AboutPage: React.FC = () => {
           <CardContent>
             {/* ------------------------------------ */}
             <h2>Nash プロフィール</h2>
-            <div style={{display: 'flex', flexDirection: 'row'}}>
-              <Avator src={config.userAvatar} alt={config.userName} />
-              <Text>{config.userDescription}</Text>
-            </div>
+            <Avator src={config.userAvatar} alt={config.userName} />
+            <Text>{config.userDescription}</Text>
             {/* ------------------------------------ */}
-            {/* <h2>経歴</h2> */}
+            <h2>経歴</h2>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                justifyContent: 'center',
+              }}
+            >
+              <Box>
+                ①大手SIerでSEとして上流工程の仕事を行う(2013~)
+                <br />
+              </Box>
+              <span style={{marginLeft: '20px'}}>{`↓↓↓`}</span>
+              <Box>
+                ②ベンチャーでWeb系のプログラマーとして開発(2017~)
+                <br />
+              </Box>
+              <span style={{marginLeft: '20px'}}>{`↓↓↓`}</span>
+              <Box>
+                ③独立してフリーランスに。(2019~now
+                <br />
+              </Box>
+            </div>
             {/* ------------------------------------ */}
             <h2>出来ること</h2>
             <p>
@@ -42,10 +75,9 @@ const AboutPage: React.FC = () => {
               ソフトスキル
               <ul>
                 <li>チームリーダー</li>
-                <li>プレイングリーダー</li>
                 <li>対顧客折衝</li>
                 <li>プロジェクト改善</li>
-                <li>ディレクター</li>
+                <li>ディレクション</li>
               </ul>
             </p>
             <p>
@@ -67,23 +99,21 @@ const AboutPage: React.FC = () => {
             {/* ------------------------------------ */}
             <h2>最近つくったモノ</h2>
             <h3># Lunash (このブログ)</h3>
-            <p>GatsbyJS / TypeScript を中心に作成してあります。</p>
+            <p>GatsbyJS / TypeScript / Netlify 周りの技術で作成してます。</p>
             <TweetForMyblog />
 
             {/* ------------------------------------ */}
-            <h2>お仕事の依頼</h2>
-            <p>
-              日々の情報発信は Twitter を中心に行っています。
-              <br />
-              お仕事に関する依頼も、TwitterのDMにて受け付けています。
-            </p>
+            <h2>仕事の依頼</h2>
+            <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
             <CardActions>
               <Button>
-                <a href={myTwitterUrl}>» Nash@Webエンジニア(@snamiki1212)</a>
+                <a href={myTwitterUrl}>
+                  » Twitter - Nash@Webエンジニア(@snamiki1212)
+                </a>
               </Button>
             </CardActions>
             {/* ------------------------------------ */}
-            <h2>このブログ</h2>
+            <h2>このブログについて</h2>
             <Text>
               このブログのコンテンツは全てgithubで管理されています。
               内容に問題や訂正すべき内容がある場合は
