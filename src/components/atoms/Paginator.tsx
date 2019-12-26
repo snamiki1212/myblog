@@ -19,8 +19,8 @@ export const Paginator: React.FC<Props> = ({context}) => {
             key={`pagination-number${i + 1}`}
             to={`/${i === 0 ? '' : i + 1}`}
             style={{
-              color: i + 1 === currentPage ? colors.fontWhite1 : '',
-              background: i + 1 === currentPage ? colors.backgroundBlack1 : '',
+              color: i + 1 === currentPage ? colors.white1 : '',
+              background: i + 1 === currentPage ? colors.black1 : '',
             }}
           >
             {i + 1}
@@ -33,11 +33,11 @@ export const Paginator: React.FC<Props> = ({context}) => {
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  background: ${colors.backgroundWhite2};
+  background: ${colors.gray1};
   padding: 15px;
   transition: 0.3s;
   &:hover {
-    background: ${colors.backgroundVivid1};
+    background: ${colors.vivid2};
   }
 `;
 

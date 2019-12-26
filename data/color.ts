@@ -1,35 +1,34 @@
-const baseColor = {
-  primary: '#009688',
-  secondary: '#00e676',
-};
+// color palette: https://colorhunt.co/palette/138663 # これを採用
+const BLACK = '#233142';
+const LIGHT_GRAY = '#f3f3f3';
+const DARK_GRAY = '#666666';
+const BLUE = '#4f9da6';
+// const YELLOW = '#facf5a';
+const LIGHT_YELLOW = '#fdeec2';
+const RED = '#ff5959';
+const WHITE = '#ffffff';
+
+// NOTE: layout.scss も更新する。
 
 export const colors = {
-  primary: baseColor.primary,
-  secondary: baseColor.secondary,
+  primary: BLACK,
+  secondary: BLUE,
 
-  // background-color
-  backgroundBlack1: '#222222',
-  backgroundGray1: '#f7f7f7',
-  backgroundVivid1: '#009688',
-  backgroundWhite1: '#ffffff',
-  backgroundWhite2: '#f3f3f3',
-  backgroundWhite3: '#e5e3df',
+  // mono-tone
+  black1: BLACK,
+  gray1: LIGHT_GRAY,
+  gray2: DARK_GRAY,
+  white1: WHITE,
 
-  // font-color
-  fontBlack1: '#222222',
-  fontBlack2: '#111111',
-  fontVivid1: '#005f56',
-  fontVivid2: '#00897b',
-  fontVivid3: '#33a095',
-  fontWhite1: '#ffffff',
-  fontWhite2: '#dddddd',
-  fontGray1: '#666666',
-  fontGray2: '#888888',
-  fontMark1: '#ffd6ff',
+  // color
+  vivid1: RED,
+  vivid2: BLUE,
+  base1: BLACK,
 
   // Misc
-  hLeft: baseColor.secondary,
-  listBackgroundColor: '#f3f3f3',
+  hLeft: BLUE,
+  fontMark1: LIGHT_YELLOW,
+  listBackgroundColor: LIGHT_GRAY,
 };
 
 export default {

@@ -34,7 +34,7 @@ const Container = styled.div`
   flex-direction: column;
   alin-items: center;
   justify-content: center;
-  color: ${colors.fontGray1};
+  color: ${colors.gray2};
 `;
 
 const Avator = styled.img`
@@ -44,8 +44,8 @@ const Avator = styled.img`
 
 const Name = styled.div`
   font-size: 32px;
-  color: ${colors.fontBlack1};
-  border-bottom: 1px solid ${colors.fontVivid1};
+  color: ${colors.black1};
+  border-bottom: 1px solid ${colors.vivid2};
 
   font-family: 'Megrim', 'Yu Gothic M', 'Raleway'; // TODO: megrim import
   text-align: center;
