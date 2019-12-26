@@ -11,7 +11,7 @@ const WHITE = '#ffffff';
 
 // colors
 const GREEN_LIGHT = '#b1f4cf';
-const YELLOW_LIGHT = '#ffecc4';
+const PURPLE_LIGHT = '#ddd9fa';
 const PURPLE = '#9890e3';
 
 export const colors = {
@@ -31,7 +31,7 @@ export const colors = {
 
   // Misc
   hLeft: GREEN_LIGHT,
-  fontMark1: YELLOW_LIGHT,
+  fontMark1: PURPLE_LIGHT,
 };
 
 export default {
