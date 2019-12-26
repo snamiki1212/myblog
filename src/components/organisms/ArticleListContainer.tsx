@@ -20,15 +20,22 @@ export const ArticleListContainer: React.FC<Props> = ({postEdges, context}) => {
 
   const Article = isSP ? ArticlePreviewLine : ArticlePreviewCard;
   return (
-    <PageContainer>
-      <ArticleArea>
-        {postEdges.map(
-          (edge): JSX.Element => (
-            <Article key={edge.node.frontmatter.title} postInfo={edge} />
-          )
-        )}
+    <PageContainer
+      style={{
+        flexDirection: isSP ? 'column' : 'row',
+        padding: isSP ? '0px' : '25px',
+      }}
+    >
+      <MainArea>
+        <ArticlesArea style={{flexDirection: isSP ? 'column' : 'row'}}>
+          {postEdges.map(
+            (edge): JSX.Element => (
+              <Article key={edge.node.frontmatter.title} postInfo={edge} />
+            )
+          )}
+        </ArticlesArea>
         <Paginator context={context} />
-      </ArticleArea>
+      </MainArea>
 
       <AsideArea>
         <AuthorCard />
@@ -38,23 +45,29 @@ export const ArticleListContainer: React.FC<Props> = ({postEdges, context}) => {
   );
 };
 
-const AsideArea = styled.aside`
-  flex: 1;
-  width: 100%;
-  min-width: 250px;
-  padding: 24px;
-
-  background-color: ${colors['backgroundWhite2']};
-`;
-
 const PageContainer = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 `;
 
-const ArticleArea = styled.div`
-  flex: 4;
+const MainArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
+
+const ArticlesArea = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+`;
+
+const AsideArea = styled.aside`
+  flex: 0;
+  min-width: 300px;
+  padding: 50px;
+  background-color: ${colors['backgroundWhite2']};
 `;
 
 export default ArticleListContainer;

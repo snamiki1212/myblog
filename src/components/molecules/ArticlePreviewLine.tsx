@@ -17,20 +17,22 @@ export const ArticlePreviewLine: React.FC<Props> = ({postInfo: edge}) => {
       style={{
         display: 'flex',
         justifyContent: 'center',
-        paddingTop: PADDING_SIZE,
-        paddingBottom: PADDING_SIZE,
-
+        padding: PADDING_SIZE,
         borderBottom: '1px lightgray solid',
       }}
     >
       <Img
         fluid={edge.node.frontmatter.cover.childImageSharp.fluid}
-        style={{flex: 3}}
+        style={{
+          flex: 3,
+          height: '100px',
+          objectFit: 'cover',
+        }}
       />
       <div
         style={{
           flexDirection: 'row',
-          flex: 4,
+          flex: 5,
           paddingLeft: PADDING_SIZE,
         }}
       >

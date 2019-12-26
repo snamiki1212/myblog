@@ -21,8 +21,6 @@ const useStyles = makeStyles((theme: Theme) =>
     toolbar: theme.mixins.toolbar,
     content: {
       width: '100vw',
-      flexGrow: 1,
-      padding: theme.spacing(3),
     },
   })
 );

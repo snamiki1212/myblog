@@ -44,8 +44,7 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
 
 const StyledCard = styled(Card)`
   margin: 10px;
-  min-width: 300px;
-  max-width: 45%;
+  width: 45%;
 `;
 
 const StyledCardActionArea = styled(CardActionArea)`
