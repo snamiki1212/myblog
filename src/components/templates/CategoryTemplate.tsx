@@ -56,7 +56,7 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         description={
           <div style={{paddingTop: '30px', paddingLeft: '50px'}}>
             <div>▶{category}</div>
-            <span style={{color: colors.gray2}}>{description}</span>
+            <span style={{color: colors.grayDark}}>{description}</span>
           </div>
         }
       />

@@ -10,7 +10,6 @@ const fontColorNormal = colors.black1;
 const fontColorHeadline = colors.black1;
 const fontColorVivid = 'red';
 const hLeft = colors.hLeft;
-const listBackgroundColor = colors.gray1;
 
 const mixinHeadline = `
   font-weight: bold;
@@ -19,7 +18,7 @@ const mixinHeadline = `
 
 const mixinList = `
   list-style-position: outside;
-  background-color: ${listBackgroundColor};
+  background-color: ${colors.grayLight};
 `;
 
 const H1 = styled.h1`

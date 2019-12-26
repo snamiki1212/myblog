@@ -34,7 +34,7 @@ const Container = styled.div`
   flex-direction: column;
   alin-items: center;
   justify-content: center;
-  color: ${colors.gray2};
+  color: ${colors.grayDark};
 `;
 
 const Avator = styled.img`

@@ -73,7 +73,7 @@ const AsideArea = styled.aside`
   flex: 0;
   min-width: 300px;
   padding: 50px;
-  background-color: ${colors.gray1};
+  background-color: ${colors.grayLight};
 `;
 
 export default ArticleListContainer;
