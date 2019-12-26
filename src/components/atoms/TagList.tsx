@@ -3,8 +3,11 @@ import _ from 'lodash';
 import {Link} from 'gatsby';
 import Chip from '@material-ui/core/Chip';
 import styled from 'styled-components';
+import {colors} from '../../../data/color';
 
-type Props = {tags: any};
+type Props = {
+  tags: string[];
+};
 
 export const TagList: React.FC<Props> = ({tags}) => {
   return (
@@ -35,4 +38,5 @@ const Container = styled.div`
 
 const SChip = styled(Chip)`
   margin: 5px 2px 0;
+  background: linear-gradient(to left, ${colors.vivid1}, ${colors.vivid2});
 `;

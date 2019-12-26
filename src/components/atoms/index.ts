@@ -10,3 +10,4 @@ export * from './Icon';
 export * from './Markdown';
 export * from './SubPageLinks';
 export * from './ArticlePreviewsContaienr';
+export * from './ArticlesArea';

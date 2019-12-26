@@ -7,7 +7,7 @@ type Props = {context: SubPageContext};
 export const SubPageLinks: React.FC<Props> = ({context}) => {
   return (
     <div style={{paddingTop: '50px'}}>
-      <div>
+      <div style={{paddingBottom: '20px'}}>
         <div>▼カテゴリー</div>
         {context.categories.map(({name, count, path}) => (
           <Button key={name}>
@@ -16,7 +16,6 @@ export const SubPageLinks: React.FC<Props> = ({context}) => {
         ))}
       </div>
 
-      <hr />
       <div>
         <div>▼タグ</div>
         {context.tags.map(({name, count, path}) => (

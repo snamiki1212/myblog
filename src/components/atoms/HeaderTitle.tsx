@@ -4,26 +4,35 @@ import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
 export const HeaderTitle: React.FC = () => {
-  return <Title href="/">{config.siteTitle}</Title>;
+  return (
+    <Title href="/">
+      <Inner>{config.siteTitle}</Inner>
+    </Title>
+  );
 };
 
-const _color = colors.white1;
+const beforeColor = colors.white1;
+
+const Inner = styled.span`
+  transition: color 0.3s ease;
+  &:hover {
+    color: ${colors.vivid1};
+    text-shadow: -1px -1px 0 ${beforeColor}, 1px -1px 0 ${beforeColor},
+      -1px 1px 0 ${beforeColor}, 1px 1px 0 ${beforeColor}; // 縁取り文字:REF https://css-tricks.com/adding-stroke-to-web-text/
+  }
+`;
+
 const Title = styled.a`
   padding: 8px 20px;
   font-size: 32px;
   letter-spacing: 3px;
   font-family: 'Megrim', 'Yu Gothic M', 'Raleway';
-  transition: 0.3s;
+  transition: color 0.3s ease;
   margin: auto 0;
-  color: ${_color};
   &:link {
-    color: ${_color};
+    color: ${beforeColor};
   }
   &:visited {
-    color: ${_color};
-  }
-  &:hover {
-    color: ${_color};
-    font-size: 36px;
+    color: ${beforeColor};
   }
 `;

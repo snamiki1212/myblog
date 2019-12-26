@@ -8,7 +8,6 @@ const mobileWidth = '680px';
 
 const fontColorNormal = colors.black1;
 const fontColorHeadline = colors.black1;
-const fontColorVivid = 'red';
 const hLeft = colors.hLeft;
 
 const mixinHeadline = `
@@ -34,15 +33,10 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   ${mixinHeadline}
-
   font-size: 25px;
-  background-color: ${colors.black1}
-  color: ${colors.white1}
-
   margin-top: 60px;
-  background: linear-gradient(to left, ${colors.vivid1}, ${colors.vivid2});
-
   padding: 10px 40px;
+  background: linear-gradient(to left, ${colors.vivid1}, ${colors.vivid2});
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }
@@ -70,7 +64,7 @@ const A = styled.a`
   border-bottom: solid 1px;
   transition: 0.5s;
   &:hover {
-    color: ${fontColorVivid};
+    color: ${colors.grayDark};
     transition: 0.3s;
   }
 `;
@@ -111,6 +105,8 @@ const Table = styled.table`
   width: 100%;
   max-width: 100%;
   margin-bottom: 20px;
+  border-collapse: collapse;
+  color: ${fontColorNormal};
 `;
 
 const Ul = styled.ul`
@@ -127,6 +123,16 @@ const Ol = styled.ol`
 const Li = styled.li`
   ${mixinList}
   padding: 10px
+`;
+
+const Td = styled.td`
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+`;
+
+const Tr = styled.tr`
+  border-bottom: 1px solid ${colors.grayDark};
 `;
 
 /**
@@ -155,6 +161,8 @@ export const renderReact = new RehypeReact({
     p: P,
     blockquote: Blockquote,
     table: Table,
+    td: Td,
+    tr: Tr,
     ul: Ul,
     ol: Ol,
     li: Li,

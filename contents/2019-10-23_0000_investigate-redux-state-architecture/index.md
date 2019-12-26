@@ -154,7 +154,8 @@ Context から Redux へのリプレイスで State 周りを色々調べたが�
 - ReduxWay を進める派
 
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="ja" dir="ltr">個人的に Context と Redux の併用は、Redux の思想である Single Source of Truth に反するのでやるべきではないと考えてます。UIに関する状態のみを State Hook で持たせ、あとは Redux で一貫して管理というのが初心者も混乱せずいいと思ってます。</p>&mdash; 大岡由佳『りあクト!🔥Firebase編』Boothで好評販売中! (@oukayuka) <a href="https://twitter.com/oukayuka/status/1123849193653714945?ref_src=twsrc%5Etfw">May 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-- ContextWayを進める派
+
+- ContextWay を進める派
 
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="ja" dir="ltr">hooks時代のreactは基本的にanti single global stateのようで、local states+contextsが基本だと思います。reduxの出番はactionによるseparation of concernsが必要になる大規模アプリに限定されると思います。reduxの用途は無くなりませんが、これまではoveruseされたという解釈です。</p>&mdash; Daishi Kato (@dai_shi) <a href="https://twitter.com/dai_shi/status/1123859947643654144?ref_src=twsrc%5Etfw">May 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

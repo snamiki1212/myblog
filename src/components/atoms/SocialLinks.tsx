@@ -34,46 +34,64 @@ export const SocialLinks: React.FC<Props> = props => {
   );
 
   return (
-    <Wrapper>
+    <Container>
       <HatenaShareButton url={url} size={iconSize} />
-      <RedditShareButton url={url} title={post.title}>
-        <RedditIcon round size={iconSize} />
-        <RedditShareCount url={url}>
-          {(count: number): JSX.Element => renderShareCount(count)}
-        </RedditShareCount>
-      </RedditShareButton>
+      <InnerContainer>
+        <RedditShareButton url={url} title={post.title}>
+          <RedditIcon round size={iconSize} />
+          <RedditShareCount url={url}>
+            {(count: number): JSX.Element => renderShareCount(count)}
+          </RedditShareCount>
+        </RedditShareButton>
+      </InnerContainer>
 
-      <TwitterShareButton url={url} title={post.title}>
-        <TwitterIcon round size={iconSize} />
-      </TwitterShareButton>
+      <InnerContainer>
+        <TwitterShareButton url={url} title={post.title}>
+          <TwitterIcon round size={iconSize} />
+        </TwitterShareButton>
+      </InnerContainer>
 
-      <FacebookShareButton url={url} quote={postNode.excerpt}>
-        <FacebookIcon round size={iconSize} />
-        <FacebookShareCount url={url}>
-          {(count: number): JSX.Element => renderShareCount(count)}
-        </FacebookShareCount>
-      </FacebookShareButton>
+      <InnerContainer>
+        <FacebookShareButton url={url} quote={postNode.excerpt}>
+          <FacebookIcon round size={iconSize} />
+          <FacebookShareCount url={url}>
+            {(count: number): JSX.Element => renderShareCount(count)}
+          </FacebookShareCount>
+        </FacebookShareButton>
+      </InnerContainer>
 
-      <LinkedinShareButton url={url}>
-        <LinkedinIcon round size={iconSize} />
-      </LinkedinShareButton>
+      <InnerContainer>
+        <LinkedinShareButton url={url}>
+          <LinkedinIcon round size={iconSize} />
+        </LinkedinShareButton>
+      </InnerContainer>
 
-      <TelegramShareButton url={url}>
-        <TelegramIcon round size={iconSize} />
-      </TelegramShareButton>
+      <InnerContainer>
+        <TelegramShareButton url={url}>
+          <TelegramIcon round size={iconSize} />
+        </TelegramShareButton>
+      </InnerContainer>
 
-      <LineShareButton url={url} title={post.title}>
-        <LineIcon round size={iconSize} />
-      </LineShareButton>
-    </Wrapper>
+      <InnerContainer>
+        <LineShareButton url={url} title={post.title}>
+          <LineIcon round size={iconSize} />
+        </LineShareButton>
+      </InnerContainer>
+    </Container>
   );
 };
+
+const InnerContainer = styled.span`
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 const ShareCount = styled.div`
   text-align: center;
 `;
 
-const Wrapper = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

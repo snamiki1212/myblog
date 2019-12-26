@@ -36,6 +36,7 @@ const StyledLink = styled(Link)`
   background: ${colors.grayLight};
   padding: 15px;
   transition: 0.3s;
+  border-radius: 50%;
   &:hover {
     background: ${colors.vivid2};
   }

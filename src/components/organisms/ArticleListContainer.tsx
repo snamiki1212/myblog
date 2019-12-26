@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {PaginationContext, SubPageContext} from '../../../gatsby-node_';
-import {Paginator, SubPageLinks} from '../atoms';
+import {Paginator, SubPageLinks, ArticlesArea} from '../atoms';
 import {AuthorCard, ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 import {MarkdownRemarkEdge} from '../../types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 import {useTheme} from '@material-ui/core/styles';
 
 type Props = {
@@ -63,16 +62,11 @@ const MainArea = styled.div`
   flex: 1;
 `;
 
-const ArticlesArea = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-`;
-
 const AsideArea = styled.aside`
   flex: 0;
   min-width: 300px;
   padding: 50px;
+  border-radius: 10px;
   background-color: ${colors.grayLight};
 `;
 

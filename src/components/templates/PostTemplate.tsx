@@ -4,19 +4,15 @@ import {graphql} from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Img from 'gatsby-image';
-import {UserInfo, UpdatedAt} from '../molecules';
-import {
-  TagList,
-  SocialLinks,
-  SEOMeta,
-  Markdown,
-  ArticlePreviewsContaienr,
-} from '../atoms';
-import {ArticlePreviewCard} from '../molecules';
+import {UpdatedAt, AuthorCard} from '../molecules';
+import {TagList, SocialLinks, SEOMeta, Markdown, ArticlesArea} from '../atoms';
+import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
 import {FluidObject} from 'gatsby-image';
 import {MarkdownRemarkEdge} from '../../types';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import {useTheme} from '@material-ui/core/styles';
 
 type Props = {
   data: PostPageQuery;
@@ -28,6 +24,10 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
+
+  const theme = useTheme();
+  const isSP = useMediaQuery(theme.breakpoints.down('sm'));
+  const Article = isSP ? ArticlePreviewLine : ArticlePreviewCard;
 
   return (
     <Layout>
@@ -55,17 +55,17 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
               <SocialLinks postNode={postNode} />
             </SPostPageFooter>
           </SPostPageContent>
-          <UserInfo config={config} />
+          <hr />
+          <div style={{padding: '50px 0'}}>
+            <AuthorCard />
+          </div>
+          <hr />
         </SPostPagePaper>
-        <ArticlePreviewsContaienr>
+        <ArticlesArea style={{flexDirection: isSP ? 'column' : 'row'}}>
           {suggestions.map(edge => (
-            <ArticlePreviewCard
-              key={edge.node.frontmatter.title}
-              postInfo={edge}
-            />
-            // TODO: ArticlePreviewCardのpostInfo の型をIndex / post で使えるように共通化したい。
+            <Article key={edge.node.frontmatter.title} postInfo={edge} />
           ))}
-        </ArticlePreviewsContaienr>
+        </ArticlesArea>
       </SPostPage>
     </Layout>
   );
