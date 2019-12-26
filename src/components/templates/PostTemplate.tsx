@@ -41,13 +41,15 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         <HeaderImg fluid={postNode.frontmatter.cover.childImageSharp.fluid} />
         <SPostPagePaper>
           <SPostPageContent className="target-el">
-            <span style={{textAlign: 'right', paddingTop: '30px'}}>
-              <UpdatedAt
-                date={postNode.frontmatter.updatedAt}
-                containerStyle={{justifyContent: 'flex-end'}}
-              />
-            </span>
-            <Markdown htmlAst={postNode.htmlAst} />
+            <div style={{paddingRight: '10px', paddingLeft: '10px'}}>
+              <span style={{textAlign: 'right', paddingTop: '30px'}}>
+                <UpdatedAt
+                  date={postNode.frontmatter.updatedAt}
+                  containerStyle={{justifyContent: 'flex-end'}}
+                />
+              </span>
+              <Markdown htmlAst={postNode.htmlAst} />
+            </div>
             <SPostPageFooter>
               <TagList tags={post.tags} />
               <SocialLinks postNode={postNode} />
