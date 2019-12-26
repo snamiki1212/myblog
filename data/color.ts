@@ -1,19 +1,22 @@
-// color palette: https://colorhunt.co/palette/138663 # これを採用
-const BLACK = '#233142';
-const GRAY_LIGHT = '#f3f3f3';
-const GRAY_DARK = '#666666';
-const BLUE = '#4f9da6';
-// const BLUE_LIGHT = '#9ac7cc';
-// const YELLOW = '#facf5a';
-const LIGHT_YELLOW = '#fdeec2';
-const RED = '#ff5959';
-const WHITE = '#ffffff';
+// color parelle
+// * 032 Sharpeye Eagle: https://webgradients.com/
 
 // NOTE: layout.scss も更新する。
 
+// monoton
+const BLACK = '#233142';
+const GRAY_LIGHT = '#f3f3f3';
+const GRAY_DARK = '#666666';
+const WHITE = '#ffffff';
+
+// colors
+const GREEN_LIGHT = '#b1f4cf';
+const YELLOW_LIGHT = '#ffecc4';
+const PURPLE = '#9890e3';
+
 export const colors = {
   primary: BLACK,
-  secondary: BLUE,
+  secondary: GREEN_LIGHT,
 
   // mono-tone
   black1: BLACK,
@@ -22,14 +25,13 @@ export const colors = {
   white1: WHITE,
 
   // color
-  vivid1: RED,
-  vivid2: BLUE,
-  // vivid2Light: BLUE_LIGHT,
+  vivid1: PURPLE,
+  vivid2: GREEN_LIGHT,
   base1: BLACK,
 
   // Misc
-  hLeft: BLUE,
-  fontMark1: LIGHT_YELLOW,
+  hLeft: GREEN_LIGHT,
+  fontMark1: YELLOW_LIGHT,
 };
 
 export default {
