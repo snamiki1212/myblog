@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
             <Avator src={config.userAvatar} alt={config.userName} />
             <Text>{config.userDescription}</Text>
             {/* ------------------------------------ */}
-            <h2>経歴</h2>
+            <h2>いままで</h2>
             <div
               style={{
                 display: 'flex',
@@ -71,7 +71,7 @@ const AboutPage: React.FC = () => {
             <p>
               基本的にエンジニアとして、フロントとバックエンドの開発を中心に活動しています。
             </p>
-            <p>
+            <div>
               ソフトスキル
               <ul>
                 <li>チームリーダー</li>
@@ -79,8 +79,8 @@ const AboutPage: React.FC = () => {
                 <li>プロジェクト改善</li>
                 <li>ディレクション</li>
               </ul>
-            </p>
-            <p>
+            </div>
+            <div>
               ハード
               <ul>
                 <li>React.js(Next.js/Gatsby.JS)</li>
@@ -89,7 +89,7 @@ const AboutPage: React.FC = () => {
                 <li>Elixir/Phoenix</li>
                 <li>Laravel/PHP</li>
               </ul>
-            </p>
+            </div>
             <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
             <CardActions>
               <Button>
@@ -97,7 +97,7 @@ const AboutPage: React.FC = () => {
               </Button>
             </CardActions>
             {/* ------------------------------------ */}
-            <h2>最近つくったモノ</h2>
+            <h2>作ったモノ</h2>
             <h3># Lunash (このブログ)</h3>
             <p>GatsbyJS / TypeScript / Netlify 周りの技術で作成してます。</p>
             <TweetForMyblog />
