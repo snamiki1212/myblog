@@ -25,6 +25,7 @@ export const colors = {
   fontWhite2: '#dddddd',
   fontGray1: '#666666',
   fontGray2: '#888888',
+  fontMark1: '#ffd6ff',
 
   // Misc
   hLeft: baseColor.secondary,

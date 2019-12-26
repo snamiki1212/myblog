@@ -78,7 +78,7 @@ const A = styled.a`
 
 const B = styled.b`
   ${mixinHeadline}
-  color: ${fontColorVivid}
+  background: linear-gradient(transparent 50%, ${colors.fontMark1} 0%);
 `;
 
 const P = styled.p`
