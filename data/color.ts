@@ -1,35 +1,37 @@
-const baseColor = {
-  primary: '#009688',
-  secondary: '#00e676',
-};
+// color parelle
+// * 032 Sharpeye Eagle: https://webgradients.com/
+
+// NOTE: layout.scss も更新する。
+
+// monoton
+const BLACK = '#3e3a5e';
+const GRAY_LIGHT = '#f3f3f3';
+const GRAY_DARK = '#666666';
+const WHITE = '#ffffff';
+
+// colors
+const GREEN_LIGHT = '#b1f4cf';
+const YELLOW_LIGHT = '#ffecc4';
+const PURPLE = '#9890e3';
 
 export const colors = {
-  primary: baseColor.primary,
-  secondary: baseColor.secondary,
+  primary: BLACK,
+  secondary: GREEN_LIGHT,
 
-  // background-color
-  backgroundBlack1: '#222222',
-  backgroundGray1: '#f7f7f7',
-  backgroundVivid1: '#009688',
-  backgroundWhite1: '#ffffff',
-  backgroundWhite2: '#f3f3f3',
-  backgroundWhite3: '#e5e3df',
+  // mono-tone
+  black1: BLACK,
+  grayLight: GRAY_LIGHT,
+  grayDark: GRAY_DARK,
+  white1: WHITE,
 
-  // font-color
-  fontBlack1: '#222222',
-  fontBlack2: '#111111',
-  fontVivid1: '#005f56',
-  fontVivid2: '#00897b',
-  fontVivid3: '#33a095',
-  fontWhite1: '#ffffff',
-  fontWhite2: '#dddddd',
-  fontGray1: '#666666',
-  fontGray2: '#888888',
-  fontMark1: '#ffd6ff',
+  // color
+  vivid1: PURPLE,
+  vivid2: GREEN_LIGHT,
+  base1: BLACK,
 
   // Misc
-  hLeft: baseColor.secondary,
-  listBackgroundColor: '#f3f3f3',
+  hLeft: GREEN_LIGHT,
+  fontMark1: YELLOW_LIGHT,
 };
 
 export default {

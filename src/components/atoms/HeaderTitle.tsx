@@ -7,7 +7,7 @@ export const HeaderTitle: React.FC = () => {
   return <Title href="/">{config.siteTitle}</Title>;
 };
 
-const _color = colors.fontWhite1;
+const _color = colors.white1;
 const Title = styled.a`
   padding: 8px 20px;
   font-size: 32px;

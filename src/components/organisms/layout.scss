@@ -11,37 +11,14 @@ body {
   margin: 0;
 }
 
-// baclground color
-$backgroundBlack1: #222222;
-
-$backgroundVivid1: #005f56;
-
-$backgroundWhite1: #ffffff;
-$backgroundWhite2: #f3f3f3;
-$backgroundWhite3: #e5e3df;
-
-// font color
-$fontBlack1: #222222;
-$fontBlack2: #111111;
-$fontVivid1: #005f56;
-$fontVivid2: #00897b;
-$fontVivid3: #33a095;
-$fontWhite1: #ffffff;
-$fontWhite2: #dddddd;
-$fontGray1: #666666;
-$fontGray2: #888888;
-
-// design
-$hLeft: $fontGray1;//darkgray;
-$hBackgroundColor: $backgroundWhite2;// #7B7B7B;
-$listBackgroundColor: $backgroundWhite2;// #FAFAFA;
-
+$fontVivid1: #9890e3;
+$fontGray1:#3e3a5e;
 
 a {
   text-decoration: none;
   transition: 0.5s;
   &:link, &:visited{
-    color: $fontVivid2;
+    color: $fontVivid1;
   }
   &:hover{
     color: $fontGray1;

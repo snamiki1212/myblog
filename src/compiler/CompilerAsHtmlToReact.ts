@@ -6,11 +6,10 @@ import {colors} from '../../data/color';
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';
 
-const fontColorNormal = colors.fontBlack1;
-const fontColorHeadline = colors.fontBlack1;
+const fontColorNormal = colors.black1;
+const fontColorHeadline = colors.black1;
 const fontColorVivid = 'red';
 const hLeft = colors.hLeft;
-const listBackgroundColor = colors.backgroundWhite2;
 
 const mixinHeadline = `
   font-weight: bold;
@@ -19,7 +18,7 @@ const mixinHeadline = `
 
 const mixinList = `
   list-style-position: outside;
-  background-color: ${listBackgroundColor};
+  background-color: ${colors.grayLight};
 `;
 
 const H1 = styled.h1`
@@ -37,8 +36,8 @@ const H2 = styled.h2`
   ${mixinHeadline}
 
   font-size: 25px;
-  background-color: ${colors.backgroundBlack1}
-  color: ${colors.fontWhite1}
+  background-color: ${colors.black1}
+  color: ${colors.white1}
 
   margin-top: 60px;
   border-left: 10px solid ${hLeft};
@@ -79,6 +78,7 @@ const A = styled.a`
 const B = styled.b`
   ${mixinHeadline}
   background: linear-gradient(transparent 50%, ${colors.fontMark1} 0%);
+  color: ${colors.base1}
 `;
 
 const P = styled.p`

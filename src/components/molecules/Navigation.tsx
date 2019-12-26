@@ -9,6 +9,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {makeStyles, Theme, createStyles} from '@material-ui/core/styles';
 // Misc
 import styled from 'styled-components';
+import {colors} from '../../../data/color';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
     },
     appBar: {
-      //
+      backgroundImage: `linear-gradient(bottom left, ${colors.vivid1}, ${colors.vivid2})`,
     },
     toolbar: theme.mixins.toolbar,
     content: {

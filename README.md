@@ -7,7 +7,7 @@ Deploy Status | [![Netlify Status](https://api.netlify.com/api/v1/badges/fce06c0
 Twitter | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)
 Tech Stack | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)
 
-## Director
+## Directory
 
 ```sh
 /myblog
