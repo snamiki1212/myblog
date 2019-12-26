@@ -36,7 +36,7 @@ const H2 = styled.h2`
   ${mixinHeadline}
 
   font-size: 25px;
-  background-color: ${colors.darkw}
+  background-color: ${colors.black1}
   color: ${colors.white1}
 
   margin-top: 60px;
