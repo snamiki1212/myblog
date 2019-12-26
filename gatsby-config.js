@@ -34,6 +34,13 @@ module.exports = {
     },
 
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+
+    {
       // ページごとのQuery(graph-ql)の定義を元に、TypeScirptのTypeDefinie を生成してくれる
       resolve: `gatsby-plugin-ts`,
       options: {
