@@ -50,11 +50,16 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      <div>
-        <div>▶{category}</div>
-        <span style={{color: colors.fontGray1}}>{description}</span>
-      </div>
-      <ArticleListContainer postEdges={postEdges} context={pageContext} />
+      <ArticleListContainer
+        postEdges={postEdges}
+        context={pageContext}
+        description={
+          <div style={{paddingTop: '30px', paddingLeft: '50px'}}>
+            <div>▶{category}</div>
+            <span style={{color: colors.fontGray1}}>{description}</span>
+          </div>
+        }
+      />
     </Layout>
   );
 };
