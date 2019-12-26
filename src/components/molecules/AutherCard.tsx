@@ -42,14 +42,23 @@ const Avator = styled.img`
   border-radius: 100%;
 `;
 
-const Name = styled.div`
-  font-size: 32px;
-  color: gray;
-  border-bottom: 1px solid ${colors.vivid2};
+const Name: React.FC = ({children}) => (
+  <div
+    style={{
+      fontSize: '32px',
+      color: 'gray',
+      textAlign: 'center',
+      padding: '20px 0',
+    }}
+  >
+    {children}
+    <NameBorder />
+  </div>
+);
 
-  font-family: 'Megrim', 'Yu Gothic M', 'Raleway'; // TODO: megrim import
-  text-align: center;
-  padding: 20px 0;
+const NameBorder = styled.div`
+  background: linear-gradient(to right, ${colors.vivid1}, ${colors.vivid2});
+  height: 3px;
 `;
 
 const Discription = styled.div`
