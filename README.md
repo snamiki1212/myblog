@@ -39,6 +39,9 @@ Tech Stack | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?st
 -  `src/pages`
   - gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
 
+- `class=affi-custom-button`
+  - アフィ用のボタンCSS
+
 ## TODO
 
 - General
