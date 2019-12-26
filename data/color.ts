@@ -4,7 +4,7 @@
 // NOTE: layout.scss も更新する。
 
 // monoton
-const BLACK = '#233142';
+const BLACK = '#3e3a5e';
 const GRAY_LIGHT = '#f3f3f3';
 const GRAY_DARK = '#666666';
 const WHITE = '#ffffff';

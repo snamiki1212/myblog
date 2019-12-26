@@ -21,7 +21,7 @@ export const AuthorCard: React.FC = () => (
       <Discription>{config.userDescription}</Discription>
     </div>
     <Link to="/about" style={{display: 'flex'}}>
-      <Button variant="outlined" style={{flex: 1}}>
+      <Button variant="outlined" style={{flex: 1, color: colors.vivid1}}>
         <span>▷プロフィールを読む</span>
       </Button>
     </Link>
@@ -44,7 +44,7 @@ const Avator = styled.img`
 
 const Name = styled.div`
   font-size: 32px;
-  color: ${colors.black1};
+  color: gray;
   border-bottom: 1px solid ${colors.vivid2};
 
   font-family: 'Megrim', 'Yu Gothic M', 'Raleway'; // TODO: megrim import
