@@ -37,12 +37,11 @@ const H2 = styled.h2`
   margin-top: 60px;
   padding: 10px 40px;
   background: linear-gradient(
-    150deg,
-    ${colors.vivid2} 0%,
-    ${colors.vivid1} 20%,
-    ${colors.vivid2} 100%
+    170deg,
+    ${colors.vivid1} 0%,
+    ${colors.vivid3} 100%
   );
-  color: ${colors.grayLight};
+  color: ${colors.white1};
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }

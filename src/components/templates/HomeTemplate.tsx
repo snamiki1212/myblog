@@ -7,15 +7,33 @@ import {SEOMeta} from '../atoms';
 import Layout from '../organisms/Layout';
 import ArticleListContainer from '../organisms/ArticleListContainer';
 import {MarkdownRemarkEdge} from '../../types';
+// import Img from 'gatsby-image';
+
+// type FeaturedImg = {
+//   edges: [
+//     {
+//       node: {
+//         childImageSharp: any; // any is ImageSharp
+//       };
+//     }
+//   ];
+// };
 
 type Props = {
   pageContext: IndexPageContext;
-  data: {allMarkdownRemark: IndexPageQuery};
+  data: {
+    allMarkdownRemark: IndexPageQuery;
+    // allFile: FeaturedImg;
+  };
 };
 
 export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
-  const {allMarkdownRemark} = data;
+  const {
+    allMarkdownRemark,
+    // allFile
+  } = data;
   const postEdges = allMarkdownRemark.edges;
+  // const childImageSharp = allFile.edges[0].node.childImageSharp;
 
   return (
     <Layout>
@@ -25,11 +43,22 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
       <SEOMeta postEdges={postEdges} />
 
-      <ArticleListContainer postEdges={postEdges} context={pageContext} />
+      {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
+      <ArticleListContainer
+        postEdges={postEdges}
+        context={pageContext}
+        description={
+          <div>
+            {/* <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" /> */}
+            {/* <img src={logo} /> */}
+          </div>
+        }
+      />
     </Layout>
   );
 };
 
+// const featuredImgPath = 'logos/logo.png';
 export const homePageQuery = graphql`
   query HomePageQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
@@ -65,6 +94,18 @@ export const homePageQuery = graphql`
     }
   }
 `;
+
+// allFile(filter: {relativePath: {in: "logos/logo.png"}}) {
+//   edges {
+//     node {
+//       childImageSharp {
+//         fluid {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// }
 
 export interface IndexPageQuery {
   edges: MarkdownRemarkEdge[];

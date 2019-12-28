@@ -7,16 +7,16 @@
 const BLACK = '#3e3a5e';
 const GRAY_LIGHT = '#f3f3f3';
 const GRAY_DARK = '#666666';
-const WHITE = '#ffffff';
+const WHITE = '#fffcf2';
 
 // colors
+const PURPLE_LIGHT = '#9386ef';
 const GREEN_LIGHT = '#b1f4cf';
-const PURPLE_LIGHT = '#ddd9fa';
-const PURPLE = '#9890e3';
+const YELLOW_LIGHT = '#ffeaa5';
 
 export const colors = {
   primary: BLACK,
-  secondary: GREEN_LIGHT,
+  secondary: PURPLE_LIGHT,
 
   // mono-tone
   black1: BLACK,
@@ -25,13 +25,16 @@ export const colors = {
   white1: WHITE,
 
   // color
-  vivid1: PURPLE,
+  vivid1: PURPLE_LIGHT,
   vivid2: GREEN_LIGHT,
+  vivid3: YELLOW_LIGHT,
+
+  // base
   base1: BLACK,
 
   // Misc
   hLeft: GREEN_LIGHT,
-  fontMark1: PURPLE_LIGHT,
+  fontMark1: YELLOW_LIGHT,
 };
 
 export default {

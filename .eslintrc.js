@@ -25,6 +25,7 @@ module.exports={
     //   "specialLink": [ "hrefLeft", "hrefRight", "to" ],
     //   "aspects": [ "noHref", "invalidHref", "preferButton" ]
     // }]
+    "@typescript-eslint/no-explicit-any": "off"
   },
   "settings": {
     "import/core-modules": []

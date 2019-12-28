@@ -134,7 +134,7 @@ export interface MarkdownRemark {
     createdAt: Date;
     updatedAt: Date;
     category: string;
-    tags: string;
+    tags: string[];
     slug: string;
   };
   fields: any;

@@ -54,7 +54,11 @@ module.exports = {
       },
     },
 
+    /**
+     * 'gatsby-source-filesystem'
+     */
     {
+      // 画像系
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
@@ -63,6 +67,7 @@ module.exports = {
       },
     },
     {
+      // markdown
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
@@ -70,6 +75,16 @@ module.exports = {
         ignore: [`**/*.jpg`, `**/*.jpeg`, `**/**.png`, `**/*.gif`], // TODO: gif など他のファイルを入れる。ignore ではなくて、only がほしいけど、ないぽい。
       },
     },
+    {
+      // assetの画像
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'statics',
+        path: `${__dirname}/static/`,
+        // ignore: [`**/*.jpg`, `**/*.jpeg`, `**/**.png`, `**/*.gif`],
+      },
+    },
+
     {
       // Markdown >> HTML などにパースしてくれるライブラリのプラグイン
       resolve: 'gatsby-transformer-remark',
