@@ -3,7 +3,7 @@ title: '【経験者】SEからのおすすめ転職とポイントまとめ'
 cover: 'cover.jpg'
 createdAt: '2019-09-01 22:00'
 updatedAt: '2019-09-01 22:00'
-category: 'Career'
+category: 'Career:SEtoWeb'
 tags:
   - SEtoWeb
 slug: job-change-from-se-with-points

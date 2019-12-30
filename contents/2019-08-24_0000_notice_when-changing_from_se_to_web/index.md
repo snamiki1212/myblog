@@ -3,7 +3,7 @@ title: '【経験談】SEからWebエンジニアへ転職したときの気付�
 cover: 'cover.jpg'
 createdAt: '2019-08-24 00:00'
 updatedAt: '2019-08-24 00:00'
-category: 'Career'
+category: 'Career:SEtoWeb'
 tags:
   - SEtoWeb
 slug: notice-when-changing-from-se-to-web
