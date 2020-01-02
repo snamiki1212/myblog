@@ -20,7 +20,7 @@ export const TagList: React.FC<Props> = ({tags}) => {
               style={{textDecoration: 'none'}}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <SChip label={tag} clickable color="primary" />
+              <SChip label={`#${tag}`} clickable color="primary" />
             </Link>
           )
         )}
@@ -38,5 +38,5 @@ const Container = styled.div`
 
 const SChip = styled(Chip)`
   margin: 5px 2px 0;
-  background: linear-gradient(45deg, ${colors.vivid2}, ${colors.vivid1});
+  background: linear-gradient(170deg, ${colors.vivid1}, ${colors.vivid2});
 `;

@@ -33,7 +33,7 @@ export const colors = {
   base1: BLACK,
 
   // Misc
-  hLeft: GREEN_LIGHT,
+  hLeft: PURPLE_LIGHT,
   fontMark1: YELLOW_LIGHT,
 };
 
