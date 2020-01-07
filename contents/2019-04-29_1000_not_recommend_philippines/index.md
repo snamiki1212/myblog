@@ -2,7 +2,7 @@
 title: 'ITエンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論'
 cover: 'cover.jpg'
 createdAt: '2019-04-29 10:00'
-updatedAt: '2019-04-29 10:00'
+updatedAt: '2019-01-07 11:40'
 category: 'World'
 tags:
   - フィリピン留学
@@ -18,9 +18,9 @@ slug: not-recommend-philippines
 
 結論は
 
-「<b>ノマドワーカーはフィリピン(セブ or バギオ)にて、滞在しながら働くのはおすすめしない</b>」
+- <b>ノマドワーカーはフィリピン(セブ or バギオ)にて、滞在しながら働くのはおすすめしない</b>
 
-「<b>フィリピンに長期で生活すること自体をあまり、おすすめしない</b>」
+- <b>フィリピンに長期で生活すること自体をあまり、おすすめしない</b>
 
 です。※2019 年時点かつ主観的な意見です
 
@@ -270,3 +270,10 @@ Wifi のネットワークが安定・早いで、かなり快適でした。
 
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">フィリピンにさよならをしたが<br><br>次は、こんにちはタイ <a href="https://t.co/r1zElYIKhr">pic.twitter.com/r1zElYIKhr</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1122503512951156736?ref_src=twsrc%5Etfw">2019年4月28日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+### 追記：タイに行ってきてレビュー書きました(2020/1/7)
+
+タイに行ってきてそのレビューを記事にしました。結論では断然、タイのほうがおすすめです。
+
+≫ [【実体験】IT エンジニアがタイで生活してみた結果⇒オススメです](./recommend-thai-to-live-as-engineer)
