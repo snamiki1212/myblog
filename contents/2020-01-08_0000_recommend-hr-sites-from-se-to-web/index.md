@@ -22,11 +22,11 @@ word:
 いきなり結論です。
 
 - 【① 大手の転職エージェント】
-  - <span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
 - 【②Web 系特化の転職エージェント】
-  - <span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
 - 【③ その他の転職系サイト】
-  - <span class="affi-custom-button"><a href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
 
 では見ていきます。
 
@@ -50,7 +50,7 @@ word:
 - 他の転職エージェントよりも、Web系については有料案件を特に多く持っている印象。
 
 <!--  -->
-<span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a></span>
+<a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
 <!--  -->
 
 ### マイナビ
@@ -73,7 +73,7 @@ word:
 - メガベンチャーなど、大きい会社が中心。
 
 <!--  -->
-<span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a></span>
+<a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
 <!--  -->
 
 ### DODA
@@ -90,7 +90,7 @@ word:
 - 実際、自分が入社した会社も 30 人くらいしかいない規模感。（最終的に自分がやめるとき、社員数が倍以上になってたが。）
 
 <!--  -->
-<span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294707" rel="nofollow">DODA への無料登録はこちら</a></span>
+<a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294707" rel="nofollow">DODA への無料登録はこちら</a>
 <!--  -->
 
 ### Wantedly
@@ -105,7 +105,7 @@ word:
 - なので、他の転職サイトと併用して使うのが良い。
 
 <!--  -->
-<span class="affi-custom-button"><a href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a></span>
+<a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
 <!--  -->
 
 ---
@@ -141,11 +141,11 @@ word:
 合わせてカテゴリごとに１つずつ転職サイトを厳選しておきましたので、迷っている人はとりあえず、ここから１つずつ申し込むのをオススメします。
 
 - 【① 大手の転職エージェント】
-  - <span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
 - 【②Web 系特化の転職エージェント】
-  - <span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
 - 【③ その他の転職系サイト】
-  - <span class="affi-custom-button"><a href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
 
 ### 転職を迷ってる人へ１つだけアドバイス
 
@@ -194,10 +194,10 @@ SEのときは同期・友人と飲み会で仕事の話になったときにも
 ▼この記事で紹介した転職サイト
 
 - 【① 大手の転職エージェント】
-  - <span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
 - 【②Web 系特化の転職エージェント】
-  - <span class="affi-custom-button"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
 - 【③ その他の転職系サイト】
-  - <span class="affi-custom-button"><a href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a></span>
+  - <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
 
 
