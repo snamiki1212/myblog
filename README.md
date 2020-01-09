@@ -42,12 +42,19 @@ Tech Stack | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?st
 - `class=affi-custom-button`
   - アフィ用のボタンCSS
 
+- [PR Scheduler](https://www.prscheduler.com/docs)
+  - 記事の投稿用のスケジューラとして使う。
+  - `@prscheduler 13/10/2019T10:10` とPRに対してコメントすればOK
+  - `<dat>/<month>/<year>`
+  - UTCタイムなので、[これ](http://www.timebie.com/timezone/universaljapan.php)とかで計算。
+  - 例: `@prscheduler 09/01/2019T00:00` ⇒ 日本時間09:00
+
 ## Img
 
 - いろいろ
   - http://photoshopvip.net/119896
   - クレジット不要な画像集
-    - http://photoshopvip.net/115273
+    - http://photoshopvip.net/115273#tip2
   - カラーパレット系
     - http://photoshopvip.net/72189
 

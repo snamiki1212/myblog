@@ -54,6 +54,7 @@ a {
   text-decoration:none;
   text-shadow:0px 1px 0px #5b8a3c;
   text-decoration: none;
+  color: $white !important;
   a{
     color: $white;
     text-decoration: none;
@@ -69,6 +70,7 @@ a {
   background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
   background-color:#72b352;
+  color: $blue !important;
   a{
     color: $blue;
   }
