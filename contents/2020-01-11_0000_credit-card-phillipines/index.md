@@ -144,9 +144,7 @@ OIOI で受け取りなら、即日発行も可能です。
 自動付帯＋高額な傷害・疾病保険がという特徴があります。
 
 <!--  -->
-<span class="affi-custom-button">
-<a href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a>
-</span>
+<a class="affi-custom-button" href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a>
 <!--  -->
 
 ### おまけ：無料でゴールドカードにランクアップ。
@@ -208,8 +206,7 @@ EPOS カードを使い続けると、どうなるか？
 特に、楽天カードはポイント還元率が高い＋補償金額が高いのが特徴です。
 
 <!--  -->
-<span class="affi-custom-button">
-<a href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" /></span>
+<a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" />
 <!--  -->
 
 ## クレカ申請はなるべく早く
@@ -241,15 +238,12 @@ EPOS カードを使い続けると、どうなるか？
 
 <li>
 <!--  -->
-<div class="affi-custom-button">
-<a href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a>
-</div>
+<a class="affi-custom-button" href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a>
 <!--  -->
 </li>
 
 <li>
 <!--  -->
-<div class="affi-custom-button">
-<a href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" /></div>
+<a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" />
 <!--  -->
 </li>
