@@ -8,7 +8,8 @@ tags:
   - SEtoWeb
 slug: notice-when-changing-from-se-to-web
 word:
-  - 'SE web エンジニア　転職 TODO: ここのワードを変えたほうがよいかも。'
+  - 'SE web エンジニア 転職 TODO: ここのワードを変えたほうがよいかも。'
+  - 'SEからWebエンジニアへの転職した結果を。'
 ---
 
 # 【経験談】SEからWebエンジニアへ転職したときの気付き
