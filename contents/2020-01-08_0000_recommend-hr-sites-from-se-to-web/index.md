@@ -9,6 +9,7 @@ tags:
 slug: recommend-hr-sites-from-se-to-web
 word:
   - 'SE Web系 転職サイト おすすめ'
+  - 'マネタイズ系'
 ---
 
 # SEからWeb 系へのおすすめ転職サイト【現役エンジニア談】

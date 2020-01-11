@@ -7,6 +7,8 @@ category: 'Career:SEtoWeb'
 tags:
   - SEtoWeb
 slug: job-change-from-se-with-points
+word:
+  - 'se おすすめ 転職'
 ---
 
 # 【経験者】SEからのおすすめ転職とポイントまとめ
