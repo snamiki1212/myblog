@@ -1,8 +1,8 @@
 ---
 title: '「SE でプログラミングができない人」に向けてキャリア戦略を考えた'
 cover: 'cover.png'
-createdAt: '2020-01-11 02:00'
-updatedAt: '2020-01-11 02:00'
+createdAt: '2020-01-11 12:00'
+updatedAt: '2020-01-11 12:00'
 category: 'Career:SEtoWeb'
 tags:
   - SEtoWeb
