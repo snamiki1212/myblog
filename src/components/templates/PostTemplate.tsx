@@ -21,6 +21,7 @@ type Props = {
 
 export const PostTemplate: React.FC<Props> = ({data}) => {
   const postNode = data.markdownRemark;
+  if (!postNode) return <span>cannot get page</span>;
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;

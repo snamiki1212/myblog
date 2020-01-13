@@ -14,6 +14,15 @@ type Props = {
 };
 
 export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
+  try {
+    // NOTE: fromatter の画像にアクセスできるかチェック
+    !postInfo.node.frontmatter.cover.childImageSharp.fluid;
+  } catch {
+    throw new Error(
+      `Error: frontmatter > img(${postInfo.node.frontmatter.title})`
+    );
+  }
+
   return (
     <StyledCard key={postInfo.node.frontmatter.title}>
       <StyledCardActionArea>
