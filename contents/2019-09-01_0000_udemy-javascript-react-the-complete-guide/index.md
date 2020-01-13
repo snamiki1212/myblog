@@ -1,8 +1,8 @@
 ---
 title: '【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは？→『The Complete Guide』'
-cover: 'cover.jpg'
+cover: 'cover.png'
 createdAt: '2019-09-01 00:00'
-updatedAt: '2019-09-01 00:00'
+updatedAt: '2020-01-13 09:00'
 category: 'Tech'
 tags:
   - React
@@ -14,9 +14,9 @@ slug: udemy-javascript-react-the-complete-guide
 
 こんにちは。元バックエンドで今Reactを書いているNashです。
 
-この記事は「**現役Reactエンジニアがおすすめする Udemy で購入した 『The Complete Guide』 についてのレビュー**」になります。
+この記事は現役Reactエンジニアがおすすめする 「**Udemyの講義 『The Complete Guide』 のレビュー**」になります。
 
-結論は「**ES2016のJavaScriptから学びたい＋Reactを学びたい人には最強**」です。
+結論は「**ES2016のJavaScriptから学びたい**＋**Reactを学びたい**って人に最強」です。
 
 理由は下記のとおりです。
 
@@ -28,20 +28,18 @@ slug: udemy-javascript-react-the-complete-guide
 
 ## 『React - The Complete Guide』とは？
 
-> Dive in and learn React 16.8 from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more! -- [Udemy - React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/react-the-complete-guide-incl-redux/)
+![top](./cover.png)
 
-Udemy にあるReactの学習系の動画で、1、2を争うものの１つです。
+Udemy にあるReactのトップクラスの学習動画です。
 
-- 全レッスン数 546個 (2019/9時点)
-- 全レッスン時間 45時間 (2019/9時点)
-- React 最新バージョン対応済み(2019/9時点)
-- 【内容】ES6(JavaScript)、Reactjs、Hooks、Redux、React Routing、Animations、Next.js (2019/9時点)
-- ★4.7 (46,935 評価数) 151,652 受講人数 (2019/9時点)
+- 全レッスン数 543個 (2020/01時点)
+- 全レッスン時間 45時間 (2020/01時点)
+- 【内容】ES6(JavaScript) / React / Hooks / Redux / React Routing / Animations / Next.js (2020/01時点)
+- ★4.6 (59,874 評価数) 201,458 受講人数 (2020/01時点)
 
-評価数が４万人を超えているのに、★がほぼ5なあたり質の高さが垣間見えますね。
+あと、受講者数と評価数がReact学習動画の中でトップです。（2020/01時点）
 
-<!-- AFFI A8.net -->
-≫ <a href="https://www.udemy.com/react-the-complete-guide-incl-redux?deal_code=JPA8DEAL2PERCENTAGE&aEightID=s00000016735001">「『React - The Complete Guide』Udemyでの購入・登録はこちらから」</a>
+評価数が6万人を近いのに、評価がほぼ5なあたり質の高さが垣間見えますね。
 
 では、この動画がおすすめな理由を見ていきます。
 
@@ -84,9 +82,6 @@ Reactの公式ドキュメントを読み始めても、
 また、JavaScriptは毎年メジャーバージョンアップが行われています。
 
 その中でも、ES6(ES2015)は今までにない大規模なアップデートで、「もはや別言語」と言われるほどです。
-
-<!-- Twitter -->
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="ja" dir="ltr">記事に「もはや別言語です。」という筆者コメントがついているけれど、ES6 以降のモダンな JavaScript は、本当に別の言語のようによくなったと思う。「ここはもうすこし、なんとかならんか」というところも若干残っているけれど、本当によくなっている。</p>&mdash; Masakazu Yoshida (@_myoshida) <a href="https://twitter.com/_myoshida/status/945609528812244992?ref_src=twsrc%5Etfw">December 26, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ES6の仕様見てるけどもはや別言語だろこれ…だがしかし大歓迎だ！</p>&mdash; わかめ@毎日猫がいる (@vvakame) <a href="https://twitter.com/vvakame/status/394646066982703104?ref_src=twsrc%5Etfw">October 28, 2013</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -146,7 +141,6 @@ JavaScript界隈の情報の陳腐化は「異常」な速度で行われます�
 
 簡単な英語ですし、字幕もついているので、これを気に試してみてはどうでしょうか？
 
----
 
 ### まとめ
 
@@ -159,8 +153,8 @@ JavaScript界隈の情報の陳腐化は「異常」な速度で行われます�
 というわけで、『The Complete Guide』のレビューでした。
 
 <!-- AFFI A8.net -->
-≫ <a href="https://www.udemy.com/react-the-complete-guide-incl-redux?deal_code=JPA8DEAL2PERCENTAGE&aEightID=s00000016735001">「『React - The Complete Guide』Udemyでの購入・登録はこちらから」</a>
+<a class="affi-custom-button" href="https://www.udemy.com/react-the-complete-guide-incl-redux?deal_code=JPA8DEAL2PERCENTAGE&aEightID=s00000016735001">「Udemyでの購入はこちら」</a>
+<!--  -->
 
 実際、自分はこのUdemyで学習をはじめてからReactエンジニアとして仕事ができていますので、かなりおすすめです。
 
----
