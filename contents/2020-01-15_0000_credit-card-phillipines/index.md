@@ -1,17 +1,17 @@
 ---
-title: 'フィリピン留学でおすすめのクレカ【経験談も有り】'
+title: 'フィリピン留学でおすすめのクレカ【２選】'
 cover: 'cover.png'
-createdAt: '2020-01-11 12:00'
-updatedAt: '2020-01-11 12:00'
+createdAt: '2020-01-15 12:00'
+updatedAt: '2020-01-15 12:00'
 category: 'World'
 tags:
-  - CreditCard
+  - クレカ
 slug: credit-card-phillipines
 word:
   - 'フィリピン留学 クレカ'
 ---
 
-# フィリピン留学でおすすめのクレカ【経験談も有り】
+# フィリピン留学でおすすめのクレカ【２選】
 
 こんにちは。フィリピン留学を終えて、次はカナダ留学予定の Nash です。
 
