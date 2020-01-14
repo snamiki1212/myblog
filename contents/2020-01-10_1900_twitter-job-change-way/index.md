@@ -5,8 +5,8 @@ createdAt: '2020-01-10 19:00'
 updatedAt: '2020-01-10 19:00'
 category: 'Career'
 tags:
-  - career
   - twitter
+  - twitter転職
 slug: twitter-job-change-way
 word:
   - 'twitter 転職'
@@ -23,6 +23,10 @@ word:
 - ①基礎知識
 - ②前提・準備
 - ③実際にやってみる
+
+ちなみに、実際にやった結果の記事は下記です。
+
+≫ [【実体験】Twitter 転職してエンジニア採用された話](./twitter-job-change-story)
 
 では、みていきます。
 
@@ -198,5 +202,9 @@ Twitter転職だと、スピード感がメチャクチャ早いです。
 以上がTwitter転職のやり方についてでした。
 
 実際に自分が行った結果などについては、他の記事でまとめようかと思います。
+
+⇒まとめました
+
+≫ [【実体験】Twitter 転職してエンジニア採用された話](./twitter-job-change-story)
 
 この記事がどなたかの助けになれば幸いです。
