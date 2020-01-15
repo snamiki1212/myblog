@@ -47,7 +47,7 @@ Tech Stack | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?st
   - `@prscheduler 13/10/2019T10:10` とPRに対してコメントすればOK
   - `<dat>/<month>/<year>`
   - UTCタイムなので、[これ](http://www.timebie.com/timezone/universaljapan.php)とかで計算。
-  - 例: `@prscheduler 09/01/2019T00:00` ⇒ 日本時間09:00
+  - 例: `@prscheduler 15/01/2020T00:00` ⇒ 日本時間09:00
 
 ## Img
 
