@@ -94,9 +94,6 @@ SE/SIerについてのコラムです。
 
 ≫ [【完全解決】SIer で、つまらないと感じたら？【経験談有り】](./how-to-solve-when-to-feel-sier-is-not-awesome)
 
-### おわりに
-
-
 
 <!--
 
