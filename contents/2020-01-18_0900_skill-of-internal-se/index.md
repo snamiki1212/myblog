@@ -1,8 +1,8 @@
 ---
 title: 'SEから転職前に社内SEを経験してわかったこと【必須スキル４選】'
 cover: 'cover.jpg'
-createdAt: '2020-01-16 12:00'
-updatedAt: '2020-01-16 12:00'
+createdAt: '2020-01-18 09:00'
+updatedAt: '2020-01-18 09:00'
 category: 'Career:SEtoWeb'
 tags:
   - 社内SE
