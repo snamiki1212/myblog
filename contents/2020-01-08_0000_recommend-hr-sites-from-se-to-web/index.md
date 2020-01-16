@@ -56,13 +56,13 @@ SEからWeb系への転職なら、レバテックグループの中の「**レ�
 
 自分もですが、他のフリーランス友人に聞いてもほぼ全員がレバテックには登録してました・・・。
 
-結論、**「とりあえず登録する」なレベルで抜群にオススメです。**
+結論、**「とりあえず登録する」レベルで抜群にオススメです。**
 
 <!--  -->
+<p style="text-align:center;">
 <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
+</p>
 <!--  -->
-
----
 
 ### マイナビ
 
@@ -87,10 +87,10 @@ IT系というカテゴリでこの２つの業界を合わせて語られやす
 結論、**Web系の中でも中規模以上の企業を狙いたい人に合いそうです**。
 
 <!--  -->
+<p style="text-align:center;">
 <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
+</p>
 <!--  -->
-
----
 
 ### DODA
 
@@ -112,10 +112,10 @@ DODAレベルの企業がリサーチしているベンチャーだと、**イ�
 結論、**チャレンジングにベンチャー企業を選びたい人にオススメです**。
 
 <!--  -->
+<p style="text-align:center;">
 <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294707" rel="nofollow">DODA への無料登録はこちら</a>
+</p>
 <!--  -->
-
----
 
 ### Wantedly
 
@@ -135,7 +135,9 @@ DODAレベルの企業がリサーチしているベンチャーだと、**イ�
 他の転職サイトと併用して、参考くらいにするのがベターです。
 
 <!--  -->
+<p style="text-align:center;">
 <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
+</p>
 <!--  -->
 
 ---
