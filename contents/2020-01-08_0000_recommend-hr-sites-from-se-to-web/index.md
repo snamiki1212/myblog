@@ -18,24 +18,25 @@ word:
 
 この記事は「**SE から Web 系へのおすすめ転職サイトについて、経験談を交えて紹介する記事**」です。
 
-後半に、どういう観点でも転職を考えると良いか？まで説明します。
+まずは結論です。
 
-いきなり結論です。
+別々のタイプのエージェントを１つずつ登録するのがオススメです。
 
-- 【① 大手の転職エージェント】
-  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
-- 【②Web 系特化の転職エージェント】
-  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
-- 【③ その他の転職系サイト】
-  - <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
+<!--  -->
 
-では見ていきます。
+- 【① 総合系】 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビ</a>
+- 【②特化系】<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテック</a>
+- 【③その他】<a href="https://www.wantedly.com/" rel="nofollow">Wantedly</a>
+
+<!--  -->
+
+では、見ていきましょう。
 
 ## おすすめ転職エージェント
 
 ![top-page](./cover.jpg)
 
-では、SE⇒Web 系への転職時に自分も使った**おすすめの転職サイト**について紹介します。
+まずは、SEからWeb 系への転職時に使えるエージェントを１つずつ見ていきます。
 
 ### レバテック
 
@@ -45,14 +46,23 @@ word:
 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294595" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294595" border="0" /></a>
 <!--  -->
 
-「IT 系の転職エージェント」として尖ってる分、Web 系でも最強と名高い転職エージェントサイトです。
+**IT系で最強と名高い転職エージェントサイト**です。
 
-- SEからWeb系なら、レバテックグループの中の「レバテックキャリア」。
-- 他の転職エージェントよりも、Web系については有料案件を特に多く持っている印象。
+理由は「IT 系の転職エージェント」として尖っているからです。
+
+SEからWeb系への転職なら、レバテックグループの中の「**レバテックキャリア**」を使いましょう。
+
+自分も実際に求人を頂きましたが、他の転職エージェントよりも優良案件を数多く持っている印象でした。
+
+自分もですが、他のフリーランス友人に聞いてもほぼ全員がレバテックには登録してました・・・。
+
+結論、**「とりあえず登録する」なレベルで抜群にオススメです。**
 
 <!--  -->
 <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
 <!--  -->
+
+---
 
 ### マイナビ
 
@@ -62,20 +72,25 @@ word:
 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886295833" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886295833" border="0"></a>
 <!--  -->
 
-- 20 代の第二新卒に特化した「マイナビジョブ 20's」
-- IT に特化した「マイナビ Agent」
+超大手のマイナビグループです。
 
-などのエージェントがあります。
-自分が使ったときはマイナビエージェント でした。
+大規模な会社なので、エージェントも専門ごとに細かく別れています。
+SEからWebなら、**ITに特化した「マイナビ・エージェント」** です。
 
-- SE 系と Web 系で明確に担当エージェントが別。
-- なので、最初から方向性も伝えておくのが良い。
-- ただ、企業数が浅いベンチャーはあまり取り扱ってない印象。
-- メガベンチャーなど、大きい会社が中心。
+担当者エージェントですが、SE 系と Web 系で明確に別の人でした。
+
+IT系というカテゴリでこの２つの業界を合わせて語られやすいですが、企業体質とかが全然違うので**担当エージェントがきちんと別れてるのは好感が持てました**。
+
+ただ、企業数が浅いベンチャーはほぼ取り扱ってないようです。
+頂いた求人情報も、メガベンチャーなど少し大きい会社以上が中心になります。
+
+結論、**Web系の中でも中規模以上の企業を狙いたい人に合いそうです**。
 
 <!--  -->
 <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
 <!--  -->
+
+---
 
 ### DODA
 
@@ -85,25 +100,39 @@ word:
 <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3476840&pid=886293695"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293695" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293695" border="0"></a></noscript>
 <!--  -->
 
-自分が SE から Web 系に転職したときは DODA 経由で転職を成功させました。
+こちらも転職に関しては大手ですね。
 
-- 年数が浅いようなベンチャーまで見てる専門のエージェント担当者がいた。
-- 実際、自分が入社した会社も 30 人くらいしかいない規模感。（最終的に自分がやめるとき、社員数が倍以上になってたが。）
+ちなみに、自分が SE から Web 系に転職したときは DODA 経由で転職を成功させました。
+
+担当エージェントですが、年数が浅いベンチャーまでチェックしてるベンチャー専門の担当チームがいました。
+DODAレベルの企業がリサーチしているベンチャーだと、**イケてるベンチャー企業を把握している可能性が高い**かと思います
+
+実際、自分が入社した会社も 30 人くらいの規模感でしたが、最終的に自分がやめるときは社員数が倍以上の規模に成長していました。
+
+結論、**チャレンジングにベンチャー企業を選びたい人にオススメです**。
 
 <!--  -->
 <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294707" rel="nofollow">DODA への無料登録はこちら</a>
 <!--  -->
 
+---
+
 ### Wantedly
 
 ![wantedly-header](./_wantedly.jpg)
 
-- 企業と転職者をつなげるビジネスSNS。
-- ベンチャー企業を多く掲載。気軽にアポOK。
-- とりあえず登録してる、って エンジニアも多い。
-- 直接コミュニケーションが取れるので、スピード感が早い。
-- エージェントへの相談ができない。
-- なので、他の転職サイトと併用して使うのが良い。
+企業と転職者をつなげるビジネスSNSです。
+
+正確には、「転職サイト」では無いかと思います。
+
+ベンチャー企業を多く掲載していて気軽にアポを取りやすいです。
+
+- メリット　＝　企業に直接コンタクトが取れるので爆速
+
+- デメリット＝　エージェントがいないので自分でやることが多い
+
+このサービス１つで転職活動を進めるのはリスクが高いかと思います。
+他の転職サイトと併用して、参考くらいにするのがベターです。
 
 <!--  -->
 <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
@@ -113,17 +142,15 @@ word:
 
 以上が転職サイトの紹介でした。
 
-ここからは、SEからWeb系の転職を成功できた上でのポイントを少しだけ語りたいと思います。
+ここからは、SEからWeb系の**転職を成功した経験者としてアドバイス**を語りたいと思います。
 
 ## 転職サイトのオススメの考え方
 
 ![think-site](./1.jpg)
 
-転職サイトを選ぶときの考え方も公開していきます。
+「**転職サイトを選ぶときの考え方**」も合わせて公開していきます。
 
-自分も転職時に色々な転職サイトを使ってみました。
-
-その結果、大きく下記のカテゴリに分けられそうだなーというのが結論です。
+大きく下記のカテゴリに分けるのが良い、というのが結論です。
 
 - ① 大手の総合転職エージェント
 
@@ -131,31 +158,33 @@ word:
 
 - ③ その他の転職系サイト
 
-なので、この中から、少なくとも１つずつは登録はしておいたほうが良いかと思います。
+なので、この中から**少なくとも１つずつは登録したほうが良い**かと思っています。
 
-というのも、それぞれのエージェントで取り扱っている求人の守備範囲が異なるからです。
+というのも、それぞれのエージェントで取り扱っている**求人の守備範囲が異なるから**です。
 
 ### SEからWeb系転職時のカテゴリー
 
-この考えをもとに、SE から Web 系への転職時のカテゴリ分けを考えてみました。
+この考えをもとに、カテゴリ分けをしました。
 
-合わせてカテゴリごとに１つずつ転職サイトを厳選しておきましたので、迷っている人はとりあえず、ここから１つずつ申し込むのをオススメします。
+<!--  -->
 
-- 【① 大手の転職エージェント】
-  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
-- 【②Web 系特化の転職エージェント】
-  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
-- 【③ その他の転職系サイト】
-  - <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
+- 【① 総合系】 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビ</a>
+- 【②特化系】<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテック</a>
+- 【③その他】<a href="https://www.wantedly.com/" rel="nofollow">Wantedly</a>
+
+<!--  -->
+
+なので、迷っている人はとりあえず、ここから１つずつ申し込むのをオススメします。
 
 ### 転職を迷ってる人へ１つだけアドバイス
 
 ![advise-for-you](./2.jpg)
 
-さて、ここまで、転職サイトのオススメ紹介だったのですが、最後に個人的なアドバイスを１つだけさせてください。
-それは、転職を考えているなら「**今すぐに何でも良いので行動してください**」です。ほんとこれだけ。
+最後に個人的なアドバイスを１つだけさせてください。
 
-自分としては、具体的には無料転職サイトに登録することをオススメしています。
+それは、転職を考えているなら「**今すぐに何でも良いので行動してください**」。
+
+具体的には「転職サイトに登録すること」を自分はオススメしています。
 
 というのも、
 
@@ -164,11 +193,11 @@ word:
 - 「Web 業界についてよくわかってないから！」
 - 「履歴書もまだ書いてないし・・・」
 
-みたいに、**迷ったり踏みとどまってる時間ってあまり意味がないんです**。
+みたいに、迷ったり踏みとどまってる時間って**あまり意味がないんです**。
 
-まずは転職エージェントに登録して相談して、そこで業界のことを教えてもらったり、履歴書を書いていく、っていう順番が圧倒的に効率的ですから。
+理由は、**転職エージェントに登録して相談すれば全部おしえてくれるから**です。
 
-### 自分がSEからWeb系に転職できた理由
+<!-- ### 自分がSEからWeb系に転職できた理由
 
 自分も昔は SIerでSEとして働いていました。
 そこからWeb系に転職して、今ではWeb系フリーランスエンジニアとして働いています。
@@ -178,7 +207,7 @@ SEのときは同期・友人と飲み会で仕事の話になったときにも
 そんな中で、同期・友人達よりも、自分が早い段階で転職できた理由はただ１つです。
 転職を視野にいれたタイミングで、**行動しただけ**です。
 
-（結局、その同期や友人は飲み会のたびにずっと「転職しようかな〜」とぼやいているだけだったのですが・・・）
+（結局、その同期や友人は飲み会のたびにずっと「転職しようかな〜」とぼやいているだけだったのですが・・・） -->
 
 ### さいごに
 
@@ -194,11 +223,10 @@ SEのときは同期・友人と飲み会で仕事の話になったときにも
 
 ▼この記事で紹介した転職サイト
 
-- 【① 大手の転職エージェント】
-  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
-- 【②Web 系特化の転職エージェント】
-  - <a class="affi-custom-button" href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
-- 【③ その他の転職系サイト】
-  - <a class="affi-custom-button" href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
+<!--  -->
 
+- 【① 総合系】 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293700" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293700" height="1" width="1" border="0">マイナビへの無料登録はこちら</a>
+- 【②特化系】<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294543" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294543" height="1" width="1" border="0">レバテックへの無料登録はこちら</a>
+- 【③その他】<a href="https://www.wantedly.com/" rel="nofollow">Wantedly への無料登録はこちら</a>
 
+<!--  -->
