@@ -1,7 +1,7 @@
 {
   "name": "gatsby-lunash-blog",
   "description": "Lunash Blog",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "author": "Shun Namiki <snamiki1212@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",

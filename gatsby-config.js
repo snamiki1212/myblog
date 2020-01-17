@@ -72,7 +72,7 @@ module.exports = {
       options: {
         name: 'posts',
         path: `${__dirname}/contents/`,
-        ignore: [`**/*.jpg`, `**/*.jpeg`, `**/**.png`, `**/*.gif`], // TODO: gif など他のファイルを入れる。ignore ではなくて、only がほしいけど、ないぽい。
+        ignore: [`**/*.jpg`, `**/*.jpeg`, `**/**.png`, `**/*.gif`, `**/*.svg`], // TODO: gif など他のファイルを入れる。ignore ではなくて、only がほしいけど、ないぽい。
       },
     },
     {
@@ -81,7 +81,6 @@ module.exports = {
       options: {
         name: 'statics',
         path: `${__dirname}/static/`,
-        // ignore: [`**/*.jpg`, `**/*.jpeg`, `**/**.png`, `**/*.gif`],
       },
     },
 

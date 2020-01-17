@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../organisms/Layout';
-import Img from 'gatsby-image';
+import Image from '../atoms/Image';
 import {UpdatedAt, AuthorCard} from '../molecules';
 import {TagList, SocialLinks, SEOMeta, Markdown, ArticlesArea} from '../atoms';
 import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
@@ -39,7 +39,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         </Helmet>
         <SEOMeta postNode={postNode} isPost={true} />
 
-        <HeaderImg fluid={postNode.frontmatter.cover.childImageSharp.fluid} />
+        <HeaderImg imgInfo={postNode.frontmatter.cover} />
         <SPostPagePaper>
           <SPostPageContent className="target-el">
             <div style={{paddingRight: '10px', paddingLeft: '10px'}}>
@@ -106,7 +106,7 @@ const SPostPageFooter = styled.div`
   justify-content: center;
 `;
 
-const HeaderImg = styled(Img)`
+const HeaderImg = styled(Image)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -131,6 +131,7 @@ export interface MarkdownRemark {
       childImageSharp: {
         fluid: FluidObject;
       };
+      publicURL: string;
     };
     createdAt: Date;
     updatedAt: Date;
@@ -160,11 +161,13 @@ export const postPageQuery = graphql`
             title
             tags
             cover {
+              publicURL
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
             }
             createdAt
             updatedAt
@@ -180,11 +183,13 @@ export const postPageQuery = graphql`
       frontmatter {
         title
         cover {
+          publicURL
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
             }
           }
+          extension
         }
         createdAt
         updatedAt

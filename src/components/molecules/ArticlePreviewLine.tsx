@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import {MarkdownRemarkEdge} from '../../types';
-import Img from 'gatsby-image';
+import Image from '../atoms/Image';
 import {UpdatedAt} from '.';
 
 type Props = {
@@ -21,8 +21,8 @@ export const ArticlePreviewLine: React.FC<Props> = ({postInfo: edge}) => {
         borderBottom: '1px lightgray solid',
       }}
     >
-      <Img
-        fluid={edge.node.frontmatter.cover.childImageSharp.fluid}
+      <Image
+        imgInfo={edge.node.frontmatter.cover}
         style={{
           flex: 3,
           height: '100px',

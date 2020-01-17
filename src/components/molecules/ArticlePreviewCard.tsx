@@ -6,7 +6,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {MarkdownRemarkEdge} from '../../types';
-import Img from 'gatsby-image';
+import Image from '../atoms/Image';
 import {UpdatedAt} from '.';
 
 type Props = {
@@ -14,22 +14,13 @@ type Props = {
 };
 
 export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
-  try {
-    // NOTE: fromatter の画像にアクセスできるかチェック
-    !postInfo.node.frontmatter.cover.childImageSharp.fluid;
-  } catch {
-    throw new Error(
-      `Error: frontmatter > img(${postInfo.node.frontmatter.title})`
-    );
-  }
-
   return (
     <StyledCard key={postInfo.node.frontmatter.title}>
       <StyledCardActionArea>
         <Link to={postInfo.node.fields._slug}>
           <CardMedia>
-            <Img
-              fluid={postInfo.node.frontmatter.cover.childImageSharp.fluid}
+            <Image
+              imgInfo={postInfo.node.frontmatter.cover}
               style={{maxHeight: '100px'}}
             />
           </CardMedia>

@@ -53,6 +53,7 @@ export const tagPageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
             }
             createdAt
             updatedAt

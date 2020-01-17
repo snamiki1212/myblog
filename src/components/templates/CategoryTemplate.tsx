@@ -91,6 +91,7 @@ export const categoryPageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
             }
             createdAt
             updatedAt
