@@ -18,7 +18,7 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
     <StyledCard key={postInfo.node.frontmatter.title}>
       <StyledCardActionArea>
         <Link to={postInfo.node.fields._slug}>
-          <CardMedia>
+          <CardMedia style={{textAlign: 'center'}}>
             <Image
               imgInfo={postInfo.node.frontmatter.cover}
               style={{maxHeight: '100px'}}
