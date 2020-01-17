@@ -41,7 +41,6 @@ word:
 （**この図でも全貌を語り尽くせれていない**です）
 
 ```dot
-<!-- グラフ1 -->
 digraph G {
     graph[rankdir=TB]
    {rank=min;ウォーターフォール;業界構造;人月商売;}
@@ -203,7 +202,6 @@ digraph G {
 ## SIer のブラックを見ていく
 
 ```dot
-<!-- グラフ1 -->
 digraph G {
     graph[rankdir=TB]
    {rank=min;ウォーターフォール;業界構造;人月商売;}
@@ -368,7 +366,6 @@ digraph G {
 まとめとして、下記のグラフの通りです。
 
 ```dot
-<!-- グラフ1 -->
 digraph G {
     graph[rankdir=TB]
    {rank=min;ウォーターフォール;業界構造;人月商売;}
