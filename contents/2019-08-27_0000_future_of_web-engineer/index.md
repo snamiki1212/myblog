@@ -1,6 +1,6 @@
 ---
 title: 'Webエンジニアの「将来性がない」は本当か？→むしろ将来性の塊'
-cover: 'cover.png'
+cover: 'cover.svg'
 createdAt: '2019-08-27 00:00'
 updatedAt: '2020-01-07 12:00'
 category: 'Career:SEtoWeb'
@@ -27,7 +27,7 @@ word: 'Webエンジニア 将来性 ない'
 
 ## 客観的にWebエンジニアの将来性を見てみる
 
-![graph-image-web-developer-future](1.jpg)
+![graph-image-web-developer-future](1.svg)
 
 まずは、データを元にしてできる限り客観的に見ていきます。
 
@@ -78,7 +78,7 @@ word: 'Webエンジニア 将来性 ない'
 
 ## 主観的にWebエンジニアの働き方を語る
 
-![pc-image-web-developer-future](2.jpg)
+![pc-image-web-developer-future](2.svg)
 
 ここまでは、データを元にしたものです。
 

@@ -1,6 +1,6 @@
 ---
 title: '海外でコンピュータ・サイエンスを学びたい人向け前提知識をまとめ【大学・大学院・MOOC】'
-cover: 'cover.jpg'
+cover: 'cover.svg'
 createdAt: '2020-01-06 00:00'
 updatedAt: '2020-01-06 00:00'
 category: 'Career'
@@ -23,7 +23,7 @@ slug: background-knowledge-about-cs
 
 ## 海外大学の CS に関する前提単語
 
-![word-of-mean](./1.jpg)
+![word-of-mean](./1.svg)
 
 当たり前だろ、って単語もありますが、出来る限り全部網羅できるようにしてあります。
 
@@ -116,7 +116,7 @@ MBA 留学時にのみ使われる GRE みたいな試験。
 
 ## QA 形式で大学の CS について考える
 
-![qa-term](./2.jpg)
+![qa-term](./2.svg)
 
 まとまったナレッジをもとにQA 形式で自分の考えをまとめました。
 
@@ -187,7 +187,7 @@ MOOC を有効に活用するのがベターかと思います。
 
 ## 参考文献
 
-![references](./3.jpg)
+![references](./3.svg)
 
 下記の記事を一通り読んで海外大学・大学院の CS についてナレッジをためました。感謝です。
 

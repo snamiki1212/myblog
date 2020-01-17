@@ -1,6 +1,6 @@
 ---
 title: 'rubocopでparallelとauto-correctを同時をあわせて行う'
-cover: 'cover.jpg'
+cover: 'cover.svg'
 createdAt: '2019-10-09 00:00'
 updatedAt: '2019-10-09 00:00'
 category: 'Tech'

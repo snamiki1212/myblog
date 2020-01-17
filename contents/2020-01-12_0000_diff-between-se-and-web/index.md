@@ -1,6 +1,6 @@
 ---
 title: 'SEとWeb系の違いをエンジニアが比較【両方とも経験済み】'
-cover: 'cover.png'
+cover: 'cover.svg'
 createdAt: '2020-01-12 12:00'
 updatedAt: '2020-01-12 12:00'
 category: 'Career:SEtoWeb'
@@ -37,7 +37,7 @@ persona:
 
 ## 本質的な違い
 
-![diff-truthly](./cover.png)
+![diff-truthly](./cover.svg)
 
 まずは「本質的な違い」から説明します。
 
@@ -70,7 +70,7 @@ persona:
 
 ### ビジネス構造の違い
 
-![business-system](./1_business_system.png)
+![business-system](./1_business_system.svg)
 
 まずは、ビジネス構造の違いです。
 
@@ -169,7 +169,7 @@ SIer的なピラミッド構造の場合、基本的に上層にいる人達「�
 
 ### 花形の違い
 
-![star-diff](./2_star.png)
+![star-diff](./2_star.svg)
 
 **SE では「マネージャー」が花形で、Web 系では「エンジニア」が花形**です。
 
@@ -211,7 +211,7 @@ Web系では、関係者も基本的に自社で完結して、チームもメ�
 
 ### 仕事内容
 
-![surface-diff](./3_diff-surface.png)
+![surface-diff](./3_diff-surface.svg)
 
 SE はサラリーマン的な内容で、Web 系はエンジニア的な内容です。
 
@@ -253,7 +253,7 @@ Web エンジニアの仕事を超ざっくり説明するなら、この３つ�
 
 ### 職場環境
 
-![business-place](4_business-place.png)
+![business-place](4_business-place.svg)
 
 ▼SE
 
@@ -281,7 +281,7 @@ Web 系の場合は、その出来高（＝つまり成果）が一番大事な�
 
 ### キャリア
 
-![business-career](5_business-career.png)
+![business-career](5_business-career.svg)
 
 ▼SE
 

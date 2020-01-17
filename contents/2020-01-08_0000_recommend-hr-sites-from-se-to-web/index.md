@@ -1,6 +1,6 @@
 ---
 title: 'SEからWeb 系へのおすすめ転職サイト【現役エンジニア談】'
-cover: 'cover.jpg'
+cover: 'cover.svg'
 createdAt: '2020-01-08 00:00'
 updatedAt: '2020-01-08 00:00'
 category: 'Career:SEtoWeb'
@@ -34,7 +34,7 @@ word:
 
 ## おすすめ転職エージェント
 
-![top-page](./cover.jpg)
+![top-page](./cover.svg)
 
 まずは、SEからWeb 系への転職時に使えるエージェントを１つずつ見ていきます。
 
@@ -148,7 +148,7 @@ DODAレベルの企業がリサーチしているベンチャーだと、**イ�
 
 ## 転職サイトのオススメの考え方
 
-![think-site](./1.jpg)
+![think-site](./1.svg)
 
 「**転職サイトを選ぶときの考え方**」も合わせて公開していきます。
 
@@ -180,7 +180,7 @@ DODAレベルの企業がリサーチしているベンチャーだと、**イ�
 
 ### 転職を迷ってる人へ１つだけアドバイス
 
-![advise-for-you](./2.jpg)
+![advise-for-you](./2.svg)
 
 最後に個人的なアドバイスを１つだけさせてください。
 

@@ -1,6 +1,6 @@
 ---
 title: '【Firestore】「WhereIN」が使えない時の代案のまとめ'
-cover: 'cover.png'
+cover: 'cover.svg'
 createdAt: '2019-09-06 00:00' # created_at
 updatedAt: '2019-11-09 00:00' # updated_at
 category: 'Tech'
