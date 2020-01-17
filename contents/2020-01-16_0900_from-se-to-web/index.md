@@ -1,6 +1,6 @@
 ---
 title: 'SE⇒Web 系への完全マップ｜転職という行動へ'
-cover: 'cover.jpg'
+cover: 'cover.svg'
 createdAt: '2020-01-16 09:00'
 updatedAt: '2020-01-16 09:00'
 category: 'Career:SEtoWeb'
@@ -30,7 +30,7 @@ word:
 
 ## 【気付く】SIer ヤバいことに気付く
 
-![sier-is-black](./1_sier-black.jpg)
+![sier-is-black](./1_sier-black.svg)
 
 SEブラックとかSIerオワコンとか、きちんと理解していますか？
 
@@ -42,7 +42,7 @@ SEブラックとかSIerオワコンとか、きちんと理解しています�
 
 ## 【転職先の候補】SE から行ける転職先の候補を知る
 
-![choice](./2_choice.jpg)
+![choice](./2_choice.svg)
 
 SEのヤバさがわかったら転職先を考えましょう。
 
@@ -66,7 +66,7 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 ## 【やること】転職時の「やること」を行動へ
 
-![action](./3_action.jpg)
+![action](./3_action.svg)
 
 転職するにあたり「やること」を行いましょう。
 
@@ -78,7 +78,7 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 ## 【転職】SE から Web 系へ転職する
 
-![change-job](./cover.jpg)
+![change-job](./cover.svg)
 
 転職した結果どうなるかイメージしていきましょう。
 
@@ -86,7 +86,7 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 ## 番外編：おまけコラム
 
-![etc](./4_etc.jpg)
+![etc](./4_etc.svg)
 
 SE/SIerについてのコラムです。
 

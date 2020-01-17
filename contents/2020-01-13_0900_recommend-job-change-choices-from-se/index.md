@@ -1,6 +1,6 @@
 ---
 title: 'SE から異業種への転職先【おすすめ３選】'
-cover: 'cover.jpg'
+cover: 'cover.svg'
 createdAt: '2020-01-13 09:00'
 updatedAt: '2020-01-13 09:00'
 category: 'Career:SEtoWeb'
@@ -23,7 +23,7 @@ word:
 
 ## おすすめ３選
 
-![top](./cover.jpg)
+![top](./cover.svg)
 
 
 自分も SE から転職しました。
@@ -31,7 +31,7 @@ word:
 
 ### 【監査法人】上流が得意な人向け
 
-![auditor](./1_auditor.jpg)
+![auditor](./1_auditor.svg)
 
 SE から監査法人へのキャリアップを目指す方向です。
 
@@ -108,7 +108,7 @@ SE から監査法人のアドバイザリーへ転職した同期がいます
 
 ### 【社内 SE】圧倒的なワークライフ・バランス
 
-![office_se](./2_office_se.jpg)
+![office_se](./2_office_se.svg)
 
 SE から社内 SE へキャリアを変えていく形です。
 
@@ -178,7 +178,7 @@ SE から社内 SE へキャリアを変えていく形です。
 
 ### 【Web 系エンジニア】開発したい人向け
 
-![developer](./3_developer.jpg)
+![developer](./3_developer.svg)
 
 自分がこのケースです。
 
