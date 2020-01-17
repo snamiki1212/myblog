@@ -30,7 +30,7 @@ word:
 
 ## SIerがブラックになる前提知識
 
-![top](./cover.jpg)
+![top](./cover.svg)
 
 まずは、**SIer業界に対する前提知識を整理**していきます。
 
