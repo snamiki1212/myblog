@@ -9,15 +9,18 @@ type Props = {
   [key: string]: any;
 };
 
-const Image: React.FC<Props> = ({
-  imgInfo: {publicURL, childImageSharp},
-  ...rest
-}) => {
-  if (!childImageSharp) {
-    // svg系
-    return <img src={publicURL} {...rest} />;
+const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
+  try {
+    const {publicURL, childImageSharp} = imgInfo;
+
+    if (!childImageSharp) {
+      // svg系
+      return <img src={publicURL} {...rest} />;
+    }
+    return <Img fluid={childImageSharp.fluid} {...rest} />;
+  } catch (e) {
+    return <span>page error</span>;
   }
-  return <Img fluid={childImageSharp.fluid} {...rest} />;
 };
 
 export default Image;
