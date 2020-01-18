@@ -94,6 +94,9 @@ SE/SIerについてのコラムです。
 
 ≫ [【完全解決】SIer で、つまらないと感じたら？【経験談有り】](./how-to-solve-when-to-feel-sier-is-not-awesome)
 
+≫ [【体験談】ブラックなSE時代を話します【教訓：２つ】](./black-my-se-era)
+
+---
 
 <!--
 
