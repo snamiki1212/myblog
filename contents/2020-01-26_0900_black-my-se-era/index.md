@@ -1,8 +1,8 @@
 ---
 title: '【体験談】ブラックなSE時代を話します【教訓：２つ】'
 cover: 'cover.svg'
-createdAt: '2020-01-23 09:00'
-updatedAt: '2020-01-23 09:00'
+createdAt: '2020-01-26 09:00'
+updatedAt: '2020-01-26 09:00'
 category: 'Career:SEtoWeb'
 tags:
   - 社内SE
