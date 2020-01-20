@@ -50,7 +50,7 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 ≫ [SE の転職で異業種・異業界を考える前に知っておくべきこと](./job-change-from-se-with-points)
 
-≫ [SE から異業種への転職先【おすすめ３選】](./diff-between-se-and-web)
+≫ [SE から異業種への転職先【おすすめ３選】](/recommend-job-change-choices-from-se)
 
 ### ① Web 系（★★★★★）
 
