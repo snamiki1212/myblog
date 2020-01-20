@@ -7,7 +7,10 @@ category: 'Career:SEtoWeb'
 tags:
   - Career
 slug: se-think-hard-tierd-retirement
-word: 'SE つらい 疲れた 辞めたい'
+word:
+  - 'SE つらい'
+  - 'SE 疲れた'
+  - 'SE 辞めたい'
 ---
 
 # SEで「つらい、疲れた、辞めたい人」が読む記事【実体験／解決済】
