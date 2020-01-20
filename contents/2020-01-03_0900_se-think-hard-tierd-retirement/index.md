@@ -1,8 +1,8 @@
 ---
 title: 'SEで「つらい、疲れた、辞めたい人」が読む記事【実体験／解決済】'
 cover: 'cover.svg'
-createdAt: '2020-01-02 09:00'
-updatedAt: '2020-01-02 09:00'
+createdAt: '2020-01-03 09:00'
+updatedAt: '2020-01-03 09:00'
 category: 'Career:SEtoWeb'
 tags:
   - Career
