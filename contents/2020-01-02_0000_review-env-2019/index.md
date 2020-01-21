@@ -100,7 +100,11 @@ AppleWatchも変わらずです。ただ、「そもそも必要なくね？」�
 
 - Typora + GoogleSync
 
-MarkdownエディタのTyporaです。ローカルに保存したデータはバックグランド上で動かしてるGoogleSync経由でリアルタイムにGoogleDriveに同期される形を取ってます。
+MarkdownエディタのTyporaです。
+
+⇒ [Typora+GoogleSyncのレビュー｜無料軽量Markdownエディタ+クラウド同期](./review-typora-google-sync)
+
+ローカルに保存したデータはバックグランド上で動かしてるGoogleSync経由でリアルタイムにGoogleDriveに同期される形を取ってます。
 GoogleDrive上でMarkdownを編集したり閲覧する良い方法がないのと、同様にスマホ経由でも出来ないので割とネックです。
 ただ、これもコストレスなので、完全に無料です。
 
