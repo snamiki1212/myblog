@@ -108,6 +108,8 @@ word:
 
 ## 【おすすめのクレカ ①】EPOS カード
 
+![epos](1_red.jpg)
+
 EPOSカードです。保険周りで最強のカードです。
 
 ### 自動付帯
@@ -144,7 +146,7 @@ OIOI で受け取りなら、即日発行も可能です。
 自動付帯＋高額な傷害・疾病保険がという特徴があります。
 
 <!--  -->
-<a class="affi-custom-button" href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a>
+<p style="text-align:center;"><a class="affi-custom-button" href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a></p>
 <!--  -->
 
 ### おまけ：無料でゴールドカードにランクアップ。
@@ -155,9 +157,13 @@ EPOS カードを使い続けると、どうなるか？
 自分も、使い続けてちょうど 1 年後にこの招待が届きました。
 なので、いま年会費を無料でゴールドカードを使ってます。
 
+≫ [永年無料のEPOSゴールドカードを手に入れた話【１年寝かせるだけ】](./get-epos-gold)
+
 なので「クレカを育てる」という観点で、海外に行かない人にもオススメしてます。
 
 ## 【おすすめのクレカ ②】楽天カード
+
+![rakuten](_rakuten.jpg)
 
 楽天カードです。圧倒的なポイント還元率でオススメ。
 
@@ -206,7 +212,7 @@ EPOS カードを使い続けると、どうなるか？
 特に、楽天カードはポイント還元率が高い＋補償金額が高いのが特徴です。
 
 <!--  -->
-<a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" />
+<p style="text-align:center;"><a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" /></p>
 <!--  -->
 
 ## クレカ申請はなるべく早く
@@ -231,19 +237,12 @@ EPOS カードを使い続けると、どうなるか？
 
 この記事を見終わったら、すぐに行動することをオススメします。
 
+<!--  -->
+<p style="text-align:center;"><a class="affi-custom-button" href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a></p>
+<!--  -->
+
+<!--  -->
+<p style="text-align:center;"><a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" /></p>
+<!--  -->
+
 ---
-
-▼ この記事で紹介したクレカ
-
-
-<li>
-<!--  -->
-<a class="affi-custom-button" href="https://www.eposcard.co.jp/index.html" rel="nofollow">EPOSカードの無料登録はこちら</a>
-<!--  -->
-</li>
-
-<li>
-<!--  -->
-<a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" />
-<!--  -->
-</li>
