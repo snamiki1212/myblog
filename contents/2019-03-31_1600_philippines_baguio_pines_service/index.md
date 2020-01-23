@@ -26,7 +26,7 @@ SEO-keyword:
 
 そもそも、PINES についての全体的な情報は下記にまとめています。
 
-» [フィリピンにあるバギオの PINES（パインス）ってどんな学校？](./philippines-baguio-pines-summary)
+[フィリピンにあるバギオの PINES（パインス）ってどんな学校？](./philippines-baguio-pines-summary)
 
 ## 新校舎メインキャンパスのサービスをレビュー
 
@@ -259,7 +259,7 @@ EOP がなくても、「常に英語を喋ろう」と思っていた自分で�
 
 食事の味があまりにひどく、それがが原因で起きた問題について、体験記の記事を下記にまとめました。
 
-» [フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】](./philippines-baguio-pines-food)
+[フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】](./philippines-baguio-pines-food)
 
 ネタバレすると、2 週間近く体調が悪くなって、勉強どころではなくなってしまいました。
 
@@ -371,18 +371,18 @@ PINES を検討している人の助けに慣れば幸いです。
 
 他の観点でもレビューしているので、よければこちらもどうぞ。
 
-» [【PINES ｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
+[【PINES ｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
 
-» [【PINES ｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
+[【PINES ｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
 
-» [【PINES ｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
+[【PINES ｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
 
-» [【PINES ｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
+[【PINES ｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
 
 ---
 
 フィリピン留学中に毎日必ず Tweet してたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
+[Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
 
 「いいね」してもらえると喜びます。

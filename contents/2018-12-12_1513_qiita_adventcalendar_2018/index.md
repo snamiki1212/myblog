@@ -55,7 +55,7 @@ Elixir によるアプリケーションは**Enum によるデータ変換がか
 
 Enum の学び方については別記事があるので詳細はこちらを参照。
 
-- [【Elixir】Enum を完全に理解する | 効率的な Enum の学習方法・暗黙のルール・意識すべきこと](elixir-enum-master)
+[【Elixir】Enum を完全に理解する | 効率的な Enum の学習方法・暗黙のルール・意識すべきこと](elixir-enum-master)
 
 ### ③ 作りたいものを作る／実務を開始する
 
@@ -207,7 +207,7 @@ end
 
 詳細はこちらの記事を参照
 
-≫ [【Elixir】if や case の中で代入・束縛を行うべきでない](elixir-not-to-bind-in-block)
+[【Elixir】if や case の中で代入・束縛を行うべきでない](elixir-not-to-bind-in-block)
 
 ## 同一の関数名を定義し、引数で処理を分ける
 
@@ -225,7 +225,7 @@ Laravel 作者の TaylorOtwell 先生が
 
 ちなみに、「引数に応じて関数の処理を分けるな」は「フラグ引数アンチパターン」というアンチパターンの１つで詳細は下記。
 
-≫ [フラグ引数アンチパターン](flag-args-anti-pattern/)
+[フラグ引数アンチパターン](flag-args-anti-pattern/)
 
 ## Enum の共通ルールを知りたかった
 
@@ -247,7 +247,7 @@ Enum には、**複数の Enum 関数を１つにまとめて提供されてい�
 
 「サフィックスルール」「複合 Enum 関数」については下記の記事に記載してある。
 
-≫ [【Elixir】Enum を完全に理解する | 効率的な Enum の学習方法・暗黙のルール・意識すべきこと](./elixir-enum-master)
+[【Elixir】Enum を完全に理解する | 効率的な Enum の学習方法・暗黙のルール・意識すべきこと](./elixir-enum-master)
 
 ## 関数型らしさは Haskell ではなく JavaScript で学ぶべきだった
 
@@ -288,7 +288,7 @@ JavaScript で関数型のエッセンスを説明されている本なので「
 
 ちなみに、関数型を学びたかったはずの自分は最終的に Haskell Day 2018 を楽しんでいた。
 
-≫ [HaskellDay2018 のまとめ – namiki – Medium](https://medium.com/@snamiki1212/haskellday2018%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81-3f66500c3113)
+[HaskellDay2018 のまとめ – namiki – Medium](https://medium.com/@snamiki1212/haskellday2018%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81-3f66500c3113)
 
 ## 最後に
 

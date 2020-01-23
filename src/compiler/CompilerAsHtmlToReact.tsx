@@ -2,7 +2,7 @@ import React from 'react';
 import RehypeReact from 'rehype-react';
 import styled from 'styled-components';
 import {colors} from '../../data/color';
-
+import HandlerForA from './HandlerForA';
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';
 
@@ -62,16 +62,6 @@ const H3 = styled.h3`
 
 const HR = styled.hr`
   margin-bottom: 30px;
-`;
-
-const A = styled.a`
-  text-decoration: none;
-  border-bottom: solid 1px;
-  transition: 0.5s;
-  &:hover {
-    color: ${colors.grayDark};
-    transition: 0.3s;
-  }
 `;
 
 const B = styled.b`
@@ -160,7 +150,7 @@ export const renderReact = new RehypeReact({
     h5: SHOULD_NOT_USE_TAG,
     h6: SHOULD_NOT_USE_TAG,
     hr: HR,
-    a: A,
+    a: HandlerForA,
     b: B,
     strong: B, // same as B-tag
     p: P,

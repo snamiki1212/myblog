@@ -52,7 +52,7 @@ db.collection('articles')
 
 数日前に下記の記事を書きました。
 
-≫ [【Firestore】「orWhere」が使えない時の代案のまとめ](./summary-alt-plan-insted-of-orwhere-about-firestore)
+[【Firestore】「orWhere」が使えない時の代案のまとめ](./summary-alt-plan-insted-of-orwhere-about-firestore)
 
 その中で、しれっと、「Firestore では、whereIN がないので〜」というふうに書いたのですが、ここらへんをまとめていなかったことに気付いたので、記事にしようと思った次第です。
 

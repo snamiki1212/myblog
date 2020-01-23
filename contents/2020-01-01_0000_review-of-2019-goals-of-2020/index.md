@@ -46,7 +46,7 @@ slug: review-of-2019-goals-of-2020
 
 内容も、どういう方針のブログにするかも定まっていなかったので、ひとまず最初は「技術」「キャリア」「海外留学」などを中心とした記事をチョロチョロ書いていて、だいたい70記事くらいまでいきました。
 
-≫ [Netlify + Netlify CMS + GatsbyJS ( React + GraphQL )でブログ作ったときにハマった点](./create-blog-with-netlify-netlifycms-gatsbyjs)
+[Netlify + Netlify CMS + GatsbyJS ( React + GraphQL )でブログ作ったときにハマった点](./create-blog-with-netlify-netlifycms-gatsbyjs)
 
 あと、2019 年の末らへんにブログデザイン・レスポンシブ・テーマカラーを色々変えて、とりあえず今の色調にしてみたり。多分、すぐに変える気がするけど。
 
@@ -58,7 +58,7 @@ slug: review-of-2019-goals-of-2020
 
 「完全な英語環境の海外で生活してみる」という想定・狙いで、フィリピンに英語留学してきました！
 
-≫[いち Web エンジニアがフィリピン留学に行く前に考えていること](https://snamiki1212.com/think-about-filipin)
+[いち Web エンジニアがフィリピン留学に行く前に考えていること](./think-about-filipin)
 
 予想していた通りだが、英語学習という側面での英語留学は正直あまり旨味が少ないです・・・。今ではオンライン英会話も格安で出来るので、コスパを追求するなら日本の田舎なりに籠もってひたすら英語の勉強してるほうが圧倒的に伸びるかと。
 
@@ -66,9 +66,9 @@ slug: review-of-2019-goals-of-2020
 
 ココらへんについては、練習がてらブログで記事を大量に書いたので、詳細はそっち参照で。
 
-≫[【PINES ｜バギオ】パインスを完全レビュー【経験談】](https://snamiki1212.com/philippines-baguio-pines-summary)
+[【PINES ｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
 
-≫[IT エンジニア目線でフィリピンをおすすめしない理由 ←3 ヶ月滞在の結論](https://snamiki1212.com/not-recommend-philippines)
+[IT エンジニア目線でフィリピンをおすすめしない理由 ←3 ヶ月滞在の結論](./not-recommend-philippines)
 
 
 ### フリーランス始めた
@@ -109,25 +109,25 @@ Vueだと日本や特にアジア圏ではある認知度が伸びているけ�
 
 ▼2019年に書いた記事
 
-- ≫[React.useEffect でハマったポイントのまとめ](./react-useeffect-pitfall)
+- [React.useEffect でハマったポイントのまとめ](./react-useeffect-pitfall)
 
-- ≫[React の ContextAPI での正規化を Redux と比較](./compare-normalized-context-redux)
+- [React の ContextAPI での正規化を Redux と比較](./compare-normalized-context-redux)
 
-- ≫[Redux の State 設計の正規化の記事まとめ](./investigate-redux-state-architecture)
+- [Redux の State 設計の正規化の記事まとめ](./investigate-redux-state-architecture)
 
-- ≫[【Firestore】「WhereIN」が使えない時の代案のまとめ](./summary-alt-plan-insted-of-wherein-about-firestore)
+- [【Firestore】「WhereIN」が使えない時の代案のまとめ](./summary-alt-plan-insted-of-wherein-about-firestore)
 
-- ≫[【Firestore】「orWhere」が使えない時の代案のまとめ](./summary-alt-plan-insted-of-orwhere-about-firestore)
+- [【Firestore】「orWhere」が使えない時の代案のまとめ](./summary-alt-plan-insted-of-orwhere-about-firestore)
 
-- ≫[【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは？→『The Complete Guide』](./udemy-javascript-react-the-complete-guide)
+- [【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは？→『The Complete Guide』](./udemy-javascript-react-the-complete-guide)
 
-- ≫[react-router/react-router-transition を使ってサンプルアプリを作った](./create-react-router-techs)
+- [react-router/react-router-transition を使ってサンプルアプリを作った](./create-react-router-techs)
 
-- ≫[React(Hooks)を使ってポモドーロタイマー作った](./create-pomotimer-with-hooks)
+- [React(Hooks)を使ってポモドーロタイマー作った](./create-pomotimer-with-hooks)
 
-- ≫[React+Redux+TypeScript で ToDo アプリを作った話](./create-todo-with-typescript)
+- [React+Redux+TypeScript で ToDo アプリを作った話](./create-todo-with-typescript)
 
-- ≫[Redux を使ってアイキャッチジェネレータを作った話](./create-icatch)
+- [Redux を使ってアイキャッチジェネレータを作った話](./create-icatch)
 
 ### Rails を仕事で始めた
 

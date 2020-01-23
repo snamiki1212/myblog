@@ -26,7 +26,7 @@ word:
 
 ちなみに、実際にやった結果の記事は下記です。
 
-≫ [【実体験】Twitter 転職してエンジニア採用された話](./twitter-job-change-story)
+[【実体験】Twitter 転職してエンジニア採用された話](./twitter-job-change-story)
 
 では、みていきます。
 
@@ -205,6 +205,6 @@ Twitter転職だと、スピード感がメチャクチャ早いです。
 
 ⇒まとめました
 
-≫ [【実体験】Twitter 転職してエンジニア採用された話](./twitter-job-change-story)
+[【実体験】Twitter 転職してエンジニア採用された話](./twitter-job-change-story)
 
 この記事がどなたかの助けになれば幸いです。

@@ -19,7 +19,7 @@ slug: elixir-erlang-fest-jp-2019
 
 イベントのスライドだけをご覧になりたい方は、下記にまとめてあります。
 
-≫ [Erlang&Elixir Fest JP 2019 スライドまとめ](https://qiita.com/snamiki1212/items/1237b75444e5742c9928)
+[Erlang&Elixir Fest JP 2019 スライドまとめ](https://qiita.com/snamiki1212/items/1237b75444e5742c9928)
 
 ## Erlang&ElixirFestJP2019 について
 
@@ -64,7 +64,7 @@ Erlang の耐障害性や過去の資産を使える上に、関数型であり�
 
 ちなみに、去年のイベントレポートは下記に記載しています。
 
-≫ [Erlang & Elixir Fest JP 2018 まとめ](https://medium.com/arsaga-partners-techblog/erlang-elixir-fest-jp-2018-まとめ-4c709d347c7c)
+[Erlang & Elixir Fest JP 2018 まとめ](https://medium.com/arsaga-partners-techblog/erlang-elixir-fest-jp-2018-まとめ-4c709d347c7c)
 
 では、2019 のイベント内容についてレポートしていきます。
 
