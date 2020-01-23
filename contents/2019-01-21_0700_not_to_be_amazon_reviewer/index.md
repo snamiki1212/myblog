@@ -96,9 +96,9 @@ Amazon の商品レビューを行っている人たちに対してもランキ�
 
 そして、レビュワーのランキングを上位にする心得として、下記が公式として書かれている。
 
-» [Amazon's Top Customer Reviewers](https://www.amazon.com/gp/customer-reviews/guidelines/top-reviewers.html)
+[Amazon's Top Customer Reviewers](https://www.amazon.com/gp/customer-reviews/guidelines/top-reviewers.html)
 
-» [Amazon.co.jp ヘルプ: トップ寄稿者について](https://www.amazon.co.jp/gp/help/customer/display.html/ref=help_search_3-27?ie=UTF8&nodeId=202076130&qid=1548015348&sr=3-27)
+[Amazon.co.jp ヘルプ: トップ寄稿者について](https://www.amazon.co.jp/gp/help/customer/display.html/ref=help_search_3-27?ie=UTF8&nodeId=202076130&qid=1548015348&sr=3-27)
 
 概要は下記の通り。
 
@@ -212,7 +212,7 @@ Vine メンバーになると「特定の商品を無料でもらう代わりに
 
 世界的に見ても Amazon のレビューが機能不全を起こしている事象は発生している模様。詳細は下記の記事。
 
-» [Amazon のスパムレビュー対策がうまくいかない理由 | ライフハッカー［日本版］](https://www.lifehacker.jp/2018/06/heres-why-amazon-cant-fix-review-spam.html)
+[Amazon のスパムレビュー対策がうまくいかない理由 | ライフハッカー［日本版］](https://www.lifehacker.jp/2018/06/heres-why-amazon-cant-fix-review-spam.html)
 
 ---
 
@@ -226,7 +226,7 @@ Vine メンバーになると「特定の商品を無料でもらう代わりに
 
 下記の記事に詳細はかいてあった。
 
-» [Amazon Vine メンバー入りを目指すなか、レビューへの反応 ランキングなどの面白さに目覚めた | another Win And I net](https://www.kimanagu.com/entry/amazon-vine-program/)
+[Amazon Vine メンバー入りを目指すなか、レビューへの反応 ランキングなどの面白さに目覚めた | another Win And I net](https://www.kimanagu.com/entry/amazon-vine-program/)
 
 ### ナレッジ ②：画像・動画は狙い目
 
@@ -236,7 +236,7 @@ Vine メンバーになると「特定の商品を無料でもらう代わりに
 
 記事に書かれていた、良い裏技。
 
-» [祝！約 1 ヶ月半で Amazon レビューランキング 1000 を達成！！](http://www.kenkihou.com/achieve-reviewer-best1000)
+[祝！約 1 ヶ月半で Amazon レビューランキング 1000 を達成！！](http://www.kenkihou.com/achieve-reviewer-best1000)
 
 ### 裏技 ②：名前ハック可能
 
@@ -263,6 +263,6 @@ Vine メンバーになると「特定の商品を無料でもらう代わりに
 
 詳細は下記の記事で、まとめています。
 
-» [ローカルガイドになって、サンフランシスコを目指すことにした話](./investigate-local-guide)
+[ローカルガイドになって、サンフランシスコを目指すことにした話](./investigate-local-guide)
 
 金銭面　でのインセンティブが無いが、「デジタル資産」や「プラットフォームがコントリビュータを大事にしている」と感じたあたりが決め手。

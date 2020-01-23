@@ -33,7 +33,7 @@ slug: compare-normalized-context-redux
 
 正規化についての詳細は、こちらに記事としてまとめてあります。
 
-≫ [Redux の State 設計の正規化の記事まとめ](./investigate-redux-state-architecture)
+[Redux の State 設計の正規化の記事まとめ](./investigate-redux-state-architecture)
 
 ## Todo アプリを作ってみる
 

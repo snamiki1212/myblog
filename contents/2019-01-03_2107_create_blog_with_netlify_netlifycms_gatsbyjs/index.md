@@ -47,7 +47,7 @@ CMS の１つ。特徴は OSS で community-driven なので健全な headless C
 
 ちなみに下記のテーマをベースにブログを作り始めた。
 
-» [Vagr9K/gatsby-material-starter: A high performance blog starter with Material design in mind for GatsbyJS.](https://github.com/Vagr9K/gatsby-material-starter)
+[Vagr9K/gatsby-material-starter: A high performance blog starter with Material design in mind for GatsbyJS.](https://github.com/Vagr9K/gatsby-material-starter)
 
 ### 【問題 ①】RSS が機能しない
 
@@ -63,7 +63,7 @@ RSS を設定して記事をポストしてもリーダーが RSS を取得し�
 
 何はともあれ切り分けのために下記の解析ツールから使うべきだった。
 
-» [W3C Feed Validation Service, for Atom and RSS](https://validator.w3.org/feed/)
+[W3C Feed Validation Service, for Atom and RSS](https://validator.w3.org/feed/)
 
 この解析サイトで RSS のデータ構造的が invalid / valid かを判断してくれる。
 その結果、「successful!!」とはならず、「invalid なデータがあるよ〜」となっていた。
@@ -117,7 +117,7 @@ RSS を設定して記事をポストしてもリーダーが RSS を取得し�
 
 excerpt とは、「抜粋」で例えばブログ記事の一覧を表示したときそれぞれのプログ記事の先頭行数分を抜粋して表示するようなもの。この excerpt の表示だが正常に表示されなかった。ただ、その対応について trouble shooting に書いてあるので「GraphQL の query を excerpt から excerpt(truncate: true)にするように」とのこと。欲を言えばデフォルトで設定しておいてほしいが・・・。調べればわかるものだったので許容範囲。
 
-» [gatsby-transformer-remark | GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
+[gatsby-transformer-remark | GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-transformer-remark/)
 
 ### 【問題 ④】Twitter-card に画像が正常に表示されない
 

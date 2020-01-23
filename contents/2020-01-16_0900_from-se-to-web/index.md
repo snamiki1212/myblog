@@ -36,7 +36,7 @@ SIerブラックな理由を理解できてますか？
 
 まずは、現状認識が始めましょう。
 
-≫ [【完全理解】SE がブラックな理由を解説【わかりやすさ重視】](./reason-of-se-black)
+[【完全理解】SE がブラックな理由を解説【わかりやすさ重視】](./reason-of-se-black)
 
 <!-- ・TODO：（01/22）【SE ヤバい】業界人の目線から理解する SIer オワコン（記事まとめ。権威性） -->
 
@@ -48,21 +48,21 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 転職するにあたり事前知識と、転職先の候補について知ります
 
-≫ [SE の転職で異業種・異業界を考える前に知っておくべきこと](./job-change-from-se-with-points)
+[SE の転職で異業種・異業界を考える前に知っておくべきこと](./job-change-from-se-with-points)
 
-≫ [SE から異業種への転職先【おすすめ３選】](/recommend-job-change-choices-from-se)
+[SE から異業種への転職先【おすすめ３選】](/recommend-job-change-choices-from-se)
 
 ### ① Web 系（★★★★★）
 
-≫ [Web エンジニアの「将来性がない」は本当か？→ むしろ将来性の塊](./future-of-web-engineer)
+[Web エンジニアの「将来性がない」は本当か？→ むしろ将来性の塊](./future-of-web-engineer)
 
-≫ [SE と Web 系の違いをエンジニアが比較【両方とも経験済み】](./diff-between-se-and-web)
+[SE と Web 系の違いをエンジニアが比較【両方とも経験済み】](./diff-between-se-and-web)
 
 ### ② 社内 SE（★★★☆☆）
 
-≫ [SEから転職前に社内SEを経験してわかったこと【必須スキル４選】](./skill-of-internal-se)
+[SEから転職前に社内SEを経験してわかったこと【必須スキル４選】](./skill-of-internal-se)
 
-≫ [ホワイト社内SEを経験してSIerのブラックを実感した話](./white-internal-se-and-black-se)
+[ホワイト社内SEを経験してSIerのブラックを実感した話](./white-internal-se-and-black-se)
 
 ---
 
@@ -74,9 +74,9 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 転職するにあたり「やること」を行動へ移しましょう。
 
-≫ [【転職活動】最初にやることは１つだけ【エージェントに相談】](./job-change-do-one)
+[【転職活動】最初にやることは１つだけ【エージェントに相談】](./job-change-do-one)
 
-≫ [SE から Web 系へのおすすめ転職サイト【現役エンジニア談】](./recommend-hr-sites-from-se-to-web)
+[SE から Web 系へのおすすめ転職サイト【現役エンジニア談】](./recommend-hr-sites-from-se-to-web)
 
 <!-- ・TODO：（01/21）転職したときの話（会社の分析。プログラミングの学習。） -->
 
@@ -86,7 +86,7 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 転職した結果どうなるかイメージしていきましょう。
 
-≫ [SE がベンチャーに転職してわかったこと４選【Web エンジニア】](./notice-when-changing-from-se-to-web)
+[SE がベンチャーに転職してわかったこと４選【Web エンジニア】](./notice-when-changing-from-se-to-web)
 
 ## 番外編：おまけコラム
 
@@ -94,9 +94,9 @@ SEのヤバさがわかったら転職先を考えましょう。
 
 SE/SIerについてのコラムです。
 
-≫ [「SE でプログラミングができない人」に向けてキャリア戦略を考えた](./se-cannot-do-programming)
+[「SE でプログラミングができない人」に向けてキャリア戦略を考えた](./se-cannot-do-programming)
 
-≫ [【完全解決】SIer で、つまらないと感じたら？【経験談有り】](./how-to-solve-when-to-feel-sier-is-not-awesome)
+[【完全解決】SIer で、つまらないと感じたら？【経験談有り】](./how-to-solve-when-to-feel-sier-is-not-awesome)
 
 
 <!--

@@ -140,6 +140,6 @@ SIer 側の担当者によって「誰がやる？」を交渉してくる人も
 
 ブラックな SIer で消耗しているなら、下記の選択肢などで転職を考えてみるのをオススメします。
 
-≫ [SE から異業種への転職先【おすすめ３選】](/recommend-job-change-choices-from-se)
+[SE から異業種への転職先【おすすめ３選】](/recommend-job-change-choices-from-se)
 
 この記事がどなたかの助けになれば幸いです。

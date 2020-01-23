@@ -66,7 +66,7 @@ MacBook 無印はサブ PC としてならおすすめできますが、メイ�
 
 詳細は下記の記事にまとめています。
 
-» [フィリピン留学用にサブ PC を選定した話【IT 留学じゃないです】](./philippines-select-sub-pc)
+[フィリピン留学用にサブ PC を選定した話【IT 留学じゃないです】](./philippines-select-sub-pc)
 
 プログラミングも出来るし、ライティングも出来るし、持ち運びも軽い、という良い意味でも悪い意味でも、器用貧乏な PC ですね。
 
@@ -113,11 +113,11 @@ MacBook の重さは荷物としてほとんど負荷にならないです
 
 ちなみに、おすすめは下記です。充電器にもなるし、モバイルバッテリーにもなるし、軽いので持ち運びやすい神アイテムです。
 
-» [Anker PowerCore Fusion 5000](https://www.ankerjapan.com/category/BATTERY/A1621.html)
+[Anker PowerCore Fusion 5000](https://www.ankerjapan.com/category/BATTERY/A1621.html)
 
 実際に、今回の海外滞在だけはなく、日本でテックイベントに行くときもほぼ毎回持っていっていました。
 
-» [技術カンファレンスに通って、わかった 11 個の気付き](https://snamiki1212.com/result-of-going-to-conference)
+[技術カンファレンスに通って、わかった 11 個の気付き](./result-of-going-to-conference)
 
 ### ライティングに良い
 

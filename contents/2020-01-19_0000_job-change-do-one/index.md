@@ -166,7 +166,7 @@ word:
 個人的には 下記のエージェントがおすすめです。
 （転職先がWeb系でなくてもOKです）
 
-≫ [SEからWeb 系へのおすすめ転職サイト【現役エンジニア談】](./recommend-hr-sites-from-se-to-web)
+[SEからWeb 系へのおすすめ転職サイト【現役エンジニア談】](./recommend-hr-sites-from-se-to-web)
 
 ２〜３つくらいに予約して、**それぞれから話を聞いてください**。
 
@@ -182,5 +182,5 @@ word:
 
 この記事を見終わったら、すぐに行動することを願います。
 
-≫ [SEからWeb 系へのおすすめ転職サイト【現役エンジニア談】](./recommend-hr-sites-from-se-to-web)
+[SEからWeb 系へのおすすめ転職サイト【現役エンジニア談】](./recommend-hr-sites-from-se-to-web)
 
