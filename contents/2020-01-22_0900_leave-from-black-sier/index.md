@@ -1,8 +1,8 @@
 ---
-title: '【SE】ブラックじゃない環境への選択肢【４選】'
-cover: 'cover.jpg'
+title: '【SE】ブラックじゃない環境へ行く選択肢【４選】'
+cover: 'cover.svg'
 createdAt: '2020-01-22 09:00'
-updatedAt: '2020-01-22 19:00'
+updatedAt: '2020-01-23 01:00'
 category: 'Career:SEtoWeb'
 tags:
   - SEtoWeb
@@ -11,7 +11,7 @@ word:
   - 'SE ブラック じゃない'
 ---
 
-# 【SE】ブラックじゃない環境への選択肢【４選】
+# 【SE】ブラックじゃない環境へ行く選択肢【４選】
 
 こんにちは、Nash です。
 
@@ -28,7 +28,7 @@ word:
 
 ## SE がブラックじゃないところに行く
 
-![top](./cover.jpg)
+![top](./cover.svg)
 
 大きく分けて２つの方向性があります。
 
