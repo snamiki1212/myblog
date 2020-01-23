@@ -1,5 +1,5 @@
 import React from 'react';
-import {isInternalPageLink} from '../lib/validator';
+import {isInternalPageLink, isAffiLink} from '../lib/validator';
 import BlogCard from '../components/atoms/BlogCard';
 import urljoin from 'url-join';
 import styled from 'styled-components';
@@ -19,7 +19,8 @@ const NormalA = styled.a`
 const HandlerForA: React.FC = (props: any) => {
   if (
     props.className === 'anchor' || // gatsby-remark-autolink-headers で生成されるページ内リンク
-    !isInternalPageLink(props.href)
+    !isInternalPageLink(props.href) ||
+    isAffiLink(props.href)
   ) {
     return <NormalA {...props} />;
   }
