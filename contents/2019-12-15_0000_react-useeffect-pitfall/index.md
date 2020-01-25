@@ -21,7 +21,7 @@ slug: react-useeffect-pitfall
 
 公式ドキュメントを読むのは、そもそもの前提ですが、その上で、下記の記事を頑張って読み込むのが、一番費用対効果が高かったです。
 
-≫ [Overreacted - useEffect 完全ガイド](https://overreacted.io/ja/a-complete-guide-to-useeffect/)
+[Overreacted - useEffect 完全ガイド](https://overreacted.io/ja/a-complete-guide-to-useeffect/)
 
 この記事では、ClassComponent ベースのライフサイクルから、Hooks ベースのライフサイクルではどのように考え方が変わり、処理されているかが、かなり詳しく書かれてます。
 

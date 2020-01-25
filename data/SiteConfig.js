@@ -11,6 +11,9 @@ module.exports = {
   siteUrl: 'https://snamiki1212.com', // Domain of your website without pathPrefix.
   siteRepository: 'https://github.com/snamiki1212/myblog', // Repository of your site
 
+  // blog-card
+  blogCardLogo: '/blogcard.png', // 暫定。参照先のOGPとか取りたい。
+
   // for RSS
   siteDescription: '先端技術を追いかけるエンジニアのブログ', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.

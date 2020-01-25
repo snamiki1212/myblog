@@ -23,7 +23,7 @@ SEO-keyword:
 
 ちなみに、新校舎の「設備」ついては下記で紹介しています。
 
-» [【PINES ｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
+[【PINES ｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
 
 ## そもそも PINES ってどんな学校？【フィリピンのバギオにある学校】
 
@@ -31,7 +31,7 @@ SEO-keyword:
 
 そもそも、PINES についての全体的な情報は下記にまとめています。
 
-» [フィリピンにあるバギオの PINES（パインス）ってどんな学校？](./philippines-baguio-pines-summary)
+[フィリピンにあるバギオの PINES（パインス）ってどんな学校？](./philippines-baguio-pines-summary)
 
 ## 4 人部屋のシェアルーム
 
@@ -121,6 +121,6 @@ SEO-keyword:
 
 フィリピン留学中に毎日必ず Tweet してたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
+[Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
 
 「いいね」してもらえると喜びます。

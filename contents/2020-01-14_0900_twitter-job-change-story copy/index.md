@@ -47,7 +47,7 @@ Twitter転職とは、Twitterを使った転職活動です。
 
 Twitter転職する前にやっておくべきこと＋やり方などは下記にまとめました。
 
-≫ [Twitter転職のやり方を説明します【簡単でした】](./twitter-job-change-way)
+[Twitter転職のやり方を説明します【簡単でした】](./twitter-job-change-way)
 
 では、Twitter転職を実際にやってみての気付きについてです。
 

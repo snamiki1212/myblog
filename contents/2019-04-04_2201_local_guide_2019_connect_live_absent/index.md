@@ -38,7 +38,7 @@ SEO-keyword:
 
 詳細は下記の公式ページ参照ですが、
 
-» [ConnectLive2019](https://maps.google.com/localguides/event/connectlive)
+[ConnectLive2019](https://maps.google.com/localguides/event/connectlive)
 
 更に、抜粋して記載していきますね。
 

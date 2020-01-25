@@ -32,9 +32,9 @@ slug: create-icatch
 
 以前に QiitaViewer を作ったのと、このブログ自体が React なので、特にコンポーネントを作成していく思考は全く問題なく進みました。
 
-» [React で Qiita のアプリケーションを作った話](./create-qiita-viewer-with-react)
+[React で Qiita のアプリケーションを作った話](./create-qiita-viewer-with-react)
 
-» [Netlify + Netlify CMS + GatsbyJS ( React + GraphQL )でブログ作ったときにハマった点](./create-blog-with-netlify-netlifycms-gatsbyjs)
+[Netlify + Netlify CMS + GatsbyJS ( React + GraphQL )でブログ作ったときにハマった点](./create-blog-with-netlify-netlifycms-gatsbyjs)
 
 コールバックで返されるオブジェクトの細かな動きなどで、微妙に詰まったりはしました。が、ググればすぐに出てくるような内容なので、特に問題なかったです。具体的には下記。
 

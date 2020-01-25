@@ -33,7 +33,7 @@ word: 'Webエンジニア 将来性 ない'
 
 ### 経済産業省の解答は？　←需要があるのに、人がたりなさすぎる
 
-≫ [経済産業省 IT人材の最新動向と将来推計に関する調査結果](https://www.meti.go.jp/policy/it_policy/jinzai/27FY/ITjinzai_report_summary.pdf)
+[経済産業省 IT人材の最新動向と将来推計に関する調査結果](https://www.meti.go.jp/policy/it_policy/jinzai/27FY/ITjinzai_report_summary.pdf)
 
 平成28年(2016年)のデータなので少し古いですが、経済産業省が出した公式の資料です。
 

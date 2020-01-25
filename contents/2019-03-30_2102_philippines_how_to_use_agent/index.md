@@ -44,7 +44,7 @@ SEO-keyword:
 
 流れは下記の記事で確認できるので、事前に明確にしておくを強くおすすめします。
 
-» [【留学失敗を回避】学校選びの「条件」をどう決めるか【経験者】](./philippines-own-condition-of-searching-school)
+[【留学失敗を回避】学校選びの「条件」をどう決めるか【経験者】](./philippines-own-condition-of-searching-school)
 
 ---
 
@@ -97,6 +97,6 @@ SEO-keyword:
 
 フィリピン留学中に毎日必ず Tweet してたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
+[Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
 
 「いいね」してもらえると喜びます。

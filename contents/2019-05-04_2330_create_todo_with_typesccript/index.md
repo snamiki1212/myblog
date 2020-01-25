@@ -33,7 +33,7 @@ slug: create-todo-with-typescript
 
 今回は、TypeScript を学習することをメインに ToDo アプリを作りました。以前作った Redux の Example とほぼ同じなので、完全に復習ですね。
 
-» [snamiki1212/redux-todo](https://github.com/snamiki1212/redux-todo)
+[snamiki1212/redux-todo](https://github.com/snamiki1212/redux-todo)
 
 作った中での気付きなどをまとめていきます。
 
@@ -41,7 +41,7 @@ slug: create-todo-with-typescript
 
 Redux については前回サービスを作ったので大丈夫かと思ったのですが、実際は再度サービスを作ってみると「あれ？どうやって書くんだっけ？」な点がいくつか出てきて結構詰まりました。
 
-» [Redux を使ってアイキャッチジェネレータを作った話](./create-icatch)
+[Redux を使ってアイキャッチジェネレータを作った話](./create-icatch)
 
 Redux くらい学習コストが高いものは 1 度サービスを作ったら OK ではなくて、2 回くらい作ってみるほうが良さげです。2 回目に「自分がわかったつもりになってた箇所」がわかるからです。
 
@@ -51,7 +51,7 @@ Redux くらい学習コストが高いものは 1 度サービスを作った�
 
 具体的には下記のコミットで、Input のモジュールを切り出して汎用化させています。
 
-» [snamiki1212/milkmemo - commit](https://github.com/snamiki1212/milkmemo/commit/13008af06985c8ce6a4fcb89566085f4b0b5e66f)
+[snamiki1212/milkmemo - commit](https://github.com/snamiki1212/milkmemo/commit/13008af06985c8ce6a4fcb89566085f4b0b5e66f)
 
 気付いた点を踏まえて改めて下記のように認識しました。
 
@@ -91,7 +91,7 @@ Hand Book の半分も読めなかったですが、少なくともライトに�
 
 設定はこちらを参考にしました。
 
-» [oukayuka/ReactBeginnersBook-2.0](https://github.com/oukayuka/ReactBeginnersBook-2.0/tree/master/06-lint)
+[oukayuka/ReactBeginnersBook-2.0](https://github.com/oukayuka/ReactBeginnersBook-2.0/tree/master/06-lint)
 
 コードを書きながらリアルタイムに Lint チェックが行われ、保存(`Ctrl + S`) をするたびにコードフォーマットが走る環境はある種の CI/CD のようです。
 

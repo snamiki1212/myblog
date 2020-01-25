@@ -306,7 +306,7 @@ Days 48: #100DaysOfEnglish #フィリピン留学 #セブ留学 #留学 #英会�
 
 そのため、「味が激マズ」とか「自分が何を食べているのか、わからない」みたいな、食事中に謎の不思議体験をすることは無いです。
 
-» [【セブ留学】日本資本の学校に通ってきた【フィリピン】](.//philippines-fund-of-japan)
+[【セブ留学】日本資本の学校に通ってきた【フィリピン】](.//philippines-fund-of-japan)
 
 PINES を卒業した後に、CEGA に転校したのですが、ここでは、３食とも美味しいので、順調に太り始めてます。
 
@@ -314,18 +314,18 @@ PINES を卒業した後に、CEGA に転校したのですが、ここでは、
 
 PINES については、他の観点でもレビューしているので、よければこちらもどうぞ。
 
-» [【PINES ｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
+[【PINES ｜バギオ】パインスを完全レビュー【経験談】](./philippines-baguio-pines-summary)
 
-» [【PINES ｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
+[【PINES ｜バギオ】新校舎の「設備」を使ってきた【フィリピン留学】](./philippines-baguio-pines-facility)
 
-» [【PINES ｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
+[【PINES ｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】](./philippines-baguio-pines-domitory)
 
-» [【PINES ｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
+[【PINES ｜バギオ】新校舎の「教室」で勉強してきた【フィリピン留学】](./philippines-baguio-pines-classroom)
 
 ---
 
 フィリピン留学中に毎日必ず Tweet してたので、その内容をまとめました。興味がある人はこちらもどうぞ
 
-» [Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
+[Twitter - フィリピン留学(2019/2/2~2019/4/27)(バギオ → セブ)](https://twitter.com/i/moments/1108015112575541249)
 
 「いいね」してもらえると喜びます。

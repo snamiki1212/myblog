@@ -14,17 +14,6 @@ slug: php-conference-2018
 
 [PHP Conference 2018 - #phpcon2018](http://phpcon.php.gr.jp/2018/) に行ってきたのでそのまとめ。
 
-## 🗒 目次
-
-- [🙌Opening 原田 裕介 / 日本 PHP ユーザ会](#opening原田-裕介--日本phpユーザ会)
-- [🚀PHP のいまとこれから 2018(廣川 類 / 日本 PHP ユーザ会)](#phpのいまとこれから-2018廣川-類--日本phpユーザ会)
-- [🚀 独立したコアレイヤパターンによる PHP アプリケーションの実装(新原 雅司 / １ × １株式会社)](#独立したコアレイヤパターンによる-php-アプリケーションの実装新原-雅司--１×１株式会社)
-- [🚀PHP,Go,Elasticsearch による、@cosme を 5 倍速くする取り組み (R&D 部チーフエンジニア 久保田 賢二朗 / 株式会社アイスタイル)](#phpgoelasticsearchによる、cosmeを5倍速くする取り組み-rd部チーフエンジニア-久保田-賢二朗--株式会社アイスタイル)
-- [🚀PHP での gRPC クライアント作成とユースケース(村上 俊介 / Chatwork 株式会社)](#phpでのgrpcクライアント作成とユースケース村上-俊介--chatwork株式会社)
-- [🚀PHP と Apache Spark で始めるデータ解析処理 (竹澤 有貴 / 株式会社アイスタイル)](#phpとapache-sparkで始めるデータ解析処理-竹澤-有貴--株式会社アイスタイル)
-- [💔PHP 離れに伴う PHP-Conference への影響](#php離れに伴うphp-conferenceへの影響)
-- [🎉 総括](#総括)
-
 ## 🙌Opening(原田 裕介 / 日本 PHP ユーザ会)
 
 - 今回のカンファレンステーマ「Growth」からジュニアエンジニアの育成に力を入れる

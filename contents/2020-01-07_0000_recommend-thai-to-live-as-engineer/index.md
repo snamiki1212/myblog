@@ -180,4 +180,4 @@ slug: recommend-thai-to-live-as-engineer
 
 ちなみに、フィリピンでも生活していたのですが、まったくおすすめしない結論に至った記事とかもあるので、興味ある人はこちらもどうぞ。
 
-≫[IT エンジニア目線でフィリピンをおすすめしない理由 ←3 ヶ月滞在の結論](./not-recommend-philippines)
+[IT エンジニア目線でフィリピンをおすすめしない理由 ←3 ヶ月滞在の結論](./not-recommend-philippines)
