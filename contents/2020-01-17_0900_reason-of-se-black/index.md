@@ -8,7 +8,7 @@ tags:
   - SEtoWeb
 slug: reason-of-se-black
 word:
-  - 'SE ブラック'
+  - 'SIer ブラック'
 ---
 
 # 【完全理解】SIer業界 がブラックな理由を解説【わかりやすさ重視】
