@@ -1,5 +1,5 @@
 import React from 'react';
-import _ from 'lodash';
+import kebabCase from 'lodash.kebabcase';
 import {Link} from 'gatsby';
 import Chip from '@material-ui/core/Chip';
 import styled from 'styled-components';
@@ -18,7 +18,7 @@ export const TagList: React.FC<Props> = ({tags}) => {
             <Link
               key={tag}
               style={{textDecoration: 'none'}}
-              to={`/tags/${_.kebabCase(tag)}`}
+              to={`/tags/${kebabCase(tag)}`}
             >
               <SChip label={`#${tag}`} clickable color="primary" />
             </Link>

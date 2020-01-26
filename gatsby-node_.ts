@@ -1,6 +1,6 @@
 import path from 'path';
-import _ from 'lodash';
-import moment from 'moment';
+import kebabCase from 'lodash.kebabcase';
+import dayjs from 'dayjs';
 import siteConfig from './data/SiteConfig';
 
 // -----------------------------------------------------------------------
@@ -63,9 +63,9 @@ class SubPageList {
   generatePath = (name: string): string => {
     switch (this.type) {
       case 'category':
-        return `/categories/${_.kebabCase(name)}`;
+        return `/categories/${kebabCase(name)}`;
       case 'tag':
-        return `/tags/${_.kebabCase(name)}`;
+        return `/tags/${kebabCase(name)}`;
       default:
         throw new Error('unexpected type error');
     }
@@ -143,12 +143,12 @@ const generateSlug = ({node, parsedFilePath}): string => {
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
     Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
   ) {
-    return `/${_.kebabCase(node.frontmatter.slug)}`;
+    return `/${kebabCase(node.frontmatter.slug)}`;
   } else if (
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
     Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
   ) {
-    return `/${_.kebabCase(node.frontmatter.title)}`;
+    return `/${kebabCase(node.frontmatter.title)}`;
   } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
     return `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
   } else if (parsedFilePath.dir === '') {
@@ -354,7 +354,7 @@ export const onCreateNode = ({node, actions, getNode}): void => {
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
     Object.prototype.hasOwnProperty.call(node.frontmatter, 'createdAt')
   ) {
-    const createdAt = moment(
+    const createdAt = dayjs(
       node.frontmatter.createdAt,
       siteConfig.dateFromFormat
     );
@@ -374,7 +374,7 @@ export const onCreateNode = ({node, actions, getNode}): void => {
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
     Object.prototype.hasOwnProperty.call(node.frontmatter, 'updatedAt')
   ) {
-    const updatedAt = moment(
+    const updatedAt = dayjs(
       node.frontmatter.updatedAt,
       siteConfig.dateFromFormat
     );

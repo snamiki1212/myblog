@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
     appBar: {
       backgroundImage: `linear-gradient(170deg, ${colors.vivid1} ,  ${colors.vivid2} 70%, ${colors.vivid3})`,
     },
-    toolbar: theme.mixins.toolbar,
+    // toolbar: theme.mixins.toolbar,
     content: {
       width: '100vw',
     },
@@ -51,14 +51,14 @@ interface ResponsiveDrawerProps {
 export const Navigation: React.FC<ResponsiveDrawerProps & any> = props => {
   const {children} = props;
 
-  const classes = useStyles(props); // TODO: props で本当によい？
+  const classes = useStyles();
 
   return (
     <>
-      <div className={classes.root}>
+      <div className={classes['root']}>
         {/* 上部にあるアプリケーションバー */}
         <HideOnScroll {...props}>
-          <AppBar position="fixed" className={classes.appBar}>
+          <AppBar position="fixed" className={classes['appBar']}>
             <Toolbar>
               <Typography variant="h6" noWrap>
                 <HeaderTitle />
@@ -68,8 +68,8 @@ export const Navigation: React.FC<ResponsiveDrawerProps & any> = props => {
         </HideOnScroll>
 
         {/* コンテンツ */}
-        <main className={classes.content}>
-          <div className={classes.toolbar}>
+        <main className={classes['content']}>
+          <div className={classes['toolbar']}>
             <Container>{children}</Container>
           </div>
         </main>

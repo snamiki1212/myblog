@@ -111,7 +111,7 @@ interface Props {
   postEdges?: MarkdownRemarkEdge[];
 }
 
-export const SEOMeta: React.FC<Props> = ({postNode, isPost}) => {
+export const SEOMeta: React.FC<Props> = ({postNode, isPost = false}) => {
   const {title, description, image, postURL, schemaOrgJSONLD} = fetchData({
     isPost,
     postNode,

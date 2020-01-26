@@ -18,7 +18,7 @@ const NormalA = styled.a`
 
 const HandlerForA: React.FC = (props: any) => {
   if (
-    props.className === 'anchor' || // gatsby-remark-autolink-headers で生成されるページ内リンク
+    (props.className && props.className.includes('anchor')) || // gatsby-remark-autolink-headers で生成されるページ内リンク
     !isInternalPageLink(props.href) ||
     isAffiLink(props.href)
   ) {

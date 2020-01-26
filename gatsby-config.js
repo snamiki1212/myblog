@@ -21,7 +21,6 @@ module.exports = {
   plugins: [
     // REF: https://takumon.com/2018/10/21/
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-lodash',
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
 
