@@ -38,8 +38,7 @@ DB周りはserposcopeの機能でsave/restoreがあるので、それで十分�
 
 大きく分けて２つです。
 
-- EC2立てる
-- git/dockerなどを入れる
+- EC2立てて、git/dockerなどを入れる
 - docker周りの手順
 
 では、見ていきます。
