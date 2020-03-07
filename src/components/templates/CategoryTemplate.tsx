@@ -5,7 +5,7 @@ import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 import {CategoryPageContext} from '../../../gatsby-node_';
 import Layout from '../organisms/Layout';
-import ArticleListContainer from '../organisms/ArticleListContainer';
+import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -50,7 +50,7 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      <ArticleListContainer
+      <ArticlePreviewList
         postEdges={postEdges}
         context={pageContext}
         description={

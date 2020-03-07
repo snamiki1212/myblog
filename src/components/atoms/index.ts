@@ -8,5 +8,4 @@ export * from './HatenaShareButton';
 export * from './Icon';
 export * from './Markdown';
 export * from './SubPageLinks';
-export * from './ArticlePreviewsContaienr';
-export * from './ArticlesArea';
+export * from './ArticlesPreviewWrapper';

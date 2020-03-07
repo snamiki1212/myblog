@@ -10,6 +10,6 @@ require('ts-node').register({
 // import
 const {createPages, onCreateNode} = require('./gatsby-node_');
 
-// execute
+// exports
 exports.onCreateNode = onCreateNode;
 exports.createPages = createPages;

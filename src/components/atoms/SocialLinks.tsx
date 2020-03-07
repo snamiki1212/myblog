@@ -29,7 +29,7 @@ export const SocialLinks: React.FC<Props> = props => {
   const post = postNode.frontmatter;
   const url = urljoin(config.siteUrl, postNode.frontmatter.slug);
   const iconSize = 36;
-  const renderShareCount = (count: number): JSX.Element => (
+  const renderShareCount = (count: number): React.ReactNode => (
     <ShareCount>{count > 0 ? count : ''}</ShareCount>
   );
 
@@ -40,7 +40,7 @@ export const SocialLinks: React.FC<Props> = props => {
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
-            {(count: number): JSX.Element => renderShareCount(count)}
+            {(count: number): React.ReactNode => renderShareCount(count)}
           </RedditShareCount>
         </RedditShareButton>
       </InnerContainer>
@@ -55,7 +55,7 @@ export const SocialLinks: React.FC<Props> = props => {
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
-            {(count: number): JSX.Element => renderShareCount(count)}
+            {(count: number): React.ReactNode => renderShareCount(count)}
           </FacebookShareCount>
         </FacebookShareButton>
       </InnerContainer>

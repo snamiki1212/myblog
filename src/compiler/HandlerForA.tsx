@@ -1,6 +1,6 @@
 import React from 'react';
 import {isInternalPageLink, isAffiLink} from '../lib/validator';
-import BlogCard from '../components/atoms/BlogCard';
+import {BlogCard} from '../components/atoms/BlogCard';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 import {colors} from '../../data/color';

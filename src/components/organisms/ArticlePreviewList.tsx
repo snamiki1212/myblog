@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {PaginationContext, SubPageContext} from '../../../gatsby-node_';
-import {Paginator, SubPageLinks, ArticlesArea} from '../atoms';
+import {Paginator, SubPageLinks, ArticlesPreviewWrapper} from '../atoms';
 import {AuthorCard, ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 import {MarkdownRemarkEdge} from '../../types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -14,7 +14,7 @@ type Props = {
   description?: React.ReactNode;
 };
 
-export const ArticleListContainer: React.FC<Props> = ({
+export const ArticlePreviewList: React.FC<Props> = ({
   postEdges,
   context,
   description,
@@ -22,7 +22,7 @@ export const ArticleListContainer: React.FC<Props> = ({
   const theme = useTheme();
   const isSP = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const Article = isSP ? ArticlePreviewLine : ArticlePreviewCard;
+  const ArticlePreview = isSP ? ArticlePreviewLine : ArticlePreviewCard;
   return (
     <PageContainer
       style={{
@@ -32,13 +32,16 @@ export const ArticleListContainer: React.FC<Props> = ({
     >
       <MainArea>
         {description}
-        <ArticlesArea style={{flexDirection: isSP ? 'column' : 'row'}}>
+        <ArticlesPreviewWrapper style={{flexDirection: isSP ? 'column' : 'row'}}>
           {postEdges.map(
-            (edge): JSX.Element => (
-              <Article key={edge.node.frontmatter.title} postInfo={edge} />
+            (edge): React.ReactNode => (
+              <ArticlePreview
+                key={edge.node.frontmatter.title}
+                postInfo={edge}
+              />
             )
           )}
-        </ArticlesArea>
+        </ArticlesPreviewWrapper>
         <Paginator context={context} />
       </MainArea>
 
@@ -69,5 +72,3 @@ const AsideArea = styled.aside`
   border-radius: 10px;
   background-color: ${colors.grayLight};
 `;
-
-export default ArticleListContainer;

@@ -4,6 +4,7 @@ import {SubPageContext} from '../../../gatsby-node_';
 import {Link} from 'gatsby';
 
 type Props = {context: SubPageContext};
+
 export const SubPageLinks: React.FC<Props> = ({context}) => {
   return (
     <div style={{paddingTop: '50px'}}>
@@ -20,7 +21,9 @@ export const SubPageLinks: React.FC<Props> = ({context}) => {
         <div>▼タグ</div>
         {context.tags.map(({name, count, path}) => (
           <Button key={name}>
-            <Link to={path}>{`${name}(${count})`}</Link>
+            <Link to={path}>
+              <div>{`${name}(${count})`}</div>
+            </Link>
           </Button>
         ))}
       </div>

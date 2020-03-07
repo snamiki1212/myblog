@@ -12,7 +12,7 @@ export const MyLinks: React.FC = () => {
     <Links>
       {Array.isArray(mySocials) &&
         mySocials.map(
-          (social): JSX.Element => (
+          (social): React.ReactNode => (
             <Button
               key={social.icon}
               href={social.url}

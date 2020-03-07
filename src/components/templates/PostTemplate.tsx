@@ -5,7 +5,13 @@ import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Image from '../atoms/Image';
 import {UpdatedAt, AuthorCard} from '../molecules';
-import {TagList, SocialLinks, SEOMeta, Markdown, ArticlesArea} from '../atoms';
+import {
+  TagList,
+  SocialLinks,
+  SEOMeta,
+  Markdown,
+  ArticlesPreviewWrapper,
+} from '../atoms';
 import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
@@ -62,11 +68,13 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
           </div>
           <hr />
         </SPostPagePaper>
-        <ArticlesArea style={{flexDirection: isSP ? 'column' : 'row'}}>
+        <ArticlesPreviewWrapper
+          style={{flexDirection: isSP ? 'column' : 'row'}}
+        >
           {suggestions.map(edge => (
             <Article key={edge.node.frontmatter.title} postInfo={edge} />
           ))}
-        </ArticlesArea>
+        </ArticlesPreviewWrapper>
       </SPostPage>
     </Layout>
   );

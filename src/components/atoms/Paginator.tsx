@@ -7,6 +7,7 @@ import {PaginationContext} from '../../../gatsby-node_';
 type Props = {
   context: PaginationContext;
 };
+
 export const Paginator: React.FC<Props> = ({context}) => {
   const {currentPage, lastPage} = context;
 
@@ -14,7 +15,7 @@ export const Paginator: React.FC<Props> = ({context}) => {
     <Container>
       {Array.from(
         {length: lastPage},
-        (_, i): JSX.Element => (
+        (_, i): React.ReactNode => (
           <StyledLink
             key={`pagination-number${i + 1}`}
             to={`/${i === 0 ? '' : i + 1}`}

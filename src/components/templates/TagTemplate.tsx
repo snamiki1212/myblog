@@ -4,7 +4,7 @@ import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
 import {TagPageContext} from '../../../gatsby-node_';
 import Layout from '../organisms/Layout';
-import ArticleListContainer from '../organisms/ArticleListContainer';
+import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -21,7 +21,7 @@ export const TagTemplate: React.FC<Props> = ({pageContext, data}) => {
         <title>{`${config.siteTitle} | ${tag}`}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
-      <ArticleListContainer postEdges={postEdges} context={pageContext} />
+      <ArticlePreviewList postEdges={postEdges} context={pageContext} />
     </Layout>
   );
 };

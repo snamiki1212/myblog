@@ -14,7 +14,7 @@ export const TagList: React.FC<Props> = ({tags}) => {
     <Container>
       {tags &&
         tags.map(
-          (tag): JSX.Element => (
+          (tag): React.ReactNode => (
             <Link
               key={tag}
               style={{textDecoration: 'none'}}

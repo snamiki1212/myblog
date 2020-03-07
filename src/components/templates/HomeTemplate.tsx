@@ -5,7 +5,7 @@ import config from '../../../data/SiteConfig';
 import {IndexPageContext} from '../../../gatsby-node_';
 import {SEOMeta} from '../atoms';
 import Layout from '../organisms/Layout';
-import ArticleListContainer from '../organisms/ArticleListContainer';
+import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
 import {MarkdownRemarkEdge} from '../../types';
 // import Img from 'gatsby-image';
 
@@ -44,7 +44,7 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
       <SEOMeta postEdges={postEdges} />
 
       {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
-      <ArticleListContainer
+      <ArticlePreviewList
         postEdges={postEdges}
         context={pageContext}
         description={

@@ -5,7 +5,10 @@ import {blogCard} from '../../../data/SiteConfig';
 const altImg =
   'https://user-images.githubusercontent.com/26793088/72956432-1193f080-3de3-11ea-844d-a39a6a4a18bb.png';
 
-const BlogCard: React.FC<{url: string; title: string}> = ({url, title}) => {
+export const BlogCard: React.FC<{url: string; title: string}> = ({
+  // url,
+  title,
+}) => {
   /**
    * TODO: fetch してogp:image からサムネイルを表示しようかと思ったけど、local だとocpが表示できない？
    * とにかく、優先度的にそこまで高くないので、一端放置。
@@ -56,5 +59,3 @@ const Container = styled.div`
     background-color: lightgray;
   }
 `;
-
-export default BlogCard;
