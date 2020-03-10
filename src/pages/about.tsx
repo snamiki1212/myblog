@@ -87,7 +87,7 @@ const AboutPage: React.FC = () => {
                 <li>ReactNative</li>
                 <li>Ruby on Rails</li>
                 <li>Elixir/Phoenix</li>
-                <li>Laravel/PHP</li>
+                <li>PHP/Laravel</li>
               </ul>
             </div>
             <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
