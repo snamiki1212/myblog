@@ -3,6 +3,21 @@
   "description": "Lunash Blog",
   "version": "1.2.0",
   "author": "Shun Namiki <snamiki1212@gmail.com>",
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "dev": "yarn run develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "clean": "rm -rf public && rm -rf .cache",
+    "lint:ts": "eslint --ext .ts,.tsx .",
+    "lint:js": "eslint --ext .js,.jsx .",
+    "format:js": "prettier '**/*.{js,jsx,ts,tsx}' --write",
+    "format:md": "prettier '**/*.{md}' --write",
+    "precommit": "lint-staged",
+    "lint": "eslint --ext ./ 'src/**/*.{js,jsx,ts,tsx}'",
+    "type-check": "tsc --noEmit"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
@@ -94,21 +109,6 @@
   ],
   "license": "MIT",
   "main": "n/a",
-  "scripts": {
-    "start": "gatsby develop",
-    "develop": "gatsby develop",
-    "dev": "yarn run develop",
-    "serve": "gatsby serve",
-    "build": "gatsby build",
-    "clean": "rm -rf public && rm -rf .cache",
-    "lint:ts": "eslint --ext .ts,.tsx .",
-    "lint:js": "eslint --ext .js,.jsx .",
-    "format:js": "prettier '**/*.{js,jsx,ts,tsx}' --write",
-    "format:md": "prettier '**/*.{md}' --write",
-    "precommit": "lint-staged",
-    "lint": "eslint --ext ./ 'src/**/*.{js,jsx,ts,tsx}'",
-    "type-check": "tsc --noEmit"
-  },
   "remarkConfig": {
     "plugins": [
       "remark-preset-lint-recommended"
