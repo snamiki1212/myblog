@@ -3,7 +3,7 @@ title: 'だいたい毎日ブログ更新を１ヶ月してみた'
 cover: 'cover.svg'
 createdAt: '2020-02-01 09:00'
 updatedAt: '2020-02-01 09:00'
-category: 'Tech'
+category: 'Career'
 tags:
   - Tech
 slug: continuous-month-blog

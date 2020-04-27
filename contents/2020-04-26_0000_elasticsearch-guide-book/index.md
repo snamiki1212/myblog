@@ -1,5 +1,5 @@
 ---
-title: '【レビュー】『Elasticsearch 実践ガイド』のまとめ【１日で読める】'
+title: '【レビュー】『Elasticsearch 実践ガイド』のまとめ【入門】'
 cover: 'cover.png'
 createdAt: '2020-04-26 02:00'
 updatedAt: '2020-04-26 02:00'
@@ -13,7 +13,7 @@ word:
   - nothing
 ---
 
-# 【レビュー】『Elasticsearch 実践ガイド』のまとめ【１日で読める】
+# 【レビュー】『Elasticsearch 実践ガイド』のまとめ【入門】
 
 こんにちは。Elasticsearch を使った経験がない中、Elasticsearch の導入・設計の仕事が出てきた Nash です。
 
