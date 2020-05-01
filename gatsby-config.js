@@ -1,6 +1,6 @@
 // const urljoin = require('url-join');
-const config = require('./data/SiteConfig');
-const envConfig = require('./data/EnvConfig');
+const config = require('./data/SiteConfig'); // eslint-disable-line @typescript-eslint/no-var-requires
+const envConfig = require('./data/EnvConfig'); // eslint-disable-line @typescript-eslint/no-var-requires
 
 const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
 

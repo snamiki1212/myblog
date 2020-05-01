@@ -8,7 +8,7 @@ require('ts-node').register({
 });
 
 // import
-const {createPages, onCreateNode} = require('./gatsby-node_');
+const {createPages, onCreateNode} = require('./gatsby-node_'); // eslint-disable-line @typescript-eslint/no-var-requires
 
 // exports
 exports.onCreateNode = onCreateNode;
