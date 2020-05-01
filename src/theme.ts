@@ -13,4 +13,9 @@ export const theme = createMuiTheme({
       main: colors.secondary,
     },
   },
+  typography: {
+    button: {
+      textTransform: 'none',
+    },
+  },
 });
