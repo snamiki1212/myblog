@@ -3,8 +3,9 @@ import kebabCase from 'lodash.kebabcase';
 import dayjs from 'dayjs';
 import siteConfig from './data/SiteConfig';
 
-// -----------------------------------------------------------------------
-// CONSTANTS
+/****************************************************************
+ * CONSTANTS
+ ***************************************************************/
 const POSTS_PER_PAGE = 50;
 const POSTS_AS_SUGGESTION = 10;
 const templatesDir = 'src/components/templates';
@@ -13,9 +14,9 @@ const TagPage = path.resolve(`${templatesDir}/TagTemplate.tsx`);
 const CategoryPage = path.resolve(`${templatesDir}/CategoryTemplate.tsx`);
 const IndexPage = path.resolve(`${templatesDir}/HomeTemplate.tsx`);
 
-// -----------------------------------------------------------------------
-///// INTERFACE
-// Context
+/****************************************************************
+ * TYPE
+ ***************************************************************/
 export type PaginationContext = {
   limit: number;
   skip: number;
@@ -53,6 +54,9 @@ type SubPageProps = {
   path: string;
 };
 
+/****************************************************************
+ * Class
+ ***************************************************************/
 class SubPageList {
   constructor(type: 'category' | 'tag') {
     this.type = type;
@@ -136,8 +140,9 @@ const allMarkdownRemarkGraphQL = `
 }
 `;
 
-// --------------------------------------------------------------
-// helper / private
+/****************************************************************
+ * private helper
+ ***************************************************************/
 const generateSlug = ({node, parsedFilePath}): string => {
   if (
     Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
@@ -177,8 +182,9 @@ const fetchRandoms = (arr: any[], n = 1): any => {
 const calcPaginationNum = (pageLength: number): number =>
   Math.ceil(pageLength / POSTS_PER_PAGE);
 
-// -----------------------------------------------------------------------
-// gatsby-node (readme: https://www.gatsbyjs.org/docs/node-apis/#createPages)
+/****************************************************************
+ * gatsby-node (readme: https://www.gatsbyjs.org/docs/node-apis/#createPages)
+ ***************************************************************/
 export const createPages: any = async ({graphql, actions}): Promise<any> => {
   const {createPage} = actions;
 
