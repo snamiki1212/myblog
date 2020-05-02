@@ -5,8 +5,8 @@ createdAt: '2018-11-16 00:00'
 updatedAt: '2020-01-13 09:00'
 category: 'World'
 tags:
-  - poem
-  - overseas
+  - 海外生活
+  - 英語
   - フィリピン留学
 slug: think-about-filipin
 ---

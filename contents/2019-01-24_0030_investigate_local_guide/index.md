@@ -5,8 +5,7 @@ createdAt: '2019-01-24 00:30'
 updatedAt: '2019-01-24 00:30'
 category: 'LOCAL_GUIDE'
 tags:
-  - poem
-  - LocalGuide
+  - ローカルガイド
 slug: investigate-local-guide
 SEO-keyword:
   - ローカル ガイド サンフランシスコ

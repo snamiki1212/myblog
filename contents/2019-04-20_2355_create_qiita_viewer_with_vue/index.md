@@ -5,7 +5,6 @@ createdAt: '2019-04-20 23:55'
 updatedAt: '2019-04-20 23:55'
 category: 'Tech'
 tags:
-  - tech
   - Vue
 slug: create-qiita-viewer-with-vue
 ---

@@ -5,10 +5,8 @@ createdAt: '2020-02-05 21:00'
 updatedAt: '2020-02-05 21:00'
 category: 'Tech'
 tags:
-  - Tech
   - Docker
   - AWS
-  - EC2
   - Serposcope
 slug: serposcope-docker-aws
 word:

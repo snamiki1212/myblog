@@ -5,8 +5,7 @@ createdAt: '2018-12-03 14:44'
 updatedAt: '2020-03-06 03:30'
 category: 'Tech'
 tags:
-  - elixir
-  - tech
+  - Elixir
 slug: elixir-not-to-bind-in-block
 ---
 

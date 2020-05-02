@@ -5,8 +5,7 @@ createdAt: '2018-12-04 20:44'
 updatedAt: '2018-12-04 20:44'
 category: 'Tech'
 tags:
-  - ddd
-  - tech
+  - DDD
 slug: bu-ddd-2
 ---
 

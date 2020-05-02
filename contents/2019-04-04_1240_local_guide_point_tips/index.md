@@ -5,7 +5,6 @@ createdAt: '2019-04-04 12:40'
 updatedAt: '2019-04-04 12:40'
 category: 'LOCAL_GUIDE'
 tags:
-  - Poem
   - ローカルガイド
 slug: local-guide-point-tips
 SEO-keyword:

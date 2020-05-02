@@ -5,7 +5,6 @@ createdAt: '2019-05-01 22:00'
 updatedAt: '2019-05-01 22:00'
 category: 'Tech'
 tags:
-  - tech
   - React
   - Redux
 slug: create-icatch

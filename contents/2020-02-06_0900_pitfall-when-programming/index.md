@@ -5,7 +5,7 @@ createdAt: '2020-02-06 14:00'
 updatedAt: '2020-02-06 14:00'
 category: 'Tech'
 tags:
-  - Tech
+  - プログラミング
 slug: pitfall-when-programming
 word:
   - 'プログラミング ハマったとき'

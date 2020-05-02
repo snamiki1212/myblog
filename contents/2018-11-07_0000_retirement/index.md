@@ -5,9 +5,8 @@ createdAt: '2018-11-07 00:00'
 updatedAt: '2020-01-07 00:00'
 category: 'Career'
 tags:
-  - poem
-  - company
-  - career
+  - レビュー
+  - Career
 slug: retirement-from-company-1
 ---
 

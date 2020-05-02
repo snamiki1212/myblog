@@ -5,7 +5,6 @@ createdAt: '2018-12-02 00:04'
 updatedAt: '2018-12-02 00:04'
 category: 'Tech'
 tags:
-  - tech
   - React
 slug: create-qiita-viewer-with-react
 ---

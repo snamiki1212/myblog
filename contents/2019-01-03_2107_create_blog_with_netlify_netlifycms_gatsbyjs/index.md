@@ -5,9 +5,8 @@ createdAt: '2019-01-03 21:07'
 updatedAt: '2019-01-03 21:07'
 category: 'Tech'
 tags:
-  - tech
-  - netlify
-  - gatsbyjs
+  - Netlify
+  - Gatsby
 slug: create-blog-with-netlify-netlifycms-gatsbyjs
 ---
 

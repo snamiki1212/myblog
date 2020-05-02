@@ -3,7 +3,7 @@ title: '【厳選】フィリピン留学でおすすめのクレカ【２枚】
 cover: 'cover.svg'
 createdAt: '2020-01-15 12:00'
 updatedAt: '2020-01-15 12:00'
-category: 'World'
+category: 'その他'
 tags:
   - クレカ
 slug: credit-card-phillipines

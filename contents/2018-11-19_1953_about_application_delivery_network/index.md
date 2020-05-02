@@ -5,7 +5,7 @@ createdAt: '2018-11-19 19:53'
 updatedAt: '2018-11-19 19:53'
 category: 'Tech'
 tags:
-  - Tech
+  - ADN
 slug: about-application-delivery-network
 ---
 

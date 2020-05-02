@@ -5,9 +5,9 @@ createdAt: '2019-06-02 21:30'
 updatedAt: '2019-06-02 21:30'
 category: 'Tech'
 tags:
-  - tech
-  - elixir
-  - erlang
+  - Elixir
+  - Erlang
+  - イベント
 slug: elixir-erlang-fest-jp-2019
 ---
 

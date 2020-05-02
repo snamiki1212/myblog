@@ -5,8 +5,7 @@ createdAt: '2018-12-14 01:25'
 updatedAt: '2018-12-14 01:25'
 category: 'Tech'
 tags:
-  - event
-  - tech
+  - イベント
 slug: interface_shift_2018
 ---
 

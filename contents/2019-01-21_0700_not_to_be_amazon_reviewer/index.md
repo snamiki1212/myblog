@@ -5,9 +5,8 @@ createdAt: '2019-01-21 07:00'
 updatedAt: '2019-01-21 07:00'
 category: 'LOCAL_GUIDE'
 tags:
-  - thought
   - AmazonVine
-  - LocalGuide
+  - ローカルガイド
 slug: not-to-be-amazon-reviewer
 SEO-keyword:
   - amazon vine メンバー

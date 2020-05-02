@@ -1,15 +1,15 @@
 ---
-title: 'stackshareとは？使ってみた結果まとめ'
+title: '【レビュー】stackshareとは？使ってみた結果をまとめた'
 cover: 'cover.jpg'
 createdAt: '2019-09-26 00:00'
-updatedAt: '2019-09-26 00:00'
+updatedAt: '2020-05-01 00:00'
 category: 'Tech'
 tags:
-  - Tech
+  - レビュー
 slug: stack-share
 ---
 
-# stackshareとは？使ってみた結果まとめ
+# 【レビュー】stackshareとは？使ってみた結果をまとめた
 
 こんにちは、Nash です。
 

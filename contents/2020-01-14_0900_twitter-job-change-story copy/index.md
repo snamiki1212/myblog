@@ -5,7 +5,7 @@ createdAt: '2020-01-14 09:00'
 updatedAt: '2020-01-14 09:00'
 category: 'Career'
 tags:
-  - twitter転職
+  - Twitter転職
 slug: twitter-job-change-story
 word:
   - 'twitter エンジニア 採用 / 転職'

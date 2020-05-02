@@ -5,8 +5,8 @@ createdAt: '2018-11-24 14:30'
 updatedAt: '2018-11-24 14:30'
 category: 'Tech'
 tags:
-  - Tech
-  - Study
+  - Node
+  - イベント
 slug: tokyo-node-conference-jp-2018-2
 ---
 

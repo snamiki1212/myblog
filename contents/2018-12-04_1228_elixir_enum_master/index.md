@@ -5,8 +5,7 @@ createdAt: '2018-12-04 12:28'
 updatedAt: '2018-12-04 12:28'
 category: 'Tech'
 tags:
-  - elixir
-  - tech
+  - Elixir
 slug: elixir-enum-master
 ---
 

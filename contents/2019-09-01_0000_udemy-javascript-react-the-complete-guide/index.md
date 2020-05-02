@@ -7,6 +7,7 @@ category: 'Tech'
 tags:
   - React
   - Udemy
+  - レビュー
 slug: udemy-javascript-react-the-complete-guide
 ---
 

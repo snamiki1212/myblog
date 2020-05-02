@@ -5,9 +5,7 @@ createdAt: '2018-11-25 13:20'
 updatedAt: '2018-11-25 13:20'
 category: 'Tech'
 tags:
-  - Tech
-  - Study
-  - Event
+  - イベント
 slug: html5j-conference-2018
 ---
 

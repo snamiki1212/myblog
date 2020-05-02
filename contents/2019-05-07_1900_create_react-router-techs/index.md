@@ -5,10 +5,8 @@ createdAt: '2019-05-07 19:00'
 updatedAt: '2019-05-07 19:00'
 category: 'Tech'
 tags:
-  - tech
-  - react
-  - 'react-router'
-  - typescript
+  - React
+  - TypeScript
 slug: create-react-router-techs
 ---
 

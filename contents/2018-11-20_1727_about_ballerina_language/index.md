@@ -5,8 +5,7 @@ createdAt: '2018-11-20 17:27'
 updatedAt: '2018-11-20 17:27'
 category: 'Tech'
 tags:
-  - Tech
-  - Study
+  - Ballerina-lang
 slug: about-ballerina-language
 ---
 

@@ -7,7 +7,7 @@ category: 'Tech'
 tags:
   - React
   - Redux
-  - Context
+  - React Hooks
 slug: compare-normalized-context-redux
 ---
 

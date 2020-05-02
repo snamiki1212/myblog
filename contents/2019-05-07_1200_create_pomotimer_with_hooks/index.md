@@ -5,10 +5,9 @@ createdAt: '2019-05-07 12:00'
 updatedAt: '2019-05-07 12:00'
 category: 'Tech'
 tags:
-  - tech
-  - react
-  - hooks
-  - typescript
+  - React
+  - TypeScript
+  - React Hooks
 slug: create-pomotimer-with-hooks
 ---
 

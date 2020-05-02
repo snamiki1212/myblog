@@ -5,7 +5,8 @@ createdAt: '2019-05-12 18:00'
 updatedAt: '2020-01-13 09:00'
 category: 'Tech'
 tags:
-  - tech
+  - レビュー
+  - PC
 slug: recommend-macbook-for-programming
 ---
 

@@ -5,8 +5,8 @@ createdAt: '2019-01-05 11:26'
 updatedAt: '2019-01-05 11:26'
 category: 'Tech'
 tags:
-  - tech
-  - conference
+  - イベント
+  - レビュー
 slug: result-of-going-to-conference
 ---
 

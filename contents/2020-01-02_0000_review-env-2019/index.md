@@ -5,7 +5,7 @@ createdAt: '2020-01-02 00:00'
 updatedAt: '2020-01-02 00:00'
 category: 'Tech'
 tags:
-  - Tech
+  - レビュー
 slug: review-env-2019
 ---
 

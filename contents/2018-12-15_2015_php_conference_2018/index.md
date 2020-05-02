@@ -5,8 +5,7 @@ createdAt: '2018-12-15 20:15'
 updatedAt: '2018-12-15 20:15'
 category: 'Tech'
 tags:
-  - event
-  - tech
+  - イベント
 slug: php-conference-2018
 ---
 

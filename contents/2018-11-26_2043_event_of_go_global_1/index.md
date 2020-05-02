@@ -5,9 +5,8 @@ createdAt: '2018-11-26 20:43'
 updatedAt: '2018-11-26 20:43'
 category: 'Career'
 tags:
-  - Tech
-  - Study
-  - Event
+  - 海外就職
+  - イベント
 slug: event-of-go-global-1
 ---
 

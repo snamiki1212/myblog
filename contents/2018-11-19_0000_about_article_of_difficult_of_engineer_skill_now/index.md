@@ -5,8 +5,7 @@ createdAt: '2018-11-19 00:00'
 updatedAt: '2018-11-19 00:00'
 category: 'Career'
 tags:
-  - Tech
-  - poem
+  - レビュー
 slug: about-article-of-difficult-of-engineer-skill-now
 ---
 

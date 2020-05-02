@@ -1,25 +1,28 @@
 ---
-title: '【書評】【要約】ドラッカー流の最強勉強法'
+title: '【書評】『ドラッカー流の最強勉強法』を読んだので要約した'
 cover: 'cover.jpg'
 createdAt: '2018-11-17 00:00'
 updatedAt: '2018-11-17 00:00'
 category: 'Career'
 tags:
-  - book
+  - レビュー
+  - 書評
 slug: study-with-drucker-method
 ---
 
-# 【書評】【要約】ドラッカー流の最強勉強法
+# 【書評】『ドラッカー流の最強勉強法』を読んだので要約した
 
 ドラッカーの著書から勉強方法を抽出し、著者の経験と考えを混ぜながら勉強方法を体系的に解いた本。
 
 この本を読んだときの書評と要約を吐き出す。
 
+<!-- アフィ -->
 <iframe
     style="width:120px;height:240px;"
     marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
     src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=snamiki1212-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4396112076&linkId=6cb8b27c8e0e78e136f1c7cbd0d61b29&bc1=ffffff&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
 </iframe>
+<!-- アフィ -->
 
 ## 構成
 

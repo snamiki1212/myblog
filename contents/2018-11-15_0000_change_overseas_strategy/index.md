@@ -5,8 +5,8 @@ createdAt: '2018-11-15 00:00'
 updatedAt: '2018-11-15 00:00'
 category: 'Career'
 tags:
-  - poem
-  - world
+  - Career
+  - World
 slug: change-overseas-strategy
 ---
 

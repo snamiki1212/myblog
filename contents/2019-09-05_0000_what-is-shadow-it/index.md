@@ -5,7 +5,7 @@ createdAt: '2019-09-05 00:01'
 updatedAt: '2019-09-05 00:01'
 category: 'Tech'
 tags:
-  - tech
+  - 用語解説
 slug: what-is-shadow-it
 ---
 

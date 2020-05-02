@@ -5,7 +5,8 @@ createdAt: '2019-04-12 22:00'
 updatedAt: '2019-04-12 22:00'
 category: 'Tech'
 tags:
-  - サブPC
+  - PC
+  - フィリピン留学
 slug: philippines-select-sub-pc
 SEO-keyword:
   - なし

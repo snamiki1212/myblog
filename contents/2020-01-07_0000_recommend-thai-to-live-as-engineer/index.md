@@ -6,7 +6,7 @@ updatedAt: '2020-01-07 00:00'
 category: 'World'
 tags:
   - World
-  - Thai
+  - 海外生活
 slug: recommend-thai-to-live-as-engineer
 ---
 

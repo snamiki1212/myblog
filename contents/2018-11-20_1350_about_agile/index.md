@@ -5,8 +5,7 @@ createdAt: '2018-11-20 13:50'
 updatedAt: '2020-01-13 09:00'
 category: 'Tech'
 tags:
-  - Tech
-  - agile
+  - アジャイル開発
 slug: about-agile
 ---
 

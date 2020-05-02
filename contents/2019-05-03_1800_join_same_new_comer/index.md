@@ -5,7 +5,7 @@ createdAt: '2019-05-03 18:00'
 updatedAt: '2019-05-03 18:00'
 category: 'Tech'
 tags:
-  - tech
+  - マネジメント
 slug: join-same-new-comer
 ---
 

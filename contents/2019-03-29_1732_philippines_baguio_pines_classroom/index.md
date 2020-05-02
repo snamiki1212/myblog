@@ -7,7 +7,7 @@ category: 'World'
 tags:
   - フィリピン留学
   - 英語
-  - PINES
+  - 海外生活
 slug: philippines-baguio-pines-classroom
 SEO-keyword:
   - PINES バギオ

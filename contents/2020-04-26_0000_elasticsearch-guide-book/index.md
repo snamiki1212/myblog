@@ -1,19 +1,19 @@
 ---
-title: '【レビュー】『Elasticsearch 実践ガイド』のまとめ【入門】'
+title: '【書評】『Elasticsearch 実践ガイド』のまとめ【入門】'
 cover: 'cover.png'
 createdAt: '2020-04-26 02:00'
-updatedAt: '2020-04-26 02:00'
+updatedAt: '2020-05-01 20:00'
 category: 'Tech'
 tags:
-  - Tech
   - Elasticsearch
   - 書評
+  - レビュー
 slug: elasticsearch-guide-book
 word:
   - nothing
 ---
 
-# 【レビュー】『Elasticsearch 実践ガイド』のまとめ【入門】
+# 【書評】『Elasticsearch 実践ガイド』のまとめ【入門】
 
 こんにちは。Elasticsearch を使った経験がない中、Elasticsearch の導入・設計の仕事が出てきた Nash です。
 

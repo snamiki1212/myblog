@@ -5,10 +5,9 @@ createdAt: '2019-05-04 23:30'
 updatedAt: '2019-05-04 23:30'
 category: 'Tech'
 tags:
-  - tech
-  - react
-  - redux
-  - typescript
+  - React
+  - Redux
+  - TypeScript
 slug: create-todo-with-typescript
 ---
 

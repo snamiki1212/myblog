@@ -5,7 +5,7 @@ createdAt: '2020-03-20 20:00'
 updatedAt: '2020-03-20 20:00'
 category: 'Tech'
 tags:
-  - Tech
+  - golang
   - Alfred
 slug: alfred-workflow-url2md-go
 word:

@@ -5,8 +5,7 @@ createdAt: '2020-01-10 19:00'
 updatedAt: '2020-01-10 19:00'
 category: 'Career'
 tags:
-  - twitter
-  - twitter転職
+  - Twitter転職
 slug: twitter-job-change-way
 word:
   - 'twitter 転職'

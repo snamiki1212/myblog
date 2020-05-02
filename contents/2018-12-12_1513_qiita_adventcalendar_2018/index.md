@@ -5,8 +5,7 @@ createdAt: '2018-12-12 15:14'
 updatedAt: '2020-03-06 03:00'
 category: 'Tech'
 tags:
-  - elixir
-  - tech
+  - Elixir
 slug: qiita-adventcalendar-2018
 ---
 

@@ -5,7 +5,7 @@ createdAt: '2020-01-09 12:00'
 updatedAt: '2020-01-09 12:00'
 category: 'Tech'
 tags:
-  - algolia
+  - Algolia
 slug: algolia-basic-knowledge
 word:
   - 'nothing'

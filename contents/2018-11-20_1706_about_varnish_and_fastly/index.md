@@ -5,8 +5,8 @@ createdAt: '2018-11-20 17:06'
 updatedAt: '2018-11-20 17:06'
 category: 'Tech'
 tags:
-  - Tech
-  - Study
+  - Varnish
+  - Fastly
 slug: about-varnish-and-fastly
 ---
 
