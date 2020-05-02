@@ -64,7 +64,7 @@ class SubPageList {
   type: 'category' | 'tag';
   subPageList: SubPageProps[] = [];
 
-  generatePath = (name: string): string => {
+  private generatePath = (name: string): string => {
     switch (this.type) {
       case 'category':
         return `/categories/${kebabCase(name)}`;
@@ -75,13 +75,13 @@ class SubPageList {
     }
   };
 
-  incrementOrAdd = (name: string): void => {
+  public incrementOrAddPage = (name: string): void => {
     if (!name) return;
     const path = this.generatePath(name);
     const maybeIndex = this.subPageList.findIndex(
       subPage => subPage.name === name
     );
-    const exist = maybeIndex >= 0;
+    const exist = maybeIndex !== -1;
 
     if (exist) {
       // INCREMENT: 既存の項目
@@ -212,11 +212,11 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
 
           // tags
           edgeTags.forEach((tag: string): void => {
-            _tags.incrementOrAdd(tag);
+            _tags.incrementOrAddPage(tag);
           });
 
           // category
-          _categories.incrementOrAdd(edgeCategory);
+          _categories.incrementOrAddPage(edgeCategory);
 
           return {_categories, _tags};
         },
