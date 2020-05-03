@@ -8,7 +8,7 @@ category: 'Tech'
 tags:
   - React
   - Redux
-  - React Hooks
+  - ReactHooks
 slug: investigate-redux-state-architecture
 ---
 

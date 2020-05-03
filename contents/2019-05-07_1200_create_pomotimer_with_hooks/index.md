@@ -7,7 +7,7 @@ category: 'Tech'
 tags:
   - React
   - TypeScript
-  - React Hooks
+  - ReactHooks
 slug: create-pomotimer-with-hooks
 ---
 

@@ -6,7 +6,7 @@ updatedAt: '2019-12-15 00:00'
 category: 'Tech'
 tags:
   - React
-  - React Hooks
+  - ReactHooks
 slug: react-useeffect-pitfall
 ---
 
