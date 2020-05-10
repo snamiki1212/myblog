@@ -2,7 +2,7 @@
 title: '【Firestore】「WhereIN」が使えない時の代案のまとめ'
 cover: 'cover.svg'
 createdAt: '2019-09-06 00:00' # created_at
-updatedAt: '2019-11-09 00:00' # updated_at
+updatedAt: '2020-05-10 20:00' # updated_at
 category: 'Tech'
 tags:
   - Firestore
@@ -33,12 +33,14 @@ db.collection("projects")
 
 これで、簡単にwhere-inを実現できるようになりましたね。
 
+ただ、最大10件の値しかクエリに渡せられないので、固定で10件以下のケース以外では使えないので本当にwhereinでいけるかどうかは設計時に注意してください。
+
 ちなみに、`array-contains-any`というのもあります。こちらは、`string[]`を対象にwhereInを行えます。
 
 ```typescript
 // array-contains-any
 type article = {
-  tag: string[]
+  tag: string[] // <== ここが違う
 }
 db.collection('articles')
   .where('tag', 'array-contains-any', ['Firebase', 'Frontend', 'TypeScript'])
