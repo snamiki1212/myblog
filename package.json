@@ -16,6 +16,7 @@
     "format:md": "prettier '**/*.{md}' --write",
     "precommit": "lint-staged",
     "lint": "eslint --ext ./ 'src/**/*.{js,jsx,ts,tsx}'",
+    "tlint": "textlint contents/**/index.md",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
