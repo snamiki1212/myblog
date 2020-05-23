@@ -12,13 +12,16 @@ word:
   - nothing
 ---
 
+# CloudFunctionsのトリガーに対するディレクトリ・フォルダ・ファイルの設計
+
+こんにちは、最近、CloudFunction を 0->1 で導入することになったNashです。
+
+この記事では、「Firebase CloduFunctionsのトリガーについてのディレクトリ設計」のまとめです。
+
 <!-- tweet -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">CloudFunctionトリガーを0⇒1で入れてるのでディレクトリ設計してみたけど、以前の現場ではFirestoreのパスに対して実行されるファイルが「ディレクトリ構造」で表現されてて、それだとネストが深くてツラかったので、今回は1階層にしてFirestoreのパスを全部「ファイル名」で表現してみる</p>&mdash; Nash⚡️ReactNative書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1263800367801757697?ref_src=twsrc%5Etfw">May 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- tweet -->
 
-## はじめに
-
-機会があって CloudFunction を 0->1 で導入することになったので、ディレクトリ設計について考えたので、そのまとめです。
 
 考えた結果は下記の３案になります。
 
@@ -30,14 +33,18 @@ word:
 
 （ちなみに、便宜上は Firestore について言及してますが、Realtimedatabase でも可能です）
 
+## はじめに
+
 ### tl;dr
+
+先に結論です。
 
 - 案１）で作りがちですが、個人的にはネストが深くてすぐに可読性が落ちるので微妙な設計かと思ってます。
 - 案２）は小〜中規模のプロジェクトで、案３）は中〜大規模のプロジェクトで合うように思います。
 
 ### Firestore のストレージパスとトリガーファイル
 
-案について述べる前に、ディレクトリ設計をする理由などについて簡単におさらいします。
+３つの案について見る前に、ディレクトリ設計をする理由などについて簡単におさらいします。
 
 Firebase で提供されている Firestore と CloudFunction のトリガーを組み合わせると、
 
