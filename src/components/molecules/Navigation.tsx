@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const HideOnScroll: React.FC<{window?: () => Window}> = ({
+const HideOnScroll: React.FC<{window?: () => Window; children: any}> = ({
   children,
   window,
 }) => {
