@@ -16583,7 +16583,7 @@ sharp@^0.23.3, sharp@^0.23.4:
     tar "^5.0.5"
     tunnel-agent "^0.6.0"
 
-sharp@^0.25.1:
+sharp@^0.25.1, sharp@^0.25.3:
   version "0.25.3"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.3.tgz#fcb4f13fa9ce7d8a2d8273ebb40f375953cad937"
   integrity sha512-qV3n30NaBEhAjBhFo+d8h5N4X3DHteFdwxXoWUiubk72G0VKT5fX50nlcawGYjPqfFV4Z2e/G9gDPeSGAdn/gg==
