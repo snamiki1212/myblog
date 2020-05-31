@@ -30,7 +30,7 @@
     "dotenv": "^8.0.0",
     "font-awesome": "^4.7.0",
     "fs": "0.0.1-security",
-    "gatsby": "2.19.5",
+    "gatsby": "~2.20.5",
     "gatsby-image": "2.2.39",
     "gatsby-plugin-catch-links": "2.1.24",
     "gatsby-plugin-favicon": "^3.1.6",
@@ -64,7 +64,7 @@
     "react-helmet": "^5.2.1",
     "react-share": "^4.0.1",
     "rehype-react": "^4.0.1",
-    "styled-components": "^5.0.0",
+    "styled-components": "^5.1.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-join": "^4.0.1"
   },
@@ -73,7 +73,7 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.8.5",
     "@types/react-helmet": "^5.0.9",
-    "@types/styled-components": "^4.1.18",
+    "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
     "babel-plugin-styled-components": "^1.10.6",
@@ -105,7 +105,7 @@
     "textlint-rule-preset-japanese": "^4.0.4",
     "textlint-rule-preset-jtf-style": "^2.3.4",
     "ts-node": "^8.3.0",
-    "typescript": "^3.6.2",
+    "typescript": "^3.9.3",
     "write-good": "^1.0.2"
   },
   "keywords": [
