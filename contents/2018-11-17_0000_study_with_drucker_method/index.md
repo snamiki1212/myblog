@@ -17,11 +17,8 @@ slug: study-with-drucker-method
 この本を読んだときの書評と要約を吐き出す。
 
 <!-- アフィ -->
-<iframe
-    style="width:120px;height:240px;"
-    marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-    src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=snamiki1212-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4396112076&linkId=6cb8b27c8e0e78e136f1c7cbd0d61b29&bc1=ffffff&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
-</iframe>
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; width:90px;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; width:60px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00LS7LZNA%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/31oN4M6t1bL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00LS7LZNA%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">ドラッカー流　最強の勉強法 (祥伝社新書)</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥660<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2020/6/15 01:03時点)</span></p></td></tr></table>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
 <!-- アフィ -->
 
 ## 構成
