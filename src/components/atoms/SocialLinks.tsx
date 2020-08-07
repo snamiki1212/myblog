@@ -23,24 +23,28 @@ import {MarkdownRemark} from '../templates/PostTemplate';
 
 type Props = {postNode: MarkdownRemark};
 
+const MaybeShareCount = ({count}: {count: number}) => (
+  <ShareCount>{count > 0 ? count : ''}</ShareCount>
+);
+
 export const SocialLinks: React.FC<Props> = props => {
   const {postNode} = props;
 
   const post = postNode.frontmatter;
   const url = urljoin(config.siteUrl, postNode.frontmatter.slug);
   const iconSize = 36;
-  const renderShareCount = (count: number): React.ReactNode => (
-    <ShareCount>{count > 0 ? count : ''}</ShareCount>
-  );
 
   return (
     <Container>
-      <HatenaShareButton url={url} size={iconSize} />
+      <InnerContainer>
+        <HatenaShareButton url={url} size={iconSize} />
+      </InnerContainer>
+
       <InnerContainer>
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
-            {(count: number): React.ReactNode => renderShareCount(count)}
+            {(count: number) => <MaybeShareCount count={count} />}
           </RedditShareCount>
         </RedditShareButton>
       </InnerContainer>
@@ -55,7 +59,7 @@ export const SocialLinks: React.FC<Props> = props => {
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
-            {(count: number): React.ReactNode => renderShareCount(count)}
+            {(count: number) => <MaybeShareCount count={count} />}
           </FacebookShareCount>
         </FacebookShareButton>
       </InnerContainer>
