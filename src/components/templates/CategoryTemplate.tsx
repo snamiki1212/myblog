@@ -88,7 +88,12 @@ export const categoryPageQuery = graphql`
               publicURL
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
+                  originalImg
                 }
               }
               extension

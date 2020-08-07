@@ -73,7 +73,12 @@ export const homePageQuery = graphql`
               publicURL
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
+                  originalImg
                 }
               }
             }
@@ -91,7 +96,12 @@ export const homePageQuery = graphql`
 //     node {
 //       childImageSharp {
 //         fluid {
-//           ...GatsbyImageSharpFluid
+//           base64
+// aspectRatio
+// src
+// srcSet
+// sizes
+// originalImg
 //         }
 //       }
 //     }
