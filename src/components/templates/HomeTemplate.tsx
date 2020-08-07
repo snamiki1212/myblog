@@ -71,6 +71,11 @@ export const homePageQuery = graphql`
             tags
             cover {
               publicURL
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             createdAt
             updatedAt

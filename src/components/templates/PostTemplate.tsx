@@ -15,7 +15,7 @@ import {
 import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 import config from '../../../data/SiteConfig';
 import {PostPageContext} from '../../../gatsby-node_';
-// import {FluidObject} from 'gatsby-image';
+import {FluidObject} from 'gatsby-image';
 import {MarkdownRemarkEdge} from '../../types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {useTheme} from '@material-ui/core/styles';
@@ -45,8 +45,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         </Helmet>
         <SEOMeta postNode={postNode} isPost={true} />
 
-        <div style={{height: '10px'}} />
-        {/* <HeaderImg imgInfo={postNode.frontmatter.cover} /> */}
+        <HeaderImg imgInfo={postNode.frontmatter.cover} />
         <SPostPagePaper>
           <SPostPageContent className="target-el">
             <div style={{paddingRight: '10px', paddingLeft: '10px'}}>
@@ -137,9 +136,9 @@ export interface MarkdownRemark {
   frontmatter: {
     title: string;
     cover: {
-      // childImageSharp: {
-      //   fluid: FluidObject;
-      // };
+      childImageSharp: {
+        fluid: FluidObject;
+      };
       publicURL: string;
     };
     createdAt: Date;
@@ -171,6 +170,11 @@ export const postPageQuery = graphql`
             tags
             cover {
               publicURL
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
               extension
             }
             createdAt
@@ -188,6 +192,11 @@ export const postPageQuery = graphql`
         title
         cover {
           publicURL
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
           extension
         }
         createdAt
