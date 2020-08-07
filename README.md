@@ -35,19 +35,19 @@ $ yarn global add gatsby-cli
 
 ## Memo
 
-- `gatsby-node.js`
+- `/gatsby-node.js`
 
   - TypeScript をネイティブにサポートしていないので、TS ファイルを require している。
   - `/gatsbyjs` にて TS ファイルで定義している。
 
-- `src/components`
+- `/src/components`
 
   - AtomicDesign でディレクトリとコンポーネントを配置
 
-- `src/pages`
+- `/src/pages`
 - gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
 
-- `class=affi-custom-button`
+- `[class=affi-custom-button]`
 
   - アフィ用のボタン CSS
 
