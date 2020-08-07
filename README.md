@@ -6,6 +6,12 @@
 | Twitter                       | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)                                                                                |
 | Tech Stack                    | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)                                          |
 
+## Usage:
+
+```zsh
+$ yarn global add gatsby-cli
+```
+
 ## Directory
 
 ```sh
