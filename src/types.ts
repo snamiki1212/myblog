@@ -14,6 +14,7 @@ export interface MarkdownRemarkEdge {
       tags: string;
       cover: {
         publicURL: string;
+        // TODO: graphqlで取得してないので、これを消したい
         childImageSharp: {
           fluid: FluidObject;
         };

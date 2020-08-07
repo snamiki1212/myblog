@@ -48,11 +48,6 @@ export const tagPageQuery = graphql`
             tags
             cover {
               publicURL
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
               extension
             }
             createdAt
