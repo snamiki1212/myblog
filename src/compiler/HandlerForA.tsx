@@ -1,8 +1,9 @@
 import React from 'react';
-import {isInternalPageLink, isAffiLink} from '../lib/validator';
-import {BlogCard} from '../components/atoms/BlogCard';
 import urljoin from 'url-join';
 import styled from 'styled-components';
+
+import {isInternalPageLink, isAffiLink} from '../lib/validator';
+import {BlogCard} from '../components/atoms/BlogCard';
 import {colors} from '../../data/color';
 import {siteUrl} from '../../data/SiteConfig';
 
@@ -17,13 +18,12 @@ const NormalA = styled.a`
 `;
 
 const HandlerForA: React.FC = (props: any) => {
-  if (
+  const shouldRenderOnlyTextAnchor =
     (props.className && props.className.includes('anchor')) || // gatsby-remark-autolink-headers で生成されるページ内リンク
     !isInternalPageLink(props.href) ||
-    isAffiLink(props.href)
-  ) {
-    return <NormalA {...props} />;
-  }
+    isAffiLink(props.href);
+
+  if (shouldRenderOnlyTextAnchor) return <NormalA {...props} />;
 
   const fullUrl = urljoin(siteUrl, props.href);
   return (
