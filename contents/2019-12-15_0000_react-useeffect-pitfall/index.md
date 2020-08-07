@@ -1,6 +1,6 @@
 ---
 title: 'React.useEffect でハマったポイントのまとめ'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2019-12-15 00:00'
 updatedAt: '2019-12-15 00:00'
 category: 'Tech'

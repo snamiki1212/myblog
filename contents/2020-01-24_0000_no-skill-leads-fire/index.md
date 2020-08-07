@@ -1,6 +1,6 @@
 ---
 title: 'スキルが身につかないままのSE⇒リストラです【チャンスあり】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-24 09:00'
 updatedAt: '2020-01-24 09:00'
 category: 'Career:SEtoWeb'
@@ -23,7 +23,7 @@ word:
 
 ## 将来リストラの理由を説明
 
-![スキルが身につかないSEの画像1](./cover.svg)
+![スキルが身につかないSEの画像1](./cover.png)
 
 将来どうしてリストラが１００％なのか？
 

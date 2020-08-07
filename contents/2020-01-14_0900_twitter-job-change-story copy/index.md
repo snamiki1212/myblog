@@ -1,6 +1,6 @@
 ---
 title: '【実体験】Twitter 転職してエンジニア採用された話'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-14 09:00'
 updatedAt: '2020-01-14 09:00'
 category: 'Career'
@@ -34,7 +34,7 @@ word:
 
 ## Twitter 転職してみた結果と気付き
 
-![twitter-recognization](./cover.svg)
+![twitter-recognization](./cover.png)
 
 Twitter転職とは、Twitterを使った転職活動です。
 「転職したいですー」とかツイートすると、採用担当の人からDMとかがいっぱい届きます。
@@ -131,7 +131,7 @@ Twitter転職だと、少数メンバーのスタートアップ系にリーチ�
 
 ## Twittert 転職で採用側にお願いしたいこと
 
-![twitter-for-hr](./1.svg)
+![twitter-for-hr](./1.png)
 
 以上が Twitter 転職での気付きでした。
 

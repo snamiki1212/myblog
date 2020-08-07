@@ -1,6 +1,6 @@
 ---
 title: '【完全理解】SIer業界 がブラックな理由を解説【わかりやすさ重視】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-17 09:00'
 updatedAt: '2020-02-24 15:30'
 category: 'Career:SEtoWeb'
@@ -32,7 +32,7 @@ word:
 
 ## SIerがブラックになる前提知識
 
-![top](./cover.svg)
+![top](./cover.png)
 
 まずは、**SIer業界に対する前提知識を整理**していきます。
 

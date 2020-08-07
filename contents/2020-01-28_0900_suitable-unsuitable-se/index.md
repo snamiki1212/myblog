@@ -1,6 +1,6 @@
 ---
 title: 'SEの向き不向きを考える【向いている／いない人】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-28 09:00'
 updatedAt: '2020-01-28 09:00'
 category: 'Career:SEtoWeb'
@@ -30,7 +30,7 @@ word:
 
 ## 上流・下流 SE の向き不向きを考える
 
-![top-1](./cover.svg)
+![top-1](./cover.png)
 
 ひとえに SE と言っても、仕事内容が大きく違います。
 

@@ -1,6 +1,6 @@
 ---
 title: 'Web 系ベンチャーに転職して感じたホワイトな点【まとめ】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-27 09:00'
 updatedAt: '2020-01-27 09:00'
 category: 'Career:SEtoWeb'

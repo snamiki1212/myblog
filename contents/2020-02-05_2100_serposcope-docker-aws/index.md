@@ -1,6 +1,6 @@
 ---
 title: 'Serposcope+AWS+Dockerの構築手順書'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-02-05 21:00'
 updatedAt: '2020-02-05 21:00'
 category: 'Tech'

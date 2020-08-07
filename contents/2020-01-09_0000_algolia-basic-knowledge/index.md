@@ -1,6 +1,6 @@
 ---
 title: '【入門用】Algolia の概念的知識のまとめ'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-09 12:00'
 updatedAt: '2020-01-09 12:00'
 category: 'Tech'

@@ -1,6 +1,6 @@
 ---
 title: '【厳選】フィリピン留学でおすすめのクレカ【２枚】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-15 12:00'
 updatedAt: '2020-01-15 12:00'
 category: 'その他'
@@ -26,7 +26,7 @@ word:
 
 ## なぜ複数クレカが必要なのか
 
-![credit-card-1](cover.svg)
+![credit-card-1](cover.png)
 
 複数クレカを用意するのは「**クレカの海外保険の金額が合算されるから**」です。
 
@@ -58,7 +58,7 @@ word:
 
 ### 海外の医療費は高額
 
-![high-payment](./1.svg)
+![high-payment](./1.png)
 
 「医療費で 300 万とか高くない？」と思います？
 [ここの価格.com](https://hoken.kakaku.com/insurance/travel/select/cost/philippines/)にて、フィリピンの医療費の過去事例があります。
@@ -74,7 +74,7 @@ word:
 
 ### 疾病・傷害の保険金額が大事
 
-![import-payment](./2.svg)
+![import-payment](./2.png)
 
 また、クレカの宣伝文句で、
 「海外保険が最高 1000 万！」
@@ -88,7 +88,7 @@ word:
 
 ### 合算で 400 万くらいは欲しいところ
 
-![sum-payment](./3.svg)
+![sum-payment](./3.png)
 
 少なくとも合算で 400 万くらいは欲しいところです。
 
@@ -217,7 +217,7 @@ EPOS カードを使い続けると、どうなるか？
 
 ## クレカ申請はなるべく早く
 
-![result-payment](./4.svg)
+![result-payment](./4.png)
 
 実は、自分もフィリピン留学する前にクレカをたくさん申請したのですが、
 ギリギリに申請したので、全部は間に合わなかったんです・・・。
