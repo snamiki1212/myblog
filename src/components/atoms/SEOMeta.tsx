@@ -18,7 +18,7 @@ const fetchData =
             config.siteUrl,
             postNode.frontmatter.cover?.childImageSharp
               ? postNode.frontmatter.cover?.childImageSharp?.fluid?.src
-              : postNode.frontmatter.cover?.publicURL
+              : postNode.frontmatter.cover?.publicURL ?? ''
           ),
           postURL: urljoin(config.siteUrl, postNode.frontmatter.slug),
           category: postNode.frontmatter.category,
