@@ -1,6 +1,6 @@
 ---
 title: '【体験談】ブラックなSE時代を話します【教訓：２つ】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-26 09:00'
 updatedAt: '2020-01-26 09:00'
 category: 'Career:SEtoWeb'
@@ -28,7 +28,7 @@ word:
 
 ## ブラックなSE時代
 
-![ブラック-SE時代体験談](./cover.svg)
+![ブラック-SE時代体験談](./cover.png)
 
 就活のときから話していきます。
 

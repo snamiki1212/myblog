@@ -5,7 +5,9 @@ import {blogCard} from '../../../data/SiteConfig';
 const altImg =
   'https://user-images.githubusercontent.com/26793088/72956432-1193f080-3de3-11ea-844d-a39a6a4a18bb.png';
 
-export const BlogCard: React.FC<{url: string; title: string}> = ({
+type Props = {url: string; title: string};
+
+export const BlogCard: React.FC<Props> = ({
   // url,
   title,
 }) => {
@@ -41,8 +43,8 @@ export const BlogCard: React.FC<{url: string; title: string}> = ({
   const imgUrl = blogCard || altImg;
   return (
     <Container>
-      <img src={imgUrl} style={{width: '80px', height: '80px'}} />
-      <span style={{marginLeft: '10px', marginRight: '10px'}}>{title}</span>
+      <Image src={imgUrl} />
+      <Title>{title}</Title>
     </Container>
   );
 };
@@ -58,4 +60,14 @@ const Container = styled.div`
   &:hover {
     background-color: lightgray;
   }
+`;
+
+const Image = styled.img`
+  width: 80px;
+  height: 80px;
+`;
+
+const Title = styled.span`
+  margin-left: 10px;
+  margin-right: 10px;
 `;

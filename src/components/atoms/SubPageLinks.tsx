@@ -1,21 +1,22 @@
 import React from 'react';
+import {Link} from 'gatsby';
+import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import {SubPageContext} from '../../../gatsby-node_';
-import {Link} from 'gatsby';
 
 type Props = {context: SubPageContext};
 
 export const SubPageLinks: React.FC<Props> = ({context}) => {
   return (
-    <div style={{paddingTop: '50px'}}>
-      <div style={{paddingBottom: '20px'}}>
+    <Container>
+      <CategoryContainer>
         <div>▼カテゴリー</div>
         {context.categories.map(({name, count, path}) => (
           <Button key={name}>
             <Link to={path}>{`${name}(${count})`}</Link>
           </Button>
         ))}
-      </div>
+      </CategoryContainer>
 
       <div>
         <div>▼タグ</div>
@@ -27,6 +28,14 @@ export const SubPageLinks: React.FC<Props> = ({context}) => {
           </Button>
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
+
+const Container = styled.div`
+  padding-top: 50px;
+`;
+
+const CategoryContainer = styled.div`
+  padding-bottom: 20px;
+`;

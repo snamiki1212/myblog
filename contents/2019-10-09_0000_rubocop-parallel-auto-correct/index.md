@@ -1,6 +1,6 @@
 ---
 title: '【Ruby】rubocopでparallelとauto-correctを同時をあわせて行う'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2019-10-09 00:00'
 updatedAt: '2019-10-09 00:00'
 category: 'Tech'

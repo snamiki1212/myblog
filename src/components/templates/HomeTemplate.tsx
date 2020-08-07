@@ -9,16 +9,6 @@ import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
 import {MarkdownRemarkEdge} from '../../types';
 // import Img from 'gatsby-image';
 
-// type FeaturedImg = {
-//   edges: [
-//     {
-//       node: {
-//         childImageSharp: any; // any is ImageSharp
-//       };
-//     }
-//   ];
-// };
-
 type Props = {
   pageContext: IndexPageContext;
   data: {
@@ -32,6 +22,7 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
     allMarkdownRemark,
     // allFile
   } = data;
+
   const postEdges = allMarkdownRemark.edges;
   // const childImageSharp = allFile.edges[0].node.childImageSharp;
 
@@ -82,7 +73,12 @@ export const homePageQuery = graphql`
               publicURL
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
+                  originalImg
                 }
               }
             }
@@ -100,7 +96,12 @@ export const homePageQuery = graphql`
 //     node {
 //       childImageSharp {
 //         fluid {
-//           ...GatsbyImageSharpFluid
+//           base64
+// aspectRatio
+// src
+// srcSet
+// sizes
+// originalImg
 //         }
 //       }
 //     }

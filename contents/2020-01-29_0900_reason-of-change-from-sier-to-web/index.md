@@ -1,6 +1,6 @@
 ---
 title: '大手SIerからWeb系エンジニアへの転職理由【７選／経験談】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-29 09:00'
 updatedAt: '2020-01-29 09:00'
 category: 'Career:SEtoWeb'
@@ -197,7 +197,7 @@ SIer から Web 系へ転職したのは 2 年くらい前です。
 
 ## 理由の整理 ⇒ 転職エージェント
 
-![top-2](./cover.svg)
+![top-2](./cover.png)
 
 自分のケースでは「**転職エージェントに複数登録して相談しまくった。**」です。
 

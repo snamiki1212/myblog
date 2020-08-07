@@ -1,6 +1,6 @@
 ---
 title: '【SE】ブラックじゃない環境へ行く選択肢【４選】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-22 09:00'
 updatedAt: '2020-01-23 01:00'
 category: 'Career:SEtoWeb'
@@ -30,7 +30,7 @@ word:
 
 ## SE がブラックじゃないところに行く
 
-![top](./cover.svg)
+![top](./cover.png)
 
 大きく分けて２つの方向性があります。
 

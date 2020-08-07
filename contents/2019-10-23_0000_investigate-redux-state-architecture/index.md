@@ -1,6 +1,6 @@
 ---
 title: 'Redux の State 設計の正規化の記事まとめ'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2019-10-23 00:00'
 updatedAt: '2019-10-23 00:00'
 updated_at: '2019-12-14 00:00'
@@ -25,7 +25,7 @@ slug: investigate-redux-state-architecture
 
 ## 公式ドキュメントを調べる
 
-![cover-1-public](1.svg)
+![cover-1-public](1.png)
 
 何はともあれ、公式のドキュメントを調べる。ドキュメントを呼んだ結果をだいたいまとめた。
 
@@ -99,7 +99,7 @@ obj[id];
 
 ## State 設計にまつわる記事を読む
 
-![cover-2-private](2.svg)
+![cover-2-private](2.png)
 
 他にも記事をいろいろ探して読んでみた。
 
@@ -140,7 +140,7 @@ obj[id];
 
 ## あとがき
 
-![cover-last](cover.svg)
+![cover-last](cover.png)
 
 ### まとめ
 

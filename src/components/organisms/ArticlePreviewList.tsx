@@ -32,7 +32,9 @@ export const ArticlePreviewList: React.FC<Props> = ({
     >
       <MainArea>
         {description}
-        <ArticlesPreviewWrapper style={{flexDirection: isSP ? 'column' : 'row'}}>
+        <ArticlesPreviewWrapper
+          style={{flexDirection: isSP ? 'column' : 'row'}}
+        >
           {postEdges.map(
             (edge): React.ReactNode => (
               <ArticlePreview

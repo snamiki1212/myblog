@@ -1,6 +1,6 @@
 ---
 title: '「SE でプログラミングができない人」に向けてキャリア戦略を考えた'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-11 12:00'
 updatedAt: '2020-01-11 12:00'
 category: 'Career:SEtoWeb'
@@ -29,7 +29,7 @@ word:
 
 ## キャリア戦略を考えたみた
 
-![career-top](./cover.svg)
+![career-top](./cover.png)
 
 まず最初に、**マネジメント系が得意な人はマネジメント系でキャリア伸ばしてください**。プログラミングやるくらいなら、PM・簿記・経営などを頑張ったほうが良いですよ。
 

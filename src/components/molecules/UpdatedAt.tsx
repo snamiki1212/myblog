@@ -1,16 +1,29 @@
 import React from 'react';
+import styled from 'styled-components';
 import dayjs from 'dayjs';
 import config from '../../../data/SiteConfig';
 import {Icon} from '../atoms';
 
-export const UpdatedAt: React.FC<{date: Date; containerStyle?: any}> = ({
-  date,
-  containerStyle = {},
-}) => (
-  <span style={{display: 'flex', alignItems: 'center', ...containerStyle}}>
-    <Icon icon="calendar" />
-    <span style={{paddingLeft: '5px'}}>
-      {dayjs(date).format(config.dateFormat)}
-    </span>
-  </span>
-);
+type Props = {date: Date; containerStyle?: any};
+
+// TODO: atomsに移動させたい
+export const UpdatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
+  const formatedDate = dayjs(date).format(config.dateFormat);
+
+  return (
+    <Container containerStyle={containerStyle}>
+      <Icon icon="calendar" />
+      <Date>{formatedDate}</Date>
+    </Container>
+  );
+};
+
+const Container = styled.span<{containerStyle: any}>`
+  display: flex;
+  align-items: center;
+  ${({containerStyle}) => `${{...containerStyle}}`};
+`;
+
+const Date = styled.span`
+  padding-left: '5px';
+`;

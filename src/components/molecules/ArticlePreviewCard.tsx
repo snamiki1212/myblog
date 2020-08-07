@@ -1,13 +1,15 @@
 import React from 'react';
+import {Link} from 'gatsby';
+import styled from 'styled-components';
+
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import {Link} from 'gatsby';
-import styled from 'styled-components';
+
 import {MarkdownRemarkEdge} from '../../types';
-import Image from '../atoms/Image';
 import {UpdatedAt} from '.';
+import Image from '../atoms/Image';
 
 type Props = {
   postInfo: MarkdownRemarkEdge;
@@ -15,15 +17,15 @@ type Props = {
 
 export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   return (
-    <StyledCard key={postInfo.node.frontmatter.title}>
-      <StyledCardActionArea>
+    <_Card key={postInfo.node.frontmatter.title}>
+      <_CardAction>
         <Link to={postInfo.node.fields._slug}>
-          <CardMedia style={{textAlign: 'center'}}>
+          <_CardMedia>
             <Image
               imgInfo={postInfo.node.frontmatter.cover}
               style={{maxHeight: '100px'}}
             />
-          </CardMedia>
+          </_CardMedia>
 
           <CardContent>
             <ContentDate>
@@ -37,18 +39,22 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
             <ContentExcerpt>{postInfo.node.excerpt}</ContentExcerpt>
           </CardContent>
         </Link>
-      </StyledCardActionArea>
-    </StyledCard>
+      </_CardAction>
+    </_Card>
   );
 };
 
-const StyledCard = styled(Card)`
+const _Card = styled(Card)`
   margin: 10px;
   width: 45%;
 `;
 
-const StyledCardActionArea = styled(CardActionArea)`
+const _CardAction = styled(CardActionArea)`
   height: 300px;
+`;
+
+const _CardMedia = styled(CardMedia)`
+  text-align: center;
 `;
 
 const ContenTitle = styled.div`

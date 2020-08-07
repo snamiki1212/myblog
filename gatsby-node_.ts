@@ -185,10 +185,10 @@ const calcPaginationNum = (pageLength: number): number =>
 /****************************************************************
  * gatsby-node (readme: https://www.gatsbyjs.org/docs/node-apis/#createPages)
  ***************************************************************/
-export const createPages: any = async ({graphql, actions}): Promise<any> => {
+export const createPages = async ({graphql, actions}): Promise<any> => {
   const {createPage} = actions;
 
-  return (async (): Promise<any> => {
+  return (async () => {
     try {
       const result = await graphql(allMarkdownRemarkGraphQL);
 
@@ -339,6 +339,7 @@ export const createPages: any = async ({graphql, actions}): Promise<any> => {
       });
     } catch (errors) {
       /* eslint no-console: "off" */
+      console.log('-----------------------');
       console.error(errors);
       throw errors;
     }

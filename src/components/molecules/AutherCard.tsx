@@ -2,32 +2,36 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
+
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 import {MyLinks} from '../atoms';
+import {TextWithUnderline} from '../atoms/TextWithUnderline';
 
 export const AuthorCard: React.FC = () => (
   <Container>
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
+    <AuthorInfo>
       <Avator src={config.userAvatar} alt={config.autherName} />
-      <Name>{config.autherName}</Name>
+      <TextWithUnderline>{config.autherName}</TextWithUnderline>
       <Discription>{config.userDescription}</Discription>
-    </div>
-    <Link to="/about" style={{display: 'flex'}}>
-      <Button variant="outlined" style={{flex: 1, color: colors.vivid1}}>
-        <span>▷プロフィールを読む</span>
-      </Button>
-    </Link>
+    </AuthorInfo>
+
+    <ButtonContainer>
+      <Link to="/about">
+        <_Button variant="outlined">▷プロフィールを読む</_Button>
+      </Link>
+    </ButtonContainer>
+
     <MyLinks />
   </Container>
 );
+
+const AuthorInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Container = styled.div`
   display: flex;
@@ -42,23 +46,14 @@ const Avator = styled.img`
   border-radius: 100%;
 `;
 
-const Name: React.FC = ({children}) => (
-  <div
-    style={{
-      fontSize: '32px',
-      color: 'gray',
-      textAlign: 'center',
-      padding: '20px 0',
-    }}
-  >
-    {children}
-    <NameBorder />
-  </div>
-);
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
-const NameBorder = styled.div`
-  background: linear-gradient(to right, ${colors.vivid1}, ${colors.vivid2});
-  height: 3px;
+const _Button = styled(Button)`
+  flex: 1;
+  color: ${colors.vivid1};
 `;
 
 const Discription = styled.div`

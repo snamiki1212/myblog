@@ -1,10 +1,19 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {Navigation} from '../molecules';
-import config from '../../../data/SiteConfig';
+import styled from 'styled-components';
 import {ThemeProvider} from '@material-ui/styles';
+
+import {Navigation} from '../molecules';
+
+import config from '../../../data/SiteConfig';
 import {theme} from '../../theme';
+
 import './layout.scss';
+
+const HeaderPadding = styled.div`
+  // Navigation の高さの分の空間
+  height: 55px;
+`;
 
 export const Layout: React.FC = ({children}) => {
   return (
@@ -20,7 +29,7 @@ export const Layout: React.FC = ({children}) => {
       <ThemeProvider theme={theme}>
         <Navigation>
           <div>
-            <div style={{height: `55px`}} /> {/* Navigation の高さの分の空間 */}
+            <HeaderPadding />
             {children}
           </div>
 

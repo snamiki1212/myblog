@@ -6,6 +6,12 @@
 | Twitter                       | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)                                                                                |
 | Tech Stack                    | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)                                          |
 
+## Usage:
+
+```zsh
+$ yarn global add gatsby-cli
+```
+
 ## Directory
 
 ```sh
@@ -29,19 +35,19 @@
 
 ## Memo
 
-- `gatsby-node.js`
+- `/gatsby-node.js`
 
   - TypeScript をネイティブにサポートしていないので、TS ファイルを require している。
   - `/gatsbyjs` にて TS ファイルで定義している。
 
-- `src/components`
+- `/src/components`
 
   - AtomicDesign でディレクトリとコンポーネントを配置
 
-- `src/pages`
+- `/src/pages`
 - gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
 
-- `class=affi-custom-button`
+- `[class=affi-custom-button]`
 
   - アフィ用のボタン CSS
 

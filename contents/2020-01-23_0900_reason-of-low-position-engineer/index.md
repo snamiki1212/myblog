@@ -1,6 +1,6 @@
 ---
 title: '【SE】SIer業界での技術軽視の理由【PM】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-23 09:00'
 updatedAt: '2020-01-23 11:30'
 category: 'Career:SEtoWeb'

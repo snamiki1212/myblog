@@ -1,6 +1,6 @@
 ---
 title: 'プログラミングでハマったとき見る記事【行動／原因／メンタルケア】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-02-06 14:00'
 updatedAt: '2020-02-06 14:00'
 category: 'Tech'

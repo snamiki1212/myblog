@@ -1,6 +1,6 @@
 ---
 title: 'ITエンジニアにとっての「技術力」はどういう意味か【現役Webエンジニア考え】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-05 00:00'
 updatedAt: '2020-01-05 00:00'
 category: 'Career'

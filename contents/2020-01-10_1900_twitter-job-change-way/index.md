@@ -1,6 +1,6 @@
 ---
 title: 'Twitter転職のやり方を説明します【簡単でした】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-10 19:00'
 updatedAt: '2020-01-10 19:00'
 category: 'Career'
@@ -31,7 +31,7 @@ word:
 
 ## 基礎知識「そもそも Twitter 転職って？」
 
-![twitter-pre-knowledge](./1.svg)
+![twitter-pre-knowledge](./1.png)
 
 Twitter転職とは、その名の通りでTwitter を使ってで転職活動をします。
 
@@ -56,7 +56,7 @@ Twitter転職では、フロントエンド・エンジニアとして募集し�
 
 ## ツイートする前にすべき２つのこと
 
-![twitter-pre-action](./2.svg)
+![twitter-pre-action](./2.png)
 
 「Twitter 転職、良さそうだし、よしやるか。まずはツイートでしょ？」
 
@@ -109,7 +109,7 @@ Twitter 転職をする前提として、自分の能力・キャリアを説明
 
 ## Twitter 転職してみる
 
-![twitter-try](./cover.svg)
+![twitter-try](./cover.png)
 
 これで、少なくとも前提条件がクリアできました。
 （クリアしなくても、OKですが）
@@ -171,7 +171,7 @@ Twitter転職専用のタグをつけましょう。
 
 ## Twitter転職と合わせて、おすすめの転職活動
 
-![other-job-change-action](./3.svg)
+![other-job-change-action](./3.png)
 
 自分も、Twitter転職やってみました。
 

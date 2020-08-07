@@ -172,7 +172,7 @@ export const postPageQuery = graphql`
               publicURL
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  base64
                 }
               }
               extension
@@ -194,7 +194,12 @@ export const postPageQuery = graphql`
           publicURL
           childImageSharp {
             fluid {
-              ...GatsbyImageSharpFluid
+              base64
+              aspectRatio
+              src
+              srcSet
+              sizes
+              originalImg
             }
           }
           extension

@@ -1,6 +1,6 @@
 ---
 title: 'SIerからWeb系への転職失敗ケース【理由：４選】'
-cover: 'cover.svg'
+cover: 'cover.png'
 createdAt: '2020-01-30 09:00'
 updatedAt: '2020-01-30 09:00'
 category: 'Career:SEtoWeb'

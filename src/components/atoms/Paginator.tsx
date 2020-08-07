@@ -13,34 +13,32 @@ export const Paginator: React.FC<Props> = ({context}) => {
 
   return (
     <Container>
-      {Array.from(
-        {length: lastPage},
-        (_, i): React.ReactNode => (
-          <StyledLink
-            key={`pagination-number${i + 1}`}
-            to={`/${i === 0 ? '' : i + 1}`}
-            style={{
-              color: i + 1 === currentPage ? colors.white1 : '',
-              background: i + 1 === currentPage ? colors.black1 : '',
-            }}
-          >
-            {i + 1}
-          </StyledLink>
-        )
-      )}
+      {Array.from({length: lastPage}, (_, i) => {
+        const pageNo = i + 1;
+        const key = `pagination-number-${pageNo}`;
+        const slug = `/${i === 0 ? '' : pageNo}`;
+        const selected = pageNo === currentPage;
+
+        return (
+          <_Link selected={selected} key={key} to={slug}>
+            {pageNo}
+          </_Link>
+        );
+      })}
     </Container>
   );
 };
 
-const StyledLink = styled(Link)`
+const _Link = styled(Link)<{selected: boolean}>`
   text-decoration: none;
-  background: ${colors.grayLight};
   padding: 15px;
   transition: 0.3s;
   border-radius: 50%;
   &:hover {
     background: ${colors.vivid2};
   }
+  color: ${({selected}) => selected && colors.white1};
+  background: ${({selected}) => (selected ? colors.black1 : colors.grayLight)};
 `;
 
 const Container = styled.div`

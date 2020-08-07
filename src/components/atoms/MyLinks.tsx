@@ -8,28 +8,27 @@ import config from '../../../data/SiteConfig';
 export const MyLinks: React.FC = () => {
   const {mySocials} = config;
 
+  if (!Array.isArray(mySocials)) return <></>;
+
   return (
-    <Links>
-      {Array.isArray(mySocials) &&
-        mySocials.map(
-          (social): React.ReactNode => (
-            <Button
-              key={social.icon}
-              href={social.url}
-              style={{height: '100px'}}
-            >
-              <Icon icon={social.icon} />
-            </Button>
-          )
-        )}
-    </Links>
+    <Container>
+      {mySocials.map(social => (
+        <_Button key={social.icon} href={social.url}>
+          <Icon icon={social.icon} />
+        </_Button>
+      ))}
+    </Container>
   );
 };
 
-const Links = styled.div`
+const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 100%;
+`;
+
+const _Button = styled(Button)`
+  height: 100px;
 `;
