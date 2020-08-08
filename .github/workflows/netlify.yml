@@ -11,17 +11,19 @@ jobs:
     runs-on: ubuntu-18.04 # TODO: latestに変えたい
 
     steps:
+      # Check out the current repository code
       - uses: actions/checkout@v2
 
-      # Build to ./dist or other directory...
-
+      # Setup node (REF: https://github.com/actions/setup-node#usage )
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
 
+      # Build
       - run: yarn install
       - run: yarn run build:ci
 
+      # Delpoy
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
         with:
