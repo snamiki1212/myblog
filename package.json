@@ -9,7 +9,7 @@
     "dev": "yarn run develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
-    "build:ci": "gatsby build CI=true",
+    "build:ci": "yarn gatsby build CI=true",
     "clean": "rm -rf public && rm -rf .cache && rm -rf node_modules",
     "lint:ts": "eslint --ext .ts,.tsx .",
     "lint:js": "eslint --ext .js,.jsx .",
