@@ -74,6 +74,21 @@ $ yarn global add gatsby-cli
   - カラーパレット系
     - [【2020 年版】もう配色デザインには迷わない！すごい無料カラーパレットツール 59 個まとめ - PhotoshopVIP](http://photoshopvip.net/72189)
 
+## Workflow
+
+```
+ |
+ V
+[Github Actions]
+ |- Build
+ |- Deploy To Netlify
+ V
+[Netlify]
+ |- Hosting
+ V
+ finish!
+```
+
 ## TODO
 
 - General
