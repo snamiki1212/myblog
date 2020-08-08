@@ -2,7 +2,7 @@
 
 | This repository is My blog's. | https://snamiki1212.com                                                                                                                                          |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Deploy Status                 | [![Netlify Status](https://api.netlify.com/api/v1/badges/fce06c01-d793-4026-8a48-ef4946156434/deploy-status)](https://app.netlify.com/sites/snamiki1212/deploys) |
+| Deploy Status                 | ![Netlify](https://github.com/snamiki1212/myblog/workflows/Netlify/badge.svg?branch=master)
 | Twitter                       | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)                                                                                |
 | Tech Stack                    | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)                                          |
 

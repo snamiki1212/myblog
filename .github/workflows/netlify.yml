@@ -1,4 +1,4 @@
-name: Netlify
+name: Build & Deploy to Netlify
 # REF: https://qiita.com/nwtgck/items/e9a355c2ccb03d8e8eb0
 
 on:
