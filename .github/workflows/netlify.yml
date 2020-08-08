@@ -1,0 +1,37 @@
+# REF: https://qiita.com/nwtgck/items/e9a355c2ccb03d8e8eb0
+name: Netlify
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04 # TODO: latestに変えたい
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Build to ./dist or other directory...
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - run: yarn run build:ci
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.1
+        with:
+          publish-dir: './public'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          # enable-commit-comment: true
+          # overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
