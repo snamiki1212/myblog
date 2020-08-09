@@ -1,4 +1,3 @@
-import path from 'path';
 import dayjs from 'dayjs';
 import kebabCase from 'lodash.kebabcase';
 import siteConfig from '../data/SiteConfig';
@@ -32,50 +31,46 @@ const generateSlug = ({node}): string => {
  */
 export const onCreateNode = ({node, actions}): void => {
   if (node.internal.type !== 'MarkdownRemark') return;
+
   const {createNodeField} = actions;
   const slug = generateSlug({node});
+  const dateFromFormat = siteConfig.dateFromFormat;
 
-  // Add createdAt
+  // Validation
   const hasCreatedAt =
     hasOwnProperty(node, 'frontmatter') &&
     hasOwnProperty(node.frontmatter, 'createdAt');
-  if (hasCreatedAt) {
-    const createdAt = dayjs(
-      node.frontmatter.createdAt,
-      siteConfig.dateFromFormat
-    );
-
-    if (!createdAt.isValid) {
-      console.warn(`WARNING: Invalid createdAt.`, node.frontmatter); // eslint-disable-line
-    }
-
-    createNodeField({
-      node,
-      name: '_createdAt',
-      value: createdAt.toISOString(),
-    });
-  }
-
-  // Add updatedAt
   const hasUpdatedAt =
     hasOwnProperty(node, 'frontmatter') &&
     hasOwnProperty(node.frontmatter, 'updatedAt');
-  if (hasUpdatedAt) {
-    const updatedAt = dayjs(
-      node.frontmatter.updatedAt,
-      siteConfig.dateFromFormat
-    );
-
-    if (!updatedAt.isValid) {
-      console.warn(`WARNING: Invalid updatedAt.`, node.frontmatter); // eslint-disable-line
-    }
-
-    createNodeField({
-      node,
-      name: '_updatedAt',
-      value: updatedAt.toISOString(),
-    });
+  if (!hasCreatedAt) {
+    throw new Error(`Cannot find createdAt. ${node.frontmatter}`);
   }
+  if (!hasUpdatedAt) {
+    throw new Error(`Cannot find updatedAt. ${node.frontmatter}`);
+  }
+
+  // Add createdAt
+  const createdAt = dayjs(node.frontmatter.createdAt, dateFromFormat);
+  if (!createdAt.isValid) {
+      console.warn(`Invalid createdAt.`, node.frontmatter); // eslint-disable-line
+  }
+  createNodeField({
+    node,
+    name: '_createdAt',
+    value: createdAt.toISOString(),
+  });
+
+  // Add updatedAt
+  const updatedAt = dayjs(node.frontmatter.updatedAt, dateFromFormat);
+  if (!updatedAt.isValid) {
+    console.warn(`Invalid updatedAt.`, node.frontmatter); // eslint-disable-line
+  }
+  createNodeField({
+    node,
+    name: '_updatedAt',
+    value: updatedAt.toISOString(),
+  });
 
   createNodeField({node, name: '_slug', value: slug});
 };
