@@ -10,6 +10,8 @@
 
 ```zsh
 $ yarn global add gatsby-cli
+$ yarn
+$ yarn start
 ```
 
 ## Directory
@@ -33,7 +35,7 @@ $ yarn global add gatsby-cli
   /.vscode
 ```
 
-## Memo
+## Memo: Directory
 
 - `/gatsby-node.js`
 
@@ -45,7 +47,9 @@ $ yarn global add gatsby-cli
   - AtomicDesign でディレクトリとコンポーネントを配置
 
 - `/src/pages`
-- gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
+  - gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
+
+## Memo: etc
 
 - `[class=affi-custom-button]`
 
@@ -61,9 +65,9 @@ $ yarn global add gatsby-cli
 - `package.json`
   - `rehype-react`: ver4系でないとうまく動かない。ver6系だとunifiedを組み合わせないといけない。ver5系はまだチェックしてない。
 
-## Img
+## Images
 
--  いろいろ
+- 画像
 
   - [2019 年間ベスト！Web 制作を変える便利オンラインツール厳選 85 個 - PhotoshopVIP](http://photoshopvip.net/119896)
 
@@ -83,39 +87,26 @@ $ yarn global add gatsby-cli
  |
  V
 [Github Actions]
- |- Build
- |- Deploy To Netlify
+ | |- Build
+ | |- Deploy To Netlify
+ |
  V
 [Netlify]
- |- Hosting
+ | |- Hosting
+ |
  V
  finish!
 ```
 
-## TODO
+## TODO:
 
 - General
-  - [ ] AMP を入れる
-  - [x] SASS を除去する
-  - [x] prism を整理する
-  - [x] gatsbyjs の設定周りを整理する
-  - [ ] TypeScript フレンドリーにする（特に GatsbyJS と Props の値）
-  - [x] /src 配下のディレクトリ構造を整理する
-    - [x] /layout を消したい
-    - [ ] ~/pages を消したい~
-    - [ ] ~/templates を消したい~
+  - AMP
+- FIX
+  - undisplay suggestion article images
 - CSS
-  - [x] code style
-  - [x] more clickable bottom-link
-  - [x] block-quote
-  - [x] optimize twitter card of link image
-  - [x] use .env at Google analytics ID
-  - [ ] optimize post css
+  - optimize post css
 - CI
-  - [ ] speed test
-  - [ ] validate RSS format at https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fsnamiki1212.com%2Frss.xml
-- Page
-  - [ ] About me at top page
-  - [ ] Link to .md at this repository
-- Feature
-  - [ ] Search (MEMO: https://blog.leko.jp/post/implement-site-search-with-algolia/)
+  - cache
+  - speed test
+  - RSS checker
