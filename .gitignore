@@ -63,3 +63,6 @@ bundle-stats.json
 
 # type files from gatsby-plugin-ts plugin to build
 /types
+
+# General
+.DS_Store
