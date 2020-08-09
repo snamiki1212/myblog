@@ -58,6 +58,9 @@ $ yarn global add gatsby-cli
   - UTC タイムなので、[これ](http://www.timebie.com/timezone/universaljapan.php)とかで計算。
   - 例: `@prscheduler 15/01/2020T00:00` ⇒ 日本時間 09:00
 
+- `package.json`
+  - `rehype-react`: ver4系でないとうまく動かない。ver6系だとunifiedを組み合わせないといけない。ver5系はまだチェックしてない。
+
 ## Img
 
 -  いろいろ
