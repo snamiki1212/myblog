@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
-import {SubPageContext} from '../../../gatsby-node/';
+import {SubPageContext} from '../../../gatsby-node/types';
 
 type Props = {context: SubPageContext};
 
