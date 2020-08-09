@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
-import {TagPageContext} from '../../../gatsby-node/';
+import {TagPageContext} from '../../../gatsby-node/types';
 import Layout from '../organisms/Layout';
 import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
 import {MarkdownRemarkEdge} from '../../types';
