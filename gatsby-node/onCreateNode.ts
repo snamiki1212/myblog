@@ -7,7 +7,7 @@ const hasOwnProperty = (object, property: string) => {
   return Object.prototype.hasOwnProperty.call(object, property);
 };
 
-const generateSlug = ({node, parsedFilePath}): string => {
+const generateSlug = ({node}): string => {
   const hasSlug =
     hasOwnProperty(node, 'frontmatter') &&
     hasOwnProperty(node.frontmatter, 'slug');
@@ -30,15 +30,12 @@ const generateSlug = ({node, parsedFilePath}): string => {
  * ( edges > node > fields の中にこの値が入る)
  * オレオレで作成したフィールド名は特に検索で当たりやすいように、プレフィックス(underbar) をつける。
  */
-export const onCreateNode = ({node, actions, getNode}): void => {
+export const onCreateNode = ({node, actions}): void => {
   if (node.internal.type !== 'MarkdownRemark') return;
   const {createNodeField} = actions;
+  const slug = generateSlug({node});
 
-  const fileNode = getNode(node.parent);
-  const parsedFilePath = path.parse(fileNode.relativePath);
-  const slug = generateSlug({node, parsedFilePath});
-
-  // add createdAt
+  // Add createdAt
   const hasCreatedAt =
     hasOwnProperty(node, 'frontmatter') &&
     hasOwnProperty(node.frontmatter, 'createdAt');
@@ -59,7 +56,7 @@ export const onCreateNode = ({node, actions, getNode}): void => {
     });
   }
 
-  // add updatedAt
+  // Add updatedAt
   const hasUpdatedAt =
     hasOwnProperty(node, 'frontmatter') &&
     hasOwnProperty(node.frontmatter, 'updatedAt');
