@@ -1,7 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
+import {FluidObject} from 'gatsby-image';
 import styled from 'styled-components';
+
 import Layout from '../organisms/Layout';
 import Image from '../atoms/Image';
 import {UpdatedAt, AuthorCard} from '../molecules';
@@ -13,10 +15,12 @@ import {
   ArticlesPreviewWrapper,
 } from '../atoms';
 import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
-import config from '../../../data/SiteConfig';
+
 import {PostPageContext} from '../../../gatsby-node_';
-import {FluidObject} from 'gatsby-image';
+
+import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge} from '../../types';
+
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {useTheme} from '@material-ui/core/styles';
 
@@ -27,91 +31,91 @@ type Props = {
 
 export const PostTemplate: React.FC<Props> = ({data}) => {
   const postNode = data.markdownRemark;
-  if (!postNode) return <span>cannot get page</span>;
+  if (!postNode) {
+    console.error('Cannot Find postNode');
+    // TODO: エラーページに差し替える
+    return <div>Error Page</div>;
+  }
+
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
 
   const theme = useTheme();
   const isSP = useMediaQuery(theme.breakpoints.down('sm'));
-  const Article = isSP ? ArticlePreviewLine : ArticlePreviewCard;
+  const ArticleComponent = isSP ? ArticlePreviewLine : ArticlePreviewCard;
 
   return (
     <Layout>
-      <SPostPage>
+      <Container>
         <Helmet>
           <title>{`${post.title}`}</title>
           <link rel="canonical" href={`${config.siteUrl}${_slug}`} />
         </Helmet>
+
         <SEOMeta postNode={postNode} isPost={true} />
 
         <HeaderImg imgInfo={postNode.frontmatter.cover} />
-        <SPostPagePaper>
-          <SPostPageContent className="target-el">
-            <div style={{paddingRight: '10px', paddingLeft: '10px'}}>
-              <span style={{textAlign: 'right', paddingTop: '30px'}}>
-                <UpdatedAt
-                  date={postNode.frontmatter.updatedAt}
-                  containerStyle={{justifyContent: 'flex-end'}}
-                />
-              </span>
-              <Markdown htmlAst={postNode.htmlAst} />
-            </div>
-            <SPostPageFooter>
-              <TagList tags={post.tags} />
-              <SocialLinks postNode={postNode} />
-            </SPostPageFooter>
-          </SPostPageContent>
-          <hr />
-          <div style={{padding: '50px 0'}}>
+
+        <ItemContainer>
+          <UpdatedAtContainer>
+            <UpdatedAt date={postNode.frontmatter.updatedAt} />
+          </UpdatedAtContainer>
+        </ItemContainer>
+
+        <ItemContainer>
+          <Markdown htmlAst={postNode.htmlAst} />
+        </ItemContainer>
+
+        <ItemContainer>
+          <TagList tags={post.tags} />
+          <SocialLinks postNode={postNode} />
+        </ItemContainer>
+
+        <ItemContainer>
+          <AuthorCardContainer>
             <AuthorCard />
-          </div>
-          <hr />
-        </SPostPagePaper>
+          </AuthorCardContainer>
+        </ItemContainer>
+
         <ArticlesPreviewWrapper
           style={{flexDirection: isSP ? 'column' : 'row'}}
         >
           {suggestions.map((edge) => (
-            <Article key={edge.node.frontmatter.title} postInfo={edge} />
+            <ArticleComponent
+              key={edge.node.frontmatter.title}
+              postInfo={edge}
+            />
           ))}
         </ArticlesPreviewWrapper>
-      </SPostPage>
+      </Container>
     </Layout>
   );
 };
 
-const SPostPageContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 0px;
-  padding-top: 0px;
+const AuthorCardContainer = styled.div`
+  padding: 50px;
+  border: 1px solid lightgray;
 `;
 
-const SPostPage = styled.div`
+const UpdatedAtContainer = styled.div`
+  margin: 10px;
+  align-self: flex-end;
+`;
+
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-const SPostPagePaper = styled.div`
-  justify-content: center;
-  width: 100%;
-  max-width: 700px;
-
-  img {
-    max-width: 100%;
-  }
-
-  video {
-    max-width: 100%;
-  }
-`;
-
-const SPostPageFooter = styled.div`
+const ItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  width: 100%;
+  max-width: 700px;
 `;
 
 const HeaderImg = styled(Image)`
