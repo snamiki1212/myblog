@@ -3,24 +3,26 @@ import dayjs from 'dayjs';
 import kebabCase from 'lodash.kebabcase';
 import siteConfig from '../data/SiteConfig';
 
+const hasOwnProperty = (object, property: string) => {
+  return Object.prototype.hasOwnProperty.call(object, property);
+};
+
 const generateSlug = ({node, parsedFilePath}): string => {
-  if (
-    Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-    Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
-  ) {
+  const hasSlug =
+    hasOwnProperty(node, 'frontmatter') &&
+    hasOwnProperty(node.frontmatter, 'slug');
+  if (hasSlug) {
     return `/${kebabCase(node.frontmatter.slug)}`;
-  } else if (
-    Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-    Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
-  ) {
-    return `/${kebabCase(node.frontmatter.title)}`;
-  } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
-    return `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
-  } else if (parsedFilePath.dir === '') {
-    return `/${parsedFilePath.name}/`;
-  } else {
-    return `/${parsedFilePath.dir}/`;
   }
+
+  const hasTitle =
+    hasOwnProperty(node, 'frontmatter') &&
+    hasOwnProperty(node.frontmatter, 'title');
+  if (hasTitle) {
+    return `/${kebabCase(node.frontmatter.title)}`;
+  }
+
+  throw new Error('Failed to generate slug. Set slug in frontmatter on md.');
 };
 
 /**
@@ -37,14 +39,15 @@ export const onCreateNode = ({node, actions, getNode}): void => {
   const slug = generateSlug({node, parsedFilePath});
 
   // add createdAt
-  if (
-    Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-    Object.prototype.hasOwnProperty.call(node.frontmatter, 'createdAt')
-  ) {
+  const hasCreatedAt =
+    hasOwnProperty(node, 'frontmatter') &&
+    hasOwnProperty(node.frontmatter, 'createdAt');
+  if (hasCreatedAt) {
     const createdAt = dayjs(
       node.frontmatter.createdAt,
       siteConfig.dateFromFormat
     );
+
     if (!createdAt.isValid) {
       console.warn(`WARNING: Invalid createdAt.`, node.frontmatter); // eslint-disable-line
     }
@@ -57,14 +60,15 @@ export const onCreateNode = ({node, actions, getNode}): void => {
   }
 
   // add updatedAt
-  if (
-    Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-    Object.prototype.hasOwnProperty.call(node.frontmatter, 'updatedAt')
-  ) {
+  const hasUpdatedAt =
+    hasOwnProperty(node, 'frontmatter') &&
+    hasOwnProperty(node.frontmatter, 'updatedAt');
+  if (hasUpdatedAt) {
     const updatedAt = dayjs(
       node.frontmatter.updatedAt,
       siteConfig.dateFromFormat
     );
+
     if (!updatedAt.isValid) {
       console.warn(`WARNING: Invalid updatedAt.`, node.frontmatter); // eslint-disable-line
     }
