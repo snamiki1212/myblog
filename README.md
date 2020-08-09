@@ -100,13 +100,10 @@ $ yarn start
 
 ## TODO:
 
-- General
-  - AMP
-- FIX
-  - undisplay suggestion article images
-- CSS
-  - optimize post css
-- CI
-  - cache
-  - speed test
-  - RSS checker
+- FIX: undisplay suggestion article images
+- Type by GraphQL
+- AMP
+- CSS: optimize post css
+- CI: cache
+- CI: speed test
+- CI: RSS checker
