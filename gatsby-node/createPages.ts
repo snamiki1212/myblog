@@ -18,11 +18,12 @@ const CategoryPage = path.resolve(`${templatesDir}/CategoryTemplate.tsx`);
 const IndexPage = path.resolve(`${templatesDir}/HomeTemplate.tsx`);
 
 class SubPageList {
+  public type: 'category' | 'tag';
+  public subPageList: SubPageProps[] = [];
+
   constructor(type: 'category' | 'tag') {
     this.type = type;
   }
-  type: 'category' | 'tag';
-  subPageList: SubPageProps[] = [];
 
   private generatePath = (name: string): string => {
     switch (this.type) {
