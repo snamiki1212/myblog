@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
-import {PaginationContext, SubPageContext} from '../../../gatsby-node_';
+import {PaginationContext, SubPageContext} from '../../../gatsby-node/';
 import {Paginator, SubPageLinks, ArticlesPreviewWrapper} from '../atoms';
 import {AuthorCard, ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 import {MarkdownRemarkEdge} from '../../types';

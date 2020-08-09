@@ -2,7 +2,7 @@ import {graphql} from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
 import config from '../../../data/SiteConfig';
-import {IndexPageContext} from '../../../gatsby-node_';
+import {IndexPageContext} from '../../../gatsby-node/';
 import {SEOMeta} from '../atoms';
 import Layout from '../organisms/Layout';
 import {ArticlePreviewList} from '../organisms/ArticlePreviewList';

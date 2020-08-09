@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
-import {PaginationContext} from '../../../gatsby-node_';
+import {PaginationContext} from '../../../gatsby-node/';
 
 type Props = {
   context: PaginationContext;

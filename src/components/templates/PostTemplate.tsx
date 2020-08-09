@@ -16,7 +16,7 @@ import {
 } from '../atoms';
 import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 
-import {PostPageContext} from '../../../gatsby-node_';
+import {PostPageContext} from '../../../gatsby-node/';
 
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge} from '../../types';

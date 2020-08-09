@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
-import {CategoryPageContext} from '../../../gatsby-node_';
+import {CategoryPageContext} from '../../../gatsby-node/';
 import Layout from '../organisms/Layout';
 import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
 import {MarkdownRemarkEdge} from '../../types';

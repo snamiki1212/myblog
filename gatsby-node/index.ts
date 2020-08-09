@@ -1,7 +1,8 @@
 import path from 'path';
 import kebabCase from 'lodash.kebabcase';
 import dayjs from 'dayjs';
-import siteConfig from './data/SiteConfig';
+
+import siteConfig from '../data/SiteConfig';
 
 /****************************************************************
  * CONSTANTS
@@ -79,7 +80,7 @@ class SubPageList {
     if (!name) return;
     const path = this.generatePath(name);
     const maybeIndex = this.subPageList.findIndex(
-      subPage => subPage.name === name
+      (subPage) => subPage.name === name
     );
     const exist = maybeIndex !== -1;
 
@@ -308,19 +309,19 @@ export const createPages = async ({graphql, actions}): Promise<any> => {
       });
 
       // Postページの作成
-      allPosts.forEach(edge => {
+      allPosts.forEach((edge) => {
         const category = edge.node.frontmatter.category;
 
         const suggestions: typeof allPosts = fetchRandoms(
           allPosts.filter(
-            post =>
+            (post) =>
               post.node.frontmatter.category === category &&
               post.node.id !== edge.node.id
           ),
           POSTS_AS_SUGGESTION
         );
         const suggestionNodeIDs = suggestions.map(
-          suggestion => suggestion.node.id
+          (suggestion) => suggestion.node.id
         );
 
         const postPageCtx: PostPageContext = {
