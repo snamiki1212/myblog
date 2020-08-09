@@ -102,6 +102,7 @@ $ yarn start
 
 - FIX: undisplay suggestion article images
 - Type by GraphQL
+- Refactor: gatsby-node_.ts
 - AMP
 - CSS: optimize post css
 - CI: cache
