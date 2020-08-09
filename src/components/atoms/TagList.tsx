@@ -13,7 +13,7 @@ export const TagList: React.FC<Props> = ({tags}) => {
   if (!tags) return <></>;
   return (
     <Container>
-      {tags.map(tag => (
+      {tags.map((tag) => (
         <_Link key={tag} to={`/tags/${kebabCase(tag)}`}>
           <_Chip label={`#${tag}`} clickable color="primary" />
         </_Link>

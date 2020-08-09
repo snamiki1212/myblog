@@ -48,7 +48,7 @@ interface ResponsiveDrawerProps {
   container?: Element;
 }
 
-export const Navigation: React.FC<ResponsiveDrawerProps & any> = props => {
+export const Navigation: React.FC<ResponsiveDrawerProps & any> = (props) => {
   const {children} = props;
 
   const classes = useStyles();

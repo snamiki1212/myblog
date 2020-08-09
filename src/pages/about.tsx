@@ -13,8 +13,9 @@ import {MyLinks} from '../components/atoms';
 import config from '../../data/SiteConfig';
 
 // selector
-const myTwitterUrl = config.mySocials.find(ele => ele.icon === 'twitter').url;
-const myLinkedinUrl = config.mySocials.find(ele => ele.icon === 'linkedin').url;
+const myTwitterUrl = config.mySocials.find((ele) => ele.icon === 'twitter').url;
+const myLinkedinUrl = config.mySocials.find((ele) => ele.icon === 'linkedin')
+  .url;
 
 // styled
 const Box = styled.div`

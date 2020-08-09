@@ -71,7 +71,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         <ArticlesPreviewWrapper
           style={{flexDirection: isSP ? 'column' : 'row'}}
         >
-          {suggestions.map(edge => (
+          {suggestions.map((edge) => (
             <Article key={edge.node.frontmatter.title} postInfo={edge} />
           ))}
         </ArticlesPreviewWrapper>

@@ -12,7 +12,7 @@ export const MyLinks: React.FC = () => {
 
   return (
     <Container>
-      {mySocials.map(social => (
+      {mySocials.map((social) => (
         <_Button key={social.icon} href={social.url}>
           <Icon icon={social.icon} />
         </_Button>

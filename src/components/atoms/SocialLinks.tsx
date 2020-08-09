@@ -27,7 +27,7 @@ const MaybeShareCount = ({count}: {count: number}) => (
   <ShareCount>{count > 0 ? count : ''}</ShareCount>
 );
 
-export const SocialLinks: React.FC<Props> = props => {
+export const SocialLinks: React.FC<Props> = (props) => {
   const {postNode} = props;
 
   const post = postNode.frontmatter;
