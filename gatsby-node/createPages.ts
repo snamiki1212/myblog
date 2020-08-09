@@ -186,20 +186,21 @@ type AllMarkdownRemarkResult = {
 };
 
 const createPostPages = ({allPosts, createPage, subPageContext}) => {
-  // Postページの作成
   allPosts.forEach((edge) => {
     const category = edge.node.frontmatter.category;
 
-    const suggestions: typeof allPosts = fetchRandoms(
-      allPosts.filter(
-        (post) =>
-          post.node.frontmatter.category === category &&
-          post.node.id !== edge.node.id
-      ),
+    const allSuggestions = allPosts.filter(
+      (post) =>
+        post.node.frontmatter.category === category &&
+        post.node.id !== edge.node.id
+    );
+
+    const selectedSuggestions: typeof allPosts = fetchRandoms(
+      allSuggestions,
       POSTS_AS_SUGGESTION
     );
 
-    const suggestionNodeIDs = suggestions.map(
+    const suggestionNodeIDs = selectedSuggestions.map(
       (suggestion) => suggestion.node.id
     );
 
@@ -220,20 +221,20 @@ const createPostPages = ({allPosts, createPage, subPageContext}) => {
 };
 
 const createIndexPages = ({createPage, subPageContext, length}) => {
-  Array.from({length}).forEach((_, i): void => {
+  Array.from({length}).forEach((_, idx): void => {
     const indexPageContext: IndexPageContext = {
       // Pagination Context
       limit: POSTS_PER_PAGE,
-      skip: i * POSTS_PER_PAGE,
+      skip: idx * POSTS_PER_PAGE,
       lastPage: length,
-      currentPage: i + 1,
+      currentPage: idx + 1,
       // SubPage Context
       ...subPageContext,
       // etc
     };
 
     createPage({
-      path: i === 0 ? '/' : `/${i + 1}`,
+      path: idx === 0 ? '/' : `/${idx + 1}`,
       component: IndexPage,
       context: indexPageContext,
     });
@@ -241,28 +242,26 @@ const createIndexPages = ({createPage, subPageContext, length}) => {
 };
 
 const makeSubPageList = ({allPosts}) => {
-  const {
-    _categories: categories,
-    _tags: tags,
-  }: {_categories: SubPageList; _tags: SubPageList} = allPosts.reduce(
-    ({_categories, _tags}, edge) => {
+  const {categories, tags} = allPosts.reduce(
+    ({categories, tags}, edge) => {
       const {tags: edgeTags, category: edgeCategory} = edge.node.frontmatter;
 
       // tags
       edgeTags.forEach((tag: string): void => {
-        _tags.incrementOrAddPage(tag);
+        tags.incrementOrAddPage(tag);
       });
 
       // category
-      _categories.incrementOrAddPage(edgeCategory);
+      categories.incrementOrAddPage(edgeCategory);
 
-      return {_categories, _tags};
+      return {categories, tags};
     },
     {
-      _categories: new SubPageList('category'),
-      _tags: new SubPageList('tag'),
+      categories: new SubPageList('category'),
+      tags: new SubPageList('tag'),
     }
   );
+
   return {categories, tags};
 };
 
