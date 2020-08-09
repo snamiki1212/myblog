@@ -104,7 +104,7 @@ $ yarn start
 ## TODO:
 
 - ~FIX: undisplay suggestion article images~
-- Refactor: gatsby-node/.ts
+- ~Refactor: gatsby-node/ts~
 - Type by GraphQL
 - AMP
 - CSS: optimize post css
