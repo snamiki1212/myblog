@@ -176,7 +176,7 @@ export const postPageQuery = graphql`
               publicURL
               childImageSharp {
                 fluid {
-                  base64
+                  ...GatsbyImageSharpFluid
                 }
               }
               extension

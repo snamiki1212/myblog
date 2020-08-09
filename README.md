@@ -64,6 +64,9 @@ $ yarn start
 
 - `package.json`
   - `rehype-react`: ver4系でないとうまく動かない。ver6系だとunifiedを組み合わせないといけない。ver5系はまだチェックしてない。
+- GraphQL
+  - Fragment: GraphQLにて複数の要素を１つの塊として定義したもの。
+  - `markdownRemark` > frontmatter > cover > childImageSharp > fluid 配下にて、`GatsbyImageSharpFluid`Fragmentが効かないので、Fragmentが指す内容を直接取得。allMarkdownRemarkの配下ではFragmentが取得できてるのでPluginの問題かも？
 
 ## Images
 
