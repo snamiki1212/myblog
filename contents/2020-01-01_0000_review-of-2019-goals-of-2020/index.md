@@ -1,6 +1,6 @@
 ---
 title: '2019年振り返り⇒2020年目標｜フリーランスになりました'
-cover: 'cover.png'
+cover: 'cover.jpg'
 createdAt: '2020-01-01 00:00'
 updatedAt: '2020-01-03 00:00'
 category: 'Career'
