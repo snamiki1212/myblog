@@ -18,6 +18,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
+        env:
+          SITE_GA_TRACKING_ID: ${{ secrets.SITE_GA_TRACKING_ID }}
+          SITE_GSC_TRACKING_ID: ${{ secrets.SITE_GSC_TRACKING_ID }}
 
       # Build
       - run: yarn install
