@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import Layout from '../organisms/Layout';
 import Image from '../atoms/Image';
-import {UpdatedAt, AuthorCard} from '../molecules';
+import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {
   TagList,
   SocialLinks,
@@ -58,9 +58,10 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         <HeaderImg imgInfo={postNode.frontmatter.cover} />
 
         <ItemContainer>
-          <UpdatedAtContainer>
+          <DateContainer>
             <UpdatedAt date={postNode.frontmatter.updatedAt} />
-          </UpdatedAtContainer>
+            <CreatedAt date={postNode.frontmatter.createdAt} />
+          </DateContainer>
         </ItemContainer>
 
         <ItemContainer>
@@ -104,7 +105,7 @@ const MarkdownContainer = styled.div`
   margin: 0 10px;
 `;
 
-const UpdatedAtContainer = styled.div`
+const DateContainer = styled.div`
   margin: 10px;
   align-self: flex-end;
 `;

@@ -3,16 +3,19 @@ import styled from 'styled-components';
 import dayjs from 'dayjs';
 import config from '../../../data/SiteConfig';
 import {Icon} from '../atoms';
+import {colors} from '../../../data/color';
 
 type Props = {date: Date; containerStyle?: any};
 
+const FONT_COLOR = colors.grayDark;
+
 // TODO: atomsに移動させたい
-export const UpdatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
+export const CreatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
   const formatedDate = dayjs(date).format(config.dateFormat);
 
   return (
     <Container containerStyle={containerStyle}>
-      <Icon icon="updatedAt" />
+      <Icon icon="createdAt" style={{color: FONT_COLOR}} />
       <Date>{formatedDate}</Date>
     </Container>
   );
@@ -24,4 +27,6 @@ const Container = styled.span<{containerStyle: any}>`
   ${({containerStyle}) => `${{...containerStyle}}`};
 `;
 
-const Date = styled.span``;
+const Date = styled.span`
+  color: ${FONT_COLOR};
+`;

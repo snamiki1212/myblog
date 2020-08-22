@@ -6,7 +6,7 @@
 // monoton
 const BLACK = '#3e3a5e';
 const GRAY_LIGHT = '#f3f3f3';
-const GRAY_DARK = '#666666';
+const GRAY_DARK = '#808080';
 const WHITE = '#fffcf2';
 
 // colors
@@ -21,6 +21,7 @@ export const colors = {
   // mono-tone
   black1: BLACK,
   grayLight: GRAY_LIGHT,
+  grayMiddle: 'gray',
   grayDark: GRAY_DARK,
   white1: WHITE,
 

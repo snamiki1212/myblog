@@ -6,8 +6,9 @@ import PlaceIcon from '@material-ui/icons/Place';
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import DesktopMacIcon from '@material-ui/icons/DesktopMac';
-import Event from '@material-ui/icons/Event';
 import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
+import Update from '@material-ui/icons/Update';
+import Create from '@material-ui/icons/Create';
 
 // fontawesome
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -27,10 +28,12 @@ type Props = {
     | 'github'
     | 'twitter'
     | 'linkedin'
-    | 'calendar';
+    | 'createdAt'
+    | 'updatedAt';
+  [key: string]: any;
 };
 
-export const Icon: React.FC<Props> = ({icon}) => {
+export const Icon: React.FC<Props> = ({icon, ...rest}) => {
   switch (icon) {
     case 'face':
       return <FaceIcon />;
@@ -48,8 +51,10 @@ export const Icon: React.FC<Props> = ({icon}) => {
       return <FontAwesomeIcon icon={faTwitter} size="3x" />;
     case 'linkedin':
       return <FontAwesomeIcon icon={faLinkedinIn} size="3x" />;
-    case 'calendar':
-      return <Event fontSize="small" />;
+    case 'createdAt':
+      return <Create fontSize="small" {...rest} />;
+    case 'updatedAt':
+      return <Update fontSize="small" />;
     default:
       return <></>;
   }
