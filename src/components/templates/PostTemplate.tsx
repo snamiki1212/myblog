@@ -64,7 +64,9 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
         </ItemContainer>
 
         <ItemContainer>
-          <Markdown htmlAst={postNode.htmlAst} />
+          <MarkdownContainer>
+            <Markdown htmlAst={postNode.htmlAst} />
+          </MarkdownContainer>
         </ItemContainer>
 
         <ItemContainer>
@@ -96,6 +98,10 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
 const AuthorCardContainer = styled.div`
   padding: 50px;
   border: 1px solid lightgray;
+`;
+
+const MarkdownContainer = styled.div`
+  margin: 0 10px;
 `;
 
 const UpdatedAtContainer = styled.div`
