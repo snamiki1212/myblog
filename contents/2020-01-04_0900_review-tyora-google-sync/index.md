@@ -25,6 +25,10 @@ word:
 
 では、見ていきます。
 
+（追記：2020-10-18）GoogleDriveからDropboxに変更しました
+
+[マークダウン管理をGoogleDriveからDropboxに変更した話](./markdown-storage-as-dropbox)
+
 ## Typora の説明
 
 ![typoraのトップ画像](cover.png)
