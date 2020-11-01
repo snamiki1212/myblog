@@ -132,6 +132,11 @@ Majexstand も悪くはなかったですが、問題点として PC 全体の�
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">分割キーボード練習中。。。<br>思ったよりも学習コスト高いわ <a href="https://t.co/TvfKTdWHkP">pic.twitter.com/TvfKTdWHkP</a></p>&mdash; Nash⚡️そろそろカナダ行く (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1313709018410434561?ref_src=twsrc%5Etfw">October 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- Twitter -->
 
+<!-- Amazon -->
+<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; "><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB0171QQ7FM%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/410 3w2geIL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB0171QQ7FM%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">エレコム マウス ワイヤレス (レシーバー付属) トラックボール 人差し指用 8ボタン ブラック M-DT2DRBK</a></p></td></tr></table>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<!-- Amazon -->
+
 ただ、デメリットとして下記があります。
 
 - 金額が高い
