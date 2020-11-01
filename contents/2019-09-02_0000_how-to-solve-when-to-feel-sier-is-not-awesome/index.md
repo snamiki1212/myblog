@@ -58,6 +58,7 @@ SIer という仕事自体が、ルーチンワークを求められているた
 
 <!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">大組織の仕事は、同じコトを長年にわたって繰り返す、いわゆるルーチン業務に自分の人生の時間の多くを使うことが気にならない人でないと務まらない。それが「耐えられない！」と思う人には全く向いてない。</p>&mdash; ちきりん (@InsideCHIKIRIN) <a href="https://twitter.com/InsideCHIKIRIN/status/887292875309842432?ref_src=twsrc%5Etfw">July 18, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Twitter -->
 
 ### 【理由 ②】エンジニアが花形ではないし、技術主導でもない
 
@@ -72,6 +73,7 @@ SE として仕事をしていると**「技術的な面白さ」というもの
 
 <!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">エンジニアでマネージメントやらないと給与上がらないからマネージメントやるという流れが一番の問題だと思うんだよな。別にマネージャーはエンジニアの上位職ではない。</p>&mdash; V (@voluntas) <a href="https://twitter.com/voluntas/status/1094425354490470400?ref_src=twsrc%5Etfw">February 10, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Twitter -->
 
 ### 【理由 ③】チャレンジがしにくく、古い体質の環境
 
@@ -107,6 +109,7 @@ SIerでSEとして、今の現場で頑張る方向です。
 
 <!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">仕事がつまらないとしても、まずは今していることで一番になることを目指そう。そうすれば、誰もあなたにつまらない仕事をさせようとは思わなくなる。ひたむきに打ち込み、能力を高めることこそが、あなたの求める自由な道につながる。自分の可能性を信じて、目の前のことに打ち込もう。</p>&mdash; メンタリストDaiGo (@Mentalist_DaiGo) <a href="https://twitter.com/Mentalist_DaiGo/status/763480457908461568?ref_src=twsrc%5Etfw">August 10, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Twitter -->
 
 例えば、下記のようなものですね。
 
@@ -145,6 +148,7 @@ SIerでSEとして、今の現場で頑張る方向です。
 
 <!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">あまり気付かれてないけど、実は「社会人になっても勉強を続けると、人生がイージー化」しますよね。<br>ぶっちゃけ思うけど、大半の社会人は不勉強すぎるので、意識的に時間を作って勉強したら、頭１つ抜けるのは、そこまで難しくないはず。歳上の方が頭が良いとかって価値感は、かなり間違ってると思う</p>&mdash; マナブ@バンコク (@manabubannai) <a href="https://twitter.com/manabubannai/status/1064882985109876737?ref_src=twsrc%5Etfw">November 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Twitter -->
 
 もし、下流工程を中心に仕事をしているなら、家でもエンジニアとしてのレベルをあげる努力をしてみる、とかです。
 
