@@ -3,9 +3,9 @@ title: '【経験談】エンジニアが首・肩を痛めて病院に行った
 cover: 'cover.jpg'
 createdAt: '2020-10-26 19:00'
 updatedAt: '2020-10-26 19:00'
-category: 'Tech'
+category: 'Health'
 tags:
-  - Career
+  - Health
 slug: experience-of-harmed-neck
 word:
   - nothing
