@@ -201,7 +201,7 @@ Majextandもかなり使いやすかったのですが、デメリットとし�
 
 自分の場合は、今年からMacBookProとiPadProの２つを利用しているため、それぞれに対して使えるのはもポイントが高いです。
 
-### iPadPro+ApplePencil2+SmartFolioKeyboard
+### iPadPro + ApplePencil2 + SmartFolioKeyboard
 
 <!--  -->
 <!-- TODO: 画像 -->
