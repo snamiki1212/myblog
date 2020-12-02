@@ -2,7 +2,7 @@
 title: '【15選】フリーランスエンジニアが2020年に買ってよかったもの'
 cover: 'cover.jpg'
 createdAt: '2020-11-27 22:00'
-updatedAt: '2020-11-27 22:00'
+updatedAt: '2020-12-01 17:00'
 category: 'その他'
 tags:
   - Tech
