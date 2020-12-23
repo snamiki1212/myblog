@@ -19,19 +19,20 @@ $ yarn start
 
 ```sh
 /myblog
-  /contents # ブログ記事
-  /types    # TSの型
-  /static   # 静的ファイル
-  /scripts  # シェル系
-  /data     # constantな値
-  /src      # アプリケーション
+  /contents    # ブログ記事
+  /data        # constantな値
+  /gatsby-node # 静的ファイルへのBuild時のGatsby処理
+  /scripts     # シェル系
+  /src         # アプリケーション
+  /static      # 静的ファイル
+  /types       # TSの型
 
-  # build結果
+  # build result -------------
   /public
   /node_modules
   /.cache
 
-  # config
+  # etc -------------
   /.github
   /.vscode
 ```
