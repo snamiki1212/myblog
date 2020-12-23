@@ -2,6 +2,7 @@
 
 | This repository is My blog's. | https://snamiki1212.com                                                                                                                                          |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Build Status                 | ![Build(& Deploy to Netlify)](https://github.com/snamiki1212/myblog/workflows/Build%20&%20Deploy%20to%20Netlify/badge.svg)
 | Deploy Status                 | ![Netlify](https://github.com/snamiki1212/myblog/workflows/Netlify/badge.svg?branch=master)
 | Twitter                       | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)                                                                                |
 | Tech Stack                    | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)                                          |
@@ -12,7 +13,7 @@
 $ yarn global add gatsby-cli
 $ yarn
 $ yarn start
-```
+``` 
 
 ## Directory
 
