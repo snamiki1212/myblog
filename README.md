@@ -89,6 +89,7 @@ $ yarn start
 ## Workflow
 
 ```
+CODE PUSH
  |
  V
 [Github Actions]
@@ -100,7 +101,7 @@ $ yarn start
  | |- Hosting
  |
  V
- finish!
+DONE
 ```
 
 ## TODO:
