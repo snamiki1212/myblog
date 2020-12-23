@@ -105,6 +105,7 @@ DONE
 
 - ~FIX: undisplay suggestion article images~
 - ~Refactor: gatsby-node/ts~
+- Test for markdown2react util
 - Type by GraphQL
 - AMP
 - CSS: optimize post css
