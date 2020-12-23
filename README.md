@@ -63,9 +63,6 @@ $ yarn start
   - `<dat>/<month>/<year>`
   - UTC タイムなので、[これ](http://www.timebie.com/timezone/universaljapan.php)とかで計算。
   - 例: `@prscheduler 15/01/2020T00:00` ⇒ 日本時間 09:00
-
-- `package.json`
-  - `rehype-react`: ver4系でないとうまく動かない。ver6系だとunifiedを組み合わせないといけない。ver5系はまだチェックしてない。
 - GraphQL
   - Fragment: GraphQLにて複数の要素を１つの塊として定義したもの。
   - `markdownRemark` > frontmatter > cover > childImageSharp > fluid 配下にて、`GatsbyImageSharpFluid`Fragmentが効かないので、Fragmentが指す内容を直接取得。allMarkdownRemarkの配下ではFragmentが取得できてるのでPluginの問題かも？
