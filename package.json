@@ -21,7 +21,7 @@
     "tlint": "textlint contents/**/index.md",
     "type-check": "tsc --noEmit",
     "test": "jest test",
-    "git:merge:starter/master": "git fetch starter/master;git merge starter/master --no-ff --no-commit"
+    "git:merge:starter/master": "git merge starter/master --no-ff --no-commit"
   },
   "dependencies": {
     "//": "rehype-react: ver4系でないとうまく動かない。ver6系だとunifiedを組み合わせないといけなくて、その上で現状の動きを再現するのがよくわからん、軽く触った出来るような気もするけど後回しにしてる。ver5系はチェックしてない。",
