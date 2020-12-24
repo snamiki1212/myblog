@@ -10,10 +10,23 @@
 ## Usage:
 
 ```zsh
+$ git clone <this-repo>
+$ git remote add origin  <this-repo>
+$ git remote add starter <this-original-starter-repo> # https://github.com/snamiki1212/gatsby-starter-lunash
+
+# package
 $ yarn global add gatsby-cli
 $ yarn
 $ yarn start
 ``` 
+
+## git
+
+```zsh
+# if you want to follow updated-version starter
+$ git fetch starter/master
+$ git merge starter/master
+```
 
 ## Directory
 
