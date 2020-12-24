@@ -9,7 +9,7 @@ export const renameMD = (contentsPath: string): any => {
   glob(`${contentsPath}/**/*.md`, (err, matches) => {
     if (err) throw err;
 
-    matches.forEach(match => {
+    matches.forEach((match) => {
       // ファイル名を変更
       const pathList = match.split('/');
       const lastIndex = pathList.length - 1;
@@ -18,7 +18,7 @@ export const renameMD = (contentsPath: string): any => {
 
       // 実行
       console.log(`old: ${match}, new:${newPath}`);
-      fs.rename(match, newPath, err => {
+      fs.rename(match, newPath, (err) => {
         if (err) throw err;
         console.log(`RENAME. old: ${match}, new: ${newPath}`);
       });

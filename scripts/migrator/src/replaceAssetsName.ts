@@ -17,18 +17,15 @@ export const replaceAssetsName = (contentsPath: string): any => {
     // console.log('assetsPathList[0]', assetsPathList[0]);
     const contentsDirList = Array.from(
       new Set(
-        allAssetsPathList.map(assetsPath =>
-          assetsPath
-            .split('/')
-            .slice(0, -1)
-            .join('/')
+        allAssetsPathList.map((assetsPath) =>
+          assetsPath.split('/').slice(0, -1).join('/')
         )
       )
     );
     console.log('contentsDirList', contentsDirList);
-    contentsDirList.forEach(contentDir => {
+    contentsDirList.forEach((contentDir) => {
       // assetsファイルパスを絞込
-      const assetsPathList = allAssetsPathList.filter(assetsPath => {
+      const assetsPathList = allAssetsPathList.filter((assetsPath) => {
         const re = new RegExp(contentDir);
         // console.log('assetsPath', assetsPath);
         return assetsPath.match(re);
@@ -45,17 +42,11 @@ export const replaceAssetsName = (contentsPath: string): any => {
       fs.readFile(markdownPath, 'utf8', (err, markdown) => {
         if (err) throw err;
 
-        const infoList = assetsPathList.map(oldAssetPath => {
+        const infoList = assetsPathList.map((oldAssetPath) => {
           // 定義
-          const oldFileName = oldAssetPath
-            .split('/')
-            .slice(-1)
-            .join('/');
+          const oldFileName = oldAssetPath.split('/').slice(-1).join('/');
           const newFileName =
-            oldFileName
-              .split('_')
-              .slice(-1)
-              .pop() || 'failed-file-name'; // 201912031234_1.jpg >> 1.jpg
+            oldFileName.split('_').slice(-1).pop() || 'failed-file-name'; // 201912031234_1.jpg >> 1.jpg
           const newAssetPath = [contentDir, newFileName].join('/');
 
           return {oldAssetPath, newAssetPath, oldFileName, newFileName};
@@ -85,7 +76,7 @@ export const replaceAssetsName = (contentsPath: string): any => {
         infoList.forEach(({oldAssetPath, newAssetPath, oldFileName}) => {
           failedFileNameList.includes(oldFileName)
             ? console.log('[skip]not to rename asset file', oldAssetPath)
-            : fs.rename(oldAssetPath, newAssetPath, err => {
+            : fs.rename(oldAssetPath, newAssetPath, (err) => {
                 if (err) throw err;
                 console.log(
                   `[rename]. old: ${oldAssetPath}, new: ${newAssetPath}`
