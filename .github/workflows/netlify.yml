@@ -19,15 +19,53 @@ jobs:
         with:
           node-version: 12.x
 
+
+      - name: Yarn cache directory
+        id: yarn-cache-dir
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Yarn cache
+        uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      # In order to make gatsby incremental build works, it's necessary .cache
+      # and public folder.
+      - name: Gatsby Cache Folder
+        uses: actions/cache@v1
+        id: gatsby-cache-folder
+        with:
+          path: .cache
+          key: ${{ runner.os }}-cache-gatsby
+          restore-keys: |
+            ${{ runner.os }}-cache-gatsby
+
+      - name: Gatsby Public Folder
+        uses: actions/cache@v1
+        id: gatsby-public-folder
+        with:
+          path: public/
+          key: ${{ runner.os }}-public-gatsby
+          restore-keys: |
+            ${{ runner.os }}-public-gatsby
+
       # Build
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
+
+      # Test
+      - run: yarn test --color
+        env:
+          CI: true
+
+      # Build
       - run: yarn run build:ci
         env:
           siteGATrackingID: ${{ secrets.SITE_GA_TRACKING_ID }}
           siteGSCTrackingID: ${{ secrets.SITE_GSC_TRACKING_ID }}
-
-      # Test
-      - run: yarn test
 
       # Delpoy
       - name: Deploy to Netlify
