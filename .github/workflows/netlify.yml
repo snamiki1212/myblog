@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 12.x
 
+      # Test
+      - run: yarn test
+
       # Build
       - run: yarn install
       - run: yarn run build:ci
