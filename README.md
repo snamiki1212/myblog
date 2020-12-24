@@ -7,6 +7,18 @@
 | Twitter                       | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)                                                                                |
 | Tech Stack                    | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)                                          |
 
+## NOTION
+
+- このリポジトリは [GitHub - snamiki1212/gatsby-starter-lunash](https://github.com/snamiki1212/gatsby-starter-lunash) をベースに作成していて常に更新を取り込みながらgit管理している。
+- このリポジトリでは下記のことについてのみ関心を持っている
+  - ブログ記事
+  - デプロイ周り(github-actions)
+  - このブログのconfig
+  - このREADME
+- 上記以外の内容（gatsby-node、component）などもこのrepoで管理しているが、それらはstarter/masterにて管理しているので、latestをこのrepoのmasterにmergeする運用にしてる。
+
+（正直、いけてない運用だと思ってるけどもっと良い方法を知らないので、イケてる方法をだれか教えて。。。）
+
 ## Usage:
 
 ```zsh
