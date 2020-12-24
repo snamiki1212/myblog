@@ -19,17 +19,17 @@ $ yarn start
 
 ```sh
 /myblog
-  /contents    # ブログ記事
-  /data        # constantな値
-  /gatsby-node # 静的ファイルへのBuild時のGatsby処理
-  /src         # アプリケーション
-  /static      # 静的ファイル
-  /types       # TSの型
+  /contents        # ブログ記事
+  /data            # constantな値
+  /gatsby-node     # 静的ファイルへのBuild時のGatsby処理
+  /src             # アプリケーション
+  /static          # 静的ファイル
 
   # build result -------------
-  /public
-  /node_modules
-  /.cache
+  /node_modules     # packages
+  /public           # gatsbyにて生成
+  /.cache           # gatsbyにて生成
+  /types            # TSの型。gatsby-plugin-tsにて生成。
 
   # etc -------------
   /.github
