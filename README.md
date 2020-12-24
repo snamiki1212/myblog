@@ -35,6 +35,7 @@ $ yarn start
   # etc -------------
   /.github
   /.vscode
+  /__mock__ # jestでのテスト時のasset用のmockとか
 ```
 
 ## Memo: Directory
