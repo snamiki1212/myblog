@@ -19,15 +19,15 @@ jobs:
         with:
           node-version: 12.x
 
-      # Test
-      - run: yarn test
-
       # Build
       - run: yarn install
       - run: yarn run build:ci
         env:
           siteGATrackingID: ${{ secrets.SITE_GA_TRACKING_ID }}
           siteGSCTrackingID: ${{ secrets.SITE_GSC_TRACKING_ID }}
+
+      # Test
+      - run: yarn test
 
       # Delpoy
       - name: Deploy to Netlify
