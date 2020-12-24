@@ -25,7 +25,7 @@ $ yarn start
 ```zsh
 # if you want to follow updated-version starter
 $ git fetch starter/master
-$ git merge starter/master
+$ git merge starter/master --no-ff --no-commit
 ```
 
 ## Directory
