@@ -59,23 +59,11 @@ jobs:
         env:
           CI: true
 
-      # - name: Build
-      #   run: yarn run build:ci
-      #   env:
-      #     siteGATrackingID: ${{ secrets.SITE_GA_TRACKING_ID }}
-      #     siteGSCTrackingID: ${{ secrets.SITE_GSC_TRACKING_ID }}
+      - name: Build
+        run: yarn run build:ci
 
-      # - name: Deploy to Netlify
-      #   uses: nwtgck/actions-netlify@v1.1
-      #   with:
-      #     publish-dir: './public'
-      #     production-branch: master
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
-      #     deploy-message: "Deploy from GitHub Actions"
-      #     enable-pull-request-comment: false
-      #     # enable-commit-comment: true
-      #     # overwrites-pull-request-comment: true
-      #   env:
-      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      #   timeout-minutes: 1
+      - name: Deploy to github-hosting
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
