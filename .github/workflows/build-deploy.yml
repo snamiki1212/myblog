@@ -1,5 +1,4 @@
-name: Build & Deploy to Netlify
-# REF: https://qiita.com/nwtgck/items/e9a355c2ccb03d8e8eb0
+name: Build & Deploy to Github-Hosting
 
 on:
   push:
