@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "types":["react", "jest"],
+    "lib":["esnext", "dom"]
+  },
+}

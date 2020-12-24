@@ -1,0 +1,45 @@
+// TODO: css ファイルで持たないで、css in js にして、管理したい
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+$fontVivid1: #9890e3;
+$fontGray1:#3e3a5e;
+$white: white;
+$blue: blue;
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  &:link, &:visited{
+    color: $fontVivid1;
+  }
+  &:hover{
+    color: $fontGray1;
+    transition: 0.5s;
+  }
+}
+
+.affi-custom-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #A5CC82;/*ボタン色*/
+  color: #FFF !important;
+  font-weight: bold;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.affi-custom-button:hover {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
