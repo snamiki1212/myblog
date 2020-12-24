@@ -22,7 +22,6 @@ $ yarn start
   /contents    # ブログ記事
   /data        # constantな値
   /gatsby-node # 静的ファイルへのBuild時のGatsby処理
-  /scripts     # シェル系
   /src         # アプリケーション
   /static      # 静的ファイル
   /types       # TSの型
