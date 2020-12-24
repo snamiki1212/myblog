@@ -3,19 +3,18 @@
 // set SiteConfig
 module.exports = {
   // for site
-  siteTitle: 'Lunash', // Site title.
-  siteTitleShort:
-    '先端技術を追いかけるエンジニアのブログ🌙 | ITテクノロジー💻、キャリア💼、買って良かったもの🏆、英語📝、など幅広く発信。', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitle: 'Gatsby Starter Lunash', // Site title.
+  siteTitleShort: 'This is gatsby starter a.k.a Lunash',
   siteTitleAlt: 'Lunash', // Alternative site title for SEO.
   siteLogo: '/logos/logo.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://snamiki1212.com', // Domain of your website without pathPrefix.
-  siteRepository: 'https://github.com/snamiki1212/myblog', // Repository of your site
+  siteUrl: 'https://example.com', // Domain of your website without pathPrefix.
+  siteRepository: 'https://github.com/snamiki1212/gatsby-starter-lunash', // Repository of your site
 
   // blog-card
   blogCardLogo: '/blogcard.png', // 暫定。参照先のOGPとか取りたい。
 
   // for RSS
-  siteDescription: '先端技術を追いかけるエンジニアのブログ', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'hogehoge', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
 
   // 3rd party
@@ -26,17 +25,16 @@ module.exports = {
   dateFromFormat: 'YYYY-MM-DD hh:mm', // Date format used in the frontmatter.
   dateFormat: 'YYYY/MM/DD', // Date format for display.
   userName: 'Nash', // Username to display in the author segment.
-  userTwitter: 'snamiki1212', // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: 'Shibuya, Japan', // User location to display in the author segment.
+  userTwitter: 'hoge', // Optionally renders "Follow Me" in the UserInfo segment.
+  userLocation: 'hoge', // User location to display in the author segment.
   userAvatar: '/logos/logo_48.jpg', // User avatar to display in the author segment.
-  userDescription:
-    'プログラミングが好きな人。SE→ITベンチャー→フリーランス。日本を出て、海外で働いて、最終ゴールは月で生活すること。', // User description to display in the author segment.
-  userIntroduction: 'Freelance Engineer', // short user introduction
-  jobTitle: 'SoftwareEngineer',
-  email: 'snamiki1212@gmail.com',
+  userDescription: 'hoge hoge', // User description to display in the author segment.
+  userIntroduction: 'Developer', // short user introduction
+  jobTitle: 'Developer',
+  email: 'example@exmaple.com',
 
   // for side-bar
-  autherName: 'Nash',
+  autherName: 'hoge',
 
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   mySocials: [

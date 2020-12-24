@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-lunash-blog",
-  "description": "Lunash Blog",
-  "version": "1.2.0",
+  "name": "gatsby-starter-lunash",
+  "description": "This is blog starter a.k.a Lunash",
+  "version": "1.0.0",
   "author": "Shun Namiki <snamiki1212@gmail.com>",
   "scripts": {
     "start": "gatsby develop",
