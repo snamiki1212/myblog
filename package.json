@@ -9,6 +9,7 @@
     "dev": "yarn run develop",
     "serve": "gatsby serve",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "build:gh-pages": "yarn gatsby build --log-pages --prefix-paths",
     "build:ci": "CI=true yarn gatsby build",
     "clean": "rm -rf public && rm -rf .cache",
     "clean:force": "yarn clean && rm -rf node_modules",

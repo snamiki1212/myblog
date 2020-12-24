@@ -5,6 +5,10 @@ const envConfig = require('./data/EnvConfig'); // eslint-disable-line @typescrip
 const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
 
 module.exports = {
+  /** <only gh-pages> */
+  pathPrefix: "/gatsby-starter-lunash",
+  /** </only gh-pages> */
+
   siteMetadata: {
     siteUrl: config.siteUrl,
 

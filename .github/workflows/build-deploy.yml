@@ -59,7 +59,7 @@ jobs:
           CI: true
 
       - name: Build
-        run: yarn run build:ci
+        run: yarn run build:gh-pages
 
       - name: Deploy to github-hosting
         uses: peaceiris/actions-gh-pages@v3
