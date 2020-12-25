@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import {ThemeProvider} from '@material-ui/styles';
 
 import {Navigation} from '../molecules';
+import {Footer} from '../atoms/Footer';
 
 import config from '../../../data/SiteConfig';
 import {theme} from '../../theme';
@@ -33,7 +34,7 @@ export const Layout: React.FC = ({children}) => {
             {children}
           </div>
 
-          <footer>{config.copyright}</footer>
+          <Footer />
         </Navigation>
       </ThemeProvider>
     </>
