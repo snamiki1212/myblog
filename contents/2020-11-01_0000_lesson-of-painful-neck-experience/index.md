@@ -3,7 +3,7 @@ title: '【買ったもの】首・肩を痛めたエンジニアの教訓'
 cover: 'cover.jpg'
 createdAt: '2020-11-01 17:00'
 updatedAt: '2020-11-01 17:00'
-category: 'Health'
+category: '雑記'
 tags:
   - Health
 slug: lesson-of-painful-neck-experience

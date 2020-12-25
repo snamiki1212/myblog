@@ -3,7 +3,7 @@ title: 'Netlify + Netlify CMS + GatsbyJS ( React + GraphQL )でブログ作っ�
 cover: 'cover.png'
 createdAt: '2019-01-03 21:07'
 updatedAt: '2019-01-03 21:07'
-category: 'Tech'
+category: '技術'
 tags:
   - Netlify
   - Gatsby

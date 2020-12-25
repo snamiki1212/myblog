@@ -3,7 +3,7 @@ title: 'カナダの学校に通ってESLクラスを修了した話'
 cover: 'cover.jpg'
 createdAt: '2020-12-18 20:00'
 updatedAt: '2020-12-24 20:00'
-category: 'World'
+category: '海外'
 tags:
   - 英語
   - 社会人学生

@@ -3,9 +3,9 @@ title: 'SE⇒Web 系への完全マップ｜転職という行動へ'
 cover: 'cover.png'
 createdAt: '2020-01-16 09:00'
 updatedAt: '2020-01-23 17:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: from-se-to-web
 word:
   - 'nothing'

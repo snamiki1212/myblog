@@ -3,7 +3,7 @@ title: '永年無料のEPOSゴールドカードを手に入れた話【１年�
 cover: 'cover.jpg'
 createdAt: '2020-01-21 09:00'
 updatedAt: '2020-01-21 09:00'
-category: 'その他'
+category: '雑記'
 tags:
   - クレカ
 slug: get-epos-gold

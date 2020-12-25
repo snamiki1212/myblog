@@ -3,7 +3,7 @@ title: '1週間Rustを学習して完全に理解したのでファーストイ�
 cover: 'cover.jpg'
 createdAt: '2020-07-23 01:00'
 updatedAt: '2020-08-02 22:00'
-category: 'Tech'
+category: '技術'
 tags:
   - Rust
 slug: rust-first-impression

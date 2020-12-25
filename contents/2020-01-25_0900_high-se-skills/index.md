@@ -3,9 +3,9 @@ title: '【転職可能】上流 SE のスキルを整理【オススメ３選�
 cover: 'cover.jpg'
 createdAt: '2020-01-25 09:00'
 updatedAt: '2020-01-25 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: high-se-skills
 word:
   - '上流 SE スキル'

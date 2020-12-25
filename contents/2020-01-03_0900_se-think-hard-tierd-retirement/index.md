@@ -3,7 +3,7 @@ title: 'SEで「つらい、疲れた、辞めたい人」が読む記事【実�
 cover: 'cover.png'
 createdAt: '2020-01-03 09:00'
 updatedAt: '2020-01-30 20:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
   - キャリア
   - SE転職

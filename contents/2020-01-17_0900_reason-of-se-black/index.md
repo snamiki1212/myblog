@@ -3,9 +3,9 @@ title: '【完全理解】SIer業界 がブラックな理由を解説【わか�
 cover: 'cover.png'
 createdAt: '2020-01-17 09:00'
 updatedAt: '2020-02-24 15:30'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: reason-of-se-black
 word:
   - 'SIer ブラック'

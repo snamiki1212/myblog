@@ -3,9 +3,9 @@ title: '大手SIerからWeb系エンジニアへの転職理由【７選／経�
 cover: 'cover.png'
 createdAt: '2020-01-29 09:00'
 updatedAt: '2020-01-29 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: reason-of-change-from-sier-to-web
 word:
   - 'sier web 転職 理由'

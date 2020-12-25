@@ -3,9 +3,9 @@ title: '「SE でプログラミングができない人」に向けてキャリ
 cover: 'cover.png'
 createdAt: '2020-01-11 12:00'
 updatedAt: '2020-01-11 12:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: se-cannot-do-programming
 word:
   - 'SE プログラミング できない'

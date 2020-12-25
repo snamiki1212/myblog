@@ -3,7 +3,7 @@ title: 'フリーランスエンジニアになって約１年半が経ったの
 cover: 'cover.jpg'
 createdAt: '2020-05-24 10:00'
 updatedAt: '2020-06-02 10:00'
-category: 'Career'
+category: 'キャリア'
 tags:
   - フリーランス
 slug: freelance-one-year

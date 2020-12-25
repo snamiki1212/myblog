@@ -3,7 +3,7 @@ title: '【セブ留学】日本資本の学校に通ってきた【フィリピ
 cover: cover.jpg
 createdAt: '2019-03-30 12:31'
 updatedAt: '2019-03-30 12:31'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

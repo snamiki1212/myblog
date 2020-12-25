@@ -3,7 +3,7 @@ title: 'react-router/react-router-transitionを使ってサンプルアプリを
 cover: 'cover.jpg'
 createdAt: '2019-05-07 19:00'
 updatedAt: '2019-05-07 19:00'
-category: 'Tech'
+category: '技術'
 tags:
   - React
   - TypeScript

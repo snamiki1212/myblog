@@ -3,9 +3,9 @@ title: '「SIer／SE にブラックしかない」は本当か【転職済／�
 cover: 'cover.png'
 createdAt: '2020-01-31 09:00'
 updatedAt: '2020-01-31 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: only-black-sier-se
 word:
   - 'SIer ブラックしかない'

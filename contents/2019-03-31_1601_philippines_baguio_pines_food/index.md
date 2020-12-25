@@ -3,7 +3,7 @@ title: 'フィリピンの食べ物を侮っていた話【留学失敗？学校
 cover: cover.jpg
 createdAt: '2019-03-31 16:01'
 updatedAt: '2019-03-31 16:01'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

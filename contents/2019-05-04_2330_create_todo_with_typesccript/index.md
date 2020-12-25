@@ -3,7 +3,7 @@ title: 'React+Redux+TypeScriptでToDoアプリを作った話'
 cover: 'cover.jpg'
 createdAt: '2019-05-04 23:30'
 updatedAt: '2019-05-04 23:30'
-category: 'Tech'
+category: '技術'
 tags:
   - React
   - Redux

@@ -3,7 +3,7 @@ title: 'ReactのContextAPIでの正規化をReduxと比較'
 cover: 'cover.png'
 createdAt: '2019-12-14 00:00'
 updatedAt: '2019-12-14 00:00'
-category: 'Tech'
+category: '技術'
 tags:
   - React
   - Redux

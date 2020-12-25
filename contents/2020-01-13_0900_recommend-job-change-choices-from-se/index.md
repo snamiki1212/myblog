@@ -3,9 +3,9 @@ title: 'SE から異業種への転職先【おすすめ３選】'
 cover: 'cover.png'
 createdAt: '2020-01-13 09:00'
 updatedAt: '2020-01-13 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: recommend-job-change-choices-from-se
 word:
   - 'SE 転職先'

@@ -3,7 +3,7 @@ title: '【フィリピン留学】日本資本・韓国資本の学校を比較
 cover: cover.jpg
 createdAt: '2019-03-30 12:00'
 updatedAt: '2019-03-30 12:00'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

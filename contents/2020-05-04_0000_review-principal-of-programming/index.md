@@ -3,7 +3,7 @@ title: '【書評】『プリンシプルオブプログラミング』は3年�
 cover: 'cover.png'
 createdAt: '2020-05-04 01:00'
 updatedAt: '2020-09-19 17:00'
-category: 'Tech'
+category: '技術'
 tags:
   - 書評
 slug: review-principal-of-programming

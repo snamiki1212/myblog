@@ -3,7 +3,7 @@ title: 'スキルが身につかないままのSE⇒リストラです【チャ�
 cover: 'cover.png'
 createdAt: '2020-01-24 09:00'
 updatedAt: '2020-01-24 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
   - SE転職
 slug: no-skill-leads-fire

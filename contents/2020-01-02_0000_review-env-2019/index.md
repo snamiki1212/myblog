@@ -3,7 +3,7 @@ title: '2019年｜開発環境の振り返り'
 cover: 'cover.png'
 createdAt: '2020-01-02 00:00'
 updatedAt: '2020-01-02 00:00'
-category: 'Tech'
+category: '技術'
 tags:
   - レビュー
 slug: review-env-2019

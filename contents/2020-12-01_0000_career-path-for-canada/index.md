@@ -3,7 +3,7 @@ title: 'フリーランスエンジニアのキャリアパスでカナダ移住
 cover: 'cover.jpg'
 createdAt: '2020-12-01 20:00'
 updatedAt: '2020-12-25 20:00'
-category: 'Career'
+category: 'キャリア'
 tags:
   - カナダ
   - 海外移住

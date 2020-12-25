@@ -3,9 +3,9 @@ title: 'Webエンジニアの「将来性がない」は本当か？→むしろ
 cover: 'cover.png'
 createdAt: '2019-08-27 00:00'
 updatedAt: '2020-01-07 12:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: future-of-web-engineer
 word:
   - 'Webエンジニア 将来性 ない'

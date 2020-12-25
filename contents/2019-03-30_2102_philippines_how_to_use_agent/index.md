@@ -3,7 +3,7 @@ title: '留学エージェントを使った、おすすめの学校探し【エ
 cover: cover.jpg
 createdAt: '2019-03-30 21:02'
 updatedAt: '2019-03-30 21:02'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

@@ -3,7 +3,7 @@ title: 'URLからMarkdownへ変換するAlfredWorkflowをGoで作って公開し
 cover: 'cover.png'
 createdAt: '2020-03-20 20:00'
 updatedAt: '2020-03-20 20:00'
-category: 'Tech'
+category: '技術'
 tags:
   - golang
   - Alfred

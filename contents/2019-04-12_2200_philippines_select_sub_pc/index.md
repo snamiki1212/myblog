@@ -3,7 +3,7 @@ title: 'フィリピン留学用にサブPCを選定した話【IT留学じゃ�
 cover: cover.jpg
 createdAt: '2019-04-12 22:00'
 updatedAt: '2019-04-12 22:00'
-category: 'Tech'
+category: '技術'
 tags:
   - PC
   - フィリピン留学

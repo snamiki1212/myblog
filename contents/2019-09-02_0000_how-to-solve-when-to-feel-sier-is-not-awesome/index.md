@@ -3,9 +3,9 @@ title: '【完全解決】SIerで、つまらないと感じたら？【経験�
 cover: 'cover.jpg'
 createdAt: '2019-09-02 00:00'
 updatedAt: '2019-12-20 00:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: how-to-solve-when-to-feel-sier-is-not-awesome
 word:
   - 'sier つまらない'

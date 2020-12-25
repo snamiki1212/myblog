@@ -3,7 +3,7 @@ title: '【退職エントリ】渋谷のWeb系ベンチャーを退職しまし
 cover: 'cover.jpg'
 createdAt: '2018-11-07 00:00'
 updatedAt: '2020-01-07 00:00'
-category: 'Career'
+category: 'キャリア'
 tags:
   - レビュー
   - キャリア

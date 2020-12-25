@@ -3,7 +3,7 @@ title: '【Elixir】Enumを完全に理解する | 効率的なEnumの学習方�
 cover: 'cover.png'
 createdAt: '2018-12-04 12:28'
 updatedAt: '2018-12-04 12:28'
-category: 'Tech'
+category: '技術'
 tags:
   - Elixir
 slug: elixir-enum-master

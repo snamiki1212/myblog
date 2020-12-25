@@ -3,7 +3,7 @@ title: '【PINES｜バギオ】新校舎の「サービス」を体験してき�
 cover: cover.jpg
 createdAt: '2019-03-31 16:00'
 updatedAt: '2019-03-31 16:00'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

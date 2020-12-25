@@ -3,7 +3,7 @@ title: '【実体験】Twitter 転職してエンジニア採用された話'
 cover: 'cover.png'
 createdAt: '2020-01-14 09:00'
 updatedAt: '2020-01-14 09:00'
-category: 'Career'
+category: 'キャリア'
 tags:
   - Twitter転職
 slug: twitter-job-change-story

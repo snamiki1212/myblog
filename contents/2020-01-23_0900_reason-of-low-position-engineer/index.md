@@ -3,9 +3,9 @@ title: '【SE】SIer業界での技術軽視の理由【PM】'
 cover: 'cover.png'
 createdAt: '2020-01-23 09:00'
 updatedAt: '2020-01-23 11:30'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: reason-of-low-position-engineer
 word:
   - 'nothing'

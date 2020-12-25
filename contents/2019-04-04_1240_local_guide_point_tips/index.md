@@ -3,7 +3,7 @@ title: 'ローカルガイドのコツは１つ←画像投稿しろ【ポイン
 cover: cover.jpg
 createdAt: '2019-04-04 12:40'
 updatedAt: '2019-04-04 12:40'
-category: 'LOCAL_GUIDE'
+category: 'ローカルガイド'
 tags:
   - ローカルガイド
 slug: local-guide-point-tips

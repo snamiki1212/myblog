@@ -3,11 +3,11 @@ title: '【PINES｜バギオ】パインスを完全レビュー【経験談】'
 cover: cover.jpg
 createdAt: '2019-03-27 23:30'
 updatedAt: '2019-03-27 23:30'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語
-  - 海外生活
+  - 海外移住
 slug: philippines-baguio-pines-summary
 SEO-keyword:
   - PINES バギオ

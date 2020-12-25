@@ -3,7 +3,7 @@ title: 'ReactでQiitaのアプリケーションを作った話'
 cover: 'cover.png'
 createdAt: '2018-12-02 00:04'
 updatedAt: '2018-12-02 00:04'
-category: 'Tech'
+category: '技術'
 tags:
   - React
 slug: create-qiita-viewer-with-react

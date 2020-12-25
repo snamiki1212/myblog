@@ -3,9 +3,9 @@ title: 'ITエンジニアにとっての「技術力」はどういう意味か�
 cover: 'cover.png'
 createdAt: '2020-01-05 00:00'
 updatedAt: '2020-01-05 00:00'
-category: 'Career'
+category: 'キャリア'
 tags:
-  - Career
+  - キャリア
 slug: what-is-skill-of-it
 ---
 

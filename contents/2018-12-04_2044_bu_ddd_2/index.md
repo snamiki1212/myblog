@@ -3,7 +3,7 @@ title: '「第二回ボトムアップドメイン駆動設計」に行ってき
 cover: 'cover.jpg'
 createdAt: '2018-12-04 20:44'
 updatedAt: '2018-12-04 20:44'
-category: 'Tech'
+category: '技術'
 tags:
   - DDD
 slug: bu-ddd-2

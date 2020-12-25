@@ -3,9 +3,9 @@ title: '【SE】ブラックじゃない環境へ行く選択肢【４選】'
 cover: 'cover.png'
 createdAt: '2020-01-22 09:00'
 updatedAt: '2020-01-23 01:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: leave-from-black-sier
 word:
   - 'SE ブラック じゃない'
