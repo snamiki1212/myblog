@@ -1,8 +1,8 @@
 ---
-title: '【実体験】IT エンジニアがタイで生活してみた結果⇒オススメです'
+title: '【実体験】IT エンジニアがタイに移住してみた結果⇒オススメです'
 cover: 'cover.jpg'
 createdAt: '2020-01-07 00:00'
-updatedAt: '2020-01-07 00:00'
+updatedAt: '2020-12-25 16:00'
 category: 'World'
 tags:
   - World
@@ -10,7 +10,7 @@ tags:
 slug: recommend-thai-to-live-as-engineer
 ---
 
-# 【実体験】IT エンジニアがタイで生活してみた結果⇒オススメです
+# 【実体験】IT エンジニアがタイに移住してみた結果⇒オススメです
 
 こんにちは、フィリピンでの生活はつらみが多すぎた Nash です。
 
@@ -18,13 +18,11 @@ slug: recommend-thai-to-live-as-engineer
 
 タイで下記のことをしてきました。
 
-- 生活していた期間は 1 ヶ月未満。（2019/4-5）
-- 現地就職したわけではない。
-- 日本の仕事をリモートでしてた
-- プライベート時間で勉強してたり、ブログ書いてた
-- 2〜3 日に 1 日は旅行してた
+- 期間：だいたい 1 ヶ月（2019/4-5）
+- 仕事：日本の仕事をリモートワーク（現地就職じゃない）
+- 旅行：2〜3 日に 1 日は旅行してた
 
-みたいな感じです。
+「移住」と書きましたが、正確には「滞在」くらいの温度感のほうが適切かもしれないですね。
 
 この結果を先に書きます。
 
@@ -34,11 +32,11 @@ slug: recommend-thai-to-live-as-engineer
 
 というわけでオススメです。
 
-## タイで生活してきた。
+## タイへ移住する！
 
 ![live-in-thai](./cover.jpg)
 
-タイの生活の前は、フィリピンで生活していたので、日本だけでなくてフィリピンとの比較の観点がいろいろ混ざったレビューになります。
+タイへ移住する前はフィリピンで生活していたので、日本だけでなくてフィリピンとの比較の観点がいろいろ混ざったレビューになります。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">フィリピンにさよならをしたが<br><br>次は、こんにちはタイ <a href="https://t.co/r1zElYIKhr">pic.twitter.com/r1zElYIKhr</a></p>&mdash; Nash⚡️Next.jsとRN書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1122503512951156736?ref_src=twsrc%5Etfw">April 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
