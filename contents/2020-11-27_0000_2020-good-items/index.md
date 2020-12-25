@@ -13,7 +13,7 @@ word:
   - nothing
 ---
 
-
+<!-- REF:アドベントカレンダー：https://adventar.org/calendars/5621 -->
 # 2020年｜フリーランスエンジニアが買ってよかったもの
 
 こんにちは、Nashです。

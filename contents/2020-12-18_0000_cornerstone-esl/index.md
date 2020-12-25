@@ -12,6 +12,7 @@ word:
   - nothing
 ---
 
+<!-- AdventCalendar: https://adventar.org/calendars/5977 -->
 # カナダの学校に通ってESLクラスを修了した話
 
 こんにちは、北米で生活してるNashです。
