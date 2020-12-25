@@ -46,23 +46,7 @@ word:
 
 ### カナダとコロナ
 
-もともと自分は 2020 年 4 月にカナダに渡航予定だった。そこでコロナがドンピシャにぶつかって来たので、入国禁止になり、すべてのスケジュールがペンディング。
-
-そこから「いつ行けるか？」がわからない状態が長く続く。しかも、カナダに行くためにフリーランスの仕事もストップしてる状態だったこともあり、やることも無い。かなりグダグダな日を過ごしてしまった。
-
-<!-- Twitter -->
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">春にカナダへ行く予定だったけどコロナでプランが崩壊したショックがデカすぎたので、最近はひたすら家であつ森してた<br><br>そろそろ精神衛生も回復したのでTwitterも再開するかな</p>&mdash; Nash⚡️北米にいる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1250775061323120640?ref_src=twsrc%5Etfw">April 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!--  -->
-
-「このままグダグダするのも良くない！」と思って 2020 年 6-7 月くらいから仕事を見つけて再開することにした。が、まさかの 2020 年 8 月ごろに急遽カナダへ行ける状態になった。だけど、すでに仕事をこの時期に入れてしまっていたのでカナダ渡航がまたしても延長することに。。。
-
-結局、最終的に 2020 年 11 月にカナダに来ることは出来た。
-
-<!-- Twitter -->
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ようやく長かった14日の隔離期間が終わって外出できるようになったー！！<br><br>というわけで、カナダ来てます <a href="https://t.co/7upuQyhkWG">https://t.co/7upuQyhkWG</a></p>&mdash; Nash⚡️北米にいる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1334933382015291393?ref_src=twsrc%5Etfw">December 4, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!--  -->
-
-2020年の半年以上を日本で下手に溶かしてしまったが悔やまれる。たらればがあるとすれば、しばらくはカナダのことを完全に置いておいて、違う勉強をするなり、すぐに仕事を再開すればよかった。または、逆に夏まで辛抱強く待てばカナダに2020年8月には来れた。中途半端に再開した結果、どっちも中途半端になってしまったので残念ではある。とはいえ、あとから見ても結果論なので「仕方がない」と思うようにしてる。
+TODO: 記事を書いたので、そっちに差し替える
 
 ### 健康
 
