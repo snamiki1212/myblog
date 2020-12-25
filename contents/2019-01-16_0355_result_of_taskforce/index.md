@@ -5,7 +5,6 @@ createdAt: '2019-01-16 03:55'
 updatedAt: '2019-01-16 03:55'
 category: 'Career'
 tags:
-  - Career
   - マネジメント
 slug: result-of-taskforce
 ---

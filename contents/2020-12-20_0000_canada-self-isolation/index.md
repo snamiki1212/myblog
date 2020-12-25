@@ -5,7 +5,9 @@ createdAt: '2020-12-20 20:00'
 updatedAt: '2020-12-20 20:00'
 category: 'World'
 tags:
-  - 社会人
+  - カナダ
+  - 海外移住
+  - コロナ
 slug: 2020-covid-self-isolation
 word:
   - nothing

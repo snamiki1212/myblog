@@ -5,7 +5,8 @@ createdAt: '2020-01-03 09:00'
 updatedAt: '2020-01-30 20:00'
 category: 'Career:SEtoWeb'
 tags:
-  - Career
+  - キャリア
+  - SE転職
 slug: se-think-hard-tierd-retirement
 word:
   - 'SE つらい'

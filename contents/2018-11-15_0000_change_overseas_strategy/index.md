@@ -5,8 +5,8 @@ createdAt: '2018-11-15 00:00'
 updatedAt: '2018-11-15 00:00'
 category: 'Career'
 tags:
-  - Career
-  - World
+  - キャリア
+  - 海外就職
 slug: change-overseas-strategy
 ---
 

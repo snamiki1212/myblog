@@ -5,7 +5,7 @@ createdAt: '2020-03-25 02:00'
 updatedAt: '2020-03-25 02:00'
 category: 'Career'
 tags:
-  - Career
+  - SE転職
 slug: review-midworks
 word:
   - nothing

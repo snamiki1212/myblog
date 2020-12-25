@@ -5,7 +5,8 @@ createdAt: '2020-01-06 00:00'
 updatedAt: '2020-08-22 00:00'
 category: 'Career'
 tags:
-  - Career
+  - キャリア
+  - CS
 slug: background-knowledge-about-cs
 ---
 

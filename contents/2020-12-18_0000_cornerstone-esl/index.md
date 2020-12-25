@@ -6,7 +6,10 @@ updatedAt: '2020-12-24 20:00'
 category: 'World'
 tags:
   - 英語
-  - 社会人
+  - 社会人学生
+  - カナダ
+  - 海外移住
+  - コロナ
 slug: cornerstone-esl
 word:
   - nothing

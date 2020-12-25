@@ -5,7 +5,7 @@ createdAt: '2020-01-24 09:00'
 updatedAt: '2020-01-24 09:00'
 category: 'Career:SEtoWeb'
 tags:
-  - Career
+  - SE転職
 slug: no-skill-leads-fire
 word:
   - 'スキル 身につかない SE'

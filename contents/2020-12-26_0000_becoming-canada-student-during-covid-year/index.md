@@ -5,7 +5,9 @@ createdAt: '2020-12-26 20:00'
 updatedAt: '2020-12-26 20:00'
 category: 'World'
 tags:
-  - 社会人
+  - カナダ
+  - 海外移住
+  - コロナ
 slug: becoming-canada-student-during-covid-year
 word:
   - nothing

@@ -5,7 +5,8 @@ createdAt: '2020-12-25 20:00'
 updatedAt: '2020-12-25 20:00'
 category: 'World'
 tags:
-  - 社会人
+  - カナダ
+  - 海外移住
 slug: vancouver-vs-japan
 word:
   - カナダ 移住

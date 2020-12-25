@@ -5,7 +5,10 @@ createdAt: '2020-12-12 20:00'
 updatedAt: '2020-12-12 20:00'
 category: 'World'
 tags:
-  - 移住
+  - カナダ
+  - タイ
+  - フィリピン
+  - 海外移住
 slug: immigration-contries
 word:
   - nothing

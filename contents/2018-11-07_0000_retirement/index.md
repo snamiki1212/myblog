@@ -6,7 +6,7 @@ updatedAt: '2020-01-07 00:00'
 category: 'Career'
 tags:
   - レビュー
-  - Career
+  - キャリア
 slug: retirement-from-company-1
 ---
 

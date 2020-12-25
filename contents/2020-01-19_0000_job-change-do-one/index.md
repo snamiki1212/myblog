@@ -5,7 +5,7 @@ createdAt: '2020-01-19 09:00'
 updatedAt: '2020-01-19 09:00'
 category: 'Career'
 tags:
-  - Career
+  - SE転職
 slug: job-change-do-one
 word:
   - 'nothing'

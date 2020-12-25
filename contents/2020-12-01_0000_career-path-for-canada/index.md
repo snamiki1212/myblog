@@ -5,7 +5,9 @@ createdAt: '2020-12-01 20:00'
 updatedAt: '2020-12-25 20:00'
 category: 'Career'
 tags:
-  - 移住
+  - カナダ
+  - 海外移住
+  - 海外就職
 slug: career-path-for-canada
 word:
   - フリーランス エンジニア キャリアパス

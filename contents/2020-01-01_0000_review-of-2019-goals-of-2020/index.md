@@ -5,7 +5,8 @@ createdAt: '2020-01-01 00:00'
 updatedAt: '2020-01-03 00:00'
 category: 'Career'
 tags:
-  - Career
+  - キャリア
+  - 振り返り
 slug: review-of-2019-goals-of-2020
 ---
 
