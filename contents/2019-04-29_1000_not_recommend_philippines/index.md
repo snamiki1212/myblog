@@ -1,8 +1,8 @@
 ---
-title: 'ITエンジニア目線でフィリピンをおすすめしない理由←3ヶ月滞在の結論'
+title: 'Webエンジニア目線でフィリピン移住をおすすめしない理由⇐3 ヶ月滞在の結論'
 cover: 'cover.jpg'
 createdAt: '2019-04-29 10:00'
-updatedAt: '2019-01-07 11:40'
+updatedAt: '2020-12-24 11:40'
 category: 'World'
 tags:
   - フィリピン留学
@@ -10,42 +10,47 @@ tags:
 slug: not-recommend-philippines
 ---
 
-# IT エンジニア目線でフィリピンをおすすめしない理由 ←3 ヶ月滞在の結論
+# Webエンジニア目線でフィリピン移住をおすすめしない理由⇐3 ヶ月滞在の結論
 
-こんにちは。フィリピン留学で 2 つの学校を卒業した Nash です。
+こんにちは。フィリピン留学を終えて 2 つの学校を卒業した Nash です。
 
-この記事は、自分がフィリピンでの 2 つの学校での語学留学に通いながら、フリーランスとして開発をした上でわかった知見をまとめたものです。
+この記事は
+「**リモートで日本の仕事をしながら、フィリピンで生活して語学学校へ留学したことでわかった気付きをまとめた記事**」
+になります。
 
-結論は
+結論ですが、タイトルにもありますが「**フィリピン長期滞在はおすすめしない**」です。（2019 年時点かつ主観的な意見）
 
-- <b>ノマドワーカーはフィリピン(セブ or バギオ)にて、滞在しながら働くのはおすすめしない</b>
+その理由はとして「**フィリピンの生活水準が低すぎて普通に暮らすことですら負担が大きい**」だからです。
 
-- <b>フィリピンに長期で生活すること自体をあまり、おすすめしない</b>
+もちろんフィリピンの良い点などもありましたので、１つずつ細かく見ていきましょう。
 
-です。※2019 年時点かつ主観的な意見です
+## IT エンジニア目線でフィリピン移住をおすすめしない理由
 
-その理由は、
+先に自分の実体験の背景について書いておきます。
 
-「<b>英語が使える環境かつリゾートは良い反面、ネットワークインフラが整っていないのと、フィリピンの生活水準が低すぎて普通に暮らすことですら負担が大きい</b>」となります。
+- 期間：2019/2〜2019/5(3ヶ月くらい)
+- 場所：セブ・バギオ
+- 内容：２箇所の学校に留学
 
-基本的に、エンジニア目線での記述ですが、たいてい同じ観点がネックになるかと思います。
+滞在期間はそこまで長くないですが、２箇所のエリアにて生活してきましたので、それなりに説得力があるかと思います。
 
-では、見ていきましょう。
-
-## IT エンジニア目線で、フィリピンをおすすめしない理由
+### ２つの切り口
 
 大きく分けて、下記の２点の切り口で見ていきます。
 
-- 仕事に直結する観点　＝　ネットワーク
-- 仕事に直結しない観点　＝　生活の質
+1. 仕事に直結する観点　＝　インターネット・ネットワーク
+2. 仕事に直結しない観点　＝　生活の質
 
-実際、「生活の質の低下」は「生産性の低下」に繋がっていたので、そこも言及していきます。
+２つ目の「生活の質の低下」は「生産性の低下」に繋がっていたので、そこも言及していきます。
 
 ### ネットワークが遅い・不安定
 
-この観点は仕事に直結する観点なので、詳しく見ていきますね。とはいえ残念ながら、<b>ネットワークについての結論は、Wifi・SIM のネットワークが「遅い」かつ「不安定＝繋がらなくなるときがある」</b>です。
+この観点は仕事に直結する観点なので詳しく見ていきますね。
 
-では見ていきます。
+とはいえ残念ながら、ネットワークについての結論は下記の通りです。
+
+- 速度：Wifi・SIM のネットワークは「遅い」
+- 安定：不安定で繋がらなくなるときが多い
 
 ### ネットワーク【ペンション】
 
@@ -53,17 +58,31 @@ slug: not-recommend-philippines
 
 自分が滞在していたペンションに Wifi があり、初日に確認したところ 35Mbps ありました。
 
+<!-- Twitter -->
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 44: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>・２つ目の学校に到着<br><br>・生活雑貨品の購入してたら一日が終わった<br><br>・寮のWifi速度が早くて歓喜。これでやっと仕事を再開できる・・・。 <a href="https://t.co/s0rEigaa8X">pic.twitter.com/s0rEigaa8X</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1107437001056223232?ref_src=twsrc%5Etfw">2019年3月18日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--  -->
 
-「この速度なら十分仕事できるな」と思っていたのですが、実際はかなり不安定なケースが多いです。
-「日によって繋がらない」「時間によって繋がらない」「時間によって激遅になる」と、ネットサーフィンですらかなり厳しい状況でした。
+「この速度なら十分仕事できるな」と思っていたのですが、実際はかなり不安定なケースが多かったです。
+
+- 日によって繋がらない
+- 時間によって繋がらない
+- 時間によって激遅になる
+
+正直、普通のネットサーフィンですらかなり厳しい状況でした。
 
 →<b>ペンションは、ネットワークが弱いので作業できる場所を探しに外出しないといけない</b>
 
 ### ネットワーク【SIM】
 
-遅いです。3G レベルの速度です。自分は、SIM ＝ Globe 社／スマホ＝ iPhoneXR を使っていました。スマホの性能が高くてもネットワークの遅さに引きづられて、結果として速度は遅いです。
+遅いです。3G レベルの速度です。
+自分はの環境として下記の通りです。
+
+- SIM ＝ Globe 社（フィリピンの大手SIM）
+- スマホ＝ iPhoneXR
+
+スマホの性能は高かったですがネットワーク遅さに引きづられてました。
+結果としてインターネットは満足に使えないレベルで遅いです。
 
 →<b>ネットワークがボトルネックになるので、高性能なスマホでもネットサーフィンは遅い</b>
 
@@ -71,8 +90,10 @@ slug: not-recommend-philippines
 
 いろいろなカフェを巡って Wifi を探し回りましたが、そちらの結果も同じです。速度はたいてい約 5Mbps。ただ、カフェの利用者の人数に比例して速度がどんどん遅くなります。<b>一番最悪なケースは約 30Kbps でした。</b>ADSL かな。
 
+<!-- Twitteｒ -->
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 62: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a><br><br>✅Wifiが爆速と有名なカフェですら、人が多いと速度が遅くなるし、そもそも他の場所の選択肢が少なすぎて、すぐWifi難民になる<br><br>→結論：今のフィリピンは、ノマドで仕事をする人にとっては、まだインフラが整ってなくて辛い</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1114921337816899585?ref_src=twsrc%5Etfw">2019年4月7日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--  -->
 
 また、カフェのネットワークも不安定なので、5 分くらい繋がらない状態によくなります。開発をしていると、これが原因でゾーンから抜けてしまうことが多いです。
 
@@ -82,8 +103,10 @@ slug: not-recommend-philippines
 
 土日に自由参加で使えるようだったので、某有名 IT 会社のオフィスにお邪魔して作業をしてみました。ですが、むしろ<b>カフェよりも Wifi が安定していないレベル</b>です。
 
+<!-- Twitter -->
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 66: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a><br><br>✅某IT会社のワークスペースに遊びに行ったけど、滞在時間の1/3くらい接続出来ないくらいネットワークが不安定だった<br><br>→会社のWifiですらこのレベルとなると、フィリピンという国単位でネットワークインフラがまだまだ弱すぎる</p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1117212811027836928?ref_src=twsrc%5Etfw">2019年4月13日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--  -->
 
 知名度がありかつ、「ネットワーク環境が良い」と聞いていただけに、かなり落胆しました。
 
@@ -93,8 +116,10 @@ slug: not-recommend-philippines
 
 Wifi のネットワークが安定・早いで、かなり快適でした。
 
+<!-- Twitter -->
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 67: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a><br><br>「WorkPlaceCafe」というワーキングスペースで仕事してた😇<br><br>5時間くらい作業してたけど、ネットが途切れない環境はフィリピンで初めて😭<br><br>日本と同じくらいネットが安定してる場所で久しぶりに作業したけど、作業効率がやっぱ全然違う <a href="https://t.co/jrGgnCHBxs">pic.twitter.com/jrGgnCHBxs</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1117441447064510466?ref_src=twsrc%5Etfw">2019年4月14日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--  -->
 
 滞在時間に対してお金がかかりますが、カフェに比べてもあまり変わらないです。ただ、店舗が限られてくるので拠点の近くにないと、わざわざタクシーなどで向かわないといけないのは、かなり負担が高いかと思います。
 
