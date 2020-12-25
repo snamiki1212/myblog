@@ -2,10 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
-import {colors} from '../../../data/color';
 import {CategoryPageContext} from '../../../gatsby-node/types';
 import Layout from '../organisms/Layout';
 import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
+import {CategoryBanner} from '../atoms/CategoryBanner';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -28,8 +28,8 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         postEdges={postEdges}
         context={pageContext}
         description={
-          <div style={{paddingTop: '30px', paddingLeft: '50px'}}>
-            <div>▶{category}</div>
+          <div style={{margin: '0 30px'}}>
+            <CategoryBanner categoryName={category} />
           </div>
         }
       />
