@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {blogCard} from '../../../data/SiteConfig';
+import {blogCardLogo} from '../../../data/SiteConfig';
 
 const altImg =
   'https://user-images.githubusercontent.com/26793088/72956432-1193f080-3de3-11ea-844d-a39a6a4a18bb.png';
@@ -40,7 +40,8 @@ export const BlogCard: React.FC<Props> = ({
   //   });
   /** ここまで */
 
-  const imgUrl = blogCard || altImg;
+  const imgUrl = blogCardLogo || altImg;
+
   return (
     <Container>
       <Image src={imgUrl} />

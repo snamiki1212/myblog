@@ -2,4 +2,13 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
+Disallow: */2
+Disallow: */3
+Disallow: */4
+Disallow: */5
+Disallow: */6
+Disallow: */7
+Disallow: */8
+Disallow: */9
+
 sitemap: https://snamiki1212.com/sitemap.xml

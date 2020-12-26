@@ -8,6 +8,8 @@ const mobileWidth = '680px';
 
 const fontColorNormal = colors.black1;
 const fontColorHeadline = colors.black1;
+const tableLineColor = colors.grayDark;
+const boxBackgroundColor = colors.grayLight;
 const hLeft = colors.hLeft;
 
 const mixinHeadline = `
@@ -17,7 +19,7 @@ const mixinHeadline = `
 
 const mixinList = `
   list-style-position: outside;
-  background-color: ${colors.grayLight};
+  background-color: ${boxBackgroundColor};
 `;
 
 const H1 = styled.h1`
@@ -120,14 +122,25 @@ const Li = styled.li`
   padding: 10px
 `;
 
-const Td = styled.td`
+const mixinTableElement = `
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
+`;
+
+const Td = styled.td`
+  ${mixinTableElement}
+`;
+
+const Th = styled.td`
+  ${mixinTableElement}
+  font-weight: bold
 `;
 
 const Tr = styled.tr`
-  border-bottom: 1px solid ${colors.grayDark};
+  ${mixinTableElement}
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-color: ${tableLineColor};
 `;
 
 /**
