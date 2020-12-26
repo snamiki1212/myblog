@@ -1,7 +1,7 @@
 import {SubPageContext} from '../types';
 import {getLastPaginationNum} from './utils';
 import {createIndexPages, createPostPages} from './pageCreater';
-import {SubPageList} from './SubPageList';
+import {makeSubPageList} from './SubPageList';
 import {POSTS_PER_PAGE} from './constants';
 
 const allMarkdownRemarkGraphQL = `
@@ -39,33 +39,6 @@ type AllMarkdownRemarkResult = {
       };
     }[];
   };
-};
-
-const makeSubPageList = ({allPosts}: {allPosts: any[]}) => {
-  const {categories, tags} = allPosts.reduce<{
-    categories: SubPageList;
-    tags: SubPageList;
-  }>(
-    ({categories, tags}, edge) => {
-      const {tags: edgeTags, category: edgeCategory} = edge.node.frontmatter;
-
-      // tags
-      edgeTags.forEach((tag: string): void => {
-        tags.incrementOrAddPage(tag);
-      });
-
-      // category
-      categories.incrementOrAddPage(edgeCategory);
-
-      return {categories, tags};
-    },
-    {
-      categories: new SubPageList('category'),
-      tags: new SubPageList('tag'),
-    }
-  );
-
-  return {categories, tags};
 };
 
 export const createPages = async ({graphql, actions}) => {
