@@ -1,5 +1,3 @@
-import {POSTS_PER_PAGE} from './constants';
-
 /**
  * readme: https://stackoverflow.com/questions/19269545/how-to-get-n-no-elements-randomly-from-an-array
  */
@@ -18,6 +16,5 @@ export const fetchRandoms = (arr: any[], n = 1): any => {
 };
 
 // Pagination によるページ数の、最終ページ数を取得
-// TODO: posts_per_pageは引数に入れたい
-export const calcPaginationNum = (pageLength: number): number =>
-  Math.ceil(pageLength / POSTS_PER_PAGE);
+export const calcPaginationNum = (pageLength: number, postLengthPerPage: number): number =>
+  Math.ceil(pageLength / postLengthPerPage);

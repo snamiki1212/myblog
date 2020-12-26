@@ -41,7 +41,7 @@ export class SubPageList {
 
   private createTagPages = ({createPage, subPageContext}: CreatePagesArgs) => {
     this.subPageList.forEach((subPage) => {
-      const lastCategoryPage = calcPaginationNum(subPage.count);
+      const lastCategoryPage = calcPaginationNum(subPage.count, POSTS_PER_PAGE);
       Array.from({length: lastCategoryPage}).forEach((_x, i) => {
         // Paginationごとにループ
         const tagPageContext: TagPageContext = {
@@ -70,7 +70,7 @@ export class SubPageList {
     subPageContext,
   }: CreatePagesArgs) => {
     this.subPageList.forEach((subPage) => {
-      const lastCategoryPage = calcPaginationNum(subPage.count);
+      const lastCategoryPage = calcPaginationNum(subPage.count, POSTS_PER_PAGE);
 
       Array.from({length: lastCategoryPage}).forEach((_x, idx) => {
         const context: CategoryPageContext = {

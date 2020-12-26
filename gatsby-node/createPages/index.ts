@@ -141,7 +141,7 @@ export const createPages = async ({graphql, actions}) => {
       const {edges: allPosts} = allMarkdownRemark;
 
       // build
-      const lastPostPage = calcPaginationNum(allPosts.length);
+      const lastPostPage = calcPaginationNum(allPosts.length, POSTS_PER_PAGE);
       const {categories, tags} = makeSubPageList({allPosts});
       const subPageContext: SubPageContext = {
         categories: categories.subPageList,
