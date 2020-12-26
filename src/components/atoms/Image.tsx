@@ -19,7 +19,7 @@ const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
     }
     return <Img fluid={childImageSharp.fluid} {...rest} />;
   } catch (e) {
-    return <span>page error</span>;
+    return <img src={'/eyecatch.png'} alt="eyecatch" style={{width: '100%'}} />;
   }
 };
 
