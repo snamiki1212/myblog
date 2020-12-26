@@ -1,5 +1,11 @@
 import kebabCase from 'lodash.kebabcase';
-import {TagPage, CategoryPage, POSTS_PER_PAGE} from './constants';
+import {
+  TagPage,
+  CategoryPage,
+  TagSelectionPage,
+  CategorySelectionPage,
+  POSTS_PER_PAGE,
+} from './constants';
 import {getLastPaginationNum} from './utils';
 
 import {SubPageProps, CategoryPageContext, TagPageContext} from '../types';
@@ -17,15 +23,42 @@ class SubPageList {
     this.type = type;
   }
 
-  private generatePath = (name: string): string => {
+  private getEachPath = (name: string): string => {
     switch (this.type) {
       case 'category':
         return `/categories/${kebabCase(name)}`;
       case 'tag':
         return `/tags/${kebabCase(name)}`;
-      default:
-        throw new Error('unexpected type error');
     }
+  };
+
+  private getSelectionPageComponent = () => {
+    switch (this.type) {
+      case 'category':
+        return CategorySelectionPage;
+      case 'tag':
+        return TagSelectionPage;
+    }
+  }
+
+  private getSelectionPagePath = () => {
+    switch (this.type) {
+      case 'category':
+        return 'categories';
+      case 'tag':
+        return 'tags';
+    }
+  }
+
+  public createPage = ({createPage, subPageContext}: CreatePagesArgs) => {
+    const component = this.getSelectionPageComponent()
+    const path = this.getSelectionPagePath();
+    const selectionPageContext = {...subPageContext};
+    createPage({
+      path,
+      component,
+      context: selectionPageContext,
+    });
   };
 
   public createPages = (params: CreatePagesArgs) => {
@@ -41,7 +74,10 @@ class SubPageList {
 
   private createTagPages = ({createPage, subPageContext}: CreatePagesArgs) => {
     this.subPageList.forEach((subPage) => {
-      const lastCategoryPage = getLastPaginationNum(subPage.count, POSTS_PER_PAGE);
+      const lastCategoryPage = getLastPaginationNum(
+        subPage.count,
+        POSTS_PER_PAGE
+      );
       Array.from({length: lastCategoryPage}).forEach((_x, i) => {
         // Paginationごとにループ
         const tagPageContext: TagPageContext = {
@@ -70,7 +106,10 @@ class SubPageList {
     subPageContext,
   }: CreatePagesArgs) => {
     this.subPageList.forEach((subPage) => {
-      const lastCategoryPage = getLastPaginationNum(subPage.count, POSTS_PER_PAGE);
+      const lastCategoryPage = getLastPaginationNum(
+        subPage.count,
+        POSTS_PER_PAGE
+      );
 
       Array.from({length: lastCategoryPage}).forEach((_x, idx) => {
         const context: CategoryPageContext = {
@@ -96,7 +135,7 @@ class SubPageList {
 
   public incrementOrAddPage = (name: string): void => {
     if (!name) return;
-    const path = this.generatePath(name);
+    const path = this.getEachPath(name);
     const maybeIndex = this.subPageList.findIndex(
       (subPage) => subPage.name === name
     );

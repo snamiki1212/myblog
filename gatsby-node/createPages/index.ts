@@ -70,6 +70,10 @@ export const createPages = async ({graphql, actions}) => {
       createIndexPages({createPage, subPageContext, length: lastPostPage});
       createPostPages({createPage, subPageContext, allPosts});
 
+      // create Page
+      categories.createPage({createPage, subPageContext})
+      tags.createPage({createPage, subPageContext})
+
       return;
     } catch (errors) {
       /* eslint no-console: "off" */
