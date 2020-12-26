@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {colors} from '../../../data/color';
 import {PaginationContext, SubPageContext} from '../../../gatsby-node/types';
-import {Paginator, SubPageLinks, ArticlesPreviewWrapper} from '../atoms';
+import {Paginator, ArticlesPreviewWrapper} from '../atoms';
+import {CategoryBannerList} from '../atoms/CategoryBannerList';
 import {AuthorCard, ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
 import {MarkdownRemarkEdge} from '../../types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -48,8 +49,14 @@ export const ArticlePreviewList: React.FC<Props> = ({
       </MainArea>
 
       <AsideArea>
-        <AuthorCard />
-        <SubPageLinks context={context} />
+        <AsideItem>
+          <AuthorCard />
+        </AsideItem>
+
+        <div style={{padding: '10px'}} />
+        <AsideItem>
+          <CategoryBannerList context={context} />
+        </AsideItem>
       </AsideArea>
     </PageContainer>
   );
@@ -69,8 +76,13 @@ const MainArea = styled.div`
 
 const AsideArea = styled.aside`
   flex: 0;
+  flex-direction: column;
+  justify-content: space-between;
   min-width: 300px;
-  padding: 50px;
+`;
+
+const AsideItem = styled.div`
+  padding: 40px;
   border-radius: 10px;
   background-color: ${colors.grayLight};
-`;
+`
