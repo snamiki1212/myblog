@@ -4,13 +4,13 @@ import styled from 'styled-components';
 import {colors} from '../../../data/color';
 
 export const TextWithUnderline: React.FC = ({children}) => (
-  <Container>
+  <Wrapper>
     {children}
     <Undeline />
-  </Container>
+  </Wrapper>
 );
 
-const Container = styled.div`
+const Wrapper = styled.div`
   font-size: 32px;
   color: gray;
   text-align: center;

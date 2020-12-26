@@ -11,17 +11,17 @@ export const MyLinks: React.FC = () => {
   if (!Array.isArray(mySocials)) return <></>;
 
   return (
-    <Container>
+    <Wrapper>
       {mySocials.map((social) => (
         <_Button key={social.icon} href={social.url}>
           <Icon icon={social.icon} />
         </_Button>
       ))}
-    </Container>
+    </Wrapper>
   );
 };
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

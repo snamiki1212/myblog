@@ -5,10 +5,10 @@ import renderReact from '../../compiler/CompilerAsHtmlToReact';
 type Props = {htmlAst: any};
 
 export const Markdown: React.FC<Props> = ({htmlAst}) => {
-  return <Container>{renderReact(htmlAst)}</Container>;
+  return <Wrapper>{renderReact(htmlAst)}</Wrapper>;
 };
 
-const Container = styled.div`
+const Wrapper = styled.div`
   word-wrap: break-word;
   width: 100%;
 `;

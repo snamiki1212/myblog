@@ -25,7 +25,7 @@ export const ArticlePreviewList: React.FC<Props> = ({
 
   const ArticlePreview = isSP ? ArticlePreviewLine : ArticlePreviewCard;
   return (
-    <PageContainer
+    <PageWrapper
       style={{
         flexDirection: isSP ? 'column' : 'row',
         padding: isSP ? '0px' : '25px',
@@ -58,11 +58,11 @@ export const ArticlePreviewList: React.FC<Props> = ({
           <CategoryBannerList context={context} />
         </AsideItem>
       </AsideArea>
-    </PageContainer>
+    </PageWrapper>
   );
 };
 
-const PageContainer = styled.div`
+const PageWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

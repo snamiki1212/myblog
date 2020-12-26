@@ -35,57 +35,57 @@ export const SocialLinks: React.FC<Props> = (props) => {
   const iconSize = 36;
 
   return (
-    <Container>
-      <InnerContainer>
+    <Wrapper>
+      <InnerWrapper>
         <HatenaShareButton url={url} size={iconSize} />
-      </InnerContainer>
+      </InnerWrapper>
 
-      <InnerContainer>
+      <InnerWrapper>
         <RedditShareButton url={url} title={post.title}>
           <RedditIcon round size={iconSize} />
           <RedditShareCount url={url}>
             {(count: number) => <MaybeShareCount count={count} />}
           </RedditShareCount>
         </RedditShareButton>
-      </InnerContainer>
+      </InnerWrapper>
 
-      <InnerContainer>
+      <InnerWrapper>
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
-      </InnerContainer>
+      </InnerWrapper>
 
-      <InnerContainer>
+      <InnerWrapper>
         <FacebookShareButton url={url} quote={postNode.excerpt}>
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
             {(count: number) => <MaybeShareCount count={count} />}
           </FacebookShareCount>
         </FacebookShareButton>
-      </InnerContainer>
+      </InnerWrapper>
 
-      <InnerContainer>
+      <InnerWrapper>
         <LinkedinShareButton url={url}>
           <LinkedinIcon round size={iconSize} />
         </LinkedinShareButton>
-      </InnerContainer>
+      </InnerWrapper>
 
-      <InnerContainer>
+      <InnerWrapper>
         <TelegramShareButton url={url}>
           <TelegramIcon round size={iconSize} />
         </TelegramShareButton>
-      </InnerContainer>
+      </InnerWrapper>
 
-      <InnerContainer>
+      <InnerWrapper>
         <LineShareButton url={url} title={post.title}>
           <LineIcon round size={iconSize} />
         </LineShareButton>
-      </InnerContainer>
-    </Container>
+      </InnerWrapper>
+    </Wrapper>
   );
 };
 
-const InnerContainer = styled.span`
+const InnerWrapper = styled.span`
   &:hover {
     cursor: pointer;
   }
@@ -95,7 +95,7 @@ const ShareCount = styled.div`
   text-align: center;
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

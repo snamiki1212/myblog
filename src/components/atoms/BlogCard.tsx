@@ -45,10 +45,10 @@ export const BlogCard: React.FC<Props> = ({
   const imgUrl = blogCardLogo || altImg;
 
   return (
-    <Container>
+    <Wrapper>
       <Image src={imgUrl} />
       <Title>{title}</Title>
-    </Container>
+    </Wrapper>
   );
 };
 
@@ -58,7 +58,7 @@ const Image = styled.img`
   height: 80px;
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
   border: 2px solid ${colors.grayLight};
   display: flex;
   flex-direction: row;

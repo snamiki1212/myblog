@@ -9,21 +9,21 @@ import {MyLinks} from '../atoms';
 import {TextWithUnderline} from '../atoms/TextWithUnderline';
 
 export const AuthorCard: React.FC = () => (
-  <Container>
+  <Wrapper>
     <AuthorInfo>
       <Avator src={config.userAvatar} alt={config.autherName} />
       <TextWithUnderline>{config.autherName}</TextWithUnderline>
       <Discription>{config.userDescription}</Discription>
     </AuthorInfo>
 
-    <ButtonContainer>
+    <ButtonWrapper>
       <Link to="/about">
         <_Button variant="outlined">▷プロフィールを読む</_Button>
       </Link>
-    </ButtonContainer>
+    </ButtonWrapper>
 
     <MyLinks />
-  </Container>
+  </Wrapper>
 );
 
 const AuthorInfo = styled.div`
@@ -33,7 +33,7 @@ const AuthorInfo = styled.div`
   align-items: center;
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   alin-items: center;
@@ -46,7 +46,7 @@ const Avator = styled.img`
   border-radius: 100%;
 `;
 
-const ButtonContainer = styled.div`
+const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;

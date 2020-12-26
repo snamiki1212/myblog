@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,10 +23,10 @@ const Navigations = () => {
 
 export const Footer: React.FC = () => {
   return (
-    <Container>
+    <Wrapper>
       <Navigations />
       <Copyright />
-    </Container>
+    </Wrapper>
   );
 };
 

@@ -12,17 +12,17 @@ type Props = {
 export const TagList: React.FC<Props> = ({tags}) => {
   if (!tags) return <></>;
   return (
-    <Container>
+    <Wrapper>
       {tags.map((tag) => (
         <_Link key={tag} to={`/tags/${kebabCase(tag)}`}>
           <_Chip label={`#${tag}`} clickable color="primary" />
         </_Link>
       ))}
-    </Container>
+    </Wrapper>
   );
 };
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   align-content: center;

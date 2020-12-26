@@ -70,7 +70,7 @@ export const Navigation: React.FC<ResponsiveDrawerProps & any> = (props) => {
         {/* コンテンツ */}
         <main className={classes['content']}>
           <div className={classes['toolbar']}>
-            <Container>{children}</Container>
+            <Wrapper>{children}</Wrapper>
           </div>
         </main>
       </div>
@@ -79,7 +79,7 @@ export const Navigation: React.FC<ResponsiveDrawerProps & any> = (props) => {
 };
 
 // TODO: https://codepen.io/P1N2O/pen/pyBNzX これやりたい。
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   min-height: 100%;
   flex-direction: column;

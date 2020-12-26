@@ -9,18 +9,18 @@ type Props = {context: SubPageContext};
 
 export const CategoryBannerList: React.FC<Props> = ({context}) => {
   return (
-    <Container>
+    <Wrapper>
         <HeaderText>Category</HeaderText>
         {context.categories.map(({name, count, path}) => (
           <Button key={name}>
             <Link to={path}>{`${name}(${count})`}</Link>
           </Button>
         ))}
-    </Container>
+    </Wrapper>
   );
 };
 
-const Container = styled.div`
+const Wrapper = styled.div`
   //
 `;
 

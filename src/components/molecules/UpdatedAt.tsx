@@ -11,14 +11,14 @@ export const UpdatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
   const formatedDate = dayjs(date).format(config.dateFormat);
 
   return (
-    <Container containerStyle={containerStyle}>
+    <Wrapper containerStyle={containerStyle}>
       <Icon icon="updatedAt" />
       <Date>{formatedDate}</Date>
-    </Container>
+    </Wrapper>
   );
 };
 
-const Container = styled.span<{containerStyle: any}>`
+const Wrapper = styled.span<{containerStyle: any}>`
   display: flex;
   align-items: center;
   ${({containerStyle}) => `${{...containerStyle}}`};
