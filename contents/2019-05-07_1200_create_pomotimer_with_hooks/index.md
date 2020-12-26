@@ -3,7 +3,7 @@ title: 'React(Hooks)を使ってポモドーロタイマー作った'
 cover: 'cover.jpg'
 createdAt: '2019-05-07 12:00'
 updatedAt: '2019-05-07 12:00'
-category: 'Tech'
+category: '技術'
 tags:
   - React
   - TypeScript

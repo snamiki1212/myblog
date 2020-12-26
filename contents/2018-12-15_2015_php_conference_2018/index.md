@@ -3,7 +3,7 @@ title: '【まとめ】PHP Conference 2018 | カンファレンステーマ『Gr
 cover: 'cover.jpg'
 createdAt: '2018-12-15 20:15'
 updatedAt: '2018-12-15 20:15'
-category: 'Tech'
+category: '技術'
 tags:
   - イベント
 slug: php-conference-2018

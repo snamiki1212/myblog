@@ -3,7 +3,7 @@ title: 'フィリピンで日本の食べ物を求めて、吉野家(Yoshinoya)�
 cover: cover.jpg
 createdAt: '2019-04-02 16:30'
 updatedAt: '2019-04-02 16:30'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

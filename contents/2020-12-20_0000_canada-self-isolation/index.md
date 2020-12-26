@@ -3,14 +3,15 @@ title: '2020年のコロナ全盛期にカナダ渡航して隔離されてた�
 cover: 'cover.jpg'
 createdAt: '2020-12-20 20:00'
 updatedAt: '2020-12-20 20:00'
-category: 'World'
+category: '海外'
 tags:
-  - 社会人
+  - カナダ
+  - 海外移住
+  - コロナ
 slug: 2020-covid-self-isolation
 word:
   - nothing
 ---
-
 # 2020年のコロナ全盛期にカナダ渡航して隔離されてたときの日記
 
 こんにちは、つい先日オンラインESLが終わり時間が空いたので記事を書いてるNashです。

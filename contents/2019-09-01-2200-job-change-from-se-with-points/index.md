@@ -3,9 +3,9 @@ title: 'SEの転職で異業種・異業界を考える前に知っておくべ�
 cover: 'cover.png'
 createdAt: '2019-09-01 22:00'
 updatedAt: '2020-01-13 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: job-change-from-se-with-points
 word:
   - 'SE 転職 異業種'

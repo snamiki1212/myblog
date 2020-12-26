@@ -3,9 +3,9 @@ title: '【転職活動】最初にやることは１つだけ【エージェン
 cover: 'cover.jpg'
 createdAt: '2020-01-19 09:00'
 updatedAt: '2020-01-19 09:00'
-category: 'Career'
+category: 'キャリア'
 tags:
-  - Career
+  - SE転職
 slug: job-change-do-one
 word:
   - 'nothing'

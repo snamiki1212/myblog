@@ -3,7 +3,7 @@ title: '【まとめ】日本をぶち上げるiNTERFACE SHIFT2018 | エンジ�
 cover: 'cover.jpg'
 createdAt: '2018-12-14 01:25'
 updatedAt: '2018-12-14 01:25'
-category: 'Tech'
+category: '技術'
 tags:
   - イベント
 slug: interface_shift_2018

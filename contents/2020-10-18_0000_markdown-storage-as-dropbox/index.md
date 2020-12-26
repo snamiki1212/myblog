@@ -3,7 +3,7 @@ title: 'マークダウン管理をGoogleDriveからDropboxに変更した話'
 cover: 'cover.jpg'
 createdAt: '2020-10-18 15:00'
 updatedAt: '2020-10-18 15:00'
-category: 'Tech'
+category: '技術'
 tags:
   - Dropbox
   - Typora

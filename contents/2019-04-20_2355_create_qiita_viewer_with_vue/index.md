@@ -3,7 +3,7 @@ title: 'VueでQiitaのアプリケーションを作った話'
 cover: 'cover.png'
 createdAt: '2019-04-20 23:55'
 updatedAt: '2019-04-20 23:55'
-category: 'Tech'
+category: '技術'
 tags:
   - Vue
 slug: create-qiita-viewer-with-vue

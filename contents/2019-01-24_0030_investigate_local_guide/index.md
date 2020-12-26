@@ -3,7 +3,7 @@ title: 'ローカルガイドになって、サンフランシスコを目指す
 cover: 'cover.jpg'
 createdAt: '2019-01-24 00:30'
 updatedAt: '2019-01-24 00:30'
-category: 'LOCAL_GUIDE'
+category: 'ローカルガイド'
 tags:
   - ローカルガイド
 slug: investigate-local-guide

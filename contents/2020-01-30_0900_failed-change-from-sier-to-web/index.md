@@ -3,7 +3,7 @@ title: 'SIerからWeb系への転職失敗ケース【理由：４選】'
 cover: 'cover.png'
 createdAt: '2020-01-30 09:00'
 updatedAt: '2020-01-30 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
   - 社内SE
 slug: failed-change-from-sier-to-web

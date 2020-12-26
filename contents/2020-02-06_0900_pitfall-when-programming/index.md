@@ -3,7 +3,7 @@ title: 'プログラミングでハマったとき見る記事【行動／原因
 cover: 'cover.png'
 createdAt: '2020-02-06 14:00'
 updatedAt: '2020-02-06 14:00'
-category: 'Tech'
+category: '技術'
 tags:
   - プログラミング
 slug: pitfall-when-programming

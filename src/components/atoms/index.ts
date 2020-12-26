@@ -7,5 +7,4 @@ export * from './SEOMeta';
 export * from './HatenaShareButton';
 export * from './Icon';
 export * from './Markdown';
-export * from './SubPageLinks';
 export * from './ArticlesPreviewWrapper';

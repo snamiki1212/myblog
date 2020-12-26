@@ -3,7 +3,7 @@ title: '2020年｜フリーランスエンジニアが買ってよかったも�
 cover: 'cover.jpg'
 createdAt: '2020-11-27 22:00'
 updatedAt: '2020-12-20 17:00'
-category: 'その他'
+category: '雑記'
 tags:
   - Tech
   - Health

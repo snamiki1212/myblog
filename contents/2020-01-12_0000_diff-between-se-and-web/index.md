@@ -3,9 +3,9 @@ title: 'SEとWeb系の違いをエンジニアが比較【両方とも経験済�
 cover: 'cover.png'
 createdAt: '2020-01-12 12:00'
 updatedAt: '2020-02-06 01:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: diff-between-se-and-web
 word:
   - 'SE web 違い'

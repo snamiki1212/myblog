@@ -3,7 +3,7 @@ title: '静的サイトジェネレータで構造化データマークアップ
 cover: 'cover.jpg'
 createdAt: '2019-08-29 00:00'
 updatedAt: '2019-08-29 00:00'
-category: 'Tech'
+category: '技術'
 tags:
   - Gatsby
 slug: sheme-org-for-static-site-generator

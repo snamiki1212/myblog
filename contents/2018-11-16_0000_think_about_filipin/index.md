@@ -3,9 +3,9 @@ title: 'いちWebエンジニアがフィリピン留学に行く前に考えて
 cover: 'cover.jpg'
 createdAt: '2018-11-16 00:00'
 updatedAt: '2020-01-13 09:00'
-category: 'World'
+category: '海外'
 tags:
-  - 海外生活
+  - 海外移住
   - 英語
   - フィリピン留学
 slug: think-about-filipin

@@ -3,7 +3,7 @@ title: '【実レビュー】MacBook無印でプログラミングは、サブPC
 cover: 'cover.jpg'
 createdAt: '2019-05-12 18:00'
 updatedAt: '2020-01-13 09:00'
-category: 'Tech'
+category: '技術'
 tags:
   - レビュー
   - PC

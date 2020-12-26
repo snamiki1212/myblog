@@ -3,7 +3,7 @@ title: '炎上プロジェクトに既存メンバーと同数の新人をぶっ
 cover: 'cover.jpg'
 createdAt: '2019-05-03 18:00'
 updatedAt: '2020-06-21 16:00'
-category: 'Tech'
+category: '技術'
 tags:
   - マネジメント
 slug: join-same-new-comer

@@ -3,9 +3,9 @@ title: 'Web 系ベンチャーに転職して感じたホワイトな点【ま�
 cover: 'cover.png'
 createdAt: '2020-01-27 09:00'
 updatedAt: '2020-01-27 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: white-web-startup
 word:
   - 'Web 系 転職 ホワイト'

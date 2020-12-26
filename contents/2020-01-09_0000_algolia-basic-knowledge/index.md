@@ -3,7 +3,7 @@ title: '【入門用】Algolia の概念的知識のまとめ'
 cover: 'cover.png'
 createdAt: '2020-01-09 12:00'
 updatedAt: '2020-01-09 12:00'
-category: 'Tech'
+category: '技術'
 tags:
   - Algolia
 slug: algolia-basic-knowledge

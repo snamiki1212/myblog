@@ -3,7 +3,7 @@ title: 'Erlang&ElixirFestJP2019のイベントレポート'
 cover: 'cover.jpg'
 createdAt: '2019-06-02 21:30'
 updatedAt: '2019-06-02 21:30'
-category: 'Tech'
+category: '技術'
 tags:
   - Elixir
   - Erlang

@@ -3,9 +3,10 @@ title: '海外でコンピュータ・サイエンスを学びたい人向け前
 cover: 'cover.png'
 createdAt: '2020-01-06 00:00'
 updatedAt: '2020-08-22 00:00'
-category: 'Career'
+category: 'キャリア'
 tags:
-  - Career
+  - キャリア
+  - CS
 slug: background-knowledge-about-cs
 ---
 

@@ -3,10 +3,10 @@ title: 'エンジニアの海外キャリア戦略の目標と戦略を見直し
 cover: 'cover.jpg'
 createdAt: '2018-11-15 00:00'
 updatedAt: '2018-11-15 00:00'
-category: 'Career'
+category: 'キャリア'
 tags:
-  - Career
-  - World
+  - キャリア
+  - 海外就職
 slug: change-overseas-strategy
 ---
 

@@ -3,9 +3,9 @@ title: '【写真あり】Midworksを現役エンジニアが使ったのでレ�
 cover: 'cover.png'
 createdAt: '2020-03-25 02:00'
 updatedAt: '2020-03-25 02:00'
-category: 'Career'
+category: 'キャリア'
 tags:
-  - Career
+  - SE転職
 slug: review-midworks
 word:
   - nothing

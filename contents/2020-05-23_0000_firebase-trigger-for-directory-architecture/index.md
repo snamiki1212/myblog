@@ -3,7 +3,7 @@ title: 'CloudFunctionsのトリガーに対するディレクトリ・フォル�
 cover: 'cover.png'
 createdAt: '2020-05-23 10:00'
 updatedAt: '2020-05-23 10:00'
-category: 'Tech'
+category: '技術'
 tags:
   - Firebase
   - CloudFunctions

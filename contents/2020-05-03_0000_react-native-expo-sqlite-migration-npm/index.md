@@ -3,7 +3,7 @@ title: 'ReactNative(Expo)+SQLiteのマイグレーションnpmパッケージを
 cover: 'cover.png'
 createdAt: '2020-05-03 13:00'
 updatedAt: '2020-05-03 13:00'
-category: 'Tech'
+category: '技術'
 tags:
   - ReactNative
   - Expo

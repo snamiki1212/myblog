@@ -3,7 +3,7 @@ title: 'React.useEffect でハマったポイントのまとめ'
 cover: 'cover.png'
 createdAt: '2019-12-15 00:00'
 updatedAt: '2020-08-31 23:00'
-category: 'Tech'
+category: '技術'
 tags:
   - React
   - ReactHooks

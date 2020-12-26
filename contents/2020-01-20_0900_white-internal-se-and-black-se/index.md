@@ -3,7 +3,7 @@ title: 'ホワイト社内SEを経験してSIerのブラックを実感した話
 cover: 'cover.jpg'
 createdAt: '2020-01-20 09:00'
 updatedAt: '2020-01-20 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
   - 社内SE
 slug: white-internal-se-and-black-se

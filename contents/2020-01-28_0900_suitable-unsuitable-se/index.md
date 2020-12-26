@@ -3,9 +3,9 @@ title: 'SEの向き不向きを考える【向いている／いない人】'
 cover: 'cover.png'
 createdAt: '2020-01-28 09:00'
 updatedAt: '2020-01-28 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: suitable-unsuitable-se
 word:
   - 'SE 向き不向き'

@@ -3,9 +3,9 @@ title: 'SEがベンチャーに転職してわかったこと４選【Webエン�
 cover: 'cover.png'
 createdAt: '2019-08-24 00:00'
 updatedAt: '2020-01-13 09:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: notice-when-changing-from-se-to-web
 word:
   - 'SE ベンチャー 転職'

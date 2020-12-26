@@ -3,9 +3,9 @@ title: 'SEからWeb 系へのおすすめ転職サイト【現役エンジニア
 cover: 'cover.png'
 createdAt: '2020-01-08 00:00'
 updatedAt: '2020-01-08 00:00'
-category: 'Career:SEtoWeb'
+category: 'SE転職'
 tags:
-  - SEtoWeb
+  - SE転職
 slug: recommend-hr-sites-from-se-to-web
 word:
   - 'SE Web系 転職サイト おすすめ'

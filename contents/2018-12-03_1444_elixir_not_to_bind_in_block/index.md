@@ -3,7 +3,7 @@ title: '【Elixir】ifやcaseの中で代入・束縛を行うべきでない'
 cover: 'cover.png'
 createdAt: '2018-12-03 14:44'
 updatedAt: '2020-03-06 03:30'
-category: 'Tech'
+category: '技術'
 tags:
   - Elixir
 slug: elixir-not-to-bind-in-block

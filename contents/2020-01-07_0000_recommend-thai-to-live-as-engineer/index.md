@@ -3,10 +3,10 @@ title: '【実体験】IT エンジニアがタイに移住してみた結果⇒
 cover: 'cover.jpg'
 createdAt: '2020-01-07 00:00'
 updatedAt: '2020-12-25 16:00'
-category: 'World'
+category: '海外'
 tags:
-  - World
-  - 海外生活
+  - タイ
+  - 海外移住
 slug: recommend-thai-to-live-as-engineer
 ---
 

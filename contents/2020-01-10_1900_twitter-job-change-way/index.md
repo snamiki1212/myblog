@@ -3,7 +3,7 @@ title: 'Twitter転職のやり方を説明します【簡単でした】'
 cover: 'cover.png'
 createdAt: '2020-01-10 19:00'
 updatedAt: '2020-01-10 19:00'
-category: 'Career'
+category: 'キャリア'
 tags:
   - Twitter転職
 slug: twitter-job-change-way

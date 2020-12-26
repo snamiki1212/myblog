@@ -3,7 +3,7 @@ title: '【レビュー】stackshareとは？使ってみた結果をまとめ�
 cover: 'cover.jpg'
 createdAt: '2019-09-26 00:00'
 updatedAt: '2020-05-01 00:00'
-category: 'Tech'
+category: '技術'
 tags:
   - レビュー
 slug: stack-share

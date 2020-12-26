@@ -3,7 +3,7 @@ title: 'Webエンジニア目線でフィリピン移住をおすすめしない
 cover: 'cover.jpg'
 createdAt: '2019-04-29 10:00'
 updatedAt: '2020-12-24 11:40'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

@@ -3,7 +3,7 @@ title: '【書評】リーダブルコードの次に読む本として『現場
 cover: 'cover.png'
 createdAt: '2020-06-15 00:00'
 updatedAt: '2020-06-05 00:00'
-category: 'Tech'
+category: '技術'
 tags:
   - 書評
 slug: review-book-as-principles-of-the-system-architecture

@@ -3,7 +3,7 @@ title: 'フィリピンで豚の食べ物にトライして、後悔した話【
 cover: cover.jpg
 createdAt: '2019-04-02 19:30'
 updatedAt: '2019-04-02 19:30'
-category: 'World'
+category: '海外'
 tags:
   - フィリピン留学
   - 英語

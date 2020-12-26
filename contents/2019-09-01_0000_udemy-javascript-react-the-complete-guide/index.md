@@ -3,7 +3,7 @@ title: '【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは�
 cover: 'cover.png'
 createdAt: '2019-09-01 00:00'
 updatedAt: '2020-01-13 09:00'
-category: 'Tech'
+category: '技術'
 tags:
   - React
   - Udemy

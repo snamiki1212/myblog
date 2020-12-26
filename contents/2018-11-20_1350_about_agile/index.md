@@ -3,7 +3,7 @@ title: '【アジャイル開発宣言とは？】原文をわかりやすく整
 cover: 'cover.jpg'
 createdAt: '2018-11-20 13:50'
 updatedAt: '2020-01-13 09:00'
-category: 'Tech'
+category: '技術'
 tags:
   - アジャイル開発
 slug: about-agile
