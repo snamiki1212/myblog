@@ -1,5 +1,5 @@
 import {SubPageContext, IndexPageContext, PostPageContext} from '../types';
-import {fetchRandoms, calcPaginationNum} from './utils';
+import {fetchRandoms, getLastPaginationNum} from './utils';
 import {SubPageList} from './SubPageList';
 import {
   POSTS_PER_PAGE,
@@ -141,7 +141,7 @@ export const createPages = async ({graphql, actions}) => {
       const {edges: allPosts} = allMarkdownRemark;
 
       // build
-      const lastPostPage = calcPaginationNum(allPosts.length, POSTS_PER_PAGE);
+      const lastPostPage = getLastPaginationNum(allPosts.length, POSTS_PER_PAGE);
       const {categories, tags} = makeSubPageList({allPosts});
       const subPageContext: SubPageContext = {
         categories: categories.subPageList,

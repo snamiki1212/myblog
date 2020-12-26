@@ -1,6 +1,6 @@
 import kebabCase from 'lodash.kebabcase';
 import {TagPage, CategoryPage, POSTS_PER_PAGE} from './constants';
-import {calcPaginationNum} from './utils';
+import {getLastPaginationNum} from './utils';
 
 import {SubPageProps, CategoryPageContext, TagPageContext} from '../types';
 
@@ -41,7 +41,7 @@ export class SubPageList {
 
   private createTagPages = ({createPage, subPageContext}: CreatePagesArgs) => {
     this.subPageList.forEach((subPage) => {
-      const lastCategoryPage = calcPaginationNum(subPage.count, POSTS_PER_PAGE);
+      const lastCategoryPage = getLastPaginationNum(subPage.count, POSTS_PER_PAGE);
       Array.from({length: lastCategoryPage}).forEach((_x, i) => {
         // Paginationごとにループ
         const tagPageContext: TagPageContext = {
@@ -70,7 +70,7 @@ export class SubPageList {
     subPageContext,
   }: CreatePagesArgs) => {
     this.subPageList.forEach((subPage) => {
-      const lastCategoryPage = calcPaginationNum(subPage.count, POSTS_PER_PAGE);
+      const lastCategoryPage = getLastPaginationNum(subPage.count, POSTS_PER_PAGE);
 
       Array.from({length: lastCategoryPage}).forEach((_x, idx) => {
         const context: CategoryPageContext = {

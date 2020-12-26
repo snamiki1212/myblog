@@ -16,5 +16,5 @@ export const fetchRandoms = (arr: any[], n = 1): any => {
 };
 
 // Pagination によるページ数の、最終ページ数を取得
-export const calcPaginationNum = (totalPostNum: number, postNumPerPage: number): number =>
+export const getLastPaginationNum = (totalPostNum: number, postNumPerPage: number): number =>
   Math.ceil(totalPostNum / postNumPerPage);
