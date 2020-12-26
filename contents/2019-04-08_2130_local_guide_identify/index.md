@@ -3,7 +3,7 @@ title: '【安全】ローカルガイドでの身バレが怖い？←解決方
 cover: cover.jpg
 createdAt: '2019-04-08 21:30'
 updatedAt: '2019-04-08 21:30'
-category: 'ローカルガイド'
+category: '雑記'
 tags:
   - ローカルガイド
 slug: local-guide-identify
