@@ -1,11 +1,10 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import styled, {css} from 'styled-components';
-
 import {MarkdownRemarkEdge} from '../../types';
 import {UpdatedAt} from '.';
-import Image from '../atoms/Image';
 import {Logo} from '../atoms/Logo';
+import {Tile} from '../atoms/Tile';
 
 import {colors} from '../../../data/color';
 
@@ -20,14 +19,7 @@ const mixinCenter = css`
   margin: auto;
 `;
 
-const Wrapper = styled.div`
-  width: 430px;
-  height: 430px;
-  border-radius: 10px;
-  background: ${colors.baseDark}B3; // README: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors
-
-  position: relative;
-`;
+const Wrapper = styled.div``;
 
 const CategoryName = styled.span`
   border-radius: 10px;
@@ -36,18 +28,12 @@ const CategoryName = styled.span`
   padding: 0 20px;
 `;
 
-const mixinChild = css`
-  position: absolute;
-  top: 0;
-`;
-
 const Grid = styled.div`
   display: grid;
   grid-template-rows: ${sizeOfLogo}px 1fr 0.1fr;
   grid-template-columns: ${sizeOfLogo}px 1fr;
   height: 100%;
   width: 100%;
-  ${mixinChild};
 `;
 
 const GridLogo = styled.div`
@@ -75,14 +61,6 @@ const GridUpdatedAt = styled.div`
 
 const Title = styled.div``;
 
-const _Image = styled(Image)`
-  ${mixinChild};
-  z-index: -1;
-  height: 100%;
-  border-radius: 10px;
-`
-// const Header = styled.div``
-
 export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   const title = postInfo.node.frontmatter.title;
   const slug = postInfo.node.fields._slug;
@@ -93,21 +71,22 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   return (
     <Link to={slug}>
       <Wrapper>
-        <_Image imgInfo={imgInfo} />
-        <Grid>
-          <GridLogo>
-            <Logo size={sizeOfLogo} />
-          </GridLogo>
-          <GridCategory>
-            <CategoryName>{category}</CategoryName>
-          </GridCategory>
-          <GridTitle>
-            <Title>{title}</Title>
-          </GridTitle>
-          <GridUpdatedAt>
-            <UpdatedAt date={updatedAt} />
-          </GridUpdatedAt>
-        </Grid>
+        <Tile imgInfo={imgInfo}>
+          <Grid>
+            <GridLogo>
+              <Logo size={sizeOfLogo} />
+            </GridLogo>
+            <GridCategory>
+              <CategoryName>{category}</CategoryName>
+            </GridCategory>
+            <GridTitle>
+              <Title>{title}</Title>
+            </GridTitle>
+            <GridUpdatedAt>
+              <UpdatedAt date={updatedAt} />
+            </GridUpdatedAt>
+          </Grid>
+        </Tile>
       </Wrapper>
     </Link>
   );
