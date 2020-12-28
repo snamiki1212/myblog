@@ -12,7 +12,7 @@ export const Paginator: React.FC<Props> = ({context}) => {
   const {currentPage, lastPage} = context;
 
   return (
-    <Container>
+    <Wrapper>
       {Array.from({length: lastPage}, (_, i) => {
         const pageNo = i + 1;
         const key = `pagination-number-${pageNo}`;
@@ -25,23 +25,23 @@ export const Paginator: React.FC<Props> = ({context}) => {
           </_Link>
         );
       })}
-    </Container>
+    </Wrapper>
   );
 };
 
 const _Link = styled(Link)<{selected: boolean}>`
   text-decoration: none;
-  padding: 15px;
+  padding: 20px;
   transition: 0.3s;
-  border-radius: 50%;
+  border-radius: 10px;
   &:hover {
-    background: ${colors.vivid2};
+    background: ${colors.DEPRECATED_vivid2};
   }
-  color: ${({selected}) => selected && colors.white1};
-  background: ${({selected}) => (selected ? colors.black1 : colors.grayLight)};
+  color: ${({selected}) => selected && colors.DEPRECATED_white1};
+  background: ${({selected}) => (selected ? colors.DEPRECATED_black1 : colors.DEPRECATED_grayLight)};
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;

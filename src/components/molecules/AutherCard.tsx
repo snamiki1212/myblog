@@ -6,58 +6,33 @@ import Button from '@material-ui/core/Button';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 import {MyLinks} from '../atoms';
-import {TextWithUnderline} from '../atoms/TextWithUnderline';
+import {AuthorCardLayout} from '../atoms/AuthorCardLayout';
 
 export const AuthorCard: React.FC = () => (
-  <Container>
-    <AuthorInfo>
-      <Avator src={config.userAvatar} alt={config.autherName} />
-      <TextWithUnderline>{config.autherName}</TextWithUnderline>
-      <Discription>{config.userDescription}</Discription>
-    </AuthorInfo>
-
-    <ButtonContainer>
+  <AuthorCardLayout
+    avator={
       <Link to="/about">
-        <_Button variant="outlined">▷プロフィールを読む</_Button>
+        <Avator src={config.userAvatar} alt={config.autherName} />
       </Link>
-    </ButtonContainer>
-
-    <MyLinks />
-  </Container>
+    }
+    name={<Name>{config.autherName}</Name>}
+    sns={<MyLinks />}
+    description={<Discription>{config.userDescription}</Discription>}
+    toProfile={<Link to="/about">プロフィールもっと読む</Link>}
+  />
 );
 
-const AuthorInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  alin-items: center;
-  justify-content: center;
-  color: ${colors.grayDark};
-`;
-
 const Avator = styled.img`
-  width: 150px;
+  width: ${(props) => props.theme.layout.autherAvatorSizeNum}px;
   border-radius: 100%;
 `;
 
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-const _Button = styled(Button)`
-  flex: 1;
-  color: ${colors.vivid1};
+const Name = styled.span`
+  font-size: ${(props) => props.theme.fontSize.tmp_1}px;
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 const Discription = styled.div`
-  padding-top: 10px;
-  padding-bottom: 30px;
-  font-size: 15px;
+  font-size: ${(props) => props.theme.fontSize.tmp_2}px;
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;

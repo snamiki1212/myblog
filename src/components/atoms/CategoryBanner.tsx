@@ -6,21 +6,21 @@ const Text = styled.div`
   font-size: 30px;
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
   padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${colors.grayLight};
-  color: ${colors.black1};
+  background: ${colors.DEPRECATED_grayLight};
+  color: ${colors.DEPRECATED_black1};
 `;
 
 export const CategoryBanner: React.FC<{categoryName: string}> = ({
   categoryName,
 }) => {
   return (
-    <Container>
+    <Wrapper>
       <Text>🚀{categoryName}</Text>
-    </Container>
+    </Wrapper>
   );
 };

@@ -12,7 +12,7 @@ const NormalA = styled.a`
   border-bottom: solid 1px;
   transition: 0.5s;
   &:hover {
-    color: ${colors.grayDark};
+    color: ${colors.DEPRECATED_grayDark};
     transition: 0.3s;
   }
 `;

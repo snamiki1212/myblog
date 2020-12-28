@@ -7,21 +7,21 @@ import {colors} from '../../../data/color';
 
 type Props = {date: Date; containerStyle?: any};
 
-const FONT_COLOR = colors.grayDark;
+const FONT_COLOR = colors.DEPRECATED_grayDark;
 
 // TODO: atomsに移動させたい
 export const CreatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
   const formatedDate = dayjs(date).format(config.dateFormat);
 
   return (
-    <Container containerStyle={containerStyle}>
+    <Wrapper containerStyle={containerStyle}>
       <Icon icon="createdAt" style={{color: FONT_COLOR}} />
       <Date>{formatedDate}</Date>
-    </Container>
+    </Wrapper>
   );
 };
 
-const Container = styled.span<{containerStyle: any}>`
+const Wrapper = styled.span<{containerStyle: any}>`
   display: flex;
   align-items: center;
   ${({containerStyle}) => `${{...containerStyle}}`};

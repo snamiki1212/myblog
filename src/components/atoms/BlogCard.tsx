@@ -1,7 +1,8 @@
 import React from 'react';
-import styled, {keyframes} from 'styled-components';
+import styled from 'styled-components';
 import {blogCardLogo} from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
+import {mixinSpinAnimate} from './SpinAnimation'
 
 const altImg =
   'https://user-images.githubusercontent.com/26793088/72956432-1193f080-3de3-11ea-844d-a39a6a4a18bb.png';
@@ -44,23 +45,12 @@ export const BlogCard: React.FC<Props> = ({
   const imgUrl = blogCardLogo || altImg;
 
   return (
-    <Container>
+    <Wrapper>
       <Image src={imgUrl} />
       <Title>{title}</Title>
-    </Container>
+    </Wrapper>
   );
 };
-
-
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-`;
 
 // REF: https://stackoverflow.com/questions/41007060/target-another-styled-component-on-hover
 const Image = styled.img`
@@ -68,22 +58,21 @@ const Image = styled.img`
   height: 80px;
 `;
 
-
-const Container = styled.div`
-  border: 2px solid ${colors.grayLight};
+const Wrapper = styled.div`
+  border: 2px solid ${colors.DEPRECATED_grayLight};
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px;
   transition: 0.5s;
-  background-color: ${colors.white1};
+  background-color: ${colors.DEPRECATED_white1};
   &:hover {
-    background-color: ${colors.grayMiddle};
-    color: ${colors.white1}
+    background-color: ${colors.DEPRECATED_grayMiddle};
+    color: ${colors.DEPRECATED_white1}
   }
   &:hover {
     ${Image} {
-      animation: ${rotate} .8s cubic-bezier(.4,2.21,.91,.97);
+      ${mixinSpinAnimate}
     }
   }
 `;

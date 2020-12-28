@@ -1,13 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import {colors} from '../../../data/color';
 import {PaginationContext, SubPageContext} from '../../../gatsby-node/types';
 import {Paginator, ArticlesPreviewWrapper} from '../atoms';
-import {CategoryBannerList} from '../atoms/CategoryBannerList';
-import {AuthorCard, ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
+import {AuthorCard, ArticlePreviewCard } from '../molecules';
 import {MarkdownRemarkEdge} from '../../types';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {useTheme} from '@material-ui/core/styles';
 
 type Props = {
   postEdges: MarkdownRemarkEdge[];
@@ -20,25 +16,14 @@ export const ArticlePreviewList: React.FC<Props> = ({
   context,
   description,
 }) => {
-  const theme = useTheme();
-  const isSP = useMediaQuery(theme.breakpoints.down('sm'));
-
-  const ArticlePreview = isSP ? ArticlePreviewLine : ArticlePreviewCard;
   return (
-    <PageContainer
-      style={{
-        flexDirection: isSP ? 'column' : 'row',
-        padding: isSP ? '0px' : '25px',
-      }}
-    >
+    <Wrapper>
       <MainArea>
         {description}
-        <ArticlesPreviewWrapper
-          style={{flexDirection: isSP ? 'column' : 'row'}}
-        >
+        <ArticlesPreviewWrapper>
           {postEdges.map(
             (edge): React.ReactNode => (
-              <ArticlePreview
+              <ArticlePreviewCard
                 key={edge.node.frontmatter.title}
                 postInfo={edge}
               />
@@ -52,20 +37,17 @@ export const ArticlePreviewList: React.FC<Props> = ({
         <AsideItem>
           <AuthorCard />
         </AsideItem>
-
-        <div style={{padding: '10px'}} />
-        <AsideItem>
-          <CategoryBannerList context={context} />
-        </AsideItem>
       </AsideArea>
-    </PageContainer>
+    </Wrapper>
   );
 };
 
-const PageContainer = styled.div`
+const Wrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 ${props => props.theme.layout.marginVertical}px;
 `;
 
 const MainArea = styled.div`
@@ -79,10 +61,11 @@ const AsideArea = styled.aside`
   flex-direction: column;
   justify-content: space-between;
   min-width: 300px;
+  margin: 0 ${props => props.theme.layout.marginVertical};
 `;
 
 const AsideItem = styled.div`
   padding: 40px;
   border-radius: 10px;
-  background-color: ${colors.grayLight};
+  background-color: ${props => props.theme.color.white};
 `

@@ -24,7 +24,7 @@ const Box = styled.div`
   margin: 10px;
 `;
 
-const PaperContainer = styled.div`
+const PaperWrapper = styled.div`
   margin: 30px;
 `;
 
@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
         <link rel="canonical" href={`${config.siteUrl}/about/`} />
       </Helmet>
 
-      <PaperContainer>
+      <PaperWrapper>
         <Paper>
           <Card>
             <CardContent>
@@ -138,7 +138,7 @@ const AboutPage: React.FC = () => {
             </CardContent>
           </Card>
         </Paper>
-      </PaperContainer>
+      </PaperWrapper>
     </Layout>
   );
 };

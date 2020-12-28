@@ -1,35 +1,95 @@
 import React from 'react';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
-import {colors} from '../../../data/color';
+import {Logo} from './Logo';
+import {Link} from 'gatsby';
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
 
   height: 500px;
+  padding: 0 20px;
 
-  color: ${colors.grayLight};
-  background: ${colors.black1};
+  background: ${props => props.theme.color.baseDark};
 `;
 
+const getURL = (snsName: 'github' | 'twitter' | 'linkedin'): string =>
+  config.mySocials?.find((_) => _.icon === snsName)?.url ?? '';
+
 const Navigations = () => {
-  return <div>
+  const githubURL = getURL('github');
+  const twitterURL = getURL('twitter');
+  const linkedinURL = getURL('linkedin');
 
-  </div>
-}
-
-export const Footer: React.FC = () => {
   return (
-    <Container>
-      <Navigations />
-      <Copyright />
-    </Container>
+    <NavWrapper>
+      <Box>
+        <Link to="/">
+          <Logo size={146} />
+        </Link>
+      </Box>
+      <Box>
+        <PrimaryText>Lunash</PrimaryText>
+        <LinkText to="/about">経歴・仕事依頼</LinkText>
+      </Box>
+      <Box>
+        <PrimaryText>Blog</PrimaryText>
+        <LinkText to="categories">カテゴリ 一覧</LinkText>
+        <LinkText to="tags">タグ 一覧</LinkText>
+      </Box>
+      <Box>
+        <PrimaryText>SNS</PrimaryText>
+        <LinkText to={twitterURL}>Twitter</LinkText>
+        <LinkText to={githubURL}>Github</LinkText>
+        <LinkText to={linkedinURL}>Linkedin</LinkText>
+      </Box>
+    </NavWrapper>
   );
 };
 
-const Copyright: React.FC = () => {
-  return <footer>{config.copyright}</footer>;
+const NavWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  width: 100%;
+`;
+
+const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const PrimaryText = styled.div`
+  color: ${props => props.theme.color.primaryVivid};
+`;
+const LinkText = styled(Link)`
+  color: ${props => props.theme.color.baseLight};
+`;
+
+export const Footer: React.FC = () => {
+  return (
+    <Wrapper>
+      <Navigations />
+      <Bottom>
+        <HR />
+        <Copyright>{config.copyright}</Copyright>
+      </Bottom>
+    </Wrapper>
+  );
 };
+
+const Bottom = styled.div`
+  width: 80%;
+`
+
+const HR = styled.hr`
+  border: 1px solid ${props => props.theme.color.primaryVivid};
+`;
+
+const Copyright = styled.footer`
+  color: ${props => props.theme.color.baseLight};
+  padding: 10px 0;
+`;
