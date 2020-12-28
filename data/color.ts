@@ -34,7 +34,7 @@ export const colors = {
   DEPRECATED_base1: BLACK,
   DEPRECATED_hLeft: PURPLE_LIGHT,
   DEPRECATED_fontMark1: YELLOW_LIGHT,
-};
+} as const;
 
 export default {
   ...colors,

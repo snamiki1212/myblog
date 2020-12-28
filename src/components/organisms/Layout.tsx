@@ -2,8 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import {ThemeProvider} from '@material-ui/styles';
-
-import {Navigation} from '../molecules';
+import {HeadNav} from '../molecules/HeadNav'
 import {Footer} from '../atoms/Footer';
 
 import config from '../../../data/SiteConfig';
@@ -28,14 +27,13 @@ export const Layout: React.FC = ({children}) => {
       </Helmet>
 
       <ThemeProvider theme={theme}>
-        <Navigation>
-          <div>
-            <HeaderPadding />
-            {children}
-          </div>
+        <HeadNav />
+        <div>
+          <HeaderPadding />
+          {children}
+        </div>
 
-          <Footer />
-        </Navigation>
+        <Footer />
       </ThemeProvider>
     </>
   );
