@@ -6,8 +6,6 @@ import {UpdatedAt} from '.';
 import {Logo} from '../atoms/Logo';
 import {Tile} from '../atoms/Tile';
 
-import {colors} from '../../../data/color';
-
 type Props = {
   postInfo: MarkdownRemarkEdge;
 };
@@ -23,8 +21,8 @@ const Wrapper = styled.div``;
 
 const CategoryName = styled.span`
   border-radius: 10px;
-  background: ${colors.primaryVivid};
-  color: ${colors.baseDark};
+  background: ${props => props.theme.color.primaryVivid};
+  color: ${props => props.theme.color.baseDark};
   padding: 0 20px;
 `;
 
@@ -57,7 +55,9 @@ const GridTitle = styled.div`
   ${mixinCenter}
 `;
 
-const Title = styled.div``;
+const Title = styled.div`
+  font-family: ${props => props.theme.fontFamily.primary};
+`;
 
 export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   const title = postInfo.node.frontmatter.title;

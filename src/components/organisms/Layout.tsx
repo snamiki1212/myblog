@@ -1,12 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
-import {ThemeProvider} from '@material-ui/styles';
+import {ThemeProvider as DEPRECATED_ThemeProvider} from '@material-ui/styles';
+import {theme as DEPRECATED_theme} from '../../DEPRECATED_theme';
 import {HeadNav} from '../molecules/HeadNav'
 import {Footer} from '../atoms/Footer';
-
 import config from '../../../data/SiteConfig';
-import {theme} from '../../theme';
+import {theme } from '../../theme';
+import {ThemeProvider} from 'styled-components'
 
 import './layout.scss';
 
@@ -27,13 +28,15 @@ export const Layout: React.FC = ({children}) => {
       </Helmet>
 
       <ThemeProvider theme={theme}>
-        <HeadNav />
-        <div>
-          <HeaderPadding />
-          {children}
-        </div>
+        <DEPRECATED_ThemeProvider theme={DEPRECATED_theme}>
+          <HeadNav />
+          <div>
+            <HeaderPadding />
+            {children}
+          </div>
 
-        <Footer />
+          <Footer />
+        </DEPRECATED_ThemeProvider>
       </ThemeProvider>
     </>
   );
