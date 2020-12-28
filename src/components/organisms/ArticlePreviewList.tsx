@@ -47,7 +47,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 ${props => props.theme.layout.marginVertical};
+  margin: 0 ${props => props.theme.layout.marginVertical}px;
 `;
 
 const MainArea = styled.div`

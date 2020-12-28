@@ -6,42 +6,33 @@ import Button from '@material-ui/core/Button';
 import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 import {MyLinks} from '../atoms';
-import {TextWithUnderline} from '../atoms/TextWithUnderline';
-import {AuthorCardLayout, avatorSizeNum} from '../atoms/AuthorCardLayout';
+import {AuthorCardLayout} from '../atoms/AuthorCardLayout';
 
 export const AuthorCard: React.FC = () => (
   <AuthorCardLayout
     avator={<Avator src={config.userAvatar} alt={config.autherName} />}
-    name={<TextWithUnderline>{config.autherName}</TextWithUnderline>}
+    name={<Name>{config.autherName}</Name>}
     sns={<MyLinks />}
     description={<Discription>{config.userDescription}</Discription>}
     toProfile={
-      <ButtonWrapper>
         <Link to="/about">
-          <_Button variant="outlined">プロフィールもっと読む</_Button>
+          プロフィールもっと読む
         </Link>
-      </ButtonWrapper>
     }
   />
 );
 
 const Avator = styled.img`
-  width: ${avatorSizeNum}px;
+  width: ${(props) => props.theme.layout.autherAvatorSizeNum}px;
   border-radius: 100%;
 `;
 
-const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-const _Button = styled(Button)`
-  flex: 1;
-  color: ${colors.DEPRECATED_vivid1};
+const Name = styled.span`
+  font-size: ${props => props.theme.fontSize.tmp_1}px;
+  font-family: ${props => props.theme.fontFamily.primary};
 `;
 
 const Discription = styled.div`
-  padding-top: 10px;
-  padding-bottom: 30px;
-  font-size: 15px;
+  font-size: ${props => props.theme.fontSize.tmp_2}px;
+  font-family: ${props => props.theme.fontFamily.primary};
 `;

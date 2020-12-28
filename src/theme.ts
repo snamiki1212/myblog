@@ -8,9 +8,14 @@ export const theme= {
     baseDark: colors.baseDark,
   },
   layout: {
-    marginVertical: '20px',
+    marginVertical: 20,
+    autherAvatorSizeNum: 60,
   },
   fontFamily: {
     primary: `-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif`
+  },
+  fontSize: {
+    tmp_1: 24,
+    tmp_2: 12,
   },
 } as const;

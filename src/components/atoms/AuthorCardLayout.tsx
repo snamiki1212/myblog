@@ -41,12 +41,12 @@ export const AuthorCardLayout: React.FC<Props> = ({
   );
 };
 
-export const avatorSizeNum = 150;
+export const avatorSizeNum = 60;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-rows: ${avatorSizeNum / 2}px ${avatorSizeNum / 2}px 1fr 0.5fr;
-  grid-template-columns: ${avatorSizeNum}px 1fr;
+  grid-template-rows: ${props => props.theme.layout.autherAvatorSizeNum / 2}px ${props => props.theme.layout.autherAvatorSizeNum / 2}px 1fr 0.5fr;
+  grid-template-columns: ${props => props.theme.layout.autherAvatorSizeNum}px 1fr;
 `;
 
 const GridAvator = styled.div`
