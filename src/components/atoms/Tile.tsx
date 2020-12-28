@@ -10,10 +10,10 @@ const mixinChild = css`
   top: 0;
 `;
 
-const Parent = styled.div`
+const Parent = styled.div<{size: number}>`
   position: relative;
-  width: 430px;
-  height: 430px;
+  width: ${({size}) => `${size}px`};
+  height: ${({size}) => `${size}px`};
   border-radius: 10px;
   background: ${colors.baseDark}B3; // README: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors
 `;
@@ -31,9 +31,9 @@ const ChildBackground = styled(Image)`
   border-radius: 10px;
 `;
 
-export const Tile: React.FC<{imgInfo: any}> = ({imgInfo, children}) => {
+export const Tile: React.FC<{imgInfo: any, size: number}> = ({imgInfo, size, children}) => {
   return (
-    <Parent>
+    <Parent size={size}>
       <ChildBackground imgInfo={imgInfo} />
       <ChildContent>{children}</ChildContent>
     </Parent>

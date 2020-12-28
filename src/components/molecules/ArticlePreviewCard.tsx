@@ -12,7 +12,7 @@ type Props = {
   postInfo: MarkdownRemarkEdge;
 };
 
-const sizeOfLogo = 80;
+const sizeOfLogo = 60;
 
 const mixinCenter = css`
   display: grid;
@@ -30,30 +30,28 @@ const CategoryName = styled.span`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-rows: ${sizeOfLogo}px 1fr 0.1fr;
+  grid-template-rows: ${sizeOfLogo / 2}px ${sizeOfLogo / 2}px 1fr;
   grid-template-columns: ${sizeOfLogo}px 1fr;
   height: 100%;
   width: 100%;
 `;
 
 const GridLogo = styled.div`
-  grid-row: 1/2;
+  grid-row: 1/3;
   grid-column: 1/2;
 `;
 
 const GridCategory = styled.div`
   grid-row: 1/2;
   grid-column: 2/3;
-  ${mixinCenter}
-`;
-
-const GridTitle = styled.div`
-  grid-row: 2/3;
-  grid-column: 1/3;
-  ${mixinCenter}
 `;
 
 const GridUpdatedAt = styled.div`
+  grid-row: 2/3;
+  grid-column: 2/3;
+`;
+
+const GridTitle = styled.div`
   grid-row: 3/4;
   grid-column: 1/3;
   ${mixinCenter}
@@ -71,7 +69,7 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   return (
     <Link to={slug}>
       <Wrapper>
-        <Tile imgInfo={imgInfo}>
+        <Tile imgInfo={imgInfo} size={300}>
           <Grid>
             <GridLogo>
               <Logo size={sizeOfLogo} />
@@ -79,12 +77,12 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
             <GridCategory>
               <CategoryName>{category}</CategoryName>
             </GridCategory>
-            <GridTitle>
-              <Title>{title}</Title>
-            </GridTitle>
             <GridUpdatedAt>
               <UpdatedAt date={updatedAt} />
             </GridUpdatedAt>
+            <GridTitle>
+              <Title>{title}</Title>
+            </GridTitle>
           </Grid>
         </Tile>
       </Wrapper>
