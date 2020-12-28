@@ -17,5 +17,7 @@ export const theme= {
   fontSize: {
     tmp_1: 24,
     tmp_2: 12,
+    
+    tmp_3: 54,
   },
 } as const;

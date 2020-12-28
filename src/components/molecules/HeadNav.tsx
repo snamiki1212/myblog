@@ -34,5 +34,6 @@ const Image = styled.img`
 
 const BlogTitle = styled.span`
   color: ${props => props.theme.color.primaryVivid};
-  font-size: 54px;
+  font-family: ${props => props.theme.fontFamily.primary}px;
+  font-size: ${props => props.theme.fontSize.tmp_3}px;
 `;

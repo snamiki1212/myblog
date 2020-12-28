@@ -31,9 +31,9 @@ export const Paginator: React.FC<Props> = ({context}) => {
 
 const _Link = styled(Link)<{selected: boolean}>`
   text-decoration: none;
-  padding: 15px;
+  padding: 20px;
   transition: 0.3s;
-  border-radius: 50%;
+  border-radius: 10px;
   &:hover {
     background: ${colors.DEPRECATED_vivid2};
   }
