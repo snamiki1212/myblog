@@ -7,7 +7,9 @@ export const theme= {
     baseLight: colors.baseLight,
     baseDark: colors.baseDark,
   },
-  layout: {},
+  layout: {
+    marginVertical: '20px',
+  },
   fontFamily: {
     primary: `-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif`
   },

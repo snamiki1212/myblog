@@ -7,42 +7,26 @@ import config from '../../../data/SiteConfig';
 import {colors} from '../../../data/color';
 import {MyLinks} from '../atoms';
 import {TextWithUnderline} from '../atoms/TextWithUnderline';
+import {AuthorCardLayout, avatorSizeNum} from '../atoms/AuthorCardLayout';
 
 export const AuthorCard: React.FC = () => (
-  <Wrapper>
-    <AuthorInfo>
-      <Avator src={config.userAvatar} alt={config.autherName} />
-      <TextWithUnderline>{config.autherName}</TextWithUnderline>
-      <Discription>{config.userDescription}</Discription>
-    </AuthorInfo>
-
-    <ButtonWrapper>
-      <Link to="/about">
-        <_Button variant="outlined">▷プロフィールを読む</_Button>
-      </Link>
-    </ButtonWrapper>
-
-    <MyLinks />
-  </Wrapper>
+  <AuthorCardLayout
+    avator={<Avator src={config.userAvatar} alt={config.autherName} />}
+    name={<TextWithUnderline>{config.autherName}</TextWithUnderline>}
+    sns={<MyLinks />}
+    description={<Discription>{config.userDescription}</Discription>}
+    toProfile={
+      <ButtonWrapper>
+        <Link to="/about">
+          <_Button variant="outlined">プロフィールもっと読む</_Button>
+        </Link>
+      </ButtonWrapper>
+    }
+  />
 );
 
-const AuthorInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  alin-items: center;
-  justify-content: center;
-  color: ${colors.DEPRECATED_grayDark};
-`;
-
 const Avator = styled.img`
-  width: 150px;
+  width: ${avatorSizeNum}px;
   border-radius: 100%;
 `;
 
