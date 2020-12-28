@@ -7,13 +7,14 @@ import {UpdatedAt} from '.';
 import Image from '../atoms/Image';
 import {Logo} from '../atoms/Logo';
 
-import { colors } from '../../../data/color'
+import {colors} from '../../../data/color';
 
 type Props = {
   postInfo: MarkdownRemarkEdge;
 };
 
-const sizeOfLogo = 80
+const sizeOfLogo = 80;
+
 const mixinCenter = css`
   display: grid;
   margin: auto;
@@ -32,15 +33,15 @@ const CategoryName = styled.span`
   background: ${colors.primaryVivid};
   color: ${colors.baseDark};
   padding: 0 20px;
-`
+`;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-rows: ${sizeOfLogo}px 1fr .1fr;
+  grid-template-rows: ${sizeOfLogo}px 1fr 0.1fr;
   grid-template-columns: ${sizeOfLogo}px 1fr;
   height: 100%;
   width: 100%;
-`
+`;
 
 const GridLogo = styled.div`
   grid-row: 1/2;
@@ -51,7 +52,7 @@ const GridCategory = styled.div`
   grid-row: 1/2;
   grid-column: 2/3;
   ${mixinCenter}
-`
+`;
 
 const GridTitle = styled.div`
   grid-row: 2/3;
@@ -65,7 +66,7 @@ const GridUpdatedAt = styled.div`
   ${mixinCenter}
 `;
 
-const Title = styled.div``
+const Title = styled.div``;
 
 // const ImageWrapper = styled.div`
 //   position: absolute;
@@ -79,33 +80,32 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   const title = postInfo.node.frontmatter.title;
   const slug = postInfo.node.fields._slug;
   // const imgInfo = postInfo.node.frontmatter.cover;
-  const category = "ここカテゴリ" // postInfo.node.frontmatter.category;
-const updatedAt = postInfo.node.fields._updatedAt
+  const category = 'ここカテゴリ'; // postInfo.node.frontmatter.category;
+  const updatedAt = postInfo.node.fields._updatedAt;
 
-return(
-  <Link to={slug}>
-    <Wrapper>
-      <Grid>
-        <GridLogo>
-          <Logo size={sizeOfLogo} />
-        </GridLogo>
-        <GridCategory>
-          <CategoryName>{category}</CategoryName>
-        </GridCategory>
-        <GridTitle>
-          <Title>{title}</Title>
-        </GridTitle>
-        <GridUpdatedAt>
-          <UpdatedAt date={updatedAt}/>
-        </GridUpdatedAt>
-      </Grid>
-      {/* <ImageWrapper>
+  return (
+    <Link to={slug}>
+      <Wrapper>
+        <Grid>
+          <GridLogo>
+            <Logo size={sizeOfLogo} />
+          </GridLogo>
+          <GridCategory>
+            <CategoryName>{category}</CategoryName>
+          </GridCategory>
+          <GridTitle>
+            <Title>{title}</Title>
+          </GridTitle>
+          <GridUpdatedAt>
+            <UpdatedAt date={updatedAt} />
+          </GridUpdatedAt>
+        </Grid>
+        {/* <ImageWrapper>
         <Image imgInfo={imgInfo} />
       </ImageWrapper> */}
-    </Wrapper>
-  </Link>
-)
-
+      </Wrapper>
+    </Link>
+  );
 
   // return (
   //   <_Card key={}>
