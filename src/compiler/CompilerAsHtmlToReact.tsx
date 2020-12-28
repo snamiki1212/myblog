@@ -6,11 +6,11 @@ import HandlerForA from './HandlerForA';
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';
 
-const fontColorNormal = colors.black1;
-const fontColorHeadline = colors.black1;
-const tableLineColor = colors.grayDark;
-const boxBackgroundColor = colors.grayLight;
-const hLeft = colors.hLeft;
+const fontColorNormal = colors.DEPRECATED_black1;
+const fontColorHeadline = colors.DEPRECATED_black1;
+const tableLineColor = colors.DEPRECATED_grayDark;
+const boxBackgroundColor = colors.DEPRECATED_grayLight;
+const hLeft = colors.DEPRECATED_hLeft;
 
 const mixinHeadline = `
   font-weight: bold;
@@ -40,10 +40,10 @@ const H2 = styled.h2`
   padding: 10px 40px;
   background: linear-gradient(
     170deg,
-    ${colors.vivid1} 0%,
-    ${colors.vivid2} 100%
+    ${colors.DEPRECATED_vivid1} 0%,
+    ${colors.DEPRECATED_vivid2} 100%
   );
-  color: ${colors.white1};
+  color: ${colors.DEPRECATED_white1};
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }
@@ -68,8 +68,8 @@ const HR = styled.hr`
 
 const B = styled.b`
   ${mixinHeadline}
-  background: linear-gradient(transparent 50%, ${colors.fontMark1} 0%);
-  color: ${colors.base1}
+  background: linear-gradient(transparent 50%, ${colors.DEPRECATED_fontMark1} 0%);
+  color: ${colors.DEPRECATED_base1}
 `;
 
 const P = styled.p`

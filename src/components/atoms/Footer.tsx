@@ -11,8 +11,8 @@ const Wrapper = styled.div`
 
   height: 500px;
 
-  color: ${colors.grayLight};
-  background: ${colors.black1};
+  color: ${colors.DEPRECATED_grayLight};
+  background: ${colors.DEPRECATED_black1};
 `;
 
 const Navigations = () => {

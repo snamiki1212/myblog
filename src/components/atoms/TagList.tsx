@@ -36,5 +36,5 @@ const _Link = styled(Link)`
 
 const _Chip = styled(Chip)`
   margin: 5px 2px 0;
-  background: linear-gradient(170deg, ${colors.vivid1}, ${colors.vivid2});
+  background: linear-gradient(170deg, ${colors.DEPRECATED_vivid1}, ${colors.DEPRECATED_vivid2});
 `;

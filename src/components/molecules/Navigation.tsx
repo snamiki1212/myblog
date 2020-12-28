@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: 'flex',
     },
     appBar: {
-      backgroundImage: `linear-gradient(170deg, ${colors.vivid1} ,  ${colors.vivid2} 70%, ${colors.vivid3})`,
+      backgroundImage: `linear-gradient(170deg, ${colors.DEPRECATED_vivid1} ,  ${colors.DEPRECATED_vivid2} 70%, ${colors.DEPRECATED_vivid3})`,
     },
     // toolbar: theme.mixins.toolbar,
     content: {

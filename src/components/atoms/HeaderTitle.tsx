@@ -11,12 +11,12 @@ export const HeaderTitle: React.FC = () => {
   );
 };
 
-const beforeColor = colors.white1;
+const beforeColor = colors.DEPRECATED_white1;
 
 const Inner = styled.span`
   transition: color 0.3s ease;
   &:hover {
-    color: ${colors.vivid1};
+    color: ${colors.DEPRECATED_vivid1};
     text-shadow: -1px -1px 0 ${beforeColor}, 1px -1px 0 ${beforeColor},
       -1px 1px 0 ${beforeColor}, 1px 1px 0 ${beforeColor}; // 縁取り文字:REF https://css-tricks.com/adding-stroke-to-web-text/
   }

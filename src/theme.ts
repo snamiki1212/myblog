@@ -7,10 +7,10 @@ import {colors} from '../data/color';
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      main: colors.primary,
+      main: colors.DEPRECATED_primary,
     },
     secondary: {
-      main: colors.secondary,
+      main: colors.DEPRECATED_secondary,
     },
   },
   typography: {

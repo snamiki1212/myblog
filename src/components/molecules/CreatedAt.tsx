@@ -7,7 +7,7 @@ import {colors} from '../../../data/color';
 
 type Props = {date: Date; containerStyle?: any};
 
-const FONT_COLOR = colors.grayDark;
+const FONT_COLOR = colors.DEPRECATED_grayDark;
 
 // TODO: atomsに移動させたい
 export const CreatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {

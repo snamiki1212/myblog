@@ -15,27 +15,25 @@ const GREEN_LIGHT = '#b1f4cf';
 const YELLOW_LIGHT = '#ffeaa5';
 
 export const colors = {
-  primary: BLACK,
-  secondary: PURPLE_LIGHT,
+  primaryVivid: '#ECC100',
+  white: '#FFFFFF',
+  baseLight: '#ECF2F8',
+  baseDark: '#1C324A',
 
-  // mono-tone
-  black1: BLACK,
-  grayLight: GRAY_LIGHT,
-  grayMiddle: 'gray',
-  grayDark: GRAY_DARK,
-  white1: WHITE,
-
-  // color
-  vivid1: PURPLE_LIGHT,
-  vivid2: GREEN_LIGHT,
-  vivid3: YELLOW_LIGHT,
-
-  // base
-  base1: BLACK,
-
-  // Misc
-  hLeft: PURPLE_LIGHT,
-  fontMark1: YELLOW_LIGHT,
+  // NOTE: DEPRECATED
+  DEPRECATED_primary: BLACK,
+  DEPRECATED_secondary: PURPLE_LIGHT,
+  DEPRECATED_black1: BLACK,
+  DEPRECATED_grayLight: GRAY_LIGHT,
+  DEPRECATED_grayMiddle: 'gray',
+  DEPRECATED_grayDark: GRAY_DARK,
+  DEPRECATED_white1: WHITE,
+  DEPRECATED_vivid1: PURPLE_LIGHT,
+  DEPRECATED_vivid2: GREEN_LIGHT,
+  DEPRECATED_vivid3: YELLOW_LIGHT,
+  DEPRECATED_base1: BLACK,
+  DEPRECATED_hLeft: PURPLE_LIGHT,
+  DEPRECATED_fontMark1: YELLOW_LIGHT,
 };
 
 export default {

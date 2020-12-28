@@ -59,16 +59,16 @@ const Image = styled.img`
 `;
 
 const Wrapper = styled.div`
-  border: 2px solid ${colors.grayLight};
+  border: 2px solid ${colors.DEPRECATED_grayLight};
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px;
   transition: 0.5s;
-  background-color: ${colors.white1};
+  background-color: ${colors.DEPRECATED_white1};
   &:hover {
-    background-color: ${colors.grayMiddle};
-    color: ${colors.white1}
+    background-color: ${colors.DEPRECATED_grayMiddle};
+    color: ${colors.DEPRECATED_white1}
   }
   &:hover {
     ${Image} {

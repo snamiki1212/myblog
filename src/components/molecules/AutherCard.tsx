@@ -38,7 +38,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   alin-items: center;
   justify-content: center;
-  color: ${colors.grayDark};
+  color: ${colors.DEPRECATED_grayDark};
 `;
 
 const Avator = styled.img`
@@ -53,7 +53,7 @@ const ButtonWrapper = styled.div`
 
 const _Button = styled(Button)`
   flex: 1;
-  color: ${colors.vivid1};
+  color: ${colors.DEPRECATED_vivid1};
 `;
 
 const Discription = styled.div`

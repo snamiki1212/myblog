@@ -11,8 +11,8 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${colors.grayLight};
-  color: ${colors.black1};
+  background: ${colors.DEPRECATED_grayLight};
+  color: ${colors.DEPRECATED_black1};
 `;
 
 export const CategoryBanner: React.FC<{categoryName: string}> = ({

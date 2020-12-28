@@ -35,10 +35,10 @@ const _Link = styled(Link)<{selected: boolean}>`
   transition: 0.3s;
   border-radius: 50%;
   &:hover {
-    background: ${colors.vivid2};
+    background: ${colors.DEPRECATED_vivid2};
   }
-  color: ${({selected}) => selected && colors.white1};
-  background: ${({selected}) => (selected ? colors.black1 : colors.grayLight)};
+  color: ${({selected}) => selected && colors.DEPRECATED_white1};
+  background: ${({selected}) => (selected ? colors.DEPRECATED_black1 : colors.DEPRECATED_grayLight)};
 `;
 
 const Wrapper = styled.div`

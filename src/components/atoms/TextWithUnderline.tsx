@@ -18,6 +18,6 @@ const Wrapper = styled.div`
 `;
 
 const Undeline = styled.div`
-  background: linear-gradient(to right, ${colors.vivid1}, ${colors.vivid2});
+  background: linear-gradient(to right, ${colors.DEPRECATED_vivid1}, ${colors.DEPRECATED_vivid2});
   height: 3px;
 `;

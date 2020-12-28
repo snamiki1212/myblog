@@ -84,5 +84,5 @@ const AsideArea = styled.aside`
 const AsideItem = styled.div`
   padding: 40px;
   border-radius: 10px;
-  background-color: ${colors.grayLight};
+  background-color: ${colors.DEPRECATED_grayLight};
 `
