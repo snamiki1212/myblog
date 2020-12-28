@@ -3,17 +3,16 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import {ThemeProvider as DEPRECATED_ThemeProvider} from '@material-ui/styles';
 import {theme as DEPRECATED_theme} from '../../DEPRECATED_theme';
-import {HeadNav} from '../molecules/HeadNav'
+import {HeadNav} from '../molecules/HeadNav';
 import {Footer} from '../atoms/Footer';
 import config from '../../../data/SiteConfig';
-import {theme } from '../../theme';
-import {ThemeProvider} from 'styled-components'
-
+import {theme} from '../../theme';
+import {ThemeProvider} from 'styled-components';
 import './layout.scss';
 
-const HeaderPadding = styled.div`
-  // Navigation の高さの分の空間
-  height: 55px;
+const BodyWrapper = styled.div`
+  opacity: 0.99; // z-indexがマイナスの要素よりも背面に持っていきたいので。(README: https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ )
+  background-color: ${(props) => props.theme.color.baseLight};
 `;
 
 export const Layout: React.FC = ({children}) => {
@@ -30,10 +29,7 @@ export const Layout: React.FC = ({children}) => {
       <ThemeProvider theme={theme}>
         <DEPRECATED_ThemeProvider theme={DEPRECATED_theme}>
           <HeadNav />
-          <div>
-            <HeaderPadding />
-            {children}
-          </div>
+          <BodyWrapper>{children}</BodyWrapper>
 
           <Footer />
         </DEPRECATED_ThemeProvider>
