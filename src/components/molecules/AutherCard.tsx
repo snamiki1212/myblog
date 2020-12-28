@@ -10,15 +10,15 @@ import {AuthorCardLayout} from '../atoms/AuthorCardLayout';
 
 export const AuthorCard: React.FC = () => (
   <AuthorCardLayout
-    avator={<Avator src={config.userAvatar} alt={config.autherName} />}
+    avator={
+      <Link to="/about">
+        <Avator src={config.userAvatar} alt={config.autherName} />
+      </Link>
+    }
     name={<Name>{config.autherName}</Name>}
     sns={<MyLinks />}
     description={<Discription>{config.userDescription}</Discription>}
-    toProfile={
-        <Link to="/about">
-          プロフィールもっと読む
-        </Link>
-    }
+    toProfile={<Link to="/about">プロフィールもっと読む</Link>}
   />
 );
 
@@ -28,11 +28,11 @@ const Avator = styled.img`
 `;
 
 const Name = styled.span`
-  font-size: ${props => props.theme.fontSize.tmp_1}px;
-  font-family: ${props => props.theme.fontFamily.primary};
+  font-size: ${(props) => props.theme.fontSize.tmp_1}px;
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
 const Discription = styled.div`
-  font-size: ${props => props.theme.fontSize.tmp_2}px;
-  font-family: ${props => props.theme.fontFamily.primary};
+  font-size: ${(props) => props.theme.fontSize.tmp_2}px;
+  font-family: ${(props) => props.theme.fontFamily.primary};
 `;
