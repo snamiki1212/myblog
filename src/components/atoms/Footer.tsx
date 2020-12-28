@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
-import {colors} from '../../../data/color';
 import {Logo} from './Logo';
 import {Link} from 'gatsby';
 
@@ -14,8 +13,7 @@ const Wrapper = styled.div`
   height: 500px;
   padding: 0 20px;
 
-  color: ${colors.DEPRECATED_grayLight};
-  background: ${colors.baseDark};
+  background: ${props => props.theme.color.baseDark};
 `;
 
 const getURL = (snsName: 'github' | 'twitter' | 'linkedin'): string =>
@@ -65,10 +63,10 @@ const Box = styled.div`
 `;
 
 const PrimaryText = styled.div`
-  color: ${colors.primaryVivid};
+  color: ${props => props.theme.color.primaryVivid};
 `;
 const LinkText = styled(Link)`
-  color: ${colors.baseLight};
+  color: ${props => props.theme.color.baseLight};
 `;
 
 export const Footer: React.FC = () => {
@@ -88,10 +86,10 @@ const Bottom = styled.div`
 `
 
 const HR = styled.hr`
-  border: 1px solid ${colors.primaryVivid};
+  border: 1px solid ${props => props.theme.color.primaryVivid};
 `;
 
 const Copyright = styled.footer`
-  color: ${colors.baseLight};
+  color: ${props => props.theme.color.baseLight};
   padding: 10px 0;
 `;

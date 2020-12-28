@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from '../atoms/Image';
 import styled, {css} from 'styled-components';
-import {colors} from '../../../data/color';
 
 // REF: https://markoskon.com/gatsby-background-image-example/
 
@@ -15,7 +14,7 @@ const Parent = styled.div<{size: number}>`
   width: ${({size}) => `${size}px`};
   height: ${({size}) => `${size}px`};
   border-radius: 10px;
-  background: ${colors.baseDark}B3; // README: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors
+  background: ${props => props.theme.color.baseDark}B3; // README: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors
 `;
 
 const ChildContent = styled.div`

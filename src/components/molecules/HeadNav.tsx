@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {colors} from '../../../data/color';
 import {siteTitle} from '../../../data/SiteConfig';
 import {Link} from 'gatsby';
 
@@ -20,7 +19,7 @@ export const HeadNav: React.FC = () => {
 };
 
 const Wrapper = styled.div`
-  background: ${colors.baseDark};
+  background: ${props => props.theme.color.baseDark};
 `;
 
 const Flex = styled.div`
@@ -34,6 +33,6 @@ const Image = styled.img`
 `;
 
 const BlogTitle = styled.span`
-  color: ${colors.primaryVivid};
+  color: ${props => props.theme.color.primaryVivid};
   font-size: 54px;
 `;
