@@ -63,10 +63,19 @@ const Box = styled.div`
 `;
 
 const PrimaryText = styled.div`
+  font-family: ${props => props.theme.fontFamily.primary};
   color: ${props => props.theme.color.primaryVivid};
+  font-weight: bold;
 `;
+
 const LinkText = styled(Link)`
+  font-family: ${props => props.theme.fontFamily.primary};
   color: ${props => props.theme.color.baseLight};
+
+  &:hover {
+    color: ${props => props.theme.color.primaryVivid};
+    border-bottom: 1px solid ${props => props.theme.color.primaryVivid};
+  }
 `;
 
 export const Footer: React.FC = () => {
