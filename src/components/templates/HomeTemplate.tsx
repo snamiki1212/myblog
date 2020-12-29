@@ -40,7 +40,7 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
       {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
       <div>
         <BaseArticlePageLayout
-          articles={<ArticleList postEdges={postEdges} context={pageContext} />}
+          articles={<ArticleList postEdges={postEdges} />}
           pagination={<Paginator context={pageContext} />}
           profile={<AuthorCard />}
         />

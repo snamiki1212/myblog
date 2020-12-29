@@ -17,7 +17,9 @@ const mixinCenter = css`
   margin: auto;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  margin: 0 auto;
+`;
 
 const CategoryName = styled.span`
   border-radius: 10px;
@@ -67,26 +69,28 @@ export const ArticlePreviewCard: React.FC<Props> = ({postInfo}) => {
   const updatedAt = postInfo.node.fields._updatedAt;
 
   return (
-    <Link to={slug}>
-      <Wrapper>
-        <Tile imgInfo={imgInfo} size={300}>
-          <Grid>
-            <GridLogo>
-              <Logo size={sizeOfLogo} />
-            </GridLogo>
-            <GridCategory>
-              <CategoryName>{category}</CategoryName>
-            </GridCategory>
-            <GridUpdatedAt>
-              <UpdatedAt date={updatedAt} />
-            </GridUpdatedAt>
-            <GridTitle>
-              <Title>{title}</Title>
-            </GridTitle>
-          </Grid>
-        </Tile>
-      </Wrapper>
-    </Link>
+    <Wrapper>
+      <Link to={slug}>
+        <Wrapper>
+          <Tile imgInfo={imgInfo} size={300}>
+            <Grid>
+              <GridLogo>
+                <Logo size={sizeOfLogo} />
+              </GridLogo>
+              <GridCategory>
+                <CategoryName>{category}</CategoryName>
+              </GridCategory>
+              <GridUpdatedAt>
+                <UpdatedAt date={updatedAt} />
+              </GridUpdatedAt>
+              <GridTitle>
+                <Title>{title}</Title>
+              </GridTitle>
+            </Grid>
+          </Tile>
+        </Wrapper>
+      </Link>
+    </Wrapper>
   );
 
   // return (

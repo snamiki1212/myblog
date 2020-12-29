@@ -26,7 +26,7 @@ export const TagTemplate: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
 
       <BaseArticlePageLayout
-        articles={<ArticleList postEdges={postEdges} context={pageContext} />}
+        articles={<ArticleList postEdges={postEdges} />}
         pagination={<Paginator context={pageContext} />}
         profile={<AuthorCard />}
       />

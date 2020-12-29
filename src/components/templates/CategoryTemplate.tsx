@@ -31,7 +31,6 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         articles={
           <ArticleList
             postEdges={postEdges}
-            context={pageContext}
             description={
               <div style={{margin: '0 30px'}}>
                 <CategoryBanner categoryName={category} />

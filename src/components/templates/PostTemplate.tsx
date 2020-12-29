@@ -7,12 +7,12 @@ import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Image from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
+import {ArticleList} from '../organisms/ArticleList';
 import {
   TagList,
   SocialLinks,
   SEOMeta,
   Markdown,
-  ArticlesPreviewWrapper,
 } from '../atoms';
 import {ArticlePreviewCard} from '../molecules';
 
@@ -76,14 +76,8 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
           </AuthorCardWrapper>
         </ItemWrapper>
 
-        <ArticlesPreviewWrapper>
-          {suggestions.map((edge) => (
-            <ArticleComponent
-              key={edge.node.frontmatter.title}
-              postInfo={edge}
-            />
-          ))}
-        </ArticlesPreviewWrapper>
+        <ArticleList postEdges={suggestions} />
+
       </Wrapper>
     </Layout>
   );
