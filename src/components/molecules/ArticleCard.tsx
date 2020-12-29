@@ -19,7 +19,11 @@ const CategoryName = styled.span`
   border-radius: 10px;
   background: ${(props) => props.theme.color.primaryVivid};
   color: ${(props) => props.theme.color.baseDark};
-  padding: 0 20px;
+  padding: 5px 20px;
+`;
+
+const Flex = styled.div`
+  display: flex;
 `;
 
 const Title = styled.div`
@@ -30,7 +34,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo}) => {
   const title = postInfo.node.frontmatter.title;
   const slug = postInfo.node.fields._slug;
   const imgInfo = postInfo.node.frontmatter.cover;
-  const category = 'ここカテゴリ'; // postInfo.node.frontmatter.category;
+  const category = postInfo.node.frontmatter.category;
   const updatedAt = postInfo.node.fields._updatedAt;
   const {
     layout: {articleCardLogoSize},
@@ -42,7 +46,11 @@ export const ArticleCard: React.FC<Props> = ({postInfo}) => {
         <Tile imgInfo={imgInfo} size={300}>
           <ArticleCardLayout
             logo={<Logo size={articleCardLogoSize} />}
-            category={<CategoryName>{category}</CategoryName>}
+            category={
+              <Flex>
+                <CategoryName>{category}</CategoryName>
+              </Flex>
+            }
             updatedAt={<UpdatedAt date={updatedAt} />}
             title={<Title>{title}</Title>}
           />

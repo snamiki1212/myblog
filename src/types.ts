@@ -7,11 +7,12 @@ export interface MarkdownRemarkEdge {
       _createdAt: Date;
       _updatedAt: Date;
     };
-    excerpt: string;
+    
     timeToRead: number;
     frontmatter: {
       title: string;
       tags: string;
+      category: string;
       cover: {
         publicURL: string;
         childImageSharp: {

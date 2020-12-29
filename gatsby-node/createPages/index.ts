@@ -25,11 +25,10 @@ const allMarkdownRemarkGraphQL = `
 
 type AllMarkdownRemarkResult = {
   allMarkdownRemark: {
-    edges: {
+    edges: Array<{
       node: {
         id: string;
         frontmatter: {
-          id: string;
           tags: string[];
           category: string;
         };
@@ -37,7 +36,7 @@ type AllMarkdownRemarkResult = {
           _slug: string; // TODO: 消して、他のslug を使いたい
         };
       };
-    }[];
+    }>;
   };
 };
 
@@ -71,8 +70,8 @@ export const createPages = async ({graphql, actions}) => {
       createPostPages({createPage, subPageContext, allPosts});
 
       // create Page
-      categories.createPage({createPage, subPageContext})
-      tags.createPage({createPage, subPageContext})
+      categories.createPage({createPage, subPageContext});
+      tags.createPage({createPage, subPageContext});
 
       return;
     } catch (errors) {

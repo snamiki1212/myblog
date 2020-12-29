@@ -161,6 +161,7 @@ export const postPageQuery = graphql`
           frontmatter {
             title
             tags
+            category
             cover {
               publicURL
               childImageSharp {
