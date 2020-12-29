@@ -39,7 +39,7 @@ class SubPageList {
       case 'tag':
         return TagSelectionPage;
     }
-  }
+  };
 
   private getSelectionPagePath = () => {
     switch (this.type) {
@@ -48,10 +48,15 @@ class SubPageList {
       case 'tag':
         return 'tags';
     }
-  }
+  };
+
+  public sortByPostNum = () => {
+    this.subPageList = this.subPageList.sort((a, b) => b.count - a.count);
+    return this;
+  };
 
   public createPage = ({createPage, subPageContext}: CreatePagesArgs) => {
-    const component = this.getSelectionPageComponent()
+    const component = this.getSelectionPageComponent();
     const path = this.getSelectionPagePath();
     const selectionPageContext = {...subPageContext};
     createPage({
@@ -179,5 +184,8 @@ export const makeSubPageList = ({allPosts}: {allPosts: any[]}) => {
     }
   );
 
-  return {categories, tags};
+  return {
+    categories: categories.sortByPostNum(),
+    tags: tags.sortByPostNum(),
+  };
 };

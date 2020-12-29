@@ -1,9 +1,9 @@
 ---
-title: 'フィリピンの食べ物で人気の、WingersUnlimitedに行ってきた話'
+title: 'フィリピンの食べ物で人気の『WingersUnlimited』に行ってきた話'
 cover: cover.jpg
 createdAt: '2019-04-03 17:01'
 updatedAt: '2019-04-03 17:01'
-category: '海外'
+category: '雑記'
 tags:
   - フィリピン留学
   - 英語
