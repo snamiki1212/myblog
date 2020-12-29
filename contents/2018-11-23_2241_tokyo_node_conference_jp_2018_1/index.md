@@ -1,5 +1,5 @@
 ---
-title: '東京Node学園祭2018(Conference@JP)の1日目のまとめ（その１）'
+title: '東京Node学園祭 2018 (Conference @JP)の1日目のまとめ（その１）'
 cover: 'cover.jpg'
 createdAt: '2018-11-23 22:42'
 updatedAt: '2018-11-23 22:42'

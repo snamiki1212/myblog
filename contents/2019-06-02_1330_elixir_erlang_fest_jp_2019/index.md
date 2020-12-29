@@ -1,5 +1,5 @@
 ---
-title: 'Erlang&ElixirFestJP2019のイベントレポート'
+title: 'Erlang & ElixirFest JP 2019のイベントレポート'
 cover: 'cover.jpg'
 createdAt: '2019-06-02 21:30'
 updatedAt: '2019-06-02 21:30'
