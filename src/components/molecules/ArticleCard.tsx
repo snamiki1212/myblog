@@ -39,6 +39,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo}) => {
   const updatedAt = postInfo.node.fields._updatedAt;
   const {
     layout: {articleCardLogoSize},
+    color: {primaryVivid},
   } = React.useContext(ThemeContext);
 
   return (
@@ -48,7 +49,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo}) => {
           <ArticleCardLayout
             logo={<Logo size={articleCardLogoSize} />}
             category={<CategoryName>{category}</CategoryName>}
-            updatedAt={<UpdatedAt date={updatedAt} />}
+            updatedAt={<UpdatedAt date={updatedAt} innerStyle={{color: primaryVivid}} />}
             title={<Title>{title}</Title>}
           />
         </Tile>
