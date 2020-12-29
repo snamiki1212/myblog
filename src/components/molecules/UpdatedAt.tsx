@@ -24,4 +24,6 @@ const Wrapper = styled.span<{containerStyle: any}>`
   ${({containerStyle}) => `${{...containerStyle}}`};
 `;
 
-const Date = styled.span``;
+const Date = styled.span`
+  color: ${props => props.theme.color.primaryVivid};
+`;

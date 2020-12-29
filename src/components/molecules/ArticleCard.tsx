@@ -19,14 +19,15 @@ const CategoryName = styled.span`
   border-radius: 10px;
   background: ${(props) => props.theme.color.primaryVivid};
   color: ${(props) => props.theme.color.baseDark};
+  font-family: ${(props) => props.theme.fontFamily.primary};
   padding: 5px 20px;
 `;
 
-const Flex = styled.div`
-  display: flex;
-`;
-
 const Title = styled.div`
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  color: ${(props) => props.theme.color.baseLight};
   font-family: ${(props) => props.theme.fontFamily.primary};
 `;
 
@@ -46,11 +47,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo}) => {
         <Tile imgInfo={imgInfo} size={300}>
           <ArticleCardLayout
             logo={<Logo size={articleCardLogoSize} />}
-            category={
-              <Flex>
-                <CategoryName>{category}</CategoryName>
-              </Flex>
-            }
+            category={<CategoryName>{category}</CategoryName>}
             updatedAt={<UpdatedAt date={updatedAt} />}
             title={<Title>{title}</Title>}
           />

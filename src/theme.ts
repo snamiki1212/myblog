@@ -11,7 +11,7 @@ export const theme = {
   layout: {
     marginVertical: 20,
     autherAvatorSizeNum: 60,
-    articleCardLogoSize: 60,
+    articleCardLogoSize: 48,
   },
   fontFamily: {
     primary: `-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif`,
