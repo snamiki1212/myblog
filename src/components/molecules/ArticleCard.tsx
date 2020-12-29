@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Wrapper = styled.div`
-  margin: 0 auto;
+  margin: 10px auto;
 `;
 
 const CategoryName = styled.span`
