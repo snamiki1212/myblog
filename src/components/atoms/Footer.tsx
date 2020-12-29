@@ -37,8 +37,8 @@ const Navigations = () => {
       </Box>
       <Box>
         <PrimaryText>Blog</PrimaryText>
-        <LinkText to="categories">カテゴリ 一覧</LinkText>
-        <LinkText to="tags">タグ 一覧</LinkText>
+        <LinkText to="/categories">カテゴリ 一覧</LinkText>
+        <LinkText to="/tags">タグ 一覧</LinkText>
       </Box>
       <Box>
         <PrimaryText>SNS</PrimaryText>

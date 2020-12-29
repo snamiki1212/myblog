@@ -5,9 +5,12 @@ import config from '../../../data/SiteConfig';
 import {IndexPageContext} from '../../../gatsby-node/types';
 import {SEOMeta} from '../atoms';
 import Layout from '../organisms/Layout';
-import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
+import {ArticleList} from '../organisms/ArticleList';
 import {MarkdownRemarkEdge} from '../../types';
 // import Img from 'gatsby-image';
+import {AuthorCard} from '../molecules';
+import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
+import {Paginator} from '../atoms';
 
 type Props = {
   pageContext: IndexPageContext;
@@ -35,16 +38,13 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
       <SEOMeta postEdges={postEdges} />
 
       {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
-      <ArticlePreviewList
-        postEdges={postEdges}
-        context={pageContext}
-        description={
-          <div>
-            {/* <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg" /> */}
-            {/* <img src={logo} /> */}
-          </div>
-        }
-      />
+      <div>
+        <BaseArticlePageLayout
+          articles={<ArticleList postEdges={postEdges} context={pageContext} />}
+          pagination={<Paginator context={pageContext} />}
+          profile={<AuthorCard />}
+        />
+      </div>
     </Layout>
   );
 };

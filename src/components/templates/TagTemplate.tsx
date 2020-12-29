@@ -4,8 +4,11 @@ import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
 import {TagPageContext} from '../../../gatsby-node/types';
 import Layout from '../organisms/Layout';
-import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
+import {ArticleList} from '../organisms/ArticleList';
 import {MarkdownRemarkEdge} from '../../types';
+import {AuthorCard} from '../molecules';
+import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
+import {Paginator} from '../atoms';
 
 type Props = {
   pageContext: TagPageContext;
@@ -21,7 +24,12 @@ export const TagTemplate: React.FC<Props> = ({pageContext, data}) => {
         <title>{`${config.siteTitle} | ${tag}`}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
-      <ArticlePreviewList postEdges={postEdges} context={pageContext} />
+
+      <BaseArticlePageLayout
+        articles={<ArticleList postEdges={postEdges} context={pageContext} />}
+        pagination={<Paginator context={pageContext} />}
+        profile={<AuthorCard />}
+      />
     </Layout>
   );
 };

@@ -4,9 +4,12 @@ import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
 import {CategoryPageContext} from '../../../gatsby-node/types';
 import Layout from '../organisms/Layout';
-import {ArticlePreviewList} from '../organisms/ArticlePreviewList';
+import {ArticleList} from '../organisms/ArticleList';
 import {CategoryBanner} from '../atoms/CategoryBanner';
 import {MarkdownRemarkEdge} from '../../types';
+import {AuthorCard} from '../molecules';
+import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
+import {Paginator} from '../atoms';
 
 type Props = {
   pageContext: CategoryPageContext;
@@ -24,14 +27,20 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      <ArticlePreviewList
-        postEdges={postEdges}
-        context={pageContext}
-        description={
-          <div style={{margin: '0 30px'}}>
-            <CategoryBanner categoryName={category} />
-          </div>
+      <BaseArticlePageLayout
+        articles={
+          <ArticleList
+            postEdges={postEdges}
+            context={pageContext}
+            description={
+              <div style={{margin: '0 30px'}}>
+                <CategoryBanner categoryName={category} />
+              </div>
+            }
+          />
         }
+        pagination={<Paginator context={pageContext} />}
+        profile={<AuthorCard />}
       />
     </Layout>
   );
