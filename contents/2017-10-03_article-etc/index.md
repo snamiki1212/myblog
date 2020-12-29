@@ -1,5 +1,5 @@
 ---
-title: 'Test Article1'
+title: '【すごい】どうも、ここにブログの３２文字のタイトルが入るのでよろ＠＠＠＠＠'
 cover: 'cover.jpg'
 createdAt: '2017-10-03 19:53'
 updatedAt: '2017-10-03 19:53'
