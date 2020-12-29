@@ -1,4 +1,4 @@
 export * from './AuthorCard';
-export * from './ArticlePreviewCard';
+export * from './ArticleCard';
 export * from './UpdatedAt';
 export * from './CreatedAt';

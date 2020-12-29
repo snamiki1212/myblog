@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
-import {Logo} from './Logo';
+import {Logo} from '../atoms/Logo';
 import {Link} from 'gatsby';
 
 const Wrapper = styled.div`

@@ -7,17 +7,14 @@ import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Image from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
+import {SocialLinks} from '../molecules/SocialLinks';
 import {ArticleList} from '../organisms/ArticleList';
 import {
   TagList,
-  SocialLinks,
   SEOMeta,
   Markdown,
 } from '../atoms';
-import {ArticlePreviewCard} from '../molecules';
-
 import {PostPageContext} from '../../../gatsby-node/types';
-
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge} from '../../types';
 
@@ -37,8 +34,6 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
-
-  const ArticleComponent = ArticlePreviewCard;
 
   return (
     <Layout>
