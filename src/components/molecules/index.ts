@@ -1,5 +1,4 @@
-export * from './AutherCard';
-export * from './ArticlePreviewCard';
-export * from './ArticlePreviewLine';
+export * from './AuthorCard';
+export * from './ArticleCard';
 export * from './UpdatedAt';
 export * from './CreatedAt';

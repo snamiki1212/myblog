@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {ThemeProvider as DEPRECATED_ThemeProvider} from '@material-ui/styles';
 import {theme as DEPRECATED_theme} from '../../DEPRECATED_theme';
 import {HeadNav} from '../molecules/HeadNav';
-import {Footer} from '../atoms/Footer';
+import {Footer} from './Footer';
 import config from '../../../data/SiteConfig';
 import {theme} from '../../theme';
 import {ThemeProvider} from 'styled-components';

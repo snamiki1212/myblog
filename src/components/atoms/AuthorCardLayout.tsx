@@ -17,31 +17,39 @@ export const AuthorCardLayout: React.FC<Props> = ({
   toProfile,
 }) => {
   return (
-    <Grid>
-      <GridAvator>
-        {avator}
-      </GridAvator>
+    <Wrapper>
+      <Grid>
+        <GridAvator>
+          {avator}
+        </GridAvator>
 
-      <GridName>
-        {name}
-      </GridName>
+        <GridName>
+          {name}
+        </GridName>
 
-      <GridSNS>
-        {sns}
-      </GridSNS>
+        <GridSNS>
+          {sns}
+        </GridSNS>
 
-      <GridDescription>
-        {description}
-      </GridDescription>
+        <GridDescription>
+          {description}
+        </GridDescription>
 
-      <GridProfileLink>
-        {toProfile}
-      </GridProfileLink>
-    </Grid>
+        <GridProfileLink>
+          {toProfile}
+        </GridProfileLink>
+      </Grid>
+    </Wrapper>
   );
 };
 
 export const avatorSizeNum = 60;
+
+const Wrapper = styled.div`
+  padding: 40px;
+  border-radius: 10px;
+  background-color: ${props => props.theme.color.white};
+`;
 
 const Grid = styled.div`
   display: grid;

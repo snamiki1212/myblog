@@ -15,7 +15,7 @@ import {
   RedditIcon,
   LineIcon,
 } from 'react-share';
-import {HatenaShareButton} from './';
+import {HatenaShareButton} from '../atoms';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';

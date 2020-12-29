@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {blogCardLogo} from '../../../data/SiteConfig';
-import {colors} from '../../../data/color';
 import {mixinSpinAnimate} from './SpinAnimation'
 
 const altImg =
@@ -52,23 +51,22 @@ export const BlogCard: React.FC<Props> = ({
   );
 };
 
-// REF: https://stackoverflow.com/questions/41007060/target-another-styled-component-on-hover
 const Image = styled.img`
   width: 80px;
   height: 80px;
 `;
 
 const Wrapper = styled.div`
-  border: 2px solid ${colors.DEPRECATED_grayLight};
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  transition: 0.5s;
-  background-color: ${colors.DEPRECATED_white1};
+  transition: .5s;
+  background-color: ${props => props.theme.color.white};
   &:hover {
-    background-color: ${colors.DEPRECATED_grayMiddle};
-    color: ${colors.DEPRECATED_white1}
+    background-color: ${props => props.theme.color.link};
+    color: ${props => props.theme.color.baseLight};
+    transition: .5s;
   }
   &:hover {
     ${Image} {

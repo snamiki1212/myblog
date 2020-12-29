@@ -54,7 +54,7 @@ export const Icon: React.FC<Props> = ({icon, ...rest}) => {
     case 'createdAt':
       return <Create fontSize="small" {...rest} />;
     case 'updatedAt':
-      return <Update fontSize="small" />;
+      return <Update fontSize="small" {...rest} />;
     default:
       return <></>;
   }

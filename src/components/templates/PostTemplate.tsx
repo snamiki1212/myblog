@@ -7,22 +7,16 @@ import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Image from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
+import {SocialLinks} from '../molecules/SocialLinks';
+import {ArticleList} from '../organisms/ArticleList';
 import {
   TagList,
-  SocialLinks,
   SEOMeta,
   Markdown,
-  ArticlesPreviewWrapper,
 } from '../atoms';
-import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
-
 import {PostPageContext} from '../../../gatsby-node/types';
-
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge} from '../../types';
-
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {useTheme} from '@material-ui/core/styles';
 
 type Props = {
   data: PostPageQuery;
@@ -40,10 +34,6 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
-
-  const theme = useTheme();
-  const isSP = useMediaQuery(theme.breakpoints.down('sm'));
-  const ArticleComponent = isSP ? ArticlePreviewLine : ArticlePreviewCard;
 
   return (
     <Layout>
@@ -81,16 +71,8 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
           </AuthorCardWrapper>
         </ItemWrapper>
 
-        <ArticlesPreviewWrapper
-          style={{flexDirection: isSP ? 'column' : 'row'}}
-        >
-          {suggestions.map((edge) => (
-            <ArticleComponent
-              key={edge.node.frontmatter.title}
-              postInfo={edge}
-            />
-          ))}
-        </ArticlesPreviewWrapper>
+        <ArticleList postEdges={suggestions} />
+
       </Wrapper>
     </Layout>
   );
@@ -179,6 +161,7 @@ export const postPageQuery = graphql`
           frontmatter {
             title
             tags
+            category
             cover {
               publicURL
               childImageSharp {

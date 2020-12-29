@@ -16,6 +16,7 @@ const YELLOW_LIGHT = '#ffeaa5';
 
 export const colors = {
   primaryVivid: '#ECC100',
+  link: '#477FB9',
   white: '#FFFFFF',
   baseLight: '#ECF2F8',
   baseDark: '#1C324A',
