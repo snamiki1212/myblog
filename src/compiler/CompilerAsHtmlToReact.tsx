@@ -1,29 +1,28 @@
 import React from 'react';
 import RehypeReact from 'rehype-react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import {colors} from '../../data/color';
-import HandlerForA from './HandlerForA';
+import {HandlerForA} from './HandlerForA';
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';
 
-const fontColorNormal = colors.DEPRECATED_black1;
-const fontColorHeadline = colors.DEPRECATED_black1;
-const tableLineColor = colors.DEPRECATED_grayDark;
-const boxBackgroundColor = colors.DEPRECATED_grayLight;
-const hLeft = colors.DEPRECATED_hLeft;
-
-const mixinHeadline = `
-  font-weight: bold;
-  color: ${fontColorHeadline};
+const primaryFont = css`
+  font-family: ${props => props.theme.fontFamily.primary};
+  color: ${props => props.theme.color.baseDark};
 `;
 
-const mixinList = `
+const mixinHeadline = css`
+  font-weight: bold;
+  ${primaryFont};
+`;
+
+const mixinList = css`
   list-style-position: outside;
-  background-color: ${boxBackgroundColor};
+  background-color: ${props => props.theme.color.baseLight};
 `;
 
 const H1 = styled.h1`
-  ${mixinHeadline}
+  ${mixinHeadline};
   padding-top: 10px;
   padding-bottom: 20px;
   font-size: 25px;
@@ -35,15 +34,12 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   ${mixinHeadline}
+  color: ${props => props.theme.color.baseLight}; // overload;
+
   font-size: 25px;
   margin-top: 60px;
   padding: 10px 40px;
-  background: linear-gradient(
-    170deg,
-    ${colors.DEPRECATED_vivid1} 0%,
-    ${colors.DEPRECATED_vivid2} 100%
-  );
-  color: ${colors.DEPRECATED_white1};
+  background-color: ${props => props.theme.color.baseDark};
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }
@@ -51,12 +47,9 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
   ${mixinHeadline}
-
   font-size: 20px;
-
   padding: 5px 0 5px 15px;
-  border-left: 5px solid ${hLeft};
-
+  border-left: 5px solid ${props => props.theme.color.primaryVivid};
   margin-top: 60px;
   margin-bottom: 20px;
   white-space: normal;
@@ -67,16 +60,15 @@ const HR = styled.hr`
 `;
 
 const B = styled.b`
-  ${mixinHeadline}
-  background: linear-gradient(transparent 50%, ${colors.DEPRECATED_fontMark1} 0%);
-  color: ${colors.DEPRECATED_base1}
+  ${mixinHeadline};
+  background: linear-gradient(transparent 50%, ${props => props.theme.color.primaryVivid} 0%);
 `;
 
 const P = styled.p`
   line-height: 2;
   margin-top: 0;
   margin-bottom: 30px;
-  color: ${fontColorNormal};
+  ${primaryFont};
 
   font-size: 18px;
   @media screen and (max-width: ${mobileWidth}) {
@@ -87,7 +79,7 @@ const P = styled.p`
 const Blockquote = styled.blockquote`
   font-size: 17px;
   line-height: 36px;
-  color: ${fontColorNormal};
+  ${primaryFont};
   border-left: 0.3em solid lightgray;
   margin-left: 23px;
   padding: 0 10px;
@@ -103,7 +95,7 @@ const Table = styled.table`
   max-width: 100%;
   margin-bottom: 20px;
   border-collapse: collapse;
-  color: ${fontColorNormal};
+  ${primaryFont};
 `;
 
 const Ul = styled.ul`
@@ -125,6 +117,7 @@ const Li = styled.li`
 const mixinTableElement = `
   text-align: center;
   padding: 10px 0;
+  ${primaryFont};
 `;
 
 const Td = styled.td`
@@ -140,7 +133,7 @@ const Tr = styled.tr`
   ${mixinTableElement}
   border-bottom-style: dotted;
   border-bottom-width: 1px;
-  border-color: ${tableLineColor};
+  border-color: ${props => props.theme.color.baseDark};
 `;
 
 /**
@@ -171,6 +164,7 @@ export const renderReact = new RehypeReact({
     table: Table,
     td: Td,
     tr: Tr,
+    th: Th,
     ul: Ul,
     ol: Ol,
     li: Li,

@@ -3,6 +3,7 @@ import {colors} from '../data/color';
 export const theme = {
   color: {
     primaryVivid: colors.primaryVivid,
+    link: colors.link,
     white: colors.white,
     baseLight: colors.baseLight,
     baseDark: colors.baseDark,

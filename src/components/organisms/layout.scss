@@ -16,21 +16,8 @@ body {
   margin: 0;
 }
 
-$fontVivid1: #9890e3;
-$fontGray1:#3e3a5e;
-$white: white;
-$blue: blue;
-
 a {
   text-decoration: none;
-  transition: 0.5s;
-  &:link, &:visited{
-    color: $fontVivid1;
-  }
-  &:hover{
-    color: $fontGray1;
-    transition: 0.5s;
-  }
 }
 
 .affi-custom-button {
