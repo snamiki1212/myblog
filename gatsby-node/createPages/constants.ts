@@ -1,8 +1,8 @@
 import path from 'path';
 
 // values
-export const POSTS_PER_PAGE = 50;
-export const POSTS_AS_SUGGESTION = 10;
+export const POSTS_PER_PAGE = 4 * 2;
+export const POSTS_AS_SUGGESTION = 4 * 2;
 
 // components
 const templatesDir = 'src/components/templates';
