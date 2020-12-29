@@ -29,6 +29,7 @@ const Title = styled.div`
   font-weight: bold;
   color: ${(props) => props.theme.color.baseLight};
   font-family: ${(props) => props.theme.fontFamily.primary};
+  overflow-wrap: break-word;
 `;
 
 export const ArticleCard: React.FC<Props> = ({postInfo}) => {
