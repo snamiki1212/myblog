@@ -1,10 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
-import Button from '@material-ui/core/Button';
-
 import config from '../../../data/SiteConfig';
-import {colors} from '../../../data/color';
 import {MyLinks} from '../atoms';
 import {AuthorCardLayout} from '../atoms/AuthorCardLayout';
 

@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 import {PaginationContext, SubPageContext} from '../../../gatsby-node/types';
-import {Paginator, ArticlesPreviewWrapper} from '../atoms';
-import {AuthorCard, ArticlePreviewCard} from '../molecules';
+import {ArticlesPreviewWrapper} from '../atoms';
+import {ArticlePreviewCard} from '../molecules';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -11,23 +10,17 @@ type Props = {
   description?: React.ReactNode;
 };
 
-export const ArticleList: React.FC<Props> = ({
-  postEdges,
-  context,
-  description,
-}) => {
+export const ArticleList: React.FC<Props> = ({postEdges, description}) => {
   return (
     <div>
       {description}
       <ArticlesPreviewWrapper>
-        {postEdges.map(
-          (edge): React.ReactNode => (
-            <ArticlePreviewCard
-              key={edge.node.frontmatter.title}
-              postInfo={edge}
-            />
-          )
-        )}
+        {postEdges.map((edge) => (
+          <ArticlePreviewCard
+            key={edge.node.frontmatter.title}
+            postInfo={edge}
+          />
+        ))}
       </ArticlesPreviewWrapper>
     </div>
   );

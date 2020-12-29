@@ -21,10 +21,20 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
   flex-wrap: wrap;
   margin: 0 ${(props) => props.theme.layout.marginVertical}px;
 `;
 
-const ArticleArea = styled.div``;
-const PaginationArea = styled.div``;
-const ProfileArea = styled.div``;
+const ArticleArea = styled.div`
+  width: 100%;
+`;
+
+const PaginationArea = styled.div`
+  width: 100%;
+`;
+
+const ProfileArea = styled.div`
+  width: 100%;
+`;

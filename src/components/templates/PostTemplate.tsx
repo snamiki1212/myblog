@@ -14,15 +14,12 @@ import {
   Markdown,
   ArticlesPreviewWrapper,
 } from '../atoms';
-import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
+import {ArticlePreviewCard} from '../molecules';
 
 import {PostPageContext} from '../../../gatsby-node/types';
 
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge} from '../../types';
-
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {useTheme} from '@material-ui/core/styles';
 
 type Props = {
   data: PostPageQuery;
@@ -41,9 +38,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
 
-  const theme = useTheme();
-  const isSP = useMediaQuery(theme.breakpoints.down('sm'));
-  const ArticleComponent = isSP ? ArticlePreviewLine : ArticlePreviewCard;
+  const ArticleComponent = ArticlePreviewCard;
 
   return (
     <Layout>
@@ -81,9 +76,7 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
           </AuthorCardWrapper>
         </ItemWrapper>
 
-        <ArticlesPreviewWrapper
-          style={{flexDirection: isSP ? 'column' : 'row'}}
-        >
+        <ArticlesPreviewWrapper>
           {suggestions.map((edge) => (
             <ArticleComponent
               key={edge.node.frontmatter.title}
