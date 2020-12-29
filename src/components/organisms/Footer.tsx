@@ -6,9 +6,10 @@ import {Link} from 'gatsby';
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
 
   height: 500px;
   padding: 0 20px;
@@ -19,18 +20,13 @@ const Wrapper = styled.div`
 const getURL = (snsName: 'github' | 'twitter' | 'linkedin'): string =>
   config.mySocials?.find((_) => _.icon === snsName)?.url ?? '';
 
-const Navigations = () => {
+const SiteLinks = () => {
   const githubURL = getURL('github');
   const twitterURL = getURL('twitter');
   const linkedinURL = getURL('linkedin');
 
   return (
     <NavWrapper>
-      <Box>
-        <Link to="/">
-          <Logo size={146} />
-        </Link>
-      </Box>
       <Box>
         <PrimaryText>Lunash</PrimaryText>
         <LinkText to="/about">経歴・仕事依頼</LinkText>
@@ -52,6 +48,7 @@ const Navigations = () => {
 
 const NavWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px 0;
   width: 100%;
@@ -81,7 +78,12 @@ const LinkText = styled(Link)`
 export const Footer: React.FC = () => {
   return (
     <Wrapper>
-      <Navigations />
+      <Link to="/">
+        <Logo size={146} />
+      </Link>
+
+      <SiteLinks />
+
       <Bottom>
         <HR />
         <Copyright>{config.copyright}</Copyright>
