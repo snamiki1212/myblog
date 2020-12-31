@@ -1,7 +1,6 @@
 import React from 'react';
 import RehypeReact from 'rehype-react';
 import styled, {css} from 'styled-components';
-import {colors} from '../../data/color';
 import {HandlerForA} from './HandlerForA';
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';

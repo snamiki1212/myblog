@@ -1,14 +1,7 @@
-import {colors} from '../data/color';
+import {color} from '../data/color';
 
 export const theme = {
-  color: {
-    primaryVivid: colors.primaryVivid,
-    link: colors.link,
-    white: colors.white,
-    grayDark: colors.grayDark,
-    baseLight: colors.baseLight,
-    baseDark: colors.baseDark,
-  },
+  color,
   layout: {
     marginVertical: 20,
     autherAvatorSizeNum: 60,
