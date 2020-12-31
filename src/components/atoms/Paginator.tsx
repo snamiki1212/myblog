@@ -33,18 +33,19 @@ const _Link = styled(Link)<{selected: boolean}>`
   padding: 20px;
   transition: 0.3s;
   border-radius: 10px;
-  border: 1px solid ${props => props.theme.color.baseDark};
+  border: 1px solid ${(props) => props.theme.color.baseDark};
   color: ${({theme, selected}) => selected && theme.color.white};
-  background: ${({theme, selected}) => (selected ? theme.color.baseDark : theme.color.baseLight)};
-  
+  background: ${({theme, selected}) =>
+    selected ? theme.color.baseDark : theme.color.baseLight};
+
   &:hover {
-    background: ${props => props.theme.color.primaryVivid};
+    background: ${(props) => props.theme.color.primaryVivid};
   }
 `;
 
 const Wrapper = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
