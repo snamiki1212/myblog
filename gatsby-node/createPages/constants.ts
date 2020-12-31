@@ -1,7 +1,7 @@
 import path from 'path';
 
 // values
-export const POSTS_PER_PAGE = 4 * 3;
+export const POSTS_PER_PAGE = 4 * 6;
 export const POSTS_AS_SUGGESTION = 4 * 2;
 
 // components
