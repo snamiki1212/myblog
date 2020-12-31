@@ -6,14 +6,22 @@ import {Link} from 'gatsby';
 export const HeadNav: React.FC = () => {
   return (
     <Wrapper>
-      <Link to="/">
+      
         <Flex>
+          
           <span>
-            <Image src="/blogcard.png" />
+            <Link to="/">
+              <Image src="/blogcard.png" />
+            </Link>
           </span>
-          <BlogTitle>{siteTitle}</BlogTitle>
+
+          <Link to="/">
+            <BlogTitle>{siteTitle}</BlogTitle>
+          </Link>
+          
+          
         </Flex>
-      </Link>
+      
     </Wrapper>
   );
 };
