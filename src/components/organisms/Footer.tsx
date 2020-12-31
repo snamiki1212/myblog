@@ -69,9 +69,11 @@ const LinkText = styled(Link)`
   font-family: ${props => props.theme.fontFamily.primary};
   color: ${props => props.theme.color.baseLight};
 
+  transition: .5s;
   &:hover {
     color: ${props => props.theme.color.primaryVivid};
     border-bottom: 1px solid ${props => props.theme.color.primaryVivid};
+    transition: .5s;
   }
 `;
 

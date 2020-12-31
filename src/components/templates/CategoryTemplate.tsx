@@ -28,11 +28,7 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
 
       <BaseArticlePageLayout
-        articleHeader={
-          <div style={{margin: '0 30px'}}>
-            <CategoryBanner categoryName={category} />
-          </div>
-        }
+        articleHeader={<CategoryBanner categoryName={category} />}
         articles={<ArticleList postEdges={postEdges} />}
         pagination={<Paginator context={pageContext} />}
         profile={<AuthorCard />}
