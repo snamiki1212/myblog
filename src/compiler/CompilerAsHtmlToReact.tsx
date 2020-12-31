@@ -6,8 +6,8 @@ import {HandlerForA} from './HandlerForA';
 const mobileWidth = '680px';
 
 const primaryFont = css`
-  font-family: ${props => props.theme.fontFamily.primary};
-  color: ${props => props.theme.color.baseDark};
+  font-family: ${(props) => props.theme.fontFamily.primary};
+  color: ${(props) => props.theme.color.baseDark};
 `;
 
 const mixinHeadline = css`
@@ -17,7 +17,7 @@ const mixinHeadline = css`
 
 const mixinList = css`
   list-style-position: outside;
-  background-color: ${props => props.theme.color.baseLight};
+  background-color: ${(props) => props.theme.color.white};
 `;
 
 const H1 = styled.h1`
@@ -33,12 +33,12 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   ${mixinHeadline}
-  color: ${props => props.theme.color.baseLight}; // overload;
+  color: ${(props) => props.theme.color.baseLight}; // overload;
 
   font-size: 25px;
   margin-top: 60px;
   padding: 10px 40px;
-  background-color: ${props => props.theme.color.baseDark};
+  background-color: ${(props) => props.theme.color.baseDark};
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }
@@ -48,7 +48,7 @@ const H3 = styled.h3`
   ${mixinHeadline}
   font-size: 20px;
   padding: 5px 0 5px 15px;
-  border-left: 5px solid ${props => props.theme.color.primaryVivid};
+  border-left: 5px solid ${(props) => props.theme.color.primaryVivid};
   margin-top: 60px;
   margin-bottom: 20px;
   white-space: normal;
@@ -60,7 +60,10 @@ const HR = styled.hr`
 
 const B = styled.b`
   ${mixinHeadline};
-  background: linear-gradient(transparent 50%, ${props => props.theme.color.primaryVivid} 0%);
+  background: linear-gradient(
+    transparent 50%,
+    ${(props) => props.theme.color.primaryVivid} 0%
+  );
 `;
 
 const P = styled.p`
@@ -95,6 +98,7 @@ const Table = styled.table`
   margin-bottom: 20px;
   border-collapse: collapse;
   ${primaryFont};
+  background-color: ${(props) => props.theme.color.white};
 `;
 
 const Ul = styled.ul`
@@ -123,7 +127,7 @@ const Td = styled.td`
   ${mixinTableElement}
 `;
 
-const Th = styled.td`
+const Th = styled.th`
   ${mixinTableElement}
   font-weight: bold
 `;
@@ -132,7 +136,7 @@ const Tr = styled.tr`
   ${mixinTableElement}
   border-bottom-style: dotted;
   border-bottom-width: 1px;
-  border-color: ${props => props.theme.color.baseDark};
+  border-color: ${(props) => props.theme.color.baseDark};
 `;
 
 /**
