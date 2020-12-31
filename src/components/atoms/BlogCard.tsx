@@ -63,11 +63,14 @@ const Wrapper = styled.div`
   padding: 10px;
   transition: .5s;
   background-color: ${props => props.theme.color.white};
+  border-radius: 10px;
+  
   &:hover {
     background-color: ${props => props.theme.color.link};
     color: ${props => props.theme.color.baseLight};
     transition: .5s;
   }
+
   &:hover {
     ${Image} {
       ${mixinSpinAnimate}

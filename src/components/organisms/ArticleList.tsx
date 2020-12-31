@@ -27,8 +27,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Child = styled.div`
-  min-width: 250xp;
-  max-width: 46%;
+  min-width: 350px;
+  width: 46%;
   margin: 2%;
   border-radius: 10px;
   background: ${props => props.theme.color.white};

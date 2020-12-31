@@ -3,19 +3,7 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {Logo} from '../atoms/Logo';
 import {Link} from 'gatsby';
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 500px;
-  padding: 0 20px;
-
-  background: ${props => props.theme.color.baseDark};
-`;
+import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 
 const getURL = (snsName: 'github' | 'twitter' | 'linkedin'): string =>
   config.mySocials?.find((_) => _.icon === snsName)?.url ?? '';
@@ -46,6 +34,20 @@ const SiteLinks = () => {
   );
 };
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 500px;
+  padding: 0 20px;
+
+  background: ${props => props.theme.color.baseDark};
+`;
+
+
 const NavWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -69,9 +71,11 @@ const LinkText = styled(Link)`
   font-family: ${props => props.theme.fontFamily.primary};
   color: ${props => props.theme.color.baseLight};
 
+  transition: .5s;
   &:hover {
     color: ${props => props.theme.color.primaryVivid};
     border-bottom: 1px solid ${props => props.theme.color.primaryVivid};
+    transition: .5s;
   }
 `;
 
@@ -79,7 +83,11 @@ export const Footer: React.FC = () => {
   return (
     <Wrapper>
       <Link to="/">
-        <Logo size={146} />
+        <HoverForSpinArea>
+          <LogoWrapper>
+            <Logo size={146} />
+          </LogoWrapper>
+        </HoverForSpinArea>
       </Link>
 
       <SiteLinks />
@@ -91,6 +99,16 @@ export const Footer: React.FC = () => {
     </Wrapper>
   );
 };
+
+const LogoWrapper =styled.div``;
+
+const HoverForSpinArea = styled.div`
+  & :hover {
+    ${LogoWrapper} {
+      ${mixinSpinAnimate}
+    }
+  }
+`;
 
 const Bottom = styled.div`
   width: 80%;

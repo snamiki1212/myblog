@@ -3,7 +3,6 @@ import kebabCase from 'lodash.kebabcase';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
 import Chip from '@material-ui/core/Chip';
-import {colors} from '../../../data/color';
 
 type Props = {
   tags: string[];
@@ -36,5 +35,6 @@ const _Link = styled(Link)`
 
 const _Chip = styled(Chip)`
   margin: 5px 2px 0;
-  background: linear-gradient(170deg, ${colors.DEPRECATED_vivid1}, ${colors.DEPRECATED_vivid2});
+  color: ${props => props.theme.color.baseLight};
+  background: ${props => props.theme.color.primaryVivid};
 `;

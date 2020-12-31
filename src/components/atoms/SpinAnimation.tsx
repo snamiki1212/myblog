@@ -11,5 +11,6 @@ const rotate = keyframes`
 `;
 
 export const mixinSpinAnimate = css`
+  transition: .8s;
   animation: ${rotate} .8s cubic-bezier(.4,2.21,.91,.97);
 `

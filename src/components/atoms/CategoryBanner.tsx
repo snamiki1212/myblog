@@ -1,18 +1,18 @@
 import React from 'react';
-import {colors} from '../../../data/color';
 import styled from 'styled-components';
 
 const Text = styled.div`
   font-size: 30px;
+  color: ${props => props.theme.color.baseLight};
 `;
 
 const Wrapper = styled.div`
-  padding: 30px;
-  display: flex;
+  display: flex;  
   justify-content: center;
   align-items: center;
-  background: ${colors.DEPRECATED_grayLight};
-  color: ${colors.DEPRECATED_black1};
+  padding: 30px;
+  background: ${props => props.theme.color.baseDark};
+  margin-top: 10px;
 `;
 
 export const CategoryBanner: React.FC<{categoryName: string}> = ({
