@@ -65,11 +65,15 @@ const GridAvator = styled.div`
 const GridName = styled.div`
   grid-row: 1/2;
   grid-column: 2/3;
+
+  padding-left: 7px;
 `;
 
 const GridSNS = styled.div`
   grid-row: 2/3;
   grid-column: 2/3;
+
+  padding-left: 7px;
 `;
 
 const GridDescription = styled.div`
@@ -80,4 +84,6 @@ const GridDescription = styled.div`
 const GridProfileLink = styled.div`
   grid-row: 4/5;
   grid-column: 1/3;
+
+  padding: 7px 0;
 `;

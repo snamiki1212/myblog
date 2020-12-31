@@ -80,7 +80,6 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
 
 const AuthorCardWrapper = styled.div`
   padding: 50px;
-  border: 1px solid lightgray;
 `;
 
 const MarkdownWrapper = styled.div`

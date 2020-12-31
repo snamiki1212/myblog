@@ -51,7 +51,7 @@ export const AboutTemplate = () => {
       <CardContent>
         {/* ------------------------------------ */}
         <h2>プロフィール</h2>
-        <AuthorCard />
+        <AuthorCard disableMore={true}/>
         {/* ------------------------------------ */}
         <h2>いままで</h2>
         <div
