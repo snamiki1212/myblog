@@ -29,7 +29,11 @@ export const ArticlePreviewLine: React.FC<Props> = ({postInfo: edge}) => {
         updatedAt={
           <UpdatedAt date={updatedAt} containerStyle={{fontSize: '0.7em'}} />
         }
-        category={<CategoryName>{category}</CategoryName>}
+        category={
+          <CategoryWrapper>
+            <Category>{category}</Category>
+          </CategoryWrapper>
+        }
       />
     </Link>
   );
@@ -46,10 +50,14 @@ const Title = styled.span`
   fontsize: 1em;
 `;
 
-const CategoryName = styled.span`
+const CategoryWrapper = styled.div`
+  display: flex;
+`;
+
+const Category = styled.span`
   border-radius: 10px;
   color: ${(props) => props.theme.color.baseDark};
-  border: 1px solid ${props => props.theme.color.primaryVivid};
+  border: 1px solid ${(props) => props.theme.color.primaryVivid};
   font-family: ${(props) => props.theme.fontFamily.primary};
   padding: 5px 20px;
 `;

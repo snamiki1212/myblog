@@ -25,13 +25,13 @@ export const ArticleLineDescriptionLayout: React.FC<Props> = ({
       <Description>
         <TitleWrapper>{title}</TitleWrapper>
 
-        <MetaData>
+        <MetaDataWrapper>
           <LogoWrapper>{logo}</LogoWrapper>
 
           <UpdatedAtWrapper>{updatedAt}</UpdatedAtWrapper>
 
           <CategoryWrapper>{category}</CategoryWrapper>
-        </MetaData>
+        </MetaDataWrapper>
       </Description>
     </Wrapper>
   );
@@ -39,8 +39,6 @@ export const ArticleLineDescriptionLayout: React.FC<Props> = ({
 
 const Wrapper = styled.div`
   padding: ${PADDING_SIZE};
-  border-bottom: 1px lightgray solid;
-
   display: flex;
   flex-direction: row;
 `;
@@ -54,21 +52,23 @@ const Description = styled(Flex)`
   align-content: space-between;
 `;
 
-const MetaData = styled(Flex)`
+const MetaDataWrapper = styled(Flex)`
   align-items: center;
 `;
 
 const ImageWrapper = styled.div``;
-
-const LogoWrapper = styled.div``;
 
 const TitleWrapper = styled.div`
   padding: 0 10px;
   width: 100%;
 `;
 
-const UpdatedAtWrapper = styled.div`
-  margin: 0 5px;
+const MetaData = styled.div`
+  padding-left: 5px;
 `;
 
-const CategoryWrapper = styled.div``;
+const LogoWrapper = styled(MetaData)``;
+
+const UpdatedAtWrapper = styled(MetaData)``;
+
+const CategoryWrapper = styled(MetaData)``;
