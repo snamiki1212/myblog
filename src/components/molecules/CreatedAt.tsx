@@ -15,7 +15,7 @@ export const CreatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
 
   return (
     <Wrapper containerStyle={containerStyle}>
-      <Icon icon="createdAt" style={{color: FONT_COLOR}} />
+      <_Icon icon="createdAt" />
       <Date>{formatedDate}</Date>
     </Wrapper>
   );
@@ -26,6 +26,10 @@ const Wrapper = styled.span<{containerStyle: any}>`
   align-items: center;
   ${({containerStyle}) => `${{...containerStyle}}`};
 `;
+
+const _Icon = styled(Icon)`
+  color: ${FONT_COLOR};
+`
 
 const Date = styled.span`
   color: ${FONT_COLOR};

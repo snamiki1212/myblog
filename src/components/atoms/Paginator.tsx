@@ -34,11 +34,13 @@ const _Link = styled(Link)<{selected: boolean}>`
   padding: 20px;
   transition: 0.3s;
   border-radius: 10px;
+  border: 1px solid ${props => props.theme.color.baseDark};
+  color: ${({theme, selected}) => selected && theme.color.white};
+  background: ${({theme, selected}) => (selected ? theme.color.baseDark : theme.color.baseLight)};
+  
   &:hover {
-    background: ${colors.DEPRECATED_vivid2};
+    background: ${props => props.theme.color.primaryVivid};
   }
-  color: ${({selected}) => selected && colors.DEPRECATED_white1};
-  background: ${({selected}) => (selected ? colors.DEPRECATED_black1 : colors.DEPRECATED_grayLight)};
 `;
 
 const Wrapper = styled.div`
