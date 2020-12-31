@@ -21,9 +21,19 @@ export const ArticleList: React.FC<Props> = ({postEdges}) => {
 
 export const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 export const Child = styled.div`
-  flex: 1 0 auto;
+  width: 46%;
+  margin: 2%;
+  border-radius: 10px;
+  background: ${props => props.theme.color.white};
+  
+  transition: .5s;
+  & :hover {
+    transition: .5s;
+    background: ${props => props.theme.color.primaryVivid};
+  }
 `;

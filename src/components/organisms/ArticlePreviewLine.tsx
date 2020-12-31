@@ -6,12 +6,11 @@ import {MarkdownRemarkEdge} from '../../types';
 import Image from '../atoms/Image';
 import {Logo} from '../atoms/Logo';
 import {UpdatedAt} from '../molecules';
+import {ArticleLineDescriptionLayout} from '../organisms/ArticleLineDescriptionLayout';
 
 type Props = {
   postInfo: MarkdownRemarkEdge;
 };
-
-const PADDING_SIZE = '10px';
 
 export const ArticlePreviewLine: React.FC<Props> = ({postInfo: edge}) => {
   const to = edge.node.fields._slug;
@@ -23,23 +22,18 @@ export const ArticlePreviewLine: React.FC<Props> = ({postInfo: edge}) => {
 
   return (
     <Link to={to} key={linkKey}>
-      <Line>
-        <BoxImage>
-          <_Image imgInfo={imgInfo} />
-        </BoxImage>
-
-        <BoxDescription>
-          <Logo size={30} />
-          <Title>{title}</Title>
+      <ArticleLineDescriptionLayout
+        image={<_Image imgInfo={imgInfo} />}
+        logo={<Logo size={40} />}
+        title={<Title>{title}</Title>}
+        updatedAt={
           <UpdatedAt date={updatedAt} containerStyle={{fontSize: '0.7em'}} />
-          <CategoryName>{category}</CategoryName>
-        </BoxDescription>
-      </Line>
+        }
+        category={<CategoryName>{category}</CategoryName>}
+      />
     </Link>
   );
 };
-
-const BoxImage = styled.div``;
 
 const _Image = styled(Image)`
   height: 150px;
@@ -48,25 +42,14 @@ const _Image = styled(Image)`
   object-fit: cover;
 `;
 
-const Line = styled.div`
-  display: flex;
-  padding: ${PADDING_SIZE};
-  border-bottom: 1px lightgray solid;
-`;
-
-const BoxDescription = styled.div`
-  flex-direction: row;
-  padding-left: ${PADDING_SIZE};
-`;
-
 const Title = styled.span`
   fontsize: 1em;
 `;
 
 const CategoryName = styled.span`
   border-radius: 10px;
-  background: ${(props) => props.theme.color.primaryVivid};
   color: ${(props) => props.theme.color.baseDark};
+  border: 1px solid ${props => props.theme.color.primaryVivid};
   font-family: ${(props) => props.theme.fontFamily.primary};
   padding: 5px 20px;
 `;
