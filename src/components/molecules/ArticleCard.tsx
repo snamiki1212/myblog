@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Wrapper = styled.div`
-  margin: 10px auto;
+  margin: 0 auto;
 `;
 
 const CategoryName = styled.span`
@@ -38,6 +38,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo}) => {
   const imgInfo = postInfo.node.frontmatter.cover;
   const category = postInfo.node.frontmatter.category;
   const updatedAt = postInfo.node.fields._updatedAt;
+  
   const {
     layout: {articleCardLogoSize},
     color: {primaryVivid},
