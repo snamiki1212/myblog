@@ -1,5 +1,5 @@
 ---
-title: 'ReactNative(Expo)+SQLiteのマイグレーションnpmパッケージを作った'
+title: 'ReactNative (Expo) + SQLite のマイグレーション npm パッケージを作った'
 cover: 'cover.png'
 createdAt: '2020-05-03 13:00'
 updatedAt: '2020-05-03 13:00'
@@ -14,7 +14,7 @@ word:
   - nothing
 ---
 
-# ReactNative(Expo)+SQLiteのマイグレーションnpmパッケージを作った
+# ReactNative (Expo) + SQLite のマイグレーション npm パッケージを作った
 
 こんにちは、Nash です。
 

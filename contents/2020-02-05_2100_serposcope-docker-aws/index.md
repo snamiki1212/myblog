@@ -1,5 +1,5 @@
 ---
-title: 'Serposcope+AWS+Dockerの構築手順書'
+title: 'Serposcope + AWS + Dockerの構築手順書'
 cover: 'cover.png'
 createdAt: '2020-02-05 21:00'
 updatedAt: '2020-02-05 21:00'
@@ -13,7 +13,7 @@ word:
   - 'nothing'
 ---
 
-# Serposcope+AWS+Dockerの構築手順書
+# Serposcope + AWS + Dockerの構築手順書
 
 この記事は下記の構築手順書です。
 

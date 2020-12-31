@@ -4,28 +4,22 @@ import styled from 'styled-components';
 
 import {isInternalPageLink, isAffiLink} from '../lib/validator';
 import {BlogCard} from '../components/atoms/BlogCard';
-import {colors} from '../../data/color';
 import {siteUrl} from '../../data/SiteConfig';
 
-const NormalA = styled.a`
-  text-decoration: none;
-  border-bottom: solid 1px;
-  transition: 0.5s;
-  &:hover {
-    color: ${colors.grayDark};
-    transition: 0.3s;
-  }
-`;
+export const HandlerForA: React.FC = (props: any) => {
+  // gatsby-remark-autolink-headers で生成されるページ内リンク
+  const isGeneratedInternalHeadLinkByPlugin =
+    props.className && props.className.includes('anchor');
 
-const HandlerForA: React.FC = (props: any) => {
   const shouldRenderOnlyTextAnchor =
-    (props.className && props.className.includes('anchor')) || // gatsby-remark-autolink-headers で生成されるページ内リンク
+    isGeneratedInternalHeadLinkByPlugin ||
     !isInternalPageLink(props.href) ||
     isAffiLink(props.href);
 
   if (shouldRenderOnlyTextAnchor) return <NormalA {...props} />;
 
   const fullUrl = urljoin(siteUrl, props.href);
+
   return (
     <NormalA {...props}>
       <BlogCard url={fullUrl} title={props.children[0]} />
@@ -33,4 +27,9 @@ const HandlerForA: React.FC = (props: any) => {
   );
 };
 
-export default HandlerForA;
+const NormalA = styled.a`
+  text-decoration: none;
+  color: ${props => props.theme.color.link};
+  border-bottom: solid 1px;
+`;
+
