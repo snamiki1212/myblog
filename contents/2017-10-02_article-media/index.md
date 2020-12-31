@@ -1,9 +1,9 @@
 ---
 title: 'Medias'
 cover: 'cover.jpg'
-createdAt: '2018-10-02 19:53'
-updatedAt: '2018-11-19 19:53'
-category: 'Travel'
+createdAt: '2017-10-02 19:53'
+updatedAt: '2017-10-02 19:53'
+category: 'Markdown'
 tags:
   - images
 slug: article-medias

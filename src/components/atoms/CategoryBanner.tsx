@@ -1,26 +1,26 @@
 import React from 'react';
-import {colors} from '../../../data/color';
 import styled from 'styled-components';
 
 const Text = styled.div`
   font-size: 30px;
+  color: ${props => props.theme.color.baseLight};
 `;
 
-const Container = styled.div`
-  padding: 30px;
-  display: flex;
+const Wrapper = styled.div`
+  display: flex;  
   justify-content: center;
   align-items: center;
-  background: ${colors.grayLight};
-  color: ${colors.black1};
+  padding: 30px;
+  background: ${props => props.theme.color.baseDark};
+  margin-top: 10px;
 `;
 
 export const CategoryBanner: React.FC<{categoryName: string}> = ({
   categoryName,
 }) => {
   return (
-    <Container>
+    <Wrapper>
       <Text>🚀{categoryName}</Text>
-    </Container>
+    </Wrapper>
   );
 };

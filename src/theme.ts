@@ -1,21 +1,18 @@
-import {createMuiTheme} from '@material-ui/core/styles';
-import {colors} from '../data/color';
+import {color} from '../data/color';
 
-// Theme: https://material-ui.com/customization/theming/#theme-configuration-variables
-// Color: https://material-ui.com/customization/color/
-// Color-tool: https://material-ui.com/customization/color/#color-tool
-export const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: colors.primary,
-    },
-    secondary: {
-      main: colors.secondary,
-    },
+export const theme = {
+  color,
+  layout: {
+    marginVertical: 20,
+    autherAvatorSizeNum: 60,
+    articleCardLogoSize: 48,
   },
-  typography: {
-    button: {
-      textTransform: 'none',
-    },
+  fontFamily: {
+    primary: `-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif`,
   },
-});
+  fontSize: {
+    tmp_1: 24,
+    tmp_2: 12,
+    tmp_3: 54,
+  },
+} as const;

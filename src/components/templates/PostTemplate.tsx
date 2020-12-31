@@ -7,22 +7,16 @@ import styled from 'styled-components';
 import Layout from '../organisms/Layout';
 import Image from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
+import {SocialLinks} from '../molecules/SocialLinks';
+import {ArticleList} from '../organisms/ArticleList';
 import {
   TagList,
-  SocialLinks,
   SEOMeta,
   Markdown,
-  ArticlesPreviewWrapper,
 } from '../atoms';
-import {ArticlePreviewCard, ArticlePreviewLine} from '../molecules';
-
 import {PostPageContext} from '../../../gatsby-node/types';
-
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge} from '../../types';
-
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {useTheme} from '@material-ui/core/styles';
 
 type Props = {
   data: PostPageQuery;
@@ -41,13 +35,9 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
 
-  const theme = useTheme();
-  const isSP = useMediaQuery(theme.breakpoints.down('sm'));
-  const ArticleComponent = isSP ? ArticlePreviewLine : ArticlePreviewCard;
-
   return (
     <Layout>
-      <Container>
+      <Wrapper>
         <Helmet>
           <title>{`${post.title}`}</title>
           <link rel="canonical" href={`${config.siteUrl}${_slug}`} />
@@ -57,66 +47,57 @@ export const PostTemplate: React.FC<Props> = ({data}) => {
 
         <HeaderImg imgInfo={postNode.frontmatter.cover} />
 
-        <ItemContainer>
-          <DateContainer>
+        <ItemWrapper>
+          <DateWrapper>
             <UpdatedAt date={postNode.frontmatter.updatedAt} />
             <CreatedAt date={postNode.frontmatter.createdAt} />
-          </DateContainer>
-        </ItemContainer>
+          </DateWrapper>
+        </ItemWrapper>
 
-        <ItemContainer>
-          <MarkdownContainer>
+        <ItemWrapper>
+          <MarkdownWrapper>
             <Markdown htmlAst={postNode.htmlAst} />
-          </MarkdownContainer>
-        </ItemContainer>
+          </MarkdownWrapper>
+        </ItemWrapper>
 
-        <ItemContainer>
+        <ItemWrapper>
           <TagList tags={post.tags} />
           <SocialLinks postNode={postNode} />
-        </ItemContainer>
+        </ItemWrapper>
 
-        <ItemContainer>
-          <AuthorCardContainer>
+        <ItemWrapper>
+          <AuthorCardWrapper>
             <AuthorCard />
-          </AuthorCardContainer>
-        </ItemContainer>
+          </AuthorCardWrapper>
+        </ItemWrapper>
 
-        <ArticlesPreviewWrapper
-          style={{flexDirection: isSP ? 'column' : 'row'}}
-        >
-          {suggestions.map((edge) => (
-            <ArticleComponent
-              key={edge.node.frontmatter.title}
-              postInfo={edge}
-            />
-          ))}
-        </ArticlesPreviewWrapper>
-      </Container>
+        <ArticleList postEdges={suggestions} />
+
+      </Wrapper>
     </Layout>
   );
 };
 
-const AuthorCardContainer = styled.div`
+const AuthorCardWrapper = styled.div`
   padding: 50px;
-  border: 1px solid lightgray;
 `;
 
-const MarkdownContainer = styled.div`
+const MarkdownWrapper = styled.div`
   margin: 0 10px;
 `;
 
-const DateContainer = styled.div`
+const DateWrapper = styled.div`
   margin: 10px;
   align-self: flex-end;
 `;
 
-const Container = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-const ItemContainer = styled.div`
+const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,6 +160,7 @@ export const postPageQuery = graphql`
           frontmatter {
             title
             tags
+            category
             cover {
               publicURL
               childImageSharp {

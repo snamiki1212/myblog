@@ -1,24 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {ThemeContext} from 'styled-components';
 import dayjs from 'dayjs';
 import config from '../../../data/SiteConfig';
 import {Icon} from '../atoms';
 
-type Props = {date: Date; containerStyle?: any};
+type Props = {date: Date; containerStyle?: any, innerStyle?: any};
 
 // TODO: atomsに移動させたい
-export const UpdatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
+export const UpdatedAt: React.FC<Props> = ({date, containerStyle = {}, innerStyle ={}}) => {
   const formatedDate = dayjs(date).format(config.dateFormat);
+  const theme = React.useContext(ThemeContext);
+  {color: theme.color.primaryVivid}
 
   return (
-    <Container containerStyle={containerStyle}>
-      <Icon icon="updatedAt" />
-      <Date>{formatedDate}</Date>
-    </Container>
+    <Wrapper containerStyle={containerStyle}>
+      <Icon icon="updatedAt" style={innerStyle} />
+      <Date style={innerStyle}>{formatedDate}</Date>
+    </Wrapper>
   );
 };
 
-const Container = styled.span<{containerStyle: any}>`
+const Wrapper = styled.span<{containerStyle: any}>`
   display: flex;
   align-items: center;
   ${({containerStyle}) => `${{...containerStyle}}`};
