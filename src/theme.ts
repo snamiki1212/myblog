@@ -5,6 +5,7 @@ export const theme = {
     primaryVivid: colors.primaryVivid,
     link: colors.link,
     white: colors.white,
+    grayDark: colors.grayDark,
     baseLight: colors.baseLight,
     baseDark: colors.baseDark,
   },
