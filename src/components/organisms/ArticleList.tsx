@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ArticleCard} from '../molecules';
 import {ArticlePreviewLine} from '../organisms/ArticlePreviewLine';
-
-import {Wrapper, Child} from '../molecules/DynamicSquare';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -15,10 +12,18 @@ export const ArticleList: React.FC<Props> = ({postEdges}) => {
     <Wrapper>
       {postEdges.map((edge) => (
         <Child>
-          {/* <ArticleCard key={edge.node.frontmatter.title} postInfo={edge} /> */}
           <ArticlePreviewLine postInfo={edge} />
         </Child>
       ))}
     </Wrapper>
   );
 };
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Child = styled.div`
+  flex: 1 0 auto;
+`;
