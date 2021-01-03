@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'gatsby';
 
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,20 +9,57 @@ import Button from '@material-ui/core/Button';
 import config from '../../../data/SiteConfig';
 import {MyLinks} from '../atoms';
 import {AuthorCard} from '../molecules/AuthorCard';
-import { useConfigMySocialLinks} from '../../hooks/config'
+import {useConfigMySocialLinks} from '../../hooks/config';
 
-export const AboutTemplate:React.FC = () => {
-  const myTwitterUrl = useConfigMySocialLinks('twitter');
-  const myLinkedinUrl = useConfigMySocialLinks('linkedin');
+const _Button = styled(Link)`
+  padding: 5px;
 
+  transition: 0.5s;
+  & :hover {
+    transition: 0.5s;
+    background: ${(props) => props.theme.color.baseDark};
+  }
+`;
+
+const Card = styled.div`
+  padding: 40px;
+  border-radius: 10px;
+  background-color: ${(props) => props.theme.color.white};
+`;
+
+const H2 = styled.h2`
+  margin: 36px 0 4px 0;
+`;
+
+export const AboutTemplate: React.FC = () => {
   return (
     <Wrapper>
       <CardContent>
-        {/* ------------------------------------ */}
-        <h2>プロフィール</h2>
-        <AuthorCard disableMore={true} />
-        {/* ------------------------------------ */}
-        <h2>いままで</h2>
+        <CONTENT_Profile />
+        <CONTENT_UntilNow />
+        <CONTENT_WhatCan />
+        <CONTENT_Projects />
+        <CONTENT_AskWork />
+        <CONTENT_ThisBlog />
+      </CardContent>
+    </Wrapper>
+  );
+};
+
+const CONTENT_Profile = () => {
+  return (
+    <>
+      <H2>プロフィール</H2>
+      <AuthorCard disableMore={true} />
+    </>
+  );
+};
+
+const CONTENT_UntilNow = () => {
+  return (
+    <div>
+      <H2>いままで</H2>
+      <Card>
         <div
           style={{
             display: 'flex',
@@ -45,8 +83,17 @@ export const AboutTemplate:React.FC = () => {
             <br />
           </Box>
         </div>
-        {/* ------------------------------------ */}
-        <h2>出来ること</h2>
+      </Card>
+    </div>
+  );
+};
+
+const CONTENT_WhatCan = () => {
+  const myLinkedinUrl = useConfigMySocialLinks('linkedin');
+  return (
+    <>
+      <H2>出来ること</H2>
+      <Card>
         <p>
           基本的にエンジニアとして、フロントとバックエンドの開発を中心に活動しています。
         </p>
@@ -77,14 +124,30 @@ export const AboutTemplate:React.FC = () => {
             </a>
           </Button>
         </CardActions>
-        {/* ------------------------------------ */}
-        <h2>作ったモノ</h2>
+      </Card>
+    </>
+  );
+};
+
+const CONTENT_Projects = () => {
+  return (
+    <>
+      <H2>作ったモノ</H2>
+      <Card>
         <h3># Lunash (このブログ)</h3>
         <p>GatsbyJS / TypeScript / Netlify 周りの技術で作成してます。</p>
         <RAW_TweetForMyblog />
+      </Card>
+    </>
+  );
+};
 
-        {/* ------------------------------------ */}
-        <h2>仕事の依頼</h2>
+const CONTENT_AskWork = () => {
+  const myTwitterUrl = useConfigMySocialLinks('twitter');
+  return (
+    <>
+      <H2>仕事の依頼</H2>
+      <Card>
         <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
         <CardActions>
           <Button>
@@ -93,8 +156,17 @@ export const AboutTemplate:React.FC = () => {
             </a>
           </Button>
         </CardActions>
-        {/* ------------------------------------ */}
-        <h2>このブログについて</h2>
+      </Card>
+    </>
+  );
+};
+
+const CONTENT_ThisBlog = () => {
+  const myTwitterUrl = useConfigMySocialLinks('twitter');
+  return (
+    <>
+      <H2>このブログについて</H2>
+      <Card>
         <Text>
           このブログのコンテンツは全てgithubで管理されています。
           内容に問題や訂正すべき内容がある場合は
@@ -107,7 +179,6 @@ export const AboutTemplate:React.FC = () => {
           </a>
           にPRを出してもらえれば対応します。
         </Text>
-        {/* ------------------------------------ */}
         <CardActions>
           <Button>
             <a href={myTwitterUrl} aria-label="twitter-link">
@@ -120,9 +191,11 @@ export const AboutTemplate:React.FC = () => {
             </a>
           </Button>
         </CardActions>
+
+        <hr />
         <MyLinks />
-      </CardContent>
-    </Wrapper>
+      </Card>
+    </>
   );
 };
 
@@ -155,6 +228,10 @@ const RAW_TweetForMyblog: React.FC = () => (
     ></script>
   </div>
 );
+
+const Content = () => {
+  return <></>;
+};
 
 const Wrapper = styled.div`
   padding: 30px;
