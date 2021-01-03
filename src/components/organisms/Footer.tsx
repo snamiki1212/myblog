@@ -21,7 +21,7 @@ const SiteLinks = () => {
       </Box>
       <Box>
         <PrimaryText>Blog</PrimaryText>
-        <LinkText to="/categories">カテゴリ 一覧</LinkText>
+        <LinkText to="/categories">カテゴリー 一覧</LinkText>
         <LinkText to="/tags">タグ 一覧</LinkText>
       </Box>
       <Box>
@@ -68,13 +68,16 @@ const PrimaryText = styled.div`
 `;
 
 const LinkText = styled(Link)`
+  margin-top: 7px;
+  font-size:  20px;
   font-family: ${props => props.theme.fontFamily.primary};
   color: ${props => props.theme.color.baseLight};
+  border-bottom: 1px solid transparent;
 
   transition: .5s;
   &:hover {
     color: ${props => props.theme.color.primaryVivid};
-    border-bottom: 1px solid ${props => props.theme.color.primaryVivid};
+    border-color: ${props => props.theme.color.primaryVivid};
     transition: .5s;
   }
 `;
