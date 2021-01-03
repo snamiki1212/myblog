@@ -32,8 +32,7 @@ export const FooterNav: React.FC = () => {
 const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px 0;
+  justify-content: space-between;
   width: 100%;
 `;
 
