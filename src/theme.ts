@@ -4,7 +4,7 @@ export const theme = {
   color,
   layout: {
     marginVertical: 20,
-    autherAvatorSizeNum: 60,
+    autherAvatorSizeNum: 74,
     articleCardLogoSize: 48,
   },
   fontFamily: {

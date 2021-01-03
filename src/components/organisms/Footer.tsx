@@ -4,103 +4,52 @@ import config from '../../../data/SiteConfig';
 import {Logo} from '../atoms/Logo';
 import {Link} from 'gatsby';
 import {mixinSpinAnimate} from '../atoms/SpinAnimation';
-
-const getURL = (snsName: 'github' | 'twitter' | 'linkedin'): string =>
-  config.mySocials?.find((_) => _.icon === snsName)?.url ?? '';
-
-const SiteLinks = () => {
-  const githubURL = getURL('github');
-  const twitterURL = getURL('twitter');
-  const linkedinURL = getURL('linkedin');
-
-  return (
-    <NavWrapper>
-      <Box>
-        <PrimaryText>Lunash</PrimaryText>
-        <LinkText to="/about">経歴・仕事依頼</LinkText>
-      </Box>
-      <Box>
-        <PrimaryText>Blog</PrimaryText>
-        <LinkText to="/categories">カテゴリ 一覧</LinkText>
-        <LinkText to="/tags">タグ 一覧</LinkText>
-      </Box>
-      <Box>
-        <PrimaryText>SNS</PrimaryText>
-        <LinkText to={twitterURL}>Twitter</LinkText>
-        <LinkText to={githubURL}>Github</LinkText>
-        <LinkText to={linkedinURL}>Linkedin</LinkText>
-      </Box>
-    </NavWrapper>
-  );
-};
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 500px;
-  padding: 0 20px;
-
-  background: ${props => props.theme.color.baseDark};
-`;
-
-
-const NavWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px 0;
-  width: 100%;
-`;
-
-const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const PrimaryText = styled.div`
-  font-family: ${props => props.theme.fontFamily.primary};
-  color: ${props => props.theme.color.primaryVivid};
-  font-weight: bold;
-`;
-
-const LinkText = styled(Link)`
-  font-family: ${props => props.theme.fontFamily.primary};
-  color: ${props => props.theme.color.baseLight};
-
-  transition: .5s;
-  &:hover {
-    color: ${props => props.theme.color.primaryVivid};
-    border-bottom: 1px solid ${props => props.theme.color.primaryVivid};
-    transition: .5s;
-  }
-`;
+import {FooterNav} from '../molecules/FooterNav';
 
 export const Footer: React.FC = () => {
   return (
     <Wrapper>
-      <Link to="/">
-        <HoverForSpinArea>
-          <LogoWrapper>
-            <Logo size={146} />
-          </LogoWrapper>
-        </HoverForSpinArea>
-      </Link>
-
-      <SiteLinks />
-
-      <Bottom>
-        <HR />
-        <Copyright>{config.copyright}</Copyright>
-      </Bottom>
+      <Content>
+        <LogoLink />
+        <FooterNav />
+        <Bottom />
+      </Content>
     </Wrapper>
   );
 };
 
-const LogoWrapper =styled.div``;
+const LogoLink: React.FC = () => (
+  <Link to="/">
+    <HoverForSpinArea>
+      <LogoWrapper>
+        <Logo size={146} />
+      </LogoWrapper>
+    </HoverForSpinArea>
+  </Link>
+);
+
+const Bottom: React.FC = () => (
+  <BottomWrapper>
+    <HR />
+    <Copyright>{config.copyright}</Copyright>
+  </BottomWrapper>
+);
+
+const BottomWrapper = styled.div`
+  width: 100%;
+`;
+
+const HR = styled.hr`
+  border: 1px solid ${(props) => props.theme.color.primaryVivid};
+`;
+
+const Copyright = styled.footer`
+  color: ${(props) => props.theme.color.baseLight};
+  padding: 10px 0;
+  text-align: center;
+`;
+
+const LogoWrapper = styled.div``;
 
 const HoverForSpinArea = styled.div`
   & :hover {
@@ -110,15 +59,19 @@ const HoverForSpinArea = styled.div`
   }
 `;
 
-const Bottom = styled.div`
-  width: 80%;
-`
-
-const HR = styled.hr`
-  border: 1px solid ${props => props.theme.color.primaryVivid};
+const Wrapper = styled.div`
+  height: 600px;
+  background: ${(props) => props.theme.color.baseDark};
 `;
 
-const Copyright = styled.footer`
-  color: ${props => props.theme.color.baseLight};
-  padding: 10px 0;
+const Content = styled.div`
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;

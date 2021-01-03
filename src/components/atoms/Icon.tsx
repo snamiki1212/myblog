@@ -46,11 +46,11 @@ export const Icon: React.FC<Props> = ({icon, ...rest}) => {
     case 'airplanemode_active':
       return <AirplanemodeActiveIcon />;
     case 'github':
-      return <FontAwesomeIcon icon={faGithub} size="1x" />;
+      return <FontAwesomeIcon icon={faGithub} size="2x" />;
     case 'twitter':
-      return <FontAwesomeIcon icon={faTwitter} size="1x" />;
+      return <FontAwesomeIcon icon={faTwitter} size="2x" />;
     case 'linkedin':
-      return <FontAwesomeIcon icon={faLinkedinIn} size="1x" />;
+      return <FontAwesomeIcon icon={faLinkedinIn} size="2x" />;
     case 'createdAt':
       return <Create fontSize="small" {...rest} />;
     case 'updatedAt':

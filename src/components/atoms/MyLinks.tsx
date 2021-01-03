@@ -16,12 +16,16 @@ export const MyLinks: React.FC = () => {
   return (
     <Wrapper>
       {mySocials.map(social => (
-        <Link key={social.icon} to={social.url}>
+        <_Link key={social.icon} to={social.url} aria-label={social.icon}>
           <Icon icon={social.icon} />
-        </Link>
+        </_Link>
       ))}
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div``;
+
+const _Link = styled(Link)`
+  margin-right: 7px;
+`;
