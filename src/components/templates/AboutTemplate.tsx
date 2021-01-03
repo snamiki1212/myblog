@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   padding: 30px;
 `;
 
+<<<<<<< HEAD
 const Avator = styled.img`
   border-radius: 10%;
   width: 150px;
@@ -36,6 +37,8 @@ const Avator = styled.img`
   }
 `;
 
+=======
+>>>>>>> starter/master
 const Text = styled.p`
   max-width: 640px;
   margin: 20px 0 !important;
@@ -51,7 +54,11 @@ export const AboutTemplate = () => {
       <CardContent>
         {/* ------------------------------------ */}
         <h2>プロフィール</h2>
+<<<<<<< HEAD
         <AuthorCard disableMore={true}/>
+=======
+        <AuthorCard disableMore={true} />
+>>>>>>> starter/master
         {/* ------------------------------------ */}
         <h2>いままで</h2>
         <div
@@ -104,7 +111,13 @@ export const AboutTemplate = () => {
         <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
         <CardActions>
           <Button>
+<<<<<<< HEAD
             <a href={myLinkedinUrl}>» LinkedIn(snamiki1212)</a>
+=======
+            <a href={myLinkedinUrl} aria-label="lilnkedin-link">
+              » LinkedIn(snamiki1212)
+            </a>
+>>>>>>> starter/master
           </Button>
         </CardActions>
         {/* ------------------------------------ */}
@@ -118,7 +131,11 @@ export const AboutTemplate = () => {
         <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
         <CardActions>
           <Button>
+<<<<<<< HEAD
             <a href={myTwitterUrl}>
+=======
+            <a href={myTwitterUrl} aria-label="twiter-link">
+>>>>>>> starter/master
               » Twitter - Nash@Webエンジニア(@snamiki1212)
             </a>
           </Button>
@@ -128,18 +145,39 @@ export const AboutTemplate = () => {
         <Text>
           このブログのコンテンツは全てgithubで管理されています。
           内容に問題や訂正すべき内容がある場合は
+<<<<<<< HEAD
           <a href={myTwitterUrl}>Twitter</a>
           か直接
           <a href={config.siteRepository}>ブログのリポジトリ</a>
+=======
+          <a href={myTwitterUrl} aria-label="twitter-link">
+            Twitter
+          </a>
+          か直接
+          <a href={config.siteRepository} aria-label="blog-link">
+            ブログのリポジトリ
+          </a>
+>>>>>>> starter/master
           にPRを出してもらえれば対応します。
         </Text>
         {/* ------------------------------------ */}
         <CardActions>
           <Button>
+<<<<<<< HEAD
             <a href={myTwitterUrl}>Twitter</a>
           </Button>
           <Button>
             <a href={config.siteRepository}>ブログのリポジトリ</a>
+=======
+            <a href={myTwitterUrl} aria-label="twitter-link">
+              Twitter
+            </a>
+          </Button>
+          <Button>
+            <a href={config.siteRepository} aria-label="blog-link">
+              ブログのリポジトリ
+            </a>
+>>>>>>> starter/master
           </Button>
         </CardActions>
         <MyLinks />

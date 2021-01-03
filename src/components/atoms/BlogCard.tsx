@@ -45,7 +45,11 @@ export const BlogCard: React.FC<Props> = ({
 
   return (
     <Wrapper>
+<<<<<<< HEAD
       <Image src={imgUrl} />
+=======
+      <Image src={imgUrl} alt="blog-card-logo" />
+>>>>>>> starter/master
       <Title>{title}</Title>
     </Wrapper>
   );

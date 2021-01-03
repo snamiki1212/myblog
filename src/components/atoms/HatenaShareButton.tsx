@@ -19,6 +19,7 @@ export const HatenaShareButton: React.FC<Props> = ({url, size}) => {
         className="hatena-bookmark-button"
         data-hatena-bookmark-layout="touch-counter"
         title="このエントリーをはてなブックマークに追加"
+        aria-label="はてなブックマーク"
       >
         <img
           src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png"
