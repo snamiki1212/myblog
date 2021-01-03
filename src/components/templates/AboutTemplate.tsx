@@ -25,17 +25,6 @@ const Wrapper = styled.div`
   padding: 30px;
 `;
 
-const Avator = styled.img`
-  border-radius: 10%;
-  width: 150px;
-  height: 150px;
-  margin: 10px 0;
-
-  @media (max-width: 360px - 1px) {
-    padding: 20px;
-  }
-`;
-
 const Text = styled.p`
   max-width: 640px;
   margin: 20px 0 !important;

@@ -10,7 +10,7 @@ export const HeadNav: React.FC = () => {
       <Flex>
         <Link to="/">
           <HoverForSpinArea>
-            <Image src="/blogcard.png" />
+            <Image src="/blogcard.png" alt="blog-logo" />
           </HoverForSpinArea>
         </Link>
 

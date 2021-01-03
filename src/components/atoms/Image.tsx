@@ -15,7 +15,7 @@ const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
 
     if (!childImageSharp) {
       // svg系
-      return <img src={publicURL} {...rest} />;
+      return <img src={publicURL} alt="this-is-image" {...rest} />;
     }
     return <Img fluid={childImageSharp.fluid} {...rest} />;
   } catch (e) {
