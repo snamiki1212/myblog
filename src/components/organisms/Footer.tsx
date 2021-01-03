@@ -34,20 +34,6 @@ const SiteLinks = () => {
   );
 };
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 500px;
-  padding: 0 20px;
-
-  background: ${props => props.theme.color.baseDark};
-`;
-
-
 const NavWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -62,48 +48,50 @@ const Box = styled.div`
 `;
 
 const PrimaryText = styled.div`
-  font-family: ${props => props.theme.fontFamily.primary};
-  color: ${props => props.theme.color.primaryVivid};
+  font-family: ${(props) => props.theme.fontFamily.primary};
+  color: ${(props) => props.theme.color.primaryVivid};
   font-weight: bold;
 `;
 
 const LinkText = styled(Link)`
   margin-top: 7px;
-  font-size:  20px;
-  font-family: ${props => props.theme.fontFamily.primary};
-  color: ${props => props.theme.color.baseLight};
+  font-size: 20px;
+  font-family: ${(props) => props.theme.fontFamily.primary};
+  color: ${(props) => props.theme.color.baseLight};
   border-bottom: 1px solid transparent;
 
-  transition: .5s;
+  transition: 0.5s;
   &:hover {
-    color: ${props => props.theme.color.primaryVivid};
-    border-color: ${props => props.theme.color.primaryVivid};
-    transition: .5s;
+    color: ${(props) => props.theme.color.primaryVivid};
+    border-color: ${(props) => props.theme.color.primaryVivid};
+    transition: 0.5s;
   }
 `;
 
 export const Footer: React.FC = () => {
   return (
     <Wrapper>
-      <Link to="/">
-        <HoverForSpinArea>
-          <LogoWrapper>
-            <Logo size={146} />
-          </LogoWrapper>
-        </HoverForSpinArea>
-      </Link>
+      <Content>
+        <Link to="/">
+          <HoverForSpinArea>
+            <LogoWrapper>
+              <Logo size={146} />
+            </LogoWrapper>
+          </HoverForSpinArea>
+        </Link>
 
-      <SiteLinks />
+        <SiteLinks />
 
-      <Bottom>
-        <HR />
-        <Copyright>{config.copyright}</Copyright>
-      </Bottom>
+        <Bottom>
+          <HR />
+          <Copyright>{config.copyright}</Copyright>
+        </Bottom>
+      </Content>
     </Wrapper>
   );
 };
 
-const LogoWrapper =styled.div``;
+const LogoWrapper = styled.div``;
 
 const HoverForSpinArea = styled.div`
   & :hover {
@@ -114,14 +102,33 @@ const HoverForSpinArea = styled.div`
 `;
 
 const Bottom = styled.div`
-  width: 80%;
-`
+  width: 100%;
+
+`;
 
 const HR = styled.hr`
-  border: 1px solid ${props => props.theme.color.primaryVivid};
+  border: 1px solid ${(props) => props.theme.color.primaryVivid};
 `;
 
 const Copyright = styled.footer`
-  color: ${props => props.theme.color.baseLight};
+  color: ${(props) => props.theme.color.baseLight};
   padding: 10px 0;
+  text-align: center;
+`;
+
+const Wrapper = styled.div`
+  height: 600px;
+  background: ${(props) => props.theme.color.baseDark};
+`;
+
+const Content = styled.div`
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;
