@@ -8,33 +8,12 @@ import Button from '@material-ui/core/Button';
 import config from '../../../data/SiteConfig';
 import {MyLinks} from '../atoms';
 import {AuthorCard} from '../molecules/AuthorCard';
+import { useConfigMySocialLinks} from '../../hooks/config'
 
-// selector
-const myTwitterUrl = config.mySocials.find((ele) => ele.icon === 'twitter').url;
-const myLinkedinUrl = config.mySocials.find((ele) => ele.icon === 'linkedin')
-  .url;
+export const AboutTemplate:React.FC = () => {
+  const myTwitterUrl = useConfigMySocialLinks('twitter');
+  const myLinkedinUrl = useConfigMySocialLinks('linkedin');
 
-// styled
-const Box = styled.div`
-  border: 1px solid lightgray;
-  padding: 20px;
-  margin: 10px;
-`;
-
-const Wrapper = styled.div`
-  padding: 30px;
-`;
-
-const Text = styled.p`
-  max-width: 640px;
-  margin: 20px 0 !important;
-
-  @media (max-width: 360px - 1px) {
-    margin: 5px 0 !important;
-  }
-`;
-
-export const AboutTemplate = () => {
   return (
     <Wrapper>
       <CardContent>
@@ -102,7 +81,7 @@ export const AboutTemplate = () => {
         <h2>作ったモノ</h2>
         <h3># Lunash (このブログ)</h3>
         <p>GatsbyJS / TypeScript / Netlify 周りの技術で作成してます。</p>
-        <TweetForMyblog />
+        <RAW_TweetForMyblog />
 
         {/* ------------------------------------ */}
         <h2>仕事の依頼</h2>
@@ -148,7 +127,7 @@ export const AboutTemplate = () => {
 };
 
 // NOTE: 無理くりTwitterWidgetをコンポーネントで表現してる
-const TweetForMyblog: React.FC = () => (
+const RAW_TweetForMyblog: React.FC = () => (
   <div>
     <blockquote className="twitter-tweet">
       <p lang="ja" dir="ltr">
@@ -176,3 +155,22 @@ const TweetForMyblog: React.FC = () => (
     ></script>
   </div>
 );
+
+const Wrapper = styled.div`
+  padding: 30px;
+`;
+
+const Box = styled.div`
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin: 10px;
+`;
+
+const Text = styled.p`
+  max-width: 640px;
+  margin: 20px 0 !important;
+
+  @media (max-width: 360px - 1px) {
+    margin: 5px 0 !important;
+  }
+`;
