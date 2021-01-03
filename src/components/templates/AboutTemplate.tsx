@@ -40,7 +40,7 @@ export const AboutTemplate = () => {
       <CardContent>
         {/* ------------------------------------ */}
         <h2>プロフィール</h2>
-        <AuthorCard disableMore={true}/>
+        <AuthorCard disableMore={true} />
         {/* ------------------------------------ */}
         <h2>いままで</h2>
         <div
@@ -93,7 +93,9 @@ export const AboutTemplate = () => {
         <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
         <CardActions>
           <Button>
-            <a href={myLinkedinUrl}>» LinkedIn(snamiki1212)</a>
+            <a href={myLinkedinUrl} aria-label="lilnkedin-link">
+              » LinkedIn(snamiki1212)
+            </a>
           </Button>
         </CardActions>
         {/* ------------------------------------ */}
@@ -107,7 +109,7 @@ export const AboutTemplate = () => {
         <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
         <CardActions>
           <Button>
-            <a href={myTwitterUrl}>
+            <a href={myTwitterUrl} aria-label="twiter-link">
               » Twitter - Nash@Webエンジニア(@snamiki1212)
             </a>
           </Button>
@@ -117,18 +119,26 @@ export const AboutTemplate = () => {
         <Text>
           このブログのコンテンツは全てgithubで管理されています。
           内容に問題や訂正すべき内容がある場合は
-          <a href={myTwitterUrl}>Twitter</a>
+          <a href={myTwitterUrl} aria-label="twitter-link">
+            Twitter
+          </a>
           か直接
-          <a href={config.siteRepository}>ブログのリポジトリ</a>
+          <a href={config.siteRepository} aria-label="blog-link">
+            ブログのリポジトリ
+          </a>
           にPRを出してもらえれば対応します。
         </Text>
         {/* ------------------------------------ */}
         <CardActions>
           <Button>
-            <a href={myTwitterUrl}>Twitter</a>
+            <a href={myTwitterUrl} aria-label="twitter-link">
+              Twitter
+            </a>
           </Button>
           <Button>
-            <a href={config.siteRepository}>ブログのリポジトリ</a>
+            <a href={config.siteRepository} aria-label="blog-link">
+              ブログのリポジトリ
+            </a>
           </Button>
         </CardActions>
         <MyLinks />
