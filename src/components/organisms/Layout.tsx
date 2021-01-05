@@ -27,7 +27,6 @@ export const Layout: React.FC = ({children}) => {
       <ThemeProvider theme={theme}>
         <HeadNav />
         <BodyWrapper>{children}</BodyWrapper>
-
         <Footer />
       </ThemeProvider>
     </>

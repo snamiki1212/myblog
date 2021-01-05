@@ -27,12 +27,14 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      <BaseArticlePageLayout
-        articleHeader={<Subtitle>{category}</Subtitle>}
-        articles={<ArticleList postEdges={postEdges} />}
-        pagination={<Paginator context={pageContext} />}
-        profile={<AuthorCard />}
-      />
+      <main>
+        <BaseArticlePageLayout
+          articleHeader={<Subtitle>{category}</Subtitle>}
+          articles={<ArticleList postEdges={postEdges} />}
+          pagination={<Paginator context={pageContext} />}
+          profile={<AuthorCard />}
+        />
+      </main>
     </Layout>
   );
 };

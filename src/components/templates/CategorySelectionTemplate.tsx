@@ -24,13 +24,15 @@ export const CategorySelectionTemplate: React.FC<Props> = ({
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      {categories.map(({name, count, path}) => {
-        return (
-          <Button key={name}>
-            <Link to={path}>{`${name}(${count})`}</Link>
-          </Button>
-        );
-      })}
+      <main>
+        {categories.map(({name, count, path}) => {
+          return (
+            <Button key={name}>
+              <Link to={path}>{`${name}(${count})`}</Link>
+            </Button>
+          );
+        })}
+      </main>
     </Layout>
   );
 };

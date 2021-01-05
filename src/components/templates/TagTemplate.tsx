@@ -26,12 +26,14 @@ export const TagTemplate: React.FC<Props> = ({pageContext, data}) => {
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      <BaseArticlePageLayout
-        articleHeader={<Subtitle>{tag}</Subtitle>}
-        articles={<ArticleList postEdges={postEdges} />}
-        pagination={<Paginator context={pageContext} />}
-        profile={<AuthorCard />}
-      />
+      <main>
+        <BaseArticlePageLayout
+          articleHeader={<Subtitle>{tag}</Subtitle>}
+          articles={<ArticleList postEdges={postEdges} />}
+          pagination={<Paginator context={pageContext} />}
+          profile={<AuthorCard />}
+        />
+      </main>
     </Layout>
   );
 };
