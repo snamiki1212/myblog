@@ -73,7 +73,7 @@ export const homePageQuery = graphql`
             cover {
               publicURL
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 150, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
