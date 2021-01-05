@@ -5,6 +5,7 @@ import config from '../../../data/SiteConfig';
 import {TagPageContext} from '../../../gatsby-node/types';
 import Layout from '../organisms/Layout';
 import {ArticleList} from '../organisms/ArticleList';
+import {Subtitle} from '../atoms/Subtitle';
 import {MarkdownRemarkEdge} from '../../types';
 import {AuthorCard} from '../molecules';
 import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
@@ -25,12 +26,14 @@ export const TagTemplate: React.FC<Props> = ({pageContext, data}) => {
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      <BaseArticlePageLayout
-        articleHeader={<div>TODOここにtags名</div>}
-        articles={<ArticleList postEdges={postEdges} />}
-        pagination={<Paginator context={pageContext} />}
-        profile={<AuthorCard />}
-      />
+      <main>
+        <BaseArticlePageLayout
+          articleHeader={<Subtitle>{tag}</Subtitle>}
+          articles={<ArticleList postEdges={postEdges} />}
+          pagination={<Paginator context={pageContext} />}
+          profile={<AuthorCard />}
+        />
+      </main>
     </Layout>
   );
 };

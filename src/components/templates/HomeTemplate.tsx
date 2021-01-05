@@ -38,13 +38,13 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
       <SEOMeta postEdges={postEdges} />
 
       {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
-      <div>
+      <main>
         <BaseArticlePageLayout
           articles={<ArticleList postEdges={postEdges} />}
           pagination={<Paginator context={pageContext} />}
           profile={<AuthorCard />}
         />
-      </div>
+      </main>
     </Layout>
   );
 };
@@ -73,7 +73,7 @@ export const homePageQuery = graphql`
             cover {
               publicURL
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 150, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

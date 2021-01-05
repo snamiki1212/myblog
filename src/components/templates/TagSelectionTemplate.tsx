@@ -11,10 +11,7 @@ type Props = {
   data: any;
 };
 
-export const TagSelectionTemplate: React.FC<Props> = ({
-  pageContext,
-  data,
-}) => {
+export const TagSelectionTemplate: React.FC<Props> = ({pageContext, data}) => {
   const {tags} = pageContext;
 
   return (
@@ -24,13 +21,15 @@ export const TagSelectionTemplate: React.FC<Props> = ({
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
 
-      {tags.map(({name, count, path}) => {
-        return (
-          <Button key={name}>
-            <Link to={path}>{`${name}(${count})`}</Link>
-          </Button>
-        );
-      })}
+      <main>
+        {tags.map(({name, count, path}) => {
+          return (
+            <Button key={name}>
+              <Link to={path}>{`${name}(${count})`}</Link>
+            </Button>
+          );
+        })}
+      </main>
     </Layout>
   );
 };
