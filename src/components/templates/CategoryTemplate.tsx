@@ -5,7 +5,7 @@ import config from '../../../data/SiteConfig';
 import {CategoryPageContext} from '../../../gatsby-node/types';
 import Layout from '../organisms/Layout';
 import {ArticleList} from '../organisms/ArticleList';
-import {CategoryBanner} from '../atoms/CategoryBanner';
+import {Subtitle} from '../atoms/Subtitle';
 import {MarkdownRemarkEdge} from '../../types';
 import {AuthorCard} from '../molecules';
 import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
@@ -28,7 +28,7 @@ export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
 
       <BaseArticlePageLayout
-        articleHeader={<CategoryBanner categoryName={category} />}
+        articleHeader={<Subtitle>{category}</Subtitle>}
         articles={<ArticleList postEdges={postEdges} />}
         pagination={<Paginator context={pageContext} />}
         profile={<AuthorCard />}
