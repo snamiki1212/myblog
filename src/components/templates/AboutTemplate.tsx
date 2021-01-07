@@ -4,22 +4,14 @@ import {Link} from 'gatsby';
 
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import Button from '@material-ui/core/Button';
 
 import config from '../../../data/SiteConfig';
 import {MyLinks} from '../atoms';
 import {AuthorCard} from '../molecules/AuthorCard';
+import {Button} from '../atoms/Button';
 import {useConfigMySocialLinks} from '../../hooks/config';
 
-const _Button = styled(Link)`
-  padding: 5px;
 
-  transition: 0.5s;
-  & :hover {
-    transition: 0.5s;
-    background: ${(props) => props.theme.color.baseDark};
-  }
-`;
 
 const Card = styled.div`
   padding: 40px;
@@ -107,7 +99,7 @@ const CONTENT_WhatCan = () => {
           </ul>
         </div>
         <div>
-          ハード
+          ハードスキル
           <ul>
             <li>React.js(Next.js/Gatsby.JS)</li>
             <li>ReactNative</li>
@@ -118,11 +110,9 @@ const CONTENT_WhatCan = () => {
         </div>
         <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
         <CardActions>
-          <Button>
-            <a href={myLinkedinUrl} aria-label="lilnkedin-link">
-              » LinkedIn(snamiki1212)
-            </a>
-          </Button>
+          <Link to={myLinkedinUrl} aria-label="lilnkedin-link">
+            <Button>» LinkedIn(snamiki1212)</Button>
+          </Link>
         </CardActions>
       </Card>
     </>
@@ -134,7 +124,7 @@ const CONTENT_Projects = () => {
     <>
       <H2>作ったモノ</H2>
       <Card>
-        <h3># Lunash (このブログ)</h3>
+        <h3>Lunash (blog)</h3>
         <p>GatsbyJS / TypeScript / Netlify 周りの技術で作成してます。</p>
         <RAW_TweetForMyblog />
       </Card>
@@ -150,11 +140,11 @@ const CONTENT_AskWork = () => {
       <Card>
         <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
         <CardActions>
-          <Button>
-            <a href={myTwitterUrl} aria-label="twiter-link">
+          <Link  to={myTwitterUrl} aria-label="twiter-link">
+            <Button>
               » Twitter - Nash@Webエンジニア(@snamiki1212)
-            </a>
-          </Button>
+            </Button>
+          </Link>
         </CardActions>
       </Card>
     </>
@@ -170,26 +160,26 @@ const CONTENT_ThisBlog = () => {
         <Text>
           このブログのコンテンツは全てgithubで管理されています。
           内容に問題や訂正すべき内容がある場合は
-          <a href={myTwitterUrl} aria-label="twitter-link">
-            Twitter
-          </a>
+          <Link to={myTwitterUrl} aria-label="twitter-link">
+            <Button>Twitter</Button>
+          </Link>
           か直接
-          <a href={config.siteRepository} aria-label="blog-link">
-            ブログのリポジトリ
-          </a>
+          <Link to={config.siteRepository} aria-label="blog-link">
+            <Button>ブログのリポジトリ</Button>
+          </Link>
           にPRを出してもらえれば対応します。
         </Text>
         <CardActions>
-          <Button>
-            <a href={myTwitterUrl} aria-label="twitter-link">
+          <Link  to={myTwitterUrl} aria-label="twitter-link">
+            <Button>
               Twitter
-            </a>
-          </Button>
-          <Button>
-            <a href={config.siteRepository} aria-label="blog-link">
+            </Button>
+          </Link>
+          <Link  to={config.siteRepository} aria-label="blog-link">
+            <Button>
               ブログのリポジトリ
-            </a>
-          </Button>
+            </Button>
+          </Link>
         </CardActions>
 
         <hr />
