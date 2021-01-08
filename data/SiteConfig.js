@@ -12,7 +12,7 @@ module.exports = {
   siteRepository: 'https://github.com/snamiki1212/myblog', // Repository of your site
 
   // blog-card
-  blogCardLogo: '/blogcard.png', // 暫定。参照先のOGPとか取りたい。
+  blogCardLogo: '/blogcard.webp', // 暫定。参照先のOGPとか取りたい。
 
   // for RSS
   siteDescription: '先端技術を追いかけるエンジニアのブログ', // Website description used for RSS feeds/meta description tag.
@@ -28,7 +28,7 @@ module.exports = {
   userName: 'Nash', // Username to display in the author segment.
   userTwitter: 'snamiki1212', // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: 'Shibuya, Japan', // User location to display in the author segment.
-  userAvatar: '/logos/logo_48.jpg', // User avatar to display in the author segment.
+  userAvatar: '/avator.webp', // User avatar to display in the author segment.
   userDescription:
     'プログラミングが好きな人。SE→ITベンチャー→フリーランス。日本を出て、海外で働いて、最終ゴールは月で生活すること。', // User description to display in the author segment.
   userIntroduction: 'Freelance Engineer', // short user introduction
