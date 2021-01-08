@@ -4,7 +4,7 @@ import config from '../../../data/SiteConfig';
 import Layout from '../organisms/Layout';
 import {MarkdownRemarkEdge} from '../../types';
 import {Link} from 'gatsby';
-import Button from '@material-ui/core/Button';
+import {Button} from '../atoms/Button'
 
 type Props = {
   pageContext: any;
