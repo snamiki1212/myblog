@@ -14,7 +14,7 @@ const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
     const {publicURL, childImageSharp} = imgInfo;
 
     if (!childImageSharp) {
-      // svg系
+      console.warn("cannot find childImageSharp");
       return <img src={publicURL} alt="this-is-image" {...rest} />;
     }
     return <Img fluid={childImageSharp.fluid} {...rest} />;
