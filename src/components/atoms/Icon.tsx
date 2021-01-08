@@ -7,8 +7,10 @@ import React from 'react';
 // import FaceIcon from '@material-ui/icons/Face';
 // import DesktopMacIcon from '@material-ui/icons/DesktopMac';
 // import AirplanemodeActiveIcon from '@material-ui/icons/AirplanemodeActive';
-import Update from '@material-ui/icons/Update';
-import Create from '@material-ui/icons/Create';
+// import Update from '@material-ui/icons/Update';
+// import Create from '@material-ui/icons/Create';
+// import {library} from "@fortawesome/fontawesome-svg-core";
+import {faRecycle, faEdit} from "@fortawesome/free-solid-svg-icons";
 
 // fontawesome
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -52,9 +54,9 @@ export const Icon: React.FC<Props> = ({icon, ...rest}) => {
     case 'linkedin':
       return <FontAwesomeIcon icon={faLinkedinIn} size="2x" />;
     case 'createdAt':
-      return <Create fontSize="small" {...rest} />;
+      return <FontAwesomeIcon icon={faEdit} size="1x" {...rest} />;
     case 'updatedAt':
-      return <Update fontSize="small" {...rest} />;
+      return <FontAwesomeIcon icon={faRecycle} size="1x" {...rest} />;
     default:
       return <></>;
   }

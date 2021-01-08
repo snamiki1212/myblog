@@ -9,8 +9,6 @@ type Props = {date: Date; containerStyle?: any, innerStyle?: any};
 // TODO: atomsに移動させたい
 export const UpdatedAt: React.FC<Props> = ({date, containerStyle = {}, innerStyle ={}}) => {
   const formatedDate = dayjs(date).format(config.dateFormat);
-  const theme = React.useContext(ThemeContext);
-  {color: theme.color.primaryVivid}
 
   return (
     <Wrapper containerStyle={containerStyle}>
