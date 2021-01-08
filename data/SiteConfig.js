@@ -11,7 +11,7 @@ module.exports = {
   siteRepository: 'https://github.com/snamiki1212/gatsby-starter-lunash', // Repository of your site
 
   // blog-card
-  blogCardLogo: '/blogcard.png', // 暫定。参照先のOGPとか取りたい。
+  blogCardLogo: '/blogcard.webp', // 暫定。参照先のOGPとか取りたい。
 
   // for RSS
   siteDescription: 'hogehoge', // Website description used for RSS feeds/meta description tag.
@@ -27,7 +27,7 @@ module.exports = {
   userName: 'Nash', // Username to display in the author segment.
   userTwitter: 'hoge', // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: 'hoge', // User location to display in the author segment.
-  userAvatar: '/logos/logo_48.jpg', // User avatar to display in the author segment.
+  userAvatar: '/avator.webp', // User avatar to display in the author segment.
   userDescription: 'hoge hoge', // User description to display in the author segment.
   userIntroduction: 'Developer', // short user introduction
   jobTitle: 'Developer',

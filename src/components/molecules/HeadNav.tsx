@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {siteTitle} from '../../../data/SiteConfig';
 import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 import {Link} from 'gatsby';
+import {blogCardLogo} from '../../../data/SiteConfig';
 
 export const HeadNav: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const HeadNav: React.FC = () => {
       <Flex>
         <Link to="/">
           <HoverForSpinArea>
-            <Image src="/blogcard.png" alt="blog-logo" />
+            <Image src={blogCardLogo} alt="blog-logo" />
           </HoverForSpinArea>
         </Link>
 
