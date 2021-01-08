@@ -2,38 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'gatsby';
 
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-
 import config from '../../../data/SiteConfig';
 import {MyLinks} from '../atoms';
 import {AuthorCard} from '../molecules/AuthorCard';
 import {Button} from '../atoms/Button';
 import {useConfigMySocialLinks} from '../../hooks/config';
 
-
-
-const Card = styled.div`
-  padding: 40px;
-  border-radius: 10px;
-  background-color: ${(props) => props.theme.color.white};
-`;
-
-const H2 = styled.h2`
-  margin: 36px 0 4px 0;
-`;
-
 export const AboutTemplate: React.FC = () => {
   return (
     <Wrapper>
-      <CardContent>
-        <CONTENT_Profile />
-        <CONTENT_UntilNow />
-        <CONTENT_WhatCan />
-        <CONTENT_Projects />
-        <CONTENT_AskWork />
-        <CONTENT_ThisBlog />
-      </CardContent>
+      <CONTENT_Profile />
+      <CONTENT_UntilNow />
+      <CONTENT_WhatCan />
+      <CONTENT_Projects />
+      <CONTENT_AskWork />
+      <CONTENT_ThisBlog />
     </Wrapper>
   );
 };
@@ -109,11 +92,9 @@ const CONTENT_WhatCan = () => {
           </ul>
         </div>
         <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
-        <CardActions>
-          <Link to={myLinkedinUrl} aria-label="lilnkedin-link">
-            <Button>» LinkedIn(snamiki1212)</Button>
-          </Link>
-        </CardActions>
+        <Link to={myLinkedinUrl} aria-label="lilnkedin-link">
+          <Button>» LinkedIn(snamiki1212)</Button>
+        </Link>
       </Card>
     </>
   );
@@ -139,13 +120,9 @@ const CONTENT_AskWork = () => {
       <H2>仕事の依頼</H2>
       <Card>
         <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
-        <CardActions>
-          <Link  to={myTwitterUrl} aria-label="twiter-link">
-            <Button>
-              » Twitter - Nash@Webエンジニア(@snamiki1212)
-            </Button>
-          </Link>
-        </CardActions>
+        <Link to={myTwitterUrl} aria-label="twiter-link">
+          <Button>» Twitter - Nash@Webエンジニア(@snamiki1212)</Button>
+        </Link>
       </Card>
     </>
   );
@@ -169,18 +146,12 @@ const CONTENT_ThisBlog = () => {
           </Link>
           にPRを出してもらえれば対応します。
         </Text>
-        <CardActions>
-          <Link  to={myTwitterUrl} aria-label="twitter-link">
-            <Button>
-              Twitter
-            </Button>
-          </Link>
-          <Link  to={config.siteRepository} aria-label="blog-link">
-            <Button>
-              ブログのリポジトリ
-            </Button>
-          </Link>
-        </CardActions>
+        <Link to={myTwitterUrl} aria-label="twitter-link">
+          <Button>Twitter</Button>
+        </Link>
+        <Link to={config.siteRepository} aria-label="blog-link">
+          <Button>ブログのリポジトリ</Button>
+        </Link>
 
         <hr />
         <MyLinks />
@@ -240,4 +211,14 @@ const Text = styled.p`
   @media (max-width: 360px - 1px) {
     margin: 5px 0 !important;
   }
+`;
+
+const Card = styled.div`
+  padding: 40px;
+  border-radius: 10px;
+  background-color: ${(props) => props.theme.color.white};
+`;
+
+const H2 = styled.h2`
+  margin: 36px 0 4px 0;
 `;
