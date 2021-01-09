@@ -17,7 +17,7 @@ const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
       console.warn("cannot find childImageSharp");
       return <img src={publicURL} alt="this-is-image" {...rest} />;
     }
-    return <Img fluid={childImageSharp.fluid} {...rest} />;
+    return <Img fluid={childImageSharp.fluid} {...rest} loading="lazy" />;
   } catch (e) {
     return <img src={'/eyecatch.webp'} alt="eyecatch" style={{width: '100%'}} />;
   }
