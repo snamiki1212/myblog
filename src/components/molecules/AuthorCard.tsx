@@ -22,7 +22,11 @@ export const AuthorCard: React.FC<Props> = ({disableMore = false}) => {
     <AuthorCardLayout
       avator={
         <Link to="/about">
-          <Avator src={config.userAvatar} alt={config.autherName} />
+          <Avator
+            src={config.userAvatar}
+            alt={config.autherName}
+            loading="lazy"
+          />
         </Link>
       }
       name={<Name>{config.autherName}</Name>}

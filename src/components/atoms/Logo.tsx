@@ -7,6 +7,7 @@ export const Logo: React.FC<{size: number}> = ({size}) => {
       src={blogCardLogo}
       style={{width: size, height: size}}
       alt="logo-img"
+      loading="lazy" 
     />
   );
 };

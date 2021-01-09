@@ -45,7 +45,7 @@ export const BlogCard: React.FC<Props> = ({
 
   return (
     <Wrapper>
-      <Image src={imgUrl} alt="blog-card-logo" />
+      <Image src={imgUrl} alt="blog-card-logo" loading="lazy" />
       <Title>{title}</Title>
     </Wrapper>
   );
