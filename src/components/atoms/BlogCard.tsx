@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {blogCardLogo} from '../../../data/SiteConfig';
-import {mixinSpinAnimate} from './SpinAnimation'
+import {mixinSpinAnimate} from './SpinAnimation';
 
 const altImg =
   'https://user-images.githubusercontent.com/26793088/72956432-1193f080-3de3-11ea-844d-a39a6a4a18bb.png';
@@ -45,7 +45,7 @@ export const BlogCard: React.FC<Props> = ({
 
   return (
     <Wrapper>
-      <Image src={imgUrl} alt="blog-card-logo" />
+      <Image src={imgUrl} alt="blog-card-logo" loading="lazy" />
       <Title>{title}</Title>
     </Wrapper>
   );
@@ -61,14 +61,14 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  transition: .5s;
-  background-color: ${props => props.theme.color.white};
+  transition: 0.5s;
+  background-color: ${(props) => props.theme.color.white};
   border-radius: 10px;
-  
+
   &:hover {
-    background-color: ${props => props.theme.color.link};
-    color: ${props => props.theme.color.baseLight};
-    transition: .5s;
+    background-color: ${(props) => props.theme.color.link};
+    color: ${(props) => props.theme.color.baseLight};
+    transition: 0.5s;
   }
 
   &:hover {
