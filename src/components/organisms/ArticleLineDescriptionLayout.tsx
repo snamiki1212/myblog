@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {MixBlender} from '../atoms/MixBlender'
 
 type Props = {
   image: React.ReactNode;
@@ -56,7 +57,7 @@ const MetaDataWrapper = styled(Flex)`
   align-items: center;
 `;
 
-const ImageWrapper = styled.div``;
+const ImageWrapper = styled(MixBlender)``;
 
 const TitleWrapper = styled.div`
   padding: 0 10px;
