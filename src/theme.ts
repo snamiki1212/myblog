@@ -9,6 +9,7 @@ export const theme = {
   },
   fontFamily: {
     primary: `-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif`,
+    logo: `Candara,Calibri,Segoe,Segoe UI`,
   },
   fontSize: {
     tmp_1: 24,

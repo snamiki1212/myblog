@@ -47,6 +47,6 @@ const HoverForSpinArea = styled.div`
 
 const BlogTitle = styled.span`
   color: ${(props) => props.theme.color.primaryVivid};
-  font-family: ${(props) => props.theme.fontFamily.primary}px;
+  font-family: ${(props) => props.theme.fontFamily.logo};
   font-size: ${(props) => props.theme.fontSize.tmp_3}px;
 `;
