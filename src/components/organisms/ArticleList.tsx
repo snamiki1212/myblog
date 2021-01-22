@@ -31,11 +31,13 @@ export const Child = styled.div`
   width: 46%;
   margin: 2%;
   border-radius: 10px;
+  box-shadow: 2px 2px 10px lightgrey;
   background: ${props => props.theme.color.white};
   
   transition: .5s;
   & :hover {
     transition: .5s;
-    background: ${props => props.theme.color.primaryVivid};
+    opacity: .8;
+    transform: scale(1.04) rotate(1deg);
   }
 `;
