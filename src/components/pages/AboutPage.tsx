@@ -8,7 +8,7 @@ import {AuthorCard} from '../molecules/AuthorCard';
 import {Button} from '../atoms/Button';
 import {useConfigMySocialLinks} from '../../hooks/config';
 
-export const AboutTemplate: React.FC = () => {
+export const AboutPage: React.FC = () => {
   return (
     <Wrapper>
       <CONTENT_Profile />

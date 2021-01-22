@@ -1,11 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import {AboutTemplate} from '../components/templates/AboutTemplate';
+import {AboutPage} from '../components/pages/AboutPage';
 import Layout from '../components/organisms/Layout';
 import config from '../../data/SiteConfig';
 
-const AboutPage: React.FC = () => {
+const _AboutPage: React.FC = () => {
   return (
     <Layout>
       <Helmet>
@@ -13,9 +13,9 @@ const AboutPage: React.FC = () => {
         <link rel="canonical" href={`${config.siteUrl}/about/`} />
       </Helmet>
 
-      <AboutTemplate />
+      <AboutPage />
     </Layout>
   );
 };
 
-export default AboutPage;
+export default _AboutPage;

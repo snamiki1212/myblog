@@ -11,7 +11,7 @@ type Props = {
   data: any;
 };
 
-export const TagSelectionTemplate: React.FC<Props> = ({pageContext, data}) => {
+export const TagSelectionPage: React.FC<Props> = ({pageContext, data}) => {
   const {tags} = pageContext;
 
   return (
@@ -38,4 +38,4 @@ export interface CategoryPageQuery {
   edges: MarkdownRemarkEdge[];
 }
 
-export default TagSelectionTemplate;
+export default TagSelectionPage;

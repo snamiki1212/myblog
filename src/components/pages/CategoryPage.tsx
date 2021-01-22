@@ -16,7 +16,7 @@ type Props = {
   data: {allMarkdownRemark: CategoryPageQuery};
 };
 
-export const CategoryTemplate: React.FC<Props> = ({pageContext, data}) => {
+export const CategoryPage: React.FC<Props> = ({pageContext, data}) => {
   const {category} = pageContext;
   const postEdges = data.allMarkdownRemark.edges;
 
@@ -82,4 +82,4 @@ export interface CategoryPageQuery {
   edges: MarkdownRemarkEdge[];
 }
 
-export default CategoryTemplate;
+export default CategoryPage;

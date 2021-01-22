@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import urljoin from 'url-join';
 import config from '../../../data/SiteConfig';
-import {MarkdownRemark} from '../templates/PostTemplate';
+import {MarkdownRemark} from '../pages/PostPage';
 import {MarkdownRemarkEdge} from '../../types';
 
 const fetchData =

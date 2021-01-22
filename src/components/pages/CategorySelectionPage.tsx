@@ -11,7 +11,7 @@ type Props = {
   data: any;
 };
 
-export const CategorySelectionTemplate: React.FC<Props> = ({
+export const CategorySelectionPage: React.FC<Props> = ({
   pageContext,
   data,
 }) => {
@@ -41,4 +41,4 @@ export interface CategoryPageQuery {
   edges: MarkdownRemarkEdge[];
 }
 
-export default CategorySelectionTemplate;
+export default CategorySelectionPage;
