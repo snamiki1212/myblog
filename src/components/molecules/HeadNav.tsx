@@ -33,8 +33,8 @@ const Flex = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 `;
 
 const HoverForSpinArea = styled.div`
