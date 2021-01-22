@@ -19,7 +19,7 @@ import {HatenaShareButton} from '../atoms';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
-import {MarkdownRemark} from '../templates/PostTemplate';
+import {MarkdownRemark} from '../pages/PostPage';
 
 type Props = {postNode: MarkdownRemark};
 

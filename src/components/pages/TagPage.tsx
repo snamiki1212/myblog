@@ -1,45 +1,34 @@
-import {graphql} from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
+import {graphql} from 'gatsby';
 import config from '../../../data/SiteConfig';
-import {IndexPageContext} from '../../../gatsby-node/types';
-import {SEOMeta} from '../atoms';
+import {TagPageContext} from '../../../gatsby-node/types';
 import Layout from '../organisms/Layout';
 import {ArticleList} from '../organisms/ArticleList';
+import {Subtitle} from '../atoms/Subtitle';
 import {MarkdownRemarkEdge} from '../../types';
-// import Img from 'gatsby-image';
 import {AuthorCard} from '../molecules';
 import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
 import {Paginator} from '../atoms';
 
 type Props = {
-  pageContext: IndexPageContext;
-  data: {
-    allMarkdownRemark: IndexPageQuery;
-    // allFile: FeaturedImg;
-  };
+  pageContext: TagPageContext;
+  data: {allMarkdownRemark: TagPageQuery};
 };
-
-export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
-  const {
-    allMarkdownRemark,
-    // allFile
-  } = data;
-
-  const postEdges = allMarkdownRemark.edges;
-  // const childImageSharp = allFile.edges[0].node.childImageSharp;
+export const TagPage: React.FC<Props> = ({pageContext, data}) => {
+  const {tag} = pageContext;
+  const postEdges = data.allMarkdownRemark.edges;
 
   return (
     <Layout>
       <Helmet>
-        <title>{config.siteTitle}</title>
+        <title>{`${config.siteTitle} | ${tag}`}</title>
         <link rel="canonical" href={`${config.siteUrl}`} />
       </Helmet>
-      <SEOMeta postEdges={postEdges} />
 
-      {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
       <main>
         <BaseArticlePageLayout
+          articleHeader={<Subtitle>{tag}</Subtitle>}
           articles={<ArticleList postEdges={postEdges} />}
           pagination={<Paginator context={pageContext} />}
           profile={<AuthorCard />}
@@ -49,13 +38,13 @@ export const HomeTemplate: React.FC<Props> = ({pageContext, data}) => {
   );
 };
 
-// const featuredImgPath = 'logos/logo.png';
-export const homePageQuery = graphql`
-  query HomePageQuery($skip: Int!, $limit: Int!) {
+export const tagPageQuery = graphql`
+  query TagPageQuery($tag: String, $skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: {fields: [fields____createdAt], order: DESC}
       limit: $limit
       skip: $skip
+      filter: {frontmatter: {tags: {in: [$tag]}}}
     ) {
       edges {
         node {
@@ -73,10 +62,11 @@ export const homePageQuery = graphql`
             cover {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 150, quality: 100) {
+                fluid {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
+              extension
             }
             createdAt
             updatedAt
@@ -87,25 +77,8 @@ export const homePageQuery = graphql`
   }
 `;
 
-// allFile(filter: {relativePath: {in: "logos/logo.png"}}) {
-//   edges {
-//     node {
-//       childImageSharp {
-//         fluid {
-//           base64
-// aspectRatio
-// src
-// srcSet
-// sizes
-// originalImg
-//         }
-//       }
-//     }
-//   }
-// }
-
-export interface IndexPageQuery {
+export interface TagPageQuery {
   edges: MarkdownRemarkEdge[];
 }
 
-export default HomeTemplate;
+export default TagPage;

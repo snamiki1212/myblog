@@ -23,7 +23,7 @@ type Props = {
   pageContext: PostPageContext;
 };
 
-export const PostTemplate: React.FC<Props> = ({data}) => {
+export const PostPage: React.FC<Props> = ({data}) => {
   const postNode = data.markdownRemark;
   if (!postNode) {
     console.error('Cannot Find postNode');
@@ -207,4 +207,4 @@ export const postPageQuery = graphql`
   }
 `;
 
-export default PostTemplate;
+export default PostPage;
