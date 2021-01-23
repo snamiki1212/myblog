@@ -8,11 +8,15 @@ export const MixBlender = styled.div`
     width: 100%;
     position: absolute;
     background: linear-gradient(
-      130deg,
-      #ff7a18,
-      #af002d 41.07%,
-      #319197 76.05%
+      140deg,
+      ${(props) =>
+        props.theme.color.primaryVivid +
+        ',' +
+        props.theme.color.baseDark +
+        ',' +
+        props.theme.color.primaryVivid}
     );
+
     mix-blend-mode: screen;
     top: 0;
     left: 0;

@@ -86,12 +86,12 @@ export const SocialLinks: React.FC<Props> = (props) => {
 };
 
 const InnerWrapper = styled.span`
-  transition: .5s;
+  transition: .3s;
   &:hover {
     cursor: pointer;
-    transition: .5s;
+    transition: .3s;
     opacity: .8;
-    transform: scale(1.5) rotate(15deg);
+    transform: scale(1.5);
   }
 `;
 
