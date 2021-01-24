@@ -12,7 +12,7 @@ type Props = {
 
 const PADDING_SIZE = '10px';
 
-export const ArticleLineDescriptionLayout: React.FC<Props> = ({
+export const ArticleCardLayout: React.FC<Props> = ({
   image,
   logo,
   title,

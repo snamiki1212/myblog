@@ -11,16 +11,16 @@ export const FooterNav: React.FC = () => {
   return (
     <Wrapper>
       <Box>
-        <PrimaryText>Lunash</PrimaryText>
+        <SubTitle>Lunash</SubTitle>
         <LinkText to="/about">経歴・仕事依頼</LinkText>
       </Box>
       <Box>
-        <PrimaryText>Blog</PrimaryText>
+        <SubTitle>Blog</SubTitle>
         <LinkText to="/categories">カテゴリー 一覧</LinkText>
         <LinkText to="/tags">タグ 一覧</LinkText>
       </Box>
       <Box>
-        <PrimaryText>SNS</PrimaryText>
+        <SubTitle>SNS</SubTitle>
         <LinkText to={twitterURL}>Twitter</LinkText>
         <LinkText to={githubURL}>Github</LinkText>
         <LinkText to={linkedinURL}>Linkedin</LinkText>
@@ -41,7 +41,7 @@ const Box = styled.div`
   flex-direction: column;
 `;
 
-const PrimaryText = styled.div`
+const SubTitle = styled.div`
   font-family: ${(props) => props.theme.fontFamily.primary};
   color: ${(props) => props.theme.color.primaryVivid};
   font-weight: bold;

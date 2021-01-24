@@ -9,7 +9,7 @@ import {ArticleList} from '../organisms/ArticleList';
 import {MarkdownRemarkEdge} from '../../types';
 // import Img from 'gatsby-image';
 import {AuthorCard} from '../molecules';
-import {ArticleListLayout} from '../templates/ArticleListLayout';
+import {ArticleListLayout} from '../organisms/ArticleListLayout';
 import {Paginator} from '../atoms';
 
 type Props = {

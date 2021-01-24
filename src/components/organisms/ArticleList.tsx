@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {ArticlePreviewLine} from '../organisms/ArticlePreviewLine';
+import {ArticleCard} from './ArticleCard';
 import {MarkdownRemarkEdge} from '../../types';
 
 type Props = {
@@ -12,7 +12,7 @@ export const ArticleList: React.FC<Props> = ({postEdges}) => {
     <Wrapper>
       {postEdges.map((edge) => (
         <Child>
-          <ArticlePreviewLine postInfo={edge} />
+          <ArticleCard postInfo={edge} />
         </Child>
       ))}
     </Wrapper>
