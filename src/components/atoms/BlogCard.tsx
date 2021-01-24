@@ -61,13 +61,15 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  transition: 0.5s;
-  background-color: ${(props) => props.theme.color.white};
+  
+  background: ${(props) => props.theme.color.white};
+  box-shadow: 2px 2px 10px lightgrey;
   border-radius: 10px;
 
+  transition: 0.5s;
   &:hover {
-    background-color: ${(props) => props.theme.color.link};
-    color: ${(props) => props.theme.color.baseLight};
+    opacity: .8;
+    transform: scale(1.04);
     transition: 0.5s;
   }
 
