@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {MixBlender} from '../atoms/MixBlender'
+import {MixBlender} from '../atoms/MixBlender';
 
 type Props = {
   image: React.ReactNode;
