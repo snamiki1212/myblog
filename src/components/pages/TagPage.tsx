@@ -8,7 +8,7 @@ import {ArticleList} from '../organisms/ArticleList';
 import {Subtitle} from '../atoms/Subtitle';
 import {MarkdownRemarkEdge} from '../../types';
 import {AuthorCard} from '../molecules';
-import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
+import {ArticleListLayout} from '../templates/ArticleListLayout';
 import {Paginator} from '../atoms';
 
 type Props = {
@@ -27,8 +27,8 @@ export const TagPage: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
 
       <main>
-        <BaseArticlePageLayout
-          articleHeader={<Subtitle>{tag}</Subtitle>}
+        <ArticleListLayout
+          articleListHeader={<Subtitle>{tag}</Subtitle>}
           articles={<ArticleList postEdges={postEdges} />}
           pagination={<Paginator context={pageContext} />}
           profile={<AuthorCard />}

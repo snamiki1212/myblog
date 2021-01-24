@@ -9,7 +9,7 @@ import {ArticleList} from '../organisms/ArticleList';
 import {MarkdownRemarkEdge} from '../../types';
 // import Img from 'gatsby-image';
 import {AuthorCard} from '../molecules';
-import {BaseArticlePageLayout} from '../organisms/BaseArticlePageLayout';
+import {ArticleListLayout} from '../templates/ArticleListLayout';
 import {Paginator} from '../atoms';
 
 type Props = {
@@ -39,7 +39,7 @@ export const HomePage: React.FC<Props> = ({pageContext, data}) => {
 
       {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
       <main>
-        <BaseArticlePageLayout
+        <ArticleListLayout
           articles={<ArticleList postEdges={postEdges} />}
           pagination={<Paginator context={pageContext} />}
           profile={<AuthorCard />}
