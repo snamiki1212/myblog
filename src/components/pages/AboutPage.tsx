@@ -190,10 +190,6 @@ const RAW_TweetForMyblog: React.FC = () => (
   </div>
 );
 
-const Content = () => {
-  return <></>;
-};
-
 const Wrapper = styled.div`
   padding: 30px;
 `;

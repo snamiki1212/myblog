@@ -6,7 +6,6 @@ import {Icon} from '../atoms';
 
 type Props = {date: Date; containerStyle?: any};
 
-// TODO: atomsに移動させたい
 export const CreatedAt: React.FC<Props> = ({date, containerStyle = {}}) => {
   const formatedDate = dayjs(date).format(config.dateFormat);
 

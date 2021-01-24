@@ -10,30 +10,24 @@ export const Footer: React.FC = () => {
   return (
     <Wrapper>
       <Content>
-        <LogoLink />
+        <LogoWrapper>
+          <Link to="/">
+            <HoverForSpinArea>
+              <Logo size={146} />
+            </HoverForSpinArea>
+          </Link>
+        </LogoWrapper>
+
         <FooterNav />
-        <Bottom />
+
+        <BottomWrapper>
+          <HR />
+          <Copyright>{config.copyright}</Copyright>
+        </BottomWrapper>
       </Content>
     </Wrapper>
   );
 };
-
-const LogoLink: React.FC = () => (
-  <Link to="/">
-    <HoverForSpinArea>
-      <LogoWrapper>
-        <Logo size={146} />
-      </LogoWrapper>
-    </HoverForSpinArea>
-  </Link>
-);
-
-const Bottom: React.FC = () => (
-  <BottomWrapper>
-    <HR />
-    <Copyright>{config.copyright}</Copyright>
-  </BottomWrapper>
-);
 
 const BottomWrapper = styled.div`
   width: 100%;

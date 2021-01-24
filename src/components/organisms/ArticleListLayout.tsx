@@ -2,17 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 type Props = {
-  articleHeader?: React.ReactNode;
+  articleListHeader?: React.ReactNode;
   articles: React.ReactNode;
   profile: React.ReactNode;
   pagination: React.ReactNode;
 };
 
-export const BaseArticlePageLayout: React.FC<Props> = ({articleHeader, articles, profile, pagination}) => {
+export const ArticleListLayout: React.FC<Props> = ({articleListHeader, articles, profile, pagination}) => {
   return (
     <Wrapper>
-      {articleHeader && <ArticleHeader>{articleHeader}</ArticleHeader>}
-      <ArticleArea>{articles}</ArticleArea>
+      {articleListHeader && <ArticleListHeader>{articleListHeader}</ArticleListHeader>}
+      <ArticlesArea>{articles}</ArticlesArea>
       <PaginationArea>{pagination}</PaginationArea>
       <ProfileArea>{profile}</ProfileArea>
     </Wrapper>
@@ -29,11 +29,11 @@ const Wrapper = styled.div`
   margin: 0 ${(props) => props.theme.layout.marginVertical}px;
 `;
 
-const ArticleHeader = styled.div`
+const ArticleListHeader = styled.div`
   width: 100%;
 `;
 
-const ArticleArea = styled.div`
+const ArticlesArea = styled.div`
   width: 100%;
 `;
 

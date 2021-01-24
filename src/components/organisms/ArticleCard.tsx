@@ -6,13 +6,13 @@ import {MarkdownRemarkEdge} from '../../types';
 import Image from '../atoms/Image';
 import {Logo} from '../atoms/Logo';
 import {UpdatedAt} from '../molecules';
-import {ArticleLineDescriptionLayout} from '../organisms/ArticleLineDescriptionLayout';
+import {ArticleCardLayout} from './ArticleCardLayout';
 
 type Props = {
   postInfo: MarkdownRemarkEdge;
 };
 
-export const ArticlePreviewLine: React.FC<Props> = ({postInfo: edge}) => {
+export const ArticleCard: React.FC<Props> = ({postInfo: edge}) => {
   const to = edge.node.fields._slug;
   const linkKey = edge.node.frontmatter.title;
   const imgInfo = edge.node.frontmatter.cover;
@@ -22,7 +22,7 @@ export const ArticlePreviewLine: React.FC<Props> = ({postInfo: edge}) => {
 
   return (
     <Link to={to} key={linkKey}>
-      <ArticleLineDescriptionLayout
+      <ArticleCardLayout
         image={<_Image imgInfo={imgInfo} />}
         logo={<Logo size={40} />}
         title={<Title>{title}</Title>}

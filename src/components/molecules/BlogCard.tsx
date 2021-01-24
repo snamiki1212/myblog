@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {blogCardLogo} from '../../../data/SiteConfig';
-import {mixinSpinAnimate} from './SpinAnimation';
+import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 
 const altImg =
   'https://user-images.githubusercontent.com/26793088/72956432-1193f080-3de3-11ea-844d-a39a6a4a18bb.png';
@@ -61,13 +61,15 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  transition: 0.5s;
-  background-color: ${(props) => props.theme.color.white};
+  
+  background: ${(props) => props.theme.color.white};
+  box-shadow: 2px 2px 10px lightgrey;
   border-radius: 10px;
 
+  transition: 0.5s;
   &:hover {
-    background-color: ${(props) => props.theme.color.link};
-    color: ${(props) => props.theme.color.baseLight};
+    opacity: .8;
+    transform: scale(1.04);
     transition: 0.5s;
   }
 

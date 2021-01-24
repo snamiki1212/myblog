@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {MixBlender} from '../atoms/MixBlender'
+import {MixBlender} from '../atoms/MixBlender';
 
 type Props = {
   image: React.ReactNode;
@@ -12,7 +12,7 @@ type Props = {
 
 const PADDING_SIZE = '10px';
 
-export const ArticleLineDescriptionLayout: React.FC<Props> = ({
+export const ArticleCardLayout: React.FC<Props> = ({
   image,
   logo,
   title,

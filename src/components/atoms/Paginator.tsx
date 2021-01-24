@@ -52,4 +52,5 @@ const Wrapper = styled.div`
   list-style: none;
   padding-bottom: 100px;
   margin: 30px auto;
+  gap: 10px;
 `;

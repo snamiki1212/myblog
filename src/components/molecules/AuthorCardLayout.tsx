@@ -19,25 +19,11 @@ export const AuthorCardLayout: React.FC<Props> = ({
   return (
     <Wrapper>
       <Grid>
-        <GridAvator>
-          {avator}
-        </GridAvator>
-
-        <GridName>
-          {name}
-        </GridName>
-
-        <GridSNS>
-          {sns}
-        </GridSNS>
-
-        <GridDescription>
-          {description}
-        </GridDescription>
-
-        <GridProfileLink>
-          {toProfile}
-        </GridProfileLink>
+        <GridAvator>{avator}</GridAvator>
+        <GridName>{name}</GridName>
+        <GridSNS>{sns}</GridSNS>
+        <GridDescription>{description}</GridDescription>
+        <GridProfileLink>{toProfile}</GridProfileLink>
       </Grid>
     </Wrapper>
   );
@@ -48,13 +34,15 @@ export const avatorSizeNum = 60;
 const Wrapper = styled.div`
   padding: 40px;
   border-radius: 10px;
-  background-color: ${props => props.theme.color.white};
+  background-color: ${(props) => props.theme.color.white};
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-rows: ${props => props.theme.layout.autherAvatorSizeNum / 2}px ${props => props.theme.layout.autherAvatorSizeNum / 2}px 1fr 0.5fr;
-  grid-template-columns: ${props => props.theme.layout.autherAvatorSizeNum}px 1fr;
+  grid-template-rows: ${(props) => props.theme.layout.autherAvatorSizeNum / 2}px ${(
+      props
+    ) => props.theme.layout.autherAvatorSizeNum / 2}px 1fr 0.5fr;
+  grid-template-columns: ${(props) => props.theme.layout.autherAvatorSizeNum}px 1fr;
 `;
 
 const GridAvator = styled.div`
