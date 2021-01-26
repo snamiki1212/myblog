@@ -62,6 +62,7 @@ const ProfileLinkText = styled.span`
   border-radius: 10px;
   padding: 10px;
   border: 1px solid ${(props) => props.theme.color.grayDark};
+  display: inline-block;
 
   transition: 0.5s;
   & :hover {

@@ -38,6 +38,6 @@ export const Child = styled.div`
   & :hover {
     transition: .5s;
     opacity: .8;
-    transform: scale(1.04) rotate(1deg);
+    transform: scale(1.04);
   }
 `;
