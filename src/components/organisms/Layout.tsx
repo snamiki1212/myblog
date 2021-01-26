@@ -1,19 +1,17 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
-import {HeadNav} from '../molecules/HeadNav';
+import styled, {ThemeProvider} from 'styled-components';
+import {Header} from './Header';
 import {Footer} from './Footer';
 import config from '../../../data/SiteConfig';
 import {theme} from '../../theme';
-import {ThemeProvider} from 'styled-components';
 import './layout.scss';
 
-const BodyWrapper = styled.div`
-  opacity: 0.99; // z-indexがマイナスの要素よりも背面に持っていきたいので。(README: https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ )
-  background-color: ${(props) => props.theme.color.baseLight};
-`;
+type Props = {
+  withTownHeader?: boolean
+}
 
-export const Layout: React.FC = ({children}) => {
+export const Layout: React.FC<Props> = ({children, withTownHeader = true}) => {
   return (
     <>
       <Helmet>
@@ -25,7 +23,7 @@ export const Layout: React.FC = ({children}) => {
       </Helmet>
 
       <ThemeProvider theme={theme}>
-        <HeadNav />
+        <Header withTown={withTownHeader}/>
         <BodyWrapper>{children}</BodyWrapper>
         <Footer />
       </ThemeProvider>
@@ -33,4 +31,8 @@ export const Layout: React.FC = ({children}) => {
   );
 };
 
-export default Layout;
+const BodyWrapper = styled.div`
+  opacity: 0.99; // z-indexがマイナスの要素よりも背面に持っていきたいので。(README: https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ )
+  background-color: ${(props) => props.theme.color.baseLight};
+`;
+

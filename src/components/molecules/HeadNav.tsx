@@ -23,9 +23,7 @@ export const HeadNav: React.FC = () => {
   );
 };
 
-const Wrapper = styled.div`
-  background: ${(props) => props.theme.color.baseDark};
-`;
+const Wrapper = styled.div``;
 
 const Flex = styled.div`
   display: flex;

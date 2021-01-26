@@ -5,11 +5,14 @@
 
 html {
   height: 100%;
+  min-width: 420px;
 
   /**
   * REF: https://blog.yoshinonaco.com/font-family-2020/
   **/
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+    'Helvetica Neue', HelveticaNeue, YuGothic, 'Yu Gothic Medium', 'Yu Gothic',
+    Verdana, Meiryo, sans-serif;
 }
 
 body {
@@ -24,8 +27,8 @@ a {
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
-  background: #A5CC82;/*ボタン色*/
-  color: #FFF !important;
+  background: #a5cc82; /*ボタン色*/
+  color: #fff !important;
   font-weight: bold;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
@@ -33,6 +36,6 @@ a {
 
 .affi-custom-button:hover {
   -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
 }
