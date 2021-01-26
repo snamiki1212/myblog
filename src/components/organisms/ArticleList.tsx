@@ -27,8 +27,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Child = styled.div`
-  min-width: 350px;
-  width: 46%;
+  flex: 1 0 400px;
   margin: 2%;
   border-radius: 10px;
   box-shadow: 2px 2px 10px lightgrey;
