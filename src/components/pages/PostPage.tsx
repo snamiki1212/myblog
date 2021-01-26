@@ -4,7 +4,7 @@ import {graphql} from 'gatsby';
 import {FluidObject} from 'gatsby-image';
 import styled from 'styled-components';
 
-import Layout from '../organisms/Layout';
+import {Layout} from '../organisms/Layout';
 import Image from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';
@@ -36,7 +36,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
   const post = postNode.frontmatter;
 
   return (
-    <Layout>
+    <Layout withTownHeader={false}>
       <Wrapper>
         <Helmet>
           <title>{`${post.title}`}</title>

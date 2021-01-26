@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import {AboutPage} from '../components/pages/AboutPage';
-import Layout from '../components/organisms/Layout';
+import {Layout} from '../components/organisms/Layout';
 import config from '../../data/SiteConfig';
 
 const _AboutPage: React.FC = () => {

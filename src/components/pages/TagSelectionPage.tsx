@@ -1,10 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import config from '../../../data/SiteConfig';
-import Layout from '../organisms/Layout';
-import {MarkdownRemarkEdge} from '../../types';
 import {Link} from 'gatsby';
-import {Button} from '../atoms/Button'
+import styled from 'styled-components';
+import config from '../../../data/SiteConfig';
+import {Layout} from '../organisms/Layout';
+import {MarkdownRemarkEdge} from '../../types';
+import {Button} from '../atoms/Button';
 
 type Props = {
   pageContext: any;
@@ -22,17 +23,26 @@ export const TagSelectionPage: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
 
       <main>
-        {tags.map(({name, count, path}) => {
-          return (
-            <Button key={name}>
-              <Link to={path}>{`${name}(${count})`}</Link>
-            </Button>
-          );
-        })}
+        <BodyLayout>
+          {tags.map(({name, count, path}) => {
+            return (
+              <Button key={name}>
+                <Link to={path}>{`${name}(${count})`}</Link>
+              </Button>
+            );
+          })}
+        </BodyLayout>
       </main>
     </Layout>
   );
 };
+
+const BodyLayout = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+`;
 
 export interface CategoryPageQuery {
   edges: MarkdownRemarkEdge[];

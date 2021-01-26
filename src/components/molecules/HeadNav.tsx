@@ -15,17 +15,15 @@ export const HeadNav: React.FC = () => {
           </HoverForSpinArea>
         </Link>
 
-        <Link to="/">
+        <_Link to="/">
           <BlogTitle>{siteTitle}</BlogTitle>
-        </Link>
+        </_Link>
       </Flex>
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div`
-  background: ${(props) => props.theme.color.baseDark};
-`;
+const Wrapper = styled.div``;
 
 const Flex = styled.div`
   display: flex;
@@ -42,6 +40,14 @@ const HoverForSpinArea = styled.div`
     ${Image} {
       ${mixinSpinAnimate}
     }
+  }
+`;
+
+const _Link = styled(Link)`
+transition: .5s;
+  & :hover {
+    transform: scale(1.01);
+    opacity: .6;
   }
 `;
 
