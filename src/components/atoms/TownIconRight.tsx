@@ -1,6 +1,10 @@
 import React from 'react';
 
-export const TownIconRight: React.FC = () => {
+type Props = {
+  fill: string;
+}
+
+export const TownIconRight: React.FC<Props> = ({fill}) => {
   return (
     <>
       <svg
@@ -12,7 +16,7 @@ export const TownIconRight: React.FC = () => {
       >
         <path
           d="M205.158 0H175.957V29.0587H142.583V154.804H135.709V43.6835H113.382V71.7373H93.5668L84.079 86.7388V154.804H70.6767V94.4982H57.79V77.356H46.4496V60.6105H38.2927H17.4345L0.748016 77.356V154.804H70.6767H84.079H135.709H142.583H205.158V0Z"
-          fill="#ECF2F8"
+          fill={fill}
         />
         <rect
           width="11.0152"

@@ -5,26 +5,31 @@ import {Logo} from '../atoms/Logo';
 import {Link} from 'gatsby';
 import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 import {FooterNav} from '../molecules/FooterNav';
+import {Town} from '../molecules/Town';
 
 export const Footer: React.FC = () => {
   return (
     <Wrapper>
-      <Content>
-        <LogoWrapper>
-          <Link to="/">
-            <HoverForSpinArea>
-              <Logo size={146} />
-            </HoverForSpinArea>
-          </Link>
-        </LogoWrapper>
+      <Town fill="dark" />
 
-        <FooterNav />
+      <ContentWrapper>
+        <Content>
+          <LogoWrapper>
+            <Link to="/">
+              <HoverForSpinArea>
+                <Logo size={146} />
+              </HoverForSpinArea>
+            </Link>
+          </LogoWrapper>
 
-        <BottomWrapper>
-          <HR />
-          <Copyright>{config.copyright}</Copyright>
-        </BottomWrapper>
-      </Content>
+          <FooterNav />
+
+          <BottomWrapper>
+            <HR />
+            <Copyright>{config.copyright}</Copyright>
+          </BottomWrapper>
+        </Content>
+      </ContentWrapper>
     </Wrapper>
   );
 };
@@ -54,7 +59,11 @@ const HoverForSpinArea = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: 600px;
+  padding-top: 30px;
+  background: ${(props) => props.theme.color.baseLight};
+`;
+
+const ContentWrapper = styled.div`
   background: ${(props) => props.theme.color.baseDark};
 `;
 
