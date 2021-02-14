@@ -133,3 +133,9 @@ dir | Explain
 - CI: cache
 - CI: speed test
 - CI: RSS checker
+
+## LICENSE
+
+No allowness to use this code.
+
+Use this template -> [GitHub - snamiki1212/gatsby-starter-lunash: Lunash (gatsby-starter)](https://github.com/snamiki1212/gatsby-starter-lunash).
