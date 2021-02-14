@@ -33,3 +33,6 @@ $ yarn start
   /.vscode
   /__mock__ # test mock
 ```
+## LICENSE
+
+[MIT](https://github.com/snamiki1212/gatsby-starter-lunash/blob/master/LICENSE)
