@@ -34,8 +34,9 @@ word:
 
 ## なんでポートフォリオ作ったの？
 
-今、北米で学生してるけど、その課題で「なんか作れ」ってなったので。
-仕事とは違って好き勝手にできるプロジェクトなので、せっかくだし前からやりたいことを盛り込んでみた。
+今、北米で学生してるけど、その課題で「なんか作れ」ってなったのが理由。
+
+仕事とは違って好き勝手にできるプロジェクトなので、新しいことを盛り込んでみた。
 挑戦してみたこととして下記の２つ。
 
 - 技術：Svelte
@@ -51,18 +52,18 @@ word:
 
 ### lit-element：所感
 
-「lit-element って何？」の回答として「WebComponent のためのライブラリ・FW」になると思う。もう少し噛み砕くと、ネイティブな WebComponent の API を使わないで lit-element のいい感じの API を使えば楽に早く WebComponent を作れるよ、ってところ。
+「[lit-element](https://lit-element.polymer-project.org/) って何？」の回答として「WebComponent のためのライブラリ・FW」になると思う。もう少し噛み砕くと、ネイティブな WebComponent の API を使わないで lit-element のいい感じの API を使えば楽に早く WebComponent を作れるよ、ってところ。ちなみに Google が作成してる。
 
 まずは、ひととおりドキュメントを読んで、[雑に素振りを手元](https://github.com/snamiki1212/example-lit-element)でしてみた。
 
-使ってみた感覚だが、下記の２つのシンタックスが融合してる感じ。
+使ってみた感触だが、下記の２つのシンタックスが融合してる感じ。
 
 - React のクラスコンポーネント
 - Angular 的なデコレーター
 
 （Angluar そんなに詳しくないのでちょっと違うかも）
 
-正直、書き心地は普通〜微妙な感じで特に、エコシステムが弱い印象が強かった。実際、SCSS のプラグイン・バンドラー周りがうまく動いてくれなくてハマってたところで、他の技術を見てみようかなってことで Svelte に出会う。
+正直、書き心地は普通〜微妙な感じで、特にエコシステムが弱い印象。実際、SCSS のプラグイン・バンドラー周りがうまく動いてくれなくてハマってたところで、他の技術を見てみようかなってことで Svelte に出会う。
 
 ### Svelte：所感
 
@@ -80,7 +81,6 @@ word:
 - 双方向バインディング、イベントディスパッチャー（まんま Vue）
 - Svelte 自体がグローバルステート周りの API まで用意してる
 - Svelte チュートリアルの２ステップ目に a11y の内容を絡めて入れてるあたり時代を感じる
-- 再レンダリング条件が御三家と逆
 
 特に Reactivity について言及しておく。
 
@@ -92,7 +92,22 @@ React とかは、ローカルステートなどが変更されると基本的�
 
 逆に Svelte では「どの値・関数を更新させるか」をロジックに書くイメージ。ここで JS の Label 構文を使う。Label 構文とか、はじめて知った。
 
-当たり前だけど、どっちのほうが優れてるってわけではないしトレードオフの色が強い。VirtualDOM による Reconcilliation をやめて明示的に Reactivity を宣言することで Svelte が爆速になってる。
+```svelte
+<script>
+	let counter = 0;
+	const handleClick = () => counter++;
+
+  // これがLabel記法。SvelteじゃなくてJSの標準機能。
+  // 依存してるcounterが更新されると、これも再実行される
+	$: console.log('counter is ', counter)
+</script>
+
+<button on:click={handleClick}>
+	{counter}
+</button>
+```
+
+当たり前だけど、どっちのほうが優れてるってわけではないしトレードオフの色が強い。明示的に Reactivity を宣言すること VirtualDOM による Reconcilliation がなくなるのでその分のコストがなくなり Svelte が爆速になってる。
 
 ---
 
