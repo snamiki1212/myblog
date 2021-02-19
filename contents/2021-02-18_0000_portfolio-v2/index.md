@@ -6,7 +6,7 @@ updatedAt: '2021-02-18 22:00'
 category: '書評'
 tags:
   - Svelte
-slug: portfolio-v2
+slug: portfolio-v-2
 word:
   - nothing
 ---
@@ -114,20 +114,21 @@ UI 周りのチャレンジとしては、以前からやってみたかった G
 
 やりかた・仕組みを知らなかったのでまずは関連記事をいろいろ読むところから。ためになったのは下記の記事とコード。
 
+- [ Glitch Effect on Text / Images / SVG | CSS-Tricks ](https://css-tricks.com/glitch-effect-text-images-svg/)
 - [CSS でグリッチっぽい表現をやる - Qiita](https://qiita.com/SnO2WMaN/items/e0582b64c41f31fc92cb)
-- https://codepen.io/fearOfCode/details/FsGtu｜かっこよい
+- [Codepen-example](https://codepen.io/fearOfCode/details/FsGtu)
 
 簡単に説明するとだいたい下記のようなイメージ
 
 1. ３つのテキストを重ねて表示
 2. それぞれ 1~2px ずつ左右にずらす
-3. 左右にずらしたテキストに対して、横にスライスしたパーツを部分的に見せたりする
+3. 左右にずらしたテキストに対して、横にスライスして、スライスされたパーツを部分的に見せたりする
 
-これ以外にも、いろいろなアニメーションも混じってるけど、根本は上記だと思う。
+文章で簡潔に説明が難しいんで詳細は上述のリンクに任せる。ちなみに、これ以外にも細かいいろいろなアニメーションも混じってる。
 
 ### Glitch Effect を使って
 
-[いろいろ手元で素振りをしてみて](https://github.com/snamiki1212/example-glitch-effect)、結局 Codepen にあるいけてるやつを SCSS にして持ってきた。Stylus を SCSS に変えるのと、block 要素をどうにか inline-block な感じにしたりで GlitchEffect じゃないところでハマった気もするけど、とにかく自分のポートフォリオの持ってこれたので満足。
+[いろいろ手元で素振りをしてみて](https://github.com/snamiki1212/example-glitch-effect)、結局は[Codepen にあるイケてるやつ](https://codepen.io/fearOfCode/details/FsGtu)を SCSS にして持ってきた。Stylus を SCSS に変えるのと、block 要素をどうにか inline-block な感じにしたりで GlitchEffect じゃないところでハマった気もするけど、とにかく自分のポートフォリオの持ってこれたので満足。
 
 基本的に Glitch Effect って、Noisy でダークな印象が強いので「仕事じゃ、こんなアニメーション普通は使えないよな」って思ってたけど、Pixiv のイベントサイトでポップなトーンに Glitich のスライス幅を太めに使っててドチャクソかっこよいのを見つけたので、どこかで LP を作る必要があるときに自分も混ぜていきたいという気持ちになった。
 
@@ -140,3 +141,7 @@ UI 周りのチャレンジとしては、以前からやってみたかった G
 コードはここにあるんで、良さげだったら Star してくれると喜びます。
 
 [GitHub - snamiki1212/v2: Portfolio v2](https://github.com/snamiki1212/v2)
+
+<!-- Twitter -->
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ポートフォリオサイト作った<br>Svelte使ったり、Glitch Effectなアニメーションで遊んでる<a href="https://t.co/DYNZpjeBnG">https://t.co/DYNZpjeBnG</a></p>&mdash; Nash⚡️北米にいる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1362630449693003776?ref_src=twsrc%5Etfw">February 19, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- /Twitter -->
