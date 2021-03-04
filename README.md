@@ -1,8 +1,18 @@
-![logo](https://user-images.githubusercontent.com/26793088/71515007-85c29d80-28e4-11ea-970c-7c0d8f2093bd.png)
+# gatsby-starter-lunash
 
-| This starter is used here. | https://snamiki1212.com                                                           |
-| -------------------------- | --------------------------------------------------------------------------------- |
-| Twitter                    | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social) |
+Starter template of Gatsby.js.
+
+## Demo
+
+Using my blog so please check it👇👇
+
+<a href="https://snamiki1212.com"><img height="300" alt="Screen Shot 2021-03-03 at 16 41 51" src="https://user-images.githubusercontent.com/26793088/109892536-612c2900-7c3f-11eb-8398-a2e4fe9e2ad7.png"></a>
+
+## Design
+
+Managed using Figma👇👇👇
+
+<a href="https://www.figma.com/file/DQuYoZjdtvl1ElNh3EoiER/Lunash?node-id=0%3A1"><img height="300" alt="Screen Shot 2021-03-03 at 16 37 54" src="https://user-images.githubusercontent.com/26793088/109891938-e236f080-7c3e-11eb-90bd-f21a0a6731bc.png"></a>
 
 ## Usage:
 
@@ -33,6 +43,7 @@ $ yarn start
   /.vscode
   /__mock__ # test mock
 ```
+
 ## LICENSE
 
 [MIT](https://github.com/snamiki1212/gatsby-starter-lunash/blob/master/LICENSE)
