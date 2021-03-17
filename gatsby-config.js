@@ -24,13 +24,14 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
 
-    // faviconのresolver
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: './static/favicon.png',
-      },
-    },
+    /** faviconのresolver */
+    // TODO: something error when to update gatsbyV3, maybe this plugin's bug
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: './static/favicon.png',
+    //   },
+    // },
 
     {
       resolve: `gatsby-plugin-styled-components`,
