@@ -11,4 +11,12 @@ tags:
 slug: article-etc-1
 ---
 
-# test message
+# Test message
+
+## THIS IS INTERNAL LINK
+
+[internal-link](./article-markdown)
+
+## THIS IS EXTERNAL LINK
+
+[Lunash](https://snamiki1212.com/)

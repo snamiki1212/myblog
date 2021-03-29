@@ -11,4 +11,4 @@ slug: python
 
 # Python
 
-
+this is artcile about python :D
