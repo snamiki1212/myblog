@@ -9,34 +9,34 @@ type Props = {
 
 export const ArticleList: React.FC<Props> = ({postEdges}) => {
   return (
-    <Wrapper>
-      {postEdges.map((edge) => (
-        <Child>
+    <Container>
+      {postEdges.map((edge, idx) => (
+        <InnerContainer key={idx}>
           <ArticleCard postInfo={edge} />
-        </Child>
+        </InnerContainer>
       ))}
-    </Wrapper>
+    </Container>
   );
 };
 
-export const Wrapper = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 `;
 
-export const Child = styled.div`
+const InnerContainer = styled.div`
   flex: 1 0 400px;
   margin: 2%;
   border-radius: 10px;
   box-shadow: 2px 2px 10px lightgrey;
-  background: ${props => props.theme.color.white};
-  
-  transition: .5s;
+  background: ${(props) => props.theme.color.white};
+
+  transition: 0.5s;
   & :hover {
-    transition: .5s;
-    opacity: .8;
+    transition: 0.5s;
+    opacity: 0.8;
     transform: scale(1.04);
   }
 `;

@@ -5,7 +5,7 @@ import {AboutPage} from '../components/pages/AboutPage';
 import {Layout} from '../components/organisms/Layout';
 import config from '../../data/SiteConfig';
 
-const _AboutPage: React.FC = () => {
+const Index: React.FC = () => {
   return (
     <Layout>
       <Helmet>
@@ -18,4 +18,4 @@ const _AboutPage: React.FC = () => {
   );
 };
 
-export default _AboutPage;
+export default Index;

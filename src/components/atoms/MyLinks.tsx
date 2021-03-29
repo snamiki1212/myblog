@@ -17,9 +17,9 @@ export const MyLinks: React.FC = () => {
     <Wrapper>
       {mySocials.map((social) => (
         <InnerWrapper key={social.icon}>
-          <Link key={social.icon} to={social.url} aria-label={social.icon}>
+          <a href={social.url} aria-label={social.icon}>
             <Icon icon={social.icon} />
-          </Link>
+          </a>
         </InnerWrapper>
       ))}
     </Wrapper>
