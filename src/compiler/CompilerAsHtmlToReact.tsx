@@ -82,7 +82,7 @@ const Blockquote = styled.blockquote`
   font-size: 17px;
   line-height: 36px;
   ${primaryFont};
-  border-left: 0.3em solid lightgray;
+  border-left: 0.3rem solid lightgray;
   margin-left: 23px;
   padding: 0 10px;
   font-style: italic;

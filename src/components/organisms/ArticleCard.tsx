@@ -27,7 +27,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo: edge}) => {
         logo={<Logo size={40} />}
         title={<Title>{title}</Title>}
         updatedAt={
-          <UpdatedAt date={updatedAt} containerStyle={{fontSize: '0.7em'}} />
+          <UpdatedAt date={updatedAt} containerStyle={{fontSize: '0.7rem'}} />
         }
         category={
           <CategoryWrapper>
@@ -46,9 +46,7 @@ const _Image = styled(Image)`
   object-fit: cover;
 `;
 
-const Title = styled.span`
-  fontsize: 1em;
-`;
+const Title = styled.span``;
 
 const CategoryWrapper = styled.div`
   display: flex;
