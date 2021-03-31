@@ -8,14 +8,22 @@ export const MixBlender = styled.div`
     width: 100%;
     position: absolute;
     background: linear-gradient(
-      140deg,
-      ${(props) =>
-        props.theme.color.primaryVivid +
-        ',' +
-        props.theme.color.baseDark +
-        ',' +
-        props.theme.color.primaryVivid}
+      120deg,
+      ${(props) => '#002bec, #ff005e, ' + props.theme.color.primaryVivid}
     );
+    animation: huerotator 1.5s infinite alternate;
+
+    @keyframes huerotator {
+      0% {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
+      }
+
+      100% {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+      }
+    }
 
     mix-blend-mode: screen;
     top: 0;
