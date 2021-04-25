@@ -9,7 +9,7 @@ export const MixBlender = styled.div`
     position: absolute;
     background: linear-gradient(
       120deg,
-      ${(props) => '#002bec, #ff005e, ' + props.theme.color.primaryVivid}
+      ${(props) => '#1f005c, #097341, ' + props.theme.color.primaryVivid}
     );
     animation: huerotator 1.5s infinite alternate;
 

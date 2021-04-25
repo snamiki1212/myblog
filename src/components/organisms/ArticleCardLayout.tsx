@@ -22,15 +22,11 @@ export const ArticleCardLayout: React.FC<Props> = ({
   return (
     <Wrapper>
       <ImageWrapper>{image}</ImageWrapper>
-
       <Description>
         <TitleWrapper>{title}</TitleWrapper>
-
         <MetaDataWrapper>
           <LogoWrapper>{logo}</LogoWrapper>
-
           <UpdatedAtWrapper>{updatedAt}</UpdatedAtWrapper>
-
           <CategoryWrapper>{category}</CategoryWrapper>
         </MetaDataWrapper>
       </Description>
