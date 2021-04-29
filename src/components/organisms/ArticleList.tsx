@@ -33,9 +33,9 @@ const InnerContainer = styled.div`
   box-shadow: 2px 2px 10px lightgrey;
   background: ${(props) => props.theme.color.white};
 
-  transition: 0.5s;
+  transition: 0.2s;
   & :hover {
-    transition: 0.5s;
+    transition: 0.2s;
     opacity: 0.8;
     transform: scale(1.04);
   }

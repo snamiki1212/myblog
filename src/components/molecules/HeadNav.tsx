@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {siteTitle} from '../../../data/SiteConfig';
-import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 import {Link} from 'gatsby';
 import {blogCardLogo} from '../../../data/SiteConfig';
 
@@ -35,19 +34,14 @@ const Image = styled.img`
   height: 80px;
 `;
 
-const HoverForSpinArea = styled.div`
-  & :hover {
-    ${Image} {
-      ${mixinSpinAnimate}
-    }
-  }
-`;
+const HoverForSpinArea = styled.div``;
 
 const _Link = styled(Link)`
-transition: .5s;
+  transition: 0.3s;
   & :hover {
     transform: scale(1.01);
-    opacity: .6;
+    transition: 0.3s;
+    opacity: 0.6;
   }
 `;
 
