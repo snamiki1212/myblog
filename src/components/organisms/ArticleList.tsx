@@ -27,7 +27,7 @@ const Container = styled.div`
 `;
 
 const InnerContainer = styled.div`
-  flex: 1 0 400px;
+  flex: 1 0 350px;
   margin: 2%;
   border-radius: 10px;
   box-shadow: 2px 2px 10px lightgrey;
