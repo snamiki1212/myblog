@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Shun Namiki <snamiki1212@gmail.com>",
   "scripts": {
-    "start": "gatsby develop",
+    "start": "gatsby develop --verbose",
     "develop": "gatsby develop",
     "dev": "yarn run develop",
     "serve": "gatsby serve",
