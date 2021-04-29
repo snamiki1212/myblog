@@ -3,15 +3,11 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {Logo} from '../atoms/Logo';
 import {Link} from 'gatsby';
-import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 import {FooterNav} from '../molecules/FooterNav';
-import {Town} from '../molecules/Town';
 
 export const Footer: React.FC = () => {
   return (
     <Wrapper>
-      <Town fill="dark" />
-
       <ContentWrapper>
         <Content>
           <LogoWrapper>
@@ -50,13 +46,7 @@ const Copyright = styled.footer`
 
 const LogoWrapper = styled.div``;
 
-const HoverForSpinArea = styled.div`
-  & :hover {
-    ${LogoWrapper} {
-      ${mixinSpinAnimate}
-    }
-  }
-`;
+const HoverForSpinArea = styled.div``;
 
 const Wrapper = styled.div`
   padding-top: 30px;

@@ -40,10 +40,10 @@ export const AuthorCard: React.FC<Props> = ({disableMore = false}) => {
 const Avator = styled.img`
   width: ${(props) => props.theme.layout.autherAvatorSizeNum}px;
   border-radius: 100%;
-  transition: .5s;
-  & :hover{
-    transition: .5s;
-    opacity: .6;
+  transition: 0.5s;
+  & :hover {
+    transition: 0.5s;
+    opacity: 0.6;
   }
 `;
 
@@ -66,7 +66,7 @@ const ProfileLinkText = styled.span`
 
   transition: 0.5s;
   & :hover {
-    opacity: .6;
+    opacity: 0.6;
     transition: 0.5s;
   }
 `;

@@ -213,6 +213,7 @@ const Card = styled.div`
   padding: 40px;
   border-radius: 10px;
   background-color: ${(props) => props.theme.color.white};
+  box-shadow: 2px 2px 10px lightgrey;
 `;
 
 const H2 = styled.h2`

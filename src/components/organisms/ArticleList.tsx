@@ -27,15 +27,15 @@ const Container = styled.div`
 `;
 
 const InnerContainer = styled.div`
-  flex: 1 0 400px;
+  flex: 1 0 350px;
   margin: 2%;
   border-radius: 10px;
   box-shadow: 2px 2px 10px lightgrey;
   background: ${(props) => props.theme.color.white};
 
-  transition: 0.5s;
+  transition: 0.2s;
   & :hover {
-    transition: 0.5s;
+    transition: 0.2s;
     opacity: 0.8;
     transform: scale(1.04);
   }

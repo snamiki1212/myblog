@@ -36,7 +36,6 @@ $ yarn start
   /node_modules     # packages
   /public           # build by gatsby
   /.cache           # build by gatsby
-  /types            # type spec build by gatsby-plugin-ts
 
   # etc -------------
   /.github

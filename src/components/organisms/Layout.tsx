@@ -7,11 +7,7 @@ import config from '../../../data/SiteConfig';
 import {theme} from '../../theme';
 import './layout.scss';
 
-type Props = {
-  withTownHeader?: boolean
-}
-
-export const Layout: React.FC<Props> = ({children, withTownHeader = true}) => {
+export const Layout: React.FC = ({children}) => {
   return (
     <>
       <Helmet>
@@ -23,7 +19,7 @@ export const Layout: React.FC<Props> = ({children, withTownHeader = true}) => {
       </Helmet>
 
       <ThemeProvider theme={theme}>
-        <Header withTown={withTownHeader}/>
+        <Header />
         <BodyWrapper>{children}</BodyWrapper>
         <Footer />
       </ThemeProvider>
@@ -35,4 +31,3 @@ const BodyWrapper = styled.div`
   opacity: 0.99; // z-indexがマイナスの要素よりも背面に持っていきたいので。(README: https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ )
   background-color: ${(props) => props.theme.color.baseLight};
 `;
-
