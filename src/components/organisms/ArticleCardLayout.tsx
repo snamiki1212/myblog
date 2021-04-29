@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {MixBlender} from '../atoms/MixBlender';
 
 type Props = {
   image: React.ReactNode;
@@ -22,15 +21,11 @@ export const ArticleCardLayout: React.FC<Props> = ({
   return (
     <Wrapper>
       <ImageWrapper>{image}</ImageWrapper>
-
       <Description>
         <TitleWrapper>{title}</TitleWrapper>
-
         <MetaDataWrapper>
           <LogoWrapper>{logo}</LogoWrapper>
-
           <UpdatedAtWrapper>{updatedAt}</UpdatedAtWrapper>
-
           <CategoryWrapper>{category}</CategoryWrapper>
         </MetaDataWrapper>
       </Description>
@@ -57,7 +52,7 @@ const MetaDataWrapper = styled(Flex)`
   align-items: center;
 `;
 
-const ImageWrapper = styled(MixBlender)``;
+const ImageWrapper = styled.span``;
 
 const TitleWrapper = styled.div`
   padding: 0 10px;

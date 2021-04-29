@@ -9,11 +9,7 @@ import Image from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';
 import {ArticleList} from '../organisms/ArticleList';
-import {
-  TagList,
-  SEOMeta,
-  Markdown,
-} from '../atoms';
+import {TagList, SEOMeta, Markdown} from '../atoms';
 import {PostPageContext} from '../../../gatsby-node/types';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge} from '../../types';
@@ -36,7 +32,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
   const post = postNode.frontmatter;
 
   return (
-    <Layout withTownHeader={false}>
+    <Layout>
       <Wrapper>
         <Helmet>
           <title>{`${post.title}`}</title>
@@ -72,7 +68,6 @@ export const PostPage: React.FC<Props> = ({data}) => {
         </ItemWrapper>
 
         <ArticleList postEdges={suggestions} />
-
       </Wrapper>
     </Layout>
   );

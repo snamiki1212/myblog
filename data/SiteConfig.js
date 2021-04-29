@@ -60,5 +60,5 @@ module.exports = {
     //   url: 'https://snamiki1212.com/rss.xml',
     // },
   ],
-  copyright: 'Copyright © 2019. Shun Namiki', // Copyright string for the footer of the website and RSS feed.
+  copyright: '© 2019 Shun Namiki', // Copyright string for the footer of the website and RSS feed.
 };

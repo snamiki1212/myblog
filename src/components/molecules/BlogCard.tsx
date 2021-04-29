@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {blogCardLogo} from '../../../data/SiteConfig';
-import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 
 const altImg =
   'https://user-images.githubusercontent.com/26793088/72956432-1193f080-3de3-11ea-844d-a39a6a4a18bb.png';
@@ -61,22 +60,15 @@ const Wrapper = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  
+
   background: ${(props) => props.theme.color.white};
   box-shadow: 2px 2px 10px lightgrey;
   border-radius: 10px;
 
-  transition: 0.5s;
+  transition: 0.3s;
   &:hover {
-    opacity: .8;
-    transform: scale(1.04);
-    transition: 0.5s;
-  }
-
-  &:hover {
-    ${Image} {
-      ${mixinSpinAnimate}
-    }
+    opacity: 0.7;
+    transition: 0.3s;
   }
 `;
 

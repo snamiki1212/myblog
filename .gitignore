@@ -61,8 +61,5 @@ bundle-stats.json
 # env
 .env.*
 
-# type files from gatsby-plugin-ts plugin to build
-/types
-
 # General
 .DS_Store
