@@ -12,5 +12,6 @@ export const Button = styled.span`
   & :hover {
     transition: 0.5s;
     background: ${(props) => props.theme.color.baseLight};
+    cursor: pointer;
   }
 `;
