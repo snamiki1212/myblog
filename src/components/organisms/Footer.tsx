@@ -5,13 +5,10 @@ import {Logo} from '../atoms/Logo';
 import {Link} from 'gatsby';
 import {mixinSpinAnimate} from '../atoms/SpinAnimation';
 import {FooterNav} from '../molecules/FooterNav';
-import {Town} from '../molecules/Town';
 
 export const Footer: React.FC = () => {
   return (
     <Wrapper>
-      <Town fill="dark" />
-
       <ContentWrapper>
         <Content>
           <LogoWrapper>
