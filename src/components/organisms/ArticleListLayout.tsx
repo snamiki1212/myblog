@@ -16,11 +16,11 @@ export const ArticleListLayout: React.FC<Props> = ({
 }) => {
   return (
     <Wrapper>
-      {articleListHeader && {articleListHeader}}
+      {articleListHeader && <div>{articleListHeader}</div>}
       <ArticleAndSidebar>
         <ArticleArea>
-          {articles}
-          {pagination}
+          <div>{articles}</div>
+          <div>{pagination}</div>
         </ArticleArea>
         <ProfileSection>{profile}</ProfileSection>
       </ArticleAndSidebar>
