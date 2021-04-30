@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Subtitle: React.FC = ({children}) => {
   return (
     <Wrapper>
-      <Text>🌙 {children}</Text>
+      <Text>#{children}</Text>
     </Wrapper>
   );
 };

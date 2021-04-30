@@ -28,7 +28,8 @@ module.exports = {
   userTwitter: 'hoge', // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: 'hoge', // User location to display in the author segment.
   userAvatar: '/avator.webp', // User avatar to display in the author segment.
-  userDescription: 'hoge hoge', // User description to display in the author segment.
+  userDescription:
+    "Hi, I'm Nash from Japan based in Vancouver working as full-stack developer. Feel free to contact :D", // User description to display in the author segment.
   userIntroduction: 'Developer', // short user introduction
   jobTitle: 'Developer',
   email: 'example@exmaple.com',
