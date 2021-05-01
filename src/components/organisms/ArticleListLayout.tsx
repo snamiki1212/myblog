@@ -22,11 +22,18 @@ export const ArticleListLayout: React.FC<Props> = ({
           <div>{articles}</div>
           <div>{pagination}</div>
         </ArticleArea>
-        <ProfileSection>{profile}</ProfileSection>
+        <ProfileSection>
+          <Sticky>{profile}</Sticky>
+        </ProfileSection>
       </ArticleAndSidebar>
     </Wrapper>
   );
 };
+
+const Sticky = styled.div`
+  position: sticky;
+  top: 1rem;
+`;
 
 const Wrapper = styled.div`
   display: grid;
