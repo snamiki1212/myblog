@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../atoms/Image';
+import {Image} from '../atoms/Image';
 import styled, {css} from 'styled-components';
 
 // REF: https://markoskon.com/gatsby-background-image-example/
@@ -14,7 +14,9 @@ const Parent = styled.div<{size: number}>`
   min-width: ${({size}) => `${size}px`};
   min-height: ${({size}) => `${size}px`};
   border-radius: 10px;
-  background: ${props => props.theme.color.baseDark}B3; // README: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors
+  background: ${(props) =>
+    props.theme.color
+      .baseDark}B3; /* NOTE: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors */
 `;
 
 const ChildContent = styled.div`
@@ -30,7 +32,11 @@ const ChildBackground = styled(Image)`
   border-radius: 10px;
 `;
 
-export const Tile: React.FC<{imgInfo: any, size: number}> = ({imgInfo, size, children}) => {
+export const Tile: React.FC<{imgInfo: any; size: number}> = ({
+  imgInfo,
+  size,
+  children,
+}) => {
   return (
     <Parent size={size}>
       <ChildBackground imgInfo={imgInfo} />
