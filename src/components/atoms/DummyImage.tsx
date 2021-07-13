@@ -1,28 +1,31 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import {GatsbyImage} from 'gatsby-plugin-image';
 import {useStaticQuery, graphql} from 'gatsby';
 
 const useDummyDataQuery = () => {
   const data = useStaticQuery(graphql`
     query DummyImageQuery {
-      allFile(filter: {relativePath: {eq: "eyecatch.webp"}}) {
+      allFile(filter: {relativePath: {eq: "blogcard.webp"}}) {
         edges {
           node {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(
+                layout: FIXED
+                aspectRatio: 1.0
+                width: 150
+                placeholder: BLURRED
+              )
             }
           }
         }
       }
     }
   `);
-  const fluid = data?.allFile?.edges[0]?.node?.childImageSharp?.fluid;
-  return fluid;
+  const img = data?.allFile?.edges[0]?.node?.childImageSharp?.gatsbyImageData;
+  return img;
 };
 
 export function DummyImage(props: any) {
-  const fluid = useDummyDataQuery();
-  return <Img fluid={fluid} alt="dummy-data" {...props} />;
+  const img = useDummyDataQuery();
+  return <GatsbyImage image={img} alt="dummy-data" {...props} />;
 }
