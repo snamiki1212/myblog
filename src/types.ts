@@ -1,4 +1,4 @@
-import {FluidObject} from 'gatsby-image';
+export type GatsbyImageData = any;
 
 export interface MarkdownRemarkEdge {
   node: {
@@ -7,7 +7,6 @@ export interface MarkdownRemarkEdge {
       _createdAt: Date;
       _updatedAt: Date;
     };
-    
     timeToRead: number;
     frontmatter: {
       title: string;
@@ -16,7 +15,7 @@ export interface MarkdownRemarkEdge {
       cover: {
         publicURL: string;
         childImageSharp: {
-          fluid: FluidObject;
+          [key: string]: GatsbyImageData;
         };
       };
       createdAt: Date;

@@ -1,18 +1,17 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
-import {FluidObject} from 'gatsby-image';
 import styled from 'styled-components';
 
 import {Layout} from '../organisms/Layout';
-import Image from '../atoms/Image';
+import {Image} from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';
 import {ArticleList} from '../organisms/ArticleList';
 import {TagList, SEOMeta, Markdown} from '../atoms';
 import {PostPageContext} from '../../../gatsby-node/types';
 import config from '../../../data/SiteConfig';
-import {MarkdownRemarkEdge} from '../../types';
+import {MarkdownRemarkEdge, GatsbyImageData} from '../../types';
 
 type Props = {
   data: PostPageQuery;
@@ -124,7 +123,7 @@ export interface MarkdownRemark {
     title: string;
     cover: {
       childImageSharp: {
-        fluid: FluidObject;
+        [key: string]: GatsbyImageData;
       };
       publicURL: string;
     };
@@ -159,9 +158,12 @@ export const postPageQuery = graphql`
             cover {
               publicURL
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(
+                  layout: FIXED
+                  aspectRatio: 1.0
+                  width: 150
+                  placeholder: BLURRED
+                )
               }
               extension
             }
@@ -181,14 +183,7 @@ export const postPageQuery = graphql`
         cover {
           publicURL
           childImageSharp {
-            fluid {
-              base64
-              aspectRatio
-              src
-              srcSet
-              sizes
-              originalImg
-            }
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
           }
           extension
         }

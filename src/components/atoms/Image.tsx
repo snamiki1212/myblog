@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import {GatsbyImage} from 'gatsby-plugin-image';
 import {DummyImage} from './DummyImage';
 
 type Props = {
@@ -8,9 +8,10 @@ type Props = {
     childImageSharp: any;
   };
   [key: string]: any;
+  alt: string;
 };
 
-const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
+export const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
   try {
     if (!imgInfo) {
       return <DummyImage {...rest} />;
@@ -23,11 +24,15 @@ const Image: React.FC<Props> = ({imgInfo, ...rest}) => {
       return <img src={publicURL} alt="this-is-image" {...rest} />;
     }
 
-    return <Img fluid={childImageSharp.fluid} {...rest} />;
+    return (
+      <GatsbyImage
+        image={childImageSharp.gatsbyImageData}
+        alt="NOTE"
+        {...rest}
+      />
+    );
   } catch (err) {
     console.error('Something error happen on Image Component');
     return <span {...rest}>img</span>;
   }
 };
-
-export default Image;

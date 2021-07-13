@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import urljoin from 'url-join';
+import {getSrc} from 'gatsby-plugin-image';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemark} from '../pages/PostPage';
 import {MarkdownRemarkEdge} from '../../types';
@@ -16,8 +17,11 @@ const fetchData =
           description: postNode.excerpt,
           image: urljoin(
             config.siteUrl,
+            //   // TODO:
             postNode.frontmatter.cover?.childImageSharp
-              ? postNode.frontmatter.cover?.childImageSharp?.fluid?.src
+              ? getSrc(
+                  postNode.frontmatter.cover?.childImageSharp?.gatsbyImageData
+                )
               : postNode.frontmatter.cover?.publicURL ?? ''
           ),
           postURL: urljoin(config.siteUrl, postNode.frontmatter.slug),

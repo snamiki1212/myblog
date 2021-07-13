@@ -63,9 +63,12 @@ export const categoryPageQuery = graphql`
             cover {
               publicURL
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(
+                  layout: FIXED
+                  aspectRatio: 1.0
+                  width: 150
+                  placeholder: BLURRED
+                )
               }
               extension
             }

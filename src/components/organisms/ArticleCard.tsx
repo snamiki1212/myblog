@@ -3,7 +3,7 @@ import {Link} from 'gatsby';
 import styled from 'styled-components';
 
 import {MarkdownRemarkEdge} from '../../types';
-import Image from '../atoms/Image';
+import {Image} from '../atoms/Image';
 import {Logo} from '../atoms/Logo';
 import {UpdatedAt} from '../molecules';
 import {ArticleCardLayout} from './ArticleCardLayout';
@@ -40,10 +40,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo: edge}) => {
 };
 
 const _Image = styled(Image)`
-  height: 150px;
-  width: 150px;
   border-radius: 10px;
-  object-fit: cover;
 `;
 
 const Title = styled.span``;
