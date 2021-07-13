@@ -27,7 +27,6 @@ export const HomePage: React.FC<Props> = ({pageContext, data}) => {
   } = data;
 
   const postEdges = allMarkdownRemark.edges;
-  // const childImageSharp = allFile.edges[0].node.childImageSharp;
 
   return (
     <Layout>
@@ -37,7 +36,6 @@ export const HomePage: React.FC<Props> = ({pageContext, data}) => {
       </Helmet>
       <SEOMeta postEdges={postEdges} />
 
-      {/* <Img fluid={childImageSharp.fluid} style={{maxHeight: '300px'}} /> */}
       <main>
         <ArticleListLayout
           articles={<ArticleList postEdges={postEdges} />}
@@ -73,9 +71,12 @@ export const homePageQuery = graphql`
             cover {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 150, quality: 100) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(
+                  layout: FIXED
+                  aspectRatio: 1.0
+                  width: 150
+                  placeholder: BLURRED
+                )
               }
             }
             createdAt
@@ -86,23 +87,6 @@ export const homePageQuery = graphql`
     }
   }
 `;
-
-// allFile(filter: {relativePath: {in: "logos/logo.png"}}) {
-//   edges {
-//     node {
-//       childImageSharp {
-//         fluid {
-//           base64
-// aspectRatio
-// src
-// srcSet
-// sizes
-// originalImg
-//         }
-//       }
-//     }
-//   }
-// }
 
 export interface IndexPageQuery {
   edges: MarkdownRemarkEdge[];

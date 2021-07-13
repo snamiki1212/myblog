@@ -23,7 +23,7 @@ module.exports = {
     // },
   },
   plugins: [
-    // REF: https://takumon.com/2018/10/21/
+    `gatsby-plugin-image`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
@@ -66,10 +66,10 @@ module.exports = {
       },
     },
     {
-      // assetの画像
+      // asset
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'statics',
+        name: 'static',
         path: `${__dirname}/static/`,
       },
     },
