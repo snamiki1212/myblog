@@ -1,25 +1,22 @@
-![logo](https://user-images.githubusercontent.com/26793088/71515007-85c29d80-28e4-11ea-970c-7c0d8f2093bd.png)
+<!-- Header -->
+<div align="center">
+<img src="https://user-images.githubusercontent.com/26793088/127581364-127a0134-0dc4-4298-9fe5-72188842a6ad.png" alt="header" />
+</div>
+<!-- /Header -->
 
-| This repository is My blog's. | https://snamiki1212.com                                                                                                                                          |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Build Status                 | ![Build(& Deploy to Netlify)](https://github.com/snamiki1212/myblog/workflows/Build%20&%20Deploy%20to%20Netlify/badge.svg)
-| Deploy Status                 | ![Netlify](https://github.com/snamiki1212/myblog/workflows/Netlify/badge.svg?branch=master)
-| Twitter                       | ![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)                                                                                |
-| Tech Stack                    | [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)                                          |
+<!-- Badges -->
 
-## NOTION
+![Build(& Deploy to Netlify)](https://github.com/snamiki1212/myblog/workflows/Build%20&%20Deploy%20to%20Netlify/badge.svg)
+![Twitter Follow](https://img.shields.io/twitter/follow/snamiki1212?style=social)
+[![StackShare](http://img.shields.io/badge/Stackshare-teckstaks-0690fa.svg?style=flat)](https://stackshare.io/snamiki1212/lunash)
 
-- このリポジトリは [GitHub - snamiki1212/gatsby-starter-lunash](https://github.com/snamiki1212/gatsby-starter-lunash) をベースに作成していて常に更新を取り込みながらgit管理している。
-- このリポジトリでは下記のことについてのみ関心を持っている
-  - ブログ記事
-  - デプロイ周り(github-actions)
-  - このブログのconfig
-  - このREADME
-- 上記以外の内容（gatsby-node、component）などもこのrepoで管理しているが、それらはstarter/masterにて管理しているので、latestをこのrepoのmasterにmergeする運用にしてる。
+<!-- /Badges -->
 
-（正直、いけてない運用だと思ってるけどもっと良い方法を知らないので、イケてる方法をだれか教えて。。。）
+## Overview
 
-## Usage:
+Nash's Blog Repository created with [gatsby-starter-lunash](https://github.com/snamiki1212/gatsby-starter-lunash).
+
+## Usage: Installation
 
 ```zsh
 $ git clone <this-repo>
@@ -30,9 +27,9 @@ $ git remote add starter <this-original-starter-repo> # https://github.com/snami
 $ yarn global add gatsby-cli
 $ yarn
 $ yarn start
-``` 
+```
 
-## git
+## Usage: Git
 
 ```zsh
 # if you want to follow updated-version starter
@@ -82,27 +79,32 @@ DONE
 
 ## Memo: Directory
 
-dir | Explain
----|---
-`/gatsby-node` | TypeScript をネイティブにサポートしていないので、TS ファイルを require している。
-`/src/components` | AtomicDesign でディレクトリとコンポーネントを配置
-`/src/pages` | gatsbyJS の規約で /pages 配下にあるページは動的に生成される。
+<table>
+  <tr>
+    <td>Directory</td>
+    <td>Content</td>
+  </tr>
+  <tr>
+    <td><code>/gatsby-node</code></td>
+    <td>TypeScript をネイティブにサポートしていないので、TS ファイルを require している。</td>
+  </tr>
+  <tr>
+    <td><code>/src/components</code></td>
+    <td>AtomicDesign でディレクトリとコンポーネントを配置</td>
+  </tr>
+  <tr>
+    <td><code>/src/pages</code></td>
+    <td>gatsbyJS の規約で /pages 配下にあるページは動的に生成される。</td>
+  </tr>
+</table>
 
-## Memo: etc
+## Memo:
 
 - `[class=affi-custom-button]`
-
   - アフィ用のボタン CSS
-
-- [PR Scheduler](https://www.prscheduler.com/docs)
-  - 記事の投稿用のスケジューラとして使う。
-  - `@prscheduler 13/10/2019T10:10` と PR に対してコメントすれば OK
-  - `<dat>/<month>/<year>`
-  - UTC タイムなので、[これ](http://www.timebie.com/timezone/universaljapan.php)とかで計算。
-  - 例: `@prscheduler 15/01/2020T00:00` ⇒ 日本時間 09:00
 - GraphQL
-  - Fragment: GraphQLにて複数の要素を１つの塊として定義したもの。
-  - `markdownRemark` > frontmatter > cover > childImageSharp > fluid 配下にて、`GatsbyImageSharpFluid`Fragmentが効かないので、Fragmentが指す内容を直接取得。allMarkdownRemarkの配下ではFragmentが取得できてるのでPluginの問題かも？
+  - Fragment: GraphQL にて複数の要素を１つの塊として定義したもの。
+  - `markdownRemark` > frontmatter > cover > childImageSharp > fluid 配下にて、`GatsbyImageSharpFluid`Fragment が効かないので、Fragment が指す内容を直接取得。allMarkdownRemark の配下では Fragment が取得できてるので Plugin の問題かも？
 
 ## MEMO: Images
 
@@ -120,22 +122,18 @@ dir | Explain
   - カラーパレット系
     - [【2020 年版】もう配色デザインには迷わない！すごい無料カラーパレットツール 59 個まとめ - PhotoshopVIP](http://photoshopvip.net/72189)
 
+## Note
 
-
-## TODO:
-
-- ~FIX: undisplay suggestion article images~
-- ~Refactor: gatsby-node/ts~
-- Test for markdown2react util
-- Type by GraphQL
-- AMP
-- CSS: optimize post css
-- CI: cache
-- CI: speed test
-- CI: RSS checker
+- このリポジトリは [GitHub - snamiki1212/gatsby-starter-lunash](https://github.com/snamiki1212/gatsby-starter-lunash) をベースに作成していて常に更新を取り込みながら git 管理している。
+- このリポジトリでは下記のことについてのみ関心を持っている
+  - ブログ記事
+  - デプロイ周り(github-actions)
+  - このブログの config
+  - この README
+- 上記以外の内容（gatsby-node、component）などもこの repo で管理しているが、それらは starter/master にて管理しているので、latest をこの repo の master に merge する運用にしてる。
 
 ## LICENSE
 
-No allowness to use this code.
+Don't use this code.
 
-Use this template -> [GitHub - snamiki1212/gatsby-starter-lunash: Lunash (gatsby-starter)](https://github.com/snamiki1212/gatsby-starter-lunash).
+Instead, use this template -> [GitHub - snamiki1212/gatsby-starter-lunash: Lunash (gatsby-starter)](https://github.com/snamiki1212/gatsby-starter-lunash).
