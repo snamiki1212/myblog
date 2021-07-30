@@ -24,15 +24,6 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
 
-    /** faviconのresolver */
-    // TODO: something error when to update gatsbyV3, maybe this plugin's bug
-    // {
-    //   resolve: `gatsby-plugin-favicon`,
-    //   options: {
-    //     logo: './static/favicon.png',
-    //   },
-    // },
-
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -158,18 +149,7 @@ module.exports = {
         background_color: '#e0e0e0', // eslint-disable-line @typescript-eslint/camelcase
         theme_color: '#c62828', // eslint-disable-line @typescript-eslint/camelcase
         display: 'minimal-ui',
-        icons: [
-          {
-            src: '/logos/logo-192.jpg',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/logos/logo-512.jpg',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
+        icon: 'static/favicon.png',
       },
     },
     'gatsby-plugin-offline',
