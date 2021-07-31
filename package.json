@@ -35,7 +35,7 @@
     "fs": "0.0.1-security",
     "gatsby": "^3.9.1",
     "gatsby-plugin-catch-links": "3.1.0",
-    "gatsby-plugin-google-analytics": "3.1.0",
+    "gatsby-plugin-google-analytics": "3.10.0",
     "gatsby-plugin-image": "^1.9.0",
     "gatsby-plugin-manifest": "3.10.0",
     "gatsby-plugin-nprogress": "3.1.0",
