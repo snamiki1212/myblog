@@ -35,7 +35,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
       <Wrapper>
         <Helmet>
           <title>{`${post.title}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}${_slug}`} />
+          <link rel="canonical" href={`${config.siteUrl}/${_slug}`} />
         </Helmet>
 
         <SEOMeta postNode={postNode} isPost={true} />
