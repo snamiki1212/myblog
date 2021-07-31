@@ -45,6 +45,7 @@ const SubTitle = styled.div`
   font-family: ${(props) => props.theme.fontFamily.primary};
   color: ${(props) => props.theme.color.primaryVivid};
   font-weight: bold;
+  font-family: ${(props) => props.theme.fontFamily.logoEn};
 `;
 
 const InternalLink = styled(Link)`
