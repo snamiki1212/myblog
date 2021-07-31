@@ -158,6 +158,15 @@ module.exports = {
     },
     'gatsby-plugin-offline',
 
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Philosopher'],
+        },
+      },
+    },
+
     // {
     // TODO: feed は見る人いなさそうなので、無効化
     //   resolve: 'gatsby-plugin-feed',
