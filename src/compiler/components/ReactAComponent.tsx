@@ -2,11 +2,11 @@ import React from 'react';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 
-import {isInternalPageLink, isAffiLink} from '../lib/validator';
-import {BlogCard} from '../components/molecules/BlogCard';
-import {siteUrl} from '../../data/SiteConfig';
+import {isInternalPageLink, isAffiLink} from '../../lib/validator';
+import {BlogCard} from '../../components/molecules/BlogCard';
+import {siteUrl} from '../../../data/SiteConfig';
 
-export const HandlerForA: React.FC = (props: any) => {
+export const ReactAComponent: React.FC = (props: any) => {
   // gatsby-remark-autolink-headers で生成されるページ内リンク
   const isGeneratedInternalHeadLinkByPlugin =
     props.className && props.className.includes('anchor');
@@ -16,20 +16,19 @@ export const HandlerForA: React.FC = (props: any) => {
     !isInternalPageLink(props.href) ||
     isAffiLink(props.href);
 
-  if (shouldRenderOnlyTextAnchor) return <NormalA {...props} />;
+  if (shouldRenderOnlyTextAnchor) return <StyledA {...props} />;
 
   const fullUrl = urljoin(siteUrl, props.href);
 
   return (
-    <NormalA {...props}>
+    <StyledA {...props}>
       <BlogCard url={fullUrl} title={props.children[0]} />
-    </NormalA>
+    </StyledA>
   );
 };
 
-const NormalA = styled.a`
+const StyledA = styled.a`
   text-decoration: none;
-  color: ${props => props.theme.color.link};
+  color: ${(props) => props.theme.color.link};
   border-bottom: solid 1px;
 `;
-
