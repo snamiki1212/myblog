@@ -9,7 +9,7 @@ export const theme = {
   },
   fontFamily: {
     primary: `-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif`,
-    logo: `Candara,Calibri,Segoe,Segoe UI`,
+    logoEn: `Philosopher,Candara,Calibri,Segoe,Segoe UI`, // NOTE: Philosopher is webfont so use only English Characters.
   },
   fontSize: {
     tmp_1: 24,

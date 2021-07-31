@@ -49,7 +49,7 @@ const Avator = styled.img`
 
 const Name = styled.span`
   font-size: ${(props) => props.theme.fontSize.tmp_1}px;
-  font-family: ${(props) => props.theme.fontFamily.primary};
+  font-family: ${(props) => props.theme.fontFamily.logoEn};
 `;
 
 const Discription = styled.div`

@@ -42,6 +42,7 @@ const Copyright = styled.footer`
   color: ${(props) => props.theme.color.baseLight};
   padding: 10px 0;
   text-align: center;
+  font-family: ${(props) => props.theme.fontFamily.logoEn};
 `;
 
 const LogoWrapper = styled.div``;

@@ -47,6 +47,7 @@ const _Link = styled(Link)`
 
 const BlogTitle = styled.span`
   color: ${(props) => props.theme.color.primaryVivid};
-  font-family: ${(props) => props.theme.fontFamily.logo};
+  font-family: ${(props) => props.theme.fontFamily.logoEn};
+  font-family: 'Philosopher';
   font-size: ${(props) => props.theme.fontSize.tmp_3}px;
 `;
