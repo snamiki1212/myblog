@@ -51,7 +51,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
 
         <ItemWrapper>
           <MarkdownWrapper>
-            <Markdown htmlAst={postNode.htmlAst} />
+            <Markdown html={postNode.html} />
           </MarkdownWrapper>
         </ItemWrapper>
 

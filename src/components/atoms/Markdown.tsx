@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import renderReact from '../../compiler/CompilerAsHtmlToReact';
+import {renderReactFromHtml} from '../../compiler/CompilerAsHtmlToReact';
 
-type Props = {htmlAst: any};
+type Props = {html: string};
 
-export const Markdown: React.FC<Props> = ({htmlAst}) => {
-  return <Wrapper>{renderReact(htmlAst)}</Wrapper>;
+export const Markdown: React.FC<Props> = ({html}) => {
+  return <Wrapper>{renderReactFromHtml({html})}</Wrapper>;
 };
 
 const Wrapper = styled.div`
