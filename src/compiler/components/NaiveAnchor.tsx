@@ -6,7 +6,7 @@ import {isInternalPageLink, isAffiLink} from '../../lib/validator';
 import {BlogCard} from '../../components/molecules/BlogCard';
 import {siteUrl} from '../../../data/SiteConfig';
 
-export const ReactAComponent: React.FC = (props: any) => {
+export const NaiveAnchor: React.FC = (props: any) => {
   // gatsby-remark-autolink-headers で生成されるページ内リンク
   const isGeneratedInternalHeadLinkByPlugin =
     props.className && props.className.includes('anchor');
