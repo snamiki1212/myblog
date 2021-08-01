@@ -7,6 +7,7 @@ import {Image} from '../atoms/Image';
 import {Logo} from '../atoms/Logo';
 import {UpdatedAt} from '../molecules';
 import {ArticleCardLayout} from './ArticleCardLayout';
+import {CategoryTip} from '../atoms/CategoryTip';
 
 type Props = {
   postInfo: MarkdownRemarkEdge;
@@ -31,7 +32,7 @@ export const ArticleCard: React.FC<Props> = ({postInfo: edge}) => {
         }
         category={
           <CategoryWrapper>
-            <Category>{category}</Category>
+            <CategoryTip category={category}>{category}</CategoryTip>
           </CategoryWrapper>
         }
       />
@@ -47,12 +48,4 @@ const Title = styled.span``;
 
 const CategoryWrapper = styled.div`
   display: flex;
-`;
-
-const Category = styled.span`
-  border-radius: 10px;
-  color: ${(props) => props.theme.color.baseDark};
-  border: 1px solid ${(props) => props.theme.color.primaryVivid};
-  font-family: ${(props) => props.theme.fontFamily.primary};
-  padding: 5px 20px;
 `;

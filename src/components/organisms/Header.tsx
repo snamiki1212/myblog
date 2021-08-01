@@ -11,5 +11,10 @@ export const Header: React.FC = () => {
 };
 
 const Wrapper = styled.div`
-  background: ${(props) => props.theme.color.baseDark};
+  background: linear-gradient(
+    145deg,
+    ${(props) => props.theme.color.baseDark},
+    ${(props) => `${props.theme.color.baseDark}CC`},
+    ${(props) => props.theme.color.baseDark}
+  );
 `;
