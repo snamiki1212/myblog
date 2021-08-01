@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled, {ThemeProvider} from 'styled-components';
-import {Header} from './Header';
-import {Footer} from './Footer';
+import {Header} from '../organisms/Header';
+import {Footer} from '../organisms/Footer';
 import config from '../../../data/SiteConfig';
 import {theme} from '../../theme';
 import './layout.scss';

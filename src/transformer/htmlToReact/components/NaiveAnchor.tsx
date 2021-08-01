@@ -2,9 +2,9 @@ import React from 'react';
 import urljoin from 'url-join';
 import styled from 'styled-components';
 
-import {isInternalPageLink, isAffiLink} from '../../lib/validator';
-import {BlogCard} from '../../components/molecules/BlogCard';
-import {siteUrl} from '../../../data/SiteConfig';
+import {isInternalPageLink, isAffiLink} from '../../../lib/validator';
+import {BlogCard} from '../../../components/molecules/BlogCard';
+import {siteUrl} from '../../../../data/SiteConfig';
 
 export const NaiveAnchor: React.FC = (props: any) => {
   // gatsby-remark-autolink-headers で生成されるページ内リンク

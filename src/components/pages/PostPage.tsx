@@ -3,15 +3,17 @@ import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
 
-import {Layout} from '../organisms/Layout';
+import {Layout} from '../templates/Layout';
 import {Image} from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';
+import {PostPageLayout} from '../templates/PostPageLayout';
 import {ArticleList} from '../organisms/ArticleList';
 import {TagList, SEOMeta, Markdown} from '../atoms';
 import {PostPageContext} from '../../../gatsby-node/types';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge, GatsbyImageData} from '../../types';
+import {fromHtmlToToc} from '../../transformer/htmlToToc';
 
 type Props = {
   data: PostPageQuery;
@@ -29,52 +31,43 @@ export const PostPage: React.FC<Props> = ({data}) => {
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
+  const tocComponent = fromHtmlToToc(postNode.tableOfContents);
 
   return (
     <Layout>
-      <Wrapper>
-        <Helmet>
-          <title>{`${post.title}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}/${_slug}`} />
-        </Helmet>
+      <Helmet>
+        <title>{`${post.title}`}</title>
+        <link rel="canonical" href={`${config.siteUrl}/${_slug}`} />
+      </Helmet>
 
-        <SEOMeta postNode={postNode} isPost={true} />
+      <SEOMeta postNode={postNode} isPost={true} />
 
-        <HeaderImg imgInfo={postNode.frontmatter.cover} />
-
-        <ItemWrapper>
+      <PostPageLayout
+        header={<HeaderImg imgInfo={postNode.frontmatter.cover} />}
+        date={
           <DateWrapper>
             <UpdatedAt date={postNode.frontmatter.updatedAt} />
             <CreatedAt date={postNode.frontmatter.createdAt} />
           </DateWrapper>
-        </ItemWrapper>
-
-        <ItemWrapper>
+        }
+        content={
           <MarkdownWrapper>
             <Markdown html={postNode.html} />
           </MarkdownWrapper>
-        </ItemWrapper>
-
-        <ItemWrapper>
-          <TagList tags={post.tags} />
-          <SocialLinks postNode={postNode} />
-        </ItemWrapper>
-
-        <ItemWrapper>
-          <AuthorCardWrapper>
-            <AuthorCard />
-          </AuthorCardWrapper>
-        </ItemWrapper>
-
-        <ArticleList postEdges={suggestions} />
-      </Wrapper>
+        }
+        meta={
+          <div>
+            <TagList tags={post.tags} />
+            <SocialLinks postNode={postNode} />
+          </div>
+        }
+        toc={tocComponent}
+        author={<AuthorCard />}
+        suggestions={<ArticleList postEdges={suggestions} />}
+      />
     </Layout>
   );
 };
-
-const AuthorCardWrapper = styled.div`
-  padding: 50px;
-`;
 
 const MarkdownWrapper = styled.div`
   margin: 0 10px;
@@ -83,21 +76,6 @@ const MarkdownWrapper = styled.div`
 const DateWrapper = styled.div`
   margin: 10px;
   align-self: flex-end;
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const ItemWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  width: 100%;
-  max-width: 700px;
 `;
 
 const HeaderImg = styled(Image)`
@@ -117,6 +95,7 @@ type PostPageQuery = {
 export interface MarkdownRemark {
   html: string;
   htmlAst: any;
+  tableOfContents: string;
   timeToRead: number;
   excerpt: string;
   frontmatter: {
@@ -176,6 +155,7 @@ export const postPageQuery = graphql`
     markdownRemark(fields: {_slug: {eq: $slug}}) {
       html
       htmlAst
+      tableOfContents
       timeToRead
       excerpt(truncate: true)
       frontmatter {
