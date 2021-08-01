@@ -43,7 +43,11 @@ export const PostPage: React.FC<Props> = ({data}) => {
       <SEOMeta postNode={postNode} isPost={true} />
 
       <PostPageLayout
-        header={<HeaderImg imgInfo={postNode.frontmatter.cover} />}
+        header={
+          <HeaderWrapper>
+            <Header imgInfo={postNode.frontmatter.cover} />
+          </HeaderWrapper>
+        }
         date={
           <DateWrapper>
             <UpdatedAt date={postNode.frontmatter.updatedAt} />
@@ -78,13 +82,25 @@ const DateWrapper = styled.div`
   align-self: flex-end;
 `;
 
-const HeaderImg = styled(Image)`
+const HeaderWrapper = styled.div`
+  width: 100%;
+  /* background: ${(props) => props.theme.color.primaryVivid}; */
+  background: linear-gradient(
+    145deg,
+    ${(props) => props.theme.color.link},
+    ${(props) => props.theme.color.link}4D,
+    ${(props) => props.theme.color.link}
+  );
+`;
+
+const Header = styled(Image)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 0 !important;
   height: 162px;
   width: 100%;
+  margin: 0 auto;
 `;
 
 type PostPageQuery = {
