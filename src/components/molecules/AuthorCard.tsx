@@ -40,10 +40,11 @@ export const AuthorCard: React.FC<Props> = ({disableMore = false}) => {
 const Avator = styled.img`
   width: ${(props) => props.theme.layout.autherAvatorSizeNum}px;
   border-radius: 100%;
-  transition: 0.5s;
+  transition: 0.3s;
+  opacity: 0.8;
   & :hover {
-    transition: 0.5s;
-    opacity: 0.6;
+    transition: 0.3s;
+    opacity: 1;
   }
 `;
 

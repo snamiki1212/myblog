@@ -13,11 +13,17 @@ export const TagList: React.FC<Props> = ({tags}) => {
   return (
     <Wrapper>
       {tags.map((tag) => (
-        <_Link key={tag} to={`/tags/${kebabCase(tag)}`}>
-          <_Button>{`#${tag}`}</_Button>
-        </_Link>
+        <Tag tag={tag} key={tag} />
       ))}
     </Wrapper>
+  );
+};
+
+const Tag: React.FC<{tag: string}> = ({tag}) => {
+  return (
+    <_Link to={`/tags/${kebabCase(tag)}`}>
+      <_Button>{`#${tag}`}</_Button>
+    </_Link>
   );
 };
 
@@ -37,8 +43,12 @@ const _Button = styled(Button)`
   margin: 5px 2px 0;
   color: ${(props) => props.theme.color.white};
   background: ${(props) => props.theme.color.baseDark};
+  transition: 0.3s;
+  opacity: 0.9;
   & :hover {
-    color: ${(props) => props.theme.color.primaryVivid};  
+    transition: 0.3s;
+    opacity: 1;
+    letter-spacing: 2px;
     background: ${(props) => props.theme.color.baseDark};
   }
 `;

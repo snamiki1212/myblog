@@ -33,9 +33,10 @@ const InnerWrapper = styled.span`
   padding: 7px;
   border-radius: 50%;
   display: inline-block;
+
   & :hover {
-    transition: 0.5s;
-    background-color: ${(props) => props.theme.color.primaryVivid};
-    transform: scale(1.2);
+    transition: 0.3s;
+    background-color: ${(props) => props.theme.color.baseLight};
+    transform: scale(1.1);
   }
 `;
