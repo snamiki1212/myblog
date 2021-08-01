@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {Layout} from '../organisms/Layout';
 import {MarkdownRemarkEdge} from '../../types';
-import {Button} from '../atoms/Button';
+import {Tag} from '../atoms/Tag';
 
 type Props = {
   pageContext: any;
@@ -24,13 +24,9 @@ export const CategorySelectionPage: React.FC<Props> = ({pageContext, data}) => {
 
       <main>
         <BodyLayout>
-          {categories.map(({name, count, path}) => {
-            return (
-              <Button key={name}>
-                <Link to={path}>{`${name}(${count})`}</Link>
-              </Button>
-            );
-          })}
+          {categories.map(({name, count}) => (
+            <Tag key={name} tag={name} number={count} />
+          ))}
         </BodyLayout>
       </main>
     </Layout>

@@ -1,11 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {Link} from 'gatsby';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {Layout} from '../organisms/Layout';
 import {MarkdownRemarkEdge} from '../../types';
-import {Button} from '../atoms/Button';
+import {Tag} from '../atoms/Tag';
 
 type Props = {
   pageContext: any;
@@ -24,13 +23,9 @@ export const TagSelectionPage: React.FC<Props> = ({pageContext, data}) => {
 
       <main>
         <BodyLayout>
-          {tags.map(({name, count, path}) => {
-            return (
-              <Button key={name}>
-                <Link to={path}>{`${name}(${count})`}</Link>
-              </Button>
-            );
-          })}
+          {tags.map(({name, count}) => (
+            <Tag key={name} tag={name} number={count} />
+          ))}
         </BodyLayout>
       </main>
     </Layout>

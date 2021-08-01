@@ -4,12 +4,15 @@ import kebabCase from 'lodash.kebabcase';
 import {Button} from './Button';
 import {Link} from 'gatsby';
 
-type Props = {tag: string};
+type Props = {tag: string; number?: number};
 
-export const Tag: React.FC<Props> = ({tag}) => {
+export const Tag: React.FC<Props> = ({tag, number}) => {
+  let text = tag;
+  if (number != undefined) text = text + ` (${number})`;
+
   return (
     <_Link to={`/tags/${kebabCase(tag)}`}>
-      <_Button>{`#${tag}`}</_Button>
+      <_Button>{`#${text}`}</_Button>
     </_Link>
   );
 };
@@ -24,10 +27,11 @@ const _Button = styled(Button)`
   background: ${(props) => props.theme.color.baseDark};
   transition: 0.3s;
   opacity: 0.9;
+  letter-spacing: 1px;
   & :hover {
     transition: 0.3s;
     opacity: 1;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     background: ${(props) => props.theme.color.baseDark};
   }
 `;
