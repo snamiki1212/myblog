@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
 
-import {Layout} from '../organisms/Layout';
+import {Layout} from '../templates/Layout';
 import {Image} from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';

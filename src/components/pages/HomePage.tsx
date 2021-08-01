@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import config from '../../../data/SiteConfig';
 import {IndexPageContext} from '../../../gatsby-node/types';
 import {SEOMeta} from '../atoms';
-import {Layout} from '../organisms/Layout';
+import {Layout} from '../templates/Layout';
 import {ArticleList} from '../organisms/ArticleList';
 import {MarkdownRemarkEdge} from '../../types';
 // import Img from 'gatsby-image';

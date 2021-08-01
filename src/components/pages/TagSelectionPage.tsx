@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import kebabCase from 'lodash.kebabcase';
 import config from '../../../data/SiteConfig';
-import {Layout} from '../organisms/Layout';
+import {Layout} from '../templates/Layout';
 import {MarkdownRemarkEdge} from '../../types';
 import {DarkTip} from '../atoms/DarkTip';
 
