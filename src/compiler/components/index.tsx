@@ -61,7 +61,7 @@ const HR = styled.hr`
 const B = styled.b`
   ${mixinHeadline};
   background: linear-gradient(
-    transparent 50%,
+    transparent 70%,
     ${(props) => props.theme.color.primaryVivid} 0%
   );
 `;
