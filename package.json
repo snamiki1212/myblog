@@ -24,7 +24,6 @@
     "test": "jest test"
   },
   "dependencies": {
-    "//": "rehype-react: ver4系でないとうまく動かない。ver6系だとunifiedを組み合わせないといけなくて、その上で現状の動きを再現するのがよくわからん、軽く触った出来るような気もするけど後回しにしてる。ver5系はチェックしてない。",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -64,12 +63,12 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-share": "^4.4.0",
-    "rehype-react": "^4.0.1",
-    "remark-parse": "^9.0.0",
+    "rehype-parse": "^8.0.1",
+    "rehype-react": "^6.2.1",
     "sharp": "^0.27.2",
     "styled-components": "^5.3.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "unified": "^9.1.0",
+    "unified": "^10.1.0",
     "url-join": "^4.0.1"
   },
   "devDependencies": {
