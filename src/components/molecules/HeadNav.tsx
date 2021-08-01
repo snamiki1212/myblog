@@ -21,15 +21,13 @@ export const HeadNav: React.FC = () => {
 
 const Wrapper = styled.div``;
 
-const mixinOnMouse = css`
+const OnMouse = styled.div`
   transition: 0.5s;
+  opacity: 0.8;
   & :hover {
     transition: 0.3s;
-    opacity: 0.6;
+    opacity: 1;
   }
-`;
-const OnMouse = styled.div`
-  ${mixinOnMouse}
 `;
 
 const Flex = styled.div`
