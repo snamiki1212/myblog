@@ -30,21 +30,25 @@ export const Paginator: React.FC<Props> = ({context}) => {
   );
 };
 
-const UnselectedLink = styled(Link)`
+const BaseLink = styled(Link)`
   text-decoration: none;
   padding: 20px;
-  transition: 0.3s;
   border-radius: 10px;
   border: 1px solid ${(props) => props.theme.color.baseDark};
+`;
+
+const UnselectedLink = styled(BaseLink)`
   background: ${({theme}) => theme.color.baseLight};
   color: ${(props) => props.theme.color.baseDark};
+  transition: 0.3s;
   &:hover {
     color: ${(props) => props.theme.color.baseLight};
     background: ${(props) => props.theme.color.baseDark};
+    transform: scale(1.2);
   }
 `;
 
-const SelectedLink = styled(UnselectedLink)`
+const SelectedLink = styled(BaseLink)`
   color: ${({theme}) => theme.color.white};
   background: ${({theme}) => theme.color.baseDark};
 `;
