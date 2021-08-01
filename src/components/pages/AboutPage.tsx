@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'gatsby';
 
 import config from '../../../data/SiteConfig';
 import {MyLinks} from '../atoms';
@@ -92,9 +91,9 @@ const CONTENT_WhatCan = () => {
           </ul>
         </div>
         <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
-        <Link to={myLinkedinUrl} aria-label="lilnkedin-link">
+        <ExternalLink to={myLinkedinUrl} aria-label="lilnkedin-link">
           <Button>» LinkedIn(snamiki1212)</Button>
-        </Link>
+        </ExternalLink>
       </Card>
     </>
   );
@@ -120,9 +119,9 @@ const CONTENT_AskWork = () => {
       <H2>仕事の依頼</H2>
       <Card>
         <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
-        <Link to={myTwitterUrl} aria-label="twiter-link">
+        <ExternalLink to={myTwitterUrl} aria-label="twiter-link">
           <Button>» Twitter - Nash@Webエンジニア(@snamiki1212)</Button>
-        </Link>
+        </ExternalLink>
       </Card>
     </>
   );
@@ -137,21 +136,21 @@ const CONTENT_ThisBlog = () => {
         <Text>
           このブログのコンテンツは全てgithubで管理されています。
           内容に問題や訂正すべき内容がある場合は
-          <Link to={myTwitterUrl} aria-label="twitter-link">
+          <ExternalLink to={myTwitterUrl} aria-label="twitter-link">
             <Button>Twitter</Button>
-          </Link>
+          </ExternalLink>
           か直接
-          <Link to={config.siteRepository} aria-label="blog-link">
+          <ExternalLink to={config.siteRepository} aria-label="blog-link">
             <Button>ブログのリポジトリ</Button>
-          </Link>
+          </ExternalLink>
           にPRを出してもらえれば対応します。
         </Text>
-        <Link to={myTwitterUrl} aria-label="twitter-link">
+        <ExternalLink to={myTwitterUrl} aria-label="twitter-link">
           <Button>Twitter</Button>
-        </Link>
-        <Link to={config.siteRepository} aria-label="blog-link">
+        </ExternalLink>
+        <ExternalLink to={config.siteRepository} aria-label="blog-link">
           <Button>ブログのリポジトリ</Button>
-        </Link>
+        </ExternalLink>
 
         <hr />
         <MyLinks />
@@ -219,3 +218,15 @@ const Card = styled.div`
 const H2 = styled.h2`
   margin: 36px 0 4px 0;
 `;
+
+const ExternalLink: React.FC<{to: string; [key: string]: any}> = ({
+  to,
+  children,
+  ...rest
+}) => {
+  return (
+    <a href={to} {...rest}>
+      {children}
+    </a>
+  );
+};
