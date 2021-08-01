@@ -84,7 +84,6 @@ const DateWrapper = styled.div`
 
 const HeaderWrapper = styled.div`
   width: 100%;
-  /* background: ${(props) => props.theme.color.primaryVivid}; */
   background: linear-gradient(
     145deg,
     ${(props) => props.theme.color.link},
