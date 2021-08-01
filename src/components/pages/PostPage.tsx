@@ -62,20 +62,12 @@ export const PostPage: React.FC<Props> = ({data}) => {
           </div>
         }
         toc={tocComponent}
-        author={
-          <AuthorCardWrapper>
-            <AuthorCard />
-          </AuthorCardWrapper>
-        }
+        author={<AuthorCard />}
         suggestions={<ArticleList postEdges={suggestions} />}
       />
     </Layout>
   );
 };
-
-const AuthorCardWrapper = styled.div`
-  padding: 50px;
-`;
 
 const MarkdownWrapper = styled.div`
   margin: 0 10px;

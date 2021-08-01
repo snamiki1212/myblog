@@ -2,34 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 
 type Props = {
-  header?: React.ReactNode;
   section: React.ReactNode;
   aside: React.ReactNode;
-  footer?: React.ReactNode;
 };
 
-export const InnerLayout: React.FC<Props> = ({
-  header,
-  section,
-  aside,
-  footer,
-}) => {
+export const InnerLayout: React.FC<Props> = ({section, aside}) => {
   return (
-    <div>
-      {header && <HeaderArea>{header}</HeaderArea>}
-      <ArticleAndSidebar>
-        <ArticleArea>{section}</ArticleArea>
-        <ProfileSection>
-          <Sticky>{aside}</Sticky>
-        </ProfileSection>
-      </ArticleAndSidebar>
-      {footer && <div>{footer}</div>}
-    </div>
+    <Container>
+      <SectionArea>{section}</SectionArea>
+      <AsideArea>
+        <Sticky>{aside}</Sticky>
+      </AsideArea>
+    </Container>
   );
 };
 
-const HeaderArea = styled.div`
-  margin-bottom: 1rem;
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
 `;
 
 const Sticky = styled.div`
@@ -37,13 +28,7 @@ const Sticky = styled.div`
   top: 1rem;
 `;
 
-const ArticleAndSidebar = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 2rem;
-`;
-
-const ArticleArea = styled.div`
+const SectionArea = styled.div`
   grid-column: 1 / 2;
   @media (max-width: 700px) {
     /* // TODO: dont use magic num */
@@ -51,7 +36,7 @@ const ArticleArea = styled.div`
   }
 `;
 
-const ProfileSection = styled.div`
+const AsideArea = styled.div`
   grid-column: span 1;
   @media (max-width: 700px) {
     /* // TODO: dont use magic num */

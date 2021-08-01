@@ -17,8 +17,8 @@ export const ArticleListLayout: React.FC<Props> = ({
 }) => {
   return (
     <Wrapper>
+      {articleListHeader && <HeaderArea>{articleListHeader}</HeaderArea>}
       <InnerLayout
-        header={articleListHeader}
         section={
           <div>
             <div>{articles}</div>
@@ -31,8 +31,10 @@ export const ArticleListLayout: React.FC<Props> = ({
   );
 };
 
+const HeaderArea = styled.div`
+  margin-bottom: 1rem;
+`;
+
 const Wrapper = styled.div`
-  display: grid;
-  gap: 1rem;
   padding: ${(props) => `${props.theme.layout.marginVertical}px`};
 `;
