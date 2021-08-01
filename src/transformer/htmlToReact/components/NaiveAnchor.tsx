@@ -30,5 +30,7 @@ export const NaiveAnchor: React.FC = (props: any) => {
 const StyledA = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.color.link};
-  border-bottom: solid 1px;
+  &:hover {
+    border-bottom: solid 1px;
+  }
 `;
