@@ -8,6 +8,7 @@ type Props = {
   meta: React.ReactNode;
   author: React.ReactNode;
   suggestions: React.ReactNode;
+  toc: React.ReactNode;
 };
 
 export const PostPageLayout: React.FC<Props> = ({
@@ -17,10 +18,12 @@ export const PostPageLayout: React.FC<Props> = ({
   meta,
   author,
   suggestions,
+  toc,
 }) => {
   return (
     <Container>
       {header}
+      {/* <Item>{toc}</Item> */}
       <Item>{date}</Item>
       <Item>{content}</Item>
       <Item>{meta}</Item>

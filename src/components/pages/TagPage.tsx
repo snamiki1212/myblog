@@ -8,7 +8,7 @@ import {ArticleList} from '../organisms/ArticleList';
 import {Subtitle} from '../atoms/Subtitle';
 import {MarkdownRemarkEdge} from '../../types';
 import {AuthorCard} from '../molecules';
-import {ArticleListLayout} from '../organisms/ArticleListLayout';
+import {ArticleListLayout} from '../templates/ArticleListLayout';
 import {Paginator} from '../atoms';
 
 type Props = {

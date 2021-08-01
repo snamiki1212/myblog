@@ -7,13 +7,13 @@ import {Layout} from '../organisms/Layout';
 import {Image} from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';
-import {PostPageLayout} from '../organisms/PostPageLayout';
+import {PostPageLayout} from '../templates/PostPageLayout';
 import {ArticleList} from '../organisms/ArticleList';
 import {TagList, SEOMeta, Markdown} from '../atoms';
 import {PostPageContext} from '../../../gatsby-node/types';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge, GatsbyImageData} from '../../types';
-// import {fromHtmlToToc} from '../../transformer/htmlToToc';
+import {fromHtmlToToc} from '../../transformer/htmlToToc';
 
 type Props = {
   data: PostPageQuery;
@@ -31,8 +31,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
-  // const tableOfContents = postNode.tableOfContents;
-  // const toc = fromHtmlToToc(tableOfContents)
+  const tocComponent = fromHtmlToToc(postNode.tableOfContents);
 
   return (
     <Layout>
@@ -62,6 +61,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
             <SocialLinks postNode={postNode} />
           </div>
         }
+        toc={tocComponent}
         author={
           <AuthorCardWrapper>
             <AuthorCard />
