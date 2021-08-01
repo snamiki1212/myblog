@@ -55,7 +55,12 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  background: ${(props) => props.theme.color.baseDark};
+  background: linear-gradient(
+    145deg,
+    ${(props) => props.theme.color.baseDark},
+    ${(props) => `${props.theme.color.baseDark}E6 `},
+    ${(props) => props.theme.color.baseDark}
+  );
 `;
 
 const Content = styled.div`
