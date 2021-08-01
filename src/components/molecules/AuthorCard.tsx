@@ -14,7 +14,7 @@ export const AuthorCard: React.FC<Props> = ({disableMore = false}) => {
     <></>
   ) : (
     <Link to="/about">
-      <ProfileLinkText>もっと詳しく</ProfileLinkText>
+      <ProfileLinkText>Read More</ProfileLinkText>
     </Link>
   );
 
@@ -58,15 +58,16 @@ const Discription = styled.div`
 `;
 
 const ProfileLinkText = styled.span`
-  font-family: ${(props) => props.theme.fontFamily.primary};
+  font-family: ${(props) => props.theme.fontFamily.logoEn};
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid ${(props) => props.theme.color.grayDark};
-  display: inline-block;
 
-  transition: 0.5s;
+  display: inline-block;
+  opacity: 0.7;
+  transition: 0.2s;
   & :hover {
-    opacity: 0.6;
-    transition: 0.5s;
+    opacity: 1;
+    transition: 0.2s;
+    background-color: ${(props) => props.theme.color.baseLight};
   }
 `;
