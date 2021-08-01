@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import kebabCase from 'lodash.kebabcase';
 import {Button} from './Button';
 import {Link} from 'gatsby';
 
-type Props = {tag: string; number?: number};
+type Props = {name: string; count?: number; path: string};
 
-export const Tag: React.FC<Props> = ({tag, number}) => {
-  let text = tag;
-  if (number != undefined) text = text + ` (${number})`;
+export const DarkTip: React.FC<Props> = ({name, count, path}) => {
+  let text = name;
+  if (count != undefined) text = text + ` (${count})`;
 
   return (
-    <_Link to={`/tags/${kebabCase(tag)}`}>
+    <_Link to={path}>
       <_Button>{`#${text}`}</_Button>
     </_Link>
   );
