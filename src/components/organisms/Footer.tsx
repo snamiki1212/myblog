@@ -12,9 +12,7 @@ export const Footer: React.FC = () => {
         <Content>
           <LogoWrapper>
             <Link to="/">
-              <HoverForSpinArea>
-                <Logo size={146} />
-              </HoverForSpinArea>
+              <Logo size={114} />
             </Link>
           </LogoWrapper>
 
@@ -45,9 +43,14 @@ const Copyright = styled.footer`
   font-family: ${(props) => props.theme.fontFamily.logoEn};
 `;
 
-const LogoWrapper = styled.div``;
-
-const HoverForSpinArea = styled.div``;
+const LogoWrapper = styled.div`
+  transition: 0.3;
+  opacity: 0.8;
+  & :hover {
+    transition: 0.3;
+    opacity: 1;
+  }
+`;
 
 const Wrapper = styled.div`
   padding-top: 30px;
@@ -58,7 +61,7 @@ const ContentWrapper = styled.div`
   background: linear-gradient(
     145deg,
     ${(props) => props.theme.color.baseDark},
-    ${(props) => `${props.theme.color.baseDark}E6 `},
+    ${(props) => `${props.theme.color.baseDark}E6`},
     ${(props) => props.theme.color.baseDark}
   );
 `;
