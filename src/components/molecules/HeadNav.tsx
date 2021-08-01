@@ -44,4 +44,8 @@ const BlogTitle = styled.span`
   color: ${(props) => props.theme.color.primaryVivid};
   font-family: ${(props) => props.theme.fontFamily.logoEn};
   font-size: ${(props) => props.theme.fontSize.tmp_3}px;
+  & :hover,
+  & :active {
+    color: ${(props) => props.theme.color.primaryVivid};
+  }
 `;

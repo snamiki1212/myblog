@@ -12,6 +12,8 @@ export const color = {
   grayDark: '#808080',
 } as const;
 
+// NOTE: if update this file, also update layout.scss
+
 export default {
   ...color,
 };
