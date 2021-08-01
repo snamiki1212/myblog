@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import {Button} from './Button';
 import {Link} from 'gatsby';
 
-type Props = {name: string; path: string};
+type Props = {name: string; count?: number; path: string};
 
-export const LightTip: React.FC<Props> = ({name, path}) => {
+export const LightTip: React.FC<Props> = ({name, path, count}) => {
   let text = name;
+  if (count != undefined) text = text + ` (${count})`;
+
   return (
     <_Link to={path}>
       <_Button>{`#${text}`}</_Button>
