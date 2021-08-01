@@ -33,11 +33,10 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   ${mixinHeadline}
-  color: ${(props) => props.theme.color.baseLight}; // overload;
-
+  color: ${(props) => props.theme.color.baseLight};
   font-size: 25px;
   margin-top: 60px;
-  padding: 10px 40px;
+  padding: 20px 40px;
   background-color: ${(props) => props.theme.color.baseDark};
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
