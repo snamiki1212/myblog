@@ -7,6 +7,7 @@ import {Layout} from '../organisms/Layout';
 import {Image} from '../atoms/Image';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';
+import {PostPageLayout} from '../organisms/PostPageLayout';
 import {ArticleList} from '../organisms/ArticleList';
 import {TagList, SEOMeta, Markdown} from '../atoms';
 import {PostPageContext} from '../../../gatsby-node/types';
@@ -35,42 +36,39 @@ export const PostPage: React.FC<Props> = ({data}) => {
 
   return (
     <Layout>
-      <Wrapper>
-        <Helmet>
-          <title>{`${post.title}`}</title>
-          <link rel="canonical" href={`${config.siteUrl}/${_slug}`} />
-        </Helmet>
+      <Helmet>
+        <title>{`${post.title}`}</title>
+        <link rel="canonical" href={`${config.siteUrl}/${_slug}`} />
+      </Helmet>
 
-        <SEOMeta postNode={postNode} isPost={true} />
+      <SEOMeta postNode={postNode} isPost={true} />
 
-        <HeaderImg imgInfo={postNode.frontmatter.cover} />
-
-        <ItemWrapper>
+      <PostPageLayout
+        header={<HeaderImg imgInfo={postNode.frontmatter.cover} />}
+        date={
           <DateWrapper>
             <UpdatedAt date={postNode.frontmatter.updatedAt} />
             <CreatedAt date={postNode.frontmatter.createdAt} />
           </DateWrapper>
-        </ItemWrapper>
-
-        <ItemWrapper>
+        }
+        content={
           <MarkdownWrapper>
             <Markdown html={postNode.html} />
           </MarkdownWrapper>
-        </ItemWrapper>
-
-        <ItemWrapper>
-          <TagList tags={post.tags} />
-          <SocialLinks postNode={postNode} />
-        </ItemWrapper>
-
-        <ItemWrapper>
+        }
+        meta={
+          <div>
+            <TagList tags={post.tags} />
+            <SocialLinks postNode={postNode} />
+          </div>
+        }
+        author={
           <AuthorCardWrapper>
             <AuthorCard />
           </AuthorCardWrapper>
-        </ItemWrapper>
-
-        <ArticleList postEdges={suggestions} />
-      </Wrapper>
+        }
+        suggestions={<ArticleList postEdges={suggestions} />}
+      />
     </Layout>
   );
 };
@@ -86,21 +84,6 @@ const MarkdownWrapper = styled.div`
 const DateWrapper = styled.div`
   margin: 10px;
   align-self: flex-end;
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const ItemWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  width: 100%;
-  max-width: 700px;
 `;
 
 const HeaderImg = styled(Image)`
