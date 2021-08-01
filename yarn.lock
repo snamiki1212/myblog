@@ -7621,7 +7621,7 @@ gatsby-core-utils@^1.7.1:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^2.1.0, gatsby-core-utils@^2.10.0:
+gatsby-core-utils@^2.10.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.10.0.tgz#bc37ea9eb6bb5f327aa4bdc0345a37d9390d4a7a"
   integrity sha512-xvVebKSrjHkZQQkeEjuAekCAg17KT2l44d/yn7w2dzBGay244m8hoY8LRtLRdsrSp30ix89QklefuP9frEfhbA==
@@ -7725,22 +7725,22 @@ gatsby-plugin-manifest@3.10.0:
     semver "^7.3.5"
     sharp "^0.28.3"
 
-gatsby-plugin-nprogress@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-3.1.0.tgz#f318dacdf3bd36eef5b2dda490103d467729834f"
-  integrity sha512-CbYFaY5atPsZJJ/sDty1vn19ebxLJ+RPg3SEFFYM/KH6LZtMIMWxnARRb10NpeiBUOj8AfkmqOAv+eOSxZGs4w==
+gatsby-plugin-nprogress@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-3.10.0.tgz#e4e03fb5f9edf3c164a39503e2f7a421b26084f8"
+  integrity sha512-5E/aoN7Qh6aiCViu/CUNLonajheenj7UeIzXAHBT/acP9f/knkc+9OU2TCvD9m/kUA5CqNSM5AxpJXG7XRmBKA==
   dependencies:
-    "@babel/runtime" "^7.12.5"
+    "@babel/runtime" "^7.14.6"
     nprogress "^0.2.0"
 
-gatsby-plugin-offline@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-4.1.0.tgz#92858f5a61077d9e44fa9e933b6a1ceff793b044"
-  integrity sha512-lLIooOgZBV91GjqNglIup72wXufEkVyLUDyoHzs7yxAuj1nGUEinWNpp+QLHH9SxI9salyuawzL52GSHTwQlDw==
+gatsby-plugin-offline@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-4.10.0.tgz#93d66ee144df0557f7955a75e65a9fc125451877"
+  integrity sha512-duJA8zTpokYGgSsOY7q0J0TsdyFLk3BWZN20/hUtji/B1S76F7ZK8/pVHGUHVP9Lhj8LLM8VkVO+yLqdBhRNkg==
   dependencies:
-    "@babel/runtime" "^7.12.5"
-    cheerio "^1.0.0-rc.3"
-    gatsby-core-utils "^2.1.0"
+    "@babel/runtime" "^7.14.6"
+    cheerio "^1.0.0-rc.9"
+    gatsby-core-utils "^2.10.0"
     glob "^7.1.6"
     idb-keyval "^3.2.0"
     lodash "^4.17.21"
