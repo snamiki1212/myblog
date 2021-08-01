@@ -2,7 +2,8 @@
 const config = require('./data/SiteConfig'); // eslint-disable-line @typescript-eslint/no-var-requires
 const envConfig = require('./data/EnvConfig'); // eslint-disable-line @typescript-eslint/no-var-requires
 
-const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
+const regexExcludeRobots =
+  /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
 
 module.exports = {
   /** <only gh-pages> */
@@ -156,7 +157,8 @@ module.exports = {
         icon: 'static/favicon.png',
       },
     },
-    'gatsby-plugin-offline',
+
+    'gatsby-plugin-offline', // NOTE: this plugin has to be AFTER gatsby-plugin-manifest.
 
     {
       resolve: 'gatsby-plugin-web-font-loader',

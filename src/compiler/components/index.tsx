@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
-import {ReactAComponent} from './ReactAComponent';
+import {NaiveAnchor} from './NaiveAnchor';
 
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';
@@ -147,7 +147,7 @@ export const components = {
   h5: SHOULD_NOT_USE_TAG,
   h6: SHOULD_NOT_USE_TAG,
   hr: HR,
-  a: ReactAComponent,
+  a: NaiveAnchor,
   b: B,
   strong: B, // same as B-tag
   p: P,
