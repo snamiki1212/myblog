@@ -1,10 +1,15 @@
 export const color = {
+  // vivid
   primaryVivid: '#ECC100',
   link: '#477FB9',
-  white: '#FFFFFF',
-  grayDark: '#808080',
+
+  // base
   baseLight: '#ECF2F8',
   baseDark: '#1C324A',
+
+  // monotone
+  white: '#f9f9f9',
+  grayDark: '#808080',
 } as const;
 
 export default {

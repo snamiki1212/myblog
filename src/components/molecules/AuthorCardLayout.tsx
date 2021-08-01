@@ -43,7 +43,8 @@ const Grid = styled.div`
   grid-template-rows:
     ${(props) => props.theme.layout.autherAvatorSizeNum / 2}px
     ${(props) => props.theme.layout.autherAvatorSizeNum / 2}px 1fr 0.5fr;
-  grid-template-columns: ${(props) => props.theme.layout.autherAvatorSizeNum}px 1fr;
+  grid-template-columns: ${(props) =>
+      `${props.theme.layout.autherAvatorSizeNum + 10}px`} 1fr;
 `;
 
 const GridAvator = styled.div`
@@ -76,6 +77,6 @@ const GridDescription = styled.div`
 const GridProfileLink = styled.div`
   grid-row: 4/5;
   grid-column: 1/3;
-
+  margin: 0 auto;
   padding: 7px 0;
 `;
