@@ -18,29 +18,35 @@ export const Paginator: React.FC<Props> = ({context}) => {
         const slug = `/${i === 0 ? '' : pageNo}`;
         const selected = pageNo === currentPage;
 
+        const Component = selected ? SelectedLink : UnselectedLink;
+
         return (
-          <_Link selected={selected} key={key} to={slug}>
+          <Component key={key} to={slug}>
             {pageNo}
-          </_Link>
+          </Component>
         );
       })}
     </Wrapper>
   );
 };
 
-const _Link = styled(Link)<{selected: boolean}>`
+const UnselectedLink = styled(Link)`
   text-decoration: none;
   padding: 20px;
   transition: 0.3s;
   border-radius: 10px;
   border: 1px solid ${(props) => props.theme.color.baseDark};
-  color: ${({theme, selected}) => selected && theme.color.white};
-  background: ${({theme, selected}) =>
-    selected ? theme.color.baseDark : theme.color.baseLight};
-
+  background: ${({theme}) => theme.color.baseLight};
+  color: ${(props) => props.theme.color.baseDark};
   &:hover {
-    background: ${(props) => props.theme.color.primaryVivid};
+    color: ${(props) => props.theme.color.baseLight};
+    background: ${(props) => props.theme.color.baseDark};
   }
+`;
+
+const SelectedLink = styled(UnselectedLink)`
+  color: ${({theme}) => theme.color.white};
+  background: ${({theme}) => theme.color.baseDark};
 `;
 
 const Wrapper = styled.div`
