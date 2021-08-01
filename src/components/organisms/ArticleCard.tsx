@@ -1,13 +1,14 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import styled from 'styled-components';
+import kebabCase from 'lodash.kebabcase';
 
 import {MarkdownRemarkEdge} from '../../types';
 import {Image} from '../atoms/Image';
 import {Logo} from '../atoms/Logo';
 import {UpdatedAt} from '../molecules';
 import {ArticleCardLayout} from './ArticleCardLayout';
-import {CategoryTip} from '../atoms/CategoryTip';
+import {LightTip} from '../atoms/LightTip';
 
 type Props = {
   postInfo: MarkdownRemarkEdge;
@@ -32,7 +33,12 @@ export const ArticleCard: React.FC<Props> = ({postInfo: edge}) => {
         }
         category={
           <CategoryWrapper>
-            <CategoryTip category={category}>{category}</CategoryTip>
+            <LightTip
+              name={category}
+              path={`/categories/${kebabCase(category)}`}
+            >
+              {category}
+            </LightTip>
           </CategoryWrapper>
         }
       />

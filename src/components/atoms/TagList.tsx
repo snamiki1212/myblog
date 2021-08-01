@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Tag} from './Tag';
+import {DarkTip} from './DarkTip';
+import kebabCase from 'lodash.kebabcase';
 
 type Props = {
   tags: string[];
@@ -11,7 +12,7 @@ export const TagList: React.FC<Props> = ({tags}) => {
   return (
     <Wrapper>
       {tags.map((tag) => (
-        <Tag tag={tag} key={tag} />
+        <DarkTip name={tag} key={tag} path={`/tags/${kebabCase(tag)}`} />
       ))}
     </Wrapper>
   );

@@ -1,11 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import {Link} from 'gatsby';
+import kebabCase from 'lodash.kebabcase';
 import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {Layout} from '../organisms/Layout';
 import {MarkdownRemarkEdge} from '../../types';
-import {Tag} from '../atoms/Tag';
+import {DarkTip} from '../atoms/DarkTip';
 
 type Props = {
   pageContext: any;
@@ -25,7 +25,12 @@ export const CategorySelectionPage: React.FC<Props> = ({pageContext, data}) => {
       <main>
         <BodyLayout>
           {categories.map(({name, count}) => (
-            <Tag key={name} tag={name} number={count} />
+            <DarkTip
+              key={name}
+              name={name}
+              count={count}
+              path={`/categories/${kebabCase(name)}`}
+            />
           ))}
         </BodyLayout>
       </main>
