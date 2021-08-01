@@ -12,6 +12,7 @@ import {TagList, SEOMeta, Markdown} from '../atoms';
 import {PostPageContext} from '../../../gatsby-node/types';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge, GatsbyImageData} from '../../types';
+// import {fromHtmlToToc} from '../../transformer/htmlToToc';
 
 type Props = {
   data: PostPageQuery;
@@ -29,6 +30,8 @@ export const PostPage: React.FC<Props> = ({data}) => {
   const _slug = postNode.frontmatter.slug;
   const suggestions = data.allMarkdownRemark.edges;
   const post = postNode.frontmatter;
+  // const tableOfContents = postNode.tableOfContents;
+  // const toc = fromHtmlToToc(tableOfContents)
 
   return (
     <Layout>
@@ -117,6 +120,7 @@ type PostPageQuery = {
 export interface MarkdownRemark {
   html: string;
   htmlAst: any;
+  tableOfContents: string;
   timeToRead: number;
   excerpt: string;
   frontmatter: {
@@ -176,6 +180,7 @@ export const postPageQuery = graphql`
     markdownRemark(fields: {_slug: {eq: $slug}}) {
       html
       htmlAst
+      tableOfContents
       timeToRead
       excerpt(truncate: true)
       frontmatter {

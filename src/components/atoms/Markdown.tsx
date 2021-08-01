@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {renderReactFromHtml} from '../../compiler/CompilerAsHtmlToReact';
+import {renderReactFromHtml} from '../../transformer/htmlToReact';
 
 type Props = {html: string};
 
