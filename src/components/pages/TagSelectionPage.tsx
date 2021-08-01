@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import config from '../../../data/SiteConfig';
 import {Layout} from '../organisms/Layout';
 import {MarkdownRemarkEdge} from '../../types';
-import {Tag} from '../atoms/Tag';
+import {DarkTip} from '../atoms/DarkTip';
 
 type Props = {
   pageContext: any;
@@ -24,7 +24,7 @@ export const TagSelectionPage: React.FC<Props> = ({pageContext, data}) => {
       <main>
         <BodyLayout>
           {tags.map(({name, count}) => (
-            <Tag key={name} tag={name} number={count} />
+            <DarkTip key={name} tag={name} number={count} />
           ))}
         </BodyLayout>
       </main>

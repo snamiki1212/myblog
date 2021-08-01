@@ -6,7 +6,7 @@ import {Link} from 'gatsby';
 
 type Props = {tag: string; number?: number};
 
-export const Tag: React.FC<Props> = ({tag, number}) => {
+export const DarkTip: React.FC<Props> = ({tag, number}) => {
   let text = tag;
   if (number != undefined) text = text + ` (${number})`;
 
