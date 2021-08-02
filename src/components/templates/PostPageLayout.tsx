@@ -35,13 +35,11 @@ export const PostPageLayout: React.FC<Props> = ({
               <Item>{suggestions}</Item>
             </Flex>
           }
-          aside={
-            <div>
-              <AuthorContainer>{author}</AuthorContainer>
-              <Card>
-                <TocWrapper>{toc}</TocWrapper>
-              </Card>
-            </div>
+          aside={<AuthorContainer>{author}</AuthorContainer>}
+          asideVanishable={
+            <Card>
+              <TocWrapper>{toc}</TocWrapper>
+            </Card>
           }
         />
       </InnerContainer>
