@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {InnerLayout} from './InnerLayout';
-import {Card} from '../atoms/Card';
+import {Toc} from '../atoms/Toc';
 
 type Props = {
   header: React.ReactNode;
@@ -36,11 +36,7 @@ export const PostPageLayout: React.FC<Props> = ({
             </Flex>
           }
           aside={<AuthorContainer>{author}</AuthorContainer>}
-          asideVanishable={
-            <Card>
-              <TocWrapper>{toc}</TocWrapper>
-            </Card>
-          }
+          asideVanishable={<Toc toc={toc} />}
         />
       </InnerContainer>
     </Container>
@@ -61,12 +57,6 @@ const Flex = styled.div`
 
 const AuthorContainer = styled.div`
   margin-bottom: 1rem;
-`;
-
-const TocWrapper = styled.div`
-  max-width: 300px; /* TODO: should change */
-  max-height: 400px; /* TODO: should change */
-  overflow: auto;
 `;
 
 const Item = styled.div`
