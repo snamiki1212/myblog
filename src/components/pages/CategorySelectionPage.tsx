@@ -24,14 +24,16 @@ export const CategorySelectionPage: React.FC<Props> = ({pageContext, data}) => {
 
       <main>
         <BodyLayout>
-          {categories.map(({name, count}) => (
-            <DarkTip
-              key={name}
-              name={name}
-              count={count}
-              path={`/categories/${kebabCase(name)}`}
-            />
-          ))}
+          <Flex>
+            {categories.map(({name, count}) => (
+              <DarkTip
+                key={name}
+                name={name}
+                count={count}
+                path={`/categories/${kebabCase(name)}`}
+              />
+            ))}
+          </Flex>
         </BodyLayout>
       </main>
     </Layout>
@@ -40,10 +42,15 @@ export const CategorySelectionPage: React.FC<Props> = ({pageContext, data}) => {
 
 const BodyLayout = styled.div`
   padding: 20px;
+  min-height: 50vh;
+  max-width: 960px;
+  margin: 0 auto;
+`;
+
+const Flex = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  min-height: 50vh;
   align-content: flex-start;
 `;
 

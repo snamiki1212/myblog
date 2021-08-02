@@ -4,14 +4,22 @@ import styled from 'styled-components';
 type Props = {
   section: React.ReactNode;
   aside: React.ReactNode;
+  asideVanishable?: React.ReactNode;
 };
 
-export const InnerLayout: React.FC<Props> = ({section, aside}) => {
+export const InnerLayout: React.FC<Props> = ({
+  section,
+  aside,
+  asideVanishable = undefined,
+}) => {
   return (
     <Container>
       <SectionArea>{section}</SectionArea>
       <AsideArea>
-        <Sticky>{aside}</Sticky>
+        <Sticky>
+          {aside}
+          <AsideVanishable>{asideVanishable}</AsideVanishable>
+        </Sticky>
       </AsideArea>
     </Container>
   );
@@ -43,5 +51,11 @@ const AsideArea = styled.div`
   @media (max-width: 700px) {
     /* // TODO: dont use magic num */
     grid-column: span 2;
+  }
+`;
+
+const AsideVanishable = styled.div`
+  @media (max-width: 700px) {
+    display: none;
   }
 `;

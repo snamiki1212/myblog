@@ -32,7 +32,9 @@ export const ArticleListLayout: React.FC<Props> = ({
 };
 
 const HeaderArea = styled.div`
+  margin: 0 auto;
   margin-bottom: 1rem;
+  max-width: 960px;
 `;
 
 const Wrapper = styled.div`
