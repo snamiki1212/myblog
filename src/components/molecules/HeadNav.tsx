@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import {siteTitle} from '../../../data/SiteConfig';
 import {Link} from 'gatsby';
 import {blogCardLogo} from '../../../data/SiteConfig';
@@ -21,6 +21,7 @@ export const HeadNav: React.FC = () => {
 
 const Wrapper = styled.div`
   max-width: 960px;
+  width: 100%;
 `;
 
 const OnMouse = styled.div`

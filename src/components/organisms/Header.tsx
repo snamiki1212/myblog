@@ -17,5 +17,6 @@ const Wrapper = styled.div`
     ${(props) => `${props.theme.color.baseDark}CC`},
     ${(props) => props.theme.color.baseDark}
   );
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 `;
