@@ -38,8 +38,9 @@ const BaseLink = styled(Link)`
 `;
 
 const UnselectedLink = styled(BaseLink)`
-  background: ${({theme}) => theme.color.baseLight};
   color: ${(props) => props.theme.color.baseDark};
+  background: ${({theme}) => theme.color.baseLight};
+
   transition: 0.3s;
   &:hover {
     color: ${(props) => props.theme.color.baseLight};

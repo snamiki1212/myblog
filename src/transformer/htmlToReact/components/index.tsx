@@ -37,7 +37,13 @@ const H2 = styled.h2`
   font-size: 25px;
   margin-top: 60px;
   padding: 20px 40px;
-  background-color: ${(props) => props.theme.color.baseDark};
+  background: linear-gradient(
+    145deg,
+    ${(props) => props.theme.color.baseDark},
+    ${(props) => `${props.theme.color.baseDark}CC`},
+    ${(props) => props.theme.color.baseDark}
+  );
+  ${(props) => props.theme.color.baseDark};
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }

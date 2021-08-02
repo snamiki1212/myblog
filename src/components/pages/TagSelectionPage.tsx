@@ -43,6 +43,8 @@ const BodyLayout = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  min-height: 50vh;
+  align-content: flex-start;
 `;
 
 export interface CategoryPageQuery {
