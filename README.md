@@ -1,18 +1,24 @@
-# gatsby-starter-lunash
+# Overview
 
 Starter template of Gatsby.js.
 
 ## Demo
 
-Using my blog so please check it👇👇
+Below is starter demo site.
 
-<a href="https://snamiki1212.com"><img height="300" alt="Screen Shot 2021-03-03 at 16 41 51" src="https://user-images.githubusercontent.com/26793088/109892536-612c2900-7c3f-11eb-8398-a2e4fe9e2ad7.png"></a>
+- [Gatsby Starter Lunash](https://snamiki1212.github.io/gatsby-starter-lunash/)
 
-## Design
+Below is my blog using this starter also in Japanese.
 
-Managed using Figma👇👇👇
+- [Lunash](https://snamiki1212.com/)
 
-<a href="https://www.figma.com/file/DQuYoZjdtvl1ElNh3EoiER/Lunash?node-id=0%3A1"><img height="300" alt="Screen Shot 2021-03-03 at 16 37 54" src="https://user-images.githubusercontent.com/26793088/109891938-e236f080-7c3e-11eb-90bd-f21a0a6731bc.png"></a>
+## Tech Stacks
+
+- Core: `Gatsby.js(v3)`, `TypeScript`
+- CSS: `styled-components`
+- UI: Vanilla CSS in JS, Atomic Design
+- CI: Github Actions
+- Hosting: Github Pages
 
 ## Usage:
 
@@ -21,6 +27,12 @@ $ yarn global add gatsby-cli
 $ yarn
 $ yarn start
 ```
+
+## Design
+
+Designed by Figma.
+
+<a href="https://www.figma.com/file/DQuYoZjdtvl1ElNh3EoiER/Lunash?node-id=0%3A1"><img height="300" alt="Screen Shot 2021-03-03 at 16 37 54" src="https://user-images.githubusercontent.com/26793088/109891938-e236f080-7c3e-11eb-90bd-f21a0a6731bc.png"></a>
 
 ## Directory
 
@@ -37,10 +49,10 @@ $ yarn start
   /public           # build by gatsby
   /.cache           # build by gatsby
 
-  # etc -------------
+  # etc -----------------------
   /.github
   /.vscode
-  /__mock__ # test mock
+  /__mock__         # test mock
 ```
 
 ## LICENSE
