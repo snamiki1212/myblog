@@ -86,9 +86,8 @@ const HeaderWrapper = styled.div`
   width: 100%;
   background: linear-gradient(
     145deg,
-    ${(props) => props.theme.color.link},
-    ${(props) => props.theme.color.link}4D,
-    ${(props) => props.theme.color.link}
+    ${(props) => props.theme.color.primaryVivid},
+    ${(props) => props.theme.color.baseDark}
   );
 `;
 
@@ -100,6 +99,7 @@ const Header = styled(Image)`
   height: 162px;
   width: 100%;
   margin: 0 auto;
+  mix-blend-mode: overlay;
 `;
 
 type PostPageQuery = {
