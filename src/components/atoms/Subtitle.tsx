@@ -11,6 +11,7 @@ export const Subtitle: React.FC = ({children}) => {
 
 const Text = styled.div`
   font-size: 30px;
+  letter-spacing: 0.1rem;
   color: ${(props) => props.theme.color.baseLight};
 `;
 
@@ -19,6 +20,11 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background: ${(props) => props.theme.color.baseDark};
+  background: linear-gradient(
+    145deg,
+    ${(props) => props.theme.color.baseDark},
+    ${(props) => props.theme.color.baseDark}CC,
+    ${(props) => props.theme.color.baseDark}
+  );
   margin-top: 20px;
 `;
