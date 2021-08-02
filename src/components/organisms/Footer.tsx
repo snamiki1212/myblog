@@ -69,6 +69,7 @@ const ContentWrapper = styled.div`
 const Content = styled.div`
   height: 100%;
   width: 80%;
+  max-width: 960px;
   margin: 0 auto;
 
   display: flex;
