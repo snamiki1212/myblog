@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {InnerLayout} from './InnerLayout';
-import {Toc} from '../atoms/Toc';
+import {TocCard} from '../atoms/TocCard';
 
 type Props = {
   header: React.ReactNode;
@@ -36,7 +36,7 @@ export const PostPageLayout: React.FC<Props> = ({
             </Flex>
           }
           aside={<AuthorContainer>{author}</AuthorContainer>}
-          asideVanishable={<Toc toc={toc} />}
+          asideVanishable={<TocCard toc={toc} />}
         />
       </InnerContainer>
     </Container>

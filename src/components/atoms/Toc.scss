@@ -1,0 +1,27 @@
+// Remove Top H1 TOC
+div#toc {
+  body > ul > li::marker {
+    content: '';
+  }
+  body > ul > li > p {
+    display: none;
+  }
+
+  // Style
+  ul {
+    padding-left: 1rem;
+  }
+
+  p {
+    margin: 0.3rem 0;
+  }
+
+  a {
+    opacity: 0.5;
+    transition: 0.5s;
+    &:hover {
+      opacity: 1;
+      transition: 0.5s;
+    }
+  }
+}
