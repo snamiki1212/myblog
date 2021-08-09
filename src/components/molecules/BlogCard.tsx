@@ -61,7 +61,7 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 10px;
 
-  background: ${(props) => props.theme.color.white};
+  background: var(--white);
   box-shadow: 2px 2px 10px lightgrey;
   border-radius: 10px;
 

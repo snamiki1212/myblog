@@ -191,7 +191,7 @@ const RAW_TweetForMyblog: React.FC = () => (
 
 const Wrapper = styled.div`
   padding: 30px;
-  max-width: 960px;
+  max-width: var(--content-width);
   margin: 0 auto;
 `;
 
@@ -213,7 +213,7 @@ const Text = styled.p`
 const Card = styled.div`
   padding: 40px;
   border-radius: 10px;
-  background-color: ${(props) => props.theme.color.white};
+  background-color: var(--white);
   box-shadow: 2px 2px 10px lightgrey;
 `;
 

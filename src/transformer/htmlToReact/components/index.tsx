@@ -6,18 +6,18 @@ import {NaiveAnchor} from './NaiveAnchor';
 const mobileWidth = '680px';
 
 const primaryFont = css`
-  font-family: ${(props) => props.theme.fontFamily.primary};
-  color: ${(props) => props.theme.color.baseDark};
+  font-family: var(--ff-primary);
+  color: var(--base-dark);
 `;
 
 const mixinHeadline = css`
   font-weight: bold;
-  ${primaryFont};
+  font-family: var(--ff-primary);
 `;
 
 const mixinList = css`
   list-style-position: outside;
-  background-color: ${(props) => props.theme.color.white};
+  background-color: var(--white);
 `;
 
 const H1 = styled.h1`
@@ -33,17 +33,17 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   ${mixinHeadline}
-  color: ${(props) => props.theme.color.baseLight};
+  color: var(--base-light);
   font-size: 25px;
   margin-top: 60px;
   padding: 20px 40px;
   background: linear-gradient(
     145deg,
-    ${(props) => props.theme.color.baseDark},
-    ${(props) => `${props.theme.color.baseDark}CC`},
-    ${(props) => props.theme.color.baseDark}
+    var(--base-dark),
+    var(--base-dark-CC),
+    var(--base-dark)
   );
-  ${(props) => props.theme.color.baseDark};
+
   @media screen and (max-width: ${mobileWidth}) {
     padding: 10px 20px;
   }
@@ -53,7 +53,7 @@ const H3 = styled.h3`
   ${mixinHeadline}
   font-size: 20px;
   padding: 5px 0 5px 15px;
-  border-left: 5px solid ${(props) => props.theme.color.primaryVivid};
+  border-left: 5px solid var(--vivid1);
   margin-top: 60px;
   margin-bottom: 20px;
   white-space: normal;
@@ -65,17 +65,14 @@ const HR = styled.hr`
 
 const B = styled.b`
   ${mixinHeadline};
-  background: linear-gradient(
-    transparent 60%,
-    ${(props) => props.theme.color.primaryVivid}
-  );
+  background: linear-gradient(transparent 60%, var(--vivid1));
 `;
 
 const P = styled.p`
   line-height: 2;
   margin-top: 0;
   margin-bottom: 30px;
-  ${primaryFont};
+  font-family: var(--ff-primary);
 
   font-size: 18px;
   @media screen and (max-width: ${mobileWidth}) {
@@ -86,7 +83,7 @@ const P = styled.p`
 const Blockquote = styled.blockquote`
   font-size: 17px;
   line-height: 36px;
-  ${primaryFont};
+  font-family: var(--ff-primary);
   border-left: 0.3rem solid lightgray;
   margin-left: 23px;
   padding: 0 10px;
@@ -102,8 +99,8 @@ const Table = styled.table`
   max-width: 100%;
   margin-bottom: 20px;
   border-collapse: collapse;
-  ${primaryFont};
-  background-color: ${(props) => props.theme.color.white};
+  font-family: var(--ff-primary);
+  background-color: var(--white);
 `;
 
 const Ul = styled.ul`
@@ -125,7 +122,7 @@ const Li = styled.li`
 const mixinTableElement = `
   text-align: center;
   padding: 10px 0;
-  ${primaryFont};
+  font-family: var(--ff-primary);
 `;
 
 const Td = styled.td`
@@ -141,7 +138,7 @@ const Tr = styled.tr`
   ${mixinTableElement}
   border-bottom-style: dotted;
   border-bottom-width: 1px;
-  border-color: ${(props) => props.theme.color.baseDark};
+  border-color: var(--base-dark);
 `;
 
 export const components = {
