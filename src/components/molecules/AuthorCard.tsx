@@ -50,16 +50,16 @@ const Avator = styled.img`
 
 const Name = styled.span`
   font-size: ${(props) => props.theme.fontSize.tmp_1}px;
-  font-family: ${(props) => props.theme.fontFamily.logoEn};
+  font-family: var(--ff-logoEn);
 `;
 
 const Discription = styled.div`
   font-size: ${(props) => props.theme.fontSize.tmp_2}px;
-  font-family: ${(props) => props.theme.fontFamily.primary};
+  font-family: var(--ff-primary);
 `;
 
 const ProfileLinkText = styled.span`
-  font-family: ${(props) => props.theme.fontFamily.logoEn};
+  font-family: var(--ff-logoEn);
   border-radius: 10px;
   padding: 10px;
 
@@ -69,6 +69,6 @@ const ProfileLinkText = styled.span`
   & :hover {
     opacity: 1;
     transition: 0.2s;
-    background-color: ${(props) => props.theme.color.baseLight};
+    background-color: var(--base-light);
   }
 `;

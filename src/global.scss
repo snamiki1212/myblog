@@ -1,0 +1,32 @@
+:root {
+  /******************************
+  *** Color
+  *******************************/
+  // vivid
+  --vivid1: #ecc100;
+  --vivid2: #477fb9;
+
+  // base
+  --base-light: #ecf2f8;
+  --base-dark: #1c324a;
+  --base-dark-CC: #1c324acc; /* NOTE: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors */
+  --base-dark-E6: #1c324ae6;
+  --base-dark-B3: #1c324ab3;
+
+  // monotone
+  --white: #f9f9f9;
+  --gray-dark: #808080;
+
+  /******************************
+  *** Font
+  *******************************/
+  --ff-primary: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+    'Helvetica Neue', HelveticaNeue, YuGothic, 'Yu Gothic Medium', 'Yu Gothic',
+    Verdana, Meiryo, sans-serif;
+  --ff-logoEn: Philosopher, Candara, Calibri, Segoe, Segoe UI; // NOTE: Philosopher is webfont so use only English Characters.
+
+  /******************************
+  *** Layout
+  *******************************/
+  --content-width: 960px;
+}

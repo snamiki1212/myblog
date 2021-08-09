@@ -33,14 +33,14 @@ const BottomWrapper = styled.div`
 `;
 
 const HR = styled.hr`
-  border: 1px solid ${(props) => props.theme.color.primaryVivid};
+  border: 1px solid var(--vivid1);
 `;
 
 const Copyright = styled.footer`
-  color: ${(props) => props.theme.color.baseLight};
+  color: var(--base-light);
   padding: 10px 0;
   text-align: center;
-  font-family: ${(props) => props.theme.fontFamily.logoEn};
+  font-family: var(--ff-logoEn);
 `;
 
 const LogoWrapper = styled.div`
@@ -54,22 +54,22 @@ const LogoWrapper = styled.div`
 
 const Wrapper = styled.div`
   padding-top: 30px;
-  background: ${(props) => props.theme.color.baseLight};
+  background: var(--base-light);
 `;
 
 const ContentWrapper = styled.div`
   background: linear-gradient(
     145deg,
-    ${(props) => props.theme.color.baseDark},
-    ${(props) => `${props.theme.color.baseDark}E6`},
-    ${(props) => props.theme.color.baseDark}
+    var(--base-dark),
+    var(--base-dark-E6),
+    var(--base-dark)
   );
 `;
 
 const Content = styled.div`
   height: 100%;
-  width: 80%;
-  max-width: 960px;
+  max-width: var(--content-width);
+  padding: 1rem;
   margin: 0 auto;
 
   display: flex;

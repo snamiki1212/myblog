@@ -24,5 +24,5 @@ const Outer = styled.div`
 const Title = styled.div`
   font-weight: 900;
   font-size: 1rem;
-  color: ${(props) => props.theme.color.baseDark};
+  color: var(--base-dark);
 `;

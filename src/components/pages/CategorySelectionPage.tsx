@@ -43,7 +43,7 @@ export const CategorySelectionPage: React.FC<Props> = ({pageContext, data}) => {
 const BodyLayout = styled.div`
   padding: 20px;
   min-height: 50vh;
-  max-width: 960px;
+  max-width: var(--content-width);
   margin: 0 auto;
 `;
 

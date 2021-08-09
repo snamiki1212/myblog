@@ -29,7 +29,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 2rem;
-  max-width: 960px;
+  max-width: var(--content-width);
   margin: 0 auto;
 `;
 

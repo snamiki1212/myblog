@@ -22,8 +22,8 @@ const _Link = styled(Link)`
 
 const _Button = styled(Button)`
   margin: 5px 2px 0;
-  color: ${(props) => props.theme.color.white};
-  background: ${(props) => props.theme.color.baseDark};
+  color: var(--white);
+  background: var(--base-dark);
   transition: 0.3s;
   opacity: 0.9;
   letter-spacing: 1px;
@@ -31,6 +31,6 @@ const _Button = styled(Button)`
     transition: 0.3s;
     opacity: 1;
     letter-spacing: 4px;
-    background: ${(props) => props.theme.color.baseDark};
+    background: var(--base-dark);
   }
 `;
