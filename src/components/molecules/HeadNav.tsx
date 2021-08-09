@@ -20,7 +20,7 @@ export const HeadNav: React.FC = () => {
 };
 
 const Wrapper = styled.div`
-  max-width: 960px;
+  max-width: var(--content-width);
   width: 100%;
 `;
 

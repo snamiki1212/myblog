@@ -191,7 +191,7 @@ const RAW_TweetForMyblog: React.FC = () => (
 
 const Wrapper = styled.div`
   padding: 30px;
-  max-width: 960px;
+  max-width: var(--content-width);
   margin: 0 auto;
 `;
 
