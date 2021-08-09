@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {HeadNav} from '../molecules/HeadNav';
 import {SearchBox} from '../atoms/SearchBox';
 
-const searchEngineId = 'TODO_REPLACE_ME process.env.customSearchEngineId';
+const searchEngineId = '374090a26f4208ea1'; // TODO: Replace me. Use env.
 export const Header: React.FC = () => {
   return (
     <Wrapper>
