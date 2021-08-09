@@ -25,9 +25,11 @@ word:
 
 CS 学習の一貫としてネットワークレイヤーについての学習がしたく、今回は下記の本を読み終えた。
 
-- 『基礎からわかる TCP/IP ネットワークコンピューティング入門 第 3 版』
+<!-- Affi -->
 
-- https://www.amazon.co.jp/%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E3%82%8F%E3%81%8B%E3%82%8BTCP-IP-%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E5%85%A5%E9%96%80-%E7%AC%AC3%E7%89%88-%E6%9D%91%E5%B1%B1/dp/4274050734
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4274050734" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51J00iWa0IL._SL160_.jpg" alt="" style="border: none;" /><br />基礎からわかる TCP/IP ネットワークコンピューティング入門 第 3 版</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
+<!-- /Affi -->
 
 この本のざっくり感想として、**コンピュータサイエンスの基礎からネットワークレイヤーに進み TCP/IP まで理解できる丁寧な本**、となる。なので、そういう丁寧な説明が好きな人におすすめできる。
 
@@ -96,3 +98,9 @@ TODO: いつか読む予定なのでそのときにします。
 ### おわりに
 
 「マスタリング TCP/IP は初心者が読むには難しすぎる」というツイートを見て、こっちの本を読んでみたけど、たしかに初心者でも読みやすい良い本だと思う。
+
+<!-- Affi -->
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4274050734" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51J00iWa0IL._SL160_.jpg" alt="" style="border: none;" /><br />基礎からわかる TCP/IP ネットワークコンピューティング入門 第 3 版</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
+<!-- /Affi -->
