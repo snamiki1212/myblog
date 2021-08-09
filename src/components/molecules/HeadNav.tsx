@@ -19,10 +19,7 @@ export const HeadNav: React.FC = () => {
   );
 };
 
-const Wrapper = styled.div`
-  max-width: 960px;
-  width: 100%;
-`;
+const Wrapper = styled.div``;
 
 const OnMouse = styled.div`
   transition: 0.5s;

@@ -1,0 +1,21 @@
+#cse-search-box {
+  display: flex;
+  align-items: center;
+  input[type='text'] {
+    border-radius: 10px;
+    height: 1rem;
+    padding: 1rem;
+
+    background: none;
+    color: lightgray;
+
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+      transition: 0.3s;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
