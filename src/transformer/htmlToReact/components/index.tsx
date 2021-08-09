@@ -6,13 +6,13 @@ import {NaiveAnchor} from './NaiveAnchor';
 const mobileWidth = '680px';
 
 const primaryFont = css`
-  font-family: ${(props) => props.theme.fontFamily.primary};
+  font-family: var(--ff-primary);
   color: var(--base-dark);
 `;
 
 const mixinHeadline = css`
   font-weight: bold;
-  ${primaryFont};
+  font-family: var(--ff-primary);
 `;
 
 const mixinList = css`
@@ -72,7 +72,7 @@ const P = styled.p`
   line-height: 2;
   margin-top: 0;
   margin-bottom: 30px;
-  ${primaryFont};
+  font-family: var(--ff-primary);
 
   font-size: 18px;
   @media screen and (max-width: ${mobileWidth}) {
@@ -83,7 +83,7 @@ const P = styled.p`
 const Blockquote = styled.blockquote`
   font-size: 17px;
   line-height: 36px;
-  ${primaryFont};
+  font-family: var(--ff-primary);
   border-left: 0.3rem solid lightgray;
   margin-left: 23px;
   padding: 0 10px;
@@ -99,7 +99,7 @@ const Table = styled.table`
   max-width: 100%;
   margin-bottom: 20px;
   border-collapse: collapse;
-  ${primaryFont};
+  font-family: var(--ff-primary);
   background-color: var(--white);
 `;
 
@@ -122,7 +122,7 @@ const Li = styled.li`
 const mixinTableElement = `
   text-align: center;
   padding: 10px 0;
-  ${primaryFont};
+  font-family: var(--ff-primary);
 `;
 
 const Td = styled.td`

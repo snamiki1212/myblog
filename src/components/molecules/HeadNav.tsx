@@ -45,7 +45,7 @@ const Image = styled.img`
 
 const BlogTitle = styled.span`
   color: var(--vivid1);
-  font-family: ${(props) => props.theme.fontFamily.logoEn};
+  font-family: var(--ff-logoEn);
   font-size: ${(props) => props.theme.fontSize.tmp_3}px;
   & :hover,
   & :active {

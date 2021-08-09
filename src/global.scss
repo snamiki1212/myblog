@@ -18,6 +18,14 @@
   --gray-dark: #808080;
 
   /******************************
+  *** Font
+  *******************************/
+  --ff-primary: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+    'Helvetica Neue', HelveticaNeue, YuGothic, 'Yu Gothic Medium', 'Yu Gothic',
+    Verdana, Meiryo, sans-serif;
+  --ff-logoEn: Philosopher, Candara, Calibri, Segoe, Segoe UI; // NOTE: Philosopher is webfont so use only English Characters.
+
+  /******************************
   *** Layout
   *******************************/
   --content-width: 960px;

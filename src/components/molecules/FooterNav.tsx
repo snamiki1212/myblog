@@ -42,16 +42,15 @@ const Box = styled.div`
 `;
 
 const SubTitle = styled.div`
-  font-family: ${(props) => props.theme.fontFamily.primary};
   color: var(--vivid1);
   font-weight: bold;
-  font-family: ${(props) => props.theme.fontFamily.logoEn};
+  font-family: var(--ff-logoEn);
 `;
 
 const InternalLink = styled(Link)`
   margin-top: 7px;
   font-size: 20px;
-  font-family: ${(props) => props.theme.fontFamily.primary};
+  font-family: var(--ff-primary);
   color: var(--base-light);
   border-bottom: 1px solid transparent;
 
@@ -66,7 +65,7 @@ const InternalLink = styled(Link)`
 const ExternalLink = styled.a`
   margin-top: 7px;
   font-size: 20px;
-  font-family: ${(props) => props.theme.fontFamily.primary};
+  font-family: var(--ff-primary);
   color: var(--base-light);
   border-bottom: 1px solid transparent;
 
