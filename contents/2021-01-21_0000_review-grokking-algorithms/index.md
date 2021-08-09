@@ -18,8 +18,10 @@ word:
 この記事は「**『なっとく！アルゴリズム』を読んだ結果の書評**」の記事です。
 
 <!-- amazon -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/61bXMHbyv3L._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">なっとく！アルゴリズム</a></p></td></tr></table><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
-<!-- amazon -->
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/61bXMHbyv3L._SL160_.jpg" alt="" style="border: none;" /><br />なっとく！アルゴリズム</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
+<!-- //amazon -->
 
 では見ていきます。
 
@@ -73,21 +75,24 @@ Python でのコードレベルでの説明もあるので、非エンジニア�
 
 アルゴリズム本として２大有名な本として「蟻本」「螺旋本」があるけれども、入門者にはマジでおすすめできない。適当に「アルゴリズム　本」で検索すると、アフィブログで入門者にもこの２つを推す記事が多いけど、マジで罪深いと思う。挫折してアルゴリズム嫌いが増えるやろ。
 
-<!-- あり -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00CY9256C%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/41oruV aJIL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00CY9256C%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">プログラミングコンテストチャレンジブック [第2版]　～問題解決のアルゴリズム活用力とコーディングテクニックを鍛える～</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<!-- 蟻 -->
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00CY9256C" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/41oruV+aJIL._SL160_.jpg" alt="" style="border: none;" /><br />プログラミングコンテストチャレンジブック [第 2 版]　～問題解決のアルゴリズム活用力とコーディングテクニックを鍛える～</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!--  -->
 
 <!-- 螺旋 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00U5MVXZO%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51GbST65OIL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00U5MVXZO%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">プログラミングコンテスト攻略のためのアルゴリズムとデータ構造</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00U5MVXZO" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51GbST65OIL._SL160_.jpg" alt="" style="border: none;" /><br />プログラミングコンテスト攻略のためのアルゴリズムとデータ構造</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!--  -->
 
 ちなみに新しいアルゴリズム本として『問題解決力を鍛える！アルゴリズムとデータ構造』も登場して、[IT エンジニア本大賞 2021](https://www.shoeisha.co.jp/campaign/award/2021/result)も取ってる良本みたい。
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08PV83L3N%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51TtkYDXZFL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08PV83L3N%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">問題解決力を鍛える！アルゴリズムとデータ構造 (ＫＳ情報科学専門書)</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4065128447" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51OK2x1LvbL._SL160_.jpg" alt="" style="border: none;" /><br />問題解決力を鍛える!アルゴリズムとデータ構造 (KS 情報科学専門書)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!--  -->
 
 こっちも今、読んでる途中だけど難易度・順番的に下記の順番で読むほうが良さそう。
@@ -118,6 +123,7 @@ Python でのコードレベルでの説明もあるので、非エンジニア�
 アルゴリズムを勉強したいなーと思ってるエンジニアに最初の１冊目としてはかなりおすすめでした。
 
 <!-- amazon -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/61bXMHbyv3L._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">なっとく！アルゴリズム</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/61bXMHbyv3L._SL160_.jpg" alt="" style="border: none;" /><br />なっとく！アルゴリズム</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!--  -->

@@ -28,7 +28,7 @@ word:
 
 ※ 自分の体験談・一般論で書きますが、SIer 業界は幅広いので例外も存在します。
 
-※ SE＝システムエンジニア、でSIer系の話です。
+※ SE ＝システムエンジニア、で SIer 系の話です。
 
 ## そもそも、なんで SIer は「つまらない」のか？
 
@@ -101,7 +101,7 @@ SIer 業界自体がすでに古い体質のため、チャレンジしにくい
 
 ### 【案 ①】今の現場で頑張る
 
-SIerでSEとして、今の現場で頑張る方向です。
+SIer で SE として、今の現場で頑張る方向です。
 
 具体的には「職場の中で、何かしらのジャンルで一番になること」を目指す方向です。
 
@@ -121,22 +121,19 @@ SIerでSEとして、今の現場で頑張る方向です。
 
 「何を頑張るか？」は、自分で考えてみるのが良いかと思います。
 
-個人的には、上流工程ならExcelなどを使いこなすようになるし、下流工程ならエンジニアリングに詳しくなるよう頑張るかと思います。
+個人的には、上流工程なら Excel などを使いこなすようになるし、下流工程ならエンジニアリングに詳しくなるよう頑張るかと思います。
 
 <!-- アフリィエイト -->
 <div style="display: flex; flex-direction:row;">
 <div style="flex:1">
 <!-- Excel 最強の教科書 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4797388706%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51K5WOXW7yL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4797388706%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">Excel 最強の教科書[完全版]――すぐに使えて、一生役立つ「成果を生み出す」超エクセル仕事術</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥1,738<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:26時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01MYC8LPQ" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51U6KUG6tyL._SL160_.jpg" alt="" style="border: none;" /><br />Excel 最強の教科書［完全版］――すぐに使えて、一生役立つ「成果を生み出す」超エクセル仕事術</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 <!-- Excel 最強の教科書 -->
 </div>
+
 <div style="flex:1">
 <!-- リーダブルコード -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;">
-<tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; ">
-<a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873115655%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51MgH8Jmr3L._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873115655%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック (Theory in practice)</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥2,640<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 19:16時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873115655" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51MgH8Jmr3L._SL160_.jpg" alt="" style="border: none;" /><br />リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック (Theory in practice)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 <!-- リーダブルコード -->
 </div>
 </div>
@@ -156,8 +153,9 @@ SIerでSEとして、今の現場で頑張る方向です。
 
 <!-- アフリィエイト -->
 <!-- Python本 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822292274%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51bSKnQ20lL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822292274%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">独学プログラマー Python言語の基本から仕事のやり方まで</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥2,420<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:29時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822292274" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/5166WuMMdmS._SL160_.jpg" alt="" style="border: none;" /><br />独学プログラマー Python 言語の基本から仕事のやり方まで</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!-- /Python本 -->
 
 <!-- プログラミングスクール -->
@@ -181,15 +179,8 @@ IT パスポートは 1 週間ほど、適当に参考書を見てれば余裕�
 <div style="display: flex; flex-direction:row;">
 <div style="flex:1">
 <!-- ITパスポート本1 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F429711013X%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51IPWBEN97L._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F429711013X%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">令和02年 イメージ&クレバー方式でよくわかる 栢木先生のITパスポート教室</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥1,738<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:57時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4297117142" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51ll40bug8L._SL160_.jpg" alt="" style="border: none;" /><br />令和03年 イメージ&amp;クレバー方式でよくわかる 栢木先生のITパスポート教室 (情報処理技術者試験)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 <!-- /ITパスポート本1 -->
-</div>
-<div style="flex:1">
-<!-- ITパスポート本2 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4297110210%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51Mw6CdJzyL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4297110210%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">キタミ式イラストIT塾 基本情報技術者 令和02年 (情報処理技術者試験)</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥2,178<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:59時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
-<!-- /ITパスポート本2 -->
 </div>
 </div>
 <!-- /アフリィエイト -->
@@ -265,59 +256,3 @@ SIer の「つまらない」仕事から、脱出する手段。
 - 【案 ③】キャリアを変えて頑張る
 
 この中からでも、少しでも興味があるものがあれば、「今」行動に移すことだけをおすすめします。
-
-<!-- ----------------------------------------------------------------------- -->
-<!-- アフリィエイト -->
-<div style="display: flex; flex-direction:row;">
-<div style="flex:1">
-<!-- Excel 最強の教科書 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4797388706%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51K5WOXW7yL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4797388706%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">Excel 最強の教科書[完全版]――すぐに使えて、一生役立つ「成果を生み出す」超エクセル仕事術</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥1,738<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:26時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
-<!-- Excel 最強の教科書 -->
-</div>
-<div style="flex:1">
-<!-- リーダブルコード -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;">
-<tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; ">
-<a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873115655%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51MgH8Jmr3L._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873115655%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック (Theory in practice)</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥2,640<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 19:16時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
-<!-- リーダブルコード -->
-</div>
-</div>
-<!-- アフリィエイト -->
-
-<!-- アフリィエイト -->
-<div style="width:100%; display:flex; justify-content:center">
-<a href="https://px.a8.net/svt/ejp?a8mat=35M24J+383JQQ+4AU6+61Z81" rel="nofollow">
-<img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190825795195&wid=001&eno=01&mid=s00000020067001017000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=35M24J+383JQQ+4AU6+61Z81" alt="">
-</div>
-<!-- /アフリィエイト -->
-
-
-<!-- アフリィエイト -->
-<div style="display: flex; flex-direction:row;">
-<div style="flex:1">
-<!-- ITパスポート本1 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F429711013X%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51IPWBEN97L._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F429711013X%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">令和02年 イメージ&クレバー方式でよくわかる 栢木先生のITパスポート教室</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥1,738<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:57時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
-<!-- /ITパスポート本1 -->
-</div>
-<div style="flex:1">
-<!-- ITパスポート本2 -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4297110210%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51Mw6CdJzyL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4297110210%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">キタミ式イラストIT塾 基本情報技術者 令和02年 (情報処理技術者試験)</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥2,178<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2019/12/20 22:59時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
-<!-- /ITパスポート本2 -->
-</div>
-</div>
-<!-- /アフリィエイト -->
-
-<!-- プログラミングスクール -->
-<div style="width:100%; display:flex; justify-content:center">
-<a href="https://px.a8.net/svt/ejp?a8mat=35M24J+39VUK2+4B5K+5ZMCH" rel="nofollow">
-<img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=190825795198&wid=001&eno=01&mid=s00000020108001006000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=35M24J+39VUK2+4B5K+5ZMCH" alt="">
-</div>
-<!-- /プログラミングスクール -->
-
-<!--  -->

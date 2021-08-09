@@ -19,11 +19,12 @@ word:
 
 この記事は**「『Elasticsearch 実践ガイド』を読んだ内容の概要まとめ・レビュー」の記事**です
 
-結論は、**Elasticsearchについてネット記事を読むくらいなら、１日くらい使ってこの本をざっと読んだほうが良いです**。
+結論は、**Elasticsearch についてネット記事を読むくらいなら、１日くらい使ってこの本をざっと読んだほうが良いです**。
 
 <!-- アフィリエイト -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4295003913%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51YGeSqhovL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4295003913%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">Elasticsearch実践ガイド (impress top gear)</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥3,080<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2020/4/26 21:49時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07DN87LQV" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51D+VfIF6rL._SL160_.jpg" alt="" style="border: none;" /><br />Elasticsearch 実践ガイド impress top gear シリーズ</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!-- // アフィリエイト -->
 
 では、見ていきます。
@@ -43,8 +44,8 @@ Elasticsearch を使った経験がなかったんですが導入・設計の仕
 
 個人的には、下記のような人におすすめできます。
 
-- これからElasticsearchを使う人
-- すでに動いているElasticsarchをなんとなく使ってる人
+- これから Elasticsearch を使う人
+- すでに動いている Elasticsarch をなんとなく使ってる人
 
 レビューを含めながら理由なども説明していきますね。
 
@@ -66,7 +67,7 @@ Elasticsearch の技術自体が若いこともあり、ネット記事だと体
 
 ### バージョンが最新ではない
 
-2020/4/26時点でこの本は6.x系ですが、最新は7.x系です。
+2020/4/26 時点でこの本は 6.x 系ですが、最新は 7.x 系です。
 
 なので、バージョンが最新に追従しきれてないです。とはいえ、致命的なレベルで古くはないので、問題ないかと思います。
 
@@ -75,6 +76,7 @@ Elasticsearch の技術自体が若いこともあり、ネット記事だと体
 ### わかりやすい
 
 スラスラ読むことが出来ました。
+
 - 「説明が足らない」
 - 「説明順序がおかしい」
 - 「言っている意味がわからない」
@@ -93,10 +95,10 @@ Elasticsearch の技術自体が若いこともあり、ネット記事だと体
 
 今回は、Elasticsearch を初めて導入するケースだったのでかなりためになりました。すでに運用中のケースだとしても「今、動いているシステムがベストプラクティスに沿っている？」の確認も踏まえて一読するのは良いかと思います。
 
-
 <!-- アフィリエイト -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; "><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4295003913%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51YGeSqhovL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4295003913%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">Elasticsearch実践ガイド (impress top gear)</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥3,080<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2020/4/26 21:49時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07DN87LQV" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51D+VfIF6rL._SL160_.jpg" alt="" style="border: none;" /><br />Elasticsearch 実践ガイド impress top gear シリーズ</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!-- // アフィリエイト -->
 
 以上です。これだけの内容を０ベースから１日で理解できるので助かりました。

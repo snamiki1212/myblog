@@ -22,8 +22,9 @@ word:
 では、見ていきます。
 
 <!-- アフィ -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51QSqJm2ZOL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">現場で役立つシステム設計の原則 ～変更を楽で安全にするオブジェクト指向の実践技法</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51QSqJm2ZOL._SL160_.jpg" alt="" style="border: none;" /><br />現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
 <!-- Amazon -->
 
 ## 目次
@@ -145,5 +146,7 @@ OOP、DDD、CQRS、イベントソーシングなどの解説が広くされて�
 ただ、DDD においていくつも本を読んだ上で先輩がおすすめしてきた本、とのことだったので期待していたけど、個人的には[ボトムアップドメイン駆動設計 │ nrslib](https://nrslib.com/bottomup-ddd/)のほうが、「DDD の理解」という１点ではしやすかったので、やや残念。
 
 <!-- アフィ -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; "><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51QSqJm2ZOL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">現場で役立つシステム設計の原則 ～変更を楽で安全にするオブジェクト指向の実践技法</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥3,072<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2020/6/15 01:00時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51QSqJm2ZOL._SL160_.jpg" alt="" style="border: none;" /><br />現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+
+<!--  -->

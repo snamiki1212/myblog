@@ -39,11 +39,11 @@ slug: qiita-adventcalendar-2018
 
 - ② Enum を学ぶ
 
-- ③ 作りたいものを作る（やりながらPhoenix学ぶ
+- ③ 作りたいものを作る（やりながら Phoenix 学ぶ
 
 ### ① 基本構文を学ぶ
 
-一般的な構文として、ifやパイプ演算子など。rubyとシンタックスは近いのと、Elixir自体がわかりやすいシンタックスなので学習コストはかなり低い。
+一般的な構文として、if やパイプ演算子など。ruby とシンタックスは近いのと、Elixir 自体がわかりやすいシンタックスなので学習コストはかなり低い。
 
 具体的には、下記を中心に読みながら iex で実際に手を動かす。（iex は Elixir の REPL）
 
@@ -57,7 +57,7 @@ slug: qiita-adventcalendar-2018
 Elixir によるアプリケーションは**Enum によるデータ変換がかなりの比率が書かれるケースが多い**と思う。
 なので Enum については最初のころに重点的に学習しておくのは効率的だと思う。
 
-Enumとは、Elixirにビルトインで提供されている配列データを扱う高階関数。
+Enum とは、Elixir にビルトインで提供されている配列データを扱う高階関数。
 具体的には例えば下記とか。
 
 ```elixir
@@ -65,13 +65,13 @@ iex(1)> Enum.map([1,2,3], fn x -> x * x end)
 [1, 4, 9]
 ```
 
-今どきならどの言語にもこの手のライブラリがあると思う。自分は高階関数を使うのがElixirのときが最初だったので、高階関数自体になれるのに時間がかかった。
+今どきならどの言語にもこの手のライブラリがあると思う。自分は高階関数を使うのが Elixir のときが最初だったので、高階関数自体になれるのに時間がかかった。
 
 Enum の学び方については別記事があるので詳細はこちらを参照。
 
 [【Elixir】Enum を完全に理解する | 効率的な Enum の学習方法・暗黙のルール・意識すべきこと](elixir-enum-master)
 
-### ③ 作りたいものを作る（やりながらPhoenix学ぶ
+### ③ 作りたいものを作る（やりながら Phoenix 学ぶ
 
 これ以降は Elixir を使う理由によって学習ロードマップが大きく変わる。ただ、ガンガン手を動かすのが正義だと思う。
 
@@ -79,19 +79,18 @@ Enum の学び方については別記事があるので詳細はこちらを参
 
 座学で学ぶよりもモノを作りながら覚えるほうが効率が良いので、作る過程で Phoenix の使い方は覚えていく。
 
-今ならYouTubeにPhoenixのチュートリアルとかがありそうなので、これとかも良さそう（ちゃんと見てないので雰囲気ですが）
+今なら YouTube に Phoenix のチュートリアルとかがありそうなので、これとかも良さそう（ちゃんと見てないので雰囲気ですが）
 
 [Phoenix Framework Tutorial Part 1 (elixir part 6) - YouTube](https://www.youtube.com/watch?v=irDC1nWKhZ8)
 
-他にもUdemyにもありそうなので、とりあえず動画見ながら手を動かすのも良さそう。動画見ないで、普通に自分で作ってもOKだとも思うが。
+他にも Udemy にもありそうなので、とりあえず動画見ながら手を動かすのも良さそう。動画見ないで、普通に自分で作っても OK だとも思うが。
 
 ---
 
-というわけで、だいたいは3STEPでOKかと思う話です。
-①〜②は割とすぐに終わり、③が長く何回も行うのが良いかと思う。
+というわけで、だいたいは 3STEP で OK かと思う話です。
+①〜② は割とすぐに終わり、③ が長く何回も行うのが良いかと思う。
 
-
-## Erlang系の知識について
+## Erlang 系の知識について
 
 ### 最初は Erlang のアクターモデルに手を出さない？
 
@@ -132,14 +131,14 @@ Laravel から Elixir に来たので Elixir らしさや関数型らしさな�
 
 自分が個人的に for を使うべきではない理由は下記。
 
-- 👎①拡張性時の可読性が悪い
+- 👎① 拡張性時の可読性が悪い
 - 👎②Enum でも表現できる
 - 👎③for 構文を知らないとわかりにくい
 
 逆に for を使うと良いと思う場所は下記。
 
-- 👍 ④多重ネスト構造
-- 👍 ⑤絶対に処理が拡張されない場所
+- 👍 ④ 多重ネスト構造
+- 👍 ⑤ 絶対に処理が拡張されない場所
 
 ただ、「コードは必ず変更される」の思想で考えるとロジックの部分ではやはり for は使わないほうが良いと思う。
 
@@ -203,7 +202,7 @@ with は「case のネストが発生する場面」以外では使わないで�
 
 ### if/case 内のブロックで束縛しない
 
-（追記：このシンタックスはRubyからの系譜なのを後で知った。関数型は関係ないじゃん、というセルフツッコミを入れておく）
+（追記：このシンタックスは Ruby からの系譜なのを後で知った。関数型は関係ないじゃん、というセルフツッコミを入れておく）
 
 PR 指摘でかなりの回数「if/case の中で束縛しないで！」の指摘をしたので初心者あるあるだと思う。
 
@@ -260,7 +259,7 @@ Laravel 作者の TaylorOtwell 先生が
 
 Enum の関数の命名に関する暗黙ルールを知っておくと Enum について効率的に学べたので、最初に知りたかった。後述していく。
 
-### Enum共通ルール：サフィックスルール
+### Enum 共通ルール：サフィックスルール
 
 Enum の関数名に下記のサフィックスがついているケースがある。
 一部に例外ぽい動きもあるが、大抵は**メインの関数の動きに対して下記の挙動が追加される**。
@@ -271,7 +270,7 @@ Enum の関数名に下記のサフィックスがついているケースがあ
 
 そのため、サフィックスを元に処理が大体推測できるし、記憶もしやすい。
 
-### Enum共通ルール：複合 Enum 関数
+### Enum 共通ルール：複合 Enum 関数
 
 Enum には、**複数の Enum 関数を１つにまとめて提供されている関数がある**。
 例えば、`Enum.map_join/3`は「`Enum.map/2`のあとに`Enum.join/2`を行う Enum 関数」だ。
@@ -298,15 +297,13 @@ Enum には、**複数の Enum 関数を１つにまとめて提供されてい�
 <!--  -->
 <div style="flex:1">
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4865940596%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/51OuxCyQM1L._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4865940596%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">関数型プログラミングの基礎 JavaScriptを使って学ぶ</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥3,080<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2020/1/7 11:52時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01MQG41Y0" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51LMI7-1l9L._SL160_.jpg" alt="" style="border: none;" /><br />関数型プログラミングの基礎</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 <!--  -->
 </div>
 
 <div style="flex:1">
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px 10px 0pt; "><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873116600%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://images-fe.ssl-images-amazon.com/images/I/414qGlNpcHL._SS80_.jpg" /></a></td></tr><tr style="border-style:none;"><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873116600%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">JavaScriptで学ぶ関数型プログラミング</a></p><p style="color:#cc0000; font-weight:bold; margin-top:10px;">新品価格<br/>￥3,300<span style="font-weight:normal;">から</span><br/><span style="font-size:10px; font-weight:normal;">(2020/1/7 11:53時点)</span></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873116600" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/414qGlNpcHL._SL160_.jpg" alt="" style="border: none;" /><br />JavaScriptで学ぶ関数型プログラミング</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 <!--  -->
 </div>
 
