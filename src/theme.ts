@@ -1,7 +1,4 @@
-import {color} from '../data/color';
-
 export const theme = {
-  color,
   layout: {
     marginVertical: 20,
     autherAvatorSizeNum: 74,

@@ -29,5 +29,5 @@ export const Layout: React.FC = ({children}) => {
 
 const BodyWrapper = styled.div`
   opacity: 0.99; // z-indexがマイナスの要素よりも背面に持っていきたいので。(README: https://philipwalton.com/articles/what-no-one-told-you-about-z-index/ )
-  background-color: ${(props) => props.theme.color.baseLight};
+  background-color: var(--base-light);
 `;

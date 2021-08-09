@@ -24,9 +24,9 @@ const Wrapper = styled.span<{containerStyle: any}>`
 `;
 
 const _Icon = styled(Icon)`
-  color: ${props => props.theme.color.grayDark};
-`
+  color: var(--gray-dark);
+`;
 
 const Date = styled.span`
-  color: ${props => props.theme.color.grayDark};
+  color: var(--gray-dark);
 `;

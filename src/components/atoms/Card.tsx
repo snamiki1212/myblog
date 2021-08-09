@@ -7,6 +7,6 @@ export const Card: React.FC = ({children}) => {
 
 const Container = styled.div`
   border-radius: 10px;
-  background-color: ${(props) => props.theme.color.white};
+  background-color: var(--white);
   box-shadow: 2px 2px 10px lightgrey;
 `;

@@ -43,7 +43,7 @@ const Box = styled.div`
 
 const SubTitle = styled.div`
   font-family: ${(props) => props.theme.fontFamily.primary};
-  color: ${(props) => props.theme.color.primaryVivid};
+  color: var(--vivid1);
   font-weight: bold;
   font-family: ${(props) => props.theme.fontFamily.logoEn};
 `;
@@ -52,13 +52,13 @@ const InternalLink = styled(Link)`
   margin-top: 7px;
   font-size: 20px;
   font-family: ${(props) => props.theme.fontFamily.primary};
-  color: ${(props) => props.theme.color.baseLight};
+  color: var(--base-light);
   border-bottom: 1px solid transparent;
 
   transition: 0.5s;
   &:hover {
-    color: ${(props) => props.theme.color.primaryVivid};
-    border-color: ${(props) => props.theme.color.primaryVivid};
+    color: var(--vivid1);
+    border-color: var(--vivid1);
     transition: 0.5s;
   }
 `;
@@ -67,13 +67,13 @@ const ExternalLink = styled.a`
   margin-top: 7px;
   font-size: 20px;
   font-family: ${(props) => props.theme.fontFamily.primary};
-  color: ${(props) => props.theme.color.baseLight};
+  color: var(--base-light);
   border-bottom: 1px solid transparent;
 
   transition: 0.5s;
   &:hover {
-    color: ${(props) => props.theme.color.primaryVivid};
-    border-color: ${(props) => props.theme.color.primaryVivid};
+    color: var(--vivid1);
+    border-color: var(--vivid1);
     transition: 0.5s;
   }
 `;

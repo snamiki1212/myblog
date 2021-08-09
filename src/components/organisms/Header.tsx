@@ -13,9 +13,9 @@ export const Header: React.FC = () => {
 const Wrapper = styled.div`
   background: linear-gradient(
     145deg,
-    ${(props) => props.theme.color.baseDark},
-    ${(props) => `${props.theme.color.baseDark}CC`},
-    ${(props) => props.theme.color.baseDark}
+    var(--base-dark),
+    var(--base-dark-CC),
+    var(--base-dark)
   );
   display: flex;
   justify-content: center;

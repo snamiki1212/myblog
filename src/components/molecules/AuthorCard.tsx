@@ -69,6 +69,6 @@ const ProfileLinkText = styled.span`
   & :hover {
     opacity: 1;
     transition: 0.2s;
-    background-color: ${(props) => props.theme.color.baseLight};
+    background-color: var(--base-light);
   }
 `;
