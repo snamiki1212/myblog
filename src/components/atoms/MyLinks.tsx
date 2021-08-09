@@ -36,7 +36,7 @@ const InnerWrapper = styled.span`
 
   & :hover {
     transition: 0.3s;
-    background-color: ${(props) => props.theme.color.baseLight};
+    background-color: var(--base-light);
     transform: scale(1.1);
   }
 `;

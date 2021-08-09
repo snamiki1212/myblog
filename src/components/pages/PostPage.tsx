@@ -84,11 +84,7 @@ const DateWrapper = styled.div`
 
 const HeaderWrapper = styled.div`
   width: 100%;
-  background: linear-gradient(
-    145deg,
-    ${(props) => props.theme.color.primaryVivid},
-    ${(props) => props.theme.color.baseDark}
-  );
+  background: linear-gradient(145deg, var(--vivid1), var(--base-dark));
 `;
 
 const Header = styled(Image)`

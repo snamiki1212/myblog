@@ -29,7 +29,7 @@ export const NaiveAnchor: React.FC = (props: any) => {
 
 const StyledA = styled.a`
   text-decoration: none;
-  color: ${(props) => props.theme.color.link};
+  color: var(--vivid2);
   &:hover {
     border-bottom: solid 1px;
   }

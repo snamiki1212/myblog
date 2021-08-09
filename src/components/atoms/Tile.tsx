@@ -14,9 +14,7 @@ const Parent = styled.div<{size: number}>`
   min-width: ${({size}) => `${size}px`};
   min-height: ${({size}) => `${size}px`};
   border-radius: 10px;
-  background: ${(props) =>
-    props.theme.color
-      .baseDark}B3; /* NOTE: https://stackoverflow.com/questions/15852122/hex-transparency-in-colors */
+  background: var(--base-dark-B3);
 `;
 
 const ChildContent = styled.div`

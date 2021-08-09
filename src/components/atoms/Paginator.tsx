@@ -34,24 +34,24 @@ const BaseLink = styled(Link)`
   text-decoration: none;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid ${(props) => props.theme.color.baseDark};
+  border: 1px solid var(--base-dark);
 `;
 
 const UnselectedLink = styled(BaseLink)`
-  color: ${(props) => props.theme.color.baseDark};
-  background: ${({theme}) => theme.color.baseLight};
+  color: var(--base-dark);
+  background: var(--base-light);
 
   transition: 0.3s;
   &:hover {
-    color: ${(props) => props.theme.color.baseLight};
-    background: ${(props) => props.theme.color.baseDark};
+    color: var(--base-light);
+    background: var(--base-dark);
     transform: scale(1.2);
   }
 `;
 
 const SelectedLink = styled(BaseLink)`
-  color: ${({theme}) => theme.color.white};
-  background: ${({theme}) => theme.color.baseDark};
+  color: var(--white);
+  background: var(--base-dark);
 `;
 
 const Wrapper = styled.div`

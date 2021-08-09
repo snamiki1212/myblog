@@ -20,7 +20,7 @@ export const HeadNav: React.FC = () => {
 };
 
 const Wrapper = styled.div`
-  max-width: 960px;
+  max-width: var(--content-width);
   width: 100%;
 `;
 
@@ -44,11 +44,11 @@ const Image = styled.img`
 `;
 
 const BlogTitle = styled.span`
-  color: ${(props) => props.theme.color.primaryVivid};
-  font-family: ${(props) => props.theme.fontFamily.logoEn};
+  color: var(--vivid1);
+  font-family: var(--ff-logoEn);
   font-size: ${(props) => props.theme.fontSize.tmp_3}px;
   & :hover,
   & :active {
-    color: ${(props) => props.theme.color.primaryVivid};
+    color: var(--vivid1);
   }
 `;

@@ -12,7 +12,7 @@ export const Subtitle: React.FC = ({children}) => {
 const Text = styled.div`
   font-size: 30px;
   letter-spacing: 0.1rem;
-  color: ${(props) => props.theme.color.baseLight};
+  color: var(--base-light);
 `;
 
 const Wrapper = styled.div`
@@ -22,9 +22,9 @@ const Wrapper = styled.div`
   padding: 30px;
   background: linear-gradient(
     145deg,
-    ${(props) => props.theme.color.baseDark},
-    ${(props) => props.theme.color.baseDark}CC,
-    ${(props) => props.theme.color.baseDark}
+    var(--base-dark),
+    var(--base-dark-CC),
+    var(--base-dark)
   );
   margin-top: 20px;
 `;
