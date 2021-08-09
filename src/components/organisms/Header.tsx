@@ -9,7 +9,9 @@ export const Header: React.FC = () => {
     <Wrapper>
       <Inner>
         <HeadNav />
-        <SearchBox searchEngineId={searchEngineId} />
+        <RenderOnlyPC>
+          <SearchBox searchEngineId={searchEngineId} />
+        </RenderOnlyPC>
       </Inner>
     </Wrapper>
   );
@@ -32,4 +34,10 @@ const Inner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const RenderOnlyPC = styled.div`
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
