@@ -4,9 +4,13 @@ import dayjs from 'dayjs';
 import config from '../../../data/SiteConfig';
 import {Icon} from '../atoms';
 
-type Props = {date: Date; containerStyle?: any, innerStyle?: any};
+type Props = {date: Date; containerStyle?: any; innerStyle?: any};
 
-export const UpdatedAt: React.FC<Props> = ({date, containerStyle = {}, innerStyle ={}}) => {
+export const UpdatedAt: React.FC<Props> = ({
+  date,
+  containerStyle = {},
+  innerStyle = {},
+}) => {
   const formatedDate = dayjs(date).format(config.dateFormat);
 
   return (
@@ -21,6 +25,9 @@ const Wrapper = styled.span<{containerStyle: any}>`
   display: flex;
   align-items: center;
   ${({containerStyle}) => `${{...containerStyle}}`};
+  gap: 0.2rem;
 `;
 
-const Date = styled.span``;
+const Date = styled.span`
+  letter-spacing: 0.02rem;
+`;
