@@ -127,13 +127,17 @@ SIer で SE として、今の現場で頑張る方向です。
 <div style="display: flex; flex-direction:row;">
 <div style="flex:1">
 <!-- Excel 最強の教科書 -->
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01MYC8LPQ" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51U6KUG6tyL._SL160_.jpg" alt="" style="border: none;" /><br />Excel 最強の教科書［完全版］――すぐに使えて、一生役立つ「成果を生み出す」超エクセル仕事術</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!-- Excel 最強の教科書 -->
 </div>
 
 <div style="flex:1">
 <!-- リーダブルコード -->
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4873115655" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51MgH8Jmr3L._SL160_.jpg" alt="" style="border: none;" /><br />リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック (Theory in practice)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!-- リーダブルコード -->
 </div>
 </div>
@@ -157,14 +161,6 @@ SIer で SE として、今の現場で頑張る方向です。
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822292274" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/5166WuMMdmS._SL160_.jpg" alt="" style="border: none;" /><br />独学プログラマー Python 言語の基本から仕事のやり方まで</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
 <!-- /Python本 -->
-
-<!-- プログラミングスクール -->
-<div style="width:100%; display:flex; justify-content:center">
-<a href="https://px.a8.net/svt/ejp?a8mat=35M24J+39VUK2+4B5K+5ZMCH" rel="nofollow">
-<img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=190825795198&wid=001&eno=01&mid=s00000020108001006000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=35M24J+39VUK2+4B5K+5ZMCH" alt="">
-<div>
-<!-- /プログラミングスクール -->
 <!-- /アフリィエイト -->
 
 もし、上流工程を中心に仕事をしているなら、今後のことを考えると資格の取得がキャリアに繋がりやすいかと思います。

@@ -48,9 +48,9 @@ word:
 ### GALOPAR: アイマッサージャー
 
 <!--  -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhikarien%2F4934404276821%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fhikarien%2Fi%2F10004333%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/hikarien/cabinet/r_1604321013/4934404276821.jpg?_ex=300x300" alt="" style="border: none;" /><br />【2020 年夏デビュー】GALOPAR アイウォーマー 最新グラフェン加熱技術 目元エステ 液晶ディスプレイ Bluetooth USB 充電 目もと 男女</a><img src="//i.moshimo.com/af/i/impression?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 **今年、トップクラスに買ってよかったものが、この GALOPAR のアイマッサージャーです。**
@@ -95,17 +95,17 @@ VR ゴーグルのような見た目をしていますが、**「超高性能な
 微電流が流れる EMS というものがはじめてだったこともあり、最初の頃は「うん？気持ちいいのか、これ？」と思ってましたが、しばらくして慣れてくると、なんだか**クセになる気持ちよさで今ではお気に入りの商品の１つ**になってます。
 
 <!--  -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4580058720175%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F12757952%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/4821/00000007372038_a01.jpg?_ex=300x300" alt="" style="border: none;" /><br />MYTREX 　マイトレックス コードレス EMS ヒートネック MYTREX EMS HEAT NECK(マイトレックス イーエムエス ヒート ネック) MT-P-EHN19W【ネックマッサージャー　マッサージ器】</a><img src="//i.moshimo.com/af/i/impression?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 ### JINS モイスチャーメガネ
 
 <!--  -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fjins-ec%2Fmst-19a-001%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fjins-ec%2Fi%2F10007043%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_mall/jins-ec/cabinet/item/201911/mst-19a-001_2.jpg?_ex=300x300" alt="" style="border: none;" /><br />【JINS MOISTURE】-JINS（ジンズ）</a><img src="//i.moshimo.com/af/i/impression?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 **ドライアイがメチャクチャ辛くて保湿したい！って人におすすめなのが「JINS モイスチャーメガネ」です**。
@@ -155,15 +155,15 @@ VR ゴーグルのような見た目をしていますが、**「超高性能な
 まずは、モバイルバッテリーの組み合わせは下記のものです。
 
 <!-- モバブ -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanker%2Fa1621011%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanker%2Fi%2F10000426%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//thumbnail.image.rakuten.co.jp/@0_gold/anker/product-images/a1621/images/12.jpg?_ex=300x300" alt="" style="border: none;" /><br />急速充電器 Anker PowerCore Fusion 5000 (5000mAh モバイルバッテリー USB 急速充電器 AC アダプター)iPhone / iPad / Xperia / Android 他スマホ対応【急速充電技術 PowerIQ 搭載 / 折畳式プラグ搭載 / PSE 認証済】 3A 出力</a><img src="//i.moshimo.com/af/i/impression?a_id=1575725&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 <!-- ケーブル：１ -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07GSTGGVM" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/31KQgIYJv-L._SL160_.jpg" alt="" style="border: none;" /><br />cheero 2in1 Retractable USB Cable with Type-C &amp; micro USB ホワイト × ブルー 70cm</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 <!-- ケーブル２ -->
@@ -174,15 +174,15 @@ VR ゴーグルのような見た目をしていますが、**「超高性能な
 次に、充電器のセットは下記の通りです。
 
 <!-- LavPower90W -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB099RYJDFY" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/315Sq5K3o8L._SL160_.jpg" alt="" style="border: none;" /><br />PD 充電器 Type C 急速充電器 90W【GaN (窒化ガリウム)採用/2 ポート/折畳式/PD 対応/PSE 認証済】iPhone、Galaxy、iPad Pro、MacBook Pro その他 USB-C 機器対応 ホワイト</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 <!-- TypeCケーブル -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB089314NZS" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/31H+to4AhbL._SL160_.jpg" alt="" style="border: none;" /><br />オウルテック 超タフ 巻取り Type-C(USB-C) to Type-C(USB-C)ケーブル PD 対応 2 年保証 100cm ブラック/レッド OWL-CBRKCC10-BKRE</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 カナダへもこのセットだけを持っていってますが、現状だと十分な機能性です。

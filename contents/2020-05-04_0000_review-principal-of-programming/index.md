@@ -20,8 +20,9 @@ word:
 結論は、リーダブルコードに次ぐ現代の新しいエンジニア向けの教科書だと思っていて１年目の時点で読むべきです。
 
 <!-- アフィ -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB071V7MY82" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51bTdfRgZOL._SL160_.jpg" alt="" style="border: none;" /><br />プリンシプル オブ プログラミング 3 年目までに身につけたい 一生役立つ 101 の原理原則</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 
 <!-- /アフィ -->
 
@@ -179,7 +180,9 @@ word:
 
 <!-- アフィ -->
 
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB071V7MY82" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51bTdfRgZOL._SL160_.jpg" alt="" style="border: none;" /><br />プリンシプル オブ プログラミング 3 年目までに身につけたい 一生役立つ 101 の原理原則</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 
 <!-- /アフィ -->
 
@@ -230,7 +233,7 @@ word:
 年次が変わって読み直すたびに、自分の理解がより深くなっていくことを実感させられる良い本だと思います。
 
 <!-- アフィ -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB071V7MY82" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51bTdfRgZOL._SL160_.jpg" alt="" style="border: none;" /><br />プリンシプル オブ プログラミング 3 年目までに身につけたい 一生役立つ 101 の原理原則</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!-- /アフィ -->

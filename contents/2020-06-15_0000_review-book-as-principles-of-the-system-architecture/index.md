@@ -22,9 +22,9 @@ word:
 では、見ていきます。
 
 <!-- アフィ -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51QSqJm2ZOL._SL160_.jpg" alt="" style="border: none;" /><br />現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!-- Amazon -->
 
 ## 目次
@@ -146,7 +146,7 @@ OOP、DDD、CQRS、イベントソーシングなどの解説が広くされて�
 ただ、DDD においていくつも本を読んだ上で先輩がおすすめしてきた本、とのことだったので期待していたけど、個人的には[ボトムアップドメイン駆動設計 │ nrslib](https://nrslib.com/bottomup-ddd/)のほうが、「DDD の理解」という１点ではしやすかったので、やや残念。
 
 <!-- アフィ -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB073GSDBGT" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51QSqJm2ZOL._SL160_.jpg" alt="" style="border: none;" /><br />現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->

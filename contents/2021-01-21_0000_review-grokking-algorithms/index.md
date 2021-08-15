@@ -18,9 +18,9 @@ word:
 この記事は「**『なっとく！アルゴリズム』を読んだ結果の書評**」の記事です。
 
 <!-- amazon -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/61bXMHbyv3L._SL160_.jpg" alt="" style="border: none;" /><br />なっとく！アルゴリズム</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!-- //amazon -->
 
 では見ていきます。
@@ -78,23 +78,23 @@ Python でのコードレベルでの説明もあるので、非エンジニア�
 アルゴリズム本として２大有名な本として「蟻本」「螺旋本」があるけれども、入門者にはマジでおすすめできない。適当に「アルゴリズム　本」で検索すると、アフィブログで入門者にもこの２つを推す記事が多いけど、マジで罪深いと思う。挫折してアルゴリズム嫌いが増えるやろ。
 
 <!-- 蟻 -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00CY9256C" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/41oruV+aJIL._SL160_.jpg" alt="" style="border: none;" /><br />プログラミングコンテストチャレンジブック [第 2 版]　～問題解決のアルゴリズム活用力とコーディングテクニックを鍛える～</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 <!-- 螺旋 -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00U5MVXZO" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51GbST65OIL._SL160_.jpg" alt="" style="border: none;" /><br />プログラミングコンテスト攻略のためのアルゴリズムとデータ構造</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 ちなみに新しいアルゴリズム本として『問題解決力を鍛える！アルゴリズムとデータ構造』も登場して、[IT エンジニア本大賞 2021](https://www.shoeisha.co.jp/campaign/award/2021/result)も取ってる良本みたい。
 
 <!--  -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4065128447" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51OK2x1LvbL._SL160_.jpg" alt="" style="border: none;" /><br />問題解決力を鍛える!アルゴリズムとデータ構造 (KS 情報科学専門書)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
 
 こっちも今、読んでる途中だけど難易度・順番的に下記の順番で読むほうが良さそう。
@@ -125,7 +125,7 @@ Python でのコードレベルでの説明もあるので、非エンジニア�
 アルゴリズムを勉強したいなーと思ってるエンジニアに最初の１冊目としてはかなりおすすめでした。
 
 <!-- amazon -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/61bXMHbyv3L._SL160_.jpg" alt="" style="border: none;" /><br />なっとく！アルゴリズム</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->

@@ -134,6 +134,12 @@ DONE
   - この README
 - 上記以外の内容（gatsby-node、component）などもこの repo で管理しているが、それらは starter/master にて管理しているので、latest をこの repo の master に merge する運用にしてる。
 
+## MEMO: Affi
+
+- A8 から Moshimo Afi に変更中。
+- `affi.scss` で UI を整える。Style を当てるために container な className を指定する必要あり。
+  - e.g.) `<div class="affi-moshi-container">...<div>`
+
 ## LICENSE
 
 Don't use this code.

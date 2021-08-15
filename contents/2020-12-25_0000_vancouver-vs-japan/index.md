@@ -167,7 +167,7 @@ word:
 理由として、ネット記事ばかりだと、どうしてもパブリックな情報が少なくなるからです。自分のブログ記事みたいな情報は現地の生の声として生活感は理解できるけど、生活に必要な情報が抜けていたりします。その分、「るるぶ」みたいな総合情報誌を１つ買っておくと、こっちの滞在で「え、知らなかった、そのルール」みたいな致命的な無知を潰せられるので、おすすめしておきます。
 
 <!--  -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F453312755X" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/61BXc8MP+qL._SL160_.jpg" alt="" style="border: none;" /><br />るるぶカナダ (るるぶ情報版)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!--  -->
