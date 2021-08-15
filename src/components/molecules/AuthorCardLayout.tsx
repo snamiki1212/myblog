@@ -32,7 +32,7 @@ export const AuthorCardLayout: React.FC<Props> = ({
 export const avatorSizeNum = 60;
 
 const Wrapper = styled.div`
-  padding: 40px;
+  padding: 0.5rem 2rem;
   border-radius: 10px;
   background-color: var(--white);
   box-shadow: 2px 2px 10px lightgrey;
@@ -42,7 +42,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-rows:
     ${(props) => props.theme.layout.autherAvatorSizeNum / 2}px
-    ${(props) => props.theme.layout.autherAvatorSizeNum / 2}px 1fr 0.5fr;
+    ${(props) => props.theme.layout.autherAvatorSizeNum / 2}px 1fr auto;
   grid-template-columns: ${(props) =>
       `${props.theme.layout.autherAvatorSizeNum + 10}px`} 1fr;
 `;
@@ -58,7 +58,7 @@ const GridAvator = styled.div`
 const GridName = styled.div`
   grid-row: 1/2;
   grid-column: 2/3;
-  padding-left: 7px;
+  padding-left: 0.2rem;
   display: grid;
   align-items: center;
 `;
@@ -69,7 +69,7 @@ const GridSNS = styled.div`
 `;
 
 const GridDescription = styled.div`
-  padding: 1rem 0;
+  padding: 1rem 0 0.5rem 0;
   grid-row: 3/4;
   grid-column: 1/3;
 `;
@@ -78,5 +78,4 @@ const GridProfileLink = styled.div`
   grid-row: 4/5;
   grid-column: 1/3;
   margin: 0 auto;
-  padding: 7px 0;
 `;
