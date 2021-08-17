@@ -7,7 +7,7 @@ export const TocCard: React.FC<{toc: React.ReactNode}> = ({toc}) => {
   return (
     <Card>
       <Outer>
-        <Title>目次</Title>
+        <Title>🔎目次</Title>
         <Toc toc={toc} />
       </Outer>
     </Card>
