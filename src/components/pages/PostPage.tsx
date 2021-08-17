@@ -14,6 +14,7 @@ import {PostPageContext} from '../../../gatsby-node/types';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge, GatsbyImageData} from '../../types';
 import {fromHtmlToToc} from '../../transformer/htmlToToc';
+import {RecommendedBooks} from '../molecules/RecommendedBooks';
 
 type Props = {
   data: PostPageQuery;
@@ -67,9 +68,15 @@ export const PostPage: React.FC<Props> = ({data}) => {
         }
         toc={tocComponent}
         author={<AuthorCard />}
+        affiliates={
+          <RecommendedBooksWrapper>
+            <BottomSectionTitle>📚おすすめの書籍</BottomSectionTitle>
+            <RecommendedBooks />
+          </RecommendedBooksWrapper>
+        }
         suggestions={
           <div>
-            <SuggestionTitle>他の記事を読む</SuggestionTitle>
+            <BottomSectionTitle>💡他の記事を読む</BottomSectionTitle>
             <ArticleList postEdges={suggestions} />
           </div>
         }
@@ -91,6 +98,10 @@ const DateWrapper = styled.div`
   align-self: flex-end;
 `;
 
+const RecommendedBooksWrapper = styled.div`
+  padding-bottom: 5rem;
+`;
+
 const HeaderWrapper = styled.div`
   width: 100%;
   background: linear-gradient(145deg, var(--vivid1), var(--base-dark));
@@ -107,7 +118,7 @@ const Header = styled(Image)`
   mix-blend-mode: overlay;
 `;
 
-const SuggestionTitle = styled.div`
+const BottomSectionTitle = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
   font-family: var(--ff-primary);
