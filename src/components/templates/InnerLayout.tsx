@@ -5,12 +5,14 @@ type Props = {
   section: React.ReactNode;
   aside: React.ReactNode;
   asideVanishable?: React.ReactNode;
+  footer?: React.ReactNode;
 };
 
 export const InnerLayout: React.FC<Props> = ({
   section,
   aside,
   asideVanishable = undefined,
+  footer = undefined,
 }) => {
   return (
     <Container>
@@ -21,6 +23,7 @@ export const InnerLayout: React.FC<Props> = ({
           <AsideVanishable>{asideVanishable}</AsideVanishable>
         </Sticky>
       </AsideArea>
+      <FooterArea>{footer}</FooterArea>
     </Container>
   );
 };
@@ -58,4 +61,8 @@ const AsideVanishable = styled.div`
   @media (max-width: 700px) {
     display: none;
   }
+`;
+
+const FooterArea = styled.div`
+  grid-column: 1 / 3;
 `;

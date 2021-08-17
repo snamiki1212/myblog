@@ -85,7 +85,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
 
               <BookSectionLine>
                 <BookExplanationTittle>
-                  🛌就寝前のおすすめ本
+                  🛌寝る前のおすすめ本
                 </BookExplanationTittle>
                 <RecommendedBooks naiveHTMLs={PHILOSOPHY_BOOKS_HTML_LIST} />
               </BookSectionLine>
