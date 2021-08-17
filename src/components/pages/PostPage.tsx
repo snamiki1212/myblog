@@ -14,6 +14,7 @@ import {PostPageContext} from '../../../gatsby-node/types';
 import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge, GatsbyImageData} from '../../types';
 import {fromHtmlToToc} from '../../transformer/htmlToToc';
+import {RecommendedBooks} from '../molecules/RecommendedBooks';
 
 type Props = {
   data: PostPageQuery;
@@ -60,14 +61,25 @@ export const PostPage: React.FC<Props> = ({data}) => {
           </MarkdownWrapper>
         }
         meta={
-          <div>
+          <MetaWrapper>
             <TagList tags={post.tags} />
             <SocialLinks postNode={postNode} />
-          </div>
+          </MetaWrapper>
         }
         toc={tocComponent}
         author={<AuthorCard />}
-        suggestions={<ArticleList postEdges={suggestions} />}
+        affiliates={
+          <RecommendedBooksWrapper>
+            <BottomSectionTitle>📚おすすめの書籍</BottomSectionTitle>
+            <RecommendedBooks />
+          </RecommendedBooksWrapper>
+        }
+        suggestions={
+          <div>
+            <BottomSectionTitle>💡他の記事を読む</BottomSectionTitle>
+            <ArticleList postEdges={suggestions} />
+          </div>
+        }
       />
     </Layout>
   );
@@ -77,9 +89,17 @@ const MarkdownWrapper = styled.div`
   margin: 0 10px;
 `;
 
+const MetaWrapper = styled.div`
+  padding: 5rem 0;
+`;
+
 const DateWrapper = styled.div`
   margin: 10px;
   align-self: flex-end;
+`;
+
+const RecommendedBooksWrapper = styled.div`
+  padding-bottom: 5rem;
 `;
 
 const HeaderWrapper = styled.div`
@@ -97,6 +117,16 @@ const Header = styled(Image)`
   margin: 0 auto;
   mix-blend-mode: overlay;
 `;
+
+const BottomSectionTitle = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--ff-primary);
+  color: var(--base-dark);
+  padding-bottom: 0.5rem;
+`;
+
+// ---------------------------------------------------
 
 type PostPageQuery = {
   allMarkdownRemark: AllMarkdownRemark;

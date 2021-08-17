@@ -9,6 +9,7 @@ type Props = {
   content: React.ReactNode;
   meta: React.ReactNode;
   author: React.ReactNode;
+  affiliates: React.ReactNode;
   suggestions: React.ReactNode;
   toc: React.ReactNode;
 };
@@ -19,6 +20,7 @@ export const PostPageLayout: React.FC<Props> = ({
   content,
   meta,
   author,
+  affiliates,
   suggestions,
   toc,
 }) => {
@@ -32,6 +34,7 @@ export const PostPageLayout: React.FC<Props> = ({
               <Item>{date}</Item>
               <Item>{content}</Item>
               <Item>{meta}</Item>
+              <Item>{affiliates}</Item>
               <Item>{suggestions}</Item>
             </Flex>
           }

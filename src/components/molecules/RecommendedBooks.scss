@@ -1,0 +1,7 @@
+.recommended-book {
+  transition: transform 0.5s;
+  &:hover {
+    transition: transform 0.5s;
+    transform: scale(1.1);
+  }
+}
