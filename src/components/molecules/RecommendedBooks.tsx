@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import {RECOMMENDED_BOOKS_HTML} from '../../../data/affiliate';
 import './RecommendedBooks.scss';
 
-export function RecommendedBooks() {
-  if (RECOMMENDED_BOOKS_HTML.length <= 0) return <></>;
+type Props = {
+  naiveHTMLs: string[];
+};
+
+export function RecommendedBooks({naiveHTMLs}: Props) {
+  if (naiveHTMLs.length <= 0) return <></>;
   return (
     <Container>
-      {RECOMMENDED_BOOKS_HTML.map((__html) => (
+      {naiveHTMLs.map((__html) => (
         <div
           className="recommended-book"
           dangerouslySetInnerHTML={{__html}}
@@ -20,13 +23,13 @@ export function RecommendedBooks() {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 0.8rem;
+  padding: 0.8rem 0;
   gap: 0.8rem;
   overflow-x: scroll;
 
-  &::before,
+  /* &::before,
   &::after {
     content: '';
     margin: auto;
-  }
+  } */
 `;

@@ -1,7 +1,9 @@
 .recommended-book {
-  transition: transform 0.5s;
-  &:hover {
+  & > a > img {
     transition: transform 0.5s;
-    transform: scale(1.1);
+    &:hover {
+      transition: transform 0.5s;
+      transform: scale(1.1);
+    }
   }
 }

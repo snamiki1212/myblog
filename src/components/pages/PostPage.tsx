@@ -15,6 +15,10 @@ import config from '../../../data/SiteConfig';
 import {MarkdownRemarkEdge, GatsbyImageData} from '../../types';
 import {fromHtmlToToc} from '../../transformer/htmlToToc';
 import {RecommendedBooks} from '../molecules/RecommendedBooks';
+import {
+  RECOMMENDED_BOOKS_HTML_LIST,
+  PHILOSOPHY_BOOKS_HTML_LIST,
+} from '../../../data/affiliate';
 
 type Props = {
   data: PostPageQuery;
@@ -70,8 +74,22 @@ export const PostPage: React.FC<Props> = ({data}) => {
         author={<AuthorCard />}
         affiliates={
           <RecommendedBooksWrapper>
-            <BottomSectionTitle>📚おすすめの書籍</BottomSectionTitle>
-            <RecommendedBooks />
+            <div>
+              <BottomSectionTitle>📚おすすめ書籍</BottomSectionTitle>
+              <BookSectionLine>
+                <BookExplanationTittle>
+                  🔰全エンジニアの必読本
+                </BookExplanationTittle>
+                <RecommendedBooks naiveHTMLs={RECOMMENDED_BOOKS_HTML_LIST} />
+              </BookSectionLine>
+
+              <BookSectionLine>
+                <BookExplanationTittle>
+                  🛌就寝前のおすすめ本
+                </BookExplanationTittle>
+                <RecommendedBooks naiveHTMLs={PHILOSOPHY_BOOKS_HTML_LIST} />
+              </BookSectionLine>
+            </div>
           </RecommendedBooksWrapper>
         }
         suggestions={
@@ -100,6 +118,17 @@ const DateWrapper = styled.div`
 
 const RecommendedBooksWrapper = styled.div`
   padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+`;
+
+const BookExplanationTittle = styled.div`
+  font-weight: bold;
+`;
+
+const BookSectionLine = styled.div`
+  margin-top: 1rem;
 `;
 
 const HeaderWrapper = styled.div`
@@ -119,7 +148,7 @@ const Header = styled(Image)`
 `;
 
 const BottomSectionTitle = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   font-family: var(--ff-primary);
   color: var(--base-dark);
