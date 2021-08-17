@@ -60,14 +60,19 @@ export const PostPage: React.FC<Props> = ({data}) => {
           </MarkdownWrapper>
         }
         meta={
-          <div>
+          <MetaWrapper>
             <TagList tags={post.tags} />
             <SocialLinks postNode={postNode} />
-          </div>
+          </MetaWrapper>
         }
         toc={tocComponent}
         author={<AuthorCard />}
-        suggestions={<ArticleList postEdges={suggestions} />}
+        suggestions={
+          <div>
+            <SuggestionTitle>他の記事を読む</SuggestionTitle>
+            <ArticleList postEdges={suggestions} />
+          </div>
+        }
       />
     </Layout>
   );
@@ -75,6 +80,10 @@ export const PostPage: React.FC<Props> = ({data}) => {
 
 const MarkdownWrapper = styled.div`
   margin: 0 10px;
+`;
+
+const MetaWrapper = styled.div`
+  padding: 5rem 0;
 `;
 
 const DateWrapper = styled.div`
@@ -97,6 +106,16 @@ const Header = styled(Image)`
   margin: 0 auto;
   mix-blend-mode: overlay;
 `;
+
+const SuggestionTitle = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--ff-primary);
+  color: var(--base-dark);
+  padding-bottom: 0.5rem;
+`;
+
+// ---------------------------------------------------
 
 type PostPageQuery = {
   allMarkdownRemark: AllMarkdownRemark;
