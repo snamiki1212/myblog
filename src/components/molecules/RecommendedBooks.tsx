@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import './RecommendedBooks.scss';
+import {addTargetBlank} from '../../lib/html';
 
 type Props = {
   naiveHTMLs: string[];
@@ -10,10 +11,10 @@ export function RecommendedBooks({naiveHTMLs}: Props) {
   if (naiveHTMLs.length <= 0) return <></>;
   return (
     <Container>
-      {naiveHTMLs.map((__html) => (
+      {naiveHTMLs.map((html) => (
         <div
           className="recommended-book"
-          dangerouslySetInnerHTML={{__html}}
+          dangerouslySetInnerHTML={{__html: addTargetBlank(html)}}
         ></div>
       ))}
     </Container>
