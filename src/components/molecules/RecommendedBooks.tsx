@@ -26,6 +26,7 @@ const Container = styled.div`
   padding: 0.8rem 0;
   gap: 0.8rem;
   overflow-x: scroll;
+  width: 100%;
 
   /* &::before,
   &::after {

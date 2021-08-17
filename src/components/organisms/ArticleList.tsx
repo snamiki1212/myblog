@@ -22,7 +22,6 @@ export const ArticleList: React.FC<Props> = ({postEdges}) => {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
 `;
 
@@ -33,7 +32,6 @@ const InnerContainer = styled.div`
   opacity: 0.7;
   transition: 0.2s;
   width: 100%;
-  max-width: 700px;
   & :hover {
     transition: 0.2s;
     transform: scale(1.01);

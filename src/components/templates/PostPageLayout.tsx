@@ -26,29 +26,35 @@ export const PostPageLayout: React.FC<Props> = ({
 }) => {
   return (
     <Container>
-      {header}
-      <InnerContainer>
+      <HeaderImage>{header}</HeaderImage>
+      <ContentContainer>
         <InnerLayout
           section={
             <Flex>
               <Item>{date}</Item>
               <Item>{content}</Item>
               <Item>{meta}</Item>
-              <Item>{affiliates}</Item>
-              <Item>{suggestions}</Item>
             </Flex>
           }
           aside={<AuthorContainer>{author}</AuthorContainer>}
           asideVanishable={<TocCard toc={toc} />}
+          footer={
+            <FooterContainer>
+              {affiliates}
+              {suggestions}
+            </FooterContainer>
+          }
         />
-      </InnerContainer>
+      </ContentContainer>
     </Container>
   );
 };
 
 const Container = styled.div``;
+const HeaderImage = styled.div``;
+const FooterContainer = styled.div``;
 
-const InnerContainer = styled.div`
+const ContentContainer = styled.div`
   padding: ${(props) => `${props.theme.layout.marginVertical}px`};
 `;
 
