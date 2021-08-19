@@ -159,7 +159,19 @@ module.exports = {
       },
     },
 
-    'gatsby-plugin-offline', // NOTE: this plugin has to be AFTER gatsby-plugin-manifest.
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        workboxConfig: {
+          runtimeCaching: [
+            {
+              urlPattern: /^https?:.*\/page-data\/.*\.json/,
+              handler: 'NetworkFirst',
+            },
+          ],
+        },
+      },
+    }, // NOTE: this plugin has to be AFTER gatsby-plugin-manifest.
 
     {
       resolve: 'gatsby-plugin-web-font-loader',
