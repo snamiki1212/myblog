@@ -76,7 +76,7 @@ CODE PUSH
  | |- Hosting
  |
  V
-DONE
+ 🎉
 ```
 
 ## Memo: Directory
@@ -91,57 +91,49 @@ DONE
     <td>TypeScript をネイティブにサポートしていないので、TS ファイルを require している。</td>
   </tr>
   <tr>
-    <td><code>/src/components</code></td>
-    <td>AtomicDesign でディレクトリとコンポーネントを配置</td>
-  </tr>
-  <tr>
     <td><code>/src/pages</code></td>
     <td>gatsbyJS の規約で /pages 配下にあるページは動的に生成される。</td>
   </tr>
 </table>
 
-## Memo:
-
-- `[class=affi-custom-button]`
-  - アフィ用のボタン CSS
-- GraphQL
-  - Fragment: GraphQL にて複数の要素を１つの塊として定義したもの。
-  - `markdownRemark` > frontmatter > cover > childImageSharp > fluid 配下にて、`GatsbyImageSharpFluid`Fragment が効かないので、Fragment が指す内容を直接取得。allMarkdownRemark の配下では Fragment が取得できてるので Plugin の問題かも？
-
 ## MEMO: Images
 
-- 画像
+- 全体のツール
 
   - [2019 年間ベスト！Web 制作を変える便利オンラインツール厳選 85 個 - PhotoshopVIP](http://photoshopvip.net/119896)
 
-  - クレジット不要な画像集
+- 画像：クレジット不要
 
-    - [商用利用も安心！無料イラストが見つかるフリー素材サイト 36 個まとめ【保存版】 - PhotoshopVIP](http://photoshopvip.net/115273#tip2)
-    - [パリの美術館所蔵の 10 万点以上のアート作品画像が無料取得、商用利用が可能に - KAI-YOU.net](https://kai-you.net/article/70889)
-    - [無料で美麗な絵画やカオスなポスターなどがダウンロードし放題、編集や商用利用も可能な「Artvee」が登場 - GIGAZINE](https://gigazine.net/news/20200612-artvee-public-domain-art/)
-    - [無料かつロイヤリティフリーなアニメーションつきベクター画像をダウンロード可能な素材サイト「Pixel True」 - GIGAZINE](https://gigazine.net/news/20200806-pixeltrue/)
+  - [商用利用も安心！無料イラストが見つかるフリー素材サイト 36 個まとめ【保存版】 - PhotoshopVIP](http://photoshopvip.net/115273#tip2)
+  - [パリの美術館所蔵の 10 万点以上のアート作品画像が無料取得、商用利用が可能に - KAI-YOU.net](https://kai-you.net/article/70889)
+  - [無料で美麗な絵画やカオスなポスターなどがダウンロードし放題、編集や商用利用も可能な「Artvee」が登場 - GIGAZINE](https://gigazine.net/news/20200612-artvee-public-domain-art/)
+  - [無料かつロイヤリティフリーなアニメーションつきベクター画像をダウンロード可能な素材サイト「Pixel True」 - GIGAZINE](https://gigazine.net/news/20200806-pixeltrue/)
+  - [【2021 年版】無料で使える！おすすめのフリーアイコン素材サイト 18 個【商用利用 OK】 | Web Design Trends](https://webdesign-trends.net/entry/13277)
 
-  - カラーパレット系
-    - [【2020 年版】もう配色デザインには迷わない！すごい無料カラーパレットツール 59 個まとめ - PhotoshopVIP](http://photoshopvip.net/72189)
+- カラーパレット系
+  - [【2020 年版】もう配色デザインには迷わない！すごい無料カラーパレットツール 59 個まとめ - PhotoshopVIP](http://photoshopvip.net/72189)
 
-## Note
+## MEMO: Repository
 
-- このリポジトリは [GitHub - snamiki1212/gatsby-starter-lunash](https://github.com/snamiki1212/gatsby-starter-lunash) をベースに作成していて常に更新を取り込みながら git 管理している。
-- このリポジトリでは下記のことについてのみ関心を持っている
+- このリポジトリは下記のリポジトリをベースに常に更新を取り込みながらベースに作成している。
+  - [GitHub - snamiki1212/gatsby-starter-lunash](https://github.com/snamiki1212/gatsby-starter-lunash)
+- このリポジトリでは下記のことのみ関心を持っている。
   - ブログ記事
   - デプロイ周り(github-actions)
   - このブログの config
   - この README
-- 上記以外の内容（gatsby-node、component）などもこの repo で管理しているが、それらは starter/master にて管理しているので、latest をこの repo の master に merge する運用にしてる。
+- これ以外の内容（gatsby-node、component）は starter 側で管理している
 
 ## MEMO: Affi
 
 - A8 から Moshimo Afi に変更中。
 - `affi.scss` で UI を整える。Style を当てるために container な className を指定する必要あり。
   - e.g.) `<div class="affi-moshi-container">...<div>`
+- `[class=affi-custom-button]`
+  - アフィ用のボタン CSS
 
 ## LICENSE
 
-Don't use this code.
+Don't use this code. It is not available.
 
 Instead, use this template -> [GitHub - snamiki1212/gatsby-starter-lunash: Lunash (gatsby-starter)](https://github.com/snamiki1212/gatsby-starter-lunash).
