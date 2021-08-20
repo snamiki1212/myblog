@@ -3,7 +3,7 @@ title: '【書評】『ドラッカー流の最強勉強法』を読んだので
 cover: 'cover.jpg'
 createdAt: '2018-11-17 00:00'
 updatedAt: '2018-11-17 00:00'
-category: 'キャリア'
+category: '書評'
 tags:
   - レビュー
   - 書評
