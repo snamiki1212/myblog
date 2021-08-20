@@ -23,6 +23,7 @@ const _Link = styled(Link)`
 const _Button = styled(Button)`
   margin: 5px 2px 0;
   color: var(--base-dark);
+  background: var(--base-light);
   transition: 0.3s;
   opacity: 0.9;
   letter-spacing: 1px;
