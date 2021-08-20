@@ -3,7 +3,7 @@ title: '【書評】『Elasticsearch 実践ガイド』を読んだ'
 cover: 'cover.png'
 createdAt: '2020-04-26 02:00'
 updatedAt: '2020-10-17 22:00'
-category: '技術'
+category: '書評'
 tags:
   - Elasticsearch
   - 書評
