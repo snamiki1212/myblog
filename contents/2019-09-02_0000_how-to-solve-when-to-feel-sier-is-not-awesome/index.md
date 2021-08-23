@@ -2,7 +2,7 @@
 title: '【完全解決】SIerで、つまらないと感じたら？【経験談有り】'
 cover: 'cover.jpg'
 createdAt: '2019-09-02 00:00'
-updatedAt: '2019-12-20 00:00'
+updatedAt: '2021-08-23 00:00'
 category: 'SE転職'
 tags:
   - SE転職
@@ -11,13 +11,13 @@ word:
   - 'sier つまらない'
 ---
 
-# 【完全解決】SIer で、つまらないと感じたら？【経験談有り】
+# 【完全解決】SIer でつまらないと感じたら？【経験談有り】
 
 こんにちは。金融系 SE をやめて Web 系フリーランスエンジニアになった Nash です。
 
 今は、ベンチャー企業を渡り歩きながら、たまに海外行ってリモートで仕事してます。
 
-この記事は、**『SIer がつまらない！と感じた SE の人に向けた解決案を公開した記事』**です。
+この記事は、 **『SIer がつまらない！と感じた SE の人に向けた解決案を公開した記事』** です。
 
 この記事のざっくり結論です。
 
@@ -157,9 +157,9 @@ SIer で SE として、今の現場で頑張る方向です。
 
 <!-- アフリィエイト -->
 <!-- Python本 -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4822292274" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/5166WuMMdmS._SL160_.jpg" alt="" style="border: none;" /><br />独学プログラマー Python 言語の基本から仕事のやり方まで</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
-
+</div>
 <!-- /Python本 -->
 <!-- /アフリィエイト -->
 
@@ -171,15 +171,11 @@ IT パスポートは 1 週間ほど、適当に参考書を見てれば余裕�
 
 そして、ステップアップとして、基本情報、応用情報などの資格にチャレンジしていく、という流れですね。
 
-<!-- アフリィエイト -->
-<div style="display: flex; flex-direction:row;">
-<div style="flex:1">
 <!-- ITパスポート本1 -->
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4297117142" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51ll40bug8L._SL160_.jpg" alt="" style="border: none;" /><br />令和03年 イメージ&amp;クレバー方式でよくわかる 栢木先生のITパスポート教室 (情報処理技術者試験)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!-- /ITパスポート本1 -->
-</div>
-</div>
-<!-- /アフリィエイト -->
 
 ### 【案 ③】キャリアを変えて頑張る
 
@@ -207,7 +203,6 @@ SE からのキャリアチェンジなら、特に「Web エンジニア」へ�
 SE から Web にキャリアチェンジをするにあたり
 
 - 「今の市場の動向は？」
-
 - 「どういう戦略で転職を考えればよいか？」
 
 など必要な情報を教えてくれます。
@@ -217,11 +212,10 @@ SE から Web にキャリアチェンジをするにあたり
 相談自体は無料ですので、まずは登録して話を聞きに行くところからオススメします。
 
 <!-- アフィ -->
-<div style="width:100%; display:flex; justify-content:center">
-<a href="https://px.a8.net/svt/ejp?a8mat=35M24J+383JQQ+4AU6+61Z81" rel="nofollow">
-<img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190825795195&wid=001&eno=01&mid=s00000020067001017000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=35M24J+383JQQ+4AU6+61Z81" alt="">
-<div>
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=2788816&p_id=1027&pc_id=1455&pl_id=18811&guid=ON" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//image.moshimo.com/af-img/0332/000000018811.jpg" width="125" height="125" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=2788816&p_id=1027&pc_id=1455&pl_id=18811" width="1" height="1" style="border:none;">
+<a href="//af.moshimo.com/af/c/click?a_id=2788816&p_id=1027&pc_id=1455&pl_id=18820&guid=ON" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="//image.moshimo.com/af-img/0332/000000018820.jpg" width="468" height="60" style="border:none;"></a><img src="//i.moshimo.com/af/i/impression?a_id=2788816&p_id=1027&pc_id=1455&pl_id=18820" width="1" height="1" style="border:none;">
+</div>
 <!--  -->
 
 ### おわりに
