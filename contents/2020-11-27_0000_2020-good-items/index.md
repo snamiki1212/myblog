@@ -2,7 +2,7 @@
 title: '2020年｜フリーランスエンジニアが買ってよかったもの'
 cover: 'cover.jpg'
 createdAt: '2020-11-27 22:00'
-updatedAt: '2020-12-20 17:00'
+updatedAt: '2021-08-23 17:00'
 category: '雑記'
 tags:
   - Tech
@@ -18,7 +18,7 @@ word:
 # 2020 年｜フリーランスエンジニアが買ってよかったもの
 
 こんにちは、Nash です。
-この記事は、**「2020 年に買ってよかったもの」**をまとめた記事です。
+この記事は、 **「2020 年に買ってよかったもの」** をまとめた記事です。
 
 <!--  -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">買ってよかったもの、まとめ始めるか</p>&mdash; Nash⚡️＠かなだ (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1330310259085340674?ref_src=twsrc%5Etfw">November 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -166,11 +166,6 @@ VR ゴーグルのような見た目をしていますが、**「超高性能な
 </div>
 <!--  -->
 
-<!-- ケーブル２ -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; "><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB014KLFY1E%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/31pzM3SgDsL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB014KLFY1E%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">cheero 2in1 Retractable USB Cable with MicroUSB & Lightning 70cm MFi認定 ホワイト×ブルー CHE-241</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
-<!--  -->
-
 次に、充電器のセットは下記の通りです。
 
 <!-- LavPower90W -->
@@ -190,8 +185,9 @@ VR ゴーグルのような見た目をしていますが、**「超高性能な
 ### ２関節の折り畳み PC スタンド: ElfAnt
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB086L35VML%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/41eQwnWuxdL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB086L35VML%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">ElfAnt ノートパソコンスタンド 調節可能 ポータブル アルミ合金 10インチ～17インチノートパソコンタブレット iPad用</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB086L35VML" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/41eQwnWuxdL._SL160_.jpg" alt="" style="border: none;" /><br />ElfAnt ノートパソコンスタンド 調節可能 ポータブル アルミ合金 10インチ～17インチノートパソコンタブレット 用</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **「高さ・携帯性・使い回し」のバランスが良い PC スタンドとしておすすめなのが、「ElfAnt ノートパソコンスタンド」です。**
@@ -204,8 +200,9 @@ Majextand もかなり使いやすかったのですが、デメリットとし�
 - 1 関節：高さが低く、タイピングもやりにくい
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07GB57M3D%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/3158rwAd6QL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07GB57M3D%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">ONED Majextand 人間工学に基づく、世界最薄スタンド（カラー：スペースグレー） MJX200/GRY グレー</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07GB5L2F8" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/31-BWZsVmhL._SL160_.jpg" alt="" style="border: none;" /><br />ONED Majextand 人間工学に基づく、世界最薄スタンド（カラー：ブラック） MJX300/BLK</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 その点、ElfAnt だと下記のようなメリットがあり買い替えました。
@@ -244,8 +241,9 @@ Majextand もかなり使いやすかったのですが、デメリットとし�
 ### ディスプレイクロス トレシー
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB004NYK0NQ%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51JphueerdL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB004NYK0NQ%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">テーシーケース トレシー カラークロス 30×30cm A3030-YOO G-20 スカイブルー</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB004NYGABM" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51K2weYappL._SL160_.jpg" alt="" style="border: none;" /><br />①グレー 東レ トレシー30×30cmメガネ拭き</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **手持ちのディスプレイ・メガネなどを拭くクリーナーが最強だと感じてない人におすすめしておくのが「トレシーのクロス」です。**
@@ -270,8 +268,9 @@ Majextand もかなり使いやすかったのですが、デメリットとし�
 ### プロテイン: ザバス(SAVAS) ミルクプロテイン ココア風味 200ml
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; "><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB081DZMLYL%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/41LpQAxDZCL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB081DZMLYL%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">【ケース販売】明治 ザバス(SAVAS) ミルクプロテイン 脂肪 0 ココア風味 200ml×24本入</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB081DZMLYL" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/41Z0FmZOWkS._SL160_.jpg" alt="" style="border: none;" /><br />【ケース販売】明治 ザバス(SAVAS) ミルクプロテイン 脂肪 0 ココア風味 200ml×24本入</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **筋トレとか関係なくて、カラダの体調を良くしたい人におすすめなのがプロテインです。**
@@ -288,8 +287,9 @@ Majextand もかなり使いやすかったのですが、デメリットとし�
 ### トマト缶: デルモンテ 完熟カット・あらごしトマト 388g 紙パック
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB015FIK2W2%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/61Nxt8NgkIL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB015FIK2W2%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">キッコーマン デルモンテ 完熟カットトマト 388g×6個</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08YDH9F8T" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51VG2t8EziS._SL160_.jpg" alt="" style="border: none;" /><br />キッコーマン食品 デルモンテ 完熟カットトマト 紙パック 300g ×12個</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **家でズボラ飯くらいなら作る、って人に「デルモンテ 完熟カット・あらごしトマト 388g 紙パック」をおすすめです**
@@ -308,8 +308,9 @@ Majextand もかなり使いやすかったのですが、デメリットとし�
 ### 化粧水: 菊正宗
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; "><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08HND927Z%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/31ufk9VIf L._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08HND927Z%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">菊正宗 日本酒保湿化粧水 しっとり 150ml</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08HND927Z" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/31ufk9VIf+L._SL160_.jpg" alt="" style="border: none;" /><br />菊正宗 男性用 日本酒保湿化粧水 しっとり 150ミリリットル (x 1)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **乾燥肌のメンズにとりあえずおすすめしておく化粧水として「菊正宗」です。**
@@ -321,8 +322,9 @@ Majextand もかなり使いやすかったのですが、デメリットとし�
 ### 電熱ベスト
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08HVJYVN8%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51GHHriy7SL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08HVJYVN8%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">Bemega 電熱ベスト 電熱ジャケット USB加熱 3段階温度調整 防寒 ヒートベスト 水洗い可能 男女兼用 日本語説明書付き (ブラック, L)</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08HTZ5966" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51JqqnNuFzL._SL160_.jpg" alt="" style="border: none;" /><br />Bemega 電熱ベスト 電熱ジャケット USB加熱 3段階温度調整 防寒 ヒートベスト 水洗い可能 男女兼用 日本語説明書付き (グレー, S)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **冷え性でツライし、特に冬はカラダが発熱しにくい、って人におすすめなのが「電熱ベスト」です。**
@@ -347,8 +349,9 @@ Majextand もかなり使いやすかったのですが、デメリットとし�
 ### 目薬: サンテ PC
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc; "><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00F4MRZY8%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/51gOWrUVffL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00F4MRZY8%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">【第2類医薬品】サンテPC 12mL</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB00F4MRZY8" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51gOWrUVffL._SL160_.jpg" alt="" style="border: none;" /><br />【第2類医薬品】サンテPC 12mL</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **値段が安くて、高性能な成分がモリモリな目薬として「サンテ PC」の目薬をおすすめです。**
@@ -360,8 +363,9 @@ LDK（絶対に忖度しないレビューサイト）にて、「高性能な�
 ### Helinox Chair Two Black
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:108px;"><a href="https://rpx.a8.net/svt/ejp?a8mat=35M24I+EI56B6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00r3jp4.2bo11c31.g00r3jp4.2bo12562%2Fa19082570041_35M24I_EI56B6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fhimaraya%252F0000000774642%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fhimaraya%252Fi%252F10368407%252F" rel="nofollow"><img border="0" alt="" src="https://thumbnail.image.rakuten.co.jp/@0_mall/himaraya/cabinet/0000000774d/0000000774642_r1_01.jpg?_ex=128x128" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://rpx.a8.net/svt/ejp?a8mat=35M24I+EI56B6+2HOM+BWGDT&rakuten=y&a8ejpredirect=https%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2Fg00r3jp4.2bo11c31.g00r3jp4.2bo12562%2Fa19082570041_35M24I_EI56B6_2HOM_BWGDT%3Fpc%3Dhttps%253A%252F%252Fitem.rakuten.co.jp%252Fhimaraya%252F0000000774642%252F%26m%3Dhttp%253A%252F%252Fm.rakuten.co.jp%252Fhimaraya%252Fi%252F10368407%252F" rel="nofollow">ヘリノックス アウトドアチェア チェアツー 1822224 Helinox</a></p><p style="color:#666; margin-top:5px line-height:1.5;"></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=35M24I+EI56B6+2HOM+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB079MC8SRP" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/41iUR0ImjhL._SL160_.jpg" alt="" style="border: none;" /><br />ヘリノックス(Helinox) チェアツー ブラック ブラック (BK) 1822224 ブラック (BK)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 **持ち運びも出来る、快適なリラックスチェア＋作業椅子として「Helinox ChairTwo」がおすすめです**
@@ -383,9 +387,11 @@ LDK（絶対に忖度しないレビューサイト）にて、「高性能な�
 ### ウォーターサーバー: Amadana
 
 <!--  -->
+<div class="af-moshi-container">
 <a href="https://px.a8.net/svt/ejp?a8mat=3BQSD6+6F07HU+1O9Q+6ARKX" rel="nofollow">
 <img border="0" width="480" height="220" alt="" src="https://www21.a8.net/svt/bgt?aid=201124122388&wid=001&eno=01&mid=s00000007811001058000&mc=1"></a>
 <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=3BQSD6+6F07HU+1O9Q+6ARKX" alt="">
+</div>
 <!--  -->
 
 **生活の質があげたい人におすすめするのがウォーターサーバーです。**
@@ -405,9 +411,11 @@ LDK（絶対に忖度しないレビューサイト）にて、「高性能な�
 ### オンライン英会話：ネイティブキャンプ
 
 <!--  -->
+<div class="af-moshi-container">
 <a href="https://px.a8.net/svt/ejp?a8mat=3B77BJ+8DUSHE+35VG+6CP0X" rel="nofollow">
 <img border="0" width="350" height="240" alt="" src="https://www23.a8.net/svt/bgt?aid=200210383507&wid=001&eno=01&mid=s00000014758001067000&mc=1"></a>
 <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=3B77BJ+8DUSHE+35VG+6CP0X" alt="">
+</div>
 <!--  -->
 
 **UX が最高なオンライン英会話としておすすめするのがネイティブキャンプです。**
@@ -474,8 +482,9 @@ LDK（絶対に忖度しないレビューサイト）にて、「高性能な�
 **一応、この商品は人間をダメにしたい人はおすすめできますが、個人的にはおすすめはしませんｗ**
 
 <!--  -->
-<table cellpadding="0" cellspacing="0" border="0" style=" border:1px solid #ccc;"><tr style="border-style:none;"><td style="vertical-align:top; border-style:none; padding:10px; width:100px;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB0814J3HWX%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow"><img border="0" alt="" src="https://m.media-amazon.com/images/I/31LKlLIp2eL._SS120_.jpg" /></a></td><td style="font-size:12px; vertical-align:middle; border-style:none; padding:10px;"><p style="padding:0; margin:0;"><a href="https://px.a8.net/svt/ejp?a8mat=35M24I+EC6U9E+249K+BWGDT&a8ejpredirect=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB0814J3HWX%2F%3Ftag%3Da8-affi-302041-22" rel="nofollow">THANKO スマホタブレット対応超軽量折りたたみ式「仰向けゴロ寝デスク2」 TKGORODK</a></p></td></tr></table>
-<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=35M24I+EC6U9E+249K+BWGDT" alt="">
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB0814J3HWX" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/31LKlLIp2eL._SL160_.jpg" alt="" style="border: none;" /><br />THANKO スマホタブレット対応超軽量折りたたみ式「仰向けゴロ寝デスク2」 TKGORODK</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 <!--  -->
 
 ### 2020 MacBookPro 13inch(Intel)
