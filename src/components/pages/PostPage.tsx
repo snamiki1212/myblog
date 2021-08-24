@@ -18,6 +18,7 @@ import {RecommendedBooks} from '../molecules/RecommendedBooks';
 import {
   RECOMMENDED_BOOKS_HTML_LIST,
   PHILOSOPHY_BOOKS_HTML_LIST,
+  NEW_LANGUAGES_BOOKS_HTML_LIST,
 } from '../../../data/affiliate';
 
 type Props = {
@@ -88,6 +89,13 @@ export const PostPage: React.FC<Props> = ({data}) => {
                   🛌寝る前のおすすめ本
                 </BookExplanationTittle>
                 <RecommendedBooks naiveHTMLs={PHILOSOPHY_BOOKS_HTML_LIST} />
+              </BookSectionLine>
+
+              <BookSectionLine>
+                <BookExplanationTittle>
+                  🎉毎年１つ新しい言語を学ぶ
+                </BookExplanationTittle>
+                <RecommendedBooks naiveHTMLs={NEW_LANGUAGES_BOOKS_HTML_LIST} />
               </BookSectionLine>
             </div>
           </RecommendedBooksWrapper>
