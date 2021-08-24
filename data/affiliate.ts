@@ -34,3 +34,17 @@ export const PHILOSOPHY_BOOKS_HTML_LIST = [
   // エンジニアの知的生産術
   `<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB07JFRF6MW" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51zUx7xs7BL._SL160_.jpg" alt="" style="border: none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />`,
 ];
+
+export const NEW_LANGUAGES_BOOKS_HTML_LIST = [
+  // プログラミング Elixir
+  `<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4274226379" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51+d9Cl-XtL._SL160_.jpg" alt="" style="border: none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />`,
+
+  // すごい Haskell たのしく学ぼう!
+  `<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB009RO80XY" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51eiKJEossL._SL160_.jpg" alt="" style="border: none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />`,
+
+  // Goプログラミング実践入門
+  `<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB06XKPNVWV" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51dQZeafzvL._SL160_.jpg" alt="" style="border: none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />`,
+
+  // Rust入門
+  `<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08PF27TRZ" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51Ks0DPW-oL._SL160_.jpg" alt="" style="border: none;" /></a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />`,
+];
