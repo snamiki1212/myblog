@@ -24,7 +24,8 @@ export function RecommendedBooks({naiveHTMLs}: Props) {
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 1.5rem 0;
+  padding: 0.8rem 0;
+  gap: 0.8rem;
   overflow-x: scroll;
   width: 100%;
 
