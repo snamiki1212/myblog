@@ -1,5 +1,5 @@
 ---
-title: '書評「Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち」'
+title: '【書評】「Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち」'
 createdAt: '2021-08-22 00:00'
 updatedAt: '2021-08-22 00:00'
 category: '書評'
@@ -10,7 +10,7 @@ word:
   - nothing
 ---
 
-# 書評「Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち」
+# 【書評】「Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち」
 
 ども、いろいろ本を読み直し中の Nash です。
 
