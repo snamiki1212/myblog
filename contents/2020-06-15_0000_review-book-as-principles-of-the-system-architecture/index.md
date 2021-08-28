@@ -2,7 +2,7 @@
 title: '【書評】『現場で役立つシステム設計の原則』'
 cover: 'cover.png'
 createdAt: '2020-06-15 00:00'
-updatedAt: '2021-08-19 00:00'
+updatedAt: '2021-08-28 00:00'
 category: '書評'
 tags:
   - 書評
