@@ -109,6 +109,7 @@ CODE PUSH
   - [無料で美麗な絵画やカオスなポスターなどがダウンロードし放題、編集や商用利用も可能な「Artvee」が登場 - GIGAZINE](https://gigazine.net/news/20200612-artvee-public-domain-art/)
   - [無料かつロイヤリティフリーなアニメーションつきベクター画像をダウンロード可能な素材サイト「Pixel True」 - GIGAZINE](https://gigazine.net/news/20200806-pixeltrue/)
   - [【2021 年版】無料で使える！おすすめのフリーアイコン素材サイト 18 個【商用利用 OK】 | Web Design Trends](https://webdesign-trends.net/entry/13277)
+  - [illlustrations - open source illustrations kit](https://illlustrations.co/)
 
 - カラーパレット系
   - [【2020 年版】もう配色デザインには迷わない！すごい無料カラーパレットツール 59 個まとめ - PhotoshopVIP](http://photoshopvip.net/72189)
