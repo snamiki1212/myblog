@@ -24,9 +24,13 @@ const Wrapper = styled.span<{containerStyle: any}>`
 `;
 
 const _Icon = styled(Icon)`
+  flex: 1;
   color: var(--gray-dark);
 `;
 
 const Date = styled.span`
+  flex: 1;
   color: var(--gray-dark);
+  font-weight: 200;
+  font-family: var(--ff-date);
 `;

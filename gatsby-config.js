@@ -173,7 +173,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Philosopher'],
+          families: ['Philosopher', 'B612+Mono:wght@700'],
         },
       },
     },

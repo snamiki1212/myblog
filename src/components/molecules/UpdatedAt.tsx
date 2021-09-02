@@ -15,7 +15,7 @@ export const UpdatedAt: React.FC<Props> = ({
 
   return (
     <Wrapper containerStyle={containerStyle}>
-      <Icon icon="updatedAt" style={innerStyle} />
+      <SIcon icon="updatedAt" style={innerStyle} />
       <Date style={innerStyle}>{formatedDate}</Date>
     </Wrapper>
   );
@@ -28,6 +28,13 @@ const Wrapper = styled.span<{containerStyle: any}>`
   gap: 0.2rem;
 `;
 
+const SIcon = styled(Icon)`
+  flex: 1;
+`;
+
 const Date = styled.span`
+  flex: 1;
   letter-spacing: 0.02rem;
+  font-weight: 100;
+  font-family: var(--ff-date);
 `;
