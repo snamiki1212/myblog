@@ -18,6 +18,7 @@ const H1 = styled.h1`
   ${mixinHeadline};
   padding: 1rem 2rem;
   font-size: 25px;
+  border-bottom: 1px solid lightgray;
 
   @media screen and (max-width: ${mobileWidth}) {
     font-size: 18px;
