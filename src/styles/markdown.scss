@@ -21,17 +21,20 @@
   // ---------------------------------------
   ul,
   ol {
-    margin: 0 2rem;
-    padding: 0 2rem 1rem 2rem;
+    margin: 0 2rem 2rem 2rem;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    background: #eeeeee;
   }
 
   li > ul,
   li > ol {
     margin: 0;
-    padding: 0 1rem;
   }
 
   li > p {
     margin: 0;
+  }
+  li {
+    padding: 0.5rem 0;
   }
 }
