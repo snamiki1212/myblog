@@ -5,7 +5,11 @@ import {renderReactFromHtml} from '../../transformer/htmlToReact';
 type Props = {html: string};
 
 export const Markdown: React.FC<Props> = ({html}) => {
-  return <Wrapper>{renderReactFromHtml({html})}</Wrapper>;
+  return (
+    <Wrapper className="my-custom-markdown">
+      {renderReactFromHtml({html})}
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.div`

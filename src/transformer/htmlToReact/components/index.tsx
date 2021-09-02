@@ -12,7 +12,6 @@ const mixinHeadline = css`
 
 const mixinList = css`
   list-style-position: outside;
-  background-color: var(--white);
 `;
 
 const H1 = styled.h1`
@@ -96,11 +95,11 @@ const Table = styled.table`
 `;
 
 const Ul = styled.ul`
-  ${mixinList}/* margin-bottom: 40px; */
+  ${mixinList}
 `;
 
 const Ol = styled.ol`
-  ${mixinList}/* margin-bottom: 40px; */
+  ${mixinList}
 `;
 
 const Li = styled.li`
