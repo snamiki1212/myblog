@@ -35,6 +35,7 @@ export const ArticleCardLayout: React.FC<Props> = ({
 
 const Wrapper = styled.div`
   padding: ${PADDING_SIZE};
+  gap: 0.5rem;
   display: flex;
   flex-direction: row;
 `;
@@ -45,6 +46,7 @@ const Flex = styled.div`
 `;
 
 const Description = styled(Flex)`
+  flex-direction: column;
   align-content: space-between;
 `;
 
@@ -57,6 +59,10 @@ const ImageWrapper = styled.span``;
 const TitleWrapper = styled.div`
   padding: 0 10px;
   width: 100%;
+
+  display: flex;
+  flex: 1;
+  align-items: center;
 `;
 
 const MetaData = styled.div`
