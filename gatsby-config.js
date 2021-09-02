@@ -6,10 +6,6 @@ const regexExcludeRobots =
   /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
 
 module.exports = {
-  /** <only gh-pages> */
-  pathPrefix: '/gatsby-starter-lunash',
-  /** </only gh-pages> */
-
   siteMetadata: {
     siteUrl: config.siteUrl,
 
@@ -177,7 +173,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Philosopher'],
+          families: ['Philosopher', 'B612+Mono:wght@700'],
         },
       },
     },
