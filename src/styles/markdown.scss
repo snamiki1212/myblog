@@ -1,0 +1,11 @@
+// for code block
+.gatsby-highlight > pre {
+  border-radius: 0 !important;
+}
+
+// for code text
+p > code.language-text,
+li > code.language-text {
+  border-radius: 0 !important;
+  padding: 0 0.5rem !important;
+}

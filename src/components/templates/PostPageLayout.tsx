@@ -56,6 +56,9 @@ const FooterContainer = styled.div``;
 
 const ContentContainer = styled.div`
   padding: ${(props) => `${props.theme.layout.marginVertical}px`};
+  @media screen and (max-width: 700px) {
+    padding: 0;
+  }
 `;
 
 const Flex = styled.div`
