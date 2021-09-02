@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import {Layout} from '../templates/Layout';
 import {Image} from '../atoms/Image';
+import {Card} from '../atoms/Card';
 import {UpdatedAt, CreatedAt, AuthorCard} from '../molecules';
 import {SocialLinks} from '../molecules/SocialLinks';
 import {PostPageLayout} from '../templates/PostPageLayout';
@@ -62,7 +63,9 @@ export const PostPage: React.FC<Props> = ({data}) => {
         }
         content={
           <MarkdownWrapper>
-            <Markdown html={postNode.html} />
+            <Card>
+              <Markdown html={postNode.html} />
+            </Card>
           </MarkdownWrapper>
         }
         meta={

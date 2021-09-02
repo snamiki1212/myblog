@@ -5,11 +5,6 @@ import {NaiveAnchor} from './NaiveAnchor';
 /* Mapping the components to the markdown output */
 const mobileWidth = '680px';
 
-const primaryFont = css`
-  font-family: var(--ff-primary);
-  color: var(--base-dark);
-`;
-
 const mixinHeadline = css`
   font-weight: bold;
   font-family: var(--ff-primary);
@@ -22,8 +17,7 @@ const mixinList = css`
 
 const H1 = styled.h1`
   ${mixinHeadline};
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 1rem 2rem;
   font-size: 25px;
 
   @media screen and (max-width: ${mobileWidth}) {
@@ -35,8 +29,8 @@ const H2 = styled.h2`
   ${mixinHeadline}
   color: var(--base-light);
   font-size: 25px;
-  margin-top: 60px;
-  padding: 20px 40px;
+  margin-top: 1.5rem;
+  padding: 20px 2rem;
   background: linear-gradient(
     145deg,
     var(--base-dark),
@@ -70,8 +64,7 @@ const B = styled.b`
 
 const P = styled.p`
   line-height: 2;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 2rem 30px 2rem;
   font-family: var(--ff-primary);
 
   font-size: 18px;
@@ -95,28 +88,24 @@ const SHOULD_NOT_USE_TAG = styled.span`
 `;
 
 const Table = styled.table`
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
+  width: 90%;
+  margin: 0 auto;
   border-collapse: collapse;
   font-family: var(--ff-primary);
   background-color: var(--white);
 `;
 
 const Ul = styled.ul`
-  ${mixinList}
-
-  margin-bottom: 40px;
+  ${mixinList}/* margin-bottom: 40px; */
 `;
 
 const Ol = styled.ol`
-  ${mixinList}
-  margin-bottom: 40px;
+  ${mixinList}/* margin-bottom: 40px; */
 `;
 
 const Li = styled.li`
   ${mixinList}
-  padding: 10px
+  padding: 10px;
 `;
 
 const mixinTableElement = `
