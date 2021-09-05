@@ -63,7 +63,7 @@ export const PostPage: React.FC<Props> = ({data}) => {
         }
         content={
           <MarkdownWrapper>
-            <Card>
+            <Card style={{paddingBottom: '2rem'}}>
               <Markdown html={postNode.html} />
             </Card>
           </MarkdownWrapper>
