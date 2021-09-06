@@ -50,6 +50,7 @@ const H3 = styled.h3`
   border-left: 5px solid var(--vivid1);
   margin-top: 60px;
   margin-bottom: 20px;
+  margin-right: 2rem;
   white-space: normal;
 `;
 

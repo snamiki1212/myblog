@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Card: React.FC = ({children}) => {
-  return <Container>{children}</Container>;
+type Props = {style?: object};
+
+export const Card: React.FC<Props> = ({children, style = {}}) => {
+  return <Container style={style}>{children}</Container>;
 };
 
 const Container = styled.div`

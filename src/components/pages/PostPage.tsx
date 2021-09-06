@@ -55,15 +55,13 @@ export const PostPage: React.FC<Props> = ({data}) => {
             <Header imgInfo={postNode.frontmatter.cover} />
           </HeaderWrapper>
         }
-        date={
-          <DateWrapper>
-            <UpdatedAt date={postNode.frontmatter.updatedAt} />
-            <CreatedAt date={postNode.frontmatter.createdAt} />
-          </DateWrapper>
-        }
         content={
           <MarkdownWrapper>
-            <Card>
+            <Card style={{paddingBottom: '2rem'}}>
+              <DateWrapper>
+                <UpdatedAt date={postNode.frontmatter.updatedAt} />
+                <CreatedAt date={postNode.frontmatter.createdAt} />
+              </DateWrapper>
               <Markdown html={postNode.html} />
             </Card>
           </MarkdownWrapper>
@@ -123,8 +121,11 @@ const MetaWrapper = styled.div`
 `;
 
 const DateWrapper = styled.div`
-  margin: 10px;
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  gap: 1rem;
 `;
 
 const RecommendedBooksWrapper = styled.div`
