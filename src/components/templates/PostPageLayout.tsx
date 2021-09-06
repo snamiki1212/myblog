@@ -5,7 +5,6 @@ import {TocCard} from '../atoms/TocCard';
 
 type Props = {
   header: React.ReactNode;
-  date: React.ReactNode;
   content: React.ReactNode;
   meta: React.ReactNode;
   author: React.ReactNode;
@@ -16,7 +15,6 @@ type Props = {
 
 export const PostPageLayout: React.FC<Props> = ({
   header,
-  date,
   content,
   meta,
   author,
@@ -31,7 +29,6 @@ export const PostPageLayout: React.FC<Props> = ({
         <InnerLayout
           section={
             <Flex>
-              <Item>{date}</Item>
               <Item>{content}</Item>
               <Item>{meta}</Item>
             </Flex>
