@@ -31,3 +31,15 @@
   *******************************/
   --content-width: 960px;
 }
+
+/******************************
+*** Prism syntax hilight
+*******************************/
+// TODO: create another file as prism.custom.scss
+.inserted {
+  background: rgba(0, 255, 0, 0.25);
+}
+
+.deleted {
+  background: rgba(255, 0, 0, 0.25);
+}
