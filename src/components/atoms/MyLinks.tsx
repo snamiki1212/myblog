@@ -17,7 +17,12 @@ export const MyLinks: React.FC = () => {
     <Wrapper>
       {mySocials.map((social) => (
         <InnerWrapper key={social.icon}>
-          <a href={social.url} aria-label={social.icon}>
+          <a
+            href={social.url}
+            aria-label={social.icon}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon icon={social.icon} />
           </a>
         </InnerWrapper>
