@@ -10,12 +10,14 @@ import {useConfigMySocialLinks} from '../../hooks/config';
 export const AboutPage: React.FC = () => {
   return (
     <Wrapper>
-      <CONTENT_Profile />
-      <CONTENT_UntilNow />
-      <CONTENT_WhatCan />
-      <CONTENT_Projects />
-      <CONTENT_AskWork />
-      <CONTENT_ThisBlog />
+      <Card>
+        <CONTENT_Profile />
+        <CONTENT_UntilNow />
+        <CONTENT_WhatCan />
+        <CONTENT_Projects />
+        <CONTENT_AskWork />
+        <CONTENT_ThisBlog />
+      </Card>
     </Wrapper>
   );
 };
@@ -33,31 +35,29 @@ const CONTENT_UntilNow = () => {
   return (
     <div>
       <H2>いままで</H2>
-      <Card>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            justifyContent: 'center',
-          }}
-        >
-          <Box>
-            ①大手SIerでSEとして上流工程の仕事を行う(2013~)
-            <br />
-          </Box>
-          <span style={{marginLeft: '20px'}}>{`↓↓↓`}</span>
-          <Box>
-            ②ベンチャーでWeb系のプログラマーとして開発(2017~)
-            <br />
-          </Box>
-          <span style={{marginLeft: '20px'}}>{`↓↓↓`}</span>
-          <Box>
-            ③独立してフリーランスに。(2019~now
-            <br />
-          </Box>
-        </div>
-      </Card>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          justifyContent: 'center',
+        }}
+      >
+        <Box>
+          ①大手SIerでSEとして上流工程の仕事を行う(2013~)
+          <br />
+        </Box>
+        <span style={{marginLeft: '20px'}}>{`↓↓↓`}</span>
+        <Box>
+          ②ベンチャーでWeb系のプログラマーとして開発(2017~)
+          <br />
+        </Box>
+        <span style={{marginLeft: '20px'}}>{`↓↓↓`}</span>
+        <Box>
+          ③独立してフリーランスに。(2019~now
+          <br />
+        </Box>
+      </div>
     </div>
   );
 };
@@ -67,34 +67,32 @@ const CONTENT_WhatCan = () => {
   return (
     <>
       <H2>出来ること</H2>
-      <Card>
-        <p>
-          基本的にエンジニアとして、フロントとバックエンドの開発を中心に活動しています。
-        </p>
-        <div>
-          ソフトスキル
-          <ul>
-            <li>チームリーダー</li>
-            <li>対顧客折衝</li>
-            <li>プロジェクト改善</li>
-            <li>ディレクション</li>
-          </ul>
-        </div>
-        <div>
-          ハードスキル
-          <ul>
-            <li>React.js(Next.js/Gatsby.JS)</li>
-            <li>ReactNative</li>
-            <li>Ruby on Rails</li>
-            <li>Elixir/Phoenix</li>
-            <li>PHP/Laravel</li>
-          </ul>
-        </div>
-        <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
-        <ExternalLink to={myLinkedinUrl} aria-label="lilnkedin-link">
-          <Button>» LinkedIn(snamiki1212)</Button>
-        </ExternalLink>
-      </Card>
+      <p>
+        基本的にエンジニアとして、フロントとバックエンドの開発を中心に活動しています。
+      </p>
+      <div>
+        ソフトスキル
+        <ul>
+          <li>チームリーダー</li>
+          <li>対顧客折衝</li>
+          <li>プロジェクト改善</li>
+          <li>ディレクション</li>
+        </ul>
+      </div>
+      <div>
+        ハードスキル
+        <ul>
+          <li>React.js(Next.js/Gatsby.JS)</li>
+          <li>ReactNative</li>
+          <li>Ruby on Rails</li>
+          <li>Elixir/Phoenix</li>
+          <li>PHP/Laravel</li>
+        </ul>
+      </div>
+      <p>詳細はLinkedInに記述していますので、こちらを参照願います。</p>
+      <ExternalLink to={myLinkedinUrl} aria-label="lilnkedin-link">
+        <Button>» LinkedIn(snamiki1212)</Button>
+      </ExternalLink>
     </>
   );
 };
@@ -103,11 +101,11 @@ const CONTENT_Projects = () => {
   return (
     <>
       <H2>作ったモノ</H2>
-      <Card>
+      <div>
         <h3>Lunash (blog)</h3>
         <p>GatsbyJS / TypeScript / Netlify 周りの技術で作成してます。</p>
         <RAW_TweetForMyblog />
-      </Card>
+      </div>
     </>
   );
 };
@@ -117,12 +115,10 @@ const CONTENT_AskWork = () => {
   return (
     <>
       <H2>仕事の依頼</H2>
-      <Card>
-        <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
-        <ExternalLink to={myTwitterUrl} aria-label="twiter-link">
-          <Button>» Twitter - Nash@Webエンジニア(@snamiki1212)</Button>
-        </ExternalLink>
-      </Card>
+      <p>お仕事に関する依頼は、TwitterのDMにて受け付けています。</p>
+      <ExternalLink to={myTwitterUrl} aria-label="twiter-link">
+        <Button>» Twitter - Nash@Webエンジニア(@snamiki1212)</Button>
+      </ExternalLink>
     </>
   );
 };
@@ -132,29 +128,27 @@ const CONTENT_ThisBlog = () => {
   return (
     <>
       <H2>このブログについて</H2>
-      <Card>
-        <Text>
-          このブログのコンテンツは全てgithubで管理されています。
-          内容に問題や訂正すべき内容がある場合は
-          <ExternalLink to={myTwitterUrl} aria-label="twitter-link">
-            <Button>Twitter</Button>
-          </ExternalLink>
-          か直接
-          <ExternalLink to={config.siteRepository} aria-label="blog-link">
-            <Button>ブログのリポジトリ</Button>
-          </ExternalLink>
-          にPRを出してもらえれば対応します。
-        </Text>
+      <Text>
+        このブログのコンテンツは全てgithubで管理されています。
+        内容に問題や訂正すべき内容がある場合は
         <ExternalLink to={myTwitterUrl} aria-label="twitter-link">
           <Button>Twitter</Button>
         </ExternalLink>
+        か直接
         <ExternalLink to={config.siteRepository} aria-label="blog-link">
           <Button>ブログのリポジトリ</Button>
         </ExternalLink>
+        にPRを出してもらえれば対応します。
+      </Text>
+      <ExternalLink to={myTwitterUrl} aria-label="twitter-link">
+        <Button>Twitter</Button>
+      </ExternalLink>
+      <ExternalLink to={config.siteRepository} aria-label="blog-link">
+        <Button>ブログのリポジトリ</Button>
+      </ExternalLink>
 
-        <hr />
-        <MyLinks />
-      </Card>
+      <hr />
+      <MyLinks />
     </>
   );
 };
