@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const BREAK_POINT = '930px';
+
 type Props = {
   section: React.ReactNode;
   aside: React.ReactNode;
@@ -43,7 +45,7 @@ const Sticky = styled.div`
 
 const SectionArea = styled.div`
   grid-column: 1 / 2;
-  @media (max-width: 700px) {
+  @media (max-width: ${BREAK_POINT}) {
     /* // TODO: dont use magic num */
     grid-column: 1 / 3;
   }
@@ -51,14 +53,14 @@ const SectionArea = styled.div`
 
 const AsideArea = styled.div`
   grid-column: span 1;
-  @media (max-width: 700px) {
+  @media (max-width: ${BREAK_POINT}) {
     /* // TODO: dont use magic num */
     grid-column: span 2;
   }
 `;
 
 const AsideVanishable = styled.div`
-  @media (max-width: 700px) {
+  @media (max-width: ${BREAK_POINT}) {
     display: none;
   }
 `;
