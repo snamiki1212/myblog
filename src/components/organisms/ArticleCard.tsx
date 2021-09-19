@@ -50,7 +50,10 @@ const _Image = styled(Image)`
   border-radius: 10px;
 `;
 
-const Title = styled.span``;
+const Title = styled.span`
+  font-size: 1.4rem;
+  font-weight: 900;
+`;
 
 const CategoryWrapper = styled.div`
   display: flex;
