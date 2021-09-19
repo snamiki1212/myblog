@@ -154,6 +154,12 @@ word:
 
 コーディングインタビュー向けの本におけるグローバルスタンダードな本である「世界で戦う本」にて「ここの内容は難しいのでコーディングインタビューではあまり出ないけど、一応勉強したい人は勉強してね」というスタンスで書かれている「より高度な話題」のパートがあり、例えばダイクストラ法などを解説してます。
 
+<!-- 世界で戦う本 -->
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2F4839960100" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51rNACyh7TL._SL160_.jpg" alt="" style="border: none;" /><br />世界で闘うプログラミング力を鍛える本 ~コーディング面接189問とその解法~</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
+<!-- /世界で戦う本 -->
+
 だが、けんちょん本では、ダイクストラ法などがメインのパートで書かれてたりします。
 
 この本はプログラミングコンテスト向けの本で、コーディングインタビュー対策であったり、よりステップを踏んでアルゴリズムを学習したいなら、違う本を使って学習曲線をよりなめらかにして学習を進めたほうが良いかと思います。
