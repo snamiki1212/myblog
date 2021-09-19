@@ -20,6 +20,12 @@ word:
 
 ## この本はどんな本？
 
+<!-- けんちょん本 -->
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08PV83L3N" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51TtkYDXZFL._SL160_.jpg" alt="" style="border: none;" /><br />問題解決力を鍛える！アルゴリズムとデータ構造 (ＫＳ情報科学専門書)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
+<!-- けんちょん本 -->
+
 本書では、現実世界の問題を解決するための「 **実践的なアルゴリズム設計技法の鍛錬** 」を目指している本です。
 
 本書の詳細な紹介は、筆者のけんちょんさんがブログにてかなり細かく行われてますので、こちらをどうぞ。
@@ -193,3 +199,11 @@ word:
 ### この本はだれが読むべき？
 
 - プログラミングコンテストで中級者へステップアップしたい人
+
+---
+
+<!-- けんちょん本 -->
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08PV83L3N" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51TtkYDXZFL._SL160_.jpg" alt="" style="border: none;" /><br />問題解決力を鍛える！アルゴリズムとデータ構造 (ＫＳ情報科学専門書)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
+<!-- けんちょん本 -->
