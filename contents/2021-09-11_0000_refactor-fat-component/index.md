@@ -1,7 +1,7 @@
 ---
-title: 'Fatなコンポーネントをリファクタリングする'
+title: 'FatなReactコンポーネントをどうHooksでリファクタリングしていくか'
 createdAt: '2021-09-11 00:00'
-updatedAt: '2021-09-11 00:00'
+updatedAt: '2021-10-02 00:00'
 category: '技術'
 tags:
   - React
@@ -10,7 +10,7 @@ word:
   - nothing
 ---
 
-# Fat なコンポーネントをリファクタリングする
+# Fat な React コンポーネントをどう Hooks でリファクタリングしていくか
 
 この記事は「 **Fat Component をどういう勘所でリファクタしていくか** 」についての記事です。
 
