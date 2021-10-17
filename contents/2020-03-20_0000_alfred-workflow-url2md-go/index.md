@@ -2,7 +2,7 @@
 title: 'URLからMarkdownへ変換するAlfredWorkflowをGoで作って公開した'
 cover: 'cover.png'
 createdAt: '2020-03-20 20:00'
-updatedAt: '2020-03-20 20:00'
+updatedAt: '2021-10-17 20:00'
 category: '技術'
 tags:
   - golang
@@ -12,12 +12,12 @@ word:
   - nothing
 ---
 
-# URLからMarkdownへ変換するAlfredWorkflowをGoで作って公開した
+# URL から Markdown へ変換する AlfredWorkflow を Go で作って公開した
 
 こんにちは Nash です。この記事は**「URL2MD という AlfredWorkflow を go で作って公開するまでの流れについての記事」**になります。
 
-- コード：[GitHub - snamiki1212/alfred-url2md: Alfredworkflow: Convert URL to markdown link (go-lang)](https://github.com/snamiki1212/alfred-url2md)
-- DL 置き場：[Releases · snamiki1212/alfred-url2md · GitHub](https://github.com/snamiki1212/alfred-url2md/releases)
+- コード：[GitHub - snamiki1212/alfred-url2md: Alfredworkflow: Convert URL to markdown link (go-lang)](https://github.com/snamiki1212/alfred-url2md-golang)
+- Download 置き場：[Releases · snamiki1212/alfred-url2md · GitHub](https://github.com/snamiki1212/alfred-url2md-golang/releases)
 
 では、見ていきます。
 
@@ -60,7 +60,7 @@ go をグローバルインストールしていくが、パッケージマネ�
 
 installation の通り進めて、go の version は stable の 1.14 にしてインスコし、無事 hello world まで完了。そういえば go ってコンパイル言語だったな、とここで思い出す。
 
-コンパイルすればgo のツールチェーンが入ってない環境でも実行可能みたいなのでローカルで環境を作らないでもよかったや。
+コンパイルすれば go のツールチェーンが入ってない環境でも実行可能みたいなのでローカルで環境を作らないでもよかったや。
 
 ### GO：基本構文の理解
 
@@ -131,8 +131,8 @@ workflow 側でエラー時のハンドリングを行ってみた。本当は�
 
 というわけで無事に Alfred の Workflow 公開まで完了した。
 
-- コード：[GitHub - snamiki1212/alfred-url2md: Alfredworkflow: Convert URL to markdown link (go-lang)](https://github.com/snamiki1212/alfred-url2md)
-- DL 置き場：[Releases · snamiki1212/alfred-url2md · GitHub](https://github.com/snamiki1212/alfred-url2md/releases)
+- コード：[GitHub - snamiki1212/alfred-url2md: Alfredworkflow: Convert URL to markdown link (go-lang)](https://github.com/snamiki1212/alfred-url2md-golang)
+- DL 置き場：[Releases · snamiki1212/alfred-url2md · GitHub](https://github.com/snamiki1212/alfred-url2md-golang/releases)
 
 本来なら Packal という AlfredWorkflow の Hub にも自作したものを登録していくんだろうけど、ただのクローン Workflow なのでそこまではやらないで良いかなー、という気持ち。
 
