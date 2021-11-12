@@ -1,6 +1,7 @@
 .recommended-book {
   transition: transform 0.2s;
   & > a > img {
+    box-shadow: 1px 1px 5px lightgray;
     &:hover {
       transition: transform 0.2s;
       transition: transform 0.2s;

@@ -10,5 +10,5 @@ export const Card: React.FC<Props> = ({children, style = {}}) => {
 const Container = styled.div`
   border-radius: 10px;
   background-color: var(--white);
-  box-shadow: 2px 2px 10px lightgrey;
+  box-shadow: 1px 1px 5px lightgrey;
 `;

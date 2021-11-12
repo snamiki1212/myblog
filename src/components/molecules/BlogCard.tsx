@@ -62,7 +62,7 @@ const Wrapper = styled.div`
   padding: 10px;
 
   background: var(--white);
-  box-shadow: 2px 2px 10px lightgrey;
+  box-shadow: 1px 1px 5px lightgrey;
   border-radius: 10px;
 
   transition: 0.3s;
