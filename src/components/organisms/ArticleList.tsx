@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const InnerContainer = styled.div`
   border-radius: 10px;
-  box-shadow: 2px 2px 10px lightgrey;
+  box-shadow: 1px 1px 5px lightgrey;
   background: var(--white);
   opacity: 0.7;
   transition: 0.2s;
