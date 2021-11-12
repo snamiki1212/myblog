@@ -68,10 +68,7 @@ const P = styled.p`
   margin: 0 2rem 30px 2rem;
   font-family: var(--ff-primary);
 
-  font-size: 18px;
-  @media screen and (max-width: ${mobileWidth}) {
-    font-size: 16px;
-  }
+  font-size: 16px;
 `;
 
 const Blockquote = styled.blockquote`
