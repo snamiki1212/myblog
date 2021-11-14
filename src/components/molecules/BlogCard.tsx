@@ -62,13 +62,14 @@ const Wrapper = styled.div`
   padding: 10px;
 
   background: var(--white);
-  box-shadow: 1px 1px 5px lightgrey;
+  filter: drop-shadow(1px 5px 5px lightgrey);
   border-radius: 10px;
-
+  opacity: 0.7;
   transition: 0.3s;
   &:hover {
-    opacity: 0.7;
     transition: 0.3s;
+    opacity: 1;
+    filter: drop-shadow(1px 5px 15px lightgrey);
   }
 `;
 

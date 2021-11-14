@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const InnerContainer = styled.div`
   border-radius: 10px;
-  box-shadow: 1px 1px 5px lightgrey;
+  filter: drop-shadow(1px 5px 5px lightgrey);
   background: var(--white);
   opacity: 0.7;
   transition: 0.2s;
@@ -36,5 +36,6 @@ const InnerContainer = styled.div`
     transition: 0.2s;
     transform: scale(1.01);
     opacity: 1;
+    filter: drop-shadow(1px 5px 20px lightgrey);
   }
 `;
