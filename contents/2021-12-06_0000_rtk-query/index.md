@@ -1,0 +1,131 @@
+---
+title: 'RTK Query を実際にプロジェクトで使ってみた'
+createdAt: '2021-12-06 00:00'
+updatedAt: '2021-12-06 00:00'
+category: '技術'
+tags:
+  - React
+slug: rtk-query
+word:
+  - nothing
+---
+
+# RTK Query を実際にプロジェクトで使ってみた
+
+この記事は「Redux Toolkit の Query 機能である RTK Query を実際に２つのサービスで使ってみたので、そこで得た気づき」についての記事です。
+
+## RTK Query とは
+
+RTK Query とは、Redux Toolkit が提供している Cache レイヤーによる状態管理を行う機能です。
+
+まったくこれらを知らない人への説明としては、まず React でグローバルに状態管理を行うときに使われるライブラリとして Redux があります。さらに、この Redux を実装するにあたって様々なベストプラクティスをまとめて利用可能にしたライブラリが Redux Toolkit です。そして、この Redux Toolkit が提供している１つの機構として RTK Query となります。
+
+RTK Query では、例えば API で取得するような外部データの取得・キャッシュを行います。
+
+類似ライブラリとしては、swr / Apollo Client / React Query などがキャッシュレイヤーによる状態管理を行うライブラリとして挙げられるかと思います。
+
+RTK Query の長所としては、なによりもベストプラクティスを集められた RTK を利用可能なことだと思っています。
+
+## 実際に RTK Query を使ってみた
+
+実際に RTK Query を下記の２つのプロジェクトで使ってみました。
+
+- 留学プランナー Web アプリ（個人開発）
+- BtoC 向けのアプリ（仕事）
+
+個人開発のコードは OSS なので下記にて確認できます。
+
+- プロジェクト：[GitHub - snamiki1212/plangoab: Immigration schedule planner with Next.js, Redux, and FullCalendar.js](https://github.com/snamiki1212/plangoab)
+- コード：[plangoab/calendarApi.ts at e0d43142cf5d084ae8ca4d81e2bdec6e25504693 · snamiki1212/plangoab · GitHub](https://github.com/snamiki1212/plangoab/blob/e0d43142cf5d084ae8ca4d81e2bdec6e25504693/src/redux/v2/services/calendarApi.ts)
+
+## 具体的な使い方
+
+この記事では、RTK Query の具体的な使い方は書きません。
+
+というのも、RTK はドキュメントがかなり充実しているので、気になる方は[こちらのドキュメント](https://redux-toolkit.js.org/rtk-query/overview)か[私が書いたコード](https://github.com/snamiki1212/plangoab/blob/e0d43142cf5d084ae8ca4d81e2bdec6e25504693/src/redux/v2/services/calendarApi.ts)を参考にしてください。
+
+## RTK Query を使ってみての気付き
+
+### Save & Selector のコードがまるまる不要になる
+
+RTK Query の特徴というよりもキャッシュによる状態管理の特徴ですが、下記が不要になります。
+
+- Save：外部から取得したデータを Redux 上に保存するコード
+- Selector：Redux 上にあるデータへアクセスするコード
+
+まず、Save については RTK が内部的に自動で行ってくれます。
+
+そして、Selector については「常に API から取得する」ように書けばよくなります。内部的には「もしもキャッシュデータが使えるならそこから取得して、使えないなら API で fetch する」というような動きになります。
+
+そのため、Save & Selector のコードがまるまる不要になり、コードとして常に fetch する命令を書けばいいだけです。
+
+正直、この書き方はかなり楽な上、コードボリュームも減らすことができます。
+
+### Hooks ファースト
+
+RTK Query は Hooks ファーストな思想を持っていて、createApi の返り値として動的に Hooks を生成できます。
+
+まず、Hooks ファーストなためコードはかなり書きやすく、エラーハンドリングやデータローディングの分岐もかなり直感的に書けます。またコンポーネント単位でデータの fetch も行いやすいです。
+
+そして動的に Hooks が生成される点ですが、下記のような感じになります。
+
+> `fetchCalendars` を Query で定義すると、`useFetchCalendarsQuery`が生成される
+
+```tsx
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
+const calendarApi = createApi({
+  reducerPath: 'calendarApi',
+  baseQuery: fetchBaseQuery({baseUrl: HOST_API_V1}),
+  endpoints: (builder) => ({
+    fetchCalendars: builder.query<any, any>({
+      query: () => ({url: '/calendars'}),
+    }),
+  }),
+});
+export const {useFetchCalendarsQuery} = calendarApi;
+```
+
+ただ、この動的なカスタムフックスの生成を実現をするために TypeScript のバージョンの縛りがあるので出来れば先に上げておくのが良いかと思います。
+
+- REF: [typescript - RTK Query createApi results in: "Property '....' does not exist on type 'Api&lt;BaseQueryFn&gt;" - Stack Overflow](https://stackoverflow.com/a/68569190)
+
+### Reducer をネストできない
+
+RTK Query の問題として、Reducer をネストできない点があります。（2021/12 時点）
+
+つまり、キャッシュで保存されるデータが Redux の State のトップレベルにしか配置できないです。
+
+今後、top-level じゃなく nested に保存できるようになった場合でも、このデータはあくまで API から取得するものなのでローカルストレージへ persist に保存することはないので大きな影響はなくリファクタ可能かと思います。ただプロジェクトの縛りで top-level にしか置けられないなら RTK Query を使うかどうかは一考の余地がありそうです。
+
+- REF: [reactjs - Configuring the store with RTK-Query middleware - Stack Overflow](https://stackoverflow.com/a/69453877)
+
+### fetch レイヤーへの影響
+
+すでに開発しているサービスに RTK Query を新しく入れる場合、導入時に Fetch レイヤーへの影響が出る可能性がありそうです。
+
+まず、RTK Query は状態管理だけでなく Data Fetching の領域まで責務を担います。
+
+ですが、createApi の引数にて fetcher を渡すことができるので疎結合に扱えるので、fetch・axios・fetchBaseQuery あたりのどの fetcher を使うかを自由に取り回せられます。
+
+```tsx
+export const calendarApi = createApi({
+  baseQuery: fetchBaseQuery({baseUrl: HOST_API_V1}),
+  // ...
+});
+```
+
+ただ、大半のプロダクションコードはこれらの fetch 機能に対してオレオレで他の処理もラッピング処理をしていることが多いです。
+
+これらのラッピングされた Fetcher をそのまま RTK Query に使えるかは、すでにあるコードの中の Fetch 周りがどのように作られているかによります。
+
+経験上、これらが完全な疎結合になっていて単純に入れ替えれば済むケースはかなり稀で、結局は Fetch レイヤーを RTK Query 用に作り直したりする必要が出てくることになりそうです。
+
+そのため、既存の Fetcher から RTK Query 用の Fetcher への移行コストが発生するかもしれない、という点はある程度は計上しておくといいかと思います。
+
+## 終わりに
+
+個人的に RTK 自体をかなり気に入っていて、気付いたら更にキャッシュレイヤーまで追加されました。
+
+今まで、いろいろな状態管理のライブラリを使ってきましたがプロダクションだけでなく小規模アプリでも RTK はコードボリュームも少なく、使いやすく、拡張性も高い印象です。
+
+RTK Query が気になってる人がいればぜひおすすめです。
