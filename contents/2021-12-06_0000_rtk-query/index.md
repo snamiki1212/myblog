@@ -46,7 +46,7 @@ RTK Query の長所としては、なによりもベストプラクティスを�
 
 ## RTK Query を使ってみての気付き
 
-### Save & Selector のコードがまるまる不要になる
+### 良い点：Save & Selector のコードがまるまる不要になる
 
 RTK Query の特徴というよりもキャッシュによる状態管理の特徴ですが、下記が不要になります。
 
@@ -61,7 +61,7 @@ RTK Query の特徴というよりもキャッシュによる状態管理の特�
 
 正直、この書き方はかなり楽な上、コードボリュームも減らすことができます。
 
-### Hooks ファースト
+### 良い点：Hooks ファースト
 
 RTK Query は Hooks ファーストな思想を持っていて、createApi の返り値として動的に Hooks を生成できます。
 
@@ -89,7 +89,23 @@ export const {useFetchCalendarsQuery} = calendarApi;
 
 - REF: [typescript - RTK Query createApi results in: "Property '....' does not exist on type 'Api&lt;BaseQueryFn&gt;" - Stack Overflow](https://stackoverflow.com/a/68569190)
 
-### Reducer をネストできない
+### 気付き：without Hooks で段階移行ができる
+
+今回の RTK Query の導入の背景として、既存のアプリケーションのリファクタとして段階的な導入が必要になります。
+
+まず、自分の考えているリファクタの最終的な理想としては、ロジックや複数の Disptch などはまとめて１つの Hooks にまとめるイメージでした。
+
+これと同様に、基本的な RTK Query の利用方法としては動的に生成された Hooks を使います。
+これによって、data/loading/error のハンドリングを Hooks レイヤーで行えます。
+問題としては、middleware レイヤーから Hooks を呼び出せられません。
+
+そこで、RTK Query では１つ低レベルな API も用意されていて without Hooks な方法です。
+
+[Usage Without React Hooks | Redux Toolkit](https://redux-toolkit.js.org/rtk-query/usage/usage-without-react-hooks)
+
+このおかげで、段階的リファクタリングを行いたいと考えているプロジェクトでも割と早い段階で導入ができます。
+
+### 注意点：Reducer をネストできない
 
 RTK Query の問題として、Reducer をネストできない点があります。（2021/12 時点）
 
@@ -99,7 +115,7 @@ RTK Query の問題として、Reducer をネストできない点がありま�
 
 - REF: [reactjs - Configuring the store with RTK-Query middleware - Stack Overflow](https://stackoverflow.com/a/69453877)
 
-### fetch レイヤーへの影響
+### 注意点：fetch レイヤーへの影響
 
 すでに開発しているサービスに RTK Query を新しく入れる場合、導入時に Fetch レイヤーへの影響が出る可能性がありそうです。
 
