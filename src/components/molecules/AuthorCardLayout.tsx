@@ -32,7 +32,7 @@ export const AuthorCardLayout: React.FC<Props> = ({
 export const avatorSizeNum = 60;
 
 const Wrapper = styled.div`
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   background-color: var(--white);
   filter: drop-shadow(1px 5px 5px lightgrey);
