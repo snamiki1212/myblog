@@ -1,7 +1,7 @@
 ---
 title: 'RTK Query を実際にプロジェクトで使ってみた'
 createdAt: '2021-12-06 00:00'
-updatedAt: '2021-12-06 00:00'
+updatedAt: '2021-12-23 00:00'
 category: '技術'
 tags:
   - React
@@ -40,9 +40,42 @@ RTK Query の長所としては、なによりもベストプラクティスを�
 
 ## 具体的な使い方
 
-この記事では、RTK Query の具体的な使い方は書きません。
+使い方について箇条書きで書きます。
 
-というのも、RTK はドキュメントがかなり充実しているので、気になる方は[こちらのドキュメント](https://redux-toolkit.js.org/rtk-query/overview)か[私が書いたコード](https://github.com/snamiki1212/plangoab/blob/e0d43142cf5d084ae8ca4d81e2bdec6e25504693/src/redux/v2/services/calendarApi.ts)を参考にしてください。
+- `createApi` にて api を作成します。
+- 作成する内容については引数にオブジェクトで渡します。
+- endpoints に各エンドポイントを設定します`(ex) getPokemonByName`
+- 設定したエンドポイント名に対応したカスタムフックスが生成されます `(ex) useGetPokemonByNameQuery`
+- コンポーネント側でこのカスタムフックスを使います
+
+```tsx
+//
+// api.ts
+//
+import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
+import {Pokemon} from './types';
+const pokemonApi = createApi({
+  reducerPath: 'pokemonApi',
+  baseQuery: fetchBaseQuery({baseUrl: 'https://pokeapi.co/api/v2/'}),
+  endpoints: (builder) => ({
+    getPokemonByName: builder.query<Pokemon, string>({
+      query: (name) => `pokemon/${name}`,
+    }),
+  }),
+});
+export const {useGetPokemonByNameQuery} = pokemonApi;
+
+//
+// Component.tsx
+//
+export default function App() {
+  const {data, error, isLoading} = useGetPokemonByNameQuery('bulbasaur');
+  return <div>...</div>;
+}
+```
+
+RTK はドキュメントがかなり充実しているので、より詳細は[こちらのドキュメント](https://redux-toolkit.js.org/rtk-query/overview)を見てもらうのがいいかと思います。
+または、具体的にプロダクトで使われてる実例としては[私が書いたコード](https://github.com/snamiki1212/plangoab/blob/e0d43142cf5d084ae8ca4d81e2bdec6e25504693/src/redux/v2/services/calendarApi.ts)を参考にするのもいいかもしれません。
 
 ## RTK Query を使ってみての気付き
 
@@ -105,7 +138,7 @@ export const {useFetchCalendarsQuery} = calendarApi;
 
 このおかげで、段階的リファクタリングを行いたいと考えているプロジェクトでも割と早い段階で導入ができます。
 
-### 注意点：Reducer をネストできない
+### 問題点：Reducer をネストできない
 
 RTK Query の問題として、Reducer をネストできない点があります。（2021/12 時点）
 
@@ -115,7 +148,7 @@ RTK Query の問題として、Reducer をネストできない点がありま�
 
 - REF: [reactjs - Configuring the store with RTK-Query middleware - Stack Overflow](https://stackoverflow.com/a/69453877)
 
-### 注意点：fetch レイヤーへの影響
+### 問題点：fetch レイヤーへの影響
 
 すでに開発しているサービスに RTK Query を新しく入れる場合、導入時に Fetch レイヤーへの影響が出る可能性がありそうです。
 
@@ -138,9 +171,45 @@ export const calendarApi = createApi({
 
 そのため、既存の Fetcher から RTK Query 用の Fetcher への移行コストが発生するかもしれない、という点はある程度は計上しておくといいかと思います。
 
+### 問題点：selector にて fetch 時の引数が必ず必要になる
+
+RTK Query の性質上、データへのアクセスである selector を使用するときにそのデータを API 経由で fetch したときに使った引数が必要になります。
+
+まず、selector について見てみます。
+
+- api を createSlice で生成します
+- 生成された api が selector を持っているので実行します
+- これでデータへのアクセスができます
+
+```tsx
+const api = createSlice({
+  ...,
+  endpoints: (builder) => ({
+    getPost: builder.query({
+      // 引数にpostIdが必要なクエリ
+      query: (postId) => ({url: `/posts/${postId}`}),
+    }),
+  })
+})
+
+// selectの１つ目の高階関数にて、getPostQueryの引数であるpostIdが必要になる
+const result = api.endpoints.getPost.select(postId)(state)
+const { data, status, error } = result
+```
+
+RTK Query を使う場合は推奨されるのは Hooks を使った方法で、その場合は selector が必要ありません。
+ですが、middleware である thunk 内のロジックなどのカスタムフックスを利用できない場合かつデータへのアクセスが必要なケースもあります。
+その場合は、RTK Query はより低レイヤーな API である selector が上記のように用意されています。
+
+なぜ select 時にも fetch 時の param が必要かについてですが、RTK Query のデータ保存はデータキャッシングの仕組みで運用されています。
+`/posts/${postId}`のデータを取得したい場合は postId が異なると得られるデータも異なるため、それぞれ別の領域に保存されます。
+そのため、selector でも「どの postId の`/posts/${postId}`のデータを取得するか」を明示するために`select(postId)(state)`という書き方になるわけです。
+
+つまり、 RTK Query ＋ Selector でのデータアクセスが必要な場合は fetch 時の引数をグローバルに保存しておく必要がありそうです。
+
 ## 終わりに
 
-個人的に RTK 自体をかなり気に入っていて、気付いたら更にキャッシュレイヤーまで追加されました。
+個人的に RTK はかなり気に入っていているパッケージの１つです。更に今回は RTK Quert というキャッシュレイヤーの機能まで追加されました。
 
 今まで、いろいろな状態管理のライブラリを使ってきましたがプロダクションだけでなく小規模アプリでも RTK はコードボリュームも少なく、使いやすく、拡張性も高い印象です。
 
