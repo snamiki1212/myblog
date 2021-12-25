@@ -47,6 +47,8 @@ word:
 
 [Hooks でリファクタリング｜ FatComponent の倒し方](/refactor-fat-component)
 
+[Plain な Redux を段階的に RTK へリファクタリングする心得](/refactoring-redux-to-rtk)
+
 ## バンクーバー企業でフロントエンド開発
 
 バンクーバーのとあるスタートアップにてフロントエンド開発をしていました。使っていた技術スタックは、Gatsby.js・JavaScript です。
