@@ -1,7 +1,7 @@
 ---
 title: '個人開発プロジェクトがスポンサーマネタイズされて稼ぐまでの話【Plangoab】'
 createdAt: '2021-05-01 00:00'
-updatedAt: '2021-05-01 00:00'
+updatedAt: '2021-12-24 00:00'
 category: '技術'
 tags:
   - plangoab
@@ -218,3 +218,13 @@ Plangoab はあくまでポートフォリオのためのプロジェクトだ�
 「個人開発プロジェクトがスポンサーマネタイズされた」という話でした。
 
 Plangoab のリリースがされたけれどもこれで終わりではないので、今後もうまくカイゼンできればとおもってます。
+
+### （追記）スポンサードが終了しました
+
+スポンサードされていましたが、こちら終了しました。
+
+開発したものを実際に利用してもらったことによる気付きで、Web サービス化したこのサービスは実際のオペレーションに対してオーバースペックという理由です。
+
+プロジェクト自体は、GitHub・GithubPages・Heroku を利用していることもあり引き続き確認できる状態にしてあります。
+
+- [GitHub - snamiki1212/plangoab: Immigration schedule planner with Next.js, Redux, and FullCalendar.js](https://github.com/snamiki1212/plangoab)
