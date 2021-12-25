@@ -45,7 +45,7 @@ word:
 
 [RTK Query を実際にプロジェクトで使ってみた](/rtk-query)
 
-[Fat な React コンポーネントをどう Hooks でリファクタリングしていくか](/refactor-fat-component)
+[Hooks でリファクタリング｜ FatComponent の倒し方](/refactor-fat-component)
 
 ## バンクーバー企業でフロントエンド開発
 

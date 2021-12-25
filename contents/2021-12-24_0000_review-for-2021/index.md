@@ -1,5 +1,5 @@
 ---
-title: '2021 年の振り返り｜カナダで茹で蛙な生活'
+title: '2021 年の振り返り｜カナダで茹でガエルな生活'
 createdAt: '2021-12-24 17:00'
 updatedAt: '2021-12-24 17:00'
 category: 'キャリア'
@@ -13,7 +13,7 @@ word:
 
 <!-- [ふりかえり Advent Calendar 2021 - Adventar](https://adventar.org/calendars/6327)  -->
 
-# 2021 年の振り返り｜カナダで茹で蛙な生活
+# 2021 年の振り返り｜カナダで茹でガエルな生活
 
 どうも Nash です。
 
@@ -143,6 +143,8 @@ LeetCode については、英文だったりどういうことを求めるの�
 
 英語力は技術力と同じで、一朝一夕で身につくものではないのでどうにかベイビーステップで成長をさせていかないとなー、というのが今の感想です。
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">プログラミングは楽しいから無限にできるのに英語は「勉強しなきゃな」ってなる時点で英語学習をうまいことゲーミフィケーションできてない</p>&mdash; Nash⚡️北米でコード書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1379323563241480193?ref_src=twsrc%5Etfw">April 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### カナダ：現地でなにかする
 
 > 【カナダ】
@@ -197,53 +199,13 @@ LeetCode については、英文だったりどういうことを求めるの�
 今年学んだ技術としてはこんな感じです。
 
 - Rust
-- Swift ＋ UIKit
+- Swift ＋ UIKit + Objective-C
 - Svelte
+- RTK / Hooks の利用とリファクタリング
 
-それぞれ見ていきます
+詳細はここで書いてます。
 
-### Rust で作った RealWorld プロジェクト
-
-Rust については、「１〜２ヶ月くらい学んで、またしばらく無勉強」を２〜３回くらい今年は繰り返していました。なんだか去年もそんな感じで波のある学習をしてる気がするなー。
-
-作ったものや学んだ教材はここらへんです。
-
-- 学んだ：[The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
-- 作った：[GitHub - snamiki1212/alfred-url2md-rust](https://github.com/snamiki1212/alfred-url2md-rust)
-- 作った：[GitHub - snamiki1212/realworld-rust-actix-web](https://github.com/snamiki1212/realworld-rust-actix-web)
-
-本当は RealWorld のプロジェクトを作りきりたかったのですが、完成率が 80~90%くらいのあと一歩のところで心が折れてしまったのでもったいない状態です。
-
-状況が落ち着いたら、ORM を Diesel から slqx に変えてどうにか最後まで作りきりたいなーという思いがあるので、未来の自分がんばれ。
-
-### Swift ＋ UIKit でモバイル開発とアルゴリズム
-
-Swift ＋ UIKit によるモバイル開発とアルゴリズムの課題をこなしていました。
-
-同期として、留学先の CICCC のモバイルクラスで出された課題を作成していたからです。
-だいたいリポジトリが 30 個分くらいの書き捨てのアプリケーションとアルゴリズムを作成しました。
-
-- [snamiki1212 (Nash) · GitHub](https://github.com/snamiki1212?tab=repositories&q=&type=&language=swift)
-
-これらを学習しての気付きとしては、こんな感じです。
-
-- Swift は、モダン言語はなだけあってかなりよい書き心地だし機能的にもよく出来ている。
-- モバイル開発は、Imperative な UIKit がまだまだ主流なため DX が著しく低い。
-- しかも、今後 UIKit が廃れて SwiftUI へ置き換わることが決まっているので過渡期で学習コストがきつい。
-
-「iOS エンジニアを目指そうかなー」と少し思っていたのですが、モバイルエンジニアになるにしては時期があまりに悪いのでやめました。
-モバイル開発になれる２〜３年後には UIKit が SwiftUI に置き換わるので、再学習コストがかなり高いからです。
-
-なので、正直 Swift を学んだのはサンクコストだった気はしていますがまぁ気にしないでいきます。
-
-### Svelte でポートフォリオサイト
-
-ポートフォリオサイトが必要になったので Svelte で作りました。
-
-[Svelte でポートフォリオサイトを作った話](/portfolio-v-2)
-
-正直、メンテコストがしんどかったりここに力をかけるのは筋が悪かったなーというのが今の感想です。
-これならむしろ Rust フロントエンドで書いたほうがよかったかもしれないですね。
+[【2021 年】今年、学んだ技術の振り返り｜ Rust と RTK](/learned-tech-2021)
 
 ### 引っ越し２回
 
@@ -258,6 +220,8 @@ Swift ＋ UIKit によるモバイル開発とアルゴリズムの課題をこ�
 シェアハウスですが、オーナー＋居住者が日本人だけの場所にしました。日本人以外がオーナーの場所や、居住者が他国籍のところも見ましたが単純にピンくる物件がなかったのが理由です。最終的に「完全なプライベート空間がほしい」というのが自分には必要なことがわかったので、再度家を探して引っ越すことにしました。
 
 ベースメントですが、一軒家の半地下の生活スペースをまるまる借りてます。金額はそれなりに高いのですが、値段に対して綺麗度・広さが破格の良さで、コロナ事情により家で生活することがかなり多いことから、家へはそれなりにコストをかけるべきという観点から即決でここに引っ越すことにしました。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">3ヶ月ぶりにまた引っ越した。<br>リモートの比率が高いので家賃は多めに払ってもよいと思ったので、今回はシェアやめてベースメントをまるまる借りたけど、めちゃくちゃ広くてキレイでプライベートも完全に保たれてるのでいまのところめっちゃくちゃQOLがバク上がりしてる。</p>&mdash; Nash⚡️北米でコード書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1388352000341934087?ref_src=twsrc%5Etfw">May 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 最終的に、ベースメントで生活していて正直 QOL は かなりいいので来年もカナダで過ごす場合はここを拠点にする予定です。
 
