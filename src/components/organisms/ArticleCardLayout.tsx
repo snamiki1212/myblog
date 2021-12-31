@@ -9,6 +9,8 @@ type Props = {
   category: React.ReactNode;
 };
 
+const BREAK_POINT = '580px';
+
 const PADDING_SIZE = '10px';
 
 export const ArticleCardLayout: React.FC<Props> = ({
@@ -38,6 +40,9 @@ const Wrapper = styled.div`
   gap: 0.5rem;
   display: flex;
   flex-direction: row;
+  @media (max-width: ${BREAK_POINT}) {
+    flex-direction: column;
+  }
 `;
 
 const Flex = styled.div`
@@ -52,9 +57,16 @@ const Description = styled(Flex)`
 
 const MetaDataWrapper = styled(Flex)`
   align-items: center;
+  @media (max-width: ${BREAK_POINT}) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
-const ImageWrapper = styled.span``;
+const ImageWrapper = styled.span`
+  display: flex;
+  justify-content: center;
+`;
 
 const TitleWrapper = styled.div`
   padding: 0 10px;
@@ -63,6 +75,10 @@ const TitleWrapper = styled.div`
   display: flex;
   flex: 1;
   align-items: center;
+
+  @media (max-width: ${BREAK_POINT}) {
+    padding: 1rem;
+  }
 `;
 
 const MetaData = styled.div`
