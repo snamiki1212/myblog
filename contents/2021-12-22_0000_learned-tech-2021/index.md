@@ -1,7 +1,7 @@
 ---
 title: '【2021 年】今年、学んだ技術の振り返り｜ Rust と RTK'
 createdAt: '2021-12-22 00:00'
-updatedAt: '2021-12-22 00:00'
+updatedAt: '2021-12-30 00:00'
 category: '技術'
 tags:
   - Alfred
@@ -158,35 +158,9 @@ Swift ＋ UIKit によるモバイル開発とアルゴリズム課題をして�
 
 - [snamiki1212 (Nash) · GitHub: language=swift](https://github.com/snamiki1212?tab=repositories&q=&type=&language=swift)
 
-Swift を使った学習しての気付きとしては、こんな感じです。
+Swift を使った学習しての気付きなどはいろいろあったので別記事にまとめてあります。
 
-- Swift は、モダン言語はなだけあって素晴らしい
-- モバイル開発は、Imperative な UIKit が主流でしんどい
-- 今後は、Declaritive な SwiftUI になるのが今は過渡期
-- つまり、今は両方学ばないといけない。
-
-「iOS エンジニアを目指そうかなー」と少し思っていたのですが、モバイルエンジニアになるにしては時期があまりに悪いのでやめました。
-モバイル開発に慣れる２〜３年後には UIKit が SwiftUI に置き換わるので、再学習コストがかなり高いからです。
-
-文句言ってますが、Swift はマジで良い言語でした。
-
-<!-- Twitter -->
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Swiftを学んでるけど言語仕様がモダンでめちゃくちゃ気にいって本気でMobileエンジニアに転向しようかと思ったけど、UIレイヤーが命令的UIKitから宣言的SwiftUIへの過渡期で今はUIKitを学んで頑張らないといけないのに数年後にはSwiftUIになるので参入時期的にはやや微妙だということがわかってきた</p>&mdash; Nash⚡️北米でコード書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1385033866172243970?ref_src=twsrc%5Etfw">April 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!--  -->
-
-それと、SwiftUI だとコード量が少ないのですが、UI Kit だと正しく書いてもかなりしんどい印象です。
-
-<!--  -->
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Swift+UIKitで簡単なToDoアプリを１つ作れたのでコード見返してるけど命令的UIなのとUIKitの命名思想的にAPI名が長いこともあってシンプルなToDo機能しかないのにコード量が多すぎる。。。ToDoでこのボリュームだと普通のアプリケーションをUIKitで開発するとコード量どんだけ多くなるんだ、これ</p>&mdash; Nash⚡️北米でコード書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1393011760630665216?ref_src=twsrc%5Etfw">May 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!--  -->
-
-なので、正直 Swift を学んだのはサンクコストだった気はしていますがまぁ気にしないでいきます。
-
-ちなみに、こんな感じの気付きもありました。
-
-<!--  -->
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">フロントエンドのTypeScriptやReact GUIを見てると負債感のあるJSやHTML/CSSをラッピングしてどうにかしようとしてるのに対して、iOSはObjective-CやUIKitを根本からリプレイスしてSwiftやSwiftUIに差し替えようとしてて戦略の違いをすごい感じる。</p>&mdash; Nash⚡️北米でコード書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1415382247096537089?ref_src=twsrc%5Etfw">July 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!--  -->
+[React 好きの Fullstack エンジニアが Swift/UIKit を学んだ話](/learning-swift-uikit)
 
 ## Objective-C を学んだ
 
