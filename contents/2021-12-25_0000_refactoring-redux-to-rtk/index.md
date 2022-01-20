@@ -1,7 +1,7 @@
 ---
 title: 'Plain な Redux を段階的にRTKへリファクタリングする心得'
 createdAt: '2021-12-25 00:00'
-updatedAt: '2021-12-25 00:00'
+updatedAt: '2022-01-19 00:00'
 category: '技術'
 tags:
   - React
@@ -188,6 +188,10 @@ const readFromStorageThunk =
   createAsyncThunk(prefix('readWithStorage'), async () => {...})
 // => actionName = rent/v2/user/readWithStorage
 ```
+
+ちなみに、これに合わせて Debugger も見やすいようにカスタマイズしたのを作ったので、チームでもこれを使うようにしています。
+
+- [GitHub - snamiki1212/flipper-plugin-redux-debugger-colorized: Flipper plugin for Redux in React Native with colorized](https://github.com/snamiki1212/flipper-plugin-redux-debugger-colorized)
 
 ### タスク
 
