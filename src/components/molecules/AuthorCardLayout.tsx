@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Card} from '../atoms/Card';
 
 type Props = {
   avator: React.ReactNode;
@@ -17,7 +18,7 @@ export const AuthorCardLayout: React.FC<Props> = ({
   toProfile,
 }) => {
   return (
-    <Wrapper>
+    <Card>
       <Grid>
         <GridAvator>{avator}</GridAvator>
         <GridName>{name}</GridName>
@@ -25,20 +26,14 @@ export const AuthorCardLayout: React.FC<Props> = ({
         <GridDescription>{description}</GridDescription>
         <GridProfileLink>{toProfile}</GridProfileLink>
       </Grid>
-    </Wrapper>
+    </Card>
   );
 };
 
 export const avatorSizeNum = 60;
 
-const Wrapper = styled.div`
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  background-color: var(--white);
-  filter: drop-shadow(1px 5px 5px lightgrey);
-`;
-
 const Grid = styled.div`
+  padding: 1rem 2rem;
   display: grid;
   grid-template-rows:
     ${(props) => props.theme.layout.autherAvatorSizeNum / 2}px

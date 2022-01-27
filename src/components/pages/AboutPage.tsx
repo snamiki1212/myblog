@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import config from '../../../data/SiteConfig';
 import {MyLinks} from '../atoms';
+import {Card} from '../atoms/Card';
 import {AuthorCard} from '../molecules/AuthorCard';
 import {Button} from '../atoms/Button';
 import {useConfigMySocialLinks} from '../../hooks/config';
@@ -11,12 +12,14 @@ export const AboutPage: React.FC = () => {
   return (
     <Wrapper>
       <Card>
-        <CONTENT_Profile />
-        <CONTENT_UntilNow />
-        <CONTENT_WhatCan />
-        <CONTENT_Projects />
-        <CONTENT_AskWork />
-        <CONTENT_ThisBlog />
+        <Inner>
+          <CONTENT_Profile />
+          <CONTENT_UntilNow />
+          <CONTENT_WhatCan />
+          <CONTENT_Projects />
+          <CONTENT_AskWork />
+          <CONTENT_ThisBlog />
+        </Inner>
       </Card>
     </Wrapper>
   );
@@ -204,11 +207,8 @@ const Text = styled.p`
   }
 `;
 
-const Card = styled.div`
+const Inner = styled.div`
   padding: 40px;
-  border-radius: 10px;
-  background-color: var(--white);
-  filter: drop-shadow(1px 5px 5px lightgrey);
 `;
 
 const H2 = styled.h2`

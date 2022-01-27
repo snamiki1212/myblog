@@ -8,7 +8,5 @@ export const Card: React.FC<Props> = ({children, style = {}}) => {
 };
 
 const Container = styled.div`
-  border-radius: 10px;
   background-color: var(--white);
-  filter: drop-shadow(1px 5px 5px lightgrey);
 `;
