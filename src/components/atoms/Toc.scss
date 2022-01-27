@@ -19,9 +19,11 @@ div#toc {
   a {
     opacity: 0.5;
     transition: 0.5s;
+    border: 1px solid none;
     &:hover {
       opacity: 1;
       transition: 0.5s;
+      border-bottom: 1px solid var(--vivid2);
     }
   }
 }
