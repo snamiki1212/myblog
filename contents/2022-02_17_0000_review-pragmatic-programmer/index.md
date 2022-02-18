@@ -19,8 +19,9 @@ word:
 では、見ていきます。
 
 <!--  -->
-
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08T9BXSVD" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51W3GJV1X-L._SL160_.jpg" alt="" style="border: none;" /><br />達人プログラマー ―熟達に向けたあなたの旅― 第 2 版</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 
 <!--  -->
 
@@ -105,6 +106,8 @@ word:
 
 <!--  -->
 
+<div class="af-moshi-container">
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08T9BXSVD" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51W3GJV1X-L._SL160_.jpg" alt="" style="border: none;" /><br />達人プログラマー ―熟達に向けたあなたの旅― 第 2 版</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
 
 <!--  -->
