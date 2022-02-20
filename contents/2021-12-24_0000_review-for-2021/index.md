@@ -171,19 +171,19 @@ word:
 
 アルゴリズム関連が３冊
 
-[【書評】『なっとく！アルゴリズム』わかりやすさに特化した入門書](/review-grokking-algorithms)
+[読後レビュー｜『なっとく！アルゴリズム』わかりやすさに特化した入門書](/review-grokking-algorithms)
 
-[【書評】『世界で闘うプログラミング力を鍛える本 コーディング面接 189 問とその解法』](/review-cracking-coding-interview)
+[読後レビュー｜『世界で闘うプログラミング力を鍛える本 コーディング面接 189 問とその解法』](/review-cracking-coding-interview)
 
-[【書評】『問題解決力を鍛える!アルゴリズムとデータ構造』](/review-drken-algo)
+[読後レビュー｜『問題解決力を鍛える!アルゴリズムとデータ構造』](/review-drken-algo)
 
 ネットワーク関連の本が１冊
 
-[【書評】『基礎からわかる TCP/IP』挫折しにくく学べる](/review-tcp-ip-basic)
+[読後レビュー｜『基礎からわかる TCP/IP』挫折しにくく学べる](/review-tcp-ip-basic)
 
 テックインタビューの本が１冊
 
-[【書評】『Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち』](/review-engineers-in-voyage)
+[読後レビュー｜『Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち』](/review-engineers-in-voyage)
 
 というわけで、今年読んだ本は５冊です。少ないですね。
 

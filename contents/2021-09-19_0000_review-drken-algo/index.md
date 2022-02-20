@@ -1,5 +1,5 @@
 ---
-title: '【書評】『問題解決力を鍛える!アルゴリズムとデータ構造』'
+title: '読後レビュー｜『問題解決力を鍛える!アルゴリズムとデータ構造』'
 createdAt: '2021-09-20 00:00'
 updatedAt: '2021-09-20 00:00'
 category: '書評'
@@ -10,7 +10,7 @@ word:
   - nothing
 ---
 
-# 【書評】『問題解決力を鍛える!アルゴリズムとデータ構造』
+# 読後レビュー｜『問題解決力を鍛える!アルゴリズムとデータ構造』
 
 こんにちは、Nash です。
 
@@ -187,9 +187,9 @@ word:
 
 それぞれの本について、書評を書いてあるのでそれらをどうぞ。
 
-- [【書評】『なっとく！アルゴリズム』わかりやすさに特化した入門書](https://snamiki1212.com/review-grokking-algorithms)
+- [読後レビュー｜『なっとく！アルゴリズム』わかりやすさに特化した入門書](https://snamiki1212.com/review-grokking-algorithms)
 
-- [【書評】『世界で闘うプログラミング力を鍛える本 コーディング面接 189 問とその解法』](https://snamiki1212.com/review-cracking-coding-interview)
+- [読後レビュー｜『世界で闘うプログラミング力を鍛える本 コーディング面接 189 問とその解法』](https://snamiki1212.com/review-cracking-coding-interview)
 
 ## おわりに
 
