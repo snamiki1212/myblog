@@ -46,11 +46,12 @@ const H2 = styled.h2`
 const H3 = styled.h3`
   ${mixinHeadline}
   font-size: 20px;
-  padding: 5px 0 5px 15px;
-  border-left: 5px solid var(--vivid1);
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid #ddd;
   margin-top: 60px;
   margin-bottom: 20px;
   margin-right: 2rem;
+  margin-left: 2rem;
   white-space: normal;
 `;
 
