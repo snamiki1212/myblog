@@ -1,7 +1,7 @@
 ---
 title: '読後レビュー｜『超・箇条書き』'
-createdAt: '2022-03-09 00:00'
-updatedAt: '2022-03-09 00:00'
+createdAt: '2022-02-27 00:00'
+updatedAt: '2022-02-27 00:00'
 category: '書評'
 tags:
   - 書評
