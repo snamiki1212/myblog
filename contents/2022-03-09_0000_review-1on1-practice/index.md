@@ -5,7 +5,7 @@ updatedAt: '2022-03-09 00:00'
 category: '書評'
 tags:
   - 書評
-slug: review-1on1-practice
+slug: review-1-on-1-practice
 word:
   - nothing
 ---
