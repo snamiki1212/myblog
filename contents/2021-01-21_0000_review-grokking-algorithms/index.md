@@ -1,6 +1,5 @@
 ---
 title: '読後レビュー｜『なっとく！アルゴリズム』わかりやすさに特化した入門書'
-cover: 'cover.jpg'
 createdAt: '2021-01-21 21:00'
 updatedAt: '2021-08-19 21:00'
 category: '書評'
