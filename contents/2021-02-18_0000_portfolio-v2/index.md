@@ -1,6 +1,5 @@
 ---
 title: 'Svelteでポートフォリオサイトを作った話'
-cover: 'cover.png'
 createdAt: '2021-02-18 22:00'
 updatedAt: '2021-02-18 22:00'
 category: '技術'

@@ -1,6 +1,5 @@
 ---
 title: 'ReactNative (Expo) + SQLite のマイグレーション npm パッケージを作った'
-cover: 'cover.png'
 createdAt: '2020-05-03 13:00'
 updatedAt: '2020-05-03 13:00'
 category: '技術'

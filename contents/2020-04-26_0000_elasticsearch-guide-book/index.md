@@ -1,6 +1,5 @@
 ---
 title: '読後レビュー｜『Elasticsearch 実践ガイド』'
-cover: 'cover.png'
 createdAt: '2020-04-26 02:00'
 updatedAt: '2020-10-17 22:00'
 category: '書評'

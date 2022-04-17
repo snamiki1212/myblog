@@ -1,6 +1,5 @@
 ---
 title: 'スキルが身につかないままのSE⇒リストラです【チャンスあり】'
-cover: 'cover.png'
 createdAt: '2020-01-24 09:00'
 updatedAt: '2020-01-24 09:00'
 category: 'SE転職'
@@ -11,7 +10,7 @@ word:
   - 'スキル 身につかない SE'
 ---
 
-# スキルが身につかないままのSE⇒リストラです【チャンスあり】
+# スキルが身につかないままの SE⇒ リストラです【チャンスあり】
 
 こんにちは、週２リモートで家でぬくぬく働いてる Nash です。
 
@@ -19,11 +18,9 @@ word:
 
 結論は、「**ほぼ１００％でリストラ**」です。
 
-※ SE＝システムエンジニア、でSIer系の話です。
+※ SE ＝システムエンジニア、で SIer 系の話です。
 
 ## 将来リストラの理由を説明
-
-![スキルが身につかないSEの画像1](./cover.png)
 
 将来どうしてリストラが１００％なのか？
 
@@ -51,12 +48,14 @@ word:
 
 影響はすでに大手 SIer にてリストラが始まっています。
 
-▼NECにてリストラ
+▼NEC にてリストラ
+
 <!-- tweet -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【NEC 希望退職で3000人削減へ】NECは2020中期経営計画を発表し、固定費の削減を含む抜本的な収益構造の改革に踏み切ると表明。国内の間接部門やハードウエア事業領域で希望退職を募るなど3000人削減へ。 <a href="https://t.co/C1V2la7HKJ">https://t.co/C1V2la7HKJ</a></p>&mdash; Yahoo!ニュース (@YahooNewsTopics) <a href="https://twitter.com/YahooNewsTopics/status/958276653787967493?ref_src=twsrc%5Etfw">January 30, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- tweet -->
 
-▼富士通にてリストラ
+▼ 富士通にてリストラ
+
 <!-- tweet -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【早期退職2850人 富士通の事情】<a href="https://t.co/PU1ZEssycU">https://t.co/PU1ZEssycU</a><br><br>上場企業の希望・早期退職者募集が急増し、従来のリストラ型から、グローバル社会に対応するビジネスモデル型への変化が指摘されている。2850人の早期退職者を出した富士通が募集に踏み切った背景とは。</p>&mdash; Yahoo!ニュース (@YahooNewsTopics) <a href="https://twitter.com/YahooNewsTopics/status/1133967087792091136?ref_src=twsrc%5Etfw">May 30, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- tweet -->
@@ -80,7 +79,7 @@ word:
 
 その結果、次の時代は「**個の時代**」とも呼ばれていますね。
 
-終身雇用の時代では、ノースキルでもOKでした。
+終身雇用の時代では、ノースキルでも OK でした。
 
 - 会社がスキルを伸ばしてくれる
 - 会社が責任を持って雇用してくれる
@@ -170,7 +169,7 @@ SIer で技術をつけても職場環境が古いので、こういう働き方
 
 ですが、Web 系に飛び込んで、今では技術力がつき、フリーランスとして週２だけリモートで好きに働くことも出来ています。
 
-SEからWeb系への転職は下記が完全ロードマップになってるので参考にしてみてください。
+SE から Web 系への転職は下記が完全ロードマップになってるので参考にしてみてください。
 
 ▶[SE⇒Web 系への完全マップ｜転職という行動へ](./from-se-to-web)
 

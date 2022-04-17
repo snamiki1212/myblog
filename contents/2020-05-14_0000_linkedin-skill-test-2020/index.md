@@ -1,6 +1,5 @@
 ---
 title: 'Linkedinスキルテストを10個受けた結果のまとめ【2020年】'
-cover: 'cover.jpg'
 createdAt: '2020-05-14 22:00'
 updatedAt: '2020-05-14 22:00'
 category: 'キャリア'

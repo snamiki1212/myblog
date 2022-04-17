@@ -1,6 +1,5 @@
 ---
 title: '読後レビュー｜『プリンシプルオブプログラミング』3年目までに読むこと'
-cover: 'cover.png'
 createdAt: '2020-05-04 01:00'
 updatedAt: '2021-08-19 17:00'
 category: '書評'

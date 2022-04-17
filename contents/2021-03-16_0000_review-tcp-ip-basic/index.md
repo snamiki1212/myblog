@@ -1,6 +1,5 @@
 ---
 title: '読後レビュー｜『基礎からわかるTCP/IP』挫折しにくく学べる'
-cover: 'cover.png'
 createdAt: '2021-03-16 00:00'
 updatedAt: '2021-04-28 00:00'
 category: '書評'
