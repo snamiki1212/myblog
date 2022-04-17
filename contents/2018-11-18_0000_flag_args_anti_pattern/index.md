@@ -1,6 +1,5 @@
 ---
 title: 'フラグ引数アンチパターンとは｜なぜダメなのか解説'
-cover: 'cover.jpg'
 createdAt: '2018-11-18 00:00'
 updatedAt: '2020-06-20 12:00'
 category: '技術'

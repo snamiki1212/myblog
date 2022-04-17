@@ -1,6 +1,5 @@
 ---
 title: '【アジャイル開発宣言とは？】原文をわかりやすく整理した'
-cover: 'cover.jpg'
 createdAt: '2018-11-20 13:50'
 updatedAt: '2020-01-13 09:00'
 category: '技術'

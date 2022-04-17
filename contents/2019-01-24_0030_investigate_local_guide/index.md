@@ -1,6 +1,5 @@
 ---
 title: 'ローカルガイドになって、サンフランシスコを目指すことにした話'
-cover: 'cover.jpg'
 createdAt: '2019-01-24 00:30'
 updatedAt: '2019-01-24 00:30'
 category: '雑記'

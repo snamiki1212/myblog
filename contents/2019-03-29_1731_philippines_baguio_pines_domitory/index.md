@@ -1,6 +1,5 @@
 ---
 title: '【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】'
-cover: cover.jpg
 createdAt: '2019-03-29 17:31'
 updatedAt: '2019-03-29 17:31'
 category: '海外'
