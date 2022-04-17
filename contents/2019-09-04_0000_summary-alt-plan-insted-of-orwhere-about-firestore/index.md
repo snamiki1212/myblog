@@ -1,6 +1,5 @@
 ---
 title: '【Firestore】「orWhere」が使えない時の代案のまとめ'
-cover: 'cover.png'
 createdAt: '2019-09-04 00:00'
 updatedAt: '2019-09-04 00:00'
 category: '技術'
@@ -24,10 +23,11 @@ Firestore を使っている現場で orWhere が必要なケースが出てき�
 NoSQL なので、ここらへんは仕方ないですが、どうにか代案を考えて実現はしないといけないので、そのときに考えた結果をまとめました。
 
 (追記: 2019-09-09)
-また、[公式ドキュメント - Cloud Firestore で単純なクエリと複合クエリを実行する  |  Firebase](https://firebase.google.com/docs/firestore/query-data/queries)にて、言及されていました。
+また、[公式ドキュメント - Cloud Firestore で単純なクエリと複合クエリを実行する | Firebase](https://firebase.google.com/docs/firestore/query-data/queries)にて、言及されていました。
+
 > 論理 OR クエリ。この場合は、OR 条件ごとに独立したクエリを作成し、アプリでクエリ結果を結合する必要があります。
 
-ただ、後述の案③なら、ビューフィールドを用意する必要はありますが、クエリレイヤーで解決できます。
+ただ、後述の案 ③ なら、ビューフィールドを用意する必要はありますが、クエリレイヤーで解決できます。
 
 ### ユースケース
 
@@ -36,18 +36,18 @@ NoSQL なので、ここらへんは仕方ないですが、どうにか代案�
 
 // firestore:users/{user}
 type user = {
-  id: string
+  id: string;
   // ...
-}
+};
 
 // firestore:messages/{message}
 type message = {
-  id: string
-  senderID: string // = userID
-  receiverID: string // = userID
-  createdAt: Date
-  updatedAt: Date
-}
+  id: string;
+  senderID: string; // = userID
+  receiverID: string; // = userID
+  createdAt: Date;
+  updatedAt: Date;
+};
 ```
 
 ＜ユースケース＞
@@ -57,8 +57,8 @@ type message = {
 
 ## orWhere の 代案
 
-出てきた案として下記3つです。
-（追記：さらに1個追加。実装終わってから気付いたのが悔やまれる(2019/9/6)）
+出てきた案として下記 3 つです。
+（追記：さらに 1 個追加。実装終わってから気付いたのが悔やまれる(2019/9/6)）
 
 ### 【案 ①】クエリを２つ投げて、アプリレイヤーで１つの List に結合して、最後にソート。
 
@@ -73,17 +73,16 @@ type message = {
 - デメリット：検索用コレクションで絞ったリストを元にクエリを投げるが、Firestore には whereIN もない（2019/9 時点）。なので、N+1 回のクエリが必要なので fetch 回数が多い
   - ⇐Firestore なので、むしろそういうもの、だど割りきる。
 
-### 【案 ③】検索用のビューをフィールドにArrayで作る
+### 【案 ③】検索用のビューをフィールドに Array で作る
 
 - メリット：クエリレイヤーですべて解決できる
 - デメリット：トリガーの発火元と更新先が自分自身なので、無限ループする可能性を少し秘めている。
   - ただ、そこまで気にするほどではないかと思う
-- デメリット：データを保持するので、データ整合性を担保しておかないといけない（案②と同じ。）
-
+- デメリット：データを保持するので、データ整合性を担保しておかないといけない（案 ② と同じ。）
 
 ~結論ですが、案 ② の方針にしました。案 ① だと無限スクロールとの併用が特につらそうだったので。~
 
-今なら、案③で実装します。実装が終わった後に、array-contains の機能を知ったので気付かなかったです。
+今なら、案 ③ で実装します。実装が終わった後に、array-contains の機能を知ったので気付かなかったです。
 
 では、１つずつみていきます。
 
@@ -92,9 +91,9 @@ type message = {
 だいたいこんな感じになります。
 
 ```ts
-const me = '<Userモデルの自分のデータ>'
-const lastQ1Visible = '<q1の前回取得分の最後>'
-const lastQ2Visible = '<q2の前回取得分の最後>'
+const me = '<Userモデルの自分のデータ>';
+const lastQ1Visible = '<q1の前回取得分の最後>';
+const lastQ2Visible = '<q2の前回取得分の最後>';
 
 const snap1 = await db
   .collection('messages')
@@ -102,7 +101,7 @@ const snap1 = await db
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastP1Visible)
-  .get()
+  .get();
 
 const snap2 = await db
   .collection('messages')
@@ -110,11 +109,14 @@ const snap2 = await db
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastP2Visible)
-  .get()
+  .get();
 
-const [q1, q2]: Message[] = [snap1, snap2].map(snap => ({ id: snap.id, ...snap.data() })) // 結果をentity に格納
+const [q1, q2]: Message[] = [snap1, snap2].map((snap) => ({
+  id: snap.id,
+  ...snap.data(),
+})); // 結果をentity に格納
 
-const result = sortDesc([...q1, ...q2]) // `sortDesc` はupdatedAt で ソートをしてくれるようなヘルパーの想定
+const result = sortDesc([...q1, ...q2]); // `sortDesc` はupdatedAt で ソートをしてくれるようなヘルパーの想定
 ```
 
 実際は結合する前にきちんと「ソート条件とデータ順番」についての確認してあげないといけないです。
@@ -144,11 +146,11 @@ const result = sortDesc([...q1, ...q2]) // `sortDesc` はupdatedAt で ソート
 ```ts
 // firestore:viewableMessages/{viewableMessage}
 type ViewableMessage = {
-  messageID: string
-  userID: string // <= senderID or receiverID
-  createdAt: Date
-  updatedAt: Date
-}
+  messageID: string;
+  userID: string; // <= senderID or receiverID
+  createdAt: Date;
+  updatedAt: Date;
+};
 ```
 
 関係性として、1 つの Message に対して、2 つの ViewableMessage の Document が存在する関係です。
@@ -189,8 +191,8 @@ digraph G{
 実装は、下記のようになるかと思います。
 
 ```ts
-const me = '<Userモデルの自分のデータ>'
-const lastVisible = '<前回取得分の最後>'
+const me = '<Userモデルの自分のデータ>';
+const lastVisible = '<前回取得分の最後>';
 
 // ①viewableMessageから取得。これで、ほしいMessageIDの一覧がわかる。
 const snaps1 = db
@@ -199,24 +201,24 @@ const snaps1 = db
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastVisible)
-  .get()
-const viewableMessages: ViewableMessage[] = snaps1.map(snap => ({ id: snap.id, ...snap.data() }))
+  .get();
+const viewableMessages: ViewableMessage[] = snaps1.map((snap) => ({
+  id: snap.id,
+  ...snap.data(),
+}));
 
 // ②viewableMessage が持つMessageIDの、Messagesをすべて取得。
-const snaps2 = viewableMessages.map(viewableMessage =>
-  db
-    .collection('messages')
-    .doc(viewableMessage.messageID)
-    .get()
-)
-const result = snaps2.map(snap => ({ id: snap.id, ...snap.data() }))
+const snaps2 = viewableMessages.map((viewableMessage) =>
+  db.collection('messages').doc(viewableMessage.messageID).get()
+);
+const result = snaps2.map((snap) => ({id: snap.id, ...snap.data()}));
 ```
 
 案１に比べて、案２はロジックも少なく、Pagination・無限スクロールなども入れやすい形ですね。
 
 ただ、① ＋ ② で N+1 の回数分だけクエリが発行されてしまいます。ただ、Firestore なので、「そういうもの」だとと思っているので、ここは個人的には許容範囲です。
 
-### 案②のデータ保持
+### 案 ② のデータ保持
 
 さて、案 ② の ViewableMessage ですが、message とデータ整合性を取らないといけません。
 
@@ -239,30 +241,30 @@ digraph G{
 
 今回のケースでは、一方方向のデータ依存性なので、トリガーが連鎖してループする可能性も少ないかと思います。
 
-## 【案 ③】検索用のビューをフィールドにArrayで作る (追加)
+## 【案 ③】検索用のビューをフィールドに Array で作る (追加)
 
-Message に viewableUserIDs などのuserIDのリストを保持するフィールドを用意します。
+Message に viewableUserIDs などの userID のリストを保持するフィールドを用意します。
 
 ```ts
 type message = {
-  id: string
-  senderID: string
-  receiverID: string
-  viewableUserIDs: string[] // <<< これを追加
-  createdAt: Date
-  updatedAt: Date
-}
+  id: string;
+  senderID: string;
+  receiverID: string;
+  viewableUserIDs: string[]; // <<< これを追加
+  createdAt: Date;
+  updatedAt: Date;
+};
 ```
 
-そして、格納するデータは`viewableUserIDs = [senderID, receiverID]` として、閲覧可能なUserのIDを入れておきます。
+そして、格納するデータは`viewableUserIDs = [senderID, receiverID]` として、閲覧可能な User の ID を入れておきます。
 
-これなら、Createするときに、合わせて作成できるので、わざわざトリガーにする必要もないですね。
+これなら、Create するときに、合わせて作成できるので、わざわざトリガーにする必要もないですね。
 
-そして、検索条件として、`array-contains`を使います。`array-contains`は、Arrayの中に任意の値が含まれていればfetchしてくれる、リスト内検索機能です。
+そして、検索条件として、`array-contains`を使います。`array-contains`は、Array の中に任意の値が含まれていれば fetch してくれる、リスト内検索機能です。
 
 ```ts
-const me = '<Userモデルの自分のデータ>'
-const lastQueryVisible = '<前回取得分の最後>'
+const me = '<Userモデルの自分のデータ>';
+const lastQueryVisible = '<前回取得分の最後>';
 
 const snap = await db
   .collection('messages')
@@ -270,26 +272,27 @@ const snap = await db
   .orderBy('updatedAt')
   .limit(10)
   .startAt(lastQueryVisible)
-  .get()
+  .get();
 
-const message: Message = { id: snap.id, ...snap.data() }
+const message: Message = {id: snap.id, ...snap.data()};
 ```
 
-案①、案②よりも、かなりスッキリしましたね。
+案 ①、案 ② よりも、かなりスッキリしましたね。
 
-### 案③のデータ保持
+### 案 ③ のデータ保持
 
-また、仮に「送信先のUserを変更可能にする」という要件が出てきたとします。
+また、仮に「送信先の User を変更可能にする」という要件が出てきたとします。
 
 このとき、Message の中の receiverID の変更に合わせて、viewableUserIDs の値も変更しないといけません。
 
-変更する際は、案②と同じくトリガーを使う想定で考えます。
+変更する際は、案 ② と同じくトリガーを使う想定で考えます。
 
-このとき、案②とは異なり、自己参照の関係になるので、トリガーの条件に注意しておかないと、トリガーがループする可能性がある点です。
+このとき、案 ② とは異なり、自己参照の関係になるので、トリガーの条件に注意しておかないと、トリガーがループする可能性がある点です。
 
-つまり、下記が同じMessage になる、ということです。
-- トリガー発火の元のDocument
-- トリガー発火で起きる更新先のDocument
+つまり、下記が同じ Message になる、ということです。
+
+- トリガー発火の元の Document
+- トリガー発火で起きる更新先の Document
 
 ```dot
 digraph G {
@@ -311,11 +314,8 @@ digraph G {
 }
 ```
 
-
 ### 所感
 
-案②で、実体ありビューを作成することになりますが、トリガーを使えば管理コストもそこまで高くならないかと思います。
+案 ② で、実体ありビューを作成することになりますが、トリガーを使えば管理コストもそこまで高くならないかと思います。
 
-実装が終わってから、案③に気付いたのが悔やまれる。
-
-
+実装が終わってから、案 ③ に気付いたのが悔やまれる。
