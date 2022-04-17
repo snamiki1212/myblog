@@ -1,6 +1,5 @@
 ---
 title: '【経験談】国内・海外で今まで移住してきた場所の比較【まとめ】'
-cover: 'cover.jpg'
 createdAt: '2020-12-12 20:00'
 updatedAt: '2020-12-12 20:00'
 category: '海外'

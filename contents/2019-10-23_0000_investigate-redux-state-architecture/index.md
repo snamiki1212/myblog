@@ -1,6 +1,5 @@
 ---
 title: 'Redux の State 設計の正規化の記事まとめ'
-cover: 'cover.png'
 createdAt: '2019-10-23 00:00'
 updatedAt: '2019-10-23 00:00'
 updated_at: '2019-12-14 00:00'
@@ -25,8 +24,6 @@ slug: investigate-redux-state-architecture
 
 ## 公式ドキュメントを調べる
 
-![cover-1-public](1.png)
-
 何はともあれ、公式のドキュメントを調べる。ドキュメントを呼んだ結果をだいたいまとめた。
 
 ### 公式 Doc: [Normalizing State Shape · Redux](https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape)
@@ -40,7 +37,7 @@ slug: investigate-redux-state-architecture
 「リストで持たずにオブジェクトで保持する」これでアクセスのしやすさが向上する。具体的には、リストだと
 
 ```js
-list.find(x => x.id === id);
+list.find((x) => x.id === id);
 ```
 
 のようにデータを見つけないといけないが、オブジェクトなら、
@@ -59,7 +56,10 @@ obj[id];
 
 ```ts
 // 正規化前
-[{id: 1, name: tanaka}, {id: 2, name: sato}];
+[
+  {id: 1, name: tanaka},
+  {id: 2, name: sato},
+];
 ```
 
 正規化前は、１つのデータ構造で、下記の２つの情報を持っている。
@@ -99,8 +99,6 @@ obj[id];
 
 ## State 設計にまつわる記事を読む
 
-![cover-2-private](2.png)
-
 他にも記事をいろいろ探して読んでみた。
 
 ### スライド: [redux の state 設計の話 - スタートアップテック](https://www.slideshare.net/ayatas0623/reduxstate-129830690)
@@ -139,8 +137,6 @@ obj[id];
 - この記事みたいなの。自分が見つけられなかった記事がいろいろあったので、助かった。
 
 ## あとがき
-
-![cover-last](cover.png)
 
 ### まとめ
 

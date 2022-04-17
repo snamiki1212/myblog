@@ -1,6 +1,5 @@
 ---
 title: '【Firestore】「WhereIN」が使えない時の代案のまとめ'
-cover: 'cover.png'
 createdAt: '2019-09-06 00:00' # created_at
 updatedAt: '2020-05-10 20:00' # updated_at
 category: '技術'
@@ -16,7 +15,8 @@ slug: summary-alt-plan-insted-of-wherein-about-firestore
 
 この記事は、「Firestore のような NoSQL で WhereIN が使えないときの、代案をまとめた記事」です。
 
-### 追記: 公式でwhereInが対応されました(2019/11/09)
+### 追記: 公式で whereIn が対応されました(2019/11/09)
+
 <!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Firebase が where in をサポート。<br>今まで無かったから N+1 でクエリ書いてたので助かる <a href="https://t.co/8AGeqVnoGN">https://t.co/8AGeqVnoGN</a></p>&mdash; Nash⚡️Next.jsとRN書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1192589159501721600?ref_src=twsrc%5Etfw">November 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -25,28 +25,30 @@ slug: summary-alt-plan-insted-of-wherein-about-firestore
 ```typescript
 // where in
 type project = {
-  status: string
-}
-db.collection("projects")
-  .where("status", "in", ["public", "private"]);
+  status: string;
+};
+db.collection('projects').where('status', 'in', ['public', 'private']);
 ```
 
-これで、簡単にwhere-inを実現できるようになりましたね。
+これで、簡単に where-in を実現できるようになりましたね。
 
-ただ、最大10件の値しかクエリに渡せられないので、固定で10件以下のケース以外では使えないので本当にwhereinでいけるかどうかは設計時に注意してください。
+ただ、最大 10 件の値しかクエリに渡せられないので、固定で 10 件以下のケース以外では使えないので本当に wherein でいけるかどうかは設計時に注意してください。
 
-ちなみに、`array-contains-any`というのもあります。こちらは、`string[]`を対象にwhereInを行えます。
+ちなみに、`array-contains-any`というのもあります。こちらは、`string[]`を対象に whereIn を行えます。
 
 ```typescript
 // array-contains-any
 type article = {
-  tag: string[] // <== ここが違う
-}
-db.collection('articles')
-  .where('tag', 'array-contains-any', ['Firebase', 'Frontend', 'TypeScript'])
+  tag: string[]; // <== ここが違う
+};
+db.collection('articles').where('tag', 'array-contains-any', [
+  'Firebase',
+  'Frontend',
+  'TypeScript',
+]);
 ```
 
-基本的にはfirestoreのバージョンを上げて、これらのAPIを使いましょう。バージョンを挙げられないなら、この記事の以降のやり方を参考にしてください。
+基本的には firestore のバージョンを上げて、これらの API を使いましょう。バージョンを挙げられないなら、この記事の以降のやり方を参考にしてください。
 
 追記終わり(2019/11/09)
 
@@ -116,17 +118,14 @@ type tweet = {
 const tweetID = match.params.tweetID;
 
 // tweet を 取得
-const snap = await db
-  .collection('tweets')
-  .doc(tweetID)
-  .get();
+const snap = await db.collection('tweets').doc(tweetID).get();
 const tweet = {id: snap.id, ...snap.data()};
 
 // (A) まず、一括ですべて取得
 const allFriends = await db.collection('users').get();
 
 // (B) その後に、データクレンジング
-const myFriends = allFriends.filter(maybeMyFriend =>
+const myFriends = allFriends.filter((maybeMyFriend) =>
   tweet.likedFriendIDs.includes(maybeMyFriend.id)
 );
 
@@ -152,19 +151,14 @@ return myFriends;
 const tweetID = match.params.tweetID;
 
 // (A) N+1の「1」のクエリ
-const snap1 = await db
-  .collection('tweets')
-  .doc(tweetID)
-  .get();
+const snap1 = await db.collection('tweets').doc(tweetID).get();
 const tweet = {id: snap.id, ...snap.data()};
 
 // (B) N+1の「N」のクエリ
-const snap2List = tweet.friendIDs.map(friendID =>
+const snap2List = tweet.friendIDs.map((friendID) =>
   db.collection('users').doc(friendID).get()
 );
-const myFriends = snap2List.docs.map(doc => (
-  { id: doc.id, ...doc.data() }
-))
+const myFriends = snap2List.docs.map((doc) => ({id: doc.id, ...doc.data()}));
 
 return myFriends;
 ```

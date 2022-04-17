@@ -1,6 +1,5 @@
 ---
 title: 'フリーランスエンジニア、約２年目の振り返り【2020年】'
-cover: 'cover.jpg'
 createdAt: '2020-12-29 20:00'
 updatedAt: '2021-12-23 20:00'
 category: 'キャリア'

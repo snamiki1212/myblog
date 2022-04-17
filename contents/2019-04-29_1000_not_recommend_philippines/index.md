@@ -1,6 +1,5 @@
 ---
 title: 'Webエンジニア目線でフィリピン移住をおすすめしない理由⇐3 ヶ月滞在の結論'
-cover: 'cover.jpg'
 createdAt: '2019-04-29 10:00'
 updatedAt: '2020-12-24 11:40'
 category: '海外'
@@ -10,7 +9,7 @@ tags:
 slug: not-recommend-philippines
 ---
 
-# Webエンジニア目線でフィリピン移住をおすすめしない理由⇐3 ヶ月滞在の結論
+# Web エンジニア目線でフィリピン移住をおすすめしない理由 ⇐3 ヶ月滞在の結論
 
 こんにちは。フィリピン留学を終えて 2 つの学校を卒業した Nash です。
 
@@ -28,7 +27,7 @@ slug: not-recommend-philippines
 
 先に自分の実体験の背景について書いておきます。
 
-- 期間：2019/2〜2019/5(3ヶ月くらい)
+- 期間：2019/2〜2019/5(3 ヶ月くらい)
 - 場所：セブ・バギオ
 - 内容：２箇所の学校に留学
 
@@ -78,7 +77,7 @@ slug: not-recommend-philippines
 遅いです。3G レベルの速度です。
 自分はの環境として下記の通りです。
 
-- SIM ＝ Globe 社（フィリピンの大手SIM）
+- SIM ＝ Globe 社（フィリピンの大手 SIM）
 - スマホ＝ iPhoneXR
 
 スマホの性能は高かったですがネットワーク遅さに引きづられてました。
@@ -296,9 +295,8 @@ Wifi のネットワークが安定・早いで、かなり快適でした。
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">フィリピンにさよならをしたが<br><br>次は、こんにちはタイ <a href="https://t.co/r1zElYIKhr">pic.twitter.com/r1zElYIKhr</a></p>&mdash; Nash🌏エンジニア🇹🇭 (タイ滞在中) (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1122503512951156736?ref_src=twsrc%5Etfw">2019年4月28日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 ### 追記：タイに行ってきてレビュー書きました(2020/1/7)
 
 タイに行ってきてそのレビューを記事にしました。結論では断然、タイのほうがおすすめです。
 
-[【実体験】IT エンジニアがタイに移住してみた結果⇒オススメです](./recommend-thai-to-live-as-engineer)
+[【実体験】IT エンジニアがタイに移住してみた結果 ⇒ オススメです](./recommend-thai-to-live-as-engineer)

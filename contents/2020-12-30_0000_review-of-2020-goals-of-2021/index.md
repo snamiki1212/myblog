@@ -1,6 +1,5 @@
 ---
 title: '2020年振り返り＋2021年目標｜やっとカナダ来れた'
-cover: 'cover.jpg'
 createdAt: '2020-12-30 20:00'
 updatedAt: '2020-12-30 20:00'
 category: 'キャリア'

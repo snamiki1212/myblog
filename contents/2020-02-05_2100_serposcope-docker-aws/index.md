@@ -1,6 +1,5 @@
 ---
 title: 'Serposcope + AWS + Dockerの構築手順書'
-cover: 'cover.png'
 createdAt: '2020-02-05 21:00'
 updatedAt: '2020-02-05 21:00'
 category: '技術'
@@ -13,7 +12,7 @@ word:
   - 'nothing'
 ---
 
-# Serposcope + AWS + Dockerの構築手順書
+# Serposcope + AWS + Docker の構築手順書
 
 この記事は下記の構築手順書です。
 
@@ -25,10 +24,10 @@ word:
 
 下記は考えてないです。
 
-DB周りはserposcopeの機能でsave/restoreがあるので、それで十分だと思ってるので。
+DB 周りは serposcope の機能で save/restore があるので、それで十分だと思ってるので。
 
-- MySQL周り
-- ElasticIP周り
+- MySQL 周り
+- ElasticIP 周り
 
 では、見ていきます。
 
@@ -36,16 +35,16 @@ DB周りはserposcopeの機能でsave/restoreがあるので、それで十分�
 
 大きく分けて２つです。
 
-- EC2立てて、git/dockerなどを入れる
-- docker周りの手順
+- EC2 立てて、git/docker などを入れる
+- docker 周りの手順
 
 では、見ていきます。
 
-### EC2を立てる
+### EC2 を立てる
 
-AWSコンソールをポチポチする。気をつけるポイントは下記くらい。
+AWS コンソールをポチポチする。気をつけるポイントは下記くらい。
 
-- インスタンスはなんでもOK。（Amazon Linux 2とかでOKじゃないかな）
+- インスタンスはなんでも OK。（Amazon Linux 2 とかで OK じゃないかな）
 - 下記の穴あけを行うこと。
   - https
   - custom / tcp / 7341
@@ -63,13 +62,13 @@ chomod 400 <serposcope>.pem
 ssh -i <serposcope>.pem ec2-user@<ec2のpublicDNS>
 ```
 
-### EC2 にgit入れる
+### EC2 に git 入れる
 
 ```shell
 sudo yum install git
 ```
 
-### EC2 にdocker入れる
+### EC2 に docker 入れる
 
 ```shell
 sudo yum update -y
@@ -81,8 +80,7 @@ sudo usermod -aG docker ec2-user # これでsudoなしで実行できるよう�
 # sudoつけなくてもOKのはずだけど、ダメならsudoつけて、以降の手順をやる。
 ```
 
-## Serposcopeの手順
-
+## Serposcope の手順
 
 ```shell
 # これで、serposcopeを取得。
@@ -116,5 +114,5 @@ docker ps # STATUS > Up なのを確認する
 
 ### REF
 
-- [「Serposcope」をAWS等にのせて自動でSEOランクを収集させ続ける方法](https://awe-some.net/2016/12/serposcope-vps/)
+- [「Serposcope」を AWS 等にのせて自動で SEO ランクを収集させ続ける方法](https://awe-some.net/2016/12/serposcope-vps/)
 - [Running Docker on AWS EC2 - By ](https://hackernoon.com/running-docker-on-aws-ec2-83a14b780c56)

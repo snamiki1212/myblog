@@ -1,6 +1,5 @@
 ---
 title: 'Typora + GoogleSyncのレビュー｜無料軽量Markdownエディタ+クラウド同期'
-cover: 'cover.png'
 createdAt: '2020-01-04 09:00'
 updatedAt: '2020-07-05 23:00'
 category: '技術'
@@ -12,7 +11,7 @@ word:
   - 'nothing'
 ---
 
-# Typora+GoogleSyncのレビュー｜無料軽量Markdownエディタ+クラウド同期
+# Typora+GoogleSync のレビュー｜無料軽量 Markdown エディタ+クラウド同期
 
 こんにちは、Nash です。
 
@@ -25,15 +24,13 @@ word:
 
 では、見ていきます。
 
-（追記：2020-10-18）GoogleDriveからDropboxに変更しました
+（追記 ：2020-10-18）GoogleDrive から Dropbox に変更しました
 
-[マークダウン管理をGoogleDriveからDropboxに変更した話](./markdown-storage-as-dropbox)
+[マークダウン管理を GoogleDrive から Dropbox に変更した話](./markdown-storage-as-dropbox)
 
 ## Typora の説明
 
-![typoraのトップ画像](cover.png)
-
-Typora は、無料の軽量 MarkdownEditor です。
+Typora は無料の軽量 MarkdownEditor です。
 
 ### pros
 
@@ -58,14 +55,14 @@ Typora は、無料の軽量 MarkdownEditor です。
 
 あと、使っていて小さなバグによく見つかります。ただ、クリティカルなバグではないので問題はないです。
 
-ただ、一番の問題はクラウド保存対応です。個人的にGoogleDriveでクラウド保存をしたいのですが、公式でサポートされていないので、個別にカスタムしています。
+ただ、一番の問題はクラウド保存対応です。個人的に GoogleDrive でクラウド保存をしたいのですが、公式でサポートされていないので、個別にカスタムしています。
 
 ## クラウド保存 ⇒GoogleSync/GoogleDrive
 
 クラウドストレージについてですが、iCloud には仕事用のデータを入れたくないし、Dropbox だと無料枠の保存容量が少ないので、 GoogleSync 経由で GoogleDrive を使いました。
 
 GoogleSync とは、Google から提供されている Cloud 同期アプリケーションです。
-例えば、ローカルの該当ディレクトリをこのSyncに指定しておけばローカルでファイルを保存したときに自動的にクラウド同期してくれます。
+例えば、ローカルの該当ディレクトリをこの Sync に指定しておけばローカルでファイルを保存したときに自動的にクラウド同期してくれます。
 
 具体的に運用を踏まえて説明すると、
 
@@ -90,15 +87,15 @@ GoogleSync とは、Google から提供されている Cloud 同期アプリケ�
   - GoogleSync の同期機能はバックグラウンドで動作します。
   - なので、なにか操作をする必要もないです。
 
-特に、GoogleSyncを意識しないで運用できるのは楽でした。GoogleSync使ってるの忘れるくらいですから。
+特に、GoogleSync を意識しないで運用できるのは楽でした。GoogleSync 使ってるの忘れるくらいですから。
 
 ### cos
 
 微妙だった点についてです。
 
 - スマホからのアクセス
-  - クラウド保存にGoogleDrive を選択してますが Markdown ファイルが標準の拡張子として対応していないです。
-  - そのため、閲覧／編集のためにGoogleDriveの3rdPartyアプリ経由でしか開けないです(ex)StackEdit
+  - クラウド保存に GoogleDrive を選択してますが Markdown ファイルが標準の拡張子として対応していないです。
+  - そのため、閲覧／編集のために GoogleDrive の 3rdParty アプリ経由でしか開けないです(ex)StackEdit
   - 3rdParty のクオリティはそこまで高くないのでスマホから見る際は結構ストレスが高いです。
 
 といわけで、GoogleDrive／スマホでマークダウンを見るときの体験がすこぶる悪いです。

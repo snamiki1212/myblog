@@ -1,6 +1,5 @@
 ---
 title: 'CloudFunctionsのトリガーに対するディレクトリ・フォルダ・ファイルの設計'
-cover: 'cover.png'
 createdAt: '2020-05-23 10:00'
 updatedAt: '2020-05-23 10:00'
 category: '技術'

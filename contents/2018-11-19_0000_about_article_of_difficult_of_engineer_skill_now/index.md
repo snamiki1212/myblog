@@ -1,6 +1,5 @@
 ---
 title: '「エンジニアの能力と今どきの難しさ」を読んで思ったこと'
-cover: 'cover.jpg'
 createdAt: '2018-11-19 00:00'
 updatedAt: '2018-11-19 00:00'
 category: 'キャリア'

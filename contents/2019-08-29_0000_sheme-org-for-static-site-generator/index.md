@@ -1,6 +1,5 @@
 ---
 title: '静的サイトジェネレータで構造化データマークアップを入れた知見【GatsbyJS】'
-cover: 'cover.jpg'
 createdAt: '2019-08-29 00:00'
 updatedAt: '2019-08-29 00:00'
 category: '技術'
@@ -11,21 +10,20 @@ slug: sheme-org-for-static-site-generator
 
 # 静的サイトジェネレータで構造化データマークアップを入れた知見【GatsbyJS】
 
-こんにちはNashです。GatsbyJSでブログを構築しています。
+こんにちは Nash です。GatsbyJS でブログを構築しています。
 
 この記事は「**静的サイトジェネレータ(GatsbyJS)で構造化データマークアップを作り込むにあたってやり方・ハマったポイント**」の記事です。
 
 結論を箇条書きにしていきます。
 
 - 構造化データマークアップって？
-  - ←　Webページのメタ情報。Googleのクローラに詳細を教えるために必要。
+  - ← 　 Web ページのメタ情報。Google のクローラに詳細を教えるために必要。
 - どう表現するの？
-  - ←JSON形式でページに埋め込んでおくのがベター。Personみたいに繰り返し使うようなものはEntityが決められている。
+  - ←JSON 形式でページに埋め込んでおくのがベター。Person みたいに繰り返し使うようなものは Entity が決められている。
 - どう作っていくのが良い？
-  - ← Googleのツール・ドキュメントでTry＆Errorが確実。
+  - ← Google のツール・ドキュメントで Try＆Error が確実。
 - 作る際の効率化
-  - ← ローカルで開発してNgrok経由でPublicに開放してツールで確認。
-
+  - ← ローカルで開発して Ngrok 経由で Public に開放してツールで確認。
 
 では見ていきます。
 
@@ -33,76 +31,74 @@ slug: sheme-org-for-static-site-generator
 
 ### 構造化データマークアップとは？
 
-Webページに対するメタ情報のことで、Googleの検索クローリングの精度をあげるのが目的。
+Web ページに対するメタ情報のことで、Google の検索クローリングの精度をあげるのが目的。
 
-例えば、あるWebページが「ブログの記事」だとして「サムネイル画像」を構造化データマークアップで明示してURLを記載してあげると、クローラーがそのデータを「サムネイル画像」だと認識してくれる。場合によっては、検索結果に画像つきで出してくれたりする。
+例えば、ある Web ページが「ブログの記事」だとして「サムネイル画像」を構造化データマークアップで明示して URL を記載してあげると、クローラーがそのデータを「サムネイル画像」だと認識してくれる。場合によっては、検索結果に画像つきで出してくれたりする。
 
-2019年の現時点では、SEOの順位に直接的な影響はないが、今後影響がある旨がアナウンスされている。ただ、現時点でも、構造化データマークアップを入れるとGoogle検索結果に上記のように反映されるので、SEO的には有利になるケースが多い。
-
+2019 年の現時点では、SEO の順位に直接的な影響はないが、今後影響がある旨がアナウンスされている。ただ、現時点でも、構造化データマークアップを入れると Google 検索結果に上記のように反映されるので、SEO 的には有利になるケースが多い。
 
 ### 構造化マークアップのデータ構造は？
 
-JSON+LDという構造が推奨なので、素直にそれに従うのが良いし、データもJSONになるので、静的サイトジェネレータなどでも取り扱いやすい。
+JSON+LD という構造が推奨なので、素直にそれに従うのが良いし、データも JSON になるので、静的サイトジェネレータなどでも取り扱いやすい。
 
-- 詳細はこちら：[Qiita - Google推奨「JSON-LD」で構造化マークアップ](https://qiita.com/narumana/items/b66969b80cce848b2ddf)
+- 詳細はこちら：[Qiita - Google 推奨「JSON-LD」で構造化マークアップ](https://qiita.com/narumana/items/b66969b80cce848b2ddf)
 
 ## 構造化データマークアップ＋静的サイトジェネレータで実装
 
-![develope-structure-ssg](1.jpg)
-
 ### 実装の流れ
 
-「テストツールに値を入れる」→「Error・Wraningを潰しこむ」のサイクルが一番良かったです。
+「テストツールに値を入れる」→「Error・Wraning を潰しこむ」のサイクルが一番良かったです。
 
 むしろドキュメント見てたらハマりました。
 
 - [GoogleStructuredDataTestingTool](https://search.google.com/structured-data/testing-tool/u/0/)
 - [Google のドキュメント](https://developers.google.com/search/docs/guides/search-gallery)
-- [Scheme.orgのドキュメント](https://schema.org/)（「参考程度に見る」を推奨。理由後述。）
+- [Scheme.org のドキュメント](https://schema.org/)（「参考程度に見る」を推奨。理由後述。）
 
-### ハマリポイント：Scheme.orgとGoogleのドキュメントでズレ
+### ハマリポイント：Scheme.org と Google のドキュメントでズレ
 
-- Scheme.orgのドキュメント
-- Googleのドキュメント＋テストツール
+- Scheme.org のドキュメント
+- Google のドキュメント＋テストツール
 
 で、でズレがあったため、ハマりました。
 
 なので、ドキュメントドリブンで開発しないほうが良かったです。
 
 - Scheme.org のドキュメント
+
   - ![explain-scheme-org](explain-1.png)
-  - ドキュメント「BlogPostingのプロパティのpublisher にはPersonかOrganizationを入れてね！」
-  - じぶん「ふむふむ。Personを入れるか。」
+  - ドキュメント「BlogPosting のプロパティの publisher には Person か Organization を入れてね！」
+  - じぶん「ふむふむ。Person を入れるか。」
 
 - Google Structure Date Testing Tool
+
   - ![explain-google-test-tool](explain-2.png)
-  - ツール「publisherにPersonの型？そんなやつは知らん」
+  - ツール「publisher に Person の型？そんなやつは知らん」
   - じぶん「え？」
 
 - Google のドキュメント
   - ![explain-google-doc](explain-3.png)
-  - ドキュメント「ArticleはScheme.orgのBlogPostingとかを参考にしろ。だが、PublisherはOrganizationだけな。」
+  - ドキュメント「Article は Scheme.org の BlogPosting とかを参考にしろ。だが、Publisher は Organization だけな。」
   - じぶん「なんでや」
 
-完全に互換性があるわけではない？みたいなので、Scheme.org のドキュメントは参考程度に、「テストツールに値を入れる」→「Error・Wraningを潰しこむ」のサイクルが最終的に一番良かったです。
+完全に互換性があるわけではない？みたいなので、Scheme.org のドキュメントは参考程度に、「テストツールに値を入れる」→「Error・Wraning を潰しこむ」のサイクルが最終的に一番良かったです。
 
 ---
 
-ですが、テストツールはパブリックなURLにしか有効ではありません。
+ですが、テストツールはパブリックな URL にしか有効ではありません。
 「ローカルで修正」→「デプロイ」を何度も行うのは手間なので、Ngrok を使いました。
 
-### 開発ポイント：Ngrok使う
+### 開発ポイント：Ngrok 使う
 
+Ngrok はローカルの TCP ネットワークを Ngrok が提供してくれるドメイン経由でパブリックに開放してくれます。
 
-NgrokはローカルのTCPネットワークをNgrokが提供してくれるドメイン経由でパブリックに開放してくれます。
+- Ngrok とは？→ [Qiita - ngrok が便利すぎる](https://qiita.com/mininobu/items/b45dbc70faedf30f484e)
+- Ngrok ＋ GoogleStructureDataTestingTool：[How to test localhost website with Google SEO tools](https://www.aymen-loukil.com/en/blog-en/how-to-test-localhost-website-with-google-seo-tools/)
 
-- Ngrokとは？→ [Qiita - ngrokが便利すぎる](https://qiita.com/mininobu/items/b45dbc70faedf30f484e)
-- Ngrok＋GoogleStructureDataTestingTool：[How to test localhost website with Google SEO tools](https://www.aymen-loukil.com/en/blog-en/how-to-test-localhost-website-with-google-seo-tools/)
-
-これで、ローカルで開発した結果をToolに流し込んで確認できます。
+これで、ローカルで開発した結果を Tool に流し込んで確認できます。
 
 ### 終わりに
 
-普段はWebアプリケーションが中心なので、構造化データマークアップなどSEO寄りの知識が全然なかったので、概要知識から手に入れるところから始めたので思ったよりも時間がかかってしまいました。
+普段は Web アプリケーションが中心なので、構造化データマークアップなど SEO 寄りの知識が全然なかったので、概要知識から手に入れるところから始めたので思ったよりも時間がかかってしまいました。
 
-WordPressなどなら、ここらへんもテーマがよしなにやってくれるので（たぶん）、GatsbyJSなどでオレオレで作るとすべて自分作る必要があるので、勉強になりますね。
+WordPress などなら、ここらへんもテーマがよしなにやってくれるので（たぶん）、GatsbyJS などでオレオレで作るとすべて自分作る必要があるので、勉強になりますね。

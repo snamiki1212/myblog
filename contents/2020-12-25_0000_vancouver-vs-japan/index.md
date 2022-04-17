@@ -1,6 +1,5 @@
 ---
 title: '【バンクーバー】カナダへ移住して気付いたことまとめ【日本と比較】'
-cover: 'cover.jpg'
 createdAt: '2020-12-25 20:00'
 updatedAt: '2020-12-25 20:00'
 category: '海外'

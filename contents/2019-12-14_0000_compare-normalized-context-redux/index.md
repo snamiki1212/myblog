@@ -1,6 +1,5 @@
 ---
 title: 'ReactのContextAPIでの正規化をReduxと比較'
-cover: 'cover.png'
 createdAt: '2019-12-14 00:00'
 updatedAt: '2019-12-14 00:00'
 category: '技術'
@@ -70,15 +69,15 @@ Redux と Context のケースで比較するために、とりあえず定番�
 
 ```ts
 // Reduxのケース
-const selectDomains = state => state.TodoDomain.ids;
-const selectEntities = state => state.TodoEntity.list;
+const selectDomains = (state) => state.TodoDomain.ids;
+const selectEntities = (state) => state.TodoEntity.list;
 const selectTodo = createSelector(
   // ②Stateの変更検知
   selectDomains,
   selectEntities,
   (ids, entities) => {
     // ①deserialize
-    return ids.map(id => entities[id]);
+    return ids.map((id) => entities[id]);
   }
 );
 
@@ -100,7 +99,7 @@ const deserialized = useSelector(selectTodo);
 // Contextのケース
 const deserialized = React.useMemo(() => {
   // ①deserialize
-  return ids.map(id => entities[id]);
+  return ids.map((id) => entities[id]);
 }, [
   // ②stateの変更検知
   ids,
