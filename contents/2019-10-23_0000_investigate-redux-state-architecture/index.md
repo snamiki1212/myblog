@@ -72,13 +72,9 @@ obj[id];
 ```ts
 // 正規化後
 {
-  qwer: {
-    id: 1,
-    name: tanaka
-  },
-  asdf: {
-    id: 2,
-    name: sato
+  data: {
+    1: { id: 1, name: tanaka },
+    2: { id: 2, name: sato },
   },
   allIDs: [1, 2]
   ...
