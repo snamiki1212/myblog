@@ -10,6 +10,8 @@ word:
   - nothing
 ---
 
+# Rust+ActixWeb+Diesel で Realworld プロジェクトを登録した話
+
 ども、Nash です。
 
 この記事は、学習用に作成した Rust による Realworld プロジェクトが完成して公式に登録されたので、そこまでに学んだことなどをまとめた記事です。
