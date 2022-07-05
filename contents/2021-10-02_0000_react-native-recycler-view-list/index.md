@@ -1,7 +1,7 @@
 ---
 title: '【ReactNative】RecyclerListView で ハイパフォーマンスなリスト'
 createdAt: '2021-10-02 00:00'
-updatedAt: '2021-10-02 00:00'
+updatedAt: '2022-07-05 00:00'
 category: '技術'
 tags:
   - 技術
@@ -18,6 +18,18 @@ word:
 この記事は「**ハイパフォーマンスにリストを表示出来る RecyclerListeView についての紹介記事**」になります。
 
 では見ていきましょう。
+
+## 更新（2022-07-05）
+
+ShopifyからFlashListが発表されたので、今後はこちらを使うことを強く推奨します。
+
+- [GitHub - Shopify/flash-list: A better list for React Native](https://github.com/Shopify/flash-list)
+
+FlashListを使うべき理由として、ざっくりとこれらです。
+
+- 内部的には、この記事で取り上げてる `RecyclerListView`を使ってる[REF](https://github.com/Shopify/flash-list/commit/cc9669cc6d300834dc2b3a2a90df26a1aaef936a#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519R78)
+- RLVを拡張していて、パフォーマンス向上・callbackの追加などがされている[REF](https://shopify.github.io/flash-list/docs/known-issues/)
+- RLVの複雑なAPIに比べて、FlashListはReactNativeのFlatListを同様のAPIになっていて遥かにスマートになってる。
 
 ## はじめに
 
