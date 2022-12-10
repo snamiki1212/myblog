@@ -1,5 +1,5 @@
 ---
-title: 'Vancouver で FullstackEngineer として働き始めました'
+title: '【入社エントリ】カナダのバンクーバーでソフトウェアエンジニアとして働き始めました'
 createdAt: '2022-06-04 17:00'
 updatedAt: '2022-08-11 17:00'
 category: 'キャリア'
@@ -10,7 +10,7 @@ word:
   - nothing
 ---
 
-# Vancouver で FullstackEngineer として働き始めました
+# 【入社エントリ】カナダのバンクーバーでソフトウェアエンジニアとして働き始めました
 
 ども、Nash です。最近、Vancouver にあるスタートアップ企業に入社して 3 ヶ月ほど立ちました。
 
