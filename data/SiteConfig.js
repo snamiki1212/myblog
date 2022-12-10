@@ -30,7 +30,7 @@ module.exports = {
   userLocation: 'Shibuya, Japan', // User location to display in the author segment.
   userAvatar: '/avator.webp', // User avatar to display in the author segment.
   userDescription:
-    'ソフトウェアエンジニア。国際決済金融SE⇒ITベンチャー⇒フリーランス。日本を出て、海外で働いて、最終ゴールは月で生活すること。', // User description to display in the author segment.
+    'ソフトウェアエンジニア。国際決済金融SE⇒スタートアップでソフトウェアエンジニア⇒フリーランス=>カナダで就職⇒日本に帰国。夢は月で生活すること。', // User description to display in the author segment.
   userIntroduction: 'Freelance Engineer', // short user introduction
   jobTitle: 'SoftwareEngineer',
   email: 'snamiki1212@gmail.com',
