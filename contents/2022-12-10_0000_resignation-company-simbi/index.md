@@ -212,3 +212,6 @@ Elixirという言語は改めて見ても書きやすく、例えば提供し�
 というわけで、しばらくは日本に帰国して長めの冬休みを取る予定です。
 おつかれ、おれ。
 
+<!-- Twitter -->
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">突然、自分は招待されないチームMTG。代わりにCTO+CEO+CFOから呼び出し。ついに自分もレイオフか。。。と思ったら逆に自分以外のチームメンバーが全員レイオフ。この状況で続けるの辛いので自分も辞職。そしてCTOも辞職の模様。現代版、そして誰もいなくなった事案。今日が最終出勤日。おつかれおれ。</p>&mdash; Nash (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1598199705741451264?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- /Twitter -->
