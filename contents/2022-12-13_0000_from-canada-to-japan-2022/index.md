@@ -18,6 +18,10 @@ word:
 
 この記事では、自分が2022年にカナダから帰国したときに考えていたことをアウトプットした記事です。なので、日記・振り返りの色が強い記事になります。
 
+<!-- Twitter -->
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">2年ぶりに日本に帰国！ <a href="https://t.co/HK6uQGyoTN">pic.twitter.com/HK6uQGyoTN</a></p>&mdash; Nash (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1601296578836279297?ref_src=twsrc%5Etfw">December 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- /Twitter -->
+
 では、見ていきます。
 
 ## 背景
