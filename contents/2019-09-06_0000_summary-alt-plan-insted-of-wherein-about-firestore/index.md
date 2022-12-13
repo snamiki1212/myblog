@@ -70,8 +70,6 @@ db.collection('articles').where('tag', 'array-contains-any', [
 
 - [@google-cloud/firestore 0.15.4 » Class: Transaction  |  Node.js  |  Google Cloud](https://github.com/firebase/firebase-js-sdk/issues/1176)
 
-ただ、これ、クエリレイヤーではなくて、SDK のレイヤーで forEach を回りしてるような気がしてます(TODO: きちんとコード確認していないので、あとで見る)
-
 ## whereIN の 代案
 
 というわけで、クエリレイヤー・SDK レイヤーで whereIN を実現できないので、アプリケーションレイヤーで解決しないといけないです。

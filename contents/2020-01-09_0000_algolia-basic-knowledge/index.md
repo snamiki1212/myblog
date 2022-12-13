@@ -93,44 +93,6 @@ Algolia はあいまい検索なので、順番が肝です。
 
 ![ranking-criteria](./_ranking-criteria.jpg)
 
-<!-- TODO: ここからは、ちょっと調べが甘いので、どこかのタイミングで調べてから。
-
-### Faceting
-
-- saveする前時点で定義する
-- マネジメントコンソール上や、APIの関数の結果にて、件数をグループ単位にて集計できるようになる。
-
-
-
-### Relavance
-
-- とは、「検索をしたときに、検索文言と結果の関連性」は、どう実現しているか？RDB|Algolia
-
-- ランキングは、`ranking-formula`のフェーズにて行われる。
-
-### Attributes の４つの種類に分類される
-
-### 検索用`searchableAttributes`
-
-- default だと、すべての attributes が検索対象になる。これを設定することで、検索対象の attributes を指定できる。
-- `['title, comments', 'type']`と定義すると、title と comments が同一の優先度になる。
-
-### 表示用
-
-まんま、表示する用。以上。ちなみに、表示用 attributes は、検索することも可能。
-
-### フィルター用
-
-- facets として定義しないといけない？？
-- filterable な値として定義するタイミングは、indexing time 時点でしないといけない。
-- ただし、numeric/boolean の場合は、この定義をしないでもフィルター可能。
-
-### 順番用(customizing-ranking)
-
-- 検索アルゴリズムに対して、特定の attributes へ重さを与えるためのもの。
-- 例えば、「地震」という単語で検索して更に「いいね数」が多いツイートを検索上位に持ってきたい、という場合、liked-count の attribuets を customizing-ranking として登録する。
-
--->
 
 ## プラクティス
 
