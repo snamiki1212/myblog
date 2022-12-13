@@ -7,7 +7,7 @@ tags:
   - 海外移住
   - キャリア
   - カナダ
-slug: 2022-from-canada-to-japan
+slug: from-canada-to-japan-2022
 word:
   - nothing
 ---
