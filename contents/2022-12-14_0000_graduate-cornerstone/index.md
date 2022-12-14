@@ -147,9 +147,9 @@ ESL（English as a Second Language）は英語を学ぶ授業です。
 
 ちなみに、自分はすでにこれらの内容を学ぶ必要がないので適当にやってましたが課題は提出する必要があります。なので、普通に作ってもつまらないので下記のようなことを試していました。
 
-[Svelteでポートフォリオサイトを作った話](https://snamiki1212.com/portfolio-v-2)
+[Svelteでポートフォリオサイトを作った話](/portfolio-v-2)
 
-[クラスを使わないアプリを実際に作ってみた気付き](https://snamiki1212.com/no-class-application)
+[クラスを使わないアプリを実際に作ってみた気付き](/no-class-application)
 
 ---
 
@@ -172,13 +172,13 @@ ESL（English as a Second Language）は英語を学ぶ授業です。
 
 データ構造・アルゴリズムについて、LeetCodeにおけるEasy・Mediumのレベルを中心にした授業で、実際それなりに難しくてやりがいがありました。このときに、学んだ内容については下記にまとめてあります。
 
-[データ構造とアルゴリズムを再勉強したのでおすすめの勉強法を書く](https://snamiki1212.com/relearning-data-structure-and-algo)
+[データ構造とアルゴリズムを再勉強したのでおすすめの勉強法を書く](/relearning-data-structure-and-algo)
 
 （というか、これJuniorレベルの人がわかるのか？と思って聞いたのですがどうやら今までの生徒はそれなりに出来ていたみたいです。みんな地頭がいいんだろうなー。）
 
 モバイル開発について、SwiftとObjective-Cの両方を学びました。2020年の時点だと、このObjective-C からSwiftへの過渡期だったため、実際にMobile Engineerとして就活するときはおそらくObjective-Cを理解している必要があるというのが理由です。このときに学んだ内容については、下記にまとめてあります。
 
-[React 好きの Fullstack エンジニアが Swift/UIKit を学んだ話](https://snamiki1212.com/learning-swift-uikit)
+[React 好きの Fullstack エンジニアが Swift/UIKit を学んだ話](/learning-swift-uikit)
 
 いずれの内容についても、満足のいく内容でMobile Developmentのコースを選択して心底よかったと思っています。友達は引き続きWeb Developmentの授業を受けていましたが愚痴を聞く限りさらにひどい状態だったようなので。。。（執筆時点の2022年はWebのコースに良い先生が入った噂があるのできっと当時よりも遥かに良くなってるはずです！）
 
