@@ -1,5 +1,5 @@
 ---
-title: '【カナダ留学】CICCCでWeb&Mobileを卒業してDiplomaを取得するまで'
+title: '【カナダ留学】CICCCを卒業してDiplomaを取得しました'
 createdAt: '2022-12-14 16:00'
 updatedAt: '2022-12-14 16:00'
 category: '海外'
@@ -12,7 +12,7 @@ word:
   - nothing
 ---
 
-# 【カナダ留学】CICCCでWeb&Mobileを卒業してDiplomaを取得するまで
+# 【カナダ留学】CICCCを卒業してDiplomaを取得しました
 
 ども、Nashです。
 
