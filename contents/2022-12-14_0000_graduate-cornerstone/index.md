@@ -12,6 +12,10 @@ word:
   - nothing
 ---
 
+<!--
+アドベントカレンダー：https://adventar.org/calendars/7566
+-->
+
 # 【カナダ留学】CICCCを卒業してDiplomaを取得しました
 
 ども、Nashです。
