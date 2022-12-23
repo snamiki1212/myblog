@@ -1,6 +1,5 @@
 ---
 title: '【レビュー】stackshareとは？使ってみた結果をまとめた'
-cover: 'cover.jpg'
 createdAt: '2019-09-26 00:00'
 updatedAt: '2020-05-01 00:00'
 category: '技術'
@@ -9,6 +8,9 @@ tags:
 slug: stack-share
 ---
 
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580045292/in/dateposted-public/" title="2019-09-26_0000_stack-share__cover"><img src="https://live.staticflickr.com/65535/52580045292_118de29919.jpg" width="500" height="305" alt="2019-09-26_0000_stack-share__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 # 【レビュー】stackshareとは？使ってみた結果をまとめた
 
 こんにちは、Nash です。
@@ -25,7 +27,9 @@ slug: stack-share
 
 ## stackshare とは？技術スタック管理サービス
 
-![1-stack-share-top](1.jpg)
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580045292/in/dateposted-public/" title="2019-09-26_0000_stack-share__cover"><img src="https://live.staticflickr.com/65535/52580045292_118de29919.jpg" width="500" height="305" alt="2019-09-26_0000_stack-share__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 
 stackshare とは、技術スタックのビジュアル化・管理サービスです。
 
@@ -33,7 +37,9 @@ stackshare とは、技術スタックのビジュアル化・管理サービス
 
 ポチポチすれば、下記みたいな感じで、プロジェクトの技術スタックを可視化して管理できます。
 
-![2-stack-share-some-company](2.jpg)
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581031048/in/dateposted-public/" title="2019-09-26_0000_stack-share__2"><img src="https://live.staticflickr.com/65535/52581031048_6a0f807fba.jpg" width="500" height="426" alt="2019-09-26_0000_stack-share__2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img2 -->
 
 ### どんなことが出来るの？
 
@@ -45,12 +51,23 @@ stackshare とは、技術スタックのビジュアル化・管理サービス
 
 他にも、技術スタックに対して「投稿」したり、「コメント」とか、各技術スタックに対して「投票」みたいな機能もあります。ちなみに、料金は無料です。
 
-- ① 自分のプロジェクトの技術スタックを、可視化する
-  ![3-stack-share-my-stack](3.jpg)
-- ② 他社プロジェクトの技術スタックが、見れる（Airbnb、Netflix、Dropbox とか）
-  ![2-stack-share-some-company](2.jpg)
-- ③ 技術スタックの比較専用ページを、作成したり、見れる
-  ![4-stack-share-compare](4.jpg)
+① 自分のプロジェクトの技術スタックを、可視化する
+
+<!-- img3 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580772884/in/dateposted-public/" title="2019-09-26_0000_stack-share__3"><img src="https://live.staticflickr.com/65535/52580772884_1e0c10a3d3.jpg" width="500" height="360" alt="2019-09-26_0000_stack-share__3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img3 -->
+
+② 他社プロジェクトの技術スタックが、見れる（Airbnb、Netflix、Dropbox とか）
+
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581031048/in/dateposted-public/" title="2019-09-26_0000_stack-share__2"><img src="https://live.staticflickr.com/65535/52581031048_6a0f807fba.jpg" width="500" height="426" alt="2019-09-26_0000_stack-share__2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img2 -->
+
+③ 技術スタックの比較専用ページを、作成したり、見れる
+
+<!-- img4 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580948750/in/dateposted-public/" title="2019-09-26_0000_stack-share__4"><img src="https://live.staticflickr.com/65535/52580948750_539553f4c6.jpg" width="500" height="459" alt="2019-09-26_0000_stack-share__4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img4 -->
 
 ## 使ってみた。
 
@@ -66,7 +83,9 @@ stackshare とは、技術スタックのビジュアル化・管理サービス
 
 登録すると、下記のようなページができます。
 
-![5-stack-share-my-stack-full](5.jpg)
+<!-- img5 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580045307/in/dateposted-public/" title="2019-09-26_0000_stack-share__5"><img src="https://live.staticflickr.com/65535/52580045307_24ce6b4074.jpg" width="252" height="500" alt="2019-09-26_0000_stack-share__5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img5 -->
 
 もし、README.md に技術スタックを文字でベタ書きしているなら、こいつをリンク・バッジで貼ったり、スクショを持ってきたり、すればだいぶスマートになりますね。
 
