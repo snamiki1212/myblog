@@ -1,6 +1,5 @@
 ---
 title: '1週間Rustを学習して完全に理解したのでファーストインプレッション'
-cover: 'cover.jpg'
 createdAt: '2020-07-23 01:00'
 updatedAt: '2020-08-02 22:00'
 category: '技術'
@@ -10,6 +9,10 @@ slug: rust-first-impression
 word:
   - nothing
 ---
+
+<!-- cover image -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580910955/in/dateposted-public/" title="2020-07-23_0000_rust-first-impression__cover"><img src="https://live.staticflickr.com/65535/52580910955_faac7ae795_c.jpg" width="800" height="450" alt="2020-07-23_0000_rust-first-impression__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- /cover image -->
 
 # 1 週間 Rust を学習して完全に理解したのでファーストインプレッション
 
