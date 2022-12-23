@@ -21,8 +21,10 @@ SEO-keyword:
 「フィリピンのコンビニの食べ物、特にお菓子でおすすめのものを紹介していく」
 という記事になります。
 
+<!-- Twitter -->
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Days 61: <a href="https://twitter.com/hashtag/100DaysOfEnglish?src=hash&amp;ref_src=twsrc%5Etfw">#100DaysOfEnglish</a> <a href="https://twitter.com/hashtag/%E3%83%95%E3%82%A3%E3%83%AA%E3%83%94%E3%83%B3%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#フィリピン留学</a> <a href="https://twitter.com/hashtag/%E3%82%BB%E3%83%96%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#セブ留学</a> <a href="https://twitter.com/hashtag/%E7%95%99%E5%AD%A6?src=hash&amp;ref_src=twsrc%5Etfw">#留学</a> <a href="https://twitter.com/hashtag/%E8%8B%B1%E4%BC%9A%E8%A9%B1?src=hash&amp;ref_src=twsrc%5Etfw">#英会話</a><br><br>✅フィリピンのコンビニは、セブンイレブンが一強<br><br>→コンビニのお菓子が、日本の相場よりも安いので、気軽に試す遊びが楽しい <a href="https://t.co/FsUiEpZY7o">pic.twitter.com/FsUiEpZY7o</a></p>&mdash; Nash🌏留学中Webエンジニア (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1113843115696115712?ref_src=twsrc%5Etfw">2019年4月4日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- //Twitter -->
 
 ちなみに、留学中の学食がマズすぎて、体調崩して、勉強どころではなくなった話は下記の記事になります。
 
@@ -32,7 +34,9 @@ SEO-keyword:
 
 ## フィリピンのコンビニ食べ物 ← お菓子おすすめ 6 選【コスパ】
 
-![philippines-seven-eleven-snack-1](./1.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581592320/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__1"><img src="https://live.staticflickr.com/65535/52581592320_bc01cb889f.jpg" width="500" height="375" alt="2019-04-04_2020_philippines-seven-eleven-snack__1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 まずは、フィリピンのコンビニ事情についてですが、セブンイレブン一強です。
 
@@ -58,7 +62,9 @@ SEO-keyword:
 
 ### ① クッキー：BINGO
 
-![philippines-seven-eleven-snack-2](./2.jpg)
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580692762/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__2"><img src="https://live.staticflickr.com/65535/52580692762_21b3a160a8.jpg" width="500" height="231" alt="2019-04-04_2020_philippines-seven-eleven-snack__2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img2 -->
 
 簡単にいうと、安いオレオです。
 
@@ -74,7 +80,9 @@ SEO-keyword:
 
 ### ② チョコバー：ChocoMucho
 
-![philippines-seven-eleven-snack-3](./3.jpg)
+<!-- img3 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581416919/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__3"><img src="https://live.staticflickr.com/65535/52581416919_2111ce132b.jpg" width="500" height="336" alt="2019-04-04_2020_philippines-seven-eleven-snack__3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- img3 -->
 
 味付けは下記の種類があります。自分の押しはダークチョコです。
 
@@ -92,7 +100,9 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ③ チョコ：NIPS
 
-![philippines-seven-eleven-snack-4](./4.jpg)
+<!-- img4 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580692622/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__4"><img src="https://live.staticflickr.com/65535/52580692622_099fbb9b24.jpg" width="500" height="328" alt="2019-04-04_2020_philippines-seven-eleven-snack__4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img4 -->
 
 味付けは下記の種類があります。自分の押しはピーナッツです。
 
@@ -108,7 +118,9 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ④ グミ：VitaCubes
 
-![philippines-seven-eleven-snack-5](./5.jpg)
+<!-- img5 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581156906/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__5"><img src="https://live.staticflickr.com/65535/52581156906_64de4c23d7.jpg" width="500" height="231" alt="2019-04-04_2020_philippines-seven-eleven-snack__5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img5 -->
 
 グミをたまに食べたくなった時に重宝します。
 
@@ -120,7 +132,9 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ⑤ ポテチ：oishi potato chips
 
-![philippines-seven-eleven-snack-6](./6.jpg)
+<!-- img6 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581592205/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__6"><img src="https://live.staticflickr.com/65535/52581592205_cf9e6fbe92.jpg" width="431" height="500" alt="2019-04-04_2020_philippines-seven-eleven-snack__6"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img6 -->
 
 「薄くて・味がしつこくない・コスパが良い」という観点でおすすめするのが「oishi potato chips」です。
 
@@ -128,7 +142,9 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ### ⑥ 蒸しパンケーキ：FUNDGEE BARR
 
-![philippines-seven-eleven-snack-7](./7.jpg)
+<!-- img7 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581416969/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__7"><img src="https://live.staticflickr.com/65535/52581416969_36a515221f.jpg" width="500" height="231" alt="2019-04-04_2020_philippines-seven-eleven-snack__7"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img7 -->
 
 日本だとメジャーではないですが、フィリピンのコンビニお菓子ではケーキが一般的です。
 
@@ -138,7 +154,9 @@ ChochMucho は、「お菓子」のチョコバーという位置づけなので
 
 ## フィリピンのコンビニ食べ物のお菓子は、他にもまだまだある。
 
-![philippines-seven-eleven-snack-cover](./cover.jpg)
+<!-- img-cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581674118/in/dateposted-public/" title="2019-04-04_2020_philippines-seven-eleven-snack__cover"><img src="https://live.staticflickr.com/65535/52581674118_36a7b0eddd.jpg" width="500" height="434" alt="2019-04-04_2020_philippines-seven-eleven-snack__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img-cover -->
 
 セブンのお菓子コーナーを歩くとわかりますが、かなり品揃えが豊富ですね。
 
