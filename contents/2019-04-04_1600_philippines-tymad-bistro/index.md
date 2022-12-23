@@ -33,7 +33,9 @@ SEO-keyword:
 
 ### 外観はオシャレなフランス料理店
 
-![philippines-tymad-bistro-1](./1.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581165661/in/dateposted-public/" title="2019-04-04_1600_philippines-tymad-bistro__1"><img src="https://live.staticflickr.com/65535/52581165661_72022113c7.jpg" width="500" height="231" alt="2019-04-04_1600_philippines-tymad-bistro__1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 外観は、オシャレなフランス料理店です。
 
@@ -43,7 +45,9 @@ SEO-keyword:
 
 ### 内装もキレイな店内です
 
-![philippines-tymad-bistro-2](./2.jpg)
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581600715/in/dateposted-public/" title="2019-04-04_1600_philippines-tymad-bistro__2"><img src="https://live.staticflickr.com/65535/52581600715_83759bab07.jpg" width="500" height="231" alt="2019-04-04_1600_philippines-tymad-bistro__2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img2 -->
 
 白を基調とした店内で、清潔感がとてもあります。
 
@@ -51,7 +55,9 @@ SEO-keyword:
 
 ### ショーケースはこんな感じ
 
-![philippines-tymad-bistro-3](./3.jpg)
+<!-- img3 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581600660/in/dateposted-public/" title="2019-04-04_1600_philippines-tymad-bistro__3"><img src="https://live.staticflickr.com/65535/52581600660_1a446ffb15.jpg" width="500" height="231" alt="2019-04-04_1600_philippines-tymad-bistro__3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img3 -->
 
 金額は、海外の旅行客などをターゲットにしているので、現地価格ではないです。
 
@@ -61,7 +67,9 @@ SEO-keyword:
 
 ### デザートは予感していた通り美味い
 
-![philippines-tymad-bistro-4](./4.jpg)
+<!-- img4 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581165581/in/dateposted-public/" title="2019-04-04_1600_philippines-tymad-bistro__4"><img src="https://live.staticflickr.com/65535/52581165581_8e964da025.jpg" width="500" height="231" alt="2019-04-04_1600_philippines-tymad-bistro__4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img4 -->
 
 自分が頼んだのは、チョコ系のケーキです。
 
@@ -71,7 +79,9 @@ SEO-keyword:
 
 ### カフレが絶品すぎた
 
-![philippines-tymad-bistro-cover](./cover.jpg)
+<!-- img-cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580701092/in/dateposted-public/" title="2019-04-04_1600_philippines-tymad-bistro__cover"><img src="https://live.staticflickr.com/65535/52580701092_3bbd748ae7.jpg" width="500" height="231" alt="2019-04-04_1600_philippines-tymad-bistro__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img-cover -->
 
 日本だと、カフレを食べる機会ってあまり無いので、ついでに頼んでいたカフレ。
 
