@@ -100,7 +100,9 @@ word:
 
 ## 【おすすめのクレカ ①】EPOS カード
 
-![epos](1_red.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580754934/in/dateposted-public/" title="2020-01-21_0900_get-epos-gold__1_red"><img src="https://live.staticflickr.com/65535/52580754934_33ce8951c7.jpg" width="500" height="350" alt="2020-01-21_0900_get-epos-gold__1_red"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 EPOS カードです。保険周りで最強のカードです。
 
@@ -155,7 +157,9 @@ EPOS カードを使い続けると、どうなるか？
 
 ## 【おすすめのクレカ ②】楽天カード
 
-![rakuten](_rakuten.jpg)
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581015838/in/dateposted-public/" title="2020-01-15_0000_credit-card-phillipines__rakuten"><img src="https://live.staticflickr.com/65535/52581015838_523a3eef7a.jpg" width="500" height="362" alt="2020-01-15_0000_credit-card-phillipines__rakuten"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img2 -->
 
 楽天カードです。圧倒的なポイント還元率でオススメ。
 
