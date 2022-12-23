@@ -25,8 +25,6 @@ slug: create-todo-with-typescript
 
 ## React+Redux+TypeScript で ToDo アプリを作った話
 
-![todo-video](./1.gif)
-
 →[アプリ](https://snamiki1212.github.io/example-typescript-todo/) / [github](https://github.com/snamiki1212/example-typescript-todo)
 
 今回は、TypeScript を学習することをメインに ToDo アプリを作りました。以前作った Redux の Example とほぼ同じなので、完全に復習ですね。
