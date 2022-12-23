@@ -1,6 +1,5 @@
 ---
 title: 'URLからMarkdownへ変換するAlfredWorkflowをGoで作って公開した'
-cover: 'cover.png'
 createdAt: '2020-03-20 20:00'
 updatedAt: '2021-10-17 20:00'
 category: '技術'
@@ -11,6 +10,10 @@ slug: alfred-workflow-url2md-go
 word:
   - nothing
 ---
+
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580489031/in/dateposted-public/" title="2020-03-20_0000_alfred-workflow-url2md-go__cover"><img src="https://live.staticflickr.com/65535/52580489031_7235af163b.jpg" width="500" height="280" alt="2020-03-20_0000_alfred-workflow-url2md-go__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 
 # URL から Markdown へ変換する AlfredWorkflow を Go で作って公開した
 
@@ -103,7 +106,9 @@ Alfred Worlflow について、なんとなく理解するためにまずは手�
 
 こんな感じで Workflow を作成する。
 
-![alfred-workflow](1.png)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580024802/in/dateposted-public/" title="2020-03-20_0000_alfred-workflow-url2md-go__1"><img src="https://live.staticflickr.com/65535/52580024802_cd19679d39.jpg" width="500" height="342" alt="2020-03-20_0000_alfred-workflow-url2md-go__1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 workflow 側でエラー時のハンドリングを行ってみた。本当は、panic 系のエラー発生時は Github に Issue まで投げさせたいなー。
 
