@@ -1,6 +1,5 @@
 ---
 title: '【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは？→『The Complete Guide』'
-cover: 'cover.png'
 createdAt: '2019-09-01 00:00'
 updatedAt: '2020-01-13 09:00'
 category: '技術'
@@ -28,8 +27,6 @@ slug: udemy-javascript-react-the-complete-guide
 では見ていきましょう。
 
 ## 『React - The Complete Guide』とは？
-
-![top](./cover.png)
 
 Udemy にある React のトップクラスの学習動画です。
 
