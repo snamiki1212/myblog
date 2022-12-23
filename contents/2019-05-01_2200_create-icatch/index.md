@@ -13,12 +13,12 @@ slug: create-icatch
 
 [Redux の BasicTutorial](https://redux.js.org/basics/basic-tutorial)を読み終わったので、その復習としてアプリを作りました。
 
+<!-- Twitter -->
 <blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ReduxのGettingGuideのTODOアプリの写景おわた<br>Redux完全に理解した</p>&mdash; Nash🌏エンジニア@🇹🇭バンコク (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1123138809342726144?ref_src=twsrc%5Etfw">2019年4月30日</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- //Twitter -->
 
 ## Redux を使ってアイキャッチジェネレータを作った話
-
-![redux-icatch-video](1.gif)
 
 作ったアプリは、『[アイキャッチジェネレータ - icatch](https://github.com/snamiki1212/example-react-redux-icatch)』です。([Github](https://snamiki1212.github.io/example-react-redux-icatch/))
 

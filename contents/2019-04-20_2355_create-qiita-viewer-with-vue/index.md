@@ -12,8 +12,6 @@ slug: create-qiita-viewer-with-vue
 
 👉[Qiita Viewer with Vue](https://snamiki1212.github.io/exmaple-vue-qiita-viewer/)
 
-![demo](./1.gif)
-
 最近、時間を作って Vue 公式ドキュメントを読んでいて「基本」のパートを読み終えたので、[Til に一通り学習内容を整理した](https://github.com/snamiki1212/til/blob/master/vue/official_basic/index.md)。合わせて簡単な復習という位置づけでアプリを作成した。
 
 - vue-cli(3.6.3)
