@@ -1,6 +1,5 @@
 ---
 title: '【実体験】IT エンジニアがタイに移住してみた結果⇒オススメです'
-cover: 'cover.jpg'
 createdAt: '2020-01-07 00:00'
 updatedAt: '2020-12-25 16:00'
 category: '海外'
@@ -9,6 +8,10 @@ tags:
   - 海外移住
 slug: recommend-thai-to-live-as-engineer
 ---
+
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580041677/in/dateposted-public/" title="2020-01-07_0000_recommend-thai-to-live-as-engineer__cover"><img src="https://live.staticflickr.com/65535/52580041677_a878216c85.jpg" width="500" height="281" alt="2020-01-07_0000_recommend-thai-to-live-as-engineer__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 
 # 【実体験】IT エンジニアがタイに移住してみた結果 ⇒ オススメです
 
