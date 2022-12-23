@@ -67,7 +67,9 @@ Firebase で提供されている Firestore と CloudFunction のトリガーを
 
 こんな感じ。
 
-![firebaesのトリガーのディレククトリ設計](./01_dir.png)
+<!-- image1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580012502/in/dateposted-public/" title="2020-05-23_0000_firebase-trigger-for-directory-architecture__01_dir"><img src="https://live.staticflickr.com/65535/52580012502_119d6a43d9.jpg" width="500" height="279" alt="2020-05-23_0000_firebase-trigger-for-directory-architecture__01_dir"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image1 -->
 
 ### メリット
 
@@ -93,7 +95,9 @@ Firebase で提供されている Firestore と CloudFunction のトリガーを
 
 こんな感じです。
 
-![firebaesのトリガーのファイルで設計](./02_file.png)
+<!-- image2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580739969/in/dateposted-public/" title="2020-05-23_0000_firebase-trigger-for-directory-architecture__02_file"><img src="https://live.staticflickr.com/65535/52580739969_f56a92cd2a.jpg" width="500" height="160" alt="2020-05-23_0000_firebase-trigger-for-directory-architecture__02_file"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image2 -->
 
 メリデメは下記かと思います。
 
@@ -120,7 +124,9 @@ Firebase で提供されている Firestore と CloudFunction のトリガーを
 
 こんな感じです。
 
-![firebaesのトリガーのフォルダで設計](./03_folder.png)
+<!-- image3 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580476706/in/dateposted-public/" title="2020-05-23_0000_firebase-trigger-for-directory-architecture__03_folder"><img src="https://live.staticflickr.com/65535/52580476706_c77cd64b42.jpg" width="500" height="148" alt="2020-05-23_0000_firebase-trigger-for-directory-architecture__03_folder"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image3 -->
 
 メリデメで列挙すると下記かと思います。
 
