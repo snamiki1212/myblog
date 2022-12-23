@@ -8,10 +8,6 @@ tags:
 slug: join-same-new-comer
 ---
 
-<!-- cover -->
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581063148/in/dateposted-public/" title="2019-05-03_1800_join-same-new-comer__cover"><img src="https://live.staticflickr.com/65535/52581063148_9e952e6d97.jpg" width="500" height="250" alt="2019-05-03_1800_join-same-new-comer__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-<!-- //cover -->
-
 # 炎上プロジェクトに既存メンバーと同数の新人をぶっこまれたときの話
 
 こんにちは。マネジメントよりも開発が好きな Nash です。
@@ -30,7 +26,9 @@ slug: join-same-new-comer
 
 ## 炎上プロジェクトに既存メンバーと同数の新人をぶっこまれたときの話
 
-![img1](./cover.jpg)
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581063148/in/dateposted-public/" title="2019-05-03_1800_join-same-new-comer__cover"><img src="https://live.staticflickr.com/65535/52581063148_9e952e6d97.jpg" width="500" height="250" alt="2019-05-03_1800_join-same-new-comer__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 
 先に背景について箇条書きで説明します。下記のような状況でした。
 
