@@ -20,7 +20,6 @@ word:
 
 ## 基礎知識
 
-![algolia-top](./_algolia.jpg)
 
 ### Algolia とは？
 
@@ -91,7 +90,9 @@ Algolia はあいまい検索なので、順番が肝です。
 
 ▼ RankingCriteria
 
-![ranking-criteria](./_ranking-criteria.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580761604/in/dateposted-public/" title="2020-01-09_0000_algolia-basic-knowledge__ranking-criteria"><img src="https://live.staticflickr.com/65535/52580761604_4c834fc0da.jpg" width="500" height="281" alt="2020-01-09_0000_algolia-basic-knowledge__ranking-criteria"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 
 ## プラクティス
