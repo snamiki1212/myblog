@@ -1,6 +1,5 @@
 ---
 title: '永年無料のEPOSゴールドカードを手に入れた話【１年寝かせるだけ】'
-cover: 'cover.jpg'
 createdAt: '2020-01-21 09:00'
 updatedAt: '2020-01-21 09:00'
 category: '雑記'
@@ -11,6 +10,9 @@ word:
   - 'nothing'
 ---
 
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580027142/in/dateposted-public/" title="2020-01-21_0900_get-epos-gold__cover"><img src="https://live.staticflickr.com/65535/52580027142_65515b546a.jpg" width="500" height="463" alt="2020-01-21_0900_get-epos-gold__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 # 永年無料のEPOSゴールドカードを手に入れた話【１年寝かせるだけ】
 
 こんにちは。海外に行くことが多くなってきたNash です。
@@ -18,8 +20,6 @@ word:
 この記事は「**EPOS からの招待（インビテーション）が来て、永年無料のゴールドカードを手に入れたよ！**」という報告記事です。
 
 ## 永年無料で使える EPOS のゴールドカードを手に入れた話
-
-![both](./3_both.jpg)
 
 個人的にクレカの中で EPOS カードはかなりオススメしています。
 
@@ -86,7 +86,9 @@ EPOS でゴールドを貰えるか否かは下記がだいたいの基準のよ
 
 ## メリット
 
-![gold](./2_gold.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580754919/in/dateposted-public/" title="2020-01-21_0900_get-epos-gold__2_gold"><img src="https://live.staticflickr.com/65535/52580754919_cd3af48052.jpg" width="500" height="359" alt="2020-01-21_0900_get-epos-gold__2_gold"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 というわけで、めでたくゴールドになったわけです。
 
@@ -120,7 +122,9 @@ EPOS でゴールドを貰えるか否かは下記がだいたいの基準のよ
 無料ゴールドの権利は１度手に入ればずっと使えます。
 なので、メンテナンス・フリーにゴールドを持てるのは魅力ですね。
 
-![red](./1_red.jpg)
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580754934/in/dateposted-public/" title="2020-01-21_0900_get-epos-gold__1_red"><img src="https://live.staticflickr.com/65535/52580754934_33ce8951c7.jpg" width="500" height="350" alt="2020-01-21_0900_get-epos-gold__1_red"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img2 -->
 
 もし、EPOS を持っていないなら、まずは普通のEPOSカードを申し込んで１年ゆっくりと成長させていくことをオススメです。
 
