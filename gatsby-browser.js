@@ -4,3 +4,4 @@ require('prismjs/themes/prism-okaidia.css');
 import './src/styles/global.scss';
 import './src/styles/affiliate.scss';
 import './src/styles/markdown.scss';
+import './src/styles/flickr.scss';
