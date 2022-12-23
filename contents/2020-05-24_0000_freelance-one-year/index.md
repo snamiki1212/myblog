@@ -1,6 +1,5 @@
 ---
 title: 'フリーランスエンジニアになって約１年半が経ったので振り返り【2020 年】'
-cover: 'cover.jpg'
 createdAt: '2020-05-24 10:00'
 updatedAt: '2020-12-29 10:00'
 category: 'キャリア'
@@ -10,6 +9,10 @@ slug: freelance-one-year
 word:
   - nothing
 ---
+
+<!-- cover-image -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580473586/in/dateposted-public/" title="2020-05-24_0000_freelance-one-year__cover"><img src="https://live.staticflickr.com/65535/52580473586_4db658854d_c.jpg" width="800" height="400" alt="2020-05-24_0000_freelance-one-year__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- /cover-image -->
 
 # フリーランスエンジニアになって約 1 年半が経ったので振り返り【2019年＋2020年】
 
