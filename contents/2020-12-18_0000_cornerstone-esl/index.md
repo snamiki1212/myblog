@@ -1,6 +1,5 @@
 ---
 title: 'カナダの学校に通ってESLクラスを修了した話'
-cover: 'cover.jpg'
 createdAt: '2020-12-18 20:00'
 updatedAt: '2020-12-24 20:00'
 category: '海外'
@@ -17,6 +16,10 @@ word:
 
 <!-- AdventCalendar: https://adventar.org/calendars/5977 -->
 # カナダの学校に通ってESLクラスを修了した話
+
+<!-- cover image -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580419251/in/dateposted-public/" title="2020-12-18_0000_cornerstone-esl__cover"><img src="https://live.staticflickr.com/65535/52580419251_f4dd8af52d_c.jpg" width="800" height="613" alt="2020-12-18_0000_cornerstone-esl__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- cover image -->
 
 こんにちは、北米で生活してるNashです。
 
