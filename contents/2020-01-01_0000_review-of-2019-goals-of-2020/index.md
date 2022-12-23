@@ -1,6 +1,5 @@
 ---
 title: '2019年振り返り⇒2020年目標｜フリーランスになりました'
-cover: 'cover.jpg'
 createdAt: '2020-01-01 00:00'
 updatedAt: '2020-01-03 00:00'
 category: 'キャリア'
@@ -9,6 +8,10 @@ tags:
   - 振り返り
 slug: review-of-2019-goals-of-2020
 ---
+
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580946805/in/dateposted-public/" title="2020-01-01_0000_review-of-2019-goals-of-2020__cover"><img src="https://live.staticflickr.com/65535/52580946805_a200a0ace8.jpg" width="500" height="250" alt="2020-01-01_0000_review-of-2019-goals-of-2020__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 
 # 2019 年振り返り ⇒ 2020 年目標｜フリーランスになりました
 
@@ -49,7 +52,9 @@ slug: review-of-2019-goals-of-2020
 
 あと、2019 年の末らへんにブログデザイン・レスポンシブ・テーマカラーを色々変えて、とりあえず今の色調にしてみたり。多分、すぐに変える気がするけど。
 
-![diff-img](./_diff.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581029153/in/dateposted-public/" title="2020-01-01_0000_review-of-2019-goals-of-2020__diff"><img src="https://live.staticflickr.com/65535/52581029153_60266a1cb9.jpg" width="500" height="363" alt="2020-01-01_0000_review-of-2019-goals-of-2020__diff"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 ブログの方針だが、2019 年辺りからは時代は完全に「ブログはオワコン、時代は YouTube」という空気を感じているので、ブログは自己ブランディングをメインにしようかなー、という思いがありつつ、今後も書いていこうかと思ってます。
 

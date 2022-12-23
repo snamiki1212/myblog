@@ -39,7 +39,9 @@ slug: recommend-thai-to-live-as-engineer
 
 タイへ移住する前はフィリピンで生活していたので、日本だけでなくてフィリピンとの比較の観点がいろいろ混ざったレビューになります。
 
+<!-- Twitter -->
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">フィリピンにさよならをしたが<br><br>次は、こんにちはタイ <a href="https://t.co/r1zElYIKhr">pic.twitter.com/r1zElYIKhr</a></p>&mdash; Nash⚡️Next.jsとRN書いてる (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1122503512951156736?ref_src=twsrc%5Etfw">April 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- //Twitter -->
 
 下記の観点で１つずつ見ていきます。
 
