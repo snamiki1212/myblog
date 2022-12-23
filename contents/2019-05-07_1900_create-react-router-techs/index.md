@@ -16,8 +16,6 @@ react-router/react-router-transition を使ってサンプルアプリを作っ�
 - [Github](https://github.com/snamiki1212/react-router-techs)
 - [アプリ](https://snamiki1212.github.io/react-router-techs/)
 
-![react-router-sample-app](1.gif)
-
 ## 使った技術群
 
 新しく学んだ技術
@@ -59,8 +57,6 @@ react-router だけで１アプリだとさすがに、物足りなかったの�
 react-router-transition は、react-motion を使って react-router に対して薄いレイヤーでお手軽なアニメーションを提供しているライブラリ。
 
 今回、react-router のお勉強がてらアニメーションを付けてみたかったのでちょうど良いライブラリだった。
-
-![react-router-sample-app](1.gif)
 
 基本的に公式のドキュメントをそのまま使っただけなので、詳細は割愛。
 ともあれ、これで、リンク遷移でコンポーネントの表示／非表示にアニメーションを付けられようになった。
