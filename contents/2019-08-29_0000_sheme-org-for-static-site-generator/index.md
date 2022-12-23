@@ -66,18 +66,18 @@ JSON+LD という構造が推奨なので、素直にそれに従うのが良い
 
 - Scheme.org のドキュメント
 
-  - ![explain-scheme-org](explain-1.png)
+  - <a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580956880/in/dateposted-public/" title="2019-08-29_0000_sheme-org-for-static-site-generator__explain-1"><img src="https://live.staticflickr.com/65535/52580956880_8573eae238.jpg" width="500" height="48" alt="2019-08-29_0000_sheme-org-for-static-site-generator__explain-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   - ドキュメント「BlogPosting のプロパティの publisher には Person か Organization を入れてね！」
   - じぶん「ふむふむ。Person を入れるか。」
 
 - Google Structure Date Testing Tool
 
-  - ![explain-google-test-tool](explain-2.png)
+  - <a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581039118/in/dateposted-public/" title="2019-08-29_0000_sheme-org-for-static-site-generator__explain-2"><img src="https://live.staticflickr.com/65535/52581039118_031f1bb2df.jpg" width="500" height="258" alt="2019-08-29_0000_sheme-org-for-static-site-generator__explain-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   - ツール「publisher に Person の型？そんなやつは知らん」
   - じぶん「え？」
 
 - Google のドキュメント
-  - ![explain-google-doc](explain-3.png)
+  - <a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580956825/in/dateposted-public/" title="2019-08-29_0000_sheme-org-for-static-site-generator__explain-3"><img src="https://live.staticflickr.com/65535/52580956825_e2dcbb052f.jpg" width="500" height="63" alt="2019-08-29_0000_sheme-org-for-static-site-generator__explain-3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   - ドキュメント「Article は Scheme.org の BlogPosting とかを参考にしろ。だが、Publisher は Organization だけな。」
   - じぶん「なんでや」
 
