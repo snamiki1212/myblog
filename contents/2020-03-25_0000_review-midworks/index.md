@@ -1,6 +1,5 @@
 ---
 title: '【写真あり】Midworksを現役エンジニアが使ったのでレビュー'
-cover: 'cover.png'
 createdAt: '2020-03-25 02:00'
 updatedAt: '2021-08-23 02:00'
 category: 'キャリア'
@@ -51,7 +50,9 @@ word:
 
 ## Midworks の特徴
 
-![cover-mid-works](cover.png)
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580922925/in/dateposted-public/" title="2020-03-25_0000_review-midworks__cover"><img src="https://live.staticflickr.com/65535/52580922925_9d62f90bda.jpg" width="500" height="265" alt="2020-03-25_0000_review-midworks__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 
 **Midworks は「IT 系フリーランスに特化しているエージェント」** です。
 
@@ -129,19 +130,33 @@ Midworks では、 **マージン率をオープン** にしていて、かつ *
 
 ▼Midworks の写真です。オープンなラウンジがあり、自分はここで面談しました。
 
-![midworks-1](inner_1.jpg)
+<!-- image1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580019802/in/dateposted-public/" title="2020-03-25_0000_review-midworks__inner_1"><img src="https://live.staticflickr.com/65535/52580019802_67c2e27fd3.jpg" width="500" height="231" alt="2020-03-25_0000_review-midworks__inner_1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image1 -->
 
 ▼ 半個室がいくつかあり、ここで面談をすることもありそうです。
-![midworks-2](inner_2.jpg)
+
+<!-- image2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580747324/in/dateposted-public/" title="2020-03-25_0000_review-midworks__inner_2"><img src="https://live.staticflickr.com/65535/52580747324_777ec57be4.jpg" width="500" height="231" alt="2020-03-25_0000_review-midworks__inner_2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image2 -->
 
 ▼ プロジェクターもあるので、ここでイベントもありそうですね。
-![midworks-3](inner_3.jpg)
+
+<!-- image3 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580019762/in/dateposted-public/" title="2020-03-25_0000_review-midworks__inner_3"><img src="https://live.staticflickr.com/65535/52580019762_880a44aacb.jpg" width="500" height="231" alt="2020-03-25_0000_review-midworks__inner_3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image3 -->
 
 ▼ 内装は今どきの IT 系のエージェントって感じですね。
-![midworks-4](inner_4.jpg)
+
+<!-- image4 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580747289/in/dateposted-public/" title="2020-03-25_0000_review-midworks__inner_4"><img src="https://live.staticflickr.com/65535/52580747289_1033bff353.jpg" width="500" height="231" alt="2020-03-25_0000_review-midworks__inner_4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image4 -->
 
 ▼ 面談の開始前です
-![midworks-5](inner_5.jpg)
+
+<!-- image5 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581005328/in/dateposted-public/" title="2020-03-25_0000_review-midworks__inner_5"><img src="https://live.staticflickr.com/65535/52581005328_075f7abf9d.jpg" width="500" height="231" alt="2020-03-25_0000_review-midworks__inner_5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //image5 -->
 
 ここで実際に面談をしてきました。
 
