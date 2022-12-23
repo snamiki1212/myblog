@@ -41,8 +41,6 @@ word:
 
 ### レバテック
 
-![levtech-header](./_levtech.jpg)
-
 <!--  -->
 
 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886294595" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886294595" border="0" /></a>
@@ -75,7 +73,6 @@ SE から Web 系への転職なら、レバテックグループの中の「**�
 
 ### マイナビ
 
-![mynavi-header](./_mynavi.jpg)
 
 <!--  -->
 
@@ -105,8 +102,6 @@ IT 系というカテゴリでこの２つの業界を合わせて語られや�
 
 ### DODA
 
-![doda-header](./_doda.jpg)
-
 <!--  -->
 <script language="javascript" src="//ad.jp.ap.valuecommerce.com/servlet/jsbanner?sid=3476840&pid=886293695"></script><noscript><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3476840&pid=886293695" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3476840&pid=886293695" border="0"></a></noscript>
 <!--  -->
@@ -129,8 +124,6 @@ DODA レベルの企業がリサーチしているベンチャーだと、**イ�
 <!--  -->
 
 ### Wantedly
-
-![wantedly-header](./_wantedly.jpg)
 
 企業と転職者をつなげるビジネス SNS です。
 
