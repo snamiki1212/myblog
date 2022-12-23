@@ -26,7 +26,9 @@ SEO-keyword:
 
 ## 【フィリピンの食べ物】肉が美味い CasaVerde に行ってきた話
 
-![表の画像](./1.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581688483/in/dateposted-public/" title="2019-04-03_1702_philippines-casa-verde__1"><img src="https://live.staticflickr.com/65535/52581688483_cb6dc6471c.jpg" width="500" height="231" alt="2019-04-03_1702_philippines-casa-verde__1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 アメリカンスタイルのカジュアルダイニングレストランです。
 
@@ -46,7 +48,9 @@ SEO-keyword:
 
 ### 外装はクラシックな家
 
-![表の画像](./2.jpg)
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580707087/in/dateposted-public/" title="2019-04-03_1702_philippines-casa-verde__2"><img src="https://live.staticflickr.com/65535/52580707087_33faaef739.jpg" width="500" height="231" alt="2019-04-03_1702_philippines-casa-verde__2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img2 -->
 
 外から見たら画像になります。
 
@@ -56,7 +60,9 @@ SEO-keyword:
 
 ### 内装のテラスはライトアップされてる
 
-![中のの画像](./3.jpg)
+<!-- img3 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581605860/in/dateposted-public/" title="2019-04-03_1702_philippines-casa-verde__3"><img src="https://live.staticflickr.com/65535/52581605860_c83b58d155.jpg" width="500" height="231" alt="2019-04-03_1702_philippines-casa-verde__3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img3 -->
 
 店内は、完全な店内か、屋根付きのテラスがあります。
 
@@ -70,7 +76,9 @@ SEO-keyword:
 
 ### 料理の画像
 
-![肉１のの画像](./cover.jpg)
+<!-- cover -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581688378/in/dateposted-public/" title="2019-04-03_1702_philippines-casa-verde__cover"><img src="https://live.staticflickr.com/65535/52581688378_d2f5826d7f.jpg" width="500" height="231" alt="2019-04-03_1702_philippines-casa-verde__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //cover -->
 
 （おいしいそうに、写真取らなくて、すみません・・・雑ですね）
 
@@ -84,7 +92,9 @@ SEO-keyword:
 
 他にもこんな肉の料理です。
 
-![肉2のの画像](./4.jpg)
+<!-- img4 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581171281/in/dateposted-public/" title="2019-04-03_1702_philippines-casa-verde__4"><img src="https://live.staticflickr.com/65535/52581171281_32879bf93c.jpg" width="500" height="231" alt="2019-04-03_1702_philippines-casa-verde__4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- img4 -->
 
 （ブレてて、すみません。）
 
