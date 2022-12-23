@@ -54,7 +54,9 @@ SEO-keyword:
 
 ### 人気なので行列ですね
 
-![philippines-wingers-unlimited-1](./1.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52580712832/in/dateposted-public/" title="2019-04-03_1701_philippines-wingers-unlimited__1"><img src="https://live.staticflickr.com/65535/52580712832_2ebf91f55b.jpg" width="500" height="231" alt="2019-04-03_1701_philippines-wingers-unlimited__1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- /img1 -->
 
 （写真だと、ちょっとわかりにくいでしが、行列になってます）
 
@@ -68,7 +70,9 @@ SEO-keyword:
 
 ### 店内も混雑しています
 
-![philippines-wingers-unlimited-2](./2.jpg)
+<!-- img2 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581693973/in/dateposted-public/" title="2019-04-03_1701_philippines-wingers-unlimited__2"><img src="https://live.staticflickr.com/65535/52581693973_cd04a55805.jpg" width="500" height="231" alt="2019-04-03_1701_philippines-wingers-unlimited__2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- /img2 -->
 
 店内の画像です。混雑していますね。
 
@@ -95,7 +99,9 @@ SEO-keyword:
 
 そして、料理を食べるのに箸やフォークはありません。
 
-![philippines-wingers-unlimited-3](./3.jpg)
+<!-- img3 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581611295/in/dateposted-public/" title="2019-04-03_1701_philippines-wingers-unlimited__3"><img src="https://live.staticflickr.com/65535/52581611295_491864dd4a.jpg" width="500" height="436" alt="2019-04-03_1701_philippines-wingers-unlimited__3"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- /img3 -->
 
 手袋で食べます。
 
@@ -103,11 +109,15 @@ SEO-keyword:
 
 この店では、そもそもフォークなどの食器は出てこないので、選択の余地はないですね。
 
-![philippines-wingers-unlimited-4](./4.jpg)
+<!-- img4 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581693923/in/dateposted-public/" title="2019-04-03_1701_philippines-wingers-unlimited__4"><img src="https://live.staticflickr.com/65535/52581693923_92b27f56fa.jpg" width="500" height="231" alt="2019-04-03_1701_philippines-wingers-unlimited__4"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- /img4 -->
 
 ## フィリピンの食べ物で人気な理由は、コスパが良い
 
-![philippines-wingers-unlimited-5](./5.jpg)
+<!-- img5 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52581176961/in/dateposted-public/" title="2019-04-03_1701_philippines-wingers-unlimited__5"><img src="https://live.staticflickr.com/65535/52581176961_e7e68aa50f.jpg" width="500" height="231" alt="2019-04-03_1701_philippines-wingers-unlimited__5"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img5 -->
 
 味の感想は、「普通〜まぁまぁ、おいしい」です。
 
