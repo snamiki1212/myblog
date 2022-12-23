@@ -1,6 +1,5 @@
 ---
 title: '【経験談】エンジニアが首・肩を痛めて病院に行った話'
-cover: 'cover.jpg'
 createdAt: '2020-10-26 19:00'
 updatedAt: '2020-12-30 19:00'
 category: 'キャリア'
