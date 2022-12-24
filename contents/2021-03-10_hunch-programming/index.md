@@ -1,5 +1,6 @@
 ---
 title: 'あてずっぽうプログラミング'
+# cover: 'cover.png'
 createdAt: '2021-03-10 18:00'
 updatedAt: '2021-03-10 18:00'
 category: '技術'

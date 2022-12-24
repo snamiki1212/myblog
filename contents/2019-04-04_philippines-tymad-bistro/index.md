@@ -1,5 +1,6 @@
 ---
 title: 'フィリピンの食べ物がマズい？甘いケーキのTymad Bistroをオススメ'
+cover: cover.jpg
 createdAt: '2019-04-04 16:00'
 updatedAt: '2019-04-04 16:00'
 category: '雑記'
