@@ -326,9 +326,7 @@ slug: tokyo-node-conference-jp-2018-2
 
 ## 📊 アンケート
 
-<!-- img1 -->
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52582627925/in/dateposted-public/" title="2018-11-24_1430_tokyo-node-conference-jp-2018-2__1"><img src="https://live.staticflickr.com/65535/52582627925_5493a54f72.jpg" width="500" height="192" alt="2018-11-24_1430_tokyo-node-conference-jp-2018-2__1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-<!-- //img1 -->
+![survey](./1.jpg)
 
 参加者のアンケート結果。技術動向をそれなりに終えている人からすれば特に意外に思うところはないような結果だと思う。
 
