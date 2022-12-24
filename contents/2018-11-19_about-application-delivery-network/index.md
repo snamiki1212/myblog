@@ -81,7 +81,9 @@ akamai の記事でわかりそうなのだが一般用語と akamai のプロ�
 
 Netlify の ADN の説明ページがあったので見たがどうやら CDN との比較表がある。
 
-![Netlify vs Standard CDN](./1.png)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52582702263/in/dateposted-public/" title="2018-11-19_1953_about-application-delivery-network__1"><img src="https://live.staticflickr.com/65535/52582702263_ebdcfb2d75.jpg" width="500" height="289" alt="2018-11-19_1953_about-application-delivery-network__1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- /img1 -->
 
 上の解説サイトを見て ADN は LB からの派生と考えていたが、Netlify 的には CDN からの派生として捉えている、またはユーザには比較がしやすいだろう、と考えているようである。
 
