@@ -1,6 +1,6 @@
 ---
 title: 'フィリピンで日本の食べ物を求めて『吉野家(Yoshinoya)』に行ってきた話'
-# cover: cover.jpg
+cover: cover.jpg
 createdAt: '2019-04-02 16:30'
 updatedAt: '2019-04-02 16:30'
 category: '雑記'
