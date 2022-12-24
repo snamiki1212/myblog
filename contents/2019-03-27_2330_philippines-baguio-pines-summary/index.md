@@ -1,6 +1,5 @@
 ---
 title: '【PINES｜バギオ】パインスを完全レビュー【経験談】'
-cover: cover.jpg
 createdAt: '2019-03-27 23:30'
 updatedAt: '2019-03-27 23:30'
 category: '海外'
@@ -47,7 +46,9 @@ SEO-keyword:
 
 ## バギオの PINES（パインス）ってどんな学校？
 
-![img1](./cover.jpg)
+<!-- img1 -->
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/197220036@N02" title=""><img src="https://live.staticflickr.com/65535/52582195756_85a5364509.jpg" width="500" height="375" alt=""></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<!-- //img1 -->
 
 正式名称は「Pines International Accademy」です。
 
