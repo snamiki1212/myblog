@@ -1,5 +1,6 @@
 ---
 title: 'フィリピンの食べ物で人気の『WingersUnlimited』に行ってきた話'
+cover: cover.jpg
 createdAt: '2019-04-03 17:01'
 updatedAt: '2019-04-03 17:01'
 category: '雑記'
