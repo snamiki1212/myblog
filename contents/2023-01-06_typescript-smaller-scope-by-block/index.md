@@ -85,7 +85,7 @@ const upsert = (url: string): void => {
 +	{
 		const isValidUrl = validateUrl(url);
 		if (isInvalidUrl) { throw new Error("Invalid URL: Something is wrong")}
-+	} // このブロック内部で定義した変数はブロック内部だけでのみ使われることが確約されるので、後続で使われないということがわかりコードリーディングがしやすくなる。また、{}によって処理がブロック単位に区切られて整理されるので視覚的にもわかりやすくなる。
++	}
 
 +	{
 		const shouldInsert = verifyInsertion(url);
