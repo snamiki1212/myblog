@@ -17,11 +17,13 @@ word:
 
 この記事では、TypeScript（JavaScript）でブロック文を使うと変数のスコープを小さくできるのでおすすめ、という話をしたいです。
 
-## tl;dr
+## ブロック文で変数スコープを小さくする
+
+### tl;dr
 
 ブロック文を使って変数のスコープを小さくできるので、コードリーディング・レビュワーにちょっとだけ優しい世界になる。
 
-## ブロック文とは
+### ブロック文とは
 
 ブロック分とは、こういう記法です。
 
@@ -47,7 +49,7 @@ console.log({y}); // => error // これが大事！
 
 [block - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
 
-## 具体例）Block 文で変数スコープを小さくする
+### 具体例）Block 文で変数スコープを小さくする
 
 では、具体的にどうやってブロック文を使って変数スコープを小さくしていくか見ていきます。
 
