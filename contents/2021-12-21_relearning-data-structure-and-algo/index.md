@@ -1,7 +1,7 @@
 ---
 title: 'データ構造とアルゴリズムを再勉強したのでおすすめの勉強法を書く'
 createdAt: '2021-12-21 00:00'
-updatedAt: '2021-12-21 00:00'
+updatedAt: '2022-01-09 00:00'
 category: '技術'
 tags:
   - アルゴリズム
@@ -83,7 +83,7 @@ LeetCode は Easy/Medium/Hard の３つのレベルに分かれています。
 
 まず、こちらのアプリを購入しておくことを強く推奨します。
 
-[‎「アルゴリズム図鑑」を App Store で](https://apps.apple.com/jp/app/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%9B%B3%E9%91%91/id1047532631)
+[「アルゴリズム図鑑」を App Store で](https://apps.apple.com/jp/app/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E5%9B%B3%E9%91%91/id1047532631)
 
 このアプリは、アルゴリズムの動きをアニメーションでビジュアライズ化しつつ説明してくれます。技術書も出ていますがアニメーションが見れないのであまり意味がないので、アプリ版の購入を強くすすめます。
 
@@ -100,6 +100,24 @@ LeetCode は Easy/Medium/Hard の３つのレベルに分かれています。
 1. 「なっとくアルゴリズム」
 2. 「世界で戦うプログラミング力」
 3. 「問題解決力を鍛える」
+
+<!-- amazon なっとく -->
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB01N14WBX3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/61bXMHbyv3L._SL160_.jpg" alt="" style="border: none;" /><br />なっとく！アルゴリズム</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
+<!-- //amazon -->
+
+<!-- Affi -->
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB071GN3JN2" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51Puo9RVAuL._SL160_.jpg" alt="" style="border: none;" /><br />世界で闘うプログラミング力を鍛える本 コーディング面接189問とその解法</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
+<!-- //Affi -->
+
+<!-- けんちょん本 -->
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB08PV83L3N" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/51TtkYDXZFL._SL160_.jpg" alt="" style="border: none;" /><br />問題解決力を鍛える！アルゴリズムとデータ構造 (ＫＳ情報科学専門書)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
+</div>
+<!-- けんちょん本 -->
 
 人によっては、なっとくアルゴリズムは不要だったり、もしかすると非エンジニアの場合は更に簡単な本が必要な可能性もありますが、個人的には万人におすすめできる順番がこれです。
 
