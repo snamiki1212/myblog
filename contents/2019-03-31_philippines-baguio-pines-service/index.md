@@ -1,6 +1,5 @@
 ---
 title: '【PINES｜バギオ】新校舎の「サービス」を体験してきた【フィリピン留学】'
-cover: cover.jpg
 createdAt: '2019-03-31 16:00'
 updatedAt: '2019-03-31 16:00'
 category: '海外'
@@ -11,6 +10,12 @@ slug: philippines-baguio-pines-service
 SEO-keyword:
   - PINES バギオ
 ---
+
+<!--  -->
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/snamiki1212/52582456694/in/dateposted-public/" title="2019-03-31_1600_philippines-baguio-pines-service__cover"><img src="https://live.staticflickr.com/65535/52582456694_07e51597ed.jpg" width="500" height="231" alt="2019-03-31_1600_philippines-baguio-pines-service__cover"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+<!--  -->
 
 # 【PINES ｜バギオ】新校舎の「サービス」を体験してきた【フィリピン留学】
 
