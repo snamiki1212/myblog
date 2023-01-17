@@ -1,7 +1,7 @@
 ---
 title: '書評｜「良いコード／悪いコードで学ぶ設計入門」'
 createdAt: '2023-01-16 18:00'
-updatedAt: '2023-01-16 18:00'
+updatedAt: '2023-01-17 18:00'
 category: '技術'
 tags:
   - 書評
@@ -20,13 +20,17 @@ word:
 
 ## この本はどんな本？
 
-タイトルにも書いてあるますが、具体的なコードで悪いコードを題材にしてどうして悪いと言えるのか、そしてそれをどう良いコードに変えていくのかを設計・実装の観点で解説している本です。
+本書の内容ですが、タイトルにも書いてあるとおり具体的な悪いコードを題材にして「どうして悪いと言えるのか」「そしてそれをどう良いコードに変えていくのか」を設計・実装の観点で見ながら解説している本です。
 
 <!-- affi -->
 
 <a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB09Y1MWK9N" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/41O4DhnAkIL._SL160_.jpg" alt="" style="border: none;" /><br />良いコード／悪いコードで学ぶ設計入門―保守しやすい　成長し続けるコードの書き方</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" width="1" height="1" style="border: 0px;" />
 
 <!-- ///affi -->
+
+また本書は、翔泳社 IT エンジニア本大賞 2023 年の技術書・ビジネス書の各ベスト 10 にランクインしています。
+
+- [IT エンジニア本大賞 2023](https://www.shoeisha.co.jp/campaign/award/result)
 
 では、では、自分が読んだ結果の評論を書いていきます。
 
@@ -49,6 +53,8 @@ word:
 個人的な意見として、Java・OOP に依存しているような解説もあるように感じられました。
 
 例えば、この本では「if/switch などで分岐させずに interface で分岐させるべき」という旨のススメがあります。ですが、そもそも React 界隈のフロントエンドではクラスを使うべきではないですし、TypeScript の never 型などを使えば switch でも十分だと思っています。むしろ、クラス・Interface の導入は過剰な実装になりがちなので自分だったら PR レビューではじくかと思います。
+
+とはいえ、全体を通してだと普遍的な内容も多くあります。
 
 ### 具体例が多いので抽象的でわからない人に良さそう
 
