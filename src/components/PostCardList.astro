@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { PostCard } from "../components/PostCard";
+
+type BlogEntry = CollectionEntry<"blog">;
+
+type Props = {
+  entries: BlogEntry[];
+};
+const { entries } = Astro.props;
+---
+
+<ul role="list" class="flex gap-6 flex-wrap justify-center p-6">
+  {entries.map((entry) => <PostCard entry={entry} />)}
+</ul>

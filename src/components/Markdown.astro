@@ -1,0 +1,57 @@
+---
+---
+
+<div class="post-content"><slot /></div>
+
+<!-- 
+  `is:global` is needed for applying to slot component.
+-->
+<style lang="scss" is:global>
+  .post-content {
+    h1,
+    h2,
+    h3 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 1px solid lightgray;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    h4,
+    h5,
+    h6 {
+      color: red; // do not use these heading because it's too deep nest.
+    }
+    ul,
+    ol {
+      padding: 2rem;
+      padding-left: 3rem;
+    }
+    > ul,
+    ol {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      margin-bottom: 2rem;
+    }
+    ol {
+      list-style-type: decimal;
+    }
+    ul {
+      list-style-type: square;
+    }
+    li {
+      margin: 1.5rem;
+    }
+    pre {
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+</style>

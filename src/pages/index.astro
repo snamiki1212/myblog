@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+import { default as PostCardList } from "../components/PostCardList.astro";
+import { default as Container } from "../components/Container.astro";
+import { default as Hero } from "../components/Hero.astro";
+import { toPostListUrl, toTagIndexUrl, toCategoryIndexUrl } from "../utils/url";
+import {
+  toCategoryInfoList,
+  toTagInfoList,
+  renderMeta,
+  sortByCreatedAt,
+} from "../utils/meta";
+import { LATEST_PAGE_SIZE } from "../constants/site";
+import { getCollection } from "astro:content";
+
+const allEntries = sortByCreatedAt(await getCollection("blog"));
+const entries = allEntries.slice(0, LATEST_PAGE_SIZE);
+const nextPostListUrl = toPostListUrl(1);
+const blogNumber = allEntries.length;
+const categoryInfoList = toCategoryInfoList(allEntries);
+const tagInfoList = toTagInfoList(allEntries);
+---
+
+<Layout>
+  <main class="grid gap-10 w-full m-auto">
+    <Hero />
+    <Container>
+      <PostCardList entries={entries} />
+      <div class="flex flex-col justify-center mb-16 gap-4">
+        <div class="my-12 place-items-center mx-auto">
+          <a href={nextPostListUrl} class="btn btn-lg normal-case"> See Next</a>
+        </div>
+        <div class="stats">
+          <div class="stat place-items-center">
+            <div class="stat-title">Category</div>
+            <div class="stat-value">{categoryInfoList.length}</div>
+            <!-- <div class="stat-actions"></div> -->
+            <!-- <div class="stat-desc"></div> -->
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Total Page Number</div>
+            <div class="stat-value">{blogNumber}</div>
+            <!-- <div class="stat-desc"></div> -->
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Tag</div>
+            <div class="stat-value">{tagInfoList.length}</div>
+            <!-- <div class="stat-actions"></div> -->
+            <!-- <div class="stat-desc"></div> -->
+          </div>
+        </div>
+      </div>
+    </Container>
+
+    <div class="bg-base-200 py-8">
+      <Container>
+        <div class="py-8">
+          <h2 class="text-2xl font-bold">Category</h2>
+          <div class="flex flex-wrap gap-2 mt-4">
+            {
+              categoryInfoList.map((info) => (
+                <a
+                  class="btn btn-sm normal-case"
+                  href={toCategoryIndexUrl(info.title)}
+                >
+                  {renderMeta(info)}
+                </a>
+              ))
+            }
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="py-8">
+          <h2 class="text-2xl font-bold">Tag</h2>
+          <div class="flex flex-wrap gap-2 mt-4">
+            {
+              tagInfoList.map((info) => (
+                <a
+                  class="btn btn-sm normal-case"
+                  href={toTagIndexUrl(info.title)}
+                >
+                  {renderMeta(info)}
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </Container>
+    </div>
+  </main>
+</Layout>

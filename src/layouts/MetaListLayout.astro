@@ -1,0 +1,30 @@
+---
+import Layout from "./BaseLayout.astro";
+import { renderMeta } from "../utils/meta";
+import { default as Container } from "../components/Container.astro";
+
+const { metaList } = Astro.props;
+interface Props {
+  metaList: Array<{
+    title: string;
+    num: number;
+    url: string;
+  }>;
+}
+---
+
+<Layout isCanonical>
+  <div class="min-h-screen my-8">
+    <Container>
+      <div class="flex flex-wrap gap-4">
+        {
+          metaList.map(({ title, url, num }) => (
+            <a href={url} class="btn btn-outline normal-case">
+              {renderMeta({ title, num })}
+            </a>
+          ))
+        }
+      </div>
+    </Container>
+  </div>
+</Layout>

@@ -1,0 +1,26 @@
+---
+import { SITE_NAME } from "../constants/site";
+import { default as Container } from "../components/Container.astro";
+---
+
+<div class="bg-base-200 min-h-52 py-24">
+  <Container>
+    <div class="hero">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        {
+          /* <img
+      src="https://placeimg.com/80/40/arch"
+      class="max-w-sm rounded-lg shadow-2xl"
+    /> */
+        }
+        <div>
+          <h1 class="text-5xl font-bold">{SITE_NAME}</h1>
+          <p class="py-6">This is my tech blog :D</p>
+          <a href={"/about"}>
+            <button class="btn btn-primary normal-case">About Me</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>

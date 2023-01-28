@@ -1,0 +1,25 @@
+---
+import { getCollection, CollectionEntry } from "astro:content";
+import Layout from "../../layouts/PostListLayout.astro";
+import { toTagEntry } from "../../utils/meta";
+
+type BlogEntry = CollectionEntry<"blog">;
+
+interface Props {
+  entries: BlogEntry[];
+}
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return toTagEntry(blogEntries).map(([tag, entries]) => {
+    const props = { entries } satisfies Props;
+    return { params: { slug: tag }, props };
+  });
+}
+
+const { entries } = Astro.props;
+const { slug: meta = "" } = Astro.params;
+const metaType = "category" as const;
+---
+
+<Layout meta={meta} entries={entries} metaType={metaType} />
