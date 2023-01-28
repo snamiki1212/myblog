@@ -37,6 +37,20 @@ const { isCanonical = false, title = SITE_NAME } = Astro.props;
     </script>
     <!-- /Google tag -->
 
+    <!--
+      Remove Service worker cache due to Gatsby Plugin:
+      @link: https://medium.com/@nekrtemplar/self-destroying-serviceworker-73d62921d717
+      @link: https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/
+    -->
+    <script>
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    </script>
+    <!-- //Remove Service Worker cache -->
+
     <title>{title}</title>
   </head>
   <body>
