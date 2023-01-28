@@ -17,7 +17,9 @@ export const PostCard = ({ entry }: Props) => {
       className="hover:-translate-y-1 transition-all duration-200"
     >
       <div className="indicator">
-        <span className="indicator-item badge badge-primary">{category}</span>
+        <div className="indicator-item rotate-12 mt-2 mr-4 badge badge-primary">
+          {category}
+        </div>
         <div className="card card-compact hover:bg-base-100 w-96 h-48 bg-base-200 shadow-xl">
           <div className="card-body">
             <h2 className="card-title">{entry.data.title}</h2>
