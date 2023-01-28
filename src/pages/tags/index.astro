@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/MetaListLayout.astro";
+import { getCollection } from "astro:content";
+import { toTagIndexUrl } from "../../utils/url";
+import { toTagInfoList, sortByCreatedAt } from "../../utils/meta";
+
+const entries = sortByCreatedAt(await getCollection("blog"));
+const infoList = toTagInfoList(entries);
+
+const metaList = infoList.map(({ num, title }) => ({
+  title,
+  num,
+  url: toTagIndexUrl(title),
+}));
+---
+
+<Layout metaList={metaList}>this is tags</Layout>

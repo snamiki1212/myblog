@@ -1,0 +1,61 @@
+---
+import { Header } from "../components/Header";
+import { default as Footer } from "../components/Footer.astro";
+import { SITE_NAME, SITE_URL } from "../constants/site";
+
+type Props = {
+  isCanonical?: boolean;
+  title?: string;
+};
+const { isCanonical = false, title = SITE_NAME } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=360, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    {isCanonical && <link rel="canonical" href={`${SITE_URL}`} />}
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      type="text/partytown"
+      src={`https://www.googletagmanager.com/gtag/js?id=${
+        import.meta.env.GA4_ID
+      }`}
+    ></script>
+    <script>
+      (window as any).dataLayer = (window as any).dataLayer || [];
+      function gtag() {
+        (window as any).dataLayer.push(arguments);
+      }
+      (gtag as any)("js", new Date());
+      (gtag as any)("config", import.meta.env.GA4_ID);
+    </script>
+    <!-- /Google tag -->
+
+    <!--
+      Remove Service worker cache due to Gatsby Plugin:
+      @link: https://medium.com/@nekrtemplar/self-destroying-serviceworker-73d62921d717
+      @link: https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/
+    -->
+    <script>
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    </script>
+    <!-- //Remove Service Worker cache -->
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

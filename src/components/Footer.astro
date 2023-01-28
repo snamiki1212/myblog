@@ -1,0 +1,13 @@
+---
+import { default as Container } from "../components/Container.astro";
+import { default as FooterLarger } from "./Footer.Larger.astro";
+import { default as FooterSmaller } from "./Footer.Smaller.astro";
+---
+
+<div class="bg-base-300">
+  <Container>
+    <FooterLarger />
+    <div class="divider"></div>
+    <FooterSmaller />
+  </Container>
+</div>

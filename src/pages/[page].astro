@@ -1,0 +1,43 @@
+---
+// REF: https://docs.astro.build/en/core-concepts/routing/#complete-api-reference
+import Layout from "../layouts/BaseLayout.astro";
+import { default as PostCardList } from "../components/PostCardList.astro";
+import { PAGE_SIZE } from "../constants/site";
+import { toPostListUrl } from "../utils/url";
+import { sortByCreatedAt } from "../utils/meta";
+import type { GetStaticPathsOptions, Page } from "astro";
+import { getCollection, CollectionEntry } from "astro:content";
+
+type BlogEntry = CollectionEntry<"blog">;
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const entries = sortByCreatedAt(await getCollection("blog"));
+  return paginate(entries, { pageSize: PAGE_SIZE });
+}
+const { page: typeUnsafePage } = Astro.props;
+const page: Page<BlogEntry> = typeUnsafePage; // TODO: should be type safe
+const pageIndexList = Array.from(
+  { length: page.lastPage },
+  (_, idx) => idx + 1
+);
+---
+
+<Layout>
+  <main class="grid gap-10 max-w-screen-lg w-full m-auto">
+    <PostCardList entries={page.data} />
+    <div class="btn-group justify-center mb-24">
+      {
+        pageIndexList.map((idx) => (
+          <a
+            href={toPostListUrl(idx)}
+            class={`btn normal-case ${
+              idx === page.currentPage && "btn-active"
+            }`}
+          >
+            {idx}
+          </a>
+        ))
+      }
+    </div>
+  </main>
+</Layout>

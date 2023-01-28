@@ -1,0 +1,16 @@
+---
+import { SITE_NAME, COPYRIGHT } from "../constants/site";
+import { FooterSmallerSns } from "../components/Footer.Smaller.Sns";
+---
+
+<footer class="footer py-4 border-t text-base-content border-base-300">
+  <div class="items-center grid-flow-col">
+    <p>{SITE_NAME}</p>
+    <p>{COPYRIGHT}</p>
+  </div>
+  <div class="md:place-self-center md:justify-self-end">
+    <div class="grid grid-flow-col gap-4">
+      <FooterSmallerSns />
+    </div>
+  </div>
+</footer>
