@@ -30,8 +30,8 @@ const pageIndexList = Array.from(
         pageIndexList.map((idx) => (
           <a
             href={toPostListUrl(idx)}
-            class={`btn normal-case ${
-              idx === page.currentPage && "btn-active"
+            class={`btn btn-outline normal-case ${
+              idx === page.currentPage ? "btn-active" : "btn-primary "
             }`}
           >
             {idx}
