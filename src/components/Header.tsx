@@ -1,4 +1,4 @@
-import { SITE_NAME, SEARCH_ENGINE_ID } from "../constants/site";
+import { SITE_NAME_WITH_EMOJI, SEARCH_ENGINE_ID } from "../constants/site";
 
 const AVATAR_IMG = "/images/avatar.jpg";
 
@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="navbar max-w-screen-lg m-auto">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl" href={"/"}>
-            {SITE_NAME}
+            {SITE_NAME_WITH_EMOJI}
           </a>
         </div>
         <div className="flex-none gap-2">

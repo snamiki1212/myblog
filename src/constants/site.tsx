@@ -1,4 +1,8 @@
-export const SITE_NAME = "🌙 Lunash";
+export const SITE_NAME = "Lunash";
+
+const SITE_NAME_PREFIX_EMOJI = "🌙";
+
+export const SITE_NAME_WITH_EMOJI = `${SITE_NAME_PREFIX_EMOJI} ${SITE_NAME}`;
 
 export const SITE_URL = "https://snamiki1212.com";
 
