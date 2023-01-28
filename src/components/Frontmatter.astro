@@ -44,7 +44,7 @@ const { frontmatter } = Astro.props;
       <div class="stat-value text-secondary">
         <a
           href={toCategoryIndexUrl(frontmatter.category)}
-          class="btn btn-outline btn-xs btn-accent normal-case"
+          class="btn btn-outline btn-xs normal-case"
         >
           {renderMeta({ title: frontmatter.category })}
         </a>
@@ -62,7 +62,7 @@ const { frontmatter } = Astro.props;
           frontmatter.tags.map((tag) => (
             <a
               href={toTagIndexUrl(tag)}
-              class="btn btn-outline btn-xs btn-secondary normal-case"
+              class="btn btn-outline btn-xs normal-case"
             >
               {renderMeta({ title: tag })}
             </a>
