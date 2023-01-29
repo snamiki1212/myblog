@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { renderMeta } from "../utils/meta";
+
+type BlogEntry = CollectionEntry<"blog">;
+interface Props {
+  entry: BlogEntry;
+}
+
+const toPostUrl = (entry: BlogEntry): string => `/${entry.slug}`;
+const { entry } = Astro.props;
+const category = entry.data.category;
+const tags = entry.data.tags;
+---
+
+<a
+  href={toPostUrl(entry)}
+  class="hover:-translate-y-1 transition-all duration-200"
+>
+  <div class="indicator">
+    <div class="indicator-item rotate-12 mt-2 mr-4 badge badge-primary">
+      {category}
+    </div>
+    <div
+      class="card card-compact hover:bg-base-100 w-96 h-48 bg-base-200 shadow-xl"
+    >
+      <div class="card-body">
+        <h2 class="card-title">{entry.data.title}</h2>
+        <div class="card-actions">
+          <div class="flex flex-row flex-wrap justify-end gap-2 w-full">
+            {
+              tags.map((tag) => (
+                <div class="badge badge-lg badge-outline normal-case">
+                  {renderMeta({ title: tag })}
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
