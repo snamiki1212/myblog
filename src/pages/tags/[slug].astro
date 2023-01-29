@@ -1,7 +1,7 @@
 ---
 import { getCollection, CollectionEntry } from "astro:content";
 import Layout from "../../layouts/PostListLayout.astro";
-import { toTagEntry } from "../../utils/meta";
+import { toTagEntry, sortByCreatedAt } from "../../utils/meta";
 
 type BlogEntry = CollectionEntry<"blog">;
 
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog");
+  const blogEntries = sortByCreatedAt(await getCollection("blog"));
   return toTagEntry(blogEntries).map(([tag, entries]) => {
     const props = { entries } satisfies Props;
     return { params: { slug: tag }, props };
