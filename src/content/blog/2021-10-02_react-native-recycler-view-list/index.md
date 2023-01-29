@@ -5,7 +5,6 @@ createdAt: "2021-10-02 00:00"
 updatedAt: "2022-07-05 00:00"
 category: "技術"
 tags:
-  - 技術
   - ReactNative
 slug: react-native-recycler-view-list
 word:

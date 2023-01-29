@@ -9,7 +9,6 @@ tags:
   - Rust
   - React
   - Redux
-  - Hooks
   - ReactNative
 slug: learned-tech-2021
 word:

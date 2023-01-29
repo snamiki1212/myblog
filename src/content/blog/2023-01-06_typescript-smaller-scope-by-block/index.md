@@ -5,7 +5,6 @@ createdAt: "2023-01-06 17:00"
 updatedAt: "2023-01-06 17:00"
 category: "技術"
 tags:
-  - 技術
   - TypeScript
 slug: typescript-smaller-scope-by-block
 word:

@@ -5,7 +5,7 @@ createdAt: "2022-05-28 14:00"
 updatedAt: "2022-05-28 14:00"
 category: "技術"
 tags:
-  - rust
+  - Rust
 slug: rust-actix-web-diesel-realworld
 word:
   - nothing
