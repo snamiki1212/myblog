@@ -1,6 +1,9 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { renderMeta } from "../utils/meta";
+import { renderOnlyOneDate } from "../utils/date";
+import { default as EditIcon } from "./EditIcon.astro";
+import { default as IconUpdate } from "./IconUpdate.astro";
 
 type BlogEntry = CollectionEntry<"blog">;
 interface Props {
@@ -11,6 +14,7 @@ const toPostUrl = (entry: BlogEntry): string => `/${entry.slug}`;
 const { entry } = Astro.props;
 const category = entry.data.category;
 const tags = entry.data.tags;
+const { type, title: dateStr } = renderOnlyOneDate(entry);
 ---
 
 <a
@@ -28,7 +32,7 @@ const tags = entry.data.tags;
     >
       <div class="card-body">
         <h2 class="card-title pr-8">{entry.data.title}</h2>
-        <div class="card-actions">
+        <div class="card-actions h-full flex items-end">
           <div class="flex flex-row flex-wrap justify-end gap-2 w-full">
             {
               tags.map((tag) => (
@@ -37,6 +41,14 @@ const tags = entry.data.tags;
                 </div>
               ))
             }
+          </div>
+          <div class="flex flex-row justify-end items-center gap-2 w-full">
+            <span>
+              {type === "createdAt" ? <EditIcon /> : <IconUpdate />}
+            </span>
+            <span>
+              {dateStr}
+            </span>
           </div>
         </div>
       </div>
