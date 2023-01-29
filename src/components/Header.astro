@@ -1,0 +1,28 @@
+---
+import { SITE_NAME_WITH_EMOJI } from "../constants/site";
+import { default as SearchBox } from "./SearchBox.astro";
+
+const AVATAR_IMG = "/images/avatar.jpg";
+---
+
+<div class="bg-base-300">
+  <div class="navbar max-w-screen-lg m-auto">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl" href={"/"}>
+        {SITE_NAME_WITH_EMOJI}
+      </a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="form-control hidden sm:flex">
+        <SearchBox />
+      </div>
+      <a href={"/about"}>
+        <label tabindex={0} class="btn btn-ghost btn-circle avatar normal-case">
+          <div class="w-10 rounded-full">
+            <img src={AVATAR_IMG} />
+          </div>
+        </label>
+      </a>
+    </div>
+  </div>
+</div>

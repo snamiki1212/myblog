@@ -1,0 +1,14 @@
+---
+import { SEARCH_ENGINE_ID } from "../constants/site";
+---
+
+<form id="cse-search-box" action="https://google.com/cse" target="_blank">
+  <input type="hidden" name="cx" value={SEARCH_ENGINE_ID} />
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input
+    type="text"
+    name="q"
+    placeholder="Search Text"
+    class="input input-bordered"
+  />
+</form>
