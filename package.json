@@ -28,5 +28,8 @@
     "sass": "^1.57.1",
     "tailwindcss": "^3.0.24"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "hast-util-classnames": "^2.0.1",
+    "rehype-rewrite": "^3.0.6"
+  }
 }
