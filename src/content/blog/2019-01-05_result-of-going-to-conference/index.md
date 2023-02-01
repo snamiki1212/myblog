@@ -56,13 +56,13 @@ slug: result-of-going-to-conference
 
 2. [HaskellDay2018 のまとめ – namiki – Medium](https://medium.com/@snamiki1212/haskellday2018%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81-3f66500c3113)
 
-3. [【まとめ】日本をぶち上げる iNTERFACE SHIFT2018 | エンジニア目線のキャリア戦略の学び](interface-shift-2018)
+3. [【まとめ】日本をぶち上げる iNTERFACE SHIFT2018 | エンジニア目線のキャリア戦略の学び](./interface-shift-2018)
 
-4. [東京 Node 学園祭 2018(Conference@JP)のまとめ](tokyo-node-conference-jp-2018-1)
+4. [東京 Node 学園祭 2018(Conference@JP)のまとめ](./tokyo-node-conference-jp-2018-1)
 
-5. [HTML5Conference2018Japan のまとめ](html-5-j-conference-2018)
+5. [HTML5Conference2018Japan のまとめ](./html-5-j-conference-2018)
 
-6. [【まとめ】PHP Conference 2018 | カンファレンステーマ『Growth』と PHP 離れの現実](php-conference-2018)
+6. [【まとめ】PHP Conference 2018 | カンファレンステーマ『Growth』と PHP 離れの現実](./php-conference-2018)
 
 ## 🙆【得られたコト】技術動向を知れる・感じられる
 

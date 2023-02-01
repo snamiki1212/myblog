@@ -26,7 +26,7 @@ const shouldIgnore = (url: string): boolean => {
   return regex.test(url);
 };
 
-const isInternalLink = (url: string | undefined): boolean => url?.startsWith("/") ?? false;
+const isInternalLink = (url: string | undefined): boolean => /^[\/\.]/.test(url ?? "");
 const isExternalLink = (url: string | undefined): boolean => url?.startsWith("https://") ?? false;
 const toHrefType = (href: string | undefined): "internal" | "external" | "unknown" => {
   if (isExternalLink(href)) return "external"

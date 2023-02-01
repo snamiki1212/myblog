@@ -76,11 +76,11 @@ slug: create-icatch
 
 いきなり２つに分解して作り始めると、わからなくなるので慣れるまでは雑にコンポーネントを作って、そのあとにリファクタをする形で分割していったところ、特に詰まるところなく進めました。
 
-### GithubPages
+### GitHub Pages
 
 ホスティングは毎度のことながら GithubPages を利用。`gh-pages`ライブラリで手軽にデプロイできるので、楽ですね。
 
-### [react-color](<(http://casesandberg.github.io/react-color/)>)
+### [react-color](https://casesandberg.github.io/react-color/)
 
 ただのカラーピッカーです。ライブラリを持ってきて、import すればすぐに使えます。
 

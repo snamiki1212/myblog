@@ -235,7 +235,7 @@ Vine メンバーになると「特定の商品を無料でもらう代わりに
 
 記事に書かれていた、良い裏技。
 
-[祝！約 1 ヶ月半で Amazon レビューランキング 1000 を達成！！](http://www.kenkihou.com/achieve-reviewer-best1000)
+[祝！約 1 ヶ月半で Amazon レビューランキング 1000 を達成！！](https://www.kenkihou.com/achieve-reviewer-best1000)
 
 ### 裏技 ②：名前ハック可能
 

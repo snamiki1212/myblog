@@ -35,7 +35,7 @@ SEO-keyword:
 
 詳細は下記の記事でまとめています。
 
-[AmazonVine メンバーを、私がなぜ目指さないか ← 現状がやばい](not-to-be-amazon-reviewer)
+[AmazonVine メンバーを、私がなぜ目指さないか ← 現状がやばい](./not-to-be-amazon-reviewer)
 
 そこで、別のプラットフォームとして、ローカルガイドについて確認したところ、自分好みの観点が多かったのが、理由です。
 

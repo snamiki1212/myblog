@@ -1,8 +1,8 @@
 ---
-title: '【アジャイル開発宣言とは？】原文をわかりやすく整理した'
-createdAt: '2018-11-20 13:50'
-updatedAt: '2020-01-13 09:00'
-category: '技術'
+title: "【アジャイル開発宣言とは？】原文をわかりやすく整理した"
+createdAt: "2018-11-20 13:50"
+updatedAt: "2020-01-13 09:00"
+category: "技術"
 tags:
   - アジャイル開発
 slug: about-agile
@@ -20,8 +20,8 @@ slug: about-agile
 
 アジャイル開発の元になる原文です。
 
-- [アジャイルソフトウェア開発宣言](http://agilemanifesto.org/iso/ja/manifesto.html)
-- [アジャイルソフトウェアの 12 の原則](http://agilemanifesto.org/iso/ja/principles.html)
+- [アジャイルソフトウェア開発宣言](https://agilemanifesto.org/iso/ja/manifesto.html)
+- [アジャイルソフトウェアの 12 の原則](https://agilemanifesto.org/iso/ja/principles.html)
 
 「開発宣言」と「１２の原則」によって説明されています。
 

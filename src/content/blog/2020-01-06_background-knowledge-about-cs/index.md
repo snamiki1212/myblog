@@ -242,7 +242,7 @@ MOOC を有効に活用するのがベターかと思います。
 
   - アメリカ大学院への申請周りのリアルな説明。
 
-- [米国大学院で CS 修士について書いてみる - tkm2261&#39;s blog](http://yutori-datascience.hatenablog.com/entry/2018/12/26/141835)
+- [米国大学院で CS 修士について書いてみる - tkm2261&#39;s blog](https://yutori-datascience.hatenablog.com/entry/2018/12/26/141835)
 
   - アメリカでの就活のリアルな説明。もはや、ハンター試験らしい。
 
