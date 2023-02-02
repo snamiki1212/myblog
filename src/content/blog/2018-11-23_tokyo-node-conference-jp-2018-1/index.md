@@ -38,17 +38,17 @@ slug: tokyo-node-conference-jp-2018-1
 
 - ️ 目次
   - [🔑 Keynote](./tokyo-node-conference-jp-2018-1#-keynote)
-  - [👍 JavaScript で機械学習はじめよう by Shuhei Iitsuka](tokyo-node-conference-jp-2018-1#-javascript-で機械学習はじめよう-by-shuhei-iitsuka)
-  - [👍 Node.js: The Road to Workers by Anna Henningsen](tokyo-node-conference-jp-2018-1#-nodejs-the-road-to-workers-by-anna-henningsen)
-  - [👍 Diagnose your Node.js app by Daiki Arai](tokyo-node-conference-jp-2018-1#-diagnose-your-nodejs-app-by-daiki-arai)
-  - [❤️ State of SEO for SPA by seya](tokyo-node-conference-jp-2018-1#️-state-of-seo-for-spa-by-seya)
-  - [👍 Node.js アプリの開発をモダン化するために取り組んできたこと by Daiki Yokoi](tokyo-node-conference-jp-2018-1#-nodejsアプリの開発をモダン化するために取り組んできたこと-by-daiki-yokoi)
-  - [👍 Web アプリを Native アプリにする Capacitor が広げる Web の可能性 by 榊原 昌彦](tokyo-node-conference-jp-2018-2#-webアプリをnativeアプリにする-capacitor-が広げるwebの可能性-by-榊原-昌彦)
-  - [👍 実践 GraphQL for クライアント側 by 鈴木 亮太](tokyo-node-conference-jp-2018-2#-実践graphql-for-クライアント側-by-鈴木-亮太)
-  - [❤️ React + Apollo Client (GraphQL) により変化するアプリケーション設計 by 宮崎 優太郎](tokyo-node-conference-jp-2018-2#️-react--apollo-client-graphql-により変化するアプリケーション設計-by-宮崎-優太郎)
-  - [❤️ 貢献できる OSS の見つけ方 -完結編- by Masato Ohba](tokyo-node-conference-jp-2018-2#️-貢献できるossの見つけ方--完結編--by-masato-ohba)
-  - [👍 Vue.js/Nuxt.js で 実現できた PWA の リアルタイム動画ラップ・バトル・アプリ by lulzneko](tokyo-node-conference-jp-2018-2#-vuejsnuxtjs-で-実現できた-pwa-の-リアルタイム動画ラップ・バトル・アプリ-by-lulzneko)
-  - [🎉 総括](tokyo-node-conference-jp-2018-2#-総括)
+  - [👍 JavaScript で機械学習はじめよう by Shuhei Iitsuka](./tokyo-node-conference-jp-2018-1#-javascript-で機械学習はじめよう-by-shuhei-iitsuka)
+  - [👍 Node.js: The Road to Workers by Anna Henningsen](./tokyo-node-conference-jp-2018-1#-nodejs-the-road-to-workers-by-anna-henningsen)
+  - [👍 Diagnose your Node.js app by Daiki Arai](./tokyo-node-conference-jp-2018-1#-diagnose-your-nodejs-app-by-daiki-arai)
+  - [❤️ State of SEO for SPA by seya](./tokyo-node-conference-jp-2018-1#️-state-of-seo-for-spa-by-seya)
+  - [👍 Node.js アプリの開発をモダン化するために取り組んできたこと by Daiki Yokoi](./tokyo-node-conference-jp-2018-1#-nodejsアプリの開発をモダン化するために取り組んできたこと-by-daiki-yokoi)
+  - [👍 Web アプリを Native アプリにする Capacitor が広げる Web の可能性 by 榊原 昌彦](./tokyo-node-conference-jp-2018-2#-webアプリをnativeアプリにする-capacitor-が広げるwebの可能性-by-榊原-昌彦)
+  - [👍 実践 GraphQL for クライアント側 by 鈴木 亮太](./tokyo-node-conference-jp-2018-2#-実践graphql-for-クライアント側-by-鈴木-亮太)
+  - [❤️ React + Apollo Client (GraphQL) により変化するアプリケーション設計 by 宮崎 優太郎](./tokyo-node-conference-jp-2018-2#️-react--apollo-client-graphql-により変化するアプリケーション設計-by-宮崎-優太郎)
+  - [❤️ 貢献できる OSS の見つけ方 -完結編- by Masato Ohba](./tokyo-node-conference-jp-2018-2#️-貢献できるossの見つけ方--完結編--by-masato-ohba)
+  - [👍 Vue.js/Nuxt.js で 実現できた PWA の リアルタイム動画ラップ・バトル・アプリ by lulzneko](./tokyo-node-conference-jp-2018-2#-vuejsnuxtjs-で-実現できた-pwa-の-リアルタイム動画ラップ・バトル・アプリ-by-lulzneko)
+  - [🎉 総括](./tokyo-node-conference-jp-2018-2#-総括)
 
 ## 🔑 Keynote
 
