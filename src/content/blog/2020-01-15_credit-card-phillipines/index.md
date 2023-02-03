@@ -213,7 +213,9 @@ EPOS カードを使い続けると、どうなるか？
 特に、楽天カードはポイント還元率が高い＋補償金額が高いのが特徴です。
 
 <!--  -->
+<div class="af-moshi-container">
 <p style="text-align:center;"><a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" /></p>
+</div>
 <!--  -->
 
 ## クレカ申請はなるべく早く
@@ -241,7 +243,9 @@ EPOS カードを使い続けると、どうなるか？
 <!--  -->
 
 <!--  -->
+<div class="af-moshi-container">
 <p style="text-align:center;"><a class="affi-custom-button" href="//af.moshimo.com/af/c/click?a_id=1742990&p_id=58&pc_id=58&pl_id=669&guid=ON" rel="nofollow">楽天カードの永年無料登録はこちら</a><img src="//i.moshimo.com/af/i/impression?a_id=1742990&p_id=58&pc_id=58&pl_id=669" width="1" height="1" style="border:none;" /></p>
+</div>
 <!--  -->
 
 ---
