@@ -1,0 +1,52 @@
+---
+import type { MarkdownHeading } from "astro";
+type Props = {
+  headings: MarkdownHeading[];
+};
+const { headings } = Astro.props;
+const classHeading = (depth: number) => {
+  switch (depth) {
+    case 1:
+      return "_h1";
+    case 2:
+      return "_h2";
+    case 3:
+      return "_h3";
+    default:
+      return "";
+  }
+};
+---
+
+<div class="bg-base-200 rounded-xl p-4">
+  <h2 class="font-bold divider my-2">目次</h2>
+  <div>
+    {
+      headings.map((heading) => (
+        <div>
+          <a
+            href={`#${heading.slug}`}
+            class={
+              "flex hover:underline transition duration-150 block" +
+              ` ${classHeading(heading.depth)}`
+            }
+          >
+            {heading.text}
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  a._h1::before {
+    content: "";
+  }
+  a._h2::before {
+    content: "●";
+  }
+  a._h3::before {
+    content: "・";
+  }
+</style>

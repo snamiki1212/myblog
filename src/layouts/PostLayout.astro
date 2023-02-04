@@ -4,24 +4,30 @@ import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Frontmatter } from "../components/Frontmatter.astro";
 import { default as Container } from "../components/Container.astro";
+import { default as Toc } from "../components/Toc.astro";
 import type { MarkdownLayoutProps } from "astro";
 import type { CollectionEntry } from "astro:content";
 
 type BlogEntry = CollectionEntry<"blog">;
 type Frontmatter = BlogEntry["data"];
 type Props = MarkdownLayoutProps<Frontmatter>;
-const { frontmatter } = Astro.props;
+const { frontmatter, headings } = Astro.props;
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <Container>
-    <div class="my-16">
-      <Frontmatter frontmatter={frontmatter} />
+  <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
+    <main>
       <PaperWithTitle title={frontmatter.title}>
         <Markdown>
           <slot />
         </Markdown>
       </PaperWithTitle>
-    </div>
-  </Container>
+    </main>
+    <aside
+      class="max-w-xs sticky inset-0 h-fit hidden lg:inline flex flex-col gap-2"
+    >
+      <Frontmatter frontmatter={frontmatter} />
+      <Toc headings={headings} />
+    </aside>
+  </div>
 </BaseLayout>
