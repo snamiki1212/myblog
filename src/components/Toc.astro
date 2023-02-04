@@ -16,13 +16,14 @@ const classHeading = (depth: number) => {
       return "";
   }
 };
+const withoutH1 = (heading: MarkdownHeading): boolean => heading.depth !== 1;
 ---
 
 <div class="bg-base-200 rounded-xl p-4 flex flex-col gap-1">
   <h2 class="font-bold divider my-2">目次</h2>
   <div>
     {
-      headings.map((heading) => (
+      headings.filter(withoutH1).map((heading) => (
         <div>
           <a
             href={`#${heading.slug}`}
