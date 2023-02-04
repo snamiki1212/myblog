@@ -3,7 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Frontmatter } from "../components/Frontmatter.astro";
-import { default as Container } from "../components/Container.astro";
+import { FooterSmallerSns } from "../components/Footer.Smaller.Sns";
 import { default as Toc } from "../components/Toc.astro";
 import type { MarkdownLayoutProps } from "astro";
 import type { CollectionEntry } from "astro:content";
@@ -24,9 +24,12 @@ const { frontmatter, headings } = Astro.props;
       </PaperWithTitle>
     </main>
     <aside
-      class="max-w-xs sticky inset-0 h-fit hidden lg:inline flex flex-col gap-2"
+      class="max-w-xs sticky inset-0 h-fit hidden lg:inline-flex flex-col gap-4"
     >
       <Frontmatter frontmatter={frontmatter} />
+      <div class="bg-base-200 rounded-xl flex justify-evenly p-2 px-4">
+        <FooterSmallerSns />
+      </div>
       <Toc headings={headings} />
     </aside>
   </div>
