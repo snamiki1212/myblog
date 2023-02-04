@@ -23,15 +23,18 @@ const { frontmatter, headings } = Astro.props;
         </Markdown>
       </PaperWithTitle>
     </main>
-    <aside
-      class="max-w-xs sticky inset-0 h-fit hidden lg:inline-flex flex-col gap-4 max-h-[calc(100vh-50px)]"
-    >
+    <aside class="hidden lg:inline-flex flex-col max-w-xs gap-4">
+      <!-- <div>this is test.</div> -->
       <Frontmatter frontmatter={frontmatter} />
-      <div class="bg-base-200 rounded-xl flex justify-evenly p-2 px-4">
-        <FooterSmallerSns />
-      </div>
-      <div class="overflow-y-auto">
-        <Toc headings={headings} />
+      <div
+        class="sticky top-4 right-0 h-fit flex flex-col gap-4 max-h-[calc(100vh-50px)]"
+      >
+        <div class="bg-base-200 rounded-xl flex justify-evenly p-2 px-4">
+          <FooterSmallerSns />
+        </div>
+        <div class="overflow-y-auto">
+          <Toc headings={headings} />
+        </div>
       </div>
     </aside>
   </div>
