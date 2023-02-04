@@ -27,7 +27,6 @@ const { frontmatter, headings } = Astro.props;
     </main>
     <aside class="hidden lg:inline-flex flex-col max-w-xs gap-4">
       <Frontmatter frontmatter={frontmatter} />
-
       <div
         class="sticky top-4 right-0 h-fit flex flex-col gap-4 max-h-[calc(100vh-50px)]"
       >
@@ -35,7 +34,9 @@ const { frontmatter, headings } = Astro.props;
           <div class="flex gap-2">
             <Avatar />
             <div>
-              <div class="font-bold">{AUTHOR}</div>
+              <div class="text-base-content text-opacity-60 font-bold">
+                {AUTHOR}
+              </div>
               <div class="text-base-content text-opacity-40">
                 {AUTHOR_DESCRIPTION}
               </div>

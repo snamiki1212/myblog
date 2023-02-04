@@ -21,7 +21,7 @@ const withoutH1 = (heading: MarkdownHeading): boolean => heading.depth !== 1;
 
 <div class="bg-base-200 rounded-xl p-4 flex flex-col gap-1">
   <h2 class="font-bold divider my-2">目次</h2>
-  <div>
+  <div class="text-base-content text-opacity-40 inline-flex flex-col gap-1">
     {
       headings.filter(withoutH1).map((heading) => (
         <div>
@@ -43,11 +43,17 @@ const withoutH1 = (heading: MarkdownHeading): boolean => heading.depth !== 1;
 <style>
   a._h1::before {
     content: "";
+    display: block;
+    margin-right: 0.2rem;
   }
   a._h2::before {
     content: "●";
+    display: block;
+    margin-right: 0.2rem;
   }
   a._h3::before {
     content: "・";
+    display: block;
+    margin-right: 0.2rem;
   }
 </style>
