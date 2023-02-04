@@ -24,13 +24,15 @@ const { frontmatter, headings } = Astro.props;
       </PaperWithTitle>
     </main>
     <aside
-      class="max-w-xs sticky inset-0 h-fit hidden lg:inline-flex flex-col gap-4"
+      class="max-w-xs sticky inset-0 h-fit hidden lg:inline-flex flex-col gap-4 max-h-[calc(100vh-50px)]"
     >
       <Frontmatter frontmatter={frontmatter} />
       <div class="bg-base-200 rounded-xl flex justify-evenly p-2 px-4">
         <FooterSmallerSns />
       </div>
-      <Toc headings={headings} />
+      <div class="overflow-y-auto">
+        <Toc headings={headings} />
+      </div>
     </aside>
   </div>
 </BaseLayout>
