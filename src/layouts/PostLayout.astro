@@ -7,6 +7,8 @@ import { default as Avatar } from "../components/Avatar.astro";
 import { FooterSmallerSns } from "../components/Footer.Smaller.Sns";
 import { default as Toc } from "../components/Toc.astro";
 import { AUTHOR, AUTHOR_DESCRIPTION } from "../constants/site";
+import { toTagIndexUrl } from "../utils/url";
+import { renderMeta } from "../utils/meta";
 import type { MarkdownLayoutProps } from "astro";
 import type { CollectionEntry } from "astro:content";
 
@@ -14,12 +16,28 @@ type BlogEntry = CollectionEntry<"blog">;
 type Frontmatter = BlogEntry["data"];
 type Props = MarkdownLayoutProps<Frontmatter>;
 const { frontmatter, headings } = Astro.props;
+
+const renderTab = (frontmatter: Frontmatter): string =>
+  `${frontmatter.category} > ${frontmatter.title}`;
 ---
 
 <BaseLayout title={frontmatter.title}>
   <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
     <main>
-      <PaperWithTitle title={frontmatter.title}>
+      <PaperWithTitle title={renderTab(frontmatter)}>
+        <div class="pt-4"></div>
+        <div class="flex flex-wrap gap-1">
+          {
+            frontmatter.tags.map((tag) => (
+              <a
+                href={toTagIndexUrl(tag)}
+                class="btn btn-outline btn-xs normal-case text-base-content text-opacity-60"
+              >
+                {renderMeta({ title: tag })}
+              </a>
+            ))
+          }
+        </div>
         <Markdown>
           <slot />
         </Markdown>
