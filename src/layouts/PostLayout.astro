@@ -1,5 +1,4 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
 import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Frontmatter } from "../components/Frontmatter.astro";
@@ -21,56 +20,54 @@ const renderTab = (frontmatter: Frontmatter): string =>
   `${frontmatter.category} > ${frontmatter.title}`;
 ---
 
-<BaseLayout title={frontmatter.title}>
-  <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
-    <main>
-      <PaperWithTitle title={renderTab(frontmatter)}>
-        <div class="pt-4"></div>
-        <div class="flex flex-wrap gap-1">
-          {
-            frontmatter.tags.map((tag) => (
-              <a
-                href={toTagIndexUrl(tag)}
-                class="btn btn-outline btn-xs normal-case text-base-content text-opacity-60"
-              >
-                {renderMeta({ title: tag })}
-              </a>
-            ))
-          }
-        </div>
-        <Markdown>
-          <slot />
-        </Markdown>
-      </PaperWithTitle>
-    </main>
-    <aside class="hidden lg:inline-flex flex-col max-w-xs gap-4">
-      <Frontmatter frontmatter={frontmatter} />
-      <div
-        class="sticky top-4 right-0 h-fit flex flex-col gap-4 max-h-[calc(100vh-50px)]"
-      >
-        <div class="bg-base-200 rounded-xl p-2 px-4">
-          <div class="flex gap-2">
-            <Avatar />
-            <div>
-              <div class="text-base-content text-opacity-60 font-bold">
-                {AUTHOR}
-              </div>
-              <div class="text-base-content text-opacity-40">
-                {AUTHOR_DESCRIPTION}
-              </div>
+<div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
+  <main>
+    <PaperWithTitle title={renderTab(frontmatter)}>
+      <div class="pt-4"></div>
+      <div class="flex flex-wrap gap-1">
+        {
+          frontmatter.tags.map((tag) => (
+            <a
+              href={toTagIndexUrl(tag)}
+              class="btn btn-outline btn-xs normal-case text-base-content text-opacity-60"
+            >
+              {renderMeta({ title: tag })}
+            </a>
+          ))
+        }
+      </div>
+      <Markdown>
+        <slot />
+      </Markdown>
+    </PaperWithTitle>
+  </main>
+  <aside class="hidden lg:inline-flex flex-col max-w-xs gap-4">
+    <Frontmatter frontmatter={frontmatter} />
+    <div
+      class="sticky top-4 right-0 h-fit flex flex-col gap-4 max-h-[calc(100vh-50px)]"
+    >
+      <div class="bg-base-200 rounded-xl p-2 px-4">
+        <div class="flex gap-2">
+          <Avatar />
+          <div>
+            <div class="text-base-content text-opacity-60 font-bold">
+              {AUTHOR}
+            </div>
+            <div class="text-base-content text-opacity-40">
+              {AUTHOR_DESCRIPTION}
             </div>
           </div>
-          <div
-            class="flex justify-evenly p-2 px-4 text-base-content text-opacity-40"
-          >
-            <FooterSmallerSns />
-          </div>
         </div>
-        <!-- <div>this is test.</div> -->
-        <div class="overflow-y-auto">
-          <Toc headings={headings} />
+        <div
+          class="flex justify-evenly p-2 px-4 text-base-content text-opacity-40"
+        >
+          <FooterSmallerSns />
         </div>
       </div>
-    </aside>
-  </div>
-</BaseLayout>
+      <!-- <div>this is test.</div> -->
+      <div class="overflow-y-auto">
+        <Toc headings={headings} />
+      </div>
+    </div>
+  </aside>
+</div>
