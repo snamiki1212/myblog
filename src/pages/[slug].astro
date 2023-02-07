@@ -31,12 +31,22 @@ const { Content } = await entry.render();
 
 <BaseLayout title={frontmatter.title}>
   <Content />
+  <!-- Prev and Next -->
   <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
-    <div>
-      <div>prev</div>
-      {previousEntry && <PostCard entry={previousEntry} />}
-      <div>next</div>
-      {nextEntry && <PostCard entry={nextEntry} />}
+    <div class="flex justify-center w-full gap-6">
+      <div>
+        <div>Next:</div>
+        {nextEntry && <PostCard entry={nextEntry} />}
+      </div>
+      <div>
+        <div>Previous:</div>
+        {previousEntry && <PostCard entry={previousEntry} />}
+      </div>
     </div>
   </div>
+  <!-- //Prev and Next -->
+
+  <!-- Recommends -->
+
+  <!-- //Recommends -->
 </BaseLayout>
