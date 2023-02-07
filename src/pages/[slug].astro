@@ -1,29 +1,42 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection, CollectionEntry } from "astro:content";
+import { default as PostCard } from "../components/PostCard.astro";
 
 type BlogEntry = CollectionEntry<"blog">;
 
 type Props = {
   entry: BlogEntry;
+  previousEntry: BlogEntry | undefined;
+  nextEntry: BlogEntry | undefined;
 };
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection("blog");
-  return blogEntries.map((entry) => {
-    const props = { entry } satisfies Props;
-    return {
-      params: { slug: entry.slug },
-      props,
-    };
-  });
+  return blogEntries.reduce((prev, entry, idx, list) => {
+    const previousEntry = list[idx - 1];
+    const nextEntry = list[idx + 1];
+    const props = { entry, previousEntry, nextEntry } satisfies Props;
+    const params = { slug: entry.slug };
+    const item = { params, props };
+    const result = [...prev, item];
+    return result;
+  }, [] as any[]);
 }
 
-const { entry } = Astro.props;
+const { entry, previousEntry, nextEntry } = Astro.props;
 const { data: frontmatter } = entry;
 const { Content } = await entry.render();
 ---
 
 <BaseLayout title={frontmatter.title}>
   <Content />
+  <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
+    <div>
+      <div>prev</div>
+      {previousEntry && <PostCard entry={previousEntry} />}
+      <div>next</div>
+      {nextEntry && <PostCard entry={nextEntry} />}
+    </div>
+  </div>
 </BaseLayout>
