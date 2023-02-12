@@ -40,21 +40,27 @@ const { Content } = await entry.render();
 <BaseLayout title={frontmatter.title}>
   <Content />
   <!-- Prev and Next -->
-  <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
-    <div class="flex justify-center w-full gap-6">
+  <div
+    class="my-16 gap-4 flex direction-row flex-wrap justify-center max-w-screen-lg w-full m-auto"
+  >
+    <div class="divider w-full"></div>
+    <div class="flex flex-wrap justify-center w-full gap-12">
       <div>
-        <div>Next:</div>
+        <div class="font-bold text-2xl">Next:</div>
         {nextEntry && <PostCard entry={nextEntry} />}
       </div>
       <div>
-        <div>Previous:</div>
+        <div class="font-bold text-2xl">Previous:</div>
         {previousEntry && <PostCard entry={previousEntry} />}
       </div>
     </div>
 
+    <span class="py-5"></span>
     <div>
-      <div>Related Articles</div>
-      <div>
+      <div class="divider font-bold text-2xl text-center pb-8">
+        Related Articles
+      </div>
+      <div class="flex flex-wrap justify-center gap-8">
         {
           relatedEntries.map((relatedEntry) => (
             <PostCard entry={relatedEntry} />
