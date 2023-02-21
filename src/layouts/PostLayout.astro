@@ -22,23 +22,26 @@ const renderTab = (frontmatter: Frontmatter): string =>
 
 <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
   <main class="lg:w-auto w-full">
-    <PaperWithTitle title={renderTab(frontmatter)}>
-      <div class="pt-4"></div>
-      <div class="flex flex-wrap gap-1">
-        {
-          frontmatter.tags.map((tag) => (
-            <a
-              href={toTagIndexUrl(tag)}
-              class="btn btn-outline btn-xs normal-case text-base-content text-opacity-60"
-            >
-              {renderMeta({ title: tag })}
-            </a>
-          ))
-        }
+    <PaperWithTitle>
+      <span slot="title">{renderTab(frontmatter)}</span>
+      <div slot="body">
+        <div class="pt-4"></div>
+        <div class="flex flex-wrap gap-1">
+          {
+            frontmatter.tags.map((tag) => (
+              <a
+                href={toTagIndexUrl(tag)}
+                class="btn btn-outline btn-xs normal-case text-base-content text-opacity-60"
+              >
+                {renderMeta({ title: tag })}
+              </a>
+            ))
+          }
+        </div>
+        <Markdown>
+          <slot />
+        </Markdown>
       </div>
-      <Markdown>
-        <slot />
-      </Markdown>
     </PaperWithTitle>
   </main>
   <aside class="hidden lg:inline-flex flex-col max-w-xs gap-4">
