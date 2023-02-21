@@ -4,6 +4,8 @@ import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Container } from "../components/Container.astro";
 import { getEntryBySlug, CollectionEntry } from "astro:content";
+import { toHomeUrl } from "../utils/url";
+import { SITE_NAME_WITH_EMOJI } from "../constants/site";
 
 type Entry = CollectionEntry<"about">;
 
@@ -19,7 +21,14 @@ const { Content } = await entry.render();
   <Container>
     <main class="my-16 flex justify-center">
       <PaperWithTitle>
-        <span slot="title">{"About Me"}</span>
+        <span slot="title">
+          <div class="text-sm breadcrumbs">
+            <ul>
+              <li><a href={toHomeUrl()}>{SITE_NAME_WITH_EMOJI}</a></li>
+              <li>📑 {"About Me"}</li>
+            </ul>
+          </div>
+        </span>
         <Markdown slot="body">
           <Content />
         </Markdown>
