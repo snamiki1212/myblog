@@ -1,15 +1,11 @@
 ---
 ---
 
-<div class="flex flex-col max-w-screen-sm m-auto">
-  <div class="tabs overflow-x-scroll w-4/5">
-    <span
-      class="tab tab-lifted tab-border-none cursor-default bg-base-200 tab-disabled"
-    >
-      <slot name="title" />
-    </span>
+<div class="flex flex-col max-w-screen-sm m-auto gap-2">
+  <div class="bg-base-200 rounded-xl px-4">
+    <slot name="title" />
   </div>
-  <div class="bg-base-200 rounded-xl rounded-tl-none px-4 pb-4">
+  <div class="bg-base-200 rounded-xl px-4 pb-4">
     <slot name="body" />
   </div>
 </div>

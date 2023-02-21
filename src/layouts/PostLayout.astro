@@ -5,7 +5,11 @@ import { default as Frontmatter } from "../components/Frontmatter.astro";
 import { default as Avatar } from "../components/Avatar.astro";
 import { FooterSmallerSns } from "../components/Footer.Smaller.Sns";
 import { default as Toc } from "../components/Toc.astro";
-import { AUTHOR, AUTHOR_DESCRIPTION, SITE_NAME } from "../constants/site";
+import {
+  AUTHOR,
+  AUTHOR_DESCRIPTION,
+  SITE_NAME_WITH_EMOJI,
+} from "../constants/site";
 import { toCategoryIndexUrl, toTagIndexUrl, toHomeUrl } from "../utils/url";
 import { renderMeta } from "../utils/meta";
 import type { MarkdownLayoutProps } from "astro";
@@ -23,10 +27,11 @@ const { frontmatter, headings } = Astro.props;
       <span slot="title">
         <div class="text-sm breadcrumbs">
           <ul>
-            <li><a href={toHomeUrl()}>{SITE_NAME}</a></li>
+            <li><a href={toHomeUrl()}>{SITE_NAME_WITH_EMOJI}</a></li>
             <li>
               <a href={toCategoryIndexUrl(frontmatter.category)}
-                >{frontmatter.category}</a>
+                >📂 {frontmatter.category}</a
+              >
             </li>
             <li>{frontmatter.title}</li>
           </ul>
