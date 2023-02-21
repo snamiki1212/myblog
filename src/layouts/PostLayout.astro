@@ -5,8 +5,8 @@ import { default as Frontmatter } from "../components/Frontmatter.astro";
 import { default as Avatar } from "../components/Avatar.astro";
 import { FooterSmallerSns } from "../components/Footer.Smaller.Sns";
 import { default as Toc } from "../components/Toc.astro";
-import { AUTHOR, AUTHOR_DESCRIPTION } from "../constants/site";
-import { toTagIndexUrl } from "../utils/url";
+import { AUTHOR, AUTHOR_DESCRIPTION, SITE_NAME } from "../constants/site";
+import { toCategoryIndexUrl, toTagIndexUrl, toHomeUrl } from "../utils/url";
 import { renderMeta } from "../utils/meta";
 import type { MarkdownLayoutProps } from "astro";
 import type { CollectionEntry } from "astro:content";
@@ -15,15 +15,23 @@ type BlogEntry = CollectionEntry<"blog">;
 type Frontmatter = BlogEntry["data"];
 type Props = MarkdownLayoutProps<Frontmatter>;
 const { frontmatter, headings } = Astro.props;
-
-const renderTab = (frontmatter: Frontmatter): string =>
-  `${frontmatter.category} > ${frontmatter.title}`;
 ---
 
 <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
   <main class="lg:w-auto w-full">
     <PaperWithTitle>
-      <span slot="title">{renderTab(frontmatter)}</span>
+      <span slot="title">
+        <div class="text-sm breadcrumbs">
+          <ul>
+            <li><a href={toHomeUrl()}>{SITE_NAME}</a></li>
+            <li>
+              <a href={toCategoryIndexUrl(frontmatter.category)}
+                >{frontmatter.category}</a>
+            </li>
+            <li>{frontmatter.title}</li>
+          </ul>
+        </div>
+      </span>
       <div slot="body">
         <div class="pt-4"></div>
         <div class="flex flex-wrap gap-1">
