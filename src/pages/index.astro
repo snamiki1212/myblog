@@ -5,62 +5,32 @@ import Layout from "../layouts/BaseLayout.astro";
 import { default as PickedPostList } from "../components/PickedPostList.astro";
 import { default as Container } from "../components/Container.astro";
 import { default as Hero } from "../components/Hero.astro";
-import { toPostListUrl, toTagIndexUrl, toCategoryIndexUrl } from "../utils/url";
+import { toTagIndexUrl } from "../utils/url";
 import { toTagInfoList, renderMeta, sortByCreatedAt } from "../utils/meta";
+import { toPickedEntryInfoList } from "../utils/entry";
 import { LATEST_PAGE_SIZE } from "../constants/site";
 import { getCollection } from "astro:content";
 
-type BlogEntry = CollectionEntry<"blog">;
-
 const allEntries = sortByCreatedAt(await getCollection("blog"));
-const [latestEntries, remainingEntires] = R.splitAt(
-  allEntries,
-  LATEST_PAGE_SIZE
-);
-const latestNextPostListUrl = toPostListUrl(1);
-const allBlogNumber = allEntries.length;
-const obj = remainingEntires.reduce((prev, current) => {
-  const category = current.data.category;
-  if (prev[category]) {
-    prev[category].push(current);
-  } else {
-    prev[category] = [current];
-  }
-  return prev;
-}, {} as Record<string, BlogEntry[]>);
-const list = Object.entries(obj)
-  .map(([category, entries]) => ({
-    title: category,
-    entries,
-    total: entries.length,
-  }))
-  .map((item) => ({
-    ...item,
-    entires: R.take(item.entries, LATEST_PAGE_SIZE),
-  }));
+
+const pickedEntryInfoList = toPickedEntryInfoList(allEntries, {
+  pageSize: LATEST_PAGE_SIZE,
+});
+
 const tagInfoList = toTagInfoList(allEntries);
 ---
 
 <Layout>
   <main class="grid gap-10 w-full m-auto">
     <Hero />
-    <Container>
-      <PickedPostList
-        total={allBlogNumber}
-        title={"新着"}
-        entries={latestEntries}
-        nextUrl={latestNextPostListUrl}
-      />
-    </Container>
-
     {
-      list.map(({ title, entires, total }) => (
+      pickedEntryInfoList.map(({ title, entires, total, nextUrl }) => (
         <Container>
           <PickedPostList
             total={total}
             title={title}
             entries={entires}
-            nextUrl={toCategoryIndexUrl(title)}
+            nextUrl={nextUrl}
           />
         </Container>
       ))
