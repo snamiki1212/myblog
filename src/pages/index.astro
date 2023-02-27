@@ -14,9 +14,9 @@ import { LATEST_PAGE_SIZE } from "../constants/site";
 import { getCollection } from "astro:content";
 
 const allEntries = sortByCreatedAt(await getCollection("blog"));
-const entries = allEntries.slice(0, LATEST_PAGE_SIZE);
-const nextPostListUrl = toPostListUrl(1);
-const blogNumber = allEntries.length;
+const latestEntries = allEntries.slice(0, LATEST_PAGE_SIZE);
+const latestNextPostListUrl = toPostListUrl(1);
+const allBlogNumber = allEntries.length;
 const categoryInfoList = toCategoryInfoList(allEntries);
 const tagInfoList = toTagInfoList(allEntries);
 ---
@@ -28,21 +28,20 @@ const tagInfoList = toTagInfoList(allEntries);
       <div class="divider text-lg font-bold text-base-content text-opacity-60">
         新着
       </div>
-      <PostCardList entries={entries} />
+      <PostCardList entries={latestEntries} />
       <div class="flex flex-col justify-center mb-16 gap-4">
         <div class="stats">
           <div class="stat place-items-center">
             <div class="stat-actions mb-4">
               <a
-                href={nextPostListUrl}
+                href={latestNextPostListUrl}
                 class="btn btn-primary btn-lg normal-case"
               >
                 See More Blogs
               </a>
             </div>
             <div class="stat-title">Total Page Number</div>
-            <div class="stat-value">{blogNumber}</div>
-            <!-- <div class="stat-desc"></div> -->
+            <div class="stat-value">{allBlogNumber}</div>
           </div>
         </div>
       </div>
