@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { default as PostCardList } from "../components/PostCardList.astro";
+
+type BlogEntry = CollectionEntry<"blog">;
+
+type Props = {
+  title: string;
+  entries: BlogEntry[];
+  total: number;
+  nextUrl: string;
+};
+const { title, entries, total, nextUrl } = Astro.props;
+---
+
+<div class="divider text-lg font-bold text-base-content text-opacity-60">
+  {title}
+</div>
+<PostCardList entries={entries} />
+<div class="flex flex-col justify-center mb-16 gap-4">
+  <div class="stats">
+    <div class="stat place-items-center">
+      <div class="stat-actions mb-4">
+        <a href={nextUrl} class="btn btn-primary btn-lg normal-case">
+          Read More({total})
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
