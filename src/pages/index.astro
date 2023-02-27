@@ -1,4 +1,6 @@
 ---
+import * as R from "remeda";
+import type { CollectionEntry } from "astro:content";
 import Layout from "../layouts/BaseLayout.astro";
 import { default as PickedPostList } from "../components/PickedPostList.astro";
 import { default as Container } from "../components/Container.astro";
@@ -13,13 +15,35 @@ import {
 import { LATEST_PAGE_SIZE } from "../constants/site";
 import { getCollection } from "astro:content";
 
+type BlogEntry = CollectionEntry<"blog">;
+
 const allEntries = sortByCreatedAt(await getCollection("blog"));
-const latestEntries = allEntries.slice(0, LATEST_PAGE_SIZE);
+const [latestEntries, remainingEntires] = R.splitAt(
+  allEntries,
+  LATEST_PAGE_SIZE
+);
 const latestNextPostListUrl = toPostListUrl(1);
 const allBlogNumber = allEntries.length;
 const categoryInfoList = toCategoryInfoList(allEntries);
-// const latestCategoryPostInfo = [];
-// {title: "name", list: []}
+const obj = remainingEntires.reduce((prev, current) => {
+  const category = current.data.category;
+  if (prev[category]) {
+    prev[category].push(current);
+  } else {
+    prev[category] = [current];
+  }
+  return prev;
+}, {} as Record<string, BlogEntry[]>);
+const list = Object.entries(obj)
+  .map(([category, entries]) => ({
+    title: category,
+    entries,
+    total: entries.length,
+  }))
+  .map((item) => ({
+    ...item,
+    entires: R.take(item.entries, LATEST_PAGE_SIZE),
+  }));
 const tagInfoList = toTagInfoList(allEntries);
 ---
 
@@ -34,6 +58,19 @@ const tagInfoList = toTagInfoList(allEntries);
         nextUrl={latestNextPostListUrl}
       />
     </Container>
+
+    {
+      list.map(({ title, entires, total }) => (
+        <Container>
+          <PickedPostList
+            total={total}
+            title={title}
+            entries={entires}
+            nextUrl={toCategoryIndexUrl(title)}
+          />
+        </Container>
+      ))
+    }
 
     <div class="bg-base-200 py-8">
       <Container>
