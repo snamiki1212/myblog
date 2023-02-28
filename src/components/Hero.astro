@@ -1,25 +1,20 @@
 ---
 import { SITE_NAME } from "../constants/site";
-import { default as Container } from "../components/Container.astro";
 ---
 
-<div class="bg-base-200 min-h-52 py-24">
-  <Container>
-    <div class="my_hero w-full h-1/2 flex justify-center flex-col gap-4">
-      <h1
-        class="text-5xl font-bold text-base-content text-opacity-60 text-center"
-      >
-        {SITE_NAME}
-      </h1>
-      <div class="mx-auto">
-        <a href={"/about"} class="inline text-center">
-          <button class="btn btn-outline btn-primry normal-case"
-            >About Me</button
-          >
-        </a>
-      </div>
+<div class="bg-base-200 py-20">
+  <div class="my_hero w-full flex justify-center flex-col gap-4">
+    <h1
+      class="text-5xl font-bold text-base-content text-opacity-60 text-center"
+    >
+      {SITE_NAME}
+    </h1>
+    <div class="mx-auto">
+      <a href={"/about"} class="inline text-center">
+        <button class="btn btn-outline btn-primry normal-case">About Me</button>
+      </a>
     </div>
-  </Container>
+  </div>
 </div>
 
 <style>
@@ -31,7 +26,7 @@ import { default as Container } from "../components/Container.astro";
     /* --color1: #ee7752;
     --color2: #e73c7e;
     --color3: #23a6d5; */
-    --duration: 10s;
+    --duration: 3s;
   }
 
   .my_hero {
@@ -44,7 +39,7 @@ import { default as Container } from "../components/Container.astro";
     );
     background-size: 400% 400%;
     animation: my_gradient var(--duration) ease infinite;
-    height: 50vh;
+    height: 70vh;
   }
 
   @keyframes my_gradient {
