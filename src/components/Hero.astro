@@ -1,14 +1,18 @@
 ---
-import { SITE_NAME } from "../constants/site";
+import { SITE_NAME, SITE_DESCRIPTION } from "../constants/site";
+import { default as Avatar } from "./Avatar.astro";
 ---
 
-<div class="bg-base-200 py-20">
+<div class="bg-base-200">
   <div class="my_hero w-full flex justify-center flex-col gap-4">
     <h1
       class="text-5xl font-bold text-base-content text-opacity-60 text-center"
     >
       {SITE_NAME}
     </h1>
+    <div class="mx-auto text-lg max-w-md text-base-content px-12">
+      {SITE_DESCRIPTION}
+    </div>
     <div class="mx-auto">
       <a href={"/about"} class="inline text-center">
         <button class="btn btn-outline btn-primry normal-case">About Me</button>
@@ -39,7 +43,7 @@ import { SITE_NAME } from "../constants/site";
     );
     background-size: 400% 400%;
     animation: my_gradient var(--duration) ease infinite;
-    height: 70vh;
+    height: 100vh;
   }
 
   @keyframes my_gradient {

@@ -6,8 +6,13 @@ import { SITE_NAME, SITE_URL } from "../constants/site";
 type Props = {
   isCanonical?: boolean;
   title?: string;
+  showHeader?: boolean;
 };
-const { isCanonical = false, title = SITE_NAME } = Astro.props;
+const {
+  isCanonical = false,
+  title = SITE_NAME,
+  showHeader = true,
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -54,7 +59,7 @@ const { isCanonical = false, title = SITE_NAME } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Header />
+    {showHeader && <Header />}
     <slot />
     <Footer />
   </body>
