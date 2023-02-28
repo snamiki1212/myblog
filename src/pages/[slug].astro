@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection, CollectionEntry } from "astro:content";
 import { default as PostCard } from "../components/PostCard.astro";
+import { default as PickedPostList } from "../components/PickedPostList.astro";
 import { selectRelatedEntryList } from "../utils/entry";
 
 type BlogEntry = CollectionEntry<"blog">;
@@ -56,18 +57,7 @@ const { Content } = await entry.render();
     </div>
 
     <span class="py-5"></span>
-    <div>
-      <div class="divider font-bold text-2xl text-center pb-8">
-        Related Articles
-      </div>
-      <div class="flex flex-wrap justify-center gap-8">
-        {
-          relatedEntries.map((relatedEntry) => (
-            <PostCard entry={relatedEntry} />
-          ))
-        }
-      </div>
-    </div>
+    <PickedPostList title={"関連記事"} entries={relatedEntries} />
   </div>
   <!-- //Prev and Next -->
 

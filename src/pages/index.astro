@@ -27,10 +27,9 @@ const tagInfoList = toTagInfoList(allEntries);
       pickedEntryInfoList.map(({ title, entires, total, nextUrl }) => (
         <Container>
           <PickedPostList
-            total={total}
             title={title}
+            next={{ total, nextUrl }}
             entries={entires}
-            nextUrl={nextUrl}
           />
         </Container>
       ))
