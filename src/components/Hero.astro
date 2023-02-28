@@ -1,26 +1,61 @@
 ---
-import { SITE_NAME_WITH_EMOJI } from "../constants/site";
+import { SITE_NAME } from "../constants/site";
 import { default as Container } from "../components/Container.astro";
 ---
 
 <div class="bg-base-200 min-h-52 py-24">
   <Container>
-    <div class="hero">
-      <div class="hero-content flex-col lg:flex-row-reverse">
-        {
-          /* <img
-      src="https://placeimg.com/80/40/arch"
-      class="max-w-sm rounded-lg shadow-2xl"
-    /> */
-        }
-        <div>
-          <h1 class="text-5xl font-bold">{SITE_NAME_WITH_EMOJI}</h1>
-          <p class="py-6">This is my tech blog :D</p>
-          <a href={"/about"}>
-            <button class="btn btn-primary normal-case">About Me</button>
-          </a>
-        </div>
+    <div class="my_hero w-full h-1/2 flex justify-center flex-col gap-4">
+      <h1
+        class="text-5xl font-bold text-base-content text-opacity-60 text-center"
+      >
+        {SITE_NAME}
+      </h1>
+      <div class="mx-auto">
+        <a href={"/about"} class="inline text-center">
+          <button class="btn btn-outline btn-primry normal-case"
+            >About Me</button
+          >
+        </a>
       </div>
     </div>
   </Container>
 </div>
+
+<style>
+  :root {
+    --color1: hsl(var(--b1));
+    --color2: hsl(var(--p));
+    --color3: hsl(var(--s));
+    --color4: var(--color1);
+    /* --color1: #ee7752;
+    --color2: #e73c7e;
+    --color3: #23a6d5; */
+    --duration: 10s;
+  }
+
+  .my_hero {
+    background: linear-gradient(
+      -45deg,
+      var(--color1),
+      var(--color2),
+      var(--color3),
+      var(--color4)
+    );
+    background-size: 400% 400%;
+    animation: my_gradient var(--duration) ease infinite;
+    height: 50vh;
+  }
+
+  @keyframes my_gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
