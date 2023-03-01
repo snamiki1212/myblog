@@ -1,15 +1,12 @@
 ---
-import { SITE_NAME, SITE_DESCRIPTION } from "../constants/site";
+import { SITE_DESCRIPTION } from "../constants/site";
+import logo from "../../public/images/logo.svg";
 ---
 
 <div class="bg-base-200">
   <div class="my_hero w-full flex justify-center flex-col gap-4">
     <div class="w-full">
-      <img
-        src={"images/logo.svg"}
-        alt="logo"
-        class="w-full mx-auto max-w-md px-8"
-      />
+      <img src={logo} alt="logo" class="w-full mx-auto max-w-md px-8" />
     </div>
     <div class="mx-auto text-lg max-w-md text-base-content px-12">
       {SITE_DESCRIPTION}
