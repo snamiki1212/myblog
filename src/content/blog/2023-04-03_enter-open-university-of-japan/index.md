@@ -15,8 +15,13 @@ word:
 
 ども、Nash です。
 
-2023-04 時点で放送大学の教養学部の心理と教育コースに 3 年時編入で入学することになりました。去年まではカナダの Community College である CICCC に通っていたのですが、2023-04-01 から再びの社会人大学生になります。
+2023-04 時点で放送大学の教養学部の「心理と教育コース」に 3 年時編入で入学することになりました。
 
+<!-- Tweet -->
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">放送大学に入りました <a href="https://t.co/BxLqOmBYoW">pic.twitter.com/BxLqOmBYoW</a></p>&mdash; Nash (@snamiki1212) <a href="https://twitter.com/snamiki1212/status/1642452053929893888?ref_src=twsrc%5Etfw">April 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- //Tweet -->
+
+去年まではカナダの Community College である CICCC に通っていたのですが、2023-04-01 から再びの社会人大学生になります。
 というわけでせっかくなので、入学に至った経緯や考えなどを残しておこうかなーと思いこれを書くことにしました。
 
 では、見ていきます。
@@ -53,8 +58,11 @@ word:
 
 ### カナダで社会人学生をして気付いた学生の面白さ
 
-自分は 2020〜2022 年にカナダの Community College である CICCC に入学をして社会人学生をしていました。ただ、このときの入学理由は学業のためではありません。あくまで、カナダで働くためのワークビザ取得のために入学しており、ついでに授業をとっていた形です。
+自分は 2020〜2022 年にカナダの Community College である CICCC に入学をして社会人学生をしていました。
 
+[【カナダ留学】CICCC を卒業して Diploma を取得しました](/graduate-cornerstone/)
+
+ただ、このときの入学理由は学業のためではありません。あくまで、カナダで働くためのワークビザ取得のために入学しており、ついでに授業をとっていた形です。
 動機としてはビザのためでしたが、実際に社会人学生として授業を受けたりするのは体験としてなかなか面白かったです。
 
 - バックボーンが異なる学友
