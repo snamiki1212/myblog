@@ -5,7 +5,8 @@ createdAt: "2023-04-03 01:00"
 updatedAt: "2023-04-03 01:00"
 category: "キャリア"
 tags:
-  - 書評
+  - 放送大学
+  - キャリア
 slug: enter-the-open-university-of-japan
 word:
   - nothing
