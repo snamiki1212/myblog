@@ -29,7 +29,7 @@ const {
       async
       type="text/partytown"
       src={`https://www.googletagmanager.com/gtag/js?id=${
-        import.meta.env.GA4_ID
+        import.meta.env.PUBLIC_GA4_ID
       }`}
     ></script>
     <script type="text/partytown">
@@ -38,7 +38,7 @@ const {
         window.dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", import.meta.env.GA4_ID);
+      gtag("config", import.meta.env.PUBLIC_GA4_ID);
     </script>
     <!-- /Google tag -->
 
