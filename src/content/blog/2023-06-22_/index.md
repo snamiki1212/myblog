@@ -11,6 +11,7 @@ word:
   - nothing
 ---
 
+# Rust のプロジェクトで MVC から Clean Architecture にリアーキテクチャした話
 
 ども、Nash です。
 
