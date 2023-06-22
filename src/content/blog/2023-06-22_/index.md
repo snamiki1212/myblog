@@ -11,11 +11,11 @@ word:
   - nothing
 ---
 
-## RustのプロジェクトでMVCからClean Architectureにリアーキテクチャした話
+## Rust のプロジェクトで MVC から Clean Architecture にリアーキテクチャした話
 
-ども、Nashです。
+ども、Nash です。
 
-この記事は、自分が作成しているRustのプロジェクトをMVCからClean Architectureにリアーキテクトした話です。
+この記事は、自分が作成している Rust のプロジェクトを MVC から Clean Architecture にリアーキテクトした話です。
 
 そこまで重い内容と学びとかはないですが、せっかくなので記事として残しておきます。
 
@@ -23,21 +23,21 @@ word:
 
 ## リアーキテクトする背景
 
-過去にRustの学習のため、RealWorldのプロジェクトをRustで作成していました。
+過去に Rust の学習のため、RealWorld のプロジェクトを Rust で作成していました。
 
-[Rust+ActixWeb+DieselでRealworldプロジェクトを登録した話](/rust-actix-web-diesel-realworld/)
+[Rust+ActixWeb+Diesel で Realworld プロジェクトを登録した話](/rust-actix-web-diesel-realworld/)
 
 [GitHub - snamiki1212/realworld-v1-rust-actix-web-diesel: RealWorld with Rust + ActixWeb + Diesel on Clean Architecture](https://github.com/snamiki1212/realworld-v1-rust-actix-web-diesel)
 
-作成時のモチベーションとしては、とりあえず手を動かしてRustを使いつつプロジェクトとして形にすることを優先していましが、アーキテクチャについてはシンプルなMVCを基本にしていて途中からかなり汚くなってしまっていた状態です。
+作成時のモチベーションとしては、とりあえず手を動かして Rust を使いつつプロジェクトとして形にすることを優先していましが、アーキテクチャについてはシンプルな MVC を基本にしていて途中からかなり汚くなってしまっていた状態です。
 
 個人のプロジェクトなので「まぁそんなもんだよね」という気持ちもあったのですがつい先日カジュ面していたら「あ、そのリポジトリを昔に見たことあります」と言われたり、本当に少しずつですがスターやフォークされていたりと、意外と人に見られているなーと思うようになりました。
 
 というわけで、イケてない設計で放置してたのも気持ち悪かったのでよい機会だったのでリアーキテクトすることにしました。
 
-## クリーンアーキテクチャとRustを学ぶ
+## クリーンアーキテクチャと Rust を学ぶ
 
-リアーキテクトする先としてクリーンアーキテクチャをベースにするのが良さそうだなーと思っていたので、いくつかの解説記事を見て理解を深めます。また、言語レベルでもどう実現すればいいのかの目処も建てたいので「Rustでクリーンアーキテクチャ」という文脈でも合わせて調べました。
+リアーキテクトする先としてクリーンアーキテクチャをベースにするのが良さそうだなーと思っていたので、いくつかの解説記事を見て理解を深めます。また、言語レベルでもどう実現すればいいのかの目処も建てたいので「Rust でクリーンアーキテクチャ」という文脈でも合わせて調べました。
 
 ここで、自分が読んだ情報をまとめておきます。
 
@@ -51,36 +51,33 @@ word:
 
 ## リアーキテクト前の状態
 
-そもそものリアーキテクト前の状態ですが、シンプルなMVCパターンで構築していました。
+そもそものリアーキテクト前の状態ですが、シンプルな MVC パターンで構築していました。
 
 [![](https://mermaid.ink/img/pako:eNqVUk1PwzAM_StRToA2eq_QJLZynJDYkXLwEm8EtUlx3CE07b_TJC2rqk2Imz_es9-zfJTKaZS59PjZolVYGNgT1KUVAhQ7EqvKoOWQN0BslGnAslgbrSv8AkIBfpQ9bGmR1b9pdjclrpxlclWFFIjnLBJfdwjcEr5l0Jh78lPyBulgVFzZhxOaT9UL1GJZ2lBLdsR8sRipzgUF-z7aHFkLqLPEXMzjhLODaf_Re7O3gp14SfPE8_YDFQeVNyOZ_bZO5u2Fib21ft3gOXSKZSyGcrH8A_sf3V18QGJhbJTuG2c9XtWe2lfEp_uGgyaYnMkaqQajuyc7BkIp-R1rLGXehRp30FZcytKeOmjbaGB80qb7PJnvoPI4k9Cy23xbJXOmFgdQ_6hDESNnnZ45_vTpB2sR_2U?type=png)](https://mermaid.live/edit#pako:eNqVUk1PwzAM_StRToA2eq_QJLZynJDYkXLwEm8EtUlx3CE07b_TJC2rqk2Imz_es9-zfJTKaZS59PjZolVYGNgT1KUVAhQ7EqvKoOWQN0BslGnAslgbrSv8AkIBfpQ9bGmR1b9pdjclrpxlclWFFIjnLBJfdwjcEr5l0Jh78lPyBulgVFzZhxOaT9UL1GJZ2lBLdsR8sRipzgUF-z7aHFkLqLPEXMzjhLODaf_Re7O3gp14SfPE8_YDFQeVNyOZ_bZO5u2Fib21ft3gOXSKZSyGcrH8A_sf3V18QGJhbJTuG2c9XtWe2lfEp_uGgyaYnMkaqQajuyc7BkIp-R1rLGXehRp30FZcytKeOmjbaGB80qb7PJnvoPI4k9Cy23xbJXOmFgdQ_6hDESNnnZ45_vTpB2sR_2U)
 
-
-
-ただ、ややファットモデルになってきたので雑にServiceというレイヤーを作ってしまってここにもロジックを集めてしまったのが問題でした。ModelとServiceそれぞれでクエリを実行していたり相互に依存していたり、と混沌としはじめていた状態です。
+ただ、ややファットモデルになってきたので雑に Service というレイヤーを作ってしまってここにもロジックを集めてしまったのが問題でした。Model と Service それぞれでクエリを実行していたり相互に依存していたり、と混沌としはじめていた状態です。
 
 [Release v1.0.0 · snamiki1212/realworld-v1-rust-actix-web-diesel · GitHub](https://github.com/snamiki1212/realworld-v1-rust-actix-web-diesel/releases/tag/v1.0.0)
 
-
 ## リアーキテクト後の状態
 
-Clean Architectureにリアーキテクトした結果がこのとおりです。
+Clean Architecture にリアーキテクトした結果がこのとおりです。
 
 [![](https://mermaid.ink/img/pako:eNqNk99rgzAQx_-VECi0rOq7jD509rEwXPdU-5DquQbUuORcKaX_-xLj71GmIFzuvvnk7pK701gkQH2aZuIaX5hEcgiigujvLeNQ4HIZUWtFdLWykVBUCMeI7nmSZHBlEsiLdZLXs9yY31My9lhZeonkPyCVd887sVoTacSPiJ6ao0SBUmQZSE3tF39gKTCsNMA7NtbJizu1cqXqiO9apXOugZ09h1e24hHuU0HMlKm5seagKisdgUIoheIo5E2z-sUcnGzVfIzcFcjR4KwxBwVGOcEE2-MyYMjOOuWV9lnvYkEOoiQoyFYginz4NIjjhPBdgULH2dj7H7wPYpz9XU4vug43zRz1uA70nZm2rQ7bSofl1-5gO0jb5msy1wW0JRLHfbLd_edU92m6JtI9scnr09EQVCkKBUZm-0bXNAeZM57oububHRHFC-QQUV-bCaSsyvS4RcVDS6syYQi7xORB_ZRlCtaUVSg-bkVMfZQVtKKAsy_J8k4F9aa9HfB6zh-_085WkQ?type=png)](https://mermaid.live/edit#pako:eNqNk99rgzAQx_-VECi0rOq7jD509rEwXPdU-5DquQbUuORcKaX_-xLj71GmIFzuvvnk7pK701gkQH2aZuIaX5hEcgiigujvLeNQ4HIZUWtFdLWykVBUCMeI7nmSZHBlEsiLdZLXs9yY31My9lhZeonkPyCVd887sVoTacSPiJ6ao0SBUmQZSE3tF39gKTCsNMA7NtbJizu1cqXqiO9apXOugZ09h1e24hHuU0HMlKm5seagKisdgUIoheIo5E2z-sUcnGzVfIzcFcjR4KwxBwVGOcEE2-MyYMjOOuWV9lnvYkEOoiQoyFYginz4NIjjhPBdgULH2dj7H7wPYpz9XU4vug43zRz1uA70nZm2rQ7bSofl1-5gO0jb5msy1wW0JRLHfbLd_edU92m6JtI9scnr09EQVCkKBUZm-0bXNAeZM57oububHRHFC-QQUV-bCaSsyvS4RcVDS6syYQi7xORB_ZRlCtaUVSg-bkVMfZQVtKKAsy_J8k4F9aa9HfB6zh-_085WkQ)
 
-基本的にDI・DIPをベースに処理フローは下記のとおりです。
+基本的に DI・DIP をベースに処理フローは下記のとおりです。
 
 ### Middleware + Routes
 
-Requestに対して前処理であるMiddlewareを実行後にRoutingします。MiddlewareはCORSやAuthなどがあり、RoutingしてControllerに処理を渡します。
+Request に対して前処理である Middleware を実行し、その後に Routing します。Middleware は CORS や Auth などがあり、Routing した結果として Controller に処理を渡します。
 
 ### Controller
 
-受け取ったRequestやURL Pathなどをパースするレイヤーです。後続の処理であるUsecaseに渡します。
+受け取った Request や URL Path などをパースするレイヤーです。これらのデータを引数に後続の処理である Usecase に渡します。
 
 ### Usecase
 
-複数のRepositoryを呼び出して、その結果をPresenterに渡すレイヤーです。ここでいうリポジトリとは複数のテーブル、全文検索、キャッシュなどデータが格納されているもので、これらから取得したデータをPresenterに渡します。このプロジェクトにおけるリポジトリはデータベースのみなので、処理はかなりシンプルです。
+複数の Repository を呼び出して、その結果を Presenter に渡すレイヤーです。ここでいうリポジトリとは複数のテーブル、全文検索、キャッシュなどデータが格納されているもので、これらから取得したデータを Presenter に渡します。このプロジェクトにおけるリポジトリはデータベースのみなので、処理はかなりシンプルです。
 
 ### Repository + Entity
 
@@ -88,23 +85,23 @@ Requestに対して前処理であるMiddlewareを実行後にRoutingします�
 
 ### Presenter
 
-Usecaseによって呼び出されるResponseの整形を行うレイヤーです。このアプリではJSONを返すだけなので、View層もシンプルですが場合によってはHTMLを返したりすることもあるかと思います。
+Usecase によって呼び出される Response の整形を行うレイヤーです。このアプリでは JSON を返すだけなので、View 層もシンプルですが場合によっては HTML を返したりすることもあるかと思います。
 
 [Release v2.0.0 · snamiki1212/realworld-v1-rust-actix-web-diesel · GitHub](https://github.com/snamiki1212/realworld-v1-rust-actix-web-diesel/releases/tag/v2.0.0)
 
+## リアーキテクトについて
 
-## 所感
-
-やや見切り発車で始めましたが無事にリアーキテクトできてよかったです。特にRustがまだ全然なれていないので「エラー文見てもよくわからん」みたいなケースもまだ多いので最悪頓挫するかと思ってました。
-
-そのため、今回のリアーキテクトは簡単なところから段階的に始めていて。
+今回のリアーキテクトは簡単なところから段階的に始めていて。
 
 - 構造を変更する
-- DI Containerを作る
-- Interface化する
+- DI Container を作る
+- Interface 化する
 
-というような流れで行いました。特にDI Containerについては実装方法がいくつかあるようで、どの方法で実装するかは途中で手を動かしながら決めたような形です。
+というような流れで行いました。特に DI Container については実装方法がいくつかあるようで、どの方法で実装するかは途中で手を動かしながら決めたような形です。
 
+### 所感
+
+やや見切り発車で始めましたが無事にリアーキテクトできてよかったです。特に Rust がまだ全然なれていないので「エラー文見てもよくわからん」みたいなケースもまだ多いので最悪頓挫するかと思ってました。。。
 
 ### おわりに
 
