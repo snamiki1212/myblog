@@ -11,7 +11,10 @@ word:
   - nothing
 ---
 
+# ScyllaDB University でお勉強
+
 ども、Nash です。
+
 最近、ScyllaDB を学んだのでそのお勉強メモの記事になります。
 
 ## ScyllaDB 学習の背景
