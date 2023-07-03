@@ -33,13 +33,19 @@ word:
 
 ## ScyllaDB University で学ぶ
 
-さて、ScyllaDB には、ScyllaDB University という公式学習コンテンツのプラットフォームがあります。ここにコンテンツがいくつかもありますが、Learning Path が Developer、Architect、Administrator ごとに提示されているので自分のポジションに見合うポジションごとに LearningPath を選択して、それに沿ってコースを取っていけば良さそうです。
+さて、ScyllaDB には、ScyllaDB University という公式学習コンテンツのプラットフォームがあります。
+
+[ScyllaDB University | NoSQL Courses](https://university.scylladb.com/)
+
+ここにコンテンツがいくつかもありますが、Learning Path がポジションごとに提示されているので自分のポジションに見合うポジションに沿った LearningPath を選択して、それに沿ってコースを取っていけば良さそうです。
+
+- Developer
+- Architect
+- Administrator
 
 ひとまず、今回はすべてのパスで共通してる下記のコースで ScyllaDB について基礎的な知識を学びました。
 
 - S101: ScyllaDB Essentials
-
-https://university.scylladb.com/
 
 ## S101: ScyllaDB Essentials
 
@@ -49,7 +55,8 @@ https://university.scylladb.com/
 - Fundamental concepts like CL / RF
 - Cluster behavior on read/write
 
-受講した感想としては、めちゃくちゃクオリティの高い教材でしかもわかりやすいのでサクサク進めれます。英語ですが、なんとなくでほぼ読めるので特に詰まることもなかったです。
+受講した感想としては、めちゃくちゃクオリティの高い教材でしかもわかりやすいのでサクサク進めれます。
+英語ですが、なんとなくでほぼ読めるので特に詰まることもなかったです。
 
 自分のメモとして、学んだ内容をここにまとめておきます。とはいえ、どう頑張っても劣化 S101 になるので興味ある人はキチンと S101 を受けることをおすすめします。
 
@@ -90,7 +97,7 @@ ScyllaDB の機能
 
 例えば、Erlang では Tree Architecture ですが、ScyllaDB では Ring Architecture と構造は異なっていますが、そもそもそれらを構成している Cluster、Node、Message などは同じところから始まっているように見えます。
 
-他にも、Erlang/OTP だと Restart Strategy をどう設計するかが大事だったりしますが、 ScyllaDB では Consistency Level や Replication Factor などをどうするかが重視されるように見えます。これは、Erlang ではクラッシュした Node をどう復帰するかが重視されていて、ScyllaDB では Write/Read 処理をどう実現していくかが重視されている現れかと思っています。
+他にも、Erlang/OTP だと Restart Strategy をどう設計するかが大事だったりしますが、 ScyllaDB では Consistency Level や Replication Factor などをどうするかが重要視されるように見えます。これは、Erlang ではクラッシュした Node をどう復帰するかが重視されていて、ScyllaDB では Write/Read 処理をどう実現していくかが重視されている現れかと思っています。
 
 分散系という時点で同じようなアイデアは多かった一方で違いもあり、それはつまりなにが重要視されているかが違うのかという観点で面白いなーと思いながら学んでいきました。ひとまずは S101 を受講しましたが、時間を見つけてこれ以降のコースも見ていこうかと思います。
 
