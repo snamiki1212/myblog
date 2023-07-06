@@ -1,6 +1,5 @@
 ---
 import * as R from "remeda";
-import type { CollectionEntry } from "astro:content";
 import Layout from "../layouts/BaseLayout.astro";
 import { default as PickedPostList } from "../components/PickedPostList.astro";
 import { default as Container } from "../components/Container.astro";
@@ -8,14 +7,16 @@ import { default as Hero } from "../components/Hero.astro";
 import { toTagIndexUrl } from "../utils/url";
 import { toTagInfoList, renderMeta, sortByCreatedAt } from "../utils/meta";
 import { toPickedEntryInfoList } from "../utils/entry";
-import { LATEST_PAGE_SIZE } from "../constants/site";
+import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import { getCollection } from "astro:content";
 
 const allEntries = sortByCreatedAt(await getCollection("blog"));
 
-const pickedEntryInfoList = toPickedEntryInfoList(allEntries, {
-  pageSize: LATEST_PAGE_SIZE,
-});
+const pickedEntryInfoList = R.pipe(
+  allEntries,
+  R.filter((entry) => !IGNORE_CATEGORY_LIST.includes(entry.data.category)),
+  (arr) => toPickedEntryInfoList(arr, { pageSize: LATEST_PAGE_SIZE })
+);
 
 const tagInfoList = toTagInfoList(allEntries);
 ---

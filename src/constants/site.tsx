@@ -20,3 +20,5 @@ export const AVATAR_IMG = "/images/avatar.jpg";
 
 export const AUTHOR = "Nash";
 export const AUTHOR_DESCRIPTION = "Software Engineer";
+
+export const IGNORE_CATEGORY_LIST = ["SE転職"];
