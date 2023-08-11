@@ -25,13 +25,13 @@ const pageIndexList = Array.from(
 <Layout>
   <main class="grid gap-10 max-w-screen-lg w-full m-auto">
     <PostCardList entries={page.data} />
-    <div class="btn-group justify-center mb-24">
+    <div class="join justify-center mb-24">
       {
         pageIndexList.map((idx) => (
           <a
             href={toPostListUrl(idx)}
-            class={`btn btn-outline normal-case ${
-              idx === page.currentPage ? "btn-active" : "btn-primary "
+            class={`join-item btn btn-primary ${
+              idx === page.currentPage && "btn-active"
             }`}
           >
             {idx}
