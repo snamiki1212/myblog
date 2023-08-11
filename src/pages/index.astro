@@ -36,7 +36,7 @@ const tagInfoList = toTagInfoList(allEntries);
       ))
     }
 
-    <div class="bg-base-200 py-8">
+    <div class="glass py-8">
       <Container>
         <div class="py-8">
           <h2 class="text-2xl font-bold">Tag</h2>
@@ -44,7 +44,7 @@ const tagInfoList = toTagInfoList(allEntries);
             {
               tagInfoList.map((info) => (
                 <a
-                  class="btn btn-outline btn-sm normal-case"
+                  class="btn glass btn-sm normal-case"
                   href={toTagIndexUrl(info.title)}
                 >
                   {renderMeta(info)}

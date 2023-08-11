@@ -5,7 +5,7 @@ import { SNS_LIST } from "../constants/sns";
  */
 export const FooterSmallerSns = () => {
   return SNS_LIST.map((sns) => (
-    <a href={sns.url} target="_blank" className="btn">
+    <a href={sns.url} target="_blank" className="btn glass">
       <div>{sns.renderSvg()}</div>
     </a>
   ));
