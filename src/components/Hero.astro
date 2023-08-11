@@ -1,6 +1,8 @@
 ---
 import { SITE_DESCRIPTION } from "../constants/site";
 import logo from "../..//images/logo.svg";
+import { SnsList } from "../components/SnsList";
+import Avatar from "./Avatar.astro";
 ---
 
 <div class="my_hero w-full flex justify-center flex-col gap-4">
@@ -11,9 +13,10 @@ import logo from "../..//images/logo.svg";
     {SITE_DESCRIPTION}
   </div>
   <div class="mx-auto">
-    <a href={"/about"} class="inline text-center">
-      <button class="btn glass normal-case">About Me</button>
-    </a>
+    <Avatar />
+  </div>
+  <div class="mx-auto flex gap-2">
+    <SnsList />
   </div>
 </div>
 
