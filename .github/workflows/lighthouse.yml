@@ -1,0 +1,22 @@
+name: Lighthouse CI
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # 
+      # REF: https://github.com/treosh/lighthouse-ci-action
+      # 
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            https://snamiki1212.com/
+            https://snamiki1212.com/rearchitect-realworld-rust/
+            https://snamiki1212.com/categories/%E6%8A%80%E8%A1%93/
+            https://snamiki1212.com/tags/React/
+          budgetPath: '.github/lighthouse/budget.json' # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
