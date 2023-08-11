@@ -3,7 +3,7 @@ import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Frontmatter } from "../components/Frontmatter.astro";
 import { default as Avatar } from "../components/Avatar.astro";
-import { FooterSmallerSns } from "../components/Footer.Smaller.Sns";
+import { SnsList } from "../components/SnsList";
 import { default as Toc } from "../components/Toc.astro";
 import {
   AUTHOR,
@@ -77,7 +77,7 @@ const { frontmatter, headings } = Astro.props;
         <div
           class="flex justify-evenly p-2 px-4 text-base-content text-opacity-40"
         >
-          <FooterSmallerSns />
+          <SnsList />
         </div>
       </div>
       <!-- <div>this is test.</div> -->
