@@ -19,11 +19,22 @@ const pickedEntryInfoList = R.pipe(
 );
 
 const tagInfoList = toTagInfoList(allEntries);
+
+const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
+  // REF: https://daisyui.com/components/button/
+  if (num < 1) return "btn-xs";
+  if (num < 5) return "btn-sm";
+  if (num < 10) return "btn-md";
+  return "btn-lg";
+};
 ---
 
 <Layout showHeader={false}>
   <main class="grid gap-10 w-full m-auto">
+    <!-- Hero Section -->
     <Hero />
+
+    <!-- Post Section List -->
     {
       pickedEntryInfoList.map(({ title, entires, total, nextUrl }) => (
         <Container>
@@ -36,6 +47,7 @@ const tagInfoList = toTagInfoList(allEntries);
       ))
     }
 
+    <!-- Tag Section -->
     <div class="glass py-8">
       <Container>
         <div class="py-8">
@@ -44,7 +56,9 @@ const tagInfoList = toTagInfoList(allEntries);
             {
               tagInfoList.map((info) => (
                 <a
-                  class="btn glass btn-sm normal-case"
+                  class={`btn glass normal-case ${mapperFromItemNumberToButtonSizeStyle(
+                    info.num
+                  )}`}
                   href={toTagIndexUrl(info.title)}
                 >
                   {renderMeta(info)}
