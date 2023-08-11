@@ -21,16 +21,10 @@ const { title, entries, next } = Astro.props;
 <PostCardList entries={entries} />
 {
   next && (
-    <div class="flex flex-col justify-center mb-16 gap-4">
-      <div class="stats">
-        <div class="stat place-items-center">
-          <div class="stat-actions mb-4">
-            <a href={next.nextUrl} class="btn btn-primary btn-lg normal-case">
-              Read More({next.total})
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="flex justify-center">
+      <a href={next.nextUrl} class="btn glass btn-lg normal-case">
+        Read More({next.total})
+      </a>
     </div>
   )
 }
