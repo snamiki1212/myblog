@@ -1,0 +1,14 @@
+---
+import { COPYRIGHT } from "../constants/site";
+import logo from "../..//images/logo.svg";
+import { toHomeUrl } from "../utils/url";
+---
+
+<footer class="footer py-4 px-2 border-y">
+  <div class="flex flex-wrap gap-4 place-items-center place-self-center">
+    <a href={toHomeUrl()} class="mx-auto">
+      <img src={logo} alt="logo" class="mx-auto w-20" />
+    </a>
+    <p class="mx-auto">{COPYRIGHT}</p>
+  </div>
+</footer>

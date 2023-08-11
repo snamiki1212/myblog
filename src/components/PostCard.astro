@@ -4,13 +4,13 @@ import { renderMeta } from "../utils/meta";
 import { renderOnlyOneDate } from "../utils/date";
 import { default as EditIcon } from "./EditIcon.astro";
 import { default as IconUpdate } from "./IconUpdate.astro";
+import { toPostUrl } from "../utils/url";
 
 type BlogEntry = CollectionEntry<"blog">;
 interface Props {
   entry: BlogEntry;
 }
 
-const toPostUrl = (entry: BlogEntry): string => `/${entry.slug}`;
 const { entry } = Astro.props;
 const category = entry.data.category;
 const tags = entry.data.tags;
@@ -18,7 +18,7 @@ const { type, title: dateStr } = renderOnlyOneDate(entry);
 ---
 
 <a
-  href={toPostUrl(entry)}
+  href={toPostUrl(entry.slug)}
   class="hover:-translate-y-1 transition-all duration-200"
 >
   <div class="card card-compact max-w-xs h-48 glass shadow-xl">

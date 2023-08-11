@@ -1,12 +1,14 @@
 ---
 import { default as Container } from "../components/Container.astro";
-import { default as FooterLarger } from "./Footer.Larger.astro";
-import { default as FooterSmaller } from "./Footer.Smaller.astro";
+import { default as FooterPages } from "./Footer.Pages.astro";
+import { default as FooterCopyright } from "./Footer.Copyright.astro";
+import { default as FooterSns } from "./Footer.Sns.astro";
 ---
 
 <footer class="glass">
   <Container>
-    <FooterLarger />
-    <FooterSmaller />
+    <FooterPages />
+    <FooterSns />
+    <FooterCopyright />
   </Container>
 </footer>
