@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【2022年】フリーランスエンジニアの４年目振り返り"
+title: "2022年｜フリーランスエンジニアの４年目振り返り"
 createdAt: "2022-12-11 11:00"
 updatedAt: "2022-12-11 11:00"
 category: "キャリア"

@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【2021年】1年の振り返り｜カナダで茹でガエルな生活"
+title: "2021年｜1年の振り返り｜カナダで茹でガエルな生活"
 createdAt: "2021-12-24 17:00"
 updatedAt: "2021-12-24 17:00"
 category: "キャリア"

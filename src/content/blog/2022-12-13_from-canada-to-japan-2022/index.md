@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【2022年】カナダから日本に帰国した話"
+title: "2022年｜カナダから日本に帰国した話"
 createdAt: "2022-12-13 12:00"
 updatedAt: "2022-12-13 12:00"
 category: "海外"
@@ -39,7 +39,7 @@ word:
 
 2021 年、カナダでワークビザを取得したいためだけに学生してました。
 
-[【カナダ留学】CICCC を卒業して Diploma を取得しました](/graduate-cornerstone)
+[カナダ留学｜CICCC を卒業して Diploma を取得しました](/graduate-cornerstone)
 
 2022 年、カナダのスタートアップで働き始めました。
 

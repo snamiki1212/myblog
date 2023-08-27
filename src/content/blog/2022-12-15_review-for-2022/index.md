@@ -52,7 +52,7 @@ EM 系の本が１つと、薄めのビジネス本が１つ。
 
 TypeScript について、フリーランスで開発している現場で調べ物をしていた延長から下記のような記事を書いたりしていました。
 
-[【TypeScript】reaonly 不要論](/no-need-readonly-in-ts)
+[TypeScript｜reaonly 不要論](/no-need-readonly-in-ts)
 
 Rust について、個人開発として Real World プロジェクトに参画して開発をしました。最終的に、このリポジトリは公式に登録されたこともあり 2022-12 時点のスター数もだいたい 30 個くらいになっています。個人開発のリポジトリでスター数がそれなりに付いたのもはじめてなので嬉しいですね。
 
@@ -70,7 +70,7 @@ Rust について、個人開発として Real World プロジェクトに参画
 
 カナダ留学で通っていた学校を無事卒業しました。そのときの振り返りについて、下記にまとめてあります。
 
-[【カナダ留学】CICCC を卒業して Diploma を取得しました](/graduate-cornerstone)
+[カナダ留学｜CICCC を卒業して Diploma を取得しました](/graduate-cornerstone)
 
 ### カナダの仕事
 

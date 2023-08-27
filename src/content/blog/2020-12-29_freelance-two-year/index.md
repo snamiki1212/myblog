@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【2020年】約2年目フリーランスエンジニアの振り返り"
+title: "2020年｜約2年目フリーランスエンジニアの振り返り"
 createdAt: "2020-12-29 20:00"
 updatedAt: "2022-12-23 20:00"
 category: "キャリア"

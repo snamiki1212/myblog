@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【2021年】3年目フリーランスエンジニアの振り返り"
+title: "2021年｜3年目フリーランスエンジニアの振り返り"
 createdAt: "2021-12-23 21:00"
 updatedAt: "2021-12-23 00:00"
 category: "キャリア"

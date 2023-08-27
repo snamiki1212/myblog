@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【TypeScript】reaonly不要論"
+title: "TypeScript｜reaonly不要論"
 createdAt: "2022-11-13 00:00"
 updatedAt: "2022-12-11 11:30"
 category: "技術"
@@ -11,7 +11,7 @@ word:
   - nothing
 ---
 
-# 【TypeScript】reaonly 不要論
+# TypeScript｜reaonly 不要論
 
 ども、Nash です。
 

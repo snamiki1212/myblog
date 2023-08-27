@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【カナダ留学】CICCCを卒業してDiplomaを取得しました"
+title: "カナダ留学｜CICCCを卒業してDiplomaを取得しました"
 createdAt: "2022-12-14 16:00"
 updatedAt: "2022-12-14 16:00"
 category: "海外"
@@ -17,7 +17,7 @@ word:
 アドベントカレンダー：https://adventar.org/calendars/7566
 -->
 
-# 【カナダ留学】CICCC を卒業して Diploma を取得しました
+# カナダ留学｜CICCC を卒業して Diploma を取得しました
 
 ども、Nash です。
 

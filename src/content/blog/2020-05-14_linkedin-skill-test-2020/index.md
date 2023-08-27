@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "Linkedinスキルテストを10個受けた結果のまとめ【2020年】"
+title: "Linkedinスキルテストを10個受けた結果のまとめ2020年｜"
 createdAt: "2020-05-14 22:00"
 updatedAt: "2020-05-14 22:00"
 category: "キャリア"

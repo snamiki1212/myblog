@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "【ReactNative】RecyclerListView で ハイパフォーマンスなリスト"
+title: "ReactNativeのRecyclerListView で ハイパフォーマンスなリスト"
 createdAt: "2021-10-02 00:00"
 updatedAt: "2022-07-05 00:00"
 category: "技術"
@@ -11,7 +11,7 @@ word:
   - nothing
 ---
 
-# 【ReactNative】RecyclerListView で ハイパフォーマンスなリスト
+# ReactNativeのRecyclerListView で ハイパフォーマンスなリスト
 
 こんにちは、Nash です。
 
