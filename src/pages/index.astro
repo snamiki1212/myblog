@@ -8,7 +8,6 @@ import { toTagInfoList, renderMeta, sortByCreatedAt } from "../utils/meta";
 import { toPickedEntryInfoList } from "../utils/entry";
 import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import { getCollection } from "astro:content";
-import PostCard from "../components/PostCard.astro";
 import HomePickedPostSections from "../components/HomePickedPostSections.astro";
 
 import PickedPostList from "../components/PickedPostList.astro";
@@ -36,24 +35,6 @@ const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
   <main class="grid gap-10 w-full m-auto">
     <!-- Hero Section -->
     <Hero />
-
-    <div>
-      <!-- <div>one</div>
-      <PostCard entry={pickedEntryInfoList[0].entires[0]} /> -->
-
-      <div>multiple</div>
-      {
-        pickedEntryInfoList.map((info) => {
-          return info.entires.map((entry) => {
-            return (
-              <div>
-                <PostCard entry={entry} />
-              </div>
-            );
-          });
-        })
-      }
-    </div>
 
     <!-- Post Section List -->
     <HomePickedPostSections list={pickedEntryInfoList} />

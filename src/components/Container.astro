@@ -1,6 +1,7 @@
 ---
+import { Container as CoreContainer } from "./Container.WorkaroundViewTransition";
 ---
 
-<div class="max-w-screen-lg m-auto md:px-8">
+<CoreContainer>
   <slot />
-</div>
+</CoreContainer>
