@@ -2,6 +2,7 @@
 import { default as Header } from "../components/Header.astro";
 import { default as Footer } from "../components/Footer.astro";
 import { SITE_NAME, SITE_URL } from "../constants/site";
+import { ViewTransitions } from "astro:transitions";
 
 type Props = {
   isCanonical?: boolean;
@@ -17,6 +18,8 @@ const {
 
 <html lang="en">
   <head>
+    <ViewTransitions />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=320, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />

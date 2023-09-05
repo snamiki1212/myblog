@@ -1,9 +1,11 @@
 ---
 import AVATAR_IMG from "../../images/avatar.jpg";
 import { Image } from "astro:assets";
+
+const props = Astro.props;
 ---
 
-<a href={"/about"}>
+<a href={"/about"} {...props}>
   <label tabindex={0} class="btn btn-ghost btn-circle avatar normal-case">
     <div class="w-10 rounded-full">
       <Image src={AVATAR_IMG} class="grayscale" alt="avatar icon" />

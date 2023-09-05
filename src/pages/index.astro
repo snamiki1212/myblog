@@ -1,7 +1,6 @@
 ---
 import * as R from "remeda";
 import Layout from "../layouts/BaseLayout.astro";
-import { default as PickedPostList } from "../components/PickedPostList.astro";
 import { default as Container } from "../components/Container.astro";
 import { default as Hero } from "../components/Hero.astro";
 import { toTagIndexUrl } from "../utils/url";
@@ -9,6 +8,9 @@ import { toTagInfoList, renderMeta, sortByCreatedAt } from "../utils/meta";
 import { toPickedEntryInfoList } from "../utils/entry";
 import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import { getCollection } from "astro:content";
+import HomePickedPostSections from "../components/HomePickedPostSections.astro";
+
+import PickedPostList from "../components/PickedPostList.astro";
 
 const allEntries = sortByCreatedAt(await getCollection("blog"));
 
@@ -35,18 +37,7 @@ const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
     <Hero />
 
     <!-- Post Section List -->
-    {
-      pickedEntryInfoList.map(({ title, entires, total, nextUrl }) => (
-        <Container>
-          <div class="mt-8" />
-          <PickedPostList
-            title={title}
-            next={{ total, nextUrl }}
-            entries={entires}
-          />
-        </Container>
-      ))
-    }
+    <HomePickedPostSections list={pickedEntryInfoList} />
 
     <!-- Tag Section -->
     <div class="glass py-8">

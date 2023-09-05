@@ -1,11 +1,17 @@
 ---
+import { buildTransactionName } from "../utils/transition";
+export type Props = { slug: string };
+const { slug } = Astro.props;
 ---
 
 <div class="flex flex-col max-w-screen-sm m-auto gap-2">
   <div class="glass rounded-xl px-4">
     <slot name="title" />
   </div>
-  <div class="glass rounded-xl px-4 pb-4">
+  <div
+    class="glass rounded-xl px-4 pb-4"
+    transition:name={buildTransactionName.postCard(slug)}
+  >
     <slot name="body" />
   </div>
 </div>

@@ -19,7 +19,17 @@ export async function getStaticPaths() {
   return blogEntries.reduce((prev, entry, idx, list) => {
     const previousEntry = list[idx - 1];
     const nextEntry = list[idx + 1];
-    const relatedEntries = selectRelatedEntryList(entry, list);
+    const ignoreEntrySlugList = (() => {
+      let l = [];
+      if (previousEntry) l.push(previousEntry.slug);
+      if (nextEntry) l.push(nextEntry.slug);
+      return l;
+    })();
+    const relatedEntries = selectRelatedEntryList({
+      target: entry,
+      candidateEntryList: list,
+      ignoreEntrySlugList,
+    });
     const props = {
       entry,
       previousEntry,
