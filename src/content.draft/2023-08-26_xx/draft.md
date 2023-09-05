@@ -1,12 +1,14 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "ScyllaDB Universityでお勉強"
+title: "2023年｜ソフトウェアエンジニアが買ってよかったもの"
 createdAt: "2023-07-03 17:00"
 updatedAt: "2023-07-03 17:00"
-category: "技術"
+category: "雑記"
 tags:
-  - ScyllaDB
-slug: learnigng-scylladb-on-university
+  - Tech
+  - Health
+  - レビュー
+slug: 2023-good-items
 word:
   - nothing
 ---
