@@ -21,7 +21,6 @@ type Props = MarkdownLayoutProps<Frontmatter>;
 const { frontmatter, headings } = Astro.props;
 const slug: string = (frontmatter as any).slug; // NOTE: Astro does not resolve slug type config automatically :/
 if (!slug) throw new Error("slug is not defined.");
-console.info("@@", "post-layout", { slug });
 ---
 
 <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">

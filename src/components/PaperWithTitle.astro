@@ -2,7 +2,6 @@
 import { buildTransactionName } from "../utils/transition";
 export type Props = { slug: string };
 const { slug } = Astro.props;
-const tname = buildTransactionName.postCard(slug);
 ---
 
 <div class="flex flex-col max-w-screen-sm m-auto gap-2">
@@ -11,8 +10,7 @@ const tname = buildTransactionName.postCard(slug);
   </div>
   <div
     class="glass rounded-xl px-4 pb-4"
-    transition:name={tname}
-    style={{ background: "red" }}
+    transition:name={buildTransactionName.postCard(slug)}
   >
     <slot name="body" />
   </div>
