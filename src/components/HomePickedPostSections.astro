@@ -1,0 +1,24 @@
+---
+import { default as PickedPostList } from "../components/PickedPostList.astro";
+import type { PickedEntryInfo } from "../utils/entry";
+import { default as Container } from "../components/Container.astro";
+
+type Props = {
+  list: PickedEntryInfo[];
+};
+
+const { list } = Astro.props;
+---
+
+{
+  list.map(({ title, entires, total, nextUrl }) => (
+    <Container>
+      <div class="mt-8" />
+      <PickedPostList
+        title={title}
+        next={{ total, nextUrl }}
+        entries={entires}
+      />
+    </Container>
+  ))
+}

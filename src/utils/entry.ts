@@ -6,7 +6,7 @@ import { LATEST_PAGE_SIZE } from "../constants/site";
 
 type BlogEntry = CollectionEntry<"blog">;
 
-type PickedEntryInfo = {
+export type PickedEntryInfo = {
   title: string;
   total: number;
   entires: BlogEntry[];

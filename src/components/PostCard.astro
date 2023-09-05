@@ -20,42 +20,44 @@ const tname = buildTransactionName.postCard(entry.slug);
 console.info("@@", "post-card", { tname });
 ---
 
-<div transition:name={tname} style={{ background: "red" }}>
-  <a
-    href={toPostUrl(entry.slug)}
-    class="hover:-translate-y-1 transition-all duration-200"
+<a
+  href={toPostUrl(entry.slug)}
+  class="hover:-translate-y-1 transition-all duration-200"
+>
+  <div
+    class="card card-compact max-w-xs h-48 glass shadow-xl"
+    transition:name={tname}
+    style={{ background: "red" }}
   >
-    <div class="card card-compact max-w-xs h-48 glass shadow-xl">
-      <div class="card-body">
-        <div class="flex flex-row">
-          <h2 class="card-title ml-4 mt-6">{entry.data.title}</h2>
-          <span class="absolute -top-3 left-0">
-            <span
-              class="p-6 mask mask-hexagon badge badge-primary w-full text-xs"
-            >
-              {category}
-            </span>
+    <div class="card-body">
+      <div class="flex flex-row">
+        <h2 class="card-title ml-4 mt-6">{entry.data.title}</h2>
+        <span class="absolute -top-3 left-0">
+          <span
+            class="p-6 mask mask-hexagon badge badge-primary w-full text-xs"
+          >
+            {category}
           </span>
-        </div>
+        </span>
+      </div>
 
-        <div class="card-actions h-full flex items-end">
-          <span class="inline-flex flex-row justify-end items-center">
-            <span>
-              {type === "createdAt" ? <EditIcon /> : <IconUpdate />}
-            </span>
-            <span>
-              {dateStr}
-            </span>
+      <div class="card-actions h-full flex items-end">
+        <span class="inline-flex flex-row justify-end items-center">
+          <span>
+            {type === "createdAt" ? <EditIcon /> : <IconUpdate />}
           </span>
-          {
-            tags.map((tag) => (
-              <div class="badge badge-lg badge-outline normal-case">
-                {renderMeta({ title: tag })}
-              </div>
-            ))
-          }
-        </div>
+          <span>
+            {dateStr}
+          </span>
+        </span>
+        {
+          tags.map((tag) => (
+            <div class="badge badge-lg badge-outline normal-case">
+              {renderMeta({ title: tag })}
+            </div>
+          ))
+        }
       </div>
     </div>
-  </a>
-</div>
+  </div>
+</a>
