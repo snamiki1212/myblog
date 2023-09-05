@@ -13,11 +13,20 @@ export type PickedEntryInfo = {
   nextUrl: string;
 };
 
-export const selectRelatedEntryList = (entry: BlogEntry, candidateEntryList: BlogEntry[]): BlogEntry[] => {
+export const selectRelatedEntryList = ({
+  target,
+  candidateEntryList,
+  ignoreEntrySlugList,
+}: {
+  target: BlogEntry,
+  candidateEntryList: BlogEntry[]
+  ignoreEntrySlugList: string[]
+}): BlogEntry[] => {
   return R.pipe(
     candidateEntryList,
-    list => R.filter(list, candidate => candidate.id !== entry.id),
-    list => R.filter(list, candidate => entry.data.category === candidate.data.category),
+    list => R.filter(list, candidate => candidate.id !== target.id),
+    list => R.filter(list, candidate => candidate.data.category=== target.data.category ),
+    list => R.filter(list, candidate => !ignoreEntrySlugList.includes(candidate.slug)),
     list => sortByCreatedAt(list),
     R.take(4),
   )
