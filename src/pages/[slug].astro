@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection, CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import { default as PostCard } from "../components/PostCard.astro";
 import { default as PickedPostList } from "../components/PickedPostList.astro";
 import { selectRelatedEntryList } from "../utils/entry";

@@ -3,7 +3,7 @@ import Layout from "../layouts/BaseLayout.astro";
 import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Container } from "../components/Container.astro";
-import { getEntryBySlug, CollectionEntry } from "astro:content";
+import { getEntryBySlug, type CollectionEntry } from "astro:content";
 import { toHomeUrl } from "../utils/url";
 import { SITE_NAME_WITH_EMOJI } from "../constants/site";
 
