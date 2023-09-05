@@ -1,11 +1,16 @@
 ---
+
 ---
 
 <div class="flex flex-col max-w-screen-sm m-auto gap-2">
   <div class="glass rounded-xl px-4">
     <slot name="title" />
   </div>
-  <div class="glass rounded-xl px-4 pb-4">
+  <div
+    class="glass rounded-xl px-4 pb-4"
+    transition:name="post"
+    style={{ background: "red" }}
+  >
     <slot name="body" />
   </div>
 </div>
