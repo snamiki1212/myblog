@@ -3,7 +3,7 @@ import AVATAR_IMG from "../../images/avatar.jpg";
 import { Image } from "astro:assets";
 ---
 
-<a href={"/about"}>
+<a href={"/about"} transition:name="avatar">
   <label tabindex={0} class="btn btn-ghost btn-circle avatar normal-case">
     <div class="w-10 rounded-full">
       <Image src={AVATAR_IMG} class="grayscale" alt="avatar icon" />
