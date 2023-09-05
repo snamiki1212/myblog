@@ -11,6 +11,8 @@ import { getCollection } from "astro:content";
 import PostCard from "../components/PostCard.astro";
 import HomePickedPostSections from "../components/HomePickedPostSections.astro";
 
+import PickedPostList from "../components/PickedPostList.astro";
+
 const allEntries = sortByCreatedAt(await getCollection("blog"));
 
 const pickedEntryInfoList = R.pipe(
@@ -36,7 +38,21 @@ const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
     <Hero />
 
     <div>
-      <PostCard entry={pickedEntryInfoList[0].entires[0]} />
+      <!-- <div>one</div>
+      <PostCard entry={pickedEntryInfoList[0].entires[0]} /> -->
+
+      <div>multiple</div>
+      {
+        pickedEntryInfoList.map((info) => {
+          return info.entires.map((entry) => {
+            return (
+              <div>
+                <PostCard entry={entry} />
+              </div>
+            );
+          });
+        })
+      }
     </div>
 
     <!-- Post Section List -->

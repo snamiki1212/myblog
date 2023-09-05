@@ -16,8 +16,6 @@ const { entry } = Astro.props;
 const category = entry.data.category;
 const tags = entry.data.tags;
 const { type, title: dateStr } = renderOnlyOneDate(entry);
-const tname = buildTransactionName.postCard(entry.slug);
-console.info("@@", "post-card", { tname });
 ---
 
 <a
@@ -26,7 +24,7 @@ console.info("@@", "post-card", { tname });
 >
   <div
     class="card card-compact max-w-xs h-48 glass shadow-xl"
-    transition:name={tname}
+    transition:name={buildTransactionName.postCard(entry.slug)}
     style={{ background: "red" }}
   >
     <div class="card-body">
