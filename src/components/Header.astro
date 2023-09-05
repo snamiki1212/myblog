@@ -2,13 +2,14 @@
 import { default as SearchBox } from "./SearchBox.astro";
 import { default as Avatar } from "./Avatar.astro";
 import logo from "../..//images/logo.svg";
+import { Image } from "astro:assets";
 ---
 
 <header class="glass">
   <div class="navbar max-w-screen-lg m-auto">
     <div class="flex-1">
       <a class="btn btn-ghost normal-case" href={"/"}>
-        <img src={logo} alt="logo" class="mx-auto w-20" />
+        <Image src={logo} alt="logo" class="mx-auto w-20" />
       </a>
     </div>
     <div class="flex-none gap-2">
