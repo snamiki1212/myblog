@@ -9,7 +9,7 @@ export const collections = {
       updatedAt: z.string(), // TODO: yyyy-mm-dd xx:xx
       category: z.string(), // TODO: add Enum
       tags: z.array(z.string()),
-      // slug: z.string(), // TODO: slug
+      // slug: z.string(), // should not be defined in schema
     })
   }),
   about: defineCollection({

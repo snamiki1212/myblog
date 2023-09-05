@@ -9,14 +9,19 @@ import { Image } from "astro:assets";
   <div class="navbar max-w-screen-lg m-auto">
     <div class="flex-1">
       <a class="btn btn-ghost normal-case" href={"/"}>
-        <Image src={logo} alt="logo" class="mx-auto w-20" />
+        <Image
+          src={logo}
+          alt="logo"
+          class="mx-auto w-20"
+          transition:name="logo"
+        />
       </a>
     </div>
     <div class="flex-none gap-2">
       <div class="form-control hidden sm:flex">
         <SearchBox />
       </div>
-      <Avatar />
+      <Avatar transition:name="avatar" />
     </div>
   </div>
 </header>
