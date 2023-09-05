@@ -6,7 +6,7 @@ import { PAGE_SIZE } from "../constants/site";
 import { toPostListUrl } from "../utils/url";
 import { sortByCreatedAt } from "../utils/meta";
 import type { GetStaticPathsOptions, Page } from "astro";
-import { getCollection, CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 
 type BlogEntry = CollectionEntry<"blog">;
 
