@@ -11,11 +11,12 @@ const { list } = Astro.props;
 ---
 
 {
-  list.map(({ title, entires, total, nextUrl }) => {
+  list.map(({ title, entires, total, nextUrl, meta }) => {
     return (
       <Container>
         <div class="mt-8" />
         <PostCardListPicked
+          meta={meta}
           title={title}
           next={{ total, nextUrl }}
           entries={entires}

@@ -16,10 +16,13 @@ const metaType = "category" as const;
 export async function getStaticPaths() {
   const blogEntries = sortByCreatedAt(await getCollection("blog"));
   const list = toCategoryEntryList(blogEntries);
-  const total = list.length;
   return list.map(([category, entries]) => {
     const params = { slug: category };
-    const props = { entries, total, meta: category } satisfies Props;
+    const props = {
+      entries,
+      total: entries.length,
+      meta: category,
+    } satisfies Props;
     return { params, props };
   });
 }
@@ -27,4 +30,4 @@ export async function getStaticPaths() {
 const { entries, total, meta } = Astro.props;
 ---
 
-<Layout meta={meta} entries={entries} metaType={metaType} />
+<Layout meta={meta} entries={entries} metaType={metaType} total={total} />

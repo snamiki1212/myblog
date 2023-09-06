@@ -2,22 +2,27 @@
 import type { CollectionEntry } from "astro:content";
 import { default as PostCardList } from "../components/PostCardList.astro";
 import { default as PostCardListHeader } from "../components/PostCardListHeader.astro";
+import { buildTransactionName } from "../utils/transition";
 
 type BlogEntry = CollectionEntry<"blog">;
 
 type Props = {
   title: string;
+  meta: string;
   entries: BlogEntry[];
   next?: {
     total: number;
     nextUrl: string;
   };
 };
-const { title, entries, next } = Astro.props;
+const { title, entries, next, meta } = Astro.props;
 ---
 
 <!-- Title Section -->
-<PostCardListHeader title={title} />
+<PostCardListHeader
+  title={title}
+  transactionName={buildTransactionName.postCardListHeader(meta)}
+/>
 
 <!-- Post Cards -->
 <PostCardList entries={entries} />

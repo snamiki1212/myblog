@@ -1,11 +1,12 @@
 ---
 type Props = {
   title: string;
+  transactionName: string;
 };
-const { title } = Astro.props;
+const { title, transactionName } = Astro.props;
 ---
 
-<div class="w-full px-2">
+<div class="w-full px-2" transition:name={transactionName}>
   <span
     class="card glass h-20 font-bold text-lg text-base-content text-opacity-60 w-full place-items-center justify-center"
   >

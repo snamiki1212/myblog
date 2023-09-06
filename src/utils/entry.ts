@@ -8,6 +8,7 @@ type BlogEntry = CollectionEntry<"blog">;
 
 export type PickedEntryInfo = {
   title: string;
+  meta: string;
   total: number;
   entires: BlogEntry[];
   nextUrl: string;
@@ -49,6 +50,7 @@ export const toPickedEntryInfoList = (entires: BlogEntry[], opt: { pageSize: num
   const list = Object.entries(obj)
     .map(([category, entries]) => ({
       title: category,
+      meta: category,
       entries,
       total: entries.length,
       nextUrl: toCategoryIndexUrl(category),
@@ -59,6 +61,7 @@ export const toPickedEntryInfoList = (entires: BlogEntry[], opt: { pageSize: num
     }));
   const latest: PickedEntryInfo = {
     title: "新着",
+    meta: "NEW",
     total: entires.length,
     nextUrl: toPostListUrl(1),
     entires: latestEntries,
