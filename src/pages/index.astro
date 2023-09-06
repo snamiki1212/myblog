@@ -1,16 +1,13 @@
 ---
 import * as R from "remeda";
 import Layout from "../layouts/BaseLayout.astro";
-import { default as Container } from "../components/Container.astro";
 import { default as Hero } from "../components/Hero.astro";
-import { toTagIndexUrl } from "../utils/url";
-import { toTagInfoList, renderMeta, sortByCreatedAt } from "../utils/meta";
+import { toTagInfoList, sortByCreatedAt } from "../utils/meta";
 import { toPickedEntryInfoList } from "../utils/entry";
 import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import { getCollection } from "astro:content";
 import HomePickedPostSections from "../components/HomePickedPostSections.astro";
-
-import PickedPostList from "../components/PickedPostList.astro";
+import { default as HomeTagSection } from "../components/HomeTagSection.astro";
 
 const allEntries = sortByCreatedAt(await getCollection("blog"));
 
@@ -21,14 +18,6 @@ const pickedEntryInfoList = R.pipe(
 );
 
 const tagInfoList = toTagInfoList(allEntries);
-
-const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
-  // REF: https://daisyui.com/components/button/
-  if (num < 1) return "btn-xs";
-  if (num < 5) return "btn-sm";
-  if (num < 10) return "btn-md";
-  return "btn-lg";
-};
 ---
 
 <Layout showHeader={false}>
@@ -40,26 +29,6 @@ const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
     <HomePickedPostSections list={pickedEntryInfoList} />
 
     <!-- Tag Section -->
-    <div class="glass py-8">
-      <Container>
-        <div class="py-8 px-2">
-          <h2 class="text-2xl font-bold">Tag</h2>
-          <div class="flex flex-wrap gap-2 mt-4">
-            {
-              tagInfoList.map((info) => (
-                <a
-                  class={`btn glass normal-case ${mapperFromItemNumberToButtonSizeStyle(
-                    info.num
-                  )}`}
-                  href={toTagIndexUrl(info.title)}
-                >
-                  {renderMeta(info)}
-                </a>
-              ))
-            }
-          </div>
-        </div>
-      </Container>
-    </div>
+    <HomeTagSection tagInfoList={tagInfoList} />
   </main>
 </Layout>

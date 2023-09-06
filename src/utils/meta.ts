@@ -4,7 +4,7 @@ import * as R from "remeda";
 type BlogEntry = CollectionEntry<"blog">;
 type TagName = string;
 type CategoryName = string;
-type MetaInfo = { title: string, num: number };
+export type MetaInfo = { title: string, num: number };
 
 export const toTagEntry = (entries: BlogEntry[]): [TagName, BlogEntry[]][] => {
   return R.pipe(entries,
