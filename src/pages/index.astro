@@ -1,12 +1,12 @@
 ---
 import * as R from "remeda";
 import Layout from "../layouts/BaseLayout.astro";
-import { default as Hero } from "../components/Hero.astro";
+import { default as Hero } from "../components/HomeHero.astro";
 import { toTagInfoList, sortByCreatedAt } from "../utils/meta";
 import { toPickedEntryInfoList } from "../utils/entry";
 import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import { getCollection } from "astro:content";
-import HomePickedPostSections from "../components/HomePickedPostSections.astro";
+import HomePostCardListPickedSections from "../components/HomePostCardListPickedSections.astro";
 import { default as HomeTagSection } from "../components/HomeTagSection.astro";
 
 const allEntries = sortByCreatedAt(await getCollection("blog"));
@@ -26,7 +26,7 @@ const tagInfoList = toTagInfoList(allEntries);
     <Hero />
 
     <!-- Post Section List -->
-    <HomePickedPostSections list={pickedEntryInfoList} />
+    <HomePostCardListPickedSections list={pickedEntryInfoList} />
 
     <!-- Tag Section -->
     <HomeTagSection tagInfoList={tagInfoList} />

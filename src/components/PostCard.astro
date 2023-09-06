@@ -2,7 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import { renderMeta } from "../utils/meta";
 import { renderOnlyOneDate } from "../utils/date";
-import { default as EditIcon } from "./EditIcon.astro";
+import { default as IconEdit } from "./IconEdit.astro";
 import { default as IconUpdate } from "./IconUpdate.astro";
 import { toPostUrl } from "../utils/url";
 import { buildTransactionName } from "../utils/transition";
@@ -41,7 +41,7 @@ const { type, title: dateStr } = renderOnlyOneDate(entry);
       <div class="card-actions h-full flex items-end">
         <span class="inline-flex flex-row justify-end items-center">
           <span>
-            {type === "createdAt" ? <EditIcon /> : <IconUpdate />}
+            {type === "createdAt" ? <IconEdit /> : <IconUpdate />}
           </span>
           <span>
             {dateStr}

@@ -1,5 +1,5 @@
 ---
-import PickedPostList from "../components/PickedPostList.astro";
+import PostCardListPicked from "../components/PostCardListPicked.astro";
 import type { PickedEntryInfo } from "../utils/entry";
 import { Container } from "../components/Container.WorkaroundViewTransition";
 
@@ -15,7 +15,7 @@ const { list } = Astro.props;
     return (
       <Container>
         <div class="mt-8" />
-        <PickedPostList
+        <PostCardListPicked
           title={title}
           next={{ total, nextUrl }}
           entries={entires}
