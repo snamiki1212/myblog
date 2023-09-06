@@ -23,7 +23,7 @@ export const toTagEntry = (entries: BlogEntry[]): [TagName, BlogEntry[]][] => {
   )
 };
 
-export const toCategoryEntry = (entires: BlogEntry[]): ([CategoryName, BlogEntry[]])[] => {
+export const toCategoryEntryList = (entires: BlogEntry[]): Array<([CategoryName, BlogEntry[]])> => {
   return R.pipe(
     entires,
     R.map((entry) => entry.data.category),

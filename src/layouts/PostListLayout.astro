@@ -2,6 +2,8 @@
 import Layout from "./BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import { default as PostCardList } from "../components/PostCardList.astro";
+import Container from "../components/Container.astro";
+import { default as PostCardListHeader } from "../components/PostCardListHeader.astro";
 
 type BlogEntry = CollectionEntry<"blog">;
 
@@ -14,7 +16,9 @@ const { entries } = Astro.props;
 ---
 
 <Layout isCanonical>
-  <main class="grid gap-10 max-w-screen-lg w-full m-auto">
+  <main class="grid gap-4 max-w-screen-lg w-full m-auto">
+    <div class="mt-8"></div>
+    <PostCardListHeader title="header" />
     <PostCardList entries={entries} />
   </main>
 </Layout>
