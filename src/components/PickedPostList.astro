@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { default as PostCardList } from "../components/PostCardList.astro";
+import { default as PostCardListHeader } from "../components/PostCardListHeader.astro";
 
 type BlogEntry = CollectionEntry<"blog">;
 
@@ -16,13 +17,7 @@ const { title, entries, next } = Astro.props;
 ---
 
 <!-- Title Section -->
-<div class="w-full px-2">
-  <span
-    class="card glass h-20 font-bold text-lg text-base-content text-opacity-60 w-full place-items-center justify-center"
-  >
-    {title}
-  </span>
-</div>
+<PostCardListHeader title={title} />
 
 <!-- Post Cards -->
 <PostCardList entries={entries} />
