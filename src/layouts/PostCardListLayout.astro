@@ -1,8 +1,7 @@
 ---
-import Layout from "./BaseLayout.astro";
+import BaseLayout from "./BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import { default as PostCardList } from "../components/PostCardList.astro";
-import Container from "../components/Container.astro";
 import { default as PostCardListHeader } from "../components/PostCardListHeader.astro";
 import { buildTransactionName } from "../utils/transition";
 
@@ -18,7 +17,7 @@ const { entries, meta, metaType, total } = Astro.props;
 const header = `${metaType}: #${meta}(${total})`;
 ---
 
-<Layout isCanonical>
+<BaseLayout isCanonical>
   <main class="grid gap-4 max-w-screen-lg w-full m-auto">
     <div class="mt-8"></div>
     <PostCardListHeader
@@ -27,4 +26,4 @@ const header = `${metaType}: #${meta}(${total})`;
     />
     <PostCardList entries={entries} />
   </main>
-</Layout>
+</BaseLayout>

@@ -1,5 +1,5 @@
 ---
-import Layout from "../../layouts/MetaListLayout.astro";
+import MetaListLayout from "../../layouts/MetaListLayout.astro";
 import { getCollection } from "astro:content";
 import { toTagIndexUrl } from "../../utils/url";
 import { toTagInfoList, sortByCreatedAt } from "../../utils/meta";
@@ -14,4 +14,4 @@ const metaList = infoList.map(({ num, title }) => ({
 }));
 ---
 
-<Layout metaList={metaList} />
+<MetaListLayout metaList={metaList} />

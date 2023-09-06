@@ -1,5 +1,5 @@
 ---
-import Layout from "./BaseLayout.astro";
+import BaseLayout from "./BaseLayout.astro";
 import { renderMeta } from "../utils/meta";
 import { default as Container } from "../components/Container.astro";
 
@@ -13,7 +13,7 @@ interface Props {
 }
 ---
 
-<Layout isCanonical>
+<BaseLayout isCanonical>
   <div class="min-h-screen my-8">
     <Container>
       <div class="flex flex-wrap gap-4">
@@ -27,4 +27,4 @@ interface Props {
       </div>
     </Container>
   </div>
-</Layout>
+</BaseLayout>

@@ -1,6 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from "astro:content";
-import Layout from "../../layouts/PostListLayout.astro";
+import PostCardListLayout from "../../layouts/PostCardListLayout.astro";
 import { toTagEntry, sortByCreatedAt } from "../../utils/meta";
 
 type BlogEntry = CollectionEntry<"blog">;
@@ -26,4 +26,9 @@ export async function getStaticPaths() {
 const { entries, total, meta } = Astro.props;
 ---
 
-<Layout meta={meta} entries={entries} metaType={metaType} total={total} />
+<PostCardListLayout
+  meta={meta}
+  entries={entries}
+  metaType={metaType}
+  total={total}
+/>
