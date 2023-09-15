@@ -40,47 +40,28 @@ word:
 
 （**この図でも全貌を語り尽くせれていない**です）
 
-```dot
-digraph G {
-    graph[rankdir=TB]
-   {rank=min;ウォーターフォール;業界構造;人月商売;}
-
-  // from 業界構造
-  業界構造 -> 多重下請け構造
-
-  // from 多重下請け構造
-  多重下請け構造 -> 伝言ゲームのリスク->power_balance
-  多重下請け構造 -> ピンハネ
-  多重下請け構造 -> power_balance
-
-  // from ウォーターフォール
-  ウォーターフォール -> 手戻りリスク -> power_balance
-  ウォーターフォール -> 作業の平坦化
-
-  // from ピンハネ
-  ピンハネ -> 技術者軽視 -> 技術力の低下
-  ピンハネ -> unchangable_cost
-  ピンハネ -> マネジメント優位-> 作業の平坦化
-
-  // from 人月商売
-  人月商売 -> 作業の平坦化
-
-  // from 作業の平坦化
-  作業の平坦化 -> チャレンジ不可
-
-  // from チャレンジ不可
-  チャレンジ不可 -> 技術力の低下
-
-  // from power_balance
-  power_balance -> unchangable_shcedule -> overwork
-  power_balance -> unchangable_cost -> overwork
-
-  // define
-  overwork [label=下層会社が残業]
-  unchangable_shcedule [label=リスケ不可]
-  unchangable_cost [label=コスト要求不可]
-  power_balance[label=力関係]
-}
+```mermaid
+graph TD
+  subgraph G
+    業界構造 --> 多重下請け構造
+    多重下請け構造 --> 伝言ゲームのリスク --> power_balance
+    多重下請け構造 --> ピンハネ
+    多重下請け構造 --> power_balance
+    ウォーターフォール --> 手戻りリスク --> power_balance
+    ウォーターフォール --> 作業の平坦化
+    ピンハネ --> 技術者軽視 --> 技術力の低下
+    ピンハネ --> unchangable_cost
+    ピンハネ --> マネジメント優位 --> 作業の平坦化
+    人月商売 --> 作業の平坦化
+    作業の平坦化 --> チャレンジ不可
+    チャレンジ不可 --> 技術力の低下
+    power_balance --> unchangable_shcedule --> overwork
+    power_balance --> unchangable_cost --> overwork
+    overwork[下層会社が残業]
+    unchangable_shcedule[リスケ不可]
+    unchangable_cost[コスト要求不可]
+    power_balance[力関係]
+  end
 ```
 
 はい。複雑ですね。
