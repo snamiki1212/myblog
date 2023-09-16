@@ -18,8 +18,9 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 
-import rehypeRewrite, { RehypeRewriteOptions } from "rehype-rewrite";
+import rehypeRewrite, { type RehypeRewriteOptions } from "rehype-rewrite";
 import { classnames } from 'hast-util-classnames'
+import remarkMermaid from "@southball/remark-mermaid";
 
 const shouldIgnore = (url: string): boolean => {
   const regex = /(\/404$|\/tag(s$|s\/)|\/categorie(s$|s\/)|\/[0-9]{1,}$)/;
@@ -62,6 +63,9 @@ const rehypeRewriteOption: RehypeRewriteOptions = {
 export default defineConfig({
   site: SITE_URL,
   markdown: {
+    remarkPlugins: [
+      [remarkMermaid, { themes: ["neutral"] }],
+    ],
     rehypePlugins: [[rehypeRewrite, rehypeRewriteOption]],
     // syntaxHighlight: "prism",
   },
