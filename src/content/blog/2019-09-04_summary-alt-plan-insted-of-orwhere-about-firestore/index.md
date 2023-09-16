@@ -2,7 +2,7 @@
 layout: /src/layouts/PostLayout.astro
 title: "【Firestore】「orWhere」が使えない時の代案のまとめ"
 createdAt: "2019-09-04 00:00"
-updatedAt: "2019-09-04 00:00"
+updatedAt: "2023-09-16 10:00"
 category: "技術"
 tags:
   - Firestore
@@ -156,35 +156,23 @@ type ViewableMessage = {
 
 関係性として、1 つの Message に対して、2 つの ViewableMessage の Document が存在する関係です。
 
-```dot
-digraph G{
-    compound=true
+```mermaid
+graph TD
+    style comment fill:none, stroke:none
 
-    node [shape=folder]
-    comment [label="ここの範囲で検索する", shape=none, fontsize=8]
-    text [shape=point, fontsize=8]
+    subgraph Message
+        M1[・senderID<br>・receiverID]
+    end
 
-    subgraph cluster_M {
-        label="Message"
-        M1 [label="・senderID\n・receiverID"]
-    }
-    subgraph cluster_VM {
-        label="ViewableMessage";
-        labelloc="b"
-        labeljust="l"
-        labelfloat="false"
-        bgcolor="gray";
-        margin=30
+    comment[ここの範囲で検索する]
+    subgraph ViewableMessage
+        VM1[userID=senderID]
+        VM2[userID=receiverID]
+    end
 
-        VM1 [label="userID=senderID"]
-        VM2 [label="userID=receiverID"]
-    }
-    M1->text
-    text->VM1
-    text->VM2
-
-    comment -> VM1 [lhead=cluster_VM]
-}
+    M1 --> VM1
+    M1 --> VM2
+    comment --> ViewableMessage
 ```
 
 データ生成については後述しますが、ひとまずデータも用意されている前提で話を進めます。
@@ -227,15 +215,15 @@ const result = snaps2.map((snap) => ({ id: snap.id, ...snap.data() }));
 
 こういうときには、CloudFunctions のトリガーを使うのがベターだと思っています。
 
-```dot
-digraph G{
+```mermaid
+graph TD
     MessageModel
-    Trigger [shape=box]
+    Trigger[Trigger]
     ViewableMessageModel
 
-  MessageModel -> Trigger [ label ="「データ作成 or 更新」を\n検知して発火"]
-  Trigger -> ViewableMessageModel [label="「作成」 or \n 「updatedAt を更新」"]
-}
+    MessageModel --> |「データ作成 or 更新」を<br>検知して発火| Trigger
+    Trigger --> |「作成」 or <br>「updatedAt を更新」| ViewableMessageModel
+
 ```
 
 こんな感じで、データ整合性の担保をします。
@@ -295,24 +283,21 @@ const message: Message = { id: snap.id, ...snap.data() };
 - トリガー発火の元の Document
 - トリガー発火で起きる更新先の Document
 
-```dot
-digraph G {
-    M [ label="Message"]
-    M -> M [ label="トリガーでviewableUserIDsを更新"]
-}
+```mermaid
+graph TD
+    M[Message]
+    M -->|トリガーでviewableUserIDsを更新| M
 ```
 
 とはいえ、フィールドごとに見れば、単方向の関係性なので、そこまで問題はないかと思います。
 
-```dot
-digraph G {
-    subgraph cluster_Message{
-      label=Message
-      senderID -> V
-      receiver -> V [ label="トリガーでviewableUserIDsを更新"]
-      V [label=viewableUserIDs]
-    }
-}
+```mermaid
+graph TD
+    subgraph Message
+        senderID --> V
+        receiver -->|トリガーでviewableUserIDsを更新| V
+        V[viewableUserIDs]
+    end
 ```
 
 ### 所感

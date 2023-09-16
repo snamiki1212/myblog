@@ -2,7 +2,7 @@
 layout: /src/layouts/PostLayout.astro
 title: "【完全理解】SIer業界 がブラックな理由を解説【わかりやすさ重視】"
 createdAt: "2020-01-17 09:00"
-updatedAt: "2020-02-24 15:30"
+updatedAt: "2023-09-16 10:00"
 category: "SE転職"
 tags:
   - SE転職
@@ -42,26 +42,24 @@ word:
 
 ```mermaid
 graph TD
-  subgraph G
-    業界構造 --> 多重下請け構造
-    多重下請け構造 --> 伝言ゲームのリスク --> power_balance
-    多重下請け構造 --> ピンハネ
-    多重下請け構造 --> power_balance
-    ウォーターフォール --> 手戻りリスク --> power_balance
-    ウォーターフォール --> 作業の平坦化
-    ピンハネ --> 技術者軽視 --> 技術力の低下
-    ピンハネ --> unchangable_cost
-    ピンハネ --> マネジメント優位 --> 作業の平坦化
-    人月商売 --> 作業の平坦化
-    作業の平坦化 --> チャレンジ不可
-    チャレンジ不可 --> 技術力の低下
-    power_balance --> unchangable_shcedule --> overwork
-    power_balance --> unchangable_cost --> overwork
-    overwork[下層会社が残業]
-    unchangable_shcedule[リスケ不可]
-    unchangable_cost[コスト要求不可]
-    power_balance[力関係]
-  end
+  業界構造 --> 多重下請け構造
+  多重下請け構造 --> 伝言ゲームのリスク --> power_balance
+  多重下請け構造 --> ピンハネ
+  多重下請け構造 --> power_balance
+  ウォーターフォール --> 手戻りリスク --> power_balance
+  ウォーターフォール --> 作業の平坦化
+  ピンハネ --> 技術者軽視 --> 技術力の低下
+  ピンハネ --> unchangable_cost
+  ピンハネ --> マネジメント優位 --> 作業の平坦化
+  人月商売 --> 作業の平坦化
+  作業の平坦化 --> チャレンジ不可
+  チャレンジ不可 --> 技術力の低下
+  power_balance --> unchangable_shcedule --> overwork
+  power_balance --> unchangable_cost --> overwork
+  overwork[下層会社が残業]
+  unchangable_shcedule[リスケ不可]
+  unchangable_cost[コスト要求不可]
+  power_balance[力関係]
 ```
 
 はい。複雑ですね。
@@ -80,33 +78,28 @@ SIer の業界構造は、**ピラミッド構造**。
 
 SIer 業界での大規模システム開発って、超簡単に言うと「**複数社で超大掛かりな伝言ゲーム**」で実現します。
 
-```dot
-digraph G {
-    graph[bgcolor="#999999"]
-  "発注元の会社" -> x1
+```mermaid
+graph TD
+    発注元の会社 --> x1
 
-  subgraph cluster_sub1{
-      graph[bgcolor="#FFFFFF"; label="SIer業界"; labeljust="l"]
-      x1 -> y1
-      x1 -> y2
+    subgraph SIer業界
+        x1 --> y1
+        x1 --> y2
 
-      y1 -> z1
-      y1 -> z2
+        y1 --> z1
+        y1 --> z2
 
-      y2 -> z3
-      y2 -> z4
-  }
+        y2 --> z3
+        y2 --> z4
+    end
 
-
- x1[label=一次請け]
- y1[label=二次請け1]
- y2[label=二次請け2]
- z1[label=三次請け1]
- z2[label=三次請け2]
- z3[label=三次請け3]
- z4[label=三次請け4]
-
-}
+    x1[一次請け]
+    y1[二次請け1]
+    y2[二次請け2]
+    z1[三次請け1]
+    z2[三次請け2]
+    z3[三次請け3]
+    z4[三次請け4]
 ```
 
 ピラミッドですね。この図の通りに SIer 業界では、仕事が流れます。
@@ -131,12 +124,11 @@ digraph G {
 
 SIer では、ピラミッドの上から下へ仕事を流すことです。
 
-```dot
-digraph G {
-  発注会社 -> 一次請け [label="「作ってくれ」"]
-  一次請け -> 二次受け [label="「作ってくれ」"]
-  二次受け -> 三次受け [label="「作ってくれ」\n「作ります！」"]
-}
+```mermaid
+graph TD
+    発注会社 -->|「作ってくれ」| 一次請け
+    一次請け -->|「作ってくれ」| 二次受け
+    二次受け -->|「作ってくれ」<br>「作ります！」| 三次受け
 ```
 
 ### 開発手法＝ウォーターフォール
@@ -146,11 +138,12 @@ digraph G {
 - 「要件定義 ⇒ 設計 ⇒ 実装 ⇒ テスト ⇒ リリース」の、流れ。
 - 「後半に問題が発覚したとき、手戻りコストが膨大」という特徴。
 
-```dot
-digraph G {
-  node [shape="box"; width=1.2]
-  要件定義 -> 設計 -> 実装 -> テスト -> リリース [shape="box"]
-}
+```mermaid
+graph TD
+    要件定義 --> 設計
+    設計 --> 実装
+    実装 --> テスト
+    テスト --> リリース
 ```
 
 こんな流れです。
@@ -188,47 +181,48 @@ digraph G {
 
 ## SIer のブラックを見ていく
 
-```dot
-digraph G {
-    graph[rankdir=TB]
-   {rank=min;ウォーターフォール;業界構造;人月商売;}
+```mermaid
+graph TD
+    subgraph _
+        style _ fill:white, stroke-width:0
+        業界構造
+        ウォーターフォール
+        人月商売
+    end
 
-  // from 業界構造
-  業界構造 -> 多重下請け構造
+    業界構造 --> 多重下請け構造
 
-  // from 多重下請け構造
-  多重下請け構造 -> 伝言ゲームのリスク->power_balance
-  多重下請け構造 -> ピンハネ
-  多重下請け構造 -> power_balance
+    多重下請け構造 --> 伝言ゲームのリスク
+    伝言ゲームのリスク --> power_balance
+    多重下請け構造 --> ピンハネ
+    多重下請け構造 --> power_balance
 
-  // from ウォーターフォール
-  ウォーターフォール -> 手戻りリスク -> power_balance
-  ウォーターフォール -> 作業の平坦化
+    ウォーターフォール --> 手戻りリスク
+    手戻りリスク --> power_balance
+    ウォーターフォール --> 作業の平坦化
 
-  // from ピンハネ
-  ピンハネ -> 技術者軽視 -> 技術力の低下
-  ピンハネ -> unchangable_cost
-  ピンハネ -> マネジメント優位-> 作業の平坦化
+    ピンハネ --> 技術者軽視
+    技術者軽視 --> 技術力の低下
+    ピンハネ --> unchangable_cost
+    ピンハネ --> マネジメント優位
+    マネジメント優位 --> 作業の平坦化
 
-  // from 人月商売
-  人月商売 -> 作業の平坦化
+    人月商売 --> 作業の平坦化
 
-  // from 作業の平坦化
-  作業の平坦化 -> チャレンジ不可
+    作業の平坦化 --> チャレンジ不可
 
-  // from チャレンジ不可
-  チャレンジ不可 -> 技術力の低下
+    チャレンジ不可 --> 技術力の低下
 
-  // from power_balance
-  power_balance -> unchangable_shcedule -> overwork
-  power_balance -> unchangable_cost -> overwork
+    power_balance --> unchangable_shcedule
+    unchangable_shcedule --> overwork
+    power_balance --> unchangable_cost
+    unchangable_cost --> overwork
 
-  // define
-  overwork [label=下層会社が残業]
-  unchangable_shcedule [label=リスケ不可]
-  unchangable_cost [label=コスト要求不可]
-  power_balance[label=力関係]
-}
+    overwork[下層会社が残業]
+    unchangable_shcedule[リスケ不可]
+    unchangable_cost[コスト要求不可]
+    power_balance[力関係]
+
 ```
 
 ここまでで、前提知識を見ていきました。
@@ -352,47 +346,47 @@ digraph G {
 
 まとめとして、下記のグラフの通りです。
 
-```dot
-digraph G {
-    graph[rankdir=TB]
-   {rank=min;ウォーターフォール;業界構造;人月商売;}
+```mermaid
+graph TD
+    subgraph _
+        style _ fill:white, stroke-width:0
+        業界構造
+        ウォーターフォール
+        人月商売
+    end
 
-  // from 業界構造
-  業界構造 -> 多重下請け構造
+    業界構造 --> 多重下請け構造
 
-  // from 多重下請け構造
-  多重下請け構造 -> 伝言ゲームのリスク->power_balance
-  多重下請け構造 -> ピンハネ
-  多重下請け構造 -> power_balance
+    多重下請け構造 --> 伝言ゲームのリスク
+    伝言ゲームのリスク --> power_balance
+    多重下請け構造 --> ピンハネ
+    多重下請け構造 --> power_balance
 
-  // from ウォーターフォール
-  ウォーターフォール -> 手戻りリスク -> power_balance
-  ウォーターフォール -> 作業の平坦化
+    ウォーターフォール --> 手戻りリスク
+    手戻りリスク --> power_balance
+    ウォーターフォール --> 作業の平坦化
 
-  // from ピンハネ
-  ピンハネ -> 技術者軽視 -> 技術力の低下
-  ピンハネ -> unchangable_cost
-  ピンハネ -> マネジメント優位-> 作業の平坦化
+    ピンハネ --> 技術者軽視
+    技術者軽視 --> 技術力の低下
+    ピンハネ --> unchangable_cost
+    ピンハネ --> マネジメント優位
+    マネジメント優位 --> 作業の平坦化
 
-  // from 人月商売
-  人月商売 -> 作業の平坦化
+    人月商売 --> 作業の平坦化
 
-  // from 作業の平坦化
-  作業の平坦化 -> チャレンジ不可
+    作業の平坦化 --> チャレンジ不可
 
-  // from チャレンジ不可
-  チャレンジ不可 -> 技術力の低下
+    チャレンジ不可 --> 技術力の低下
 
-  // from power_balance
-  power_balance -> unchangable_shcedule -> overwork
-  power_balance -> unchangable_cost -> overwork
+    power_balance --> unchangable_shcedule
+    unchangable_shcedule --> overwork
+    power_balance --> unchangable_cost
+    unchangable_cost --> overwork
 
-  // define
-  overwork [label=下層会社が残業]
-  unchangable_shcedule [label=リスケ不可]
-  unchangable_cost [label=コスト要求不可]
-  power_balance[label=力関係]
-}
+    overwork[下層会社が残業]
+    unchangable_shcedule[リスケ不可]
+    unchangable_cost[コスト要求不可]
+    power_balance[力関係]
 ```
 
 ### おわりに

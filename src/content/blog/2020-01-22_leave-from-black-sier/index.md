@@ -78,33 +78,28 @@ SIer 業界構造的に、実は１次請けが一番トップではありませ
 
 **発注元の企業にいるシステム部門**です。
 
-```dot
-digraph G {
-    graph[bgcolor="#FFFFFF"]
-  "発注元の会社" -> x1
+```mermaid
+graph TD
+    発注元の会社 --> x1
 
-  subgraph cluster_sub1{
-      graph[bgcolor="#999999"; label="SIer業界"; labeljust="l"]
-      x1 -> y1
-      x1 -> y2
+    subgraph SIer業界
+        x1 --> y1
+        x1 --> y2
 
-      y1 -> z1
-      y1 -> z2
+        y1 --> z1
+        y1 --> z2
 
-      y2 -> z3
-      y2 -> z4
-  }
+        y2 --> z3
+        y2 --> z4
+    end
 
-
- x1[label=一次請け]
- y1[label=二次請け1]
- y2[label=二次請け2]
- z1[label=三次請け1]
- z2[label=三次請け2]
- z3[label=三次請け3]
- z4[label=三次請け4]
-
-}
+    x1[一次請け]
+    y1[二次請け1]
+    y2[二次請け2]
+    z1[三次請け1]
+    z2[三次請け2]
+    z3[三次請け3]
+    z4[三次請け4]
 ```
 
 つまり、「社内 SE 」にあたるかと思います。
@@ -133,24 +128,6 @@ digraph G {
 SIer がブラックになる原因の１つは「IT ゼネコン」とも呼ばれる業界構造です
 
 なので、ピラミッド構造から抜けて、直案件または社内開発で仕事が回っている企業・プロジェクトへ行く方法です。
-
-```dot
-digraph G {
-  subgraph cluster_x{
-      graph [label="直案件"]
-      発注元 -> "会社X\n（下請けに流さないで自社で開発）" [label="直接やり取り"]
-  }
-}
-```
-
-```dot
-digraph G{
-  subgraph cluster_y{
-      graph[label="自社サービス"]
-      会社Y ->会社Y [label="自社開発"]
-  }
-}
-```
 
 ただ、この企業・プロジェクトへ行くためには、下記のどちらかのスキルは必須です。
 
