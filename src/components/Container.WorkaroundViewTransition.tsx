@@ -7,5 +7,5 @@ import React from "react";
  * so useing this wrapped component by React.
  */
 export const Container = ({ children }) => {
-  return <div class="max-w-screen-lg m-auto md:px-8">{children}</div>;
+  return <div className="max-w-screen-lg m-auto md:px-8">{children}</div>;
 };
