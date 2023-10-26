@@ -3,6 +3,7 @@ import { default as Header } from "../components/Header.astro";
 import { default as Footer } from "../components/Footer.astro";
 import { SITE_NAME, SITE_URL } from "../constants/site";
 import { ViewTransitions } from "astro:transitions";
+import Ogp from "/images/ogp.png";
 
 type Props = {
   isCanonical?: boolean;
@@ -23,7 +24,7 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=320, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <meta property="og:image" content={"/images/ogp.png"} />
+    <meta property="og:image" content={Ogp.src} />
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <link rel="icon" type="image/png" href="/favicon.png" />
     {isCanonical && <link rel="canonical" href={`${SITE_URL}`} />}
