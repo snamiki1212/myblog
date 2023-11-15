@@ -6,6 +6,7 @@ import { toTagInfoList, sortByCreatedAt } from "../utils/meta";
 import { toPickedEntryInfoList } from "../utils/entry";
 import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import { getCollection } from "astro:content";
+import HomeBannerSection from "../components/HomeBannerSection.astro";
 import HomePostCardListPickedSections from "../components/HomePostCardListPickedSections.astro";
 import { default as HomeTagSection } from "../components/HomeTagSection.astro";
 
@@ -24,6 +25,9 @@ const tagInfoList = toTagInfoList(allEntries);
   <main class="grid gap-10 w-full m-auto">
     <!-- Hero Section -->
     <Hero />
+
+    <!-- HomeBannerSection -->
+    <HomeBannerSection list={pickedEntryInfoList} />
 
     <!-- Post Section List -->
     <HomePostCardListPickedSections list={pickedEntryInfoList} />

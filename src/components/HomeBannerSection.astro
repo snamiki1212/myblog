@@ -1,0 +1,26 @@
+---
+import PostCardListPicked from "../components/PostCardListPicked.astro";
+import type { PickedEntryInfo } from "../utils/entry";
+import { Container } from "../components/Container.WorkaroundViewTransition";
+
+type Props = {
+  list: PickedEntryInfo[];
+};
+
+const { list } = Astro.props;
+---
+
+<Container>
+  <div class="mt-8"></div>
+  <div class="carousel carousel-center gap-5">
+    {
+      list.map(({ title, entires, nextUrl, meta }) => {
+        return (
+          <a class="carousel-item btn glass btn-square p-10" href={nextUrl}>
+            {title}
+          </a>
+        );
+      })
+    }
+  </div>
+</Container>
