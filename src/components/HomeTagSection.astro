@@ -1,16 +1,8 @@
 ---
 import { default as Container } from "../components/Container.astro";
+import { default as TagTip } from "../components/TagTip.astro";
 import { toTagIndexUrl } from "../utils/url";
-import { renderMeta } from "../utils/meta";
 import type { MetaInfo } from "../utils/meta";
-
-const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
-  // REF: https://daisyui.com/components/button/
-  if (num < 1) return "btn-xs";
-  if (num < 5) return "btn-sm";
-  if (num < 10) return "btn-md";
-  return "btn-lg";
-};
 
 type Props = {
   tagInfoList: MetaInfo[];
@@ -25,13 +17,8 @@ const { tagInfoList } = Astro.props;
       <div class="flex flex-wrap gap-2 mt-4">
         {
           tagInfoList.map((info) => (
-            <a
-              class={`btn glass normal-case ${mapperFromItemNumberToButtonSizeStyle(
-                info.num
-              )}`}
-              href={toTagIndexUrl(info.title)}
-            >
-              {renderMeta(info)}
+            <a href={toTagIndexUrl(info.title)}>
+              <TagTip info={info} />
             </a>
           ))
         }
