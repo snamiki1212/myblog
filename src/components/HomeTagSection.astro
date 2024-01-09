@@ -18,7 +18,7 @@ const { tagInfoList } = Astro.props;
         {
           tagInfoList.map((info) => (
             <a href={toTagIndexUrl(info.title)}>
-              <TagTip info={info} />
+              <TagTip info={info} isButton />
             </a>
           ))
         }

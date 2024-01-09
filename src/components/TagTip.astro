@@ -1,6 +1,7 @@
 ---
 import { renderMeta } from "../utils/meta";
 import type { MetaInfo } from "../utils/meta";
+// import { buildTransactionName } from "../utils/transition";
 
 const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
   // REF: https://daisyui.com/components/button/
@@ -12,12 +13,18 @@ const mapperFromItemNumberToButtonSizeStyle = (num: number): string => {
 
 type Props = {
   info: MetaInfo;
+  isButton?: boolean;
 };
-const { info } = Astro.props;
+const { info, isButton } = Astro.props;
 const btnSize = mapperFromItemNumberToButtonSizeStyle(info.num);
 const content = renderMeta(info);
+const btnStyle = isButton ? `glass btn ${btnSize}` : "";
+
+// TODO:
+// const tname = buildTransactionName.tagTip(content)
+const tname = "";
 ---
 
-<span class=`glass normal-case btn ${btnSize}`>
+<span class=`normal-case ${btnStyle} z-100` transition:name=`${tname}`>
   {content}
 </span>

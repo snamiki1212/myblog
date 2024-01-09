@@ -3,18 +3,18 @@ import BaseLayout from "./BaseLayout.astro";
 import type { CollectionEntry } from "astro:content";
 import { default as PostCardList } from "../components/PostCardList.astro";
 import { default as PostCardListHeader } from "../components/PostCardListHeader.astro";
+import { default as TagTip } from "../components/TagTip.astro";
 import { buildTransactionName } from "../utils/transition";
 
 type BlogEntry = CollectionEntry<"blog">;
 
 interface Props {
   meta: string;
-  metaType: "tag" | "category";
   entries: BlogEntry[];
   total: number;
 }
-const { entries, meta, metaType, total } = Astro.props;
-const header = `${metaType}: #${meta}(${total})`;
+const { entries, meta, total } = Astro.props;
+const info = { num: total, title: meta };
 ---
 
 <BaseLayout isCanonical>
@@ -23,7 +23,7 @@ const header = `${metaType}: #${meta}(${total})`;
     <PostCardListHeader
       transactionName={buildTransactionName.postCardListHeader(meta)}
     >
-      <span slot="title">{header}</span>
+      <TagTip slot="title" info={info} />
     </PostCardListHeader>
     <PostCardList entries={entries} />
   </main>
