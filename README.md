@@ -5,10 +5,9 @@ Lunash is Nash's blog about tech, life, etc.
 ## Installation
 
 ```zsh
-cp .env.eample .env
-yarn
-# yarn astro sync
-yarn dev
+cp .env.example .env
+pnpm i
+pnpm dev
 ```
 
 ## Tech Stacks
