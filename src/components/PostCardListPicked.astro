@@ -20,9 +20,10 @@ const { title, entries, next, meta } = Astro.props;
 
 <!-- Title Section -->
 <PostCardListHeader
-  title={title}
   transactionName={buildTransactionName.postCardListHeader(meta)}
-/>
+>
+  <span slot="title">{title}</span>
+</PostCardListHeader>
 
 <!-- Post Cards -->
 <PostCardList entries={entries} />

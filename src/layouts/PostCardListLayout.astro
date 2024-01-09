@@ -21,9 +21,10 @@ const header = `${metaType}: #${meta}(${total})`;
   <main class="grid gap-4 max-w-screen-lg w-full m-auto">
     <div class="mt-8"></div>
     <PostCardListHeader
-      title={header}
       transactionName={buildTransactionName.postCardListHeader(meta)}
-    />
+    >
+      <span slot="title">{header}OK</span>
+    </PostCardListHeader>
     <PostCardList entries={entries} />
   </main>
 </BaseLayout>
