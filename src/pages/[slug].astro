@@ -13,12 +13,12 @@ type Props = {
 };
 
 type Slug = BlogEntry["slug"];
-type Item = { props: Props; params: { slug: Slug } };
+type Params = { slug: Slug };
+type Item = { props: Props; params: Params };
 
 export async function getStaticPaths() {
   const blogEntries = await getBlogEntryList();
-  // TODO: create a function
-  const result = blogEntries.reduce((prev, entry, idx, list) => {
+  const result = blogEntries.reduce<Item[]>((prev, entry, idx, list) => {
     const previousEntry = list[idx - 1];
     const nextEntry = list[idx + 1];
     const ignoreEntrySlugList = (() => {
@@ -38,10 +38,10 @@ export async function getStaticPaths() {
       nextEntry,
       relatedEntries,
     } satisfies Props;
-    const params = { slug: entry.slug };
+    const params = { slug: entry.slug } satisfies Params;
     const item = { params, props };
     return [...prev, item];
-  }, [] as Item[]);
+  }, []);
   return result;
 }
 
