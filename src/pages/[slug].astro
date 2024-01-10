@@ -12,18 +12,20 @@ type Props = {
   relatedEntries: BlogEntry[];
 };
 
+type Slug = BlogEntry["slug"];
+type Params = { slug: Slug };
+type Item = { props: Props; params: Params };
+
 export async function getStaticPaths() {
   const blogEntries = await getBlogEntryList();
-  // TODO: create a function
-  // TODO: strict type
-  return blogEntries.reduce((prev, entry, idx, list) => {
+  const result = blogEntries.reduce<Item[]>((prev, entry, idx, list) => {
     const previousEntry = list[idx - 1];
     const nextEntry = list[idx + 1];
     const ignoreEntrySlugList = (() => {
-      let l = [];
-      if (previousEntry) l.push(previousEntry.slug);
-      if (nextEntry) l.push(nextEntry.slug);
-      return l;
+      let _list = [];
+      if (previousEntry) _list.push(previousEntry.slug);
+      if (nextEntry) _list.push(nextEntry.slug);
+      return _list;
     })();
     const relatedEntries = selectRelatedEntryList({
       target: entry,
@@ -36,11 +38,11 @@ export async function getStaticPaths() {
       nextEntry,
       relatedEntries,
     } satisfies Props;
-    const params = { slug: entry.slug };
+    const params = { slug: entry.slug } satisfies Params;
     const item = { params, props };
-    const result = [...prev, item];
-    return result;
-  }, [] as any[]);
+    return [...prev, item];
+  }, []);
+  return result;
 }
 
 const { entry, previousEntry, nextEntry, relatedEntries } = Astro.props;

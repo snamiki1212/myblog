@@ -9,8 +9,9 @@ import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import HomePostCardListPickedSections from "../components/HomePostCardListPickedSections.astro";
 import { default as HomeTagSection } from "../components/HomeTagSection.astro";
 
-const allEntries = sortByCreatedAt(await getBlogEntryList());
-
+const allEntries = R.pipe(await getBlogEntryList(), (list) =>
+  sortByCreatedAt(list)
+);
 const pickedEntryInfoList = R.pipe(
   allEntries,
   R.filter((entry) => !IGNORE_CATEGORY_LIST.includes(entry.data.category)),
