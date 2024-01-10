@@ -1,9 +1,7 @@
 ---
-import { getCollection } from "astro:content";
 import PostCardListLayout from "../../layouts/PostCardListLayout.astro";
 import { toCategoryEntryList, sortByCreatedAt } from "../../utils/meta";
-
-import { type BlogEntry } from "../../utils/astro.ts";
+import { type BlogEntry, getBlogEntryList } from "../../utils/astro.ts";
 
 interface Props {
   entries: BlogEntry[];
@@ -12,7 +10,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const blogEntries = sortByCreatedAt(await getCollection("blog"));
+  const blogEntries = sortByCreatedAt(await getBlogEntryList());
   const list = toCategoryEntryList(blogEntries);
   return list.map(([category, entries]) => {
     const params = { slug: category };

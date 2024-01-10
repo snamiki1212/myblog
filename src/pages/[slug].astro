@@ -1,11 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
 import { default as PostCardListPrevNext } from "../components/PostCardListPrevNext.astro";
 import { default as PostCardListPicked } from "../components/PostCardListPicked.astro";
 import { selectRelatedEntryList } from "../utils/entry";
-
-import { type BlogEntry } from "../utils/astro.ts";
+import { type BlogEntry, getBlogEntryList } from "../utils/astro.ts";
 
 type Props = {
   entry: BlogEntry;
@@ -15,7 +13,9 @@ type Props = {
 };
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog");
+  const blogEntries = await getBlogEntryList();
+  // TODO: create a function
+  // TODO: strict type
   return blogEntries.reduce((prev, entry, idx, list) => {
     const previousEntry = list[idx - 1];
     const nextEntry = list[idx + 1];
