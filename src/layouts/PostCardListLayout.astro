@@ -1,12 +1,10 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import type { CollectionEntry } from "astro:content";
+import { type BlogEntry } from "../utils/astro";
 import { default as PostCardList } from "../components/PostCardList.astro";
 import { default as PostCardListHeader } from "../components/PostCardListHeader.astro";
 import { default as TagTip } from "../components/TagTip.astro";
 import { buildTransactionName } from "../utils/transition";
-
-type BlogEntry = CollectionEntry<"blog">;
 
 interface Props {
   meta: string;

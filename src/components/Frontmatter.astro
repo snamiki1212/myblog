@@ -1,10 +1,7 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import { toCategoryIndexUrl, toTagIndexUrl } from "../utils/url";
 import { renderDate } from "../utils/date";
-import { renderMeta } from "../utils/meta";
+import { type BlogEntry } from "../utils/astro";
 
-type BlogEntry = CollectionEntry<"blog">;
 type Frontmatter = BlogEntry["data"];
 type Props = {
   frontmatter: Frontmatter;

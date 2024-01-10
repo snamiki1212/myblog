@@ -1,10 +1,9 @@
 import * as R from "remeda";
-import type { CollectionEntry } from "astro:content";
 import { toPostListUrl, toCategoryIndexUrl } from "../utils/url";
 import { sortByCreatedAt } from "./meta";
 import { LATEST_PAGE_SIZE } from "../constants/site";
 
-type BlogEntry = CollectionEntry<"blog">;
+import { type BlogEntry } from "../utils/astro";
 
 export type PickedEntryInfo = {
   title: string;
@@ -26,7 +25,7 @@ export const selectRelatedEntryList = ({
   return R.pipe(
     candidateEntryList,
     list => R.filter(list, candidate => candidate.id !== target.id),
-    list => R.filter(list, candidate => candidate.data.category=== target.data.category ),
+    list => R.filter(list, candidate => candidate.data.category === target.data.category),
     list => R.filter(list, candidate => !ignoreEntrySlugList.includes(candidate.slug)),
     list => sortByCreatedAt(list),
     R.take(4),

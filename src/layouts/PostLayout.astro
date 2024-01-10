@@ -13,9 +13,8 @@ import {
 import { toCategoryIndexUrl, toTagIndexUrl, toHomeUrl } from "../utils/url";
 import { renderMeta } from "../utils/meta";
 import type { MarkdownLayoutProps } from "astro";
-import type { CollectionEntry } from "astro:content";
+import { type BlogEntry } from "../utils/astro";
 
-type BlogEntry = CollectionEntry<"blog">;
 type Frontmatter = BlogEntry["data"];
 type Props = MarkdownLayoutProps<Frontmatter>;
 const { frontmatter, headings } = Astro.props;

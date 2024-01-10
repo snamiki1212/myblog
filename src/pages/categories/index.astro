@@ -1,10 +1,10 @@
 ---
 import MetaListLayout from "../../layouts/MetaListLayout.astro";
-import { getCollection } from "astro:content";
 import { toCategoryIndexUrl } from "../../utils/url";
 import { toCategoryInfoList, sortByCreatedAt } from "../../utils/meta";
+import { getBlogEntryList } from "../../utils/astro";
 
-const entries = sortByCreatedAt(await getCollection("blog"));
+const entries = sortByCreatedAt(await getBlogEntryList());
 const infoList = toCategoryInfoList(entries);
 
 const metaList = infoList.map(({ title, num }) => ({

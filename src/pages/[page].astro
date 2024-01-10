@@ -6,12 +6,10 @@ import { PAGE_SIZE } from "../constants/site";
 import { toPostListUrl } from "../utils/url";
 import { sortByCreatedAt } from "../utils/meta";
 import type { GetStaticPathsOptions, Page } from "astro";
-import { getCollection, type CollectionEntry } from "astro:content";
-
-type BlogEntry = CollectionEntry<"blog">;
+import { type BlogEntry, getBlogEntryList } from "../utils/astro";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const entries = sortByCreatedAt(await getCollection("blog"));
+  const entries = sortByCreatedAt(await getBlogEntryList());
   return paginate(entries, { pageSize: PAGE_SIZE });
 }
 const { page: typeUnsafePage } = Astro.props;

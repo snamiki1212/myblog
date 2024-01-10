@@ -1,7 +1,6 @@
-import type { CollectionEntry } from "astro:content";
+import { type BlogEntry } from "../utils/astro";
 import * as R from "remeda";
 
-type BlogEntry = CollectionEntry<"blog">;
 type TagName = string;
 type CategoryName = string;
 export type MetaInfo = { title: string, num: number };

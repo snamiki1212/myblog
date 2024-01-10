@@ -1,5 +1,4 @@
-import type { CollectionEntry } from "astro:content";
-type BlogEntry = CollectionEntry<"blog">;
+import { type BlogEntry } from "../utils/astro";
 
 export const renderDate = (dateStr: string): string => {
   const d = new Date(dateStr);

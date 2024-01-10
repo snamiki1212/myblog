@@ -1,8 +1,6 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import { type BlogEntry } from "../utils/astro";
 import { default as PostCard } from "../components/PostCard.astro";
-
-type BlogEntry = CollectionEntry<"blog">;
 
 type Props = {
   entries: BlogEntry[];
