@@ -3,7 +3,7 @@ import { toPostListUrl, toCategoryIndexUrl } from "../utils/url";
 import { sortByCreatedAt } from "./meta";
 import { LATEST_PAGE_SIZE } from "../constants/site";
 
-import { type BlogEntry } from "../utils/astro.ts";
+import { type BlogEntry } from "../utils/astro";
 
 export type PickedEntryInfo = {
   title: string;

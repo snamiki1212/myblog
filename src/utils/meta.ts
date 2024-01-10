@@ -1,4 +1,4 @@
-import { type BlogEntry } from "../utils/astro.ts";
+import { type BlogEntry } from "../utils/astro";
 import * as R from "remeda";
 
 type TagName = string;

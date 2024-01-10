@@ -1,4 +1,4 @@
-import { type BlogEntry } from "../utils/astro.ts";
+import { type BlogEntry } from "../utils/astro";
 
 export const renderDate = (dateStr: string): string => {
   const d = new Date(dateStr);
