@@ -1,0 +1,23 @@
+---
+import { default as PostCard } from "../components/PostCard.astro";
+// import { BlogEntry } from "../types/blog";
+type Props = {
+  // previousEntry: BlogEntry | undefined;
+  // nextEntry: BlogEntry | undefined;
+  // TODO: Fix this type
+  previousEntry: any | undefined;
+  nextEntry: any | undefined;
+};
+const { previousEntry, nextEntry } = Astro.props;
+---
+
+<div class="flex flex-wrap justify-center w-full gap-12">
+  <div>
+    <div class="font-bold text-2xl mb-4">⬅️ Previous</div>
+    {previousEntry && <PostCard entry={previousEntry} />}
+  </div>
+  <div>
+    <div class="font-bold text-2xl mb-4 text-right">Next ➡️</div>
+    {nextEntry && <PostCard entry={nextEntry} />}
+  </div>
+</div>

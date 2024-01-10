@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
-import { default as PostCard } from "../components/PostCard.astro";
+import { default as PostCardListPrevNext } from "../components/PostCardListPrevNext.astro";
 import { default as PostCardListPicked } from "../components/PostCardListPicked.astro";
 import { selectRelatedEntryList } from "../utils/entry";
 
-type BlogEntry = CollectionEntry<"blog">;
+export type BlogEntry = CollectionEntry<"blog">;
 
 type Props = {
   entry: BlogEntry;
@@ -52,29 +52,22 @@ const { Content } = await entry.render();
   <Content />
   <!-- Prev and Next -->
   <div
-    class="mb-16 gap-4 flex direction-row flex-wrap justify-center max-w-screen-lg w-full m-auto"
+    class="mb-5 gap-4 flex direction-row flex-wrap justify-center max-w-screen-lg w-full m-auto"
   >
-    <div class="flex flex-wrap justify-center w-full gap-12">
-      <div>
-        <div class="font-bold text-2xl mb-4">⬅️ Previous</div>
-        {previousEntry && <PostCard entry={previousEntry} />}
-      </div>
-      <div>
-        <div class="font-bold text-2xl mb-4 text-right">Next ➡️</div>
-        {nextEntry && <PostCard entry={nextEntry} />}
-      </div>
-    </div>
+    <PostCardListPrevNext previousEntry={previousEntry} nextEntry={nextEntry} />
+  </div>
+  <!-- //Prev and Next -->
 
-    <span class="py-5"></span>
+  <!-- Recommends -->
+  <div
+    class="gap-4 flex direction-row flex-wrap justify-center max-w-screen-lg w-full m-auto"
+  >
     <PostCardListPicked
       title={"関連記事"}
       entries={relatedEntries}
       meta="関連記事"
     />
   </div>
-  <!-- //Prev and Next -->
-
-  <!-- Recommends -->
 
   <!-- //Recommends -->
 </BaseLayout>
