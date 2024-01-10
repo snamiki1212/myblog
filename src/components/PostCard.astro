@@ -1,5 +1,5 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import { type BlogEntry } from "../utils/astro.ts";
 import { renderMeta } from "../utils/meta";
 import { renderOnlyOneDate } from "../utils/date";
 import { default as IconEdit } from "./IconEdit.astro";
@@ -7,7 +7,6 @@ import { default as IconUpdate } from "./IconUpdate.astro";
 import { toPostUrl } from "../utils/url";
 import { buildTransactionName } from "../utils/transition";
 
-type BlogEntry = CollectionEntry<"blog">;
 interface Props {
   entry: BlogEntry;
 }

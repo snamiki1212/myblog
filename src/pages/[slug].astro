@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import { default as PostCardListPrevNext } from "../components/PostCardListPrevNext.astro";
 import { default as PostCardListPicked } from "../components/PostCardListPicked.astro";
 import { selectRelatedEntryList } from "../utils/entry";
 
-export type BlogEntry = CollectionEntry<"blog">;
+import { type BlogEntry } from "../utils/astro.ts";
 
 type Props = {
   entry: BlogEntry;

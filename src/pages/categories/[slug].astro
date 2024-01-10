@@ -1,17 +1,15 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import PostCardListLayout from "../../layouts/PostCardListLayout.astro";
 import { toCategoryEntryList, sortByCreatedAt } from "../../utils/meta";
 
-type BlogEntry = CollectionEntry<"blog">;
+import { type BlogEntry } from "../../utils/astro.ts";
 
 interface Props {
   entries: BlogEntry[];
   total: number;
   meta: string;
 }
-
-const metaType = "category" as const;
 
 export async function getStaticPaths() {
   const blogEntries = sortByCreatedAt(await getCollection("blog"));
@@ -30,9 +28,4 @@ export async function getStaticPaths() {
 const { entries, total, meta } = Astro.props;
 ---
 
-<PostCardListLayout
-  meta={meta}
-  entries={entries}
-  metaType={metaType}
-  total={total}
-/>
+<PostCardListLayout meta={meta} entries={entries} total={total} />
