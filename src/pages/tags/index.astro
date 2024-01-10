@@ -1,17 +1,20 @@
 ---
+import * as R from "remeda";
 import MetaListLayout from "../../layouts/MetaListLayout.astro";
 import { toTagIndexUrl } from "../../utils/url";
 import { toTagInfoList, sortByCreatedAt } from "../../utils/meta";
 import { getBlogEntryList } from "../../utils/astro";
 
-const entries = sortByCreatedAt(await getBlogEntryList());
-const infoList = toTagInfoList(entries);
-
-const metaList = infoList.map(({ num, title }) => ({
-  title,
-  num,
-  url: toTagIndexUrl(title),
-}));
+const metaList = R.pipe(
+  await getBlogEntryList(),
+  (list) => sortByCreatedAt(list),
+  (list) => toTagInfoList(list),
+  R.map(({ num, title }) => ({
+    title,
+    num,
+    url: toTagIndexUrl(title),
+  }))
+);
 ---
 
 <MetaListLayout metaList={metaList} />

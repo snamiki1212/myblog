@@ -1,4 +1,5 @@
 ---
+import * as R from "remeda";
 import PostCardListLayout from "../../layouts/PostCardListLayout.astro";
 import { toCategoryEntryList, sortByCreatedAt } from "../../utils/meta";
 import { type BlogEntry, getBlogEntryList } from "../../utils/astro";
@@ -10,17 +11,21 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const blogEntries = sortByCreatedAt(await getBlogEntryList());
-  const list = toCategoryEntryList(blogEntries);
-  return list.map(([category, entries]) => {
-    const params = { slug: category };
-    const props = {
-      entries,
-      total: entries.length,
-      meta: category,
-    } satisfies Props;
-    return { params, props };
-  });
+  const result = R.pipe(
+    await getBlogEntryList(),
+    (list) => sortByCreatedAt(list),
+    (list) => toCategoryEntryList(list),
+    R.map(([category, entries]) => {
+      const params = { slug: category };
+      const props = {
+        entries,
+        total: entries.length,
+        meta: category,
+      } satisfies Props;
+      return { params, props };
+    })
+  );
+  return result;
 }
 
 const { entries, total, meta } = Astro.props;
