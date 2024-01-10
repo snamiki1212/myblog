@@ -1,12 +1,10 @@
 ---
 import { default as PostCard } from "../components/PostCard.astro";
-// import { BlogEntry } from "../types/blog";
+import { type BlogEntry } from "../utils/astro.ts";
+
 type Props = {
-  // previousEntry: BlogEntry | undefined;
-  // nextEntry: BlogEntry | undefined;
-  // TODO: Fix this type
-  previousEntry: any | undefined;
-  nextEntry: any | undefined;
+  previousEntry: BlogEntry | undefined;
+  nextEntry: BlogEntry | undefined;
 };
 const { previousEntry, nextEntry } = Astro.props;
 ---
