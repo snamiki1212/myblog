@@ -28,9 +28,15 @@ if (!slug) throw new Error("slug is not defined.");
       <span slot="title">
         <div class="text-sm breadcrumbs">
           <ul>
-            <li><a href={toHomeUrl()}>{SITE_NAME_WITH_EMOJI}</a></li>
             <li>
-              <a href={toCategoryIndexUrl(frontmatter.category)}
+              <a class="underline underline-offset-4" href={toHomeUrl()}
+                >{SITE_NAME_WITH_EMOJI}</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline underline-offset-4"
+                href={toCategoryIndexUrl(frontmatter.category)}
                 >📂 {frontmatter.category}</a
               >
             </li>
