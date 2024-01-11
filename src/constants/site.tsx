@@ -1,6 +1,6 @@
 export const SITE_NAME = "Lunash";
 
-const SITE_NAME_PREFIX_EMOJI = "🌙";
+const SITE_NAME_PREFIX_EMOJI = "👾";
 
 export const SITE_NAME_WITH_EMOJI = `${SITE_NAME_PREFIX_EMOJI} ${SITE_NAME}`;
 
