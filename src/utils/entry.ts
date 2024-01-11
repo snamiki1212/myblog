@@ -1,7 +1,7 @@
 import * as R from "remeda";
 import { toPostListUrl, toCategoryIndexUrl } from "../utils/url";
 import { sortByCreatedAt } from "./meta";
-import { LATEST_PAGE_SIZE } from "../constants/site";
+import { LATEST_PAGE_SIZE, SHOW_CARD_SIZE } from "../constants/site";
 
 import { type BlogEntry } from "../utils/astro";
 
@@ -28,7 +28,7 @@ export const selectRelatedEntryList = ({
     list => R.filter(list, candidate => candidate.data.category === target.data.category),
     list => R.filter(list, candidate => !ignoreEntrySlugList.includes(candidate.slug)),
     list => sortByCreatedAt(list),
-    R.take(4),
+    R.take(SHOW_CARD_SIZE),
   )
 }
 

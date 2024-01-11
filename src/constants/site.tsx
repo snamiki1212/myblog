@@ -16,6 +16,8 @@ export const SEARCH_ENGINE_ID = "374090a26f4208ea1";
 export const PAGE_SIZE = 20;
 export const LATEST_PAGE_SIZE = 4;
 
+export const SHOW_CARD_SIZE = 4;
+
 export const AUTHOR = "Nash";
 export const AUTHOR_DESCRIPTION = "Software Engineer";
 
