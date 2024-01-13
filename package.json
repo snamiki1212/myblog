@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "pnpm build && pagefind --site ./dist && pnpm preview",
-    "build": "astro build",
+    "start": "pnpm build && pnpm preview",
+    "build": "astro build && pagefind --site ./dist",
     "preview": "astro preview",
     "astro": "astro"
   },
