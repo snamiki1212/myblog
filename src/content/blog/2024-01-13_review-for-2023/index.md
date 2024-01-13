@@ -1,11 +1,11 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "TODO"
+title: "2023年の振り返りと2024年の抱負"
 createdAt: "2024-01-13 18:00"
 updatedAt: "2024-01-13 18:00"
-category: "雑記"
+category: "キャリア"
 tags:
-  - 放送大学
+  - キャリア
 slug: review-for-2023
 word:
   - nothing
