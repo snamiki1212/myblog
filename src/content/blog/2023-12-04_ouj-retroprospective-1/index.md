@@ -1,8 +1,8 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: "社会人学生１年目｜働きながら放送大学で心理学を学ぶ"
-createdAt: "2024-12-04 12:00"
-updatedAt: "2024-12-04 12:00"
+createdAt: "2023-12-04 12:00"
+updatedAt: "2023-12-04 12:00"
 category: "雑記"
 tags:
   - 放送大学
