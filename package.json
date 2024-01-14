@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "pnpm build && pnpm dev",
-    "//": "HMR does not work when we would like to check pagefind ",
-    "start:pagefind": "--search",
+    "//": "HMR does not work when we would like to check pagefind",
+    "preview": "pnpm build && astro preview",
     "build": "astro build && pnpm pagefind",
     "pagefind": "pagefind --site ./dist",
-    "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
