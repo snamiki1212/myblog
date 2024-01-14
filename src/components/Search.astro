@@ -5,11 +5,17 @@ import "@pagefind/default-ui/css/ui.css";
 <div class="search"></div>
 
 <script>
-  console.info("@@", "start PageFindUI loading...");
-  import { PagefindUI } from "@pagefind/default-ui";
-
-  new PagefindUI({
-    element: ".search",
+  console.info("@@2", "start PageFindUI loading...");
+  // import { PagefindUI } from "@pagefind/default-ui";
+  // REF: https://github.com/withastro/starlight/blob/292d47117ccd6afe77a77f1392824d544c7f1d55/packages/starlight/components/Search.astro#L115C3-L115C3
+  window.addEventListener("DOMContentLoaded", () => {
+    const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
+    onIdle(async () => {
+      const { PagefindUI } = await import("@pagefind/default-ui");
+      new PagefindUI({
+        element: ".search",
+      });
+    });
   });
 </script>
 
