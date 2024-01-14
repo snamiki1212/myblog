@@ -2,14 +2,9 @@
 import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Frontmatter } from "../components/Frontmatter.astro";
-import { default as Avatar } from "../components/Avatar.astro";
-import { SnsList } from "../components/SnsList";
+import { default as AvatarCard } from "../components/AvatarCard.astro";
 import { default as Toc } from "../components/Toc.astro";
-import {
-  AUTHOR,
-  AUTHOR_DESCRIPTION,
-  SITE_NAME_WITH_EMOJI,
-} from "../constants/site";
+import { SITE_NAME_WITH_EMOJI } from "../constants/site";
 import { toCategoryIndexUrl, toTagIndexUrl, toHomeUrl } from "../utils/url";
 import { renderMeta } from "../utils/meta";
 import type { MarkdownLayoutProps } from "astro";
@@ -69,25 +64,7 @@ if (!slug) throw new Error("slug is not defined.");
     <div
       class="sticky top-4 right-0 h-fit flex flex-col gap-4 max-h-[calc(100vh-50px)]"
     >
-      <div class="glass rounded-xl p-2 px-4">
-        <div class="flex gap-2">
-          <Avatar />
-          <div>
-            <div class="text-base-content text-opacity-60 font-bold">
-              {AUTHOR}
-            </div>
-            <div class="text-base-content text-opacity-40">
-              {AUTHOR_DESCRIPTION}
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex justify-evenly p-2 px-4 text-base-content text-opacity-40"
-        >
-          <SnsList />
-        </div>
-      </div>
-      <!-- <div>this is test.</div> -->
+      <AvatarCard />
       <div class="overflow-y-auto">
         <Toc headings={headings} />
       </div>
