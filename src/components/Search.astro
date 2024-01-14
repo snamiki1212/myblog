@@ -1,0 +1,59 @@
+---
+import "@pagefind/default-ui/css/ui.css";
+---
+
+<div class="search"></div>
+
+<script>
+  /**
+   * REF: https://github.com/withastro/starlight/blob/292d47117ccd6afe77a77f1392824d544c7f1d55/packages/starlight/components/Search.astro#L115C3-L115C3
+   */
+  const renderPagefindUI = async () => {
+    const { PagefindUI } = await import("@pagefind/default-ui");
+    if (!PagefindUI) {
+      console.error("Cannot find PageFindUI via import");
+      return;
+    }
+    const klass = ".search";
+    const dom = document?.querySelector(klass);
+    if (!dom) {
+      console.warn("Cannot find DOM for PageFindUI", { klass });
+      return;
+    }
+    {
+      const isAlreadyRendered = dom.children.length > 0;
+      if (isAlreadyRendered) return; // skip because already done
+    }
+
+    // push to render SearchBox UI
+    new PagefindUI({
+      element: klass,
+    });
+  };
+  /**
+   * Pooling to render PageFindUI
+   *
+   * - TODO: avoid pooling
+   *   - Astro renders components even when moving page.
+   *   - so not working addEventListner with "DOMContentLoaded" / "popstate" / "hashchange"
+   *   - already tried "astro:page-loaded" but not working https://docs.astro.build/en/guides/view-transitions/#lifecycle-events
+   *   - is:inline directive is not working because it does not support dynamic import https://docs.astro.build/en/guides/client-side-scripts/#opting-out-of-processing
+   */
+  setInterval(() => {
+    renderPagefindUI();
+  }, 1_000);
+</script>
+
+<style>
+  .search {
+    max-width: 500px;
+    transition-duration: 300ms;
+    background: white;
+    border-radius: 8px;
+  }
+
+  .search:not(:has(.pagefind-ui__hidden)) {
+    padding: 16px;
+    border-radius: 16px;
+  }
+</style>
