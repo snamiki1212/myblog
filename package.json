@@ -4,9 +4,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "pnpm build && astro dev",
-    "start": "pnpm build && pnpm preview",
-    "build": "astro build && pagefind --site ./dist",
+    "dev": "astro dev",
+    "start": "pnpm build && pnpm preview --serve",
+    "build": "astro build && pnpm pagefind",
+    "pagefind": "pagefind --site ./dist",
     "preview": "astro preview",
     "astro": "astro"
   },

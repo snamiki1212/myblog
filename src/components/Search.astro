@@ -5,6 +5,7 @@ import "@pagefind/default-ui/css/ui.css";
 <div class="search"></div>
 
 <script>
+  console.info("@@", "start PageFindUI loading...");
   import { PagefindUI } from "@pagefind/default-ui";
 
   new PagefindUI({
@@ -14,6 +15,7 @@ import "@pagefind/default-ui/css/ui.css";
 
 <style>
   .search {
+    max-width: 500px;
     transition-duration: 300ms;
     background: white;
     border-radius: 8px;
