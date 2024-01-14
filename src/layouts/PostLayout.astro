@@ -3,6 +3,7 @@ import { default as Markdown } from "../components/Markdown.astro";
 import { default as PaperWithTitle } from "../components/PaperWithTitle.astro";
 import { default as Frontmatter } from "../components/Frontmatter.astro";
 import { default as AvatarCard } from "../components/AvatarCard.astro";
+import { default as Search } from "../components/Search.astro";
 import { default as Toc } from "../components/Toc.astro";
 import { SITE_NAME_WITH_EMOJI } from "../constants/site";
 import { toCategoryIndexUrl, toTagIndexUrl, toHomeUrl } from "../utils/url";
@@ -65,6 +66,9 @@ if (!slug) throw new Error("slug is not defined.");
       class="sticky top-4 right-0 h-fit flex flex-col gap-4 max-h-[calc(100vh-50px)]"
     >
       <AvatarCard />
+      <div class="glass rounded-xl overflow-y-auto p-8">
+        <Search />
+      </div>
       <div class="overflow-y-auto">
         <Toc headings={headings} />
       </div>
