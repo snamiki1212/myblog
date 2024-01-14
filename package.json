@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "pnpm build && pnpm preview --serve",
+    "start": "pnpm build && pnpm dev",
+    "//": "HMR does not work when we would like to check pagefind ",
+    "start:pagefind": "--search",
     "build": "astro build && pnpm pagefind",
     "pagefind": "pagefind --site ./dist",
     "preview": "astro preview",
