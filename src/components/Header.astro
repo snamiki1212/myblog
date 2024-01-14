@@ -1,7 +1,5 @@
 ---
-import { default as SearchBox } from "./SearchBox.astro";
 import { default as Avatar } from "./Avatar.astro";
-import { default as Search } from "./Search.astro";
 import logo from "../../images/logo.svg";
 import { buildTransactionName } from "../utils/transition";
 
@@ -21,10 +19,6 @@ import { Image } from "astro:assets";
       </a>
     </div>
     <div class="flex-none gap-2">
-      <div class="form-control hidden sm:flex">
-        <Search />
-        <!-- <SearchBox /> -->
-      </div>
       <Avatar transition:name={buildTransactionName.avatar()} />
     </div>
   </div>
