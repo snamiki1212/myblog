@@ -15,9 +15,10 @@ pnpm dev
 - [Astro](https://astro.build/)
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Daisy UI](https://daisyui.com/)
-- [Remeda](https://remedajs.com/)
-- [Cloudflare Pages](https://www.cloudflare.com/)
+- [Daisy UI](https://daisyui.com/): UI Component
+- [Remeda](https://remedajs.com/): TypeScript functional programming helper
+- [Pagefind](https://pagefind.app/): Static search lib
+- [Cloudflare Pages](https://www.cloudflare.com/): CDN / Deploy
 
 ## Deploy Flow
 
@@ -28,4 +29,4 @@ flowchart LR
 
 ## LICENSE
 
-© 2019-2023 Shun Namiki a.k.a Nash
+© 2019-2024 Shun Namiki a.k.a Nash

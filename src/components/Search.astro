@@ -5,24 +5,31 @@ import "@pagefind/default-ui/css/ui.css";
 <div class="search"></div>
 
 <script>
+  // helper
+  const isAlreadyRendered = (klass: string): boolean => {
+    const dom = document?.querySelector(klass);
+    if (!dom) {
+      // console.warn("Cannot find DOM for PageFindUI", { klass });
+      return false;
+    }
+    // after running replace(render), children has PageFindUI SearchBox
+    const isAlreadyRendered = dom.children.length > 0;
+    return isAlreadyRendered;
+  };
+
   /**
    * REF: https://github.com/withastro/starlight/blob/292d47117ccd6afe77a77f1392824d544c7f1d55/packages/starlight/components/Search.astro#L115C3-L115C3
    */
   const renderPagefindUI = async () => {
+    const klass = ".search"; // SearchBox replacable dom
+
+    if (isAlreadyRendered(klass)) return; // skip if already rendered
+
+    // @ts-expect-error
     const { PagefindUI } = await import("@pagefind/default-ui");
     if (!PagefindUI) {
       console.error("Cannot find PageFindUI via import");
       return;
-    }
-    const klass = ".search";
-    const dom = document?.querySelector(klass);
-    if (!dom) {
-      console.warn("Cannot find DOM for PageFindUI", { klass });
-      return;
-    }
-    {
-      const isAlreadyRendered = dom.children.length > 0;
-      if (isAlreadyRendered) return; // skip because already done
     }
 
     // push to render SearchBox UI
