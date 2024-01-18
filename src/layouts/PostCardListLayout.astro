@@ -5,6 +5,7 @@ import { default as PostCardList } from "../components/PostCardList.astro";
 import { default as PostCardListHeader } from "../components/PostCardListHeader.astro";
 import { default as TagTip } from "../components/TagTip.astro";
 import { buildTransactionName } from "../utils/transition";
+import { default as HomeSearchSection } from "../components/HomeSearchSection.astro";
 
 interface Props {
   meta: string;
@@ -25,4 +26,5 @@ const info = { num: total, title: meta };
     </PostCardListHeader>
     <PostCardList entries={entries} />
   </main>
+  <HomeSearchSection />
 </BaseLayout>
