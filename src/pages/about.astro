@@ -6,7 +6,7 @@ import { default as Container } from "../components/Container.astro";
 import { toHomeUrl } from "../utils/url";
 import { type AboutEntry, getAboutEntry } from "../utils/astro";
 import { SITE_NAME_WITH_EMOJI } from "../constants/site";
-import { default as HomeSearchSection } from "../components/HomeSearchSection.astro";
+import { default as SearchSection } from "../components/SearchSection.astro";
 
 type Props = {
   entry: AboutEntry;
@@ -34,5 +34,5 @@ const { Content } = await entry.render();
       </PaperWithTitle>
     </main>
   </Container>
-  <HomeSearchSection />
+  <SearchSection />
 </Layout>

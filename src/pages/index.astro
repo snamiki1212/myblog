@@ -8,7 +8,7 @@ import { getBlogEntryList } from "../utils/astro";
 import { LATEST_PAGE_SIZE, IGNORE_CATEGORY_LIST } from "../constants/site";
 import HomePostCardListPickedSections from "../components/HomePostCardListPickedSections.astro";
 import { default as HomeTagSection } from "../components/HomeTagSection.astro";
-import { default as HomeSearchSection } from "../components/HomeSearchSection.astro";
+import { default as SearchSection } from "../components/SearchSection.astro";
 
 const allEntries = R.pipe(await getBlogEntryList(), (list) =>
   sortByCreatedAt(list)
@@ -31,7 +31,7 @@ const tagInfoList = toTagInfoList(allEntries);
     <HomePostCardListPickedSections list={pickedEntryInfoList} />
 
     <!-- SearchBox -->
-    <HomeSearchSection />
+    <SearchSection />
 
     <!-- Tag Section -->
     <HomeTagSection tagInfoList={tagInfoList} />
