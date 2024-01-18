@@ -2,6 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import { renderMeta } from "../utils/meta";
 import { default as Container } from "../components/Container.astro";
+import { default as SearchSection } from "../components/SearchSection.astro";
 
 const { metaList } = Astro.props;
 interface Props {
@@ -27,4 +28,5 @@ interface Props {
       </div>
     </Container>
   </div>
+  <SearchSection />
 </BaseLayout>

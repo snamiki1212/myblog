@@ -2,9 +2,15 @@
 import { default as Search } from "./Search.astro";
 ---
 
+<style>
+  ._head {
+    color: #30303099;
+  }
+</style>
+
 <div class="glass py-32 flex flex-col">
   <div class="m-auto pb-4">
-    <h2 class="text-2xl font-bold">Full Text Search</h2>
+    <h2 class="text-2xl font-bold _head">ブログ検索</h2>
   </div>
   <div class="m-auto">
     <Search />
