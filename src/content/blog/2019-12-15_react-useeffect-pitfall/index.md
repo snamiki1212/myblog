@@ -2,7 +2,7 @@
 layout: /src/layouts/PostLayout.astro
 title: "React.useEffect でハマったポイントのまとめ"
 createdAt: "2019-12-15 00:00"
-updatedAt: "2020-08-31 23:00"
+updatedAt: "2024-01-21 18:30"
 category: "技術"
 tags:
   - React
@@ -12,47 +12,57 @@ slug: react-useeffect-pitfall
 
 # React.useEffect でハマったポイントのまとめ
 
-こんにちは、初めての React は関数コンポーネント＋ Hooks から始めた世代の Nash です。
+ども、React を触り始めたのが「関数コンポーネント＋ Hooks 」の世代の Nash です。
 
-この記事では、**React.useEffect で自分がハマったポイントのまとめ**の記事です。
+この記事では自分が勉強はじめの時に、**React.useEffect で自分がハマったポイントのまとめ**の記事です。
 
 随時更新しますが、これ以上この記事の内容が増えないことを祈ります。。。
 
-## その前に「React.useEffect 完全に理解した」になる
+## その前にまずは「React.useEffect 完全に理解した」状態になっておく
 
-自分が `React.useEffect` でハマった根本的な原因なのですが、たいていのケースが「**React.useEffect の挙動を正確に理解していないこと**」が原因でした。
+自分がいくつか `React.useEffect` でハマったポイントがあるのですが、それらの全ての根本的な原因は「**React.useEffect の挙動を正確に理解していないこと**」が原因でした。
 
-そのため、公式ドキュメントを読むのは当たり前ですが、その上で `React.useEffect` の挙動を正確に理解できる記事を読むのが根本原因の解決になります。
+そのため根本原因の解決は、公式ドキュメントを読むのは当たり前ですが、その上で `React.useEffect` の挙動を正確に理解できることです。
 
-下記の記事にて、`React.useEffect` の挙動をかなり正確かつわかりやすく理解できるので、どこかで時間をとって頑張って読み込むのが一番のおすすめです。
+いろいろな記事を見てきましたが、`React.useEffect` の挙動を正確かつわかりやすく理解できる記事として下記のものを紹介しておきます（自分の記事ではないです）
 
-[Overreacted - useEffect 完全ガイド](https://overreacted.io/ja/a-complete-guide-to-useeffect/)
+- [Overreacted - useEffect 完全ガイド](https://github.com/gaearon/overreacted.io/blob/archive/src/pages/a-complete-guide-to-useeffect/index.ja.md)
 
-この記事は、
+> [!NOTE]
+> UPDATED(2024-01-21)
+> このブログは原文が英語で多言語対応されており日本語でも書かれていたのですが、ブログのリプレイスにあたり多言語対応をやめてしまったので過去のMarkdownを直接を見にいく形になります。
+> https://github.com/gaearon/overreacted.io/issues/796
 
-- ClassComponent ベースのライフサイクルから Hooks ベースのライフサイクルへ変わるにあたり、どのように考え方が変わり、処理されているかが、かなり詳しく書かれてます。
+この記事では、下記のような内容が記載されています。
 
-- あまりに良い記事すぎて、英語原文ですが、日本語訳だけでなくて中国語やポルトガル語まであります。
+- ClassComponent ベースのライフサイクルから Hooks ベースのライフサイクルへ変わるにあたり、どのように考え方が変わり、どのように処理されているか。
 
-といわけで、この記事を読めば「React Hooks 完全に理解した！」となるのですが、それでも手を動かすとなんだかんだでハマるので色々なケースを見ていきましょう。
+- 原文が英語ですが、あまりに良記事すぎて、日本語訳だけでなくてコントリビューションされて7ヶ国語くらいの多言語で翻訳されてる。
+
+といわけで、この記事を読めば「React Hooks 完全に理解した！」となるのですが、それでも手を動かすとやっぱりハマるポイントがあるかもしれないので自分が落ちた穴を見ていきましょう。
 
 ## 期待通り実行されない、または暴走する
 
-**React.useEffect に慣れていない初期の頃にあるある**です。特に無限ループは日常茶飯事です。
+**React.useEffect に慣れていない初期の頃のあるある**です。特に `useEffect` が無限ループまたは無限発火するバグは日常茶飯事です。
 
-この問題の原因は「**React.useEffect の第 2 引数に値が足りない／多い**」です。
+このバグが起きてる原因は「**React.useEffect の第二引数に値が足りない／多い**」です。
 
 もし、この指摘だけでも「自分のコードがなぜ期待通り動かないのかわからない、、、」となると、
 
-- １）React.useEffect の理解が前提理解が足りない可能性がある
-- ２）自分の無限ループしている React.useEffect の第２引数をきちんと追いきれてない
+- １）`React.useEffect` の理解が前提理解が足りない可能性がある
+- ２）自分の無限発火している`React.useEffect`の第２引数をきちんと追いきれてない
 
-のどちらかかと思います。１）のケースなら、上述のドキュメントをきちんと読むのと実際に手を動かして、理解を腹に落とすという作業から始めるべきかと思います。
+のどちらかかと思います。
 
 では、具体的にどういうケースで無限ループするか見てみます。
 
 ```tsx
 /** 無限ループする例 **/
+
+// #1. React.useEffectが実行される
+// #2. setCounterが実行されて、counterの値が変わる
+// #3. counterの値が変わるので、React.useEffectが再実行される
+// #4. #1にもどる
 
 // カウンター
 const [counter, setCounter] = React.useStte<number>(0);
@@ -61,30 +71,25 @@ const [counter, setCounter] = React.useStte<number>(0);
 React.useEffect(() => {
   setCounter((prev) => prev + 1);
 }, [counter]);
-
-// 1. React.useEffectが実行される
-// 2. setCounterにてcounterの値が変わる
-// 3. counterの値が変わるので、React.useEffectが再実行される
-// 4. 1にもどる
 ```
 
 実際のケースではもう少しロジックが複雑になっているかと思いますが、仕組み自体はこれと同じような状態なはずです。
 
-## react-hooks/exhaustive-deps を入れたらバグる
+## `react-hooks/exhaustive-deps` を入れたらバグる
 
-無限ループの話の延長なのですが、`react-hooks/exhaustive-deps`を使う際も気をつけてください。
+無限ループの話の延長なのですが、`react-hooks/exhaustive-deps`を入れるときも気をつけてください。
 
-この Linter ルールでは、React.useEffect の第２引数によしなに値を入れてくれます。
+この Linter ルールを入れると、React.useEffect の第２引数によしなに値を入れてくれます。
 
-プロジェクトにこのルールを入れると、今まで動いていた useEffect の第 2 引数に値が入って無限ループを起こす可能性があるので注意していれましょう。
+そのため、プロジェクトにこのルールを入れると、今まで動いていた useEffect の第 2 引数に値が入って無限ループを起こす可能性があるので注意していれましょう。
 
 とはいえ、この Linter を導入することは自分としても強く推奨です。
 
-## 早期リターンは出来るが Unmount 時の Callback に気をつける
+## 早期リターンの時の Callback に気をつける
 
 前提として、まず React.useEffect の第一引数の関数の返り値について説明します。
 
-React.useEffect の第一引数では関数を記述します。この関数の返り値として「関数」を返すようにすると、この返された関数が Unmount 時に実行されます。
+React.useEffect の第一引数では関数を記述します。この関数の返り値として「calback関数」を返すと、このcallback関数が Unmount 時に実行されます。
 
 ```tsx
 React.useEffect(() => {
@@ -131,25 +136,25 @@ React.useEffect(async () => {
 }, [fun1]);
 ```
 
-さて、これが、動かない理由ですが、**async で定義された非同期関数は、返り値に Promise オブジェクトを返す通常の関数のシンタックスシュガーだから**、という点です。
+そのため、非同期処理をしたいなら
 
-そのため、非同期で処理をしたいなら
-
-- １）非同期関数を定義して
-- ２）実行する
+- #1) useEffect に渡す関数は、非同期ではなく同期の関数
+- #2）内部で、非同期関数を定義する
+- #3）その非同期関数を実行する
 
 という流れにしましょう。
 
 ```tsx
+// #1 async キーワードはつけないこと
 React.useEffect(() => {
-  // １）定義
+  // #2）ここで、非同期関数を定義する
   const fn = aysnc () => {
     // ...
     await ...
     // ...
   }
 
-  // ２）実行
+  // #3）ここで、非同期関数を実行する
   fn()
 
 }, [...])
@@ -164,8 +169,12 @@ setXXX 系で値を更新させて、その値を後続の処理でも使いた�
 ```tsx
 const [loaded, setLoaded] = React.useState(false);
 React.useEffect(() => {
+  // ここで loaded の値を true にする
   setLoaded(true);
-  console.log(`counter is ${loaded}`); // setLoadedで値が変えられる前時点のloadedが表示
+
+  // loaded の値を表示する
+  // ただし、前処理でtrueにしているが直後だとsetLoadedで値が変えられる前時点のloadedが表示される
+  console.log(`counter is ${loaded}`);
 }, [loaded]);
 ```
 
@@ -187,7 +196,7 @@ React.useEffect(() => {
 
 ## 複数の useEffect 同士が依存地獄になる
 
-`React.useEffect`は、１つのコンポーネント中に複数定義できます。
+`React.useEffect`は、１つのコンポーネントに複数定義できます。
 
 そのため、逆に言えば**適切に分割しないと依存地獄が生まれてスパゲッティ・モンスターが爆誕します**。
 
@@ -196,22 +205,19 @@ const [x, setX] = React.useState(0)
 const [y, setY] = React.useState(0)
 const [z, setZ] = React.useState(0)
 
-
-// こんな感じで複数のuseEffectで依存しあっていると、コードを読むのがしんどい。
+// こんな感じで複数の変数・useEffectで依存しあっていると、コードを読むのがしんどい。
 React.useEffect(() => { console.log(`x + y = ${x + y}`)}, [x, y])
 React.useEffect(() => { console.log(`y + z = ${y + z}`)}, [y, z])
 React.useEffect(() => setZ(prev => (x + y + prev) % 2 === 0 ? prev + 1 : prev)), [x, y])
 
 return(
-  <button
-    onClick={() => setX(prev => prev + 1)}
-  >
+  <button onClick={() => setX(prev => prev + 1)>
     Increment!!!
   </button>
 )
 ```
 
-上記みたいな感じでロジックが Fat になったら、すぐに手を打ってあげないと早い段階でしんどくなります。
+上記みたいな感じでロジックがごちゃごちゃし始めたら、すぐに手を打ってあげてください。
 具体的には、カスタムフックスに切り出して上げてください。
 
 ```tsx
