@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "Midworks（ミッドワークス）を使ってみた｜現役エンジニアのレビュー"
+title: "現役エンジニアがMidworks(ミッドワークス)を使ってみたレビュー"
 createdAt: "2020-03-25 02:00"
 updatedAt: "2024-01-25 02:00"
 category: "キャリア"
@@ -11,7 +11,7 @@ word:
   - nothing
 ---
 
-# Midworks（ミッドワークス）を使ってみた｜現役エンジニアのレビュー
+# 現役エンジニアがMidworks(ミッドワークス)を使ってみたレビュー
 
 こんにちは、Nash です。週 2 フルリモートで働いていて、稼働日数を増やそうかと思っている今日このごろです。
 
