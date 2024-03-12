@@ -5,11 +5,16 @@ import { toHomeUrl } from "../utils/url";
 import { Image } from "astro:assets";
 ---
 
-<footer class="footer py-4 px-2 border-y">
+<footer class="footer footer-center py-10 px-2 border-y">
   <div class="flex flex-wrap gap-4 place-items-center place-self-center">
     <a href={toHomeUrl()} class="btn btn-ghost mx-auto">
       <Image src={logo} alt="logo" class="mx-auto w-20" />
     </a>
     <p class="mx-auto">{COPYRIGHT}</p>
+  </div>
+  <div>
+    <p>
+      Amazonのアソシエイトとして、当メディアは適格販売により収入を得ています。
+    </p>
   </div>
 </footer>
