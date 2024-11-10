@@ -2,7 +2,7 @@
 layout: /src/layouts/PostLayout.astro
 title: "Rust+ActixWeb+DieselでRealworldプロジェクトを登録した話"
 createdAt: "2022-05-28 14:00"
-updatedAt: "2022-05-28 14:00"
+updatedAt: "2024-11-10 16:00"
 category: "技術"
 tags:
   - Rust
@@ -142,3 +142,9 @@ Realworld プロジェクトを作る上でのナレッジですが、Realworld 
 現場からは以上です。
 
 [GitHub - snamiki1212/realworld-v1-rust-actix-web-diesel: RealWorld written in Rust and using ActixWeb+Diesel](https://github.com/snamiki1212/realworld-v1-rust-actix-web-diesel)
+
+## リアーキテクチャしました（Updated: 2024-11-10）
+
+構造を大きく変えてリアーキテクチャしました。
+
+[Rustのプロジェクトをリアーキテクチャした話](./rearchitect-realworld-rust/)

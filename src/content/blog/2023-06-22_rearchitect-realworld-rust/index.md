@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "RustのプロジェクトでMVCからClean Architectureにリアーキテクチャした話"
+title: "Rustのプロジェクトをリアーキテクチャした話"
 createdAt: "2023-06-22 17:00"
 updatedAt: "2023-06-22 17:00"
 category: "技術"
@@ -11,11 +11,11 @@ word:
   - nothing
 ---
 
-# Rust のプロジェクトで MVC から Clean Architecture にリアーキテクチャした話
+# Rustのプロジェクトをリアーキテクチャした話
 
 ども、Nash です。
 
-この記事は、自分が作成している Rust のプロジェクトを MVC から Clean Architecture にリアーキテクトした話です。
+この記事は、自分が作成している Rust をリアーキテクトした話です。
 
 そこまで重い内容と学びとかはないですが、せっかくなので記事として残しておきます。
 
