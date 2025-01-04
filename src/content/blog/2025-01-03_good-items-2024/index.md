@@ -1,8 +1,8 @@
 ---
 layout: /src/layouts/PostLayout.astro
 title: "2024年｜買ってよかったもの"
-createdAt: "2024-01-04 22:00"
-updatedAt: "2024-01-04 22:00"
+createdAt: "2025-01-04 22:00"
+updatedAt: "2025-01-04 22:00"
 category: "雑記"
 tags:
   - レビュー
