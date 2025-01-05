@@ -1,6 +1,6 @@
 ---
 layout: /src/layouts/PostLayout.astro
-title: "2024年の振り返り｜採用とエンジニア"
+title: "2024年の振り返り｜採用とエンジニアリング"
 createdAt: "2025-01-05 23:00"
 updatedAt: "2025-01-05 23:00"
 category: "キャリア"
@@ -11,7 +11,7 @@ word:
   - nothing
 ---
 
-# 2024年の振り返り｜採用とエンジニア
+# 2024年の振り返り｜採用とエンジニアリング
 
 ども、Nashです。
 
