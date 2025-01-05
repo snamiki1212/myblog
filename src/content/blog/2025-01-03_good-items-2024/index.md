@@ -364,6 +364,26 @@ VGP2024受賞の安定のヘッドホン。
 
 第1世代は開閉時に結構大きな音が鳴っていたが、第3世代は開閉時の挙動をめっちゃくちゃスローにすることで音がほとんど鳴らなくなった。
 
+### SIXPAD Power Gun Active
+
+<!-- Affi -->
+<div class="af-moshi-container">
+<a href="//af.moshimo.com/af/c/click?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=https%3A%2F%2Fwww.amazon.co.jp%2Fdp%2FB0CL48DXD7" rel="nofollow" referrerpolicy="no-referrer-when-downgrade"><img src="https://images-fe.ssl-images-amazon.com/images/I/41fWTqsMQwL._SL160_.jpg" alt="" style="border: none;"><br>【公式ストア限定】シックスパッド パワーガン アクティブ/SIXPAD Power Gun Active 限定セット MTG エムティージー (ブラック)</a><img src="//i.moshimo.com/af/i/impression?a_id=1847646&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" alt="" loading="lazy" width="1" height="1" style="border: none;">
+</div>
+<!--  -->
+
+評価: ★★★★★(5/5)
+
+超手軽にサクッとできるマッサージ機
+
+- マッサージガンで片手で使える
+- 足や肩に使うと体幹で効果を感じられる
+
+体がだるくなることが多いのでマッサージ機を買ってみた。
+肩専用のマッサージ機をすでに使っていたのだがセットアップがめんどくさいのでもっと手軽に使えるものを買ってみた。
+
+結論、肩だけでなく足とかに使うと歩いた日とかは明らかに効果を感じられたので良い買い物だった。
+
 ### パナソニック スチームアイロン 衣類スチーマー NI-FS40A-W
 
 <!--  -->
