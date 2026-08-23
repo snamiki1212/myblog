@@ -23,7 +23,7 @@ export async function getStaticPaths() {
         meta: tag,
       } satisfies Props;
       return { params, props };
-    })
+    }),
   );
   return result;
 }

@@ -17,7 +17,7 @@ const { page: typeUnsafePage } = Astro.props;
 const page: Page<BlogEntry> = typeUnsafePage; // TODO: should be type safe
 const pageIndexList = Array.from(
   { length: page.lastPage },
-  (_, idx) => idx + 1
+  (_, idx) => idx + 1,
 );
 ---
 

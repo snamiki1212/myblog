@@ -11,12 +11,12 @@ import { default as HomeTagSection } from "../components/HomeTagSection.astro";
 import { default as SearchSection } from "../components/SearchSection.astro";
 
 const allEntries = R.pipe(await getBlogEntryList(), (list) =>
-  sortByCreatedAt(list)
+  sortByCreatedAt(list),
 );
 const pickedEntryInfoList = R.pipe(
   allEntries,
   R.filter((entry) => !IGNORE_CATEGORY_LIST.includes(entry.data.category)),
-  (arr) => toPickedEntryInfoList(arr, { pageSize: LATEST_PAGE_SIZE })
+  (arr) => toPickedEntryInfoList(arr, { pageSize: LATEST_PAGE_SIZE }),
 );
 
 const tagInfoList = toTagInfoList(allEntries);

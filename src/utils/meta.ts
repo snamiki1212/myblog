@@ -3,10 +3,11 @@ import * as R from "remeda";
 
 type TagName = string;
 type CategoryName = string;
-export type MetaInfo = { title: string, num: number };
+export type MetaInfo = { title: string; num: number };
 
 export const toTagEntry = (entries: BlogEntry[]): [TagName, BlogEntry[]][] => {
-  return R.pipe(entries,
+  return R.pipe(
+    entries,
     R.map((entry) => entry.data.tags),
     R.flat(),
     R.unique(),
@@ -18,59 +19,60 @@ export const toTagEntry = (entries: BlogEntry[]): [TagName, BlogEntry[]][] => {
           return thisTags.includes(tag);
         }),
       ];
-    })
-  )
+    }),
+  );
 };
 
-export const toCategoryEntryList = (entires: BlogEntry[]): Array<([CategoryName, BlogEntry[]])> => {
+export const toCategoryEntryList = (
+  entires: BlogEntry[],
+): Array<[CategoryName, BlogEntry[]]> => {
   return R.pipe(
     entires,
     R.map((entry) => entry.data.category),
     R.unique(),
-    R.map((category) => (
-      [category, entires.filter((entry) => {
+    R.map((category) => [
+      category,
+      entires.filter((entry) => {
         const thisCategory = entry.data.category;
         return thisCategory === category;
-      })]
-    )),
-  )
-}
-
+      }),
+    ]),
+  );
+};
 
 export const toTagInfoList = (entries: BlogEntry[]): Array<MetaInfo> => {
   return R.pipe(
     entries,
-    R.map(entry => entry.data.tags),
+    R.map((entry) => entry.data.tags),
     R.flat(),
-    list => calcDuplicationNumber(list),
-    R.sortBy(x => x.title)
-  )
-}
-
+    (list) => calcDuplicationNumber(list),
+    R.sortBy((x) => x.title),
+  );
+};
 
 export const toCategoryInfoList = (entries: BlogEntry[]): Array<MetaInfo> => {
   return R.pipe(
     entries,
-    R.map(entry => entry.data.category),
+    R.map((entry) => entry.data.category),
     calcDuplicationNumber,
-    R.sortBy(x => x.title)
+    R.sortBy((x) => x.title),
   );
-}
+};
 
 const calcDuplicationNumber = (list: string[]): Array<MetaInfo> => {
   const record: Record<CategoryName, number> = {};
   const pair = list.reduce((prev, current) => {
     prev[current] = prev[current] === undefined ? 1 : prev[current] + 1;
-    return { ...prev }
+    return { ...prev };
   }, record);
   return Object.entries(pair).map(([title, num]) => ({ title, num }));
-}
+};
 
-export const renderMeta = (info: { title: string, num?: number }): string => {
+export const renderMeta = (info: { title: string; num?: number }): string => {
   const num = info.num;
-  const numStr = num ? `(${num})` : '';
+  const numStr = num ? `(${num})` : "";
   return `#${info.title}${numStr}`;
-}
+};
 
 export const sortByCreatedAt = (entries: BlogEntry[]): BlogEntry[] =>
   R.sortBy(entries, [(entry) => entry.data.createdAt, "desc"]);

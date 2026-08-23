@@ -1,7 +1,8 @@
 /**
  * Category
  */
-export const toCategoryIndexUrl = (name: string) => `/categories/${name}` as const;
+export const toCategoryIndexUrl = (name: string) =>
+  `/categories/${name}` as const;
 export const toCategoryListUrl = () => `/categories` as const;
 
 /**

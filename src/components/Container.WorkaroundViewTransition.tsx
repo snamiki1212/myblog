@@ -11,5 +11,7 @@ type Props = {
 };
 
 export const Container = ({ children }: Props) => {
-  return <div className="max-w-(--breakpoint-lg) m-auto md:px-8">{children}</div>;
+  return (
+    <div className="max-w-(--breakpoint-lg) m-auto md:px-8">{children}</div>
+  );
 };

@@ -12,6 +12,8 @@
     "preview": "pnpm build && astro preview",
     "build": "astro build && pnpm pagefind",
     "pagefind": "pagefind --site ./dist",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "astro": "astro"
   },
   "dependencies": {
