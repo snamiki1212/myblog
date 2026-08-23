@@ -60,6 +60,9 @@ const rehypeRewriteOption: RehypeRewriteOptions = {
 };
 
 export default defineConfig({
+  legacy: {
+    collections: true,
+  },
   prefetch: true,
   site: SITE_URL,
   markdown: {

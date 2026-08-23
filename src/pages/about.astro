@@ -13,6 +13,7 @@ type Props = {
 };
 
 const entry = await getAboutEntry();
+if (!entry) throw new Error("About entry was not found");
 const { Content } = await entry.render();
 ---
 

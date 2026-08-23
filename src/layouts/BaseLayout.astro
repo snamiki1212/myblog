@@ -2,7 +2,7 @@
 import { default as Header } from "../components/Header.astro";
 import { default as Footer } from "../components/Footer.astro";
 import { SITE_NAME, SITE_URL } from "../constants/site";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import Ogp from "/images/ogp.png";
 
 type Props = {
@@ -19,7 +19,7 @@ const {
 
 <html lang="en">
   <head>
-    <ViewTransitions />
+    <ClientRouter />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=320, initial-scale=1" />
@@ -31,12 +31,13 @@ const {
 
     <!-- Google tag (gtag.js) -->
     <script
+      is:inline
       async
       type="text/partytown"
       src={`https://www.googletagmanager.com/gtag/js?id=${
         import.meta.env.PUBLIC_GA4_ID
       }`}></script>
-    <script type="text/partytown">
+    <script is:inline type="text/partytown">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         window.dataLayer.push(arguments);
