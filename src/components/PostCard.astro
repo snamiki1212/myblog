@@ -22,15 +22,15 @@ const { type, title: dateStr } = renderOnlyOneDate(entry);
   class="hover:-translate-y-1 transition-all duration-200"
 >
   <div
-    class="card card-compact max-w-xs h-48 glass shadow-xl"
+    class="card max-w-xs h-48 glass shadow-xl"
     transition:name={buildTransactionName.postCard(entry.data.slug)}
   >
-    <div class="card-body">
+    <div class="card-body static p-4 text-sm text-base-content/60">
       <div class="flex flex-row">
-        <h2 class="card-title ml-4 mt-6">{entry.data.title}</h2>
+        <h2 class="card-title text-xl mb-1 ml-4 mt-6">{entry.data.title}</h2>
         <span class="absolute -top-3 left-0">
           <span
-            class="p-6 mask mask-hexagon badge badge-primary w-full text-xs"
+            class="p-6 mask mask-hexagon badge badge-primary inline-flex w-full text-xs"
           >
             {category}
           </span>
@@ -48,7 +48,7 @@ const { type, title: dateStr } = renderOnlyOneDate(entry);
         </span>
         {
           tags.map((tag) => (
-            <div class="badge badge-lg badge-outline normal-case">
+            <div class="badge badge-lg badge-outline normal-case font-light">
               {renderMeta({ title: tag })}
             </div>
           ))

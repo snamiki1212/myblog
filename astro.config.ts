@@ -5,7 +5,7 @@ import { SITE_URL } from "./src/constants/site";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 import react from "@astrojs/react";
@@ -71,9 +71,11 @@ export default defineConfig({
     }),
     // syntaxHighlight: "prism",
   },
+  vite: {
+    plugins: [tailwindcss()],
+  },
   integrations: [
     mdx(),
-    tailwind(),
     react(),
     sitemap({ filter: (url) => !shouldIgnore(url) }),
     partytown({
