@@ -8,8 +8,8 @@ export type MetaInfo = { title: string, num: number };
 export const toTagEntry = (entries: BlogEntry[]): [TagName, BlogEntry[]][] => {
   return R.pipe(entries,
     R.map((entry) => entry.data.tags),
-    R.flatten(),
-    R.uniq(),
+    R.flat(),
+    R.unique(),
     R.map((tag) => {
       return [
         tag,
@@ -26,7 +26,7 @@ export const toCategoryEntryList = (entires: BlogEntry[]): Array<([CategoryName,
   return R.pipe(
     entires,
     R.map((entry) => entry.data.category),
-    R.uniq(),
+    R.unique(),
     R.map((category) => (
       [category, entires.filter((entry) => {
         const thisCategory = entry.data.category;
@@ -41,7 +41,7 @@ export const toTagInfoList = (entries: BlogEntry[]): Array<MetaInfo> => {
   return R.pipe(
     entries,
     R.map(entry => entry.data.tags),
-    R.flatten(),
+    R.flat(),
     list => calcDuplicationNumber(list),
     R.sortBy(x => x.title)
   )
@@ -72,4 +72,5 @@ export const renderMeta = (info: { title: string, num?: number }): string => {
   return `#${info.title}${numStr}`;
 }
 
-export const sortByCreatedAt = R.sortBy<BlogEntry>([x => x.data.createdAt, 'desc']);
+export const sortByCreatedAt = (entries: BlogEntry[]): BlogEntry[] =>
+  R.sortBy(entries, [(entry) => entry.data.createdAt, "desc"]);
