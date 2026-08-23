@@ -6,12 +6,7 @@ import "@pagefind/default-ui/css/ui.css";
 
 <script>
   // helper
-  const isAlreadyRendered = (klass: string): boolean => {
-    const dom = document?.querySelector(klass);
-    if (!dom) {
-      // console.warn("Cannot find DOM for PageFindUI", { klass });
-      return false;
-    }
+  const isAlreadyRendered = (dom: HTMLElement): boolean => {
     // after running replace(render), children has PageFindUI SearchBox
     const isAlreadyRendered = dom.children.length > 0;
     return isAlreadyRendered;
@@ -22,8 +17,7 @@ import "@pagefind/default-ui/css/ui.css";
    */
   const renderPagefindUI = async () => {
     const klass = ".search"; // SearchBox replacable dom
-
-    if (isAlreadyRendered(klass)) return; // skip if already rendered
+    const domList = document.querySelectorAll<HTMLElement>(klass);
 
     // @ts-expect-error
     const { PagefindUI } = await import("@pagefind/default-ui");
@@ -32,12 +26,16 @@ import "@pagefind/default-ui/css/ui.css";
       return;
     }
 
-    // push to render SearchBox UI
-    new PagefindUI({
-      element: klass,
-      translations: {
-        placeholder: "キーワードで検索",
-      },
+    domList.forEach((dom) => {
+      if (isAlreadyRendered(dom)) return; // skip if already rendered
+
+      // push to render SearchBox UI
+      new PagefindUI({
+        element: dom,
+        translations: {
+          placeholder: "キーワードで検索",
+        },
+      });
     });
   };
   /**
@@ -57,6 +55,7 @@ import "@pagefind/default-ui/css/ui.css";
 <style>
   .search {
     --pagefind-ui-background: rgba(255, 255, 255, 0.6);
+    width: 100%;
     max-width: 780px;
     transition-duration: 300ms;
     border-radius: 8px;

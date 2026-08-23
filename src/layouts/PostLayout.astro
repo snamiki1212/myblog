@@ -22,6 +22,9 @@ if (!slug) throw new Error("slug is not defined.");
 ---
 
 <div class="my-16 gap-4 flex direction-row flex-wrap justify-center">
+  <div class="w-full px-2 lg:hidden">
+    <Search />
+  </div>
   <main class="lg:w-auto w-full">
     <PaperWithTitle slug={slug}>
       <span slot="title">
