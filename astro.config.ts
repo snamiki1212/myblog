@@ -18,7 +18,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 
-import rehypeRewrite, { RehypeRewriteOptions } from "rehype-rewrite";
+import rehypeRewrite, { type RehypeRewriteOptions } from "rehype-rewrite";
 import { classnames } from 'hast-util-classnames'
 
 const shouldIgnore = (url: string): boolean => {
@@ -36,7 +36,7 @@ const toHrefType = (href: string | undefined): "internal" | "external" | "unknow
 
 const rehypeRewriteOption: RehypeRewriteOptions = {
   selector: "a",
-  rewrite: (node: any, index, parent) => {
+  rewrite: (node: any) => {
     const href: string | undefined = (node as any)?.properties?.href;
     switch (toHrefType(href)) {
       case "internal": {

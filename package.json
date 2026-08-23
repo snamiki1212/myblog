@@ -8,6 +8,7 @@
     "sitemap": "7.1.1"
   },
   "scripts": {
+    "check": "astro check",
     "dev": "astro dev",
     "start": "pnpm build && pnpm dev",
     "//": "HMR does not work when we would like to check pagefind",

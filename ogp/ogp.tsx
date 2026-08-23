@@ -8,7 +8,6 @@ const fn = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#fff",
         fontSize: 32,
         fontWeight: 600,
         backgroundColor: "hsla(240, 100%, 80%, 1)",
