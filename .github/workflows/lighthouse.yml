@@ -1,5 +1,10 @@
 name: Lighthouse CI
-on: push
+on:
+  push:
+    paths-ignore:
+      - 'AGENTS.md'
+      - 'README.md'
+      - 'docs/**'
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
