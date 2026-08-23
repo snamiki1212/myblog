@@ -9,4 +9,4 @@ export const buildTransactionName = {
   postCardListHeader: (meta: string) =>
     `PostCardListHeader--${encodeURIComponent(meta)}`,
   tagTip: (tag: string) => `TagTip--${encodeURIComponent(tag)}`,
-}
+};

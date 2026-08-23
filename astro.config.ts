@@ -21,20 +21,24 @@ import { unified } from "@astrojs/markdown-remark";
 // https://astro.build/config
 
 import rehypeRewrite, { type RehypeRewriteOptions } from "rehype-rewrite";
-import { classnames } from 'hast-util-classnames'
+import { classnames } from "hast-util-classnames";
 
 const shouldIgnore = (url: string): boolean => {
   const regex = /(\/404$|\/tag(s$|s\/)|\/categorie(s$|s\/)|\/[0-9]{1,}$)/;
   return regex.test(url);
 };
 
-const isInternalLink = (url: string | undefined): boolean => /^[\/\.]/.test(url ?? "");
-const isExternalLink = (url: string | undefined): boolean => url?.startsWith("https://") ?? false;
-const toHrefType = (href: string | undefined): "internal" | "external" | "unknown" => {
-  if (isExternalLink(href)) return "external"
-  if (isInternalLink(href)) return "internal"
-  return "unknown"
-}
+const isInternalLink = (url: string | undefined): boolean =>
+  /^[\/\.]/.test(url ?? "");
+const isExternalLink = (url: string | undefined): boolean =>
+  url?.startsWith("https://") ?? false;
+const toHrefType = (
+  href: string | undefined,
+): "internal" | "external" | "unknown" => {
+  if (isExternalLink(href)) return "external";
+  if (isInternalLink(href)) return "internal";
+  return "unknown";
+};
 
 const rehypeRewriteOption: RehypeRewriteOptions = {
   selector: "a",
@@ -42,20 +46,20 @@ const rehypeRewriteOption: RehypeRewriteOptions = {
     const href: string | undefined = (node as any)?.properties?.href;
     switch (toHrefType(href)) {
       case "internal": {
-        classnames(node, "custom-anchor custom-anchor-internal")
-        return
+        classnames(node, "custom-anchor custom-anchor-internal");
+        return;
       }
       case "external": {
-        classnames(node, "custom-anchor custom-anchor-external")
+        classnames(node, "custom-anchor custom-anchor-external");
         return;
       }
       case "unknown": {
-        console.info("Cannot identify unknown href type.", { href })
-        return
+        console.info("Cannot identify unknown href type.", { href });
+        return;
       }
       default: {
-        console.info("Cannot identify invalid href type.", { href })
-        return
+        console.info("Cannot identify invalid href type.", { href });
+        return;
       }
     }
   },
