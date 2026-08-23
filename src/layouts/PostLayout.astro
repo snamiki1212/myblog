@@ -50,7 +50,7 @@ if (!slug) throw new Error("slug is not defined.");
             frontmatter.tags.map((tag) => (
               <a
                 href={toTagIndexUrl(tag)}
-                class="btn btn-outline btn-xs normal-case text-base-content text-opacity-60"
+                class="btn btn-outline btn-xs normal-case text-base-content/60"
               >
                 {renderMeta({ title: tag })}
               </a>

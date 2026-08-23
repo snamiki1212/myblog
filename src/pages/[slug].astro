@@ -58,7 +58,7 @@ const { Content, headings } = await render(entry);
   </PostLayout>
   <!-- Prev and Next -->
   <div
-    class="mb-5 gap-4 flex direction-row flex-wrap justify-center max-w-screen-lg w-full m-auto"
+    class="mb-5 gap-4 flex direction-row flex-wrap justify-center max-w-(--breakpoint-lg) w-full m-auto"
   >
     <PostCardListPrevNext previousEntry={previousEntry} nextEntry={nextEntry} />
   </div>
@@ -66,7 +66,7 @@ const { Content, headings } = await render(entry);
 
   <!-- Recommends -->
   <div
-    class="gap-4 flex direction-row flex-wrap justify-center max-w-screen-lg w-full m-auto"
+    class="gap-4 flex direction-row flex-wrap justify-center max-w-(--breakpoint-lg) w-full m-auto"
   >
     <PostCardListPicked
       title={"関連記事"}
