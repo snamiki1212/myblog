@@ -8,17 +8,19 @@ import "../styles/global.css";
 
 type Props = {
   isCanonical?: boolean;
+  pagefindIgnore?: boolean;
   title?: string;
   showHeader?: boolean;
 };
 const {
   isCanonical = false,
+  pagefindIgnore = false,
   title = SITE_NAME,
   showHeader = true,
 } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" data-pagefind-ignore={pagefindIgnore || undefined}>
   <head>
     <ClientRouter />
 
