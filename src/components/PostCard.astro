@@ -25,7 +25,7 @@ const { type, title: dateStr } = renderOnlyOneDate(entry);
     class="card max-w-xs h-48 glass shadow-xl"
     transition:name={buildTransactionName.postCard(entry.data.slug)}
   >
-    <div class="card-body p-4 text-sm">
+    <div class="card-body static p-4 text-sm text-base-content/60">
       <div class="flex flex-row">
         <h2 class="card-title text-xl mb-1 ml-4 mt-6">{entry.data.title}</h2>
         <span class="absolute -top-3 left-0">
