@@ -12,65 +12,65 @@ importers:
         specifier: ^0.4.1
         version: 0.4.1(prettier-plugin-astro@0.11.1)(prettier@3.9.6)(typescript@5.9.3)
       '@astrojs/mdx':
-        specifier: ^1.0.0
+        specifier: ^1.1.5
         version: 1.1.5(astro@3.6.5(@types/node@24.13.3)(sass@1.103.1)(typescript@5.9.3))
       '@astrojs/partytown':
-        specifier: ^2.0.0
+        specifier: ^2.1.7
         version: 2.1.7
       '@astrojs/react':
-        specifier: ^3.0.0
+        specifier: ^3.6.3
         version: 3.6.3(@types/node@24.13.3)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.103.1)
       '@astrojs/sitemap':
         specifier: 3.1.6
         version: 3.1.6
       '@astrojs/tailwind':
-        specifier: ^5.0.0
+        specifier: ^5.1.5
         version: 5.1.5(astro@3.6.5(@types/node@24.13.3)(sass@1.103.1)(typescript@5.9.3))(tailwindcss@3.4.19(yaml@2.9.0))
       '@pagefind/default-ui':
-        specifier: ^1.0.4
+        specifier: ^1.5.2
         version: 1.5.2
       astro:
-        specifier: ^3.5.4
+        specifier: ^3.6.5
         version: 3.6.5(@types/node@24.13.3)(sass@1.103.1)(typescript@5.9.3)
       daisyui:
-        specifier: ^3.6.5
+        specifier: ^3.9.4
         version: 3.9.4(yaml@2.9.0)
       pagefind:
-        specifier: ^1.0.4
+        specifier: ^1.5.2
         version: 1.5.2
       prettier:
-        specifier: ^3.0.1
+        specifier: ^3.9.6
         version: 3.9.6
       prettier-plugin-astro:
-        specifier: ^0.11.0
+        specifier: ^0.11.1
         version: 0.11.1
       react:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       remeda:
-        specifier: ^1.24.0
+        specifier: ^1.61.0
         version: 1.61.0
       sass:
-        specifier: ^1.65.1
+        specifier: ^1.103.1
         version: 1.103.1
       sharp:
-        specifier: ^0.33.2
+        specifier: ^0.33.5
         version: 0.33.5
       tailwindcss:
-        specifier: ^3.3.3
+        specifier: ^3.4.19
         version: 3.4.19(yaml@2.9.0)
       typescript:
-        specifier: ^5.3.3
+        specifier: ^5.9.3
         version: 5.9.3
     devDependencies:
       '@types/react':
-        specifier: ^18.2.20
+        specifier: ^18.3.31
         version: 18.3.31
       '@types/react-dom':
-        specifier: ^18.2.7
+        specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.31)
       hast-util-classnames:
         specifier: ^3.0.0
