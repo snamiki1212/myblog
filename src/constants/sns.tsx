@@ -1,7 +1,9 @@
+import type { ReactElement } from "react";
+
 type Sns = {
   name: string;
   url: string;
-  renderSvg: () => JSX.Element;
+  renderSvg: () => ReactElement;
 };
 
 export const SNS_LIST = [
