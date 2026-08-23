@@ -4,6 +4,9 @@
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.11.0",
+  "overrides": {
+    "sitemap": "7.1.1"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "pnpm build && pnpm dev",
@@ -18,7 +21,7 @@
     "@astrojs/mdx": "^1.0.0",
     "@astrojs/partytown": "^2.0.0",
     "@astrojs/react": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.0",
+    "@astrojs/sitemap": "3.0.3",
     "@astrojs/tailwind": "^5.0.0",
     "@pagefind/default-ui": "^1.0.4",
     "astro": "^3.5.4",
