@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【退職エントリ】カナダのバンクーバーのスタートアップを辞めました"
 createdAt: "2022-12-10 12:00"
 updatedAt: "2022-12-10 12:00"

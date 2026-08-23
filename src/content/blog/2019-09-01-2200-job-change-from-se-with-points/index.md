@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SEの転職で異業種・異業界を考える前に知っておくべきこと"
 createdAt: "2019-09-01 22:00"
 updatedAt: "2020-01-13 09:00"

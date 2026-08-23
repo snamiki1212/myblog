@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "だいたい毎日ブログ更新を１ヶ月してみた"
 createdAt: "2020-02-01 09:00"
 updatedAt: "2020-02-01 09:00"

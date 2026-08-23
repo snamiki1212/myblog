@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Redux から RTK へ段階的にリファクタリングした話"
 createdAt: "2021-12-25 00:00"
 updatedAt: "2022-01-19 00:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【入門用】Algolia の概念的知識のまとめ"
 createdAt: "2020-01-09 12:00"
 updatedAt: "2020-01-09 12:00"

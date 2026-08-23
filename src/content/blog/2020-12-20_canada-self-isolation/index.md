@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2020年のコロナ全盛期にカナダ渡航して隔離されてたときの日記"
 createdAt: "2020-12-20 20:00"
 updatedAt: "2020-12-20 20:00"

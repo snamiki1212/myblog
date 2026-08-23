@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『問題解決力を鍛える!アルゴリズムとデータ構造』"
 createdAt: "2021-09-20 00:00"
 updatedAt: "2021-09-20 00:00"

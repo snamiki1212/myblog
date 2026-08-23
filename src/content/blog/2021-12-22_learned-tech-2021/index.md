@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【2021 年】今年、学んだ技術の振り返り｜ Rust と RTK"
 createdAt: "2021-12-22 00:00"
 updatedAt: "2021-12-30 00:00"

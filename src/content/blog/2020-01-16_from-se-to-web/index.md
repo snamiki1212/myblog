@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SE⇒Web 系への完全マップ｜転職という行動へ"
 createdAt: "2020-01-16 09:00"
 updatedAt: "2020-01-23 17:00"

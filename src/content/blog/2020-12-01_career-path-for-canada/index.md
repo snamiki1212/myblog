@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ソフトウェアエンジニアがカナダ移住・就職を目指す話"
 createdAt: "2020-12-01 20:00"
 updatedAt: "2022-12-23 20:00"

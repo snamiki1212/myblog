@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【PINES｜バギオ】パインスを完全レビュー【経験談】"
 createdAt: "2019-03-27 23:30"
 updatedAt: "2019-03-27 23:30"

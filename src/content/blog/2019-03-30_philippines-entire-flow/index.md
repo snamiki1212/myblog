@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "フィリピン留学の全体の流れ【完全版】"
 createdAt: "2019-03-30 21:00"
 updatedAt: "2019-03-30 21:00"

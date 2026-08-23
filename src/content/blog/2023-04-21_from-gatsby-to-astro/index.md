@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "GatsbyからAstroへブログをリプレイスした話"
 createdAt: "2023-04-21 02:00"
 updatedAt: "2023-04-21 02:00"

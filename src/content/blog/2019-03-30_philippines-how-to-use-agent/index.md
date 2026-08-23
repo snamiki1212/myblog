@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "留学エージェントを使った、おすすめの学校探し【エージェントは複数使う】"
 createdAt: "2019-03-30 21:02"
 updatedAt: "2019-03-30 21:02"

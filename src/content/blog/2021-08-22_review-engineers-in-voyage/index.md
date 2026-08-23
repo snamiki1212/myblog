@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『Engineers in VOYAGE ― 事業をエンジニアリングする技術者たち』"
 createdAt: "2021-08-22 00:00"
 updatedAt: "2021-08-22 00:00"

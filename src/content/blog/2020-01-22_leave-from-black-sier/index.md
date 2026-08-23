@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【SE】ブラックじゃない環境へ行く選択肢【４選】"
 createdAt: "2020-01-22 09:00"
 updatedAt: "2020-01-23 01:00"

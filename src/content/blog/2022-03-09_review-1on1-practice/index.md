@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『実践！１ｏｎ１ミーティング 』"
 createdAt: "2022-03-09 00:00"
 updatedAt: "2022-03-09 00:00"

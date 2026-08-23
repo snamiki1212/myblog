@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【転職可能】上流 SE のスキルを整理【オススメ３選】"
 createdAt: "2020-01-25 09:00"
 updatedAt: "2020-01-25 09:00"

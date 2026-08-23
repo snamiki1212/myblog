@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ソフトウェアエンジニアが放送大学に入学しました"
 createdAt: "2023-04-03 01:00"
 updatedAt: "2023-12-05 01:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "RTK Query を実際にプロジェクトで使ってみた"
 createdAt: "2021-12-06 00:00"
 updatedAt: "2022-12-17 00:00"

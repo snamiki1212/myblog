@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "カナダの学校に通ってESLクラスを修了した話"
 createdAt: "2020-12-18 20:00"
 updatedAt: "2020-12-24 20:00"

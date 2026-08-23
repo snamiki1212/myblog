@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【退職エントリ】渋谷のWebベンチャーを退職しました"
 createdAt: "2018-11-07 00:00"
 updatedAt: "2020-01-07 00:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ローカルガイドのレベル7になったので、ここまでに得た知見のまとめ"
 createdAt: "2019-04-04 22:00"
 updatedAt: "2019-04-04 22:00"

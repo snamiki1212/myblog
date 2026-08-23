@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SEからWeb 系へのおすすめ転職サイト【現役エンジニア談】"
 createdAt: "2020-01-08 00:00"
 updatedAt: "2020-01-08 00:00"

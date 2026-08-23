@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "「SIer／SE にブラックしかない」は本当か【転職済／経験談】"
 createdAt: "2020-01-31 09:00"
 updatedAt: "2020-01-31 09:00"

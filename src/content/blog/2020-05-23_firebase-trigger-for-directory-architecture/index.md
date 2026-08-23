@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "CloudFunctionsのトリガーに対するディレクトリ・フォルダ・ファイルの設計"
 createdAt: "2020-05-23 10:00"
 updatedAt: "2020-05-23 10:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Rust+ActixWeb+DieselでRealworldプロジェクトを登録した話"
 createdAt: "2022-05-28 14:00"
 updatedAt: "2024-11-10 16:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『達人プログラマー(第 2 版)』"
 createdAt: "2022-02-17 00:00"
 updatedAt: "2022-02-17 00:00"

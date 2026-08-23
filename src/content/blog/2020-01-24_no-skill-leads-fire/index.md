@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "スキルが身につかないままのSE⇒リストラです【チャンスあり】"
 createdAt: "2020-01-24 09:00"
 updatedAt: "2020-01-24 09:00"

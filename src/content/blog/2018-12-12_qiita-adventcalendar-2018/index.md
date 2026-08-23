@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【Elixir】約1年ほどElixirを業務で使った自分が最初に知りたかったこと"
 createdAt: "2018-12-12 15:14"
 updatedAt: "2020-03-06 03:00"

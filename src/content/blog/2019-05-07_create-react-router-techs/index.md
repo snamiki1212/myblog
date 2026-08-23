@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "react-router/react-router-transitionを使ってサンプルアプリを作った"
 createdAt: "2019-05-07 19:00"
 updatedAt: "2019-05-07 19:00"

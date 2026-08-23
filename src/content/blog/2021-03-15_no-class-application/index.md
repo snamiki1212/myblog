@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "クラスを使わないアプリを実際に作ってみた気付き"
 createdAt: "2021-03-15 18:00"
 updatedAt: "2021-04-28 18:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ローカルガイドになって、サンフランシスコを目指すことにした話"
 createdAt: "2019-01-24 00:30"
 updatedAt: "2019-01-24 00:30"

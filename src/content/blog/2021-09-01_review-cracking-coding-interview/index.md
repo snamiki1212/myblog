@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『世界で闘うプログラミング力を鍛える本 コーディング面接 189 問とその解法』"
 createdAt: "2021-09-01 00:00"
 updatedAt: "2021-09-01 00:00"

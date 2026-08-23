@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "カナダ留学｜CICCCを卒業してDiplomaを取得しました"
 createdAt: "2022-12-14 16:00"
 updatedAt: "2022-12-14 16:00"

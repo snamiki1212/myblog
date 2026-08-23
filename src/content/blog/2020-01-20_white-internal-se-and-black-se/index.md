@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ホワイト社内SEを経験してSIerのブラックを実感した話"
 createdAt: "2020-01-20 09:00"
 updatedAt: "2020-01-20 09:00"

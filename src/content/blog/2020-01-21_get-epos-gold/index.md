@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "永年無料のEPOSゴールドカードを手に入れた話【１年寝かせるだけ】"
 createdAt: "2020-01-21 09:00"
 updatedAt: "2020-01-21 09:00"

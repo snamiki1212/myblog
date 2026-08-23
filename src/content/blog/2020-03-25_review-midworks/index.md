@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "現役エンジニアがMidworks(ミッドワークス)を使ってみた｜レビュー"
 createdAt: "2020-03-25 02:00"
 updatedAt: "2024-01-25 02:00"

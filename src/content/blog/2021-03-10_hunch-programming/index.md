@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "あてずっぽうプログラミング"
 createdAt: "2021-03-10 18:00"
 updatedAt: "2021-03-10 18:00"

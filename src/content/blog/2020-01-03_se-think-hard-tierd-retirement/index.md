@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SEで「つらい、疲れた、辞めたい人」が読む記事【実体験／解決済】"
 createdAt: "2020-01-03 09:00"
 updatedAt: "2020-01-30 20:00"

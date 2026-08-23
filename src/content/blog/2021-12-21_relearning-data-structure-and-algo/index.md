@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "データ構造とアルゴリズムを再勉強したのでおすすめの勉強法を書く"
 createdAt: "2021-12-21 00:00"
 updatedAt: "2022-01-09 00:00"

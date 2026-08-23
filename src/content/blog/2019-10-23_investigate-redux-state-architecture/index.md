@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Redux の State 設計の正規化の記事まとめ"
 createdAt: "2019-10-23 00:00"
 updatedAt: "2019-10-23 00:00"

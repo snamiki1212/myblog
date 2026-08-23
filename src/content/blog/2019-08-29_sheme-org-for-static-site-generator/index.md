@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "静的サイトジェネレータで構造化データマークアップを入れた知見【GatsbyJS】"
 createdAt: "2019-08-29 00:00"
 updatedAt: "2019-08-29 00:00"

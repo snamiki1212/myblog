@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "社会人学生１年目｜働きながら放送大学で心理学を学ぶ"
 createdAt: "2023-12-04 12:00"
 updatedAt: "2023-12-04 12:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "React.useEffect でハマったポイントのまとめ"
 createdAt: "2019-12-15 00:00"
 updatedAt: "2024-01-21 18:30"

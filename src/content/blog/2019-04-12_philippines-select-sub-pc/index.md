@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "フィリピン留学用にサブPCを選定した話【IT留学じゃないです】"
 createdAt: "2019-04-12 22:00"
 updatedAt: "2019-04-12 22:00"

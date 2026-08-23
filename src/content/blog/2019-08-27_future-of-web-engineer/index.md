@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Webエンジニアの「将来性がない」は本当か"
 createdAt: "2019-08-27 00:00"
 updatedAt: "2022-12-24 12:00"

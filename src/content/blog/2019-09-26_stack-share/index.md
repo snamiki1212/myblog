@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【レビュー】stackshareとは？使ってみた結果をまとめた"
 createdAt: "2019-09-26 00:00"
 updatedAt: "2020-05-01 00:00"

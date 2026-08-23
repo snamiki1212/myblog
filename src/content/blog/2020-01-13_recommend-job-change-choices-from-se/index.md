@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SE から異業種への転職先【おすすめ３選】"
 createdAt: "2020-01-13 09:00"
 updatedAt: "2020-01-13 09:00"

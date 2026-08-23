@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【PINES｜バギオ】新校舎の「学生寮」に泊まってきた【フィリピン留学】"
 createdAt: "2019-03-29 17:31"
 updatedAt: "2019-03-29 17:31"

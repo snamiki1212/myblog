@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ScyllaDB Universityでお勉強"
 createdAt: "2023-07-03 17:00"
 updatedAt: "2023-07-03 17:00"

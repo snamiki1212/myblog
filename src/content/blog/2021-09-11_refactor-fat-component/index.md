@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Hooks でリファクタリング｜ FatComponent の倒し方"
 createdAt: "2021-09-11 00:00"
 updatedAt: "2021-10-02 00:00"

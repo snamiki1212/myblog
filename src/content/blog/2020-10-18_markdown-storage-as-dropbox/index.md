@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "マークダウン管理をGoogleDriveからDropboxに変更した話"
 createdAt: "2020-10-18 15:00"
 updatedAt: "2020-10-18 15:00"

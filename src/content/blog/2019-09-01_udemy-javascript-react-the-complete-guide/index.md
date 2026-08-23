@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【現役エンジニア】UdemyでReact＋JavaScriptのおすすめは？→『The Complete Guide』"
 createdAt: "2019-09-01 00:00"
 updatedAt: "2020-01-13 09:00"

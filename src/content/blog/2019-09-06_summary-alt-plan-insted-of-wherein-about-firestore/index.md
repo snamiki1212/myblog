@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【Firestore】「WhereIN」が使えない時の代案のまとめ"
 createdAt: "2019-09-06 00:00" # created_at
 updatedAt: "2020-05-10 20:00" # updated_at

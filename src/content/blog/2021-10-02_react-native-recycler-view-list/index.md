@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ReactNativeのRecyclerListView で ハイパフォーマンスなリスト"
 createdAt: "2021-10-02 00:00"
 updatedAt: "2022-07-05 00:00"

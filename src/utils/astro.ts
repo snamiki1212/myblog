@@ -1,4 +1,4 @@
-import { type CollectionEntry, getCollection, getEntry } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 
 /****************************
  * Types
@@ -10,6 +10,6 @@ export type AboutEntry = CollectionEntry<"about">;
 /****************************
  * Getters
  ****************************/
-export const getAboutEntry = async () => await getEntry("about", "about");
+export const getAboutEntry = async () => (await getCollection("about"))[0];
 
 export const getBlogEntryList = async () => await getCollection("blog");

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ReactNative (Expo) + SQLite のマイグレーション npm パッケージを作った"
 createdAt: "2020-05-03 13:00"
 updatedAt: "2020-05-03 13:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【実体験】Twitter 転職してエンジニア採用された話"
 createdAt: "2020-01-14 09:00"
 updatedAt: "2020-01-14 09:00"

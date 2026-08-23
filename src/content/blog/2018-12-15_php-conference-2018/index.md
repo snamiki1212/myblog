@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【まとめ】PHP Conference 2018 | カンファレンステーマ『Growth』とPHP離れの現実"
 createdAt: "2018-12-15 20:15"
 updatedAt: "2018-12-15 20:15"

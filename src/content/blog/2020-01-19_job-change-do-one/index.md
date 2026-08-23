@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【転職活動】最初にやることは１つだけ【エージェントに相談】"
 createdAt: "2020-01-19 09:00"
 updatedAt: "2020-01-19 09:00"

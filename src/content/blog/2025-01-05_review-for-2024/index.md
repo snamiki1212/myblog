@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2024年の振り返り｜採用とエンジニアリング"
 createdAt: "2025-01-05 23:00"
 updatedAt: "2025-01-05 23:00"

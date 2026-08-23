@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "HTML5 Conference 2018 Japanのまとめ"
 createdAt: "2018-11-25 13:20"
 updatedAt: "2018-11-25 13:20"

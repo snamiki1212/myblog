@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "URLからMarkdownへ変換するAlfredWorkflowをGoで作って公開した"
 createdAt: "2020-03-20 20:00"
 updatedAt: "2021-10-17 20:00"

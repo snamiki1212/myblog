@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "『Plangoab』海外留学・移住スケジュールプランナー"
 createdAt: "2021-04-28 00:00"
 updatedAt: "2021-04-28 00:00"
