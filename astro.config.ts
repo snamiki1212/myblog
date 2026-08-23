@@ -60,10 +60,6 @@ const rehypeRewriteOption: RehypeRewriteOptions = {
 };
 
 export default defineConfig({
-  experimental: {
-    // REF: https://astro.build/blog/astro-340/
-    devOverlay: true
-  },
   prefetch: true,
   site: SITE_URL,
   markdown: {
