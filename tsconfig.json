@@ -4,5 +4,6 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "strict": true
-  }
+  },
+  "exclude": ["dist"]
 }
