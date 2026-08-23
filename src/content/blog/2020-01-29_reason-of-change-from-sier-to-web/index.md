@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "大手SIerからWeb系エンジニアへの転職理由【７選／経験談】"
 createdAt: "2020-01-29 09:00"
 updatedAt: "2020-01-29 09:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "プログラミングでハマったとき見る記事【行動／原因／メンタルケア】"
 createdAt: "2020-02-06 14:00"
 updatedAt: "2020-02-06 14:00"

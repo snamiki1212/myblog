@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "AmazonVine メンバーをなぜ目指さないか"
 createdAt: "2019-01-21 07:00"
 updatedAt: "2022-12-23 22:00"

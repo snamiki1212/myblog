@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2019年｜開発環境の振り返り"
 createdAt: "2020-01-02 00:00"
 updatedAt: "2020-01-02 00:00"

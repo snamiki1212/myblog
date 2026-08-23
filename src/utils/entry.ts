@@ -26,7 +26,7 @@ export const selectRelatedEntryList = ({
     candidateEntryList,
     list => R.filter(list, candidate => candidate.id !== target.id),
     list => R.filter(list, candidate => candidate.data.category === target.data.category),
-    list => R.filter(list, candidate => !ignoreEntrySlugList.includes(candidate.slug)),
+    list => R.filter(list, candidate => !ignoreEntrySlugList.includes(candidate.data.slug)),
     list => sortByCreatedAt(list),
     R.take(SHOW_CARD_SIZE),
   )

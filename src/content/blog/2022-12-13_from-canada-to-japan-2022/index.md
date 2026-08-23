@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2022年｜カナダから日本に帰国した話"
 createdAt: "2022-12-13 12:00"
 updatedAt: "2022-12-13 12:00"

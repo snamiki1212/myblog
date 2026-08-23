@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【完全解決】SIerで、つまらないと感じたら？【経験談有り】"
 createdAt: "2019-09-02 00:00"
 updatedAt: "2021-08-23 00:00"

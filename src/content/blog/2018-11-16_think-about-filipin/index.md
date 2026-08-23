@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ソフトウェアエンジニアがなぜフィリピン留学に行くのか"
 createdAt: "2018-11-16 00:00"
 updatedAt: "2022-12-17 09:00"

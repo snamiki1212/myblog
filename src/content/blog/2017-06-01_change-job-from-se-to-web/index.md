@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【退職エントリ】NTT系SIerを退職しWebベンチャーへ転職"
 createdAt: "2017-06-01 00:00"
 updatedAt: "2021-01-01 00:00"

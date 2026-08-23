@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ローカルガイド特典のコネクトライブ2019に応募しなかった話"
 createdAt: "2019-04-04 22:01"
 updatedAt: "2019-04-04 22:01"

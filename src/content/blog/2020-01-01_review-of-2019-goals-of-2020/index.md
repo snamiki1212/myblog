@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2019年振り返り⇒2020年目標｜フリーランスになりました"
 createdAt: "2020-01-01 00:00"
 updatedAt: "2020-01-03 00:00"

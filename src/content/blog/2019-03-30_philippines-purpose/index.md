@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "失敗を回避するため、留学目的を考える"
 createdAt: "2019-03-30 07:30"
 updatedAt: "2022-12-23 22:30"

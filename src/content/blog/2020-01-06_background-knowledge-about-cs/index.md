@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "海外でコンピュータ・サイエンスを学びたい人向け前提知識をまとめ【大学・大学院・MOOC】"
 createdAt: "2020-01-06 00:00"
 updatedAt: "2020-08-22 00:00"

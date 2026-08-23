@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2022 年の振り返り｜カナダで働き日本に帰る"
 createdAt: "2022-12-15 12:00"
 updatedAt: "2022-12-17 12:00"

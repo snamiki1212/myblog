@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ITエンジニアにとっての「技術力」はどういう意味か【現役Webエンジニア考え】"
 createdAt: "2020-01-05 00:00"
 updatedAt: "2020-01-05 00:00"

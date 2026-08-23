@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SEから転職前に社内SEを経験してわかったこと【必須スキル４選】"
 createdAt: "2020-01-18 09:00"
 updatedAt: "2020-01-18 09:00"

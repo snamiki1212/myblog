@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【バギオ留学】韓国資本の学校に通ってきた【フィリピン】"
 createdAt: "2019-03-30 12:30"
 updatedAt: "2019-03-30 12:30"

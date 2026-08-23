@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "技術カンファレンスに通って、わかった11個の気付き"
 createdAt: "2019-01-05 11:26"
 updatedAt: "2019-01-05 11:26"

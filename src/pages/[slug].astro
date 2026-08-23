@@ -4,6 +4,8 @@ import { default as PostCardListPrevNext } from "../components/PostCardListPrevN
 import { default as PostCardListPicked } from "../components/PostCardListPicked.astro";
 import { selectRelatedEntryList } from "../utils/entry";
 import { type BlogEntry, getBlogEntryList } from "../utils/astro";
+import PostLayout from "../layouts/PostLayout.astro";
+import { render } from "astro:content";
 
 type Props = {
   entry: BlogEntry;
@@ -12,7 +14,7 @@ type Props = {
   relatedEntries: BlogEntry[];
 };
 
-type Slug = BlogEntry["slug"];
+type Slug = BlogEntry["data"]["slug"];
 type Params = { slug: Slug };
 type Item = { props: Props; params: Params };
 
@@ -23,8 +25,8 @@ export async function getStaticPaths() {
     const nextEntry = list[idx + 1];
     const ignoreEntrySlugList = (() => {
       let _list = [];
-      if (previousEntry) _list.push(previousEntry.slug);
-      if (nextEntry) _list.push(nextEntry.slug);
+      if (previousEntry) _list.push(previousEntry.data.slug);
+      if (nextEntry) _list.push(nextEntry.data.slug);
       return _list;
     })();
     const relatedEntries = selectRelatedEntryList({
@@ -38,7 +40,7 @@ export async function getStaticPaths() {
       nextEntry,
       relatedEntries,
     } satisfies Props;
-    const params = { slug: entry.slug } satisfies Params;
+    const params = { slug: entry.data.slug } satisfies Params;
     const item = { params, props };
     return [...prev, item];
   }, []);
@@ -47,11 +49,13 @@ export async function getStaticPaths() {
 
 const { entry, previousEntry, nextEntry, relatedEntries } = Astro.props;
 const { data: frontmatter } = entry;
-const { Content } = await entry.render();
+const { Content, headings } = await render(entry);
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <Content />
+  <PostLayout frontmatter={frontmatter} headings={headings}>
+    <Content />
+  </PostLayout>
   <!-- Prev and Next -->
   <div
     class="mb-5 gap-4 flex direction-row flex-wrap justify-center max-w-screen-lg w-full m-auto"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Netlify + Netlify CMS + GatsbyJS ( React + GraphQL )でブログ作ったときにハマった点"
 createdAt: "2019-01-03 21:07"
 updatedAt: "2019-01-03 21:07"

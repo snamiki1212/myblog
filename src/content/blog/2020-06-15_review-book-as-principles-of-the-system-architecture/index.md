@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『現場で役立つシステム設計の原則』"
 createdAt: "2020-06-15 00:00"
 updatedAt: "2021-08-28 00:00"

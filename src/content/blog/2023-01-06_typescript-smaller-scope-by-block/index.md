@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "TypeScript｜ブロック文で変数スコープを小さくする"
 createdAt: "2023-01-06 17:00"
 updatedAt: "2023-01-06 17:00"

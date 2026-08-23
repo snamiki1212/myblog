@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "1週間Rustを学習して完全に理解したのでファーストインプレッション"
 createdAt: "2020-07-23 01:00"
 updatedAt: "2020-08-02 22:00"

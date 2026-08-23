@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Go Global Meetup#1のまとめ"
 createdAt: "2018-11-26 20:43"
 updatedAt: "2018-11-26 20:43"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『Go 言語でつくるインタプリタ』"
 createdAt: "2022-02-22 00:00"
 updatedAt: "2022-02-22 00:00"

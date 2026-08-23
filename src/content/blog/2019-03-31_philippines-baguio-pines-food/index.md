@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "フィリピンの食べ物を侮っていた話【留学失敗？学校選びは慎重に！】"
 createdAt: "2019-03-31 16:01"
 updatedAt: "2019-03-31 16:01"

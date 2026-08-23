@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "「SE でプログラミングができない人」に向けてキャリア戦略を考えた"
 createdAt: "2020-01-11 12:00"
 updatedAt: "2020-01-11 12:00"

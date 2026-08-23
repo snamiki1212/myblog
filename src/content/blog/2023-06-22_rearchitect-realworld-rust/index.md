@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Rustのプロジェクトをリアーキテクチャした話"
 createdAt: "2023-06-22 17:00"
 updatedAt: "2023-06-22 17:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2024年｜買ってよかったもの"
 createdAt: "2025-01-04 22:00"
 updatedAt: "2025-01-04 22:00"

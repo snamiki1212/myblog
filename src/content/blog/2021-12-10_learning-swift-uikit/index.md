@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "React 好きの Fullstack エンジニアが Swift/UIKit を学んだ話"
 createdAt: "2021-12-10 00:00"
 updatedAt: "2021-12-30 00:00"

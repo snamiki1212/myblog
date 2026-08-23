@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【セブ留学】日本資本の学校に通ってきた【フィリピン】"
 createdAt: "2019-03-30 12:31"
 updatedAt: "2019-03-30 12:31"

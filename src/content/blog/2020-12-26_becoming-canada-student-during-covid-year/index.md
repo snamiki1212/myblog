@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "カナダ留学予定がコロナで1度吹き飛んだが、なんとか学生になった話"
 createdAt: "2020-12-26 20:00"
 updatedAt: "2020-12-26 20:00"

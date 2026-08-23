@@ -7,6 +7,7 @@ import { toHomeUrl } from "../utils/url";
 import { type AboutEntry, getAboutEntry } from "../utils/astro";
 import { SITE_NAME_WITH_EMOJI } from "../constants/site";
 import { default as SearchSection } from "../components/SearchSection.astro";
+import { render } from "astro:content";
 
 type Props = {
   entry: AboutEntry;
@@ -14,7 +15,7 @@ type Props = {
 
 const entry = await getAboutEntry();
 if (!entry) throw new Error("About entry was not found");
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <Layout>

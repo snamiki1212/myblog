@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "書評｜「良いコード／悪いコードで学ぶ設計入門」"
 createdAt: "2023-01-16 18:00"
 updatedAt: "2023-01-17 18:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2020年｜フリーランスエンジニアが買ってよかったもの"
 createdAt: "2020-11-27 22:00"
 updatedAt: "2021-08-23 17:00"

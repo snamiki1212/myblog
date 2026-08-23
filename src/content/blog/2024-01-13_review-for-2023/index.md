@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2023年の振り返りと2024年の抱負"
 createdAt: "2024-01-13 18:00"
 updatedAt: "2024-01-13 18:00"

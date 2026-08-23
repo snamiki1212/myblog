@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "2022 年の目標と抱負｜地に足をつけてレールに乗る"
 createdAt: "2022-01-07 00:00"
 updatedAt: "2022-07-31 00:00"

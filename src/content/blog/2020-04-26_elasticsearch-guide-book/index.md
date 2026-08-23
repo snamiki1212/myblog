@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『Elasticsearch 実践ガイド』"
 createdAt: "2020-04-26 02:00"
 updatedAt: "2020-10-17 22:00"

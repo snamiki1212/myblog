@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "読後レビュー｜『超・箇条書き』"
 createdAt: "2022-02-27 00:00"
 updatedAt: "2022-02-27 00:00"

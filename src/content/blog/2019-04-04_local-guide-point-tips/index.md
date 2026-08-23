@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ローカルガイドのコツは１つ←画像投稿しろ【ポイント獲得編】"
 createdAt: "2019-04-04 12:40"
 updatedAt: "2019-04-04 12:40"

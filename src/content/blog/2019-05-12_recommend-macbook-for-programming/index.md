@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【実レビュー】MacBook無印でプログラミングは、サブPCとしておすすめ"
 createdAt: "2019-05-12 18:00"
 updatedAt: "2020-01-13 09:00"

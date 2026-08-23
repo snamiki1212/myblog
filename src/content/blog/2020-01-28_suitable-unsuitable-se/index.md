@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SEの向き不向きを考える【向いている／いない人】"
 createdAt: "2020-01-28 09:00"
 updatedAt: "2020-01-28 09:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Svelteでポートフォリオサイトを作った話"
 createdAt: "2021-02-18 22:00"
 updatedAt: "2021-02-18 22:00"

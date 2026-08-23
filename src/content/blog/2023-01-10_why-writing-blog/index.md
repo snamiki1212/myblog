@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "どうしてブログを書いているのか"
 createdAt: "2023-01-10 11:00"
 updatedAt: "2023-01-13 11:00"

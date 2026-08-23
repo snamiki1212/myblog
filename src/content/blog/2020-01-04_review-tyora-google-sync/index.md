@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Typora + GoogleSyncのレビュー｜無料軽量Markdownエディタ+クラウド同期"
 createdAt: "2020-01-04 09:00"
 updatedAt: "2020-07-05 23:00"

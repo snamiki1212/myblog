@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Reduxを使ってアイキャッチジェネレータを作った話"
 createdAt: "2019-05-01 22:00"
 updatedAt: "2019-05-01 22:00"

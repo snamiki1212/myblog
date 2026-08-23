@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "SEとWeb系の違いをエンジニアが比較【両方とも経験済み】"
 createdAt: "2020-01-12 12:00"
 updatedAt: "2020-02-06 01:00"

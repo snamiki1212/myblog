@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "ソフトウェアエンジニアの海外キャリア戦略・目標を見直した話"
 createdAt: "2018-11-15 00:00"
 updatedAt: "2022-12-17 00:00"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Webエンジニア目線でフィリピン移住をおすすめしない理由⇐3 ヶ月滞在の結論"
 createdAt: "2019-04-29 10:00"
 updatedAt: "2020-12-24 11:40"

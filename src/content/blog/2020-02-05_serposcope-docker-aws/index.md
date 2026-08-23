@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Serposcope + AWS + Dockerの構築手順書"
 createdAt: "2020-02-05 21:00"
 updatedAt: "2020-02-05 21:00"

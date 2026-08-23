@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【実体験】IT エンジニアがタイに移住してみた結果⇒オススメです"
 createdAt: "2020-01-07 00:00"
 updatedAt: "2020-12-25 16:00"

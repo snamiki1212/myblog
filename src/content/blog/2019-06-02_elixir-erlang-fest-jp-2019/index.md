@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Erlang & ElixirFest JP 2019のイベントレポート"
 createdAt: "2019-06-02 21:30"
 updatedAt: "2019-06-02 21:30"

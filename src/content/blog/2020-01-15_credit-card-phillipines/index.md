@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【厳選】フィリピン留学でおすすめのクレカ【２枚】"
 createdAt: "2020-01-15 12:00"
 updatedAt: "2020-01-15 12:00"

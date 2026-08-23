@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "Application Delivery Network ( ADN ) とは"
 createdAt: "2018-11-19 19:53"
 updatedAt: "2018-11-19 19:53"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "フリーランスエンジニアになって約１年半が経ったので振り返り【2020 年】"
 createdAt: "2020-05-24 10:00"
 updatedAt: "2020-12-29 10:00"

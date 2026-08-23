@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "【Elixir】ifやcaseの中で代入・束縛を行うべきでない"
 createdAt: "2018-12-03 14:44"
 updatedAt: "2020-03-06 03:30"

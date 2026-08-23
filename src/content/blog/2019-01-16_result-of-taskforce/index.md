@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "周りを巻き込む施策をベンチャーで4つほどやった結果の知見"
 createdAt: "2019-01-16 03:55"
 updatedAt: "2019-01-16 03:55"

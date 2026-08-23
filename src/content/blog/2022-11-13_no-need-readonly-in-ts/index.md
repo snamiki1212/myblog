@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "TypeScript｜reaonly不要論"
 createdAt: "2022-11-13 00:00"
 updatedAt: "2022-12-11 11:30"

@@ -1,5 +1,4 @@
 ---
-layout: /src/layouts/PostLayout.astro
 title: "個人開発プロジェクトがスポンサーマネタイズされて稼ぐまでの話【Plangoab】"
 createdAt: "2021-05-01 00:00"
 updatedAt: "2021-12-24 00:00"
