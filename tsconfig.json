@@ -5,5 +5,6 @@
     "jsxImportSource": "react",
     "strict": true
   },
+  "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"]
 }
