@@ -16,6 +16,8 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 import partytown from "@astrojs/partytown";
 
+import { unified } from "@astrojs/markdown-remark";
+
 // https://astro.build/config
 
 import rehypeRewrite, { type RehypeRewriteOptions } from "rehype-rewrite";
@@ -60,10 +62,13 @@ const rehypeRewriteOption: RehypeRewriteOptions = {
 };
 
 export default defineConfig({
+  compressHTML: true,
   prefetch: true,
   site: SITE_URL,
   markdown: {
-    rehypePlugins: [[rehypeRewrite, rehypeRewriteOption]],
+    processor: unified({
+      rehypePlugins: [[rehypeRewrite, rehypeRewriteOption]],
+    }),
     // syntaxHighlight: "prism",
   },
   integrations: [
