@@ -6,6 +6,7 @@ export const buildTransactionName = {
   avatar: () => "Avatar",
   logo: () => "Logo",
   postCard: (slug: string) => `PostCard--${slug}`,
-  postCardListHeader: (meta: string) => `PostCardListHeader--${escape(meta)}`, // meta might be japanese so neet to escape for view-transition
-  tagTip: (tag: string) => `TagTip--${escape(tag)}`,
+  postCardListHeader: (meta: string) =>
+    `PostCardListHeader--${encodeURIComponent(meta)}`,
+  tagTip: (tag: string) => `TagTip--${encodeURIComponent(tag)}`,
 }
