@@ -10,7 +10,7 @@ jobs:
       # REF: https://github.com/treosh/lighthouse-ci-action
       # 
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v10
+        uses: treosh/lighthouse-ci-action@12.6.2
         with:
           urls: |
             https://snamiki1212.com/
